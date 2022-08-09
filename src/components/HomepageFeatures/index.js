@@ -4,13 +4,13 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Fast",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: <>dYmension brings web2 speed to the web3 world!</>,
+    title: "Seamless",
+    Svg: require("@site/static/img/shared_liquidity.svg").default,
+    description: <>dYmension's settlement hub brings all RollApps together.</>,
   },
   {
     title: "Easy",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("@site/static/img/easy_deployment.svg").default,
     description: (
       <>
         dYmension allows developers to deploy an application as easy as
@@ -20,11 +20,11 @@ const FeatureList = [
   },
   {
     title: "Powerful",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/fast_applications.svg").default,
     description: (
       <>
-        dYmension gives the foundation to build any web3 application you can
-        imagine!
+        dYmension enables web3 applications to have the speed and efficiencies
+        necessary for modern-day applications.
       </>
     ),
   },
