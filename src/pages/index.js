@@ -19,7 +19,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            dYmension Documentation
+            Build
           </Link>
         </div>
       </div>
