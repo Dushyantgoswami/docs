@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "dYmension Docs",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://www.dymension.xyz/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -15,8 +15,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "dYmension", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -35,15 +35,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/dymensionxyz/docs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/dymensionxyz/docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -70,7 +68,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/dymensionxyz/docs",
             label: "GitHub",
             position: "right",
           },
@@ -80,37 +78,28 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Connect",
             items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/GbrsdPB6Ge",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/dYmensionXYZ",
+              },
+              {
+                label: "Telegram",
+                href: "https://t.me/dYmensionXYZ",
               },
             ],
           },
           {
-            title: "More",
+            title: "Learn",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Medium",
+                href: "https://medium.com/@dymensionxyz",
               },
               {
                 label: "GitHub",
@@ -118,8 +107,17 @@ const config = {
               },
             ],
           },
+          {
+            title: "Build",
+            items: [
+              {
+                label: "Intro",
+                to: "/docs/intro",
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} dYmension. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
