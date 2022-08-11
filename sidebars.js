@@ -1,5 +1,5 @@
 const sidebars = {
-  tutorialSidebar: [
+  overview: [
     {
       type: "category",
       label: "Tutorial",
