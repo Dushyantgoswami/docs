@@ -68,13 +68,13 @@ const config = {
           },
           {
             type: "doc",
-            docId: "intro",
+            docId: "settlement_hub",
             position: "left",
             label: "Settlement Hub",
           },
           {
             type: "doc",
-            docId: "intro",
+            docId: "rollapp",
             position: "left",
             label: "RollApp",
           },
