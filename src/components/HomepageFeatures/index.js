@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Seamless",
-    Svg: require("@site/static/img/shared_liquidity.svg").default,
+    Svg: require("@site/static/img/dymension_hub.svg").default,
     description: <>dYmension's settlement hub brings all RollApps together.</>,
   },
   {
