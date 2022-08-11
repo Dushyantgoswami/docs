@@ -38,12 +38,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/dymensionxyz/docs",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/dymensionxyz/docs",
-        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -63,19 +57,19 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "overview/introduction",
             position: "left",
             label: "Overview",
           },
           {
             type: "doc",
-            docId: "settlement_hub",
+            docId: "hub/overview",
             position: "left",
             label: "Settlement Hub",
           },
           {
             type: "doc",
-            docId: "rollapp",
+            docId: "rollapp/overview",
             position: "left",
             label: "RollApp",
           },
@@ -110,6 +104,10 @@ const config = {
             title: "Learn",
             items: [
               {
+                label: "Website",
+                href: "https://dymension.xyz",
+              },
+              {
                 label: "Medium",
                 href: "https://medium.com/@dymensionxyz",
               },
@@ -124,15 +122,15 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "/docs/intro",
+                to: "/overview/intro",
               },
               {
                 label: "Settlement Hub",
-                to: "/docs/settlement_hub",
+                to: "/hub/overview",
               },
               {
                 label: "RollApp",
-                to: "/docs/rollapp",
+                to: "/rollapp/overview",
               },
             ],
           },
