@@ -1,11 +1,3 @@
-const sidebars = {
-  tutorialSidebar: [
-    {
-      type: "category",
-      label: "Tutorial",
-      items: ["hello"],
-    },
-  ],
-};
+const sidebars = {};
 
 module.exports = sidebars;

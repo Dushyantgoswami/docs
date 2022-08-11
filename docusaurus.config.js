@@ -7,6 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "dYmension Docs",
+  tagline: "Build RollApps on top of dYmension, the RollApp hub",
   url: "https://www.dymension.xyz/",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -64,9 +65,20 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Overview",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          {
+            type: "doc",
+            docId: "settlement_hub",
+            position: "left",
+            label: "Settlement Hub",
+          },
+          {
+            type: "doc",
+            docId: "rollapp",
+            position: "left",
+            label: "RollApp",
+          },
           {
             href: "https://github.com/dymensionxyz/docs",
             label: "GitHub",
@@ -102,8 +114,8 @@ const config = {
                 href: "https://medium.com/@dymensionxyz",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "Github",
+                href: "https://github.com/dymensionxyz",
               },
             ],
           },
@@ -111,8 +123,16 @@ const config = {
             title: "Build",
             items: [
               {
-                label: "Intro",
+                label: "Overview",
                 to: "/docs/intro",
+              },
+              {
+                label: "Settlement Hub",
+                to: "/docs/settlement_hub",
+              },
+              {
+                label: "RollApp",
+                to: "/docs/rollapp",
               },
             ],
           },
