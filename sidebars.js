@@ -1,11 +1,3 @@
-const sidebars = {
-  overview: [
-    {
-      type: "doc",
-      label: "Introduction",
-      id: "overview/intro",
-    },
-  ],
-};
+const sidebars = {};
 
 module.exports = sidebars;

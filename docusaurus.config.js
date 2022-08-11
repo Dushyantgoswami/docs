@@ -64,9 +64,20 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Overview",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Settlement Hub",
+          },
+          {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "RollApp",
+          },
           {
             href: "https://github.com/dymensionxyz/docs",
             label: "GitHub",
