@@ -1,9 +1,9 @@
 const sidebars = {
   overview: [
     {
-      type: "category",
-      label: "Tutorial",
-      items: ["hello"],
+      type: "doc",
+      label: "Introduction",
+      id: "overview/intro",
     },
   ],
 };
