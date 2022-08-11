@@ -114,7 +114,7 @@ const config = {
                 href: "https://medium.com/@dymensionxyz",
               },
               {
-                label: "GitHub",
+                label: "Github",
                 href: "https://github.com/dymensionxyz",
               },
             ],
