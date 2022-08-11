@@ -123,8 +123,16 @@ const config = {
             title: "Build",
             items: [
               {
-                label: "Intro",
-                to: "/docs/overview/intro",
+                label: "Overview",
+                to: "/docs/intro",
+              },
+              {
+                label: "Settlement Hub",
+                to: "/docs/settlement_hub",
+              },
+              {
+                label: "RollApp",
+                to: "/docs/rollapp",
               },
             ],
           },
