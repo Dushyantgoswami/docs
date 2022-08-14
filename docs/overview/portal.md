@@ -6,18 +6,20 @@ This is an open-source community effort, so feel free to suggest new topics by c
 
 ## A Hitchhiker's Guide to dYmension
 
+### Blockchain Concepts
+
+- [Intro to Blockchain](#) - * Intro to blockchain*
+- [Intro to Optimistic Rollups](#) - * Overview on how to scale blockchains *
+- [Intro to Cosmos](#) - * Overview of Cosmos *
+
 ### dYmension Concepts
 
 - [Intro to dYmension](#) - * Overview of the dYmension protocol *
 - [Intro to the DYM token](#) - * Overview of the DYM token *
 - [Intro to The Hub](#) - * Overview of The dYmension Hub *
 - [Intro to RollApps](#) - * Overview of dYmension applications *
-
-### Blockchain Concepts
-
-- [Intro to Blockchain](#) - * Intro to blockchain*
-- [Intro to Optimistic Rollups](#) - * Overview on how to scale blockchains *
-- [Intro to Cosmos](#) - * Overview of Cosmos *
+- [Glossary](#) - * Glossary of dYmension concepts *
+- [Resources](https://github.com/dymensionxyz/awesome) - * A list of dYmension resources *
 
 ### The dYmension Hub
 
@@ -34,11 +36,9 @@ This is an open-source community effort, so feel free to suggest new topics by c
 
 - [Overview](#)
 - [Roadmap](#)
-- [Architecture](#)
 - [Demo App](#)
 - [Connecting Keplr](#)
 - [Explorers](#)
 - [Public endpoints](#)
 - [Local RollApp](#)
 - [Testnet RollApp](#)
-
