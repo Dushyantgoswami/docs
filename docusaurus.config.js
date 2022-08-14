@@ -65,7 +65,7 @@ const config = {
             type: "doc",
             docId: "hub/overview",
             position: "left",
-            label: "Settlement Hub",
+            label: "The Hub",
           },
           {
             type: "doc",
@@ -112,7 +112,7 @@ const config = {
                 href: "https://medium.com/@dymensionxyz",
               },
               {
-                label: "Github",
+                label: "GitHub",
                 href: "https://github.com/dymensionxyz",
               },
             ],
@@ -125,7 +125,7 @@ const config = {
                 to: "/docs/overview/introduction",
               },
               {
-                label: "Settlement Hub",
+                label: "The Hub",
                 to: "/docs/hub/overview",
               },
               {
