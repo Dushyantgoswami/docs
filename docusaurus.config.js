@@ -69,9 +69,9 @@ const config = {
           },
           {
             type: "doc",
-            docId: "rollapp/overview",
+            docId: "rollapps/overview",
             position: "left",
-            label: "RollApp",
+            label: "RollApps",
           },
           {
             href: "https://github.com/dymensionxyz/docs",
@@ -122,15 +122,15 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "/overview/intro",
+                to: "/docs/overview/introduction",
               },
               {
                 label: "Settlement Hub",
-                to: "/hub/overview",
+                to: "/docs/hub/overview",
               },
               {
-                label: "RollApp",
-                to: "/rollapp/overview",
+                label: "RollApps",
+                to: "/docs/rollapps/overview",
               },
             ],
           },
