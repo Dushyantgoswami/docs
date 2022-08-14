@@ -1,4 +1,4 @@
-# Development Documentation
+# Development Portal
 
 This documentation is designed to help you build with dYmension. It cover dYmension as a concept, explains the dYmension tech stack and documents procedures for deploying an application to dYmension.
 
@@ -23,9 +23,12 @@ This is an open-source community effort, so feel free to suggest new topics by c
 
 - [Overview](#)
 - [Roadmap](#)
+- [Run a node](#)
 - [Validator](#)
 - [Setting up Dependencies](#)
 - [Joining the testnet](#)
+- [dYmension Core](#)
+- [Contributions](#)
 
 ### RollApps
 
@@ -34,4 +37,8 @@ This is an open-source community effort, so feel free to suggest new topics by c
 - [Architecture](#)
 - [Demo App](#)
 - [Connecting Keplr](#)
-- [Running locally](#)
+- [Explorers](#)
+- [Public endpoints](#)
+- [Local RollApp](#)
+- [Testnet RollApp](#)
+

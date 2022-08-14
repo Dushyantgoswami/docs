@@ -57,7 +57,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "overview/introduction",
+            docId: "overview/portal",
             position: "left",
             label: "Overview",
           },
@@ -122,7 +122,7 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "/docs/overview/introduction",
+                to: "/docs/overview/portal",
               },
               {
                 label: "The Hub",
