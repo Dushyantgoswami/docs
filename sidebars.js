@@ -2,7 +2,7 @@ const sidebars = {
   overview: [
     {
       type: "doc",
-      label: "Documentation Portal",
+      label: "Development Portal",
       id: "overview/portal",
     },
     {
@@ -25,14 +25,14 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Cosmos",
+          label: "Cosmos Network",
           id: "overview/the-hub",
         },
       ]
     },  
     {
       type: "category",
-      label: "dYmension Protocol",
+      label: "dYmension Concepts",
       link: {
         type: 'generated-index'
       },
@@ -40,7 +40,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "dYmension Overview",
+          label: "dYmension Protocol",
           id: "overview/dymension",
         },
         {
@@ -61,6 +61,11 @@ const sidebars = {
         {
           type: "doc",
           label: "Glossary",
+          id: "overview/Glossary",
+        },
+        {
+          type: "doc",
+          label: "Resources",
           id: "overview/Glossary",
         },
       ]
@@ -85,32 +90,12 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Run a Node",
+          label: "Node Runners",
           id: "overview/dymension",
         },
         {
           type: "doc",
-          label: "Validator",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "Setting up dependencies",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "Joining the testnet",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "dYmension Core",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "Contributions",
+          label: "Interact with The Hub",
           id: "overview/dymension",
         },
       ]
@@ -135,32 +120,22 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Demo App",
+          label: "RollApp Development Kit",
           id: "overview/dymension",
         },
         {
           type: "doc",
-          label: "Wallet",
+          label: "Inte-RollApp Communication",
           id: "overview/dymension",
         },
         {
           type: "doc",
-          label: "Explorers",
+          label: "Deploying an app",
           id: "overview/dymension",
         },
         {
           type: "doc",
-          label: "Public Endpoints",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "Local RollApp",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "Joining a Testnet",
+          label: "Interact with RollApps",
           id: "overview/dymension",
         },
       ]
