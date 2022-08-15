@@ -21,12 +21,12 @@ const sidebars = {
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "overview/DYM",
+          id: "overview/dymension",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "overview/the-hub",
+          id: "overview/dymension",
         },
       ]
     },  
@@ -40,33 +40,38 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "dYmension Protocol",
+          label: "Overview",
+          id: "overview/dymension",
+        },
+        {
+          type: "doc",
+          label: "Roadmap",
           id: "overview/dymension",
         },
         {
           type: "doc",
           label: "DYM token",
-          id: "overview/DYM",
+          id: "overview/dymension",
         },
         {
           type: "doc",
-          label: "The dYmension Hub",
-          id: "overview/the-hub",
+          label: "dYmension Hub",
+          id: "overview/dymension",
         },
         {
           type: "doc",
           label: "RollApps",
-          id: "overview/RollApps",
+          id: "overview/dymension",
         },
         {
           type: "doc",
           label: "Glossary",
-          id: "overview/Glossary",
+          id: "overview/dymension",
         },
         {
           type: "doc",
           label: "Resources",
-          id: "overview/Glossary",
+          id: "overview/dymension",
         },
       ]
     }, 
@@ -81,11 +86,6 @@ const sidebars = {
         {
           type: "doc",
           label: "Overview",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
-          label: "Roadmap",
           id: "overview/dymension",
         },
         {
@@ -115,17 +115,12 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Roadmap",
-          id: "overview/dymension",
-        },
-        {
-          type: "doc",
           label: "RollApp Development Kit",
           id: "overview/dymension",
         },
         {
           type: "doc",
-          label: "Inte-RollApp Communication",
+          label: "Inter-RollApp Communication",
           id: "overview/dymension",
         },
         {

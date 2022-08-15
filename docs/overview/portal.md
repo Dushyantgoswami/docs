@@ -12,27 +12,26 @@ This is an open-source community effort, so feel free to suggest new topics by c
 - [Optimistic Rollups](#) - * How blockchains scale *
 - [Cosmos Network](#) - * dYmension and the Cosmos Network *
 
-### dYmension Concepts
+### dYmension Protocol
 
-- [dYmension Protocol](#) - * Overview of the dYmension protocol *
+- [Overview](#) - * Overview of the dYmension protocol *
+- [Roadmap](#) - * How dYmension will evolve * 
 - [DYM token](#) - * Overview of the DYM token *
-- [The dYmension Hub](#) - * Overview of The dYmension Hub *
+- [dYmension Hub](#) - * Overview of The dYmension Hub *
 - [RollApps](#) - * Overview of dYmension applications *
 - [Glossary](#) - * Glossary of dYmension concepts *
 - [Resources](https://github.com/dymensionxyz/awesome) - * A list of dYmension resources *
 
 ### The dYmension Hub
 
-- [Overview](#) - * What is The dYmension Hub *
-- [Roadmap](#) - * How The Hub will evolve * 
+- [Overview](#) - * Overview of The dYmension Hub *
 - [Node Runners](#) - * Breakdown on how to run a node in the Hub *
 - [Interact with The Hub](#) - * Breakdown on how to use the Hub *
 
 ### RollApps
 
-- [Overview](#) - * What are RollApps *
-- [Roadmap](#) - * How RollApps will evolve *
+- [Overview](#) - * Overview of RollApps *
 - [RDK](#) - * How dYmension makes deploying an application easy *
 - [Inter-RollApp Communication](#) - * How to transfer across RollApps *
 - [Deploying an app](#) - * How to deploy an application to dYmension *
-- [Inteact with RollApps](#) - * Breakdown on how to interact with RollApps *
+- [Inteacting with RollApps](#) - * Breakdown on how to interact with RollApps *
