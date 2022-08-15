@@ -56,20 +56,17 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "overview/portal",
+            to: "/docs/portal/overview",
             position: "left",
-            label: "Overview",
+            label: "Portal",
           },
           {
-            type: "doc",
-            docId: "hub/overview",
+            to: "/docs/hub/overview",
             position: "left",
             label: "The Hub",
           },
           {
-            type: "doc",
-            docId: "rollapps/overview",
+            to: "/docs/rollapps/overview",
             position: "left",
             label: "RollApps",
           },
@@ -121,8 +118,8 @@ const config = {
             title: "Build",
             items: [
               {
-                label: "Overview",
-                to: "/docs/overview/portal",
+                label: "Portal",
+                to: "/docs/portal/overview",
               },
               {
                 label: "The Hub",

@@ -1,105 +1,93 @@
 const sidebars = {
-  overview: [
+  portal: [
     {
       type: "doc",
       label: "Development Portal",
-      id: "overview/portal",
+      id: "portal/overview",
     },
     {
       type: "category",
       label: "Blockchain Concepts",
-      collapsible: true,
       collapsed: false,  
       items: [
         {
           type: "doc",
           label: "Blockchain",
-          id: "overview/blockchain",
+          id: "portal/blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "overview/rollups",
+          id: "portal/rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "overview/cosmos",
+          id: "portal/cosmos",
         },
       ]
     },  
     {
       type: "category",
       label: "dYmension Concepts",
-      collapsible: true,
       collapsed: false,  
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "overview/dymension-overview",
+          id: "portal/dymension-overview",
         },
         {
           type: "doc",
           label: "Roadmap",
-          id: "overview/roadmap",
+          id: "portal/roadmap",
         },
         {
           type: "doc",
           label: "DYM token",
-          id: "overview/dym-token",
+          id: "portal/dym-token",
         },
         {
           type: "doc",
           label: "dYmension Hub",
-          id: "overview/dymension-hub",
+          id: "portal/dymension-hub",
         },
         {
           type: "doc",
           label: "RollApps",
-          id: "overview/rollapps",
+          id: "portal/rollapps",
         },
         {
           type: "doc",
           label: "Glossary",
-          id: "overview/glossary",
+          id: "portal/glossary",
         },
         {
           type: "doc",
           label: "Resources",
-          id: "overview/resources",
+          id: "portal/resources",
         },
       ]
     }, 
-    {
-      type: "category",
-      label: "The dYmension Hub",
-      collapsible: true,
-      collapsed: false,     
-      items: [
-        {
-          type: "doc",
-          label: "Overview",
-          id: "hub/overview",
-        },
-        {
-          type: "doc",
-          label: "Node Runners",
-          id: "hub/node-runner",
-        },
-        {
-          type: "doc",
-          label: "Interact with The Hub",
-          id: "hub/interact",
-        },
-      ]
-    },  
-    {
-      type: "category",
-      label: "RollApps",
-      collapsible: true,
-      collapsed: false,  
-      items: [
+  ],
+  hub:[
+      {
+        type: "doc",
+        label: "Overview",
+        id: "hub/overview",
+      },
+      {
+        type: "doc",
+        label: "Node Runners",
+        id: "hub/node-runner",
+      },
+      {
+        type: "doc",
+        label: "Interact with The Hub",
+        id: "hub/interact",
+      },  
+    ],
+  rollapps: [
         {
           type: "doc",
           label: "Overview",
@@ -124,9 +112,7 @@ const sidebars = {
           type: "doc",
           label: "Interact with RollApps",
           id: "rollapps/interact",
-        },
-      ]
-    },   
+        } 
   ],
 };
 
