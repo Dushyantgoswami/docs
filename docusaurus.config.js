@@ -38,12 +38,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/dymensionxyz/docs",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/dymensionxyz/docs",
-        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -63,21 +57,21 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "overview/portal",
             position: "left",
             label: "Overview",
           },
           {
             type: "doc",
-            docId: "settlement_hub",
+            docId: "hub/overview",
             position: "left",
-            label: "Settlement Hub",
+            label: "The Hub",
           },
           {
             type: "doc",
-            docId: "rollapp",
+            docId: "rollapps/overview",
             position: "left",
-            label: "RollApp",
+            label: "RollApps",
           },
           {
             href: "https://github.com/dymensionxyz/docs",
@@ -110,11 +104,15 @@ const config = {
             title: "Learn",
             items: [
               {
+                label: "Website",
+                href: "https://dymension.xyz",
+              },
+              {
                 label: "Medium",
                 href: "https://medium.com/@dymensionxyz",
               },
               {
-                label: "Github",
+                label: "GitHub",
                 href: "https://github.com/dymensionxyz",
               },
             ],
@@ -124,15 +122,15 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "/docs/intro",
+                to: "/docs/overview/portal",
               },
               {
-                label: "Settlement Hub",
-                to: "/docs/settlement_hub",
+                label: "The Hub",
+                to: "/docs/hub/overview",
               },
               {
-                label: "RollApp",
-                to: "/docs/rollapp",
+                label: "RollApps",
+                to: "/docs/rollapps/overview",
               },
             ],
           },
