@@ -1,1 +1,1 @@
-# This is the hub
+# Welcome to The Hub

@@ -8,130 +8,122 @@ const sidebars = {
     {
       type: "category",
       label: "Blockchain Concepts",
-      link: {
-        type: 'generated-index'
-      },
-      collapsed: false,
+      collapsible: true,
+      collapsed: false,  
       items: [
         {
           type: "doc",
           label: "Blockchain",
-          id: "overview/dymension",
+          id: "overview/blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "overview/dymension",
+          id: "overview/rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "overview/dymension",
+          id: "overview/cosmos",
         },
       ]
     },  
     {
       type: "category",
       label: "dYmension Concepts",
-      link: {
-        type: 'generated-index'
-      },
-      collapsed: false,
+      collapsible: true,
+      collapsed: false,  
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "overview/dymension",
+          id: "overview/dymension-overview",
         },
         {
           type: "doc",
           label: "Roadmap",
-          id: "overview/dymension",
+          id: "overview/roadmap",
         },
         {
           type: "doc",
           label: "DYM token",
-          id: "overview/dymension",
+          id: "overview/dym-token",
         },
         {
           type: "doc",
           label: "dYmension Hub",
-          id: "overview/dymension",
+          id: "overview/dymension-hub",
         },
         {
           type: "doc",
           label: "RollApps",
-          id: "overview/dymension",
+          id: "overview/rollapps",
         },
         {
           type: "doc",
           label: "Glossary",
-          id: "overview/dymension",
+          id: "overview/glossary",
         },
         {
           type: "doc",
           label: "Resources",
-          id: "overview/dymension",
+          id: "overview/resources",
         },
       ]
     }, 
     {
       type: "category",
       label: "The dYmension Hub",
-      link: {
-        type: 'generated-index'
-      },
-      collapsed: false,
+      collapsible: true,
+      collapsed: false,     
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "overview/dymension",
+          id: "hub/overview",
         },
         {
           type: "doc",
           label: "Node Runners",
-          id: "overview/dymension",
+          id: "hub/node-runner",
         },
         {
           type: "doc",
           label: "Interact with The Hub",
-          id: "overview/dymension",
+          id: "hub/interact",
         },
       ]
     },  
     {
       type: "category",
       label: "RollApps",
-      link: {
-        type: 'generated-index'
-      },
-      collapsed: false,
+      collapsible: true,
+      collapsed: false,  
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "overview/dymension",
+          id: "rollapps/overview",
         },
         {
           type: "doc",
           label: "RollApp Development Kit",
-          id: "overview/dymension",
+          id: "rollapps/rdk",
         },
         {
           type: "doc",
           label: "Inter-RollApp Communication",
-          id: "overview/dymension",
+          id: "rollapps/irc",
         },
         {
           type: "doc",
           label: "Deploying an app",
-          id: "overview/dymension",
+          id: "rollapps/app",
         },
         {
           type: "doc",
           label: "Interact with RollApps",
-          id: "overview/dymension",
+          id: "rollapps/interact",
         },
       ]
     },   
