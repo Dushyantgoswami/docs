@@ -11,7 +11,7 @@
 
 <details>
     <summary>Batching</summary>
-    
+    Sequencers gather executed transaction data and store it on the data layer for public availability and verification. The frequency of data batching is decided by the Sequencer, adjusting for their application needs.
 </details>
 
 ### C
@@ -23,14 +23,16 @@
 
 <details>
     <summary>Cosmos SDK</summary>
-    
+    The Cosmos SDK is an open-source framework for building public Proof-of-Stake (PoS) blockchains. Blockchains built with the Cosmos SDK are generally referred to as application-specific blockchains.
 </details>
 
 ### D
 
 <details>
-    <summary>Data Availability</summary>
-    
+    <summary>Data availability problem</summary>
+    The data availability problem states: If the block proposer does not publish all of the data no one would be able to detect hidden transactions. <br /> <br />
+    If a block producer just publishes the block header but not the transaction data, then full nodes won’t be able to check if the transactions are valid and generate fraud proofs if they’re not valid. It is a requirement that block producers must publish all the data for their blocks, but we need a way to enforce this.<br /> <br />
+
 </details>
 
 <details>
@@ -126,7 +128,7 @@
 
 <details>
     <summary>Sharding</summary>
-    
+    One way of increasing the throughput of a blockchain is to split the blockchain into multiple chains called shards. The point of sharding is to split up the block producers in the network so that instead of every block producer processing every transaction, they split up their processing power into different shards that only process some transactions. RollApps are execution environment shards, Sequencers and participating full nodes network transactions and maintain a light client of the settlement layer for updating state and connecting to other execution shards. 
 </details>
 
 <details>
