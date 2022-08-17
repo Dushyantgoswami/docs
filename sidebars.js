@@ -1,132 +1,189 @@
 const sidebars = {
-  overview: [
+  portal: [
     {
       type: "doc",
       label: "Development Portal",
-      id: "overview/portal",
+      id: "portal/overview",
     },
     {
       type: "category",
       label: "Blockchain Concepts",
-      collapsible: true,
-      collapsed: false,  
+      collapsed: false,
       items: [
         {
           type: "doc",
           label: "Blockchain",
-          id: "overview/blockchain",
+          id: "portal/blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "overview/rollups",
+          id: "portal/rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "overview/cosmos",
+          id: "portal/cosmos",
         },
-      ]
-    },  
+      ],
+    },
     {
       type: "category",
-      label: "dYmension Concepts",
-      collapsible: true,
-      collapsed: false,  
+      label: "dYmension Protocol",
+      collapsed: false,
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "overview/dymension-overview",
+          id: "portal/dymension-overview",
         },
         {
           type: "doc",
           label: "Roadmap",
-          id: "overview/roadmap",
+          id: "portal/roadmap",
         },
         {
           type: "doc",
           label: "DYM token",
-          id: "overview/dym-token",
+          id: "portal/dym-token",
+        },
+        {
+          type: "doc",
+          label: "Tokenomics",
+          id: "portal/tokenomics",
         },
         {
           type: "doc",
           label: "dYmension Hub",
-          id: "overview/dymension-hub",
+          id: "portal/dymension-hub",
         },
         {
           type: "doc",
           label: "RollApps",
-          id: "overview/rollapps",
+          id: "portal/rollapps",
         },
         {
           type: "doc",
           label: "Glossary",
-          id: "overview/glossary",
+          id: "portal/glossary",
         },
         {
           type: "doc",
           label: "Resources",
-          id: "overview/resources",
+          id: "portal/resources",
         },
-      ]
-    }, 
+      ],
+    },
+  ],
+  hub: [
+    {
+      type: "doc",
+      label: "Overview",
+      id: "hub/overview",
+    },
     {
       type: "category",
-      label: "The dYmension Hub",
-      collapsible: true,
-      collapsed: false,     
+      label: "Node Runners",
+      collapsed: false,
       items: [
         {
           type: "doc",
-          label: "Overview",
-          id: "hub/overview",
+          label: "Validate",
+          id: "hub/validate",
         },
         {
           type: "doc",
-          label: "Node Runners",
+          label: "Full Node",
+          id: "hub/validate",
+        },
+        {
+          type: "doc",
+          label: "Light Client",
+          id: "hub/validate",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Participate",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          label: "Governance",
+          id: "hub/governance",
+        },
+        {
+          type: "doc",
+          label: "Block Explorers",
           id: "hub/node-runner",
         },
         {
           type: "doc",
-          label: "Interact with The Hub",
+          label: "Wallet",
           id: "hub/interact",
         },
-      ]
-    },  
+        {
+          type: "doc",
+          label: "Public endpoints",
+          id: "hub/interact",
+        },
+        {
+          type: "doc",
+          label: "Faucet",
+          id: "hub/interact",
+        },
+      ],
+    },
+  ],
+  rollapps: [
+    {
+      type: "doc",
+      label: "Overview",
+      id: "rollapps/overview",
+    },
+    {
+      type: "doc",
+      label: "RollApp Development Kit",
+      id: "rollapps/rdk",
+    },
+    {
+      type: "doc",
+      label: "Inter-RollApp Communication",
+      id: "rollapps/irc",
+    },
     {
       type: "category",
-      label: "RollApps",
-      collapsible: true,
-      collapsed: false,  
+      label: "Develop on dYmension",
+      collapsed: false,
       items: [
         {
           type: "doc",
-          label: "Overview",
-          id: "rollapps/overview",
-        },
-        {
-          type: "doc",
-          label: "RollApp Development Kit",
-          id: "rollapps/rdk",
-        },
-        {
-          type: "doc",
-          label: "Inter-RollApp Communication",
-          id: "rollapps/irc",
-        },
-        {
-          type: "doc",
-          label: "Deploying an app",
+          label: "Demo app",
           id: "rollapps/app",
         },
         {
           type: "doc",
-          label: "Interact with RollApps",
+          label: "CosmWasm",
+          id: "rollapps/irc",
+        },
+        {
+          type: "doc",
+          label: "Celestia",
           id: "rollapps/interact",
         },
-      ]
-    },   
+        {
+          type: "doc",
+          label: "Faucet",
+          id: "rollapps/interact",
+        },
+        {
+          type: "doc",
+          label: "Block explorers",
+          id: "rollapps/interact",
+        },
+      ],
+    },
   ],
 };
 
