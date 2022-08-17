@@ -8,7 +8,7 @@ const sidebars = {
     {
       type: "category",
       label: "Blockchain Concepts",
-      collapsed: false,  
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -25,12 +25,12 @@ const sidebars = {
           label: "Cosmos Network",
           id: "portal/cosmos",
         },
-      ]
-    },  
+      ],
+    },
     {
       type: "category",
-      label: "dYmension Concepts",
-      collapsed: false,  
+      label: "dYmension Protocol",
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -46,6 +46,11 @@ const sidebars = {
           type: "doc",
           label: "DYM token",
           id: "portal/dym-token",
+        },
+        {
+          type: "doc",
+          label: "Tokenomics",
+          id: "portal/tokenomics",
         },
         {
           type: "doc",
@@ -67,10 +72,10 @@ const sidebars = {
           label: "Resources",
           id: "portal/resources",
         },
-      ]
-    }, 
+      ],
+    },
   ],
-  hub:[
+  hub: [
     {
       type: "doc",
       label: "Overview",
@@ -79,7 +84,7 @@ const sidebars = {
     {
       type: "category",
       label: "Node Runners",
-      collapsed: false,  
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -96,12 +101,12 @@ const sidebars = {
           label: "Light Client",
           id: "hub/validate",
         },
-      ]
+      ],
     },
     {
       type: "category",
       label: "Participate",
-      collapsed: false,  
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -128,57 +133,57 @@ const sidebars = {
           label: "Faucet",
           id: "hub/interact",
         },
-      ]
-    } 
+      ],
+    },
   ],
   rollapps: [
+    {
+      type: "doc",
+      label: "Overview",
+      id: "rollapps/overview",
+    },
+    {
+      type: "doc",
+      label: "RollApp Development Kit",
+      id: "rollapps/rdk",
+    },
+    {
+      type: "doc",
+      label: "Inter-RollApp Communication",
+      id: "rollapps/irc",
+    },
+    {
+      type: "category",
+      label: "Develop on dYmension",
+      collapsed: false,
+      items: [
         {
           type: "doc",
-          label: "Overview",
-          id: "rollapps/overview",
+          label: "Demo app",
+          id: "rollapps/app",
         },
         {
           type: "doc",
-          label: "RollApp Development Kit",
-          id: "rollapps/rdk",
-        },
-        {
-          type: "doc",
-          label: "Inter-RollApp Communication",
+          label: "CosmWasm",
           id: "rollapps/irc",
         },
         {
-          type: "category",
-          label: "Develop on dYmension",
-          collapsed: false,
-          items: [
-            {
-              type: "doc",
-              label: "Demo app",
-              id: "rollapps/app",
-            },
-            {
-              type: "doc",
-              label: "CosmWasm",
-              id: "rollapps/irc",
-            },
-            {
-              type: "doc",
-              label: "Celestia",
-              id: "rollapps/interact",
-            },    
-            {
-              type: "doc",
-              label: "Faucet",
-              id: "rollapps/interact",
-            },
-            {
-              type: "doc",
-              label: "Block explorers",
-              id: "rollapps/interact",
-            },                  
-          ]
+          type: "doc",
+          label: "Celestia",
+          id: "rollapps/interact",
         },
+        {
+          type: "doc",
+          label: "Faucet",
+          id: "rollapps/interact",
+        },
+        {
+          type: "doc",
+          label: "Block explorers",
+          id: "rollapps/interact",
+        },
+      ],
+    },
   ],
 };
 

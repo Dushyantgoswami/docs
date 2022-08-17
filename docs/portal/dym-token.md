@@ -1,1 +1,1 @@
-# Welcome to the DYM token
+# DYM token
