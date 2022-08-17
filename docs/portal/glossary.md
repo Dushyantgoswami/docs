@@ -3,8 +3,8 @@
 ### A
 
 <details>
-    <summary>Autonomy</summary>
-    
+    <summary>Autonomous rollups</summary>
+    A type of rollup that establishes its own validity rules while delegating responsibilities for determining the canonical state to an underlying settlement layer.  
 </details>
 
 ### B
@@ -131,6 +131,16 @@
 
 <details>
     <summary>Shared Security</summary>
+    
+</details>
+
+<details>
+    <summary>Slashing</summary>
+    
+</details>
+
+<details>
+    <summary>Staking</summary>
     
 </details>
 
