@@ -39,16 +39,14 @@
     If a block producer just publishes the block header but not the transaction data, then full nodes won’t be able to check if the transactions are valid and generate fraud proofs if they’re not valid. It is a requirement that block producers must publish all the data for their blocks, but we need a way to enforce this.<br /> <br />
     The most obvious way, as discussed, to solve the data availability problem is to simply require everyone (including light clients) to download all the data. Clearly, this doesn’t scale well. This is what most blockchains, such as Bitcoin and Ethereum, currently do. <br /> <br />
     Data availability proofs are a new technology that allows clients to check with very high probability that all the data for a block has been published, by only downloading a very small piece of that block. Data availability proofs utilize a core technology called erasure coding to increase the size of the data and use light clients to sample.
-
-    https://coinmarketcap.com/alexandria/article/what-is-data-availability
+    <br /> <br /> Reference: https://coinmarketcap.com/alexandria/article/what-is-data-availability
 
 </details>
 
 <details>
     <summary>Dispute Period</summary>
     Anytime the sequencer publishes a batch of state transitions there is a “dispute period” during which any party can publish a “fraud proof” which indicates that one of the state transitions was invalid. This is proven by replaying the transaction which caused the state transition onchain and comparing the resulting state root with the one that was published by the sequencer. If the state roots do not match, then the fraud proof is successful and the state transition is cancelled. If there were more state transitions after the invalid one, they also get cancelled. Transactions which are older than the dispute period cannot be disputed anymore and are considered final.
-
-    https://research.paradigm.xyz/rollups
+    <br /> <br /> Reference: https://research.paradigm.xyz/rollups
 
 </details>
 
@@ -69,8 +67,7 @@
 <details>
     <summary>Fraud Proof</summary>
     Fraud proofs indicate that a state transitions was invalid. This is proven by replaying the transaction which caused the state transition onchain and comparing the resulting state root with the one that was published by the sequencer. If the state roots do not match, then the fraud proof is successful and the state transition is cancelled.
-
-    https://research.paradigm.xyz/rollups
+    <br /> <br /> Reference: https://research.paradigm.xyz/rollups
 
 </details>
 
@@ -79,16 +76,14 @@
 <details>
     <summary>Honest majority assumption</summary>
     The assumption that a majority of blockchain participants (such as the validator set) are honest and follow the rules of the protocol. If a majority of participants are dishonest, attacks can be made that are within the rules of the protocol but cause negative effects.
-
-    In Tendermint Core when +1/3 of the voting power drops offline for whatever reason, the chain will stop making progress. In order to start making progress again, the network will need to wait for the +1/3 of voting power to come back online. If validators don’t come back online for whatever reason, they may need to be forked out via manual intervention from the community.
+    <br /> <br />In Tendermint Core when +1/3 of the voting power drops offline for whatever reason, the chain will stop making progress. In order to start making progress again, the network will need to wait for the +1/3 of voting power to come back online. If validators don’t come back online for whatever reason, they may need to be forked out via manual intervention from the community.
 
 </details>
 
 <details>
     <summary>Honest minority assumption</summary>
-    The assumption that only a minority of blockchain participants are honest and follow the rules of the protocol. Honest minority assumptions can come in multiple forms, such as a 1-of-N assumption where only a single honest participant is required to be honest for the blockchain to hold a guarantee. For example, optimistic rollup users and nodes require a 1-of-N assumption for safety as at least one honest full node is required to monitor the rollup and submit fraud proofs in the event of fraud.
-
-    https://celestia.org/glossary/
+    The assumption that only a minority of blockchain participants are honest and follow the rules of the protocol. Honest minority assumptions can come in multiple forms, such as a 1-of-N assumption where only a single honest participant is required to be honest for the blockchain to hold a guarantee. For example, optimistic rollup users and nodes require a 1-of-N assumption for safety as at least one honest full node is required to monitor the rollup and submit fraud proofs in the event of fraud. 
+    <br /> <br /> Reference: https://celestia.org/glossary/
 
 </details>
 
@@ -109,11 +104,8 @@
 <details>
     <summary>Light Client</summary>
     Light clients are a process that only verifies a particular state machine’s consensus, without executing the transactions. This allows it to be used in mobile wallets or other low-powered devices.
-
-    The light client connects to a set of full nodes and verifies the new headers can be trusted. Most of the communication is happening with just one node, called a primary, other nodes are called witnesses.
-
-
-    https://medium.com/tendermint/different-types-of-evidence-in-tendermint-5de4440fdd54
+    <br /> <br />The light client connects to a set of full nodes and verifies the new headers can be trusted. Most of the communication is happening with just one node, called a primary, other nodes are called witnesses.
+    <br /><br /> Reference: https://medium.com/tendermint/different-types-of-evidence-in-tendermint-5de4440fdd54
 
 </details>
 
@@ -163,20 +155,16 @@
 <details>
     <summary>Shared Security</summary>
     Shared security means that all RollApps that are connected to the dYmension settlement hub and benefit from the economic security provided by the dYmension validators. The notion of shared security is different from interchain protocols that build on an architecture of bridges. For bridge protocols, each chain is considered sovereign and must maintain its own validator set and economic security.
-
-    https://wiki.polkadot.network/docs/learn-security
+    <br /> <br /> Reference: https://wiki.polkadot.network/docs/learn-security
 
 </details>
 
 <details>
     <summary>Slashing</summary>
     A mechanism employed in PoS blockchains that is used to deter and punish malicious behavior. Slashing was originally conceived as a method to solve the nothing at stake problem, which presented the problem that validators weren’t restricted by the number of forks they could vote on – unlike in PoW where miners only have a limited amount of hash power to dedicate to forks.
-
-    To become a validator, a node is typically required to stake a minimum amount of the network’s native token. If the validator is caught double-voting or voting for any competing fork other than the canonical chain, the validator's stake is reduced (slashed). The degree by which validators are slashed varies by network and the severity of the malicious behavior.
-
-    Slashing can also occur for behavior that is deemed dishonest despite any lack of malicious intent. Dishonest behavior can include going offline or missing network duties. Slashing as a deterrent for dishonest behavior is important for blockchains that employ BFT-like consensus mechanisms, where ≥1/3 of voting power can halt the network if they are offline or refuse to vote.
-
-    https://celestia.org/glossary/slashing
+    <br /> <br />To become a validator, a node is typically required to stake a minimum amount of the network’s native token. If the validator is caught double-voting or voting for any competing fork other than the canonical chain, the validator's stake is reduced (slashed). The degree by which validators are slashed varies by network and the severity of the malicious behavior.
+    <br /><br />Slashing can also occur for behavior that is deemed dishonest despite any lack of malicious intent. Dishonest behavior can include going offline or missing network duties. Slashing as a deterrent for dishonest behavior is important for blockchains that employ BFT-like consensus mechanisms, where ≥1/3 of voting power can halt the network if they are offline or refuse to vote.
+    <br /><br />Reference: https://celestia.org/glossary/slashing
 
 </details>
 
