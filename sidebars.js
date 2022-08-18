@@ -169,11 +169,6 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Celestia",
-          id: "rollapps/interact",
-        },
-        {
-          type: "doc",
           label: "Faucet",
           id: "rollapps/interact",
         },
