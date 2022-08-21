@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Seamless",
+    title: "The Hub",
     Svg: require("@site/static/img/dymension_hub.svg").default,
     description: (
       <>
@@ -14,22 +14,22 @@ const FeatureList = [
     ),
   },
   {
-    title: "Easy",
+    title: "RollApp Development Kit (RDK)",
     Svg: require("@site/static/img/easy_deployment.svg").default,
     description: (
       <>
-        dYmension allows developers to deploy an application as easy as
-        deploying an AWS instance.
+        dYmension’s RDK simplifies the process of deploying a rollup on top of
+        dYmension’s settlement hub.
       </>
     ),
   },
   {
-    title: "Powerful",
+    title: "RollApps",
     Svg: require("@site/static/img/fast_applications.svg").default,
     description: (
       <>
-        dYmension enables web3 applications to have the speed and efficiencies
-        necessary for modern-day applications.
+        RollApps are the autonomous applications deployed on dYmension with the
+        speed and efficiencies necessary for modern-day applications.
       </>
     ),
   },
