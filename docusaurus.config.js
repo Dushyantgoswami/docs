@@ -81,58 +81,61 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Connect",
+            title: null,
             items: [
               {
-                label: "Discord",
-                href: "https://discord.gg/GbrsdPB6Ge",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/dYmensionXYZ",
-              },
-              {
-                label: "Telegram",
-                href: "https://t.me/dYmensionXYZ",
+                html: `
+                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="Git">
+                     <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />
+                  </a>
+                `,
               },
             ],
           },
           {
-            title: "Learn",
+            title: null,
             items: [
               {
-                label: "Website",
-                href: "https://dymension.xyz",
-              },
-              {
-                label: "Medium",
-                href: "https://medium.com/@dymensionxyz",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/dymensionxyz",
+                html: `
+                <p class="emails">
+                  If you have any questions, please contact us at </br>
+                  <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
+                    hello@dYmension.xyz
+                  </a>                  
+                </p>
+              `,
               },
             ],
           },
           {
-            title: "Build",
+            title: null,
             items: [
               {
-                label: "Portal",
-                to: "/docs/portal/overview",
-              },
-              {
-                label: "The Hub",
-                to: "/docs/hub/overview",
-              },
-              {
-                label: "RollApps",
-                to: "/docs/rollapps/overview",
+                html: `
+                  <p class="right">
+                    <nav class="social-links">
+                        <a class="social-link" href="https://github.com/dymensionxyz" target="_blank" rel="noopener noreferrer" title="Git">
+                         <img class="icon" src="/img/github.svg" alt="GitHub Icon" />
+                        </a>
+                        <a class="social-link" href="http://discord.gg/mvnh3YVa2W" target="_blank" rel="noopener noreferrer" title="Discord">
+                          <img class="icon" src="/img/discord.svg" alt="Discord Icon" />
+                        </a>
+                        <a class="social-link" href="https://twitter.com/dymensionXYZ/" target="_blank" rel="noopener noreferrer" title="Twitter">
+                          <img class="icon" src="/img/twitter.svg" alt="Twitter Icon" />
+                        </a>
+                        <a class="social-link" href="https://t.me/dYmensionXYZ" target="_blank" rel="noopener noreferrer" title="Telegram">
+                          <img class="icon" src="/img/telegram.svg" alt="Telegram Icon" />
+                        </a>
+                        <a class="social-link" href="https://medium.com/@dymensionxyz" target="_blank" rel="noopener noreferrer" title="Medium">
+                          <img class="icon" src="/img/medium.svg" alt="Medium Icon" />
+                        </a>                        
+                    </nav>
+                  </p>
+              `,
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} dYmension. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
