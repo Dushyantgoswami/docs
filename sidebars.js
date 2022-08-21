@@ -12,8 +12,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Blockchain",
-          id: "portal/blockchain",
+          label: "Modular Blockchain",
+          id: "portal/modular-blockchain",
         },
         {
           type: "doc",
