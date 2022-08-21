@@ -22,6 +22,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          label: "Automated Market Maker",
+          id: "portal/amm",
+        },
+        {
+          type: "doc",
           label: "Cosmos Network",
           id: "portal/cosmos",
         },
