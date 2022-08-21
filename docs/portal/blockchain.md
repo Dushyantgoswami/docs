@@ -10,7 +10,7 @@ dYmension follows a modular blockchain architecture design that decouples differ
 
 In dYmension each application is its own execution environment and the dYmension hub is the settlement layer. Various data availability providers will co-exist in a modular future; thus, dYmension is designed to be data availability agnostic, enabling RollApps to easily choose data availability providers.
 
-### **The functions that modular blockchains specialize in are:**
+**The functions that modular blockchains specialize in are:**
 
 - Execution layer: Processes transactions
 - Settlement layer: Dispute resolution, maintain state roots and bridge between environments
