@@ -8,8 +8,6 @@ The traditional web model is composed of entities paying for segregated pieces o
 
 dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability. ‘Monolithic’ blockchains handle transaction execution, state settlement, data processing and provide a consensus on the canonical history of the chain.
 
-In dYmension each application is its own execution environment and the dYmension hub is the settlement layer. Various data availability providers will co-exist in a modular future; thus, dYmension is designed to be data availability agnostic, enabling RollApps to easily choose data availability providers.
-
 **The functions that modular blockchains specialize in are:**
 
 - Execution layer: Processes transactions
