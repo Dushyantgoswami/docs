@@ -12,8 +12,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Blockchain",
-          id: "portal/blockchain",
+          label: "Modular Blockchain",
+          id: "portal/modular-blockchain",
         },
         {
           type: "doc",
@@ -166,11 +166,6 @@ const sidebars = {
           type: "doc",
           label: "CosmWasm",
           id: "rollapps/irc",
-        },
-        {
-          type: "doc",
-          label: "Celestia",
-          id: "rollapps/interact",
         },
         {
           type: "doc",

@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "dYmension Docs",
-  tagline: "Build RollApps on top of dYmension, the RollApp hub",
+  tagline: "Home of the RollApps",
   url: "https://www.dymension.xyz/",
   baseUrl: "/",
   onBrokenLinks: "throw",
