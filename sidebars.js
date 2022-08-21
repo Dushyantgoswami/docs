@@ -18,7 +18,12 @@ const sidebars = {
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "portal/rollups",
+          id: "portal/optimistic-rollups",
+        },
+        {
+          type: "doc",
+          label: "Automated Market Maker",
+          id: "portal/amm",
         },
         {
           type: "doc",
