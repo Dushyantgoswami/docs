@@ -15,8 +15,8 @@ dYmension follows a modular blockchain architecture design that decouples differ
 ### The dYmension Hub
 
 - [Overview](/docs/hub/overview.md) - _ Overview of The dYmension Hub _
-- [Node Runners](#) - _ Breakdown on how to run a node in the Hub _
-- [Interact with The Hub](#) - _ Breakdown on how to use the Hub _
+- [Node Runners](/docs/hub/node-runner.md) - _ Breakdown on how to run a node in the Hub _
+- [Interact with The Hub](/docs/hub/interact.md) - _ Breakdown on how to use the Hub _
 
 ### RollApps
 

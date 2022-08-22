@@ -73,18 +73,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Validate",
-          id: "hub/validate",
-        },
-        {
-          type: "doc",
-          label: "Full Node",
-          id: "hub/validate",
-        },
-        {
-          type: "doc",
-          label: "Light Client",
-          id: "hub/validate",
+          label: "interact",
+          id: "hub/interact",
         },
       ],
     },
@@ -95,27 +85,12 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Governance",
-          id: "hub/governance",
-        },
-        {
-          type: "doc",
           label: "Block Explorers",
           id: "hub/node-runner",
         },
         {
           type: "doc",
-          label: "Wallet",
-          id: "hub/interact",
-        },
-        {
-          type: "doc",
-          label: "Public endpoints",
-          id: "hub/interact",
-        },
-        {
-          type: "doc",
-          label: "Faucet",
+          label: "Interact",
           id: "hub/interact",
         },
       ],
