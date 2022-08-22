@@ -64,6 +64,18 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: "category",
+      label: "Development Guide",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          label: "Local Testnet",
+          id: "portal/local-testnet",
+        },
+      ],
+    },
   ],
   hub: [
     {

@@ -63,6 +63,11 @@ const config = {
             label: "RollApps",
           },
           {
+            to: "/portal/litepaper",
+            position: "left",
+            label: "Litepaper",
+          },
+          {
             href: "https://github.com/dymensionxyz/docs",
             label: "GitHub",
             position: "right",
