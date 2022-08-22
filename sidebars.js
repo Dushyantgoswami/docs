@@ -38,24 +38,19 @@ const sidebars = {
       collapsed: false,
       items: [
         {
-          type: "doc",
-          label: "Roadmap",
-          id: "portal/roadmap",
+          type: "link",
+          label: "dYmension Hub",
+          href: "/hub/overview",
+        },
+        {
+          type: "link",
+          label: "RollApps",
+          href: "/rollapps/overview",
         },
         {
           type: "doc",
           label: "DYM token",
           id: "portal/dym-token",
-        },
-        {
-          type: "link",
-          label: "dYmension Hub",
-          href: "/docs/hub/overview",
-        },
-        {
-          type: "link",
-          label: "RollApps",
-          href: "/docs/rollapps/overview",
         },
         {
           type: "link",

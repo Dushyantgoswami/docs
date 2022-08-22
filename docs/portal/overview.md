@@ -12,30 +12,15 @@ dYmension introduces robust infrastructure and tools for building application-sp
 
 dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability. In dYmension each application is its own execution environment and the dYmension hub is the settlement layer. Various data availability providers will co-exist in a modular future; thus, dYmension is designed to be data availability agnostic, enabling RollApps to easily choose their data availability provider.
 
-### Blockchain Concepts
-
-- [Modular Blockchain](modular-blockchain) - _ Disaggregating the blockchain _
-- [Optimistic Rollups](optimistic-rollups) - _ How blockchains scale _
-- [Cosmos Network](cosmos) - _ Overview of the Cosmos Network _
-- [Glossary](glossary) - _ Glossary of dYmension related concepts _
-
-### dYmension Protocol
-
-- [Roadmap](roadmap) - _ How dYmension will evolve _
-- [DYM token](dym-token) - _ Overview of the DYM token _
-- [dYmension Hub](../hub/overview.md) - _ Overview of The dYmension Hub _
-- [RollApps](../rollapps/overview.md) - _ Overview of dYmension applications _
-- [Resources](https://github.com/dymensionxyz/awesome) - _ A list of dYmension resources _
-
 ### The dYmension Hub
 
-- [Overview](#) - _ Overview of The dYmension Hub _
+- [Overview](/docs/hub/overview.md) - _ Overview of The dYmension Hub _
 - [Node Runners](#) - _ Breakdown on how to run a node in the Hub _
 - [Interact with The Hub](#) - _ Breakdown on how to use the Hub _
 
 ### RollApps
 
-- [Overview](#) - _ Overview of RollApps _
+- [Overview](/docs/rollapps/overview.md) - _ Overview of dYmension applications _
 - [RDK](#) - _ How dYmension makes deploying an application easy _
 - [Inter-RollApp Communication](#) - _ How to transfer across RollApps _
 - [Deploying an app](#) - _ How to deploy an application to dYmension _
