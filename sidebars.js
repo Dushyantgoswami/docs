@@ -44,11 +44,6 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "RDK",
-          id: "rdk",
-        },
-        {
-          type: "doc",
           label: "DYM token",
           id: "dym-token",
         },
