@@ -25,10 +25,10 @@ dYmension follows a modular blockchain architecture design that decouples differ
 
 ### dYmension Protocol
 
-- [Overview](dym-token.md) - _ Overview of The dYmension Hub _
-- [RollApps](dym-token.md) - _ Overview of The dYmension Hub _
-- [The dYmension Hub](dym-token.md) - _ Overview of The dYmension Hub _
-- [RollApps](/) - _ How to run a node in the Hub _
+- [dYmension Hub](dymension-hub.md) - _ Overview of The dYmension Hub _
+- [RollApps](rollapps.md) - _ Overview of The dYmension Hub _
+- [DYM Token](dym-token.md) - _ Overview of The dYmension Hub _
+- [Resources](https://github.com/dymensionxyz/awesome) - _ List of resource available about dYmension _
 
 ### Development Guide
 
