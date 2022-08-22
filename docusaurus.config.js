@@ -53,7 +53,7 @@ const config = {
             label: "Portal",
           },
           {
-            to: "dymension-overview",
+            to: "dymension-hub",
             position: "left",
             label: "Overview",
           },

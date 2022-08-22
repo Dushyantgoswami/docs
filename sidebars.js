@@ -34,17 +34,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Overview",
-          id: "dymension-overview",
-        },
-        {
-          type: "doc",
-          label: "DYM token",
-          id: "dym-token",
-        },
-        {
-          type: "doc",
-          label: "The Hub",
+          label: "dYmension Hub",
           id: "dymension-hub",
         },
         {
@@ -56,6 +46,11 @@ const sidebars = {
           type: "doc",
           label: "RDK",
           id: "rdk",
+        },
+        {
+          type: "doc",
+          label: "DYM token",
+          id: "dym-token",
         },
         {
           type: "link",
