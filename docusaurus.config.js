@@ -85,7 +85,7 @@ const config = {
             items: [
               {
                 html: `
-                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="Git">
+                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
                      <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />
                   </a>
                 `,
@@ -97,8 +97,7 @@ const config = {
             items: [
               {
                 html: `
-                <p class="emails">
-                  If you have any questions, please contact us at </br>
+                <p class="emails">                  
                   <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
                     hello@dYmension.xyz
                   </a>                  
