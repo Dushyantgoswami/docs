@@ -39,7 +39,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Lite Paper",
+          label: "Litepaper",
           id: "portal/litepaper",
         },
         {
