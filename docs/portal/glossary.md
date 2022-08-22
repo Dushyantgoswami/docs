@@ -1,4 +1,7 @@
-# Glossary
+---
+title: "Glossary"
+slug: "glossary"
+---
 
 ### A
 

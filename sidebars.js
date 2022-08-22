@@ -73,7 +73,17 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "interact",
+          label: "Validators",
+          id: "hub/interact",
+        },
+        {
+          type: "doc",
+          label: "Full Node",
+          id: "hub/interact",
+        },
+        {
+          type: "doc",
+          label: "Light Client",
           id: "hub/interact",
         },
       ],
@@ -85,13 +95,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Block Explorers",
+          label: "Local dYmension",
           id: "hub/node-runner",
-        },
-        {
-          type: "doc",
-          label: "Interact",
-          id: "hub/interact",
         },
       ],
     },
