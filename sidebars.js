@@ -3,7 +3,7 @@ const sidebars = {
     {
       type: "doc",
       label: "Development Portal",
-      id: "overview",
+      id: "portal",
     },
     {
       type: "category",
@@ -34,8 +34,28 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "Overview",
+          id: "dymension-overview",
+        },
+        {
+          type: "doc",
           label: "DYM token",
           id: "dym-token",
+        },
+        {
+          type: "doc",
+          label: "The Hub",
+          id: "dymension-hub",
+        },
+        {
+          type: "doc",
+          label: "RollApps",
+          id: "rollapps",
+        },
+        {
+          type: "doc",
+          label: "RDK",
+          id: "rdk",
         },
         {
           type: "link",

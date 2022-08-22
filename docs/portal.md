@@ -1,6 +1,6 @@
 ---
 title: "Development Portal"
-slug: "overview"
+slug: "portal"
 ---
 
 # Development Portal

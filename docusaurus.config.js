@@ -48,12 +48,12 @@ const config = {
         },
         items: [
           {
-            to: "overview",
+            to: "portal",
             position: "left",
             label: "Portal",
           },
           {
-            to: "dym-token",
+            to: "dymension-overview",
             position: "left",
             label: "Overview",
           },
