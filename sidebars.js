@@ -48,19 +48,14 @@ const sidebars = {
           id: "portal/dym-token",
         },
         {
-          type: "doc",
-          label: "Tokenomics",
-          id: "portal/tokenomics",
-        },
-        {
-          type: "doc",
+          type: "link",
           label: "dYmension Hub",
-          id: "portal/dymension-hub",
+          href: "/docs/hub/overview",
         },
         {
-          type: "doc",
+          type: "link",
           label: "RollApps",
-          id: "portal/rollapps",
+          href: "/docs/rollapps/overview",
         },
         {
           type: "doc",
@@ -68,9 +63,9 @@ const sidebars = {
           id: "portal/glossary",
         },
         {
-          type: "doc",
+          type: "link",
           label: "Resources",
-          id: "portal/resources",
+          href: "https://github.com/dymensionxyz/awesome",
         },
       ],
     },
