@@ -1,61 +1,41 @@
 const sidebars = {
-  portal: [
+  sidebar: [
     {
       type: "doc",
       label: "Development Portal",
-      id: "portal/overview",
+      id: "overview",
     },
     {
       type: "category",
       label: "Blockchain Concepts",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: "doc",
           label: "Modular Blockchain",
-          id: "portal/modular-blockchain",
+          id: "modular-blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "portal/optimistic-rollups",
+          id: "optimistic-rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "portal/cosmos",
-        },
-        {
-          type: "doc",
-          label: "Glossary",
-          id: "portal/glossary",
+          id: "cosmos",
         },
       ],
     },
     {
       type: "category",
       label: "dYmension Protocol",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: "doc",
-          label: "Litepaper",
-          id: "portal/litepaper",
-        },
-        {
-          type: "doc",
           label: "DYM token",
-          id: "portal/dym-token",
-        },
-        {
-          type: "link",
-          label: "dYmension Hub",
-          href: "/hub/overview",
-        },
-        {
-          type: "link",
-          label: "RollApps",
-          href: "/rollapps/overview",
+          id: "dym-token",
         },
         {
           type: "link",
@@ -67,99 +47,24 @@ const sidebars = {
     {
       type: "category",
       label: "Development Guide",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: "doc",
           label: "Local Testnet",
-          id: "portal/local-testnet",
-        },
-      ],
-    },
-  ],
-  hub: [
-    {
-      type: "doc",
-      label: "Overview",
-      id: "hub/overview",
-    },
-    {
-      type: "category",
-      label: "Node Runners",
-      collapsed: false,
-      items: [
-        {
-          type: "doc",
-          label: "Validators",
-          id: "hub/interact",
-        },
-        {
-          type: "doc",
-          label: "Full Node",
-          id: "hub/interact",
-        },
-        {
-          type: "doc",
-          label: "Light Client",
-          id: "hub/interact",
+          id: "local-testnet",
         },
       ],
     },
     {
-      type: "category",
-      label: "Participate",
-      collapsed: false,
-      items: [
-        {
-          type: "doc",
-          label: "Local dYmension",
-          id: "hub/node-runner",
-        },
-      ],
-    },
-  ],
-  rollapps: [
-    {
       type: "doc",
-      label: "Overview",
-      id: "rollapps/overview",
+      label: "Litepaper",
+      id: "litepaper",
     },
     {
       type: "doc",
-      label: "RollApp Development Kit",
-      id: "rollapps/rdk",
-    },
-    {
-      type: "doc",
-      label: "Inter-RollApp Communication",
-      id: "rollapps/irc",
-    },
-    {
-      type: "category",
-      label: "Develop on dYmension",
-      collapsed: false,
-      items: [
-        {
-          type: "doc",
-          label: "Demo app",
-          id: "rollapps/app",
-        },
-        {
-          type: "doc",
-          label: "CosmWasm",
-          id: "rollapps/irc",
-        },
-        {
-          type: "doc",
-          label: "Faucet",
-          id: "rollapps/interact",
-        },
-        {
-          type: "doc",
-          label: "Block explorers",
-          id: "rollapps/interact",
-        },
-      ],
+      label: "Glossary",
+      id: "glossary",
     },
   ],
 };

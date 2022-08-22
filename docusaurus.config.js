@@ -48,22 +48,22 @@ const config = {
         },
         items: [
           {
-            to: "/portal/overview",
+            to: "overview",
             position: "left",
             label: "Portal",
           },
           {
-            to: "/hub/overview",
+            to: "dym-token",
             position: "left",
-            label: "The Hub",
+            label: "Overview",
           },
           {
-            to: "/rollapps/overview",
+            to: "local-testnet",
             position: "left",
-            label: "RollApps",
+            label: "Guide",
           },
           {
-            to: "/portal/litepaper",
+            to: "litepaper",
             position: "left",
             label: "Litepaper",
           },
