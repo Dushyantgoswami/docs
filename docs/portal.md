@@ -17,9 +17,19 @@ dYmension introduces robust infrastructure and tools for building application-sp
 
 dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability. In dYmension each application is its own execution environment and the dYmension hub is the settlement layer. Various data availability providers will co-exist in a modular future; thus, dYmension is designed to be data availability agnostic, enabling RollApps to easily choose their data availability provider.
 
-### Table of Contents
+### Foundational Concepts
+
+- [Modular Blockchain](modular-blockchain.md) - _ What is modular blockchain? _
+- [Optimistic Rollups](optimistic-rollups.md) - _ What are Optimisitc Rollups? _
+- [Cosmos Network](cosmos.md) - _ What is the Cosmos Network? _
+
+### dYmension Protocol
 
 - [Overview](dym-token.md) - _ Overview of The dYmension Hub _
 - [RollApps](dym-token.md) - _ Overview of The dYmension Hub _
 - [The dYmension Hub](dym-token.md) - _ Overview of The dYmension Hub _
 - [RollApps](/) - _ How to run a node in the Hub _
+
+### Development Guide
+
+- [Local Testnet](local-testnet.md) - _ How to run a local testnet _

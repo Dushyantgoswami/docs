@@ -7,7 +7,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Blockchain Concepts",
+      label: "Foundational Concepts",
       collapsed: true,
       items: [
         {
