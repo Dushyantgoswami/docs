@@ -6,32 +6,37 @@ This is an open-source community effort, so feel free to suggest new topics by c
 
 ## A Hitchhiker's Guide to dYmension
 
+### Overview
+
+dYmension introduces robust infrastructure and tools for building application-specific rollups on top of a specialized settlement layer. dYmension is akin to a hub and factory for such applications. dYmension applications scale with the segregation of resource consumption while plugging into an inter-connected, decentralized and trust-minimized environment. dYmension is infrastructure that glues traditional and reliable web2-like instances with the ownership and connectivity advantages of the decentralized internet.
+
+dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability. In dYmension each application is its own execution environment and the dYmension hub is the settlement layer. Various data availability providers will co-exist in a modular future; thus, dYmension is designed to be data availability agnostic, enabling RollApps to easily choose their data availability provider.
+
 ### Blockchain Concepts
 
-- [Blockchain](#) - * What is blockchain today*
-- [Optimistic Rollups](#) - * How blockchains scale *
-- [Cosmos Network](#) - * dYmension and the Cosmos Network *
+- [Modular Blockchain](#) - _ Disaggregating the blockchain _
+- [Optimistic Rollups](#) - _ How blockchains scale _
+- [Cosmos Network](#) - _ Overview of the Cosmos Network _
 
 ### dYmension Protocol
 
-- [Overview](#) - * Overview of the dYmension protocol *
-- [Roadmap](#) - * How dYmension will evolve * 
-- [DYM token](#) - * Overview of the DYM token *
-- [dYmension Hub](#) - * Overview of The dYmension Hub *
-- [RollApps](#) - * Overview of dYmension applications *
-- [Glossary](#) - * Glossary of dYmension concepts *
-- [Resources](https://github.com/dymensionxyz/awesome) - * A list of dYmension resources *
+- [Roadmap](#) - _ How dYmension will evolve _
+- [DYM token](#) - _ Overview of the DYM token _
+- [dYmension Hub](#) - _ Overview of The dYmension Hub _
+- [RollApps](#) - _ Overview of dYmension applications _
+- [Glossary](#) - _ Glossary of dYmension concepts _
+- [Resources](https://github.com/dymensionxyz/awesome) - _ A list of dYmension resources _
 
 ### The dYmension Hub
 
-- [Overview](#) - * Overview of The dYmension Hub *
-- [Node Runners](#) - * Breakdown on how to run a node in the Hub *
-- [Interact with The Hub](#) - * Breakdown on how to use the Hub *
+- [Overview](#) - _ Overview of The dYmension Hub _
+- [Node Runners](#) - _ Breakdown on how to run a node in the Hub _
+- [Interact with The Hub](#) - _ Breakdown on how to use the Hub _
 
 ### RollApps
 
-- [Overview](#) - * Overview of RollApps *
-- [RDK](#) - * How dYmension makes deploying an application easy *
-- [Inter-RollApp Communication](#) - * How to transfer across RollApps *
-- [Deploying an app](#) - * How to deploy an application to dYmension *
-- [Inteacting with RollApps](#) - * Breakdown on how to interact with RollApps *
+- [Overview](#) - _ Overview of RollApps _
+- [RDK](#) - _ How dYmension makes deploying an application easy _
+- [Inter-RollApp Communication](#) - _ How to transfer across RollApps _
+- [Deploying an app](#) - _ How to deploy an application to dYmension _
+- [Inteacting with RollApps](#) - _ Breakdown on how to interact with RollApps _

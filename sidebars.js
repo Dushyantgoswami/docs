@@ -34,11 +34,6 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Overview",
-          id: "portal/dymension-overview",
-        },
-        {
-          type: "doc",
           label: "Roadmap",
           id: "portal/roadmap",
         },
