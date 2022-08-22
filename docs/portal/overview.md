@@ -14,17 +14,17 @@ dYmension follows a modular blockchain architecture design that decouples differ
 
 ### Blockchain Concepts
 
-- [Modular Blockchain](#) - _ Disaggregating the blockchain _
-- [Optimistic Rollups](#) - _ How blockchains scale _
-- [Cosmos Network](#) - _ Overview of the Cosmos Network _
+- [Modular Blockchain](modular-blockchain) - _ Disaggregating the blockchain _
+- [Optimistic Rollups](optimistic-rollups) - _ How blockchains scale _
+- [Cosmos Network](cosmos) - _ Overview of the Cosmos Network _
+- [Glossary](glossary) - _ Glossary of dYmension related concepts _
 
 ### dYmension Protocol
 
-- [Roadmap](#) - _ How dYmension will evolve _
-- [DYM token](#) - _ Overview of the DYM token _
-- [dYmension Hub](#) - _ Overview of The dYmension Hub _
-- [RollApps](#) - _ Overview of dYmension applications _
-- [Glossary](#) - _ Glossary of dYmension concepts _
+- [Roadmap](roadmap) - _ How dYmension will evolve _
+- [DYM token](dym-token) - _ Overview of the DYM token _
+- [dYmension Hub](../hub/overview.md) - _ Overview of The dYmension Hub _
+- [RollApps](../rollapps/overview.md) - _ Overview of dYmension applications _
 - [Resources](https://github.com/dymensionxyz/awesome) - _ A list of dYmension resources _
 
 ### The dYmension Hub

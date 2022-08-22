@@ -25,6 +25,11 @@ const sidebars = {
           label: "Cosmos Network",
           id: "portal/cosmos",
         },
+        {
+          type: "doc",
+          label: "Glossary",
+          id: "portal/glossary",
+        },
       ],
     },
     {
@@ -51,11 +56,6 @@ const sidebars = {
           type: "link",
           label: "RollApps",
           href: "/docs/rollapps/overview",
-        },
-        {
-          type: "doc",
-          label: "Glossary",
-          id: "portal/glossary",
         },
         {
           type: "link",
