@@ -39,6 +39,11 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "Lite Paper",
+          id: "portal/litepaper",
+        },
+        {
+          type: "doc",
           label: "DYM token",
           id: "portal/dym-token",
         },

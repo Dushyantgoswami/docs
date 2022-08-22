@@ -1,4 +1,7 @@
-# DYM token
+---
+title: "DYM Token"
+slug: "dym-token"
+---
 
 ** Purpose of the DYM Token **
 

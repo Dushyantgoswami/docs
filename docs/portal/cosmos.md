@@ -1,4 +1,7 @@
-# Cosmos Network
+---
+title: "Cosmos Network"
+slug: "cosmos-network"
+---
 
 Cosmos is a network of networks. The Cosmos SDK is an open-source framework for building the application layer of Proof-of-Stake blockchains. Blockchains built with the Cosmos SDK are generally referred to as application-specific blockchains. Cosmos blockchains utilize the Tendermint Core for networking and consensus. Additionally, Cosmos introduced the inter-blockchain communication (IBC) protocol for trust-minimized bridging between blockchains.
 
