@@ -8,7 +8,7 @@ const sidebars = {
     {
       type: "category",
       label: "Foundational Concepts",
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -30,7 +30,7 @@ const sidebars = {
     {
       type: "category",
       label: "dYmension Protocol",
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -57,7 +57,7 @@ const sidebars = {
     {
       type: "category",
       label: "Development Guide",
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           type: "doc",
