@@ -8,20 +8,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "dYmension Docs",
   tagline: "Home of the RollApps",
-  url: "https://www.dymension.xyz/",
+  url: "https://docs.dymension.xyz/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "dYmension", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  organizationName: "dYmensionXYZ",
+  projectName: "docs",
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -34,9 +27,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/dymensionxyz/docs",
+          editUrl: "https://github.com/dymensionxyz/docs/tree/main",
+          routeBasePath: "/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -56,19 +48,24 @@ const config = {
         },
         items: [
           {
-            to: "/docs/portal/overview",
+            to: "portal",
             position: "left",
             label: "Portal",
           },
           {
-            to: "/docs/hub/overview",
+            to: "dymension-hub",
             position: "left",
-            label: "The Hub",
+            label: "Overview",
           },
           {
-            to: "/docs/rollapps/overview",
+            to: "local-testnet",
             position: "left",
-            label: "RollApps",
+            label: "Guide",
+          },
+          {
+            to: "litepaper",
+            position: "left",
+            label: "Litepaper",
           },
           {
             href: "https://github.com/dymensionxyz/docs",
@@ -85,7 +82,7 @@ const config = {
             items: [
               {
                 html: `
-                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="Git">
+                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
                      <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />
                   </a>
                 `,
@@ -97,8 +94,7 @@ const config = {
             items: [
               {
                 html: `
-                <p class="emails">
-                  If you have any questions, please contact us at </br>
+                <p class="emails">                  
                   <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
                     hello@dYmension.xyz
                   </a>                  

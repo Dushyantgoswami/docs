@@ -1,4 +1,7 @@
-# Modular Blockchain
+---
+title: "Modular Blockchain"
+slug: "modular-blockchain"
+---
 
 We have witnessed significant evolutions of blockchain technology over its short lifespan. Bitcoin was the first pioneer, enabling users to create a pseudo-anonymous account for transferring balances on a distributed ledger. Ethereum further revolutionized the space by allowing turing-complete applications to be deployed on the blockchain. Cosmos was the first to focus on creating a network of networks. Allowing them to interoperate with each other while retaining their own characteristics and security properties.
 

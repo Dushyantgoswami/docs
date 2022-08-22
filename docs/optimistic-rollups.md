@@ -1,4 +1,7 @@
-# Optimistic Rollups
+---
+title: "Optimistic Rollups"
+slug: "optimistic-rollups"
+---
 
 Rollups work in an execution environment which is considered “off-chain” because, well, everything is processed not on the blockchain. Instead of processing all transactions on the blockchain, a Sequencer (a computer) computes transactions and batches them in groups. In our architecture, dYmension compatible rollups write the transaction data (in a compressed form) to a data availability layer, while publishing the new state on the settlement layer. This reduces the efforts of each validating node participating in the network. Now each computer doesn’t need to process every transaction. As such, by moving the computational efforts off-chain, nodes with less computational power can keep up with high amounts of information re-processing and participate in the consensus of the network.
 

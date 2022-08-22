@@ -1,29 +1,29 @@
 const sidebars = {
-  portal: [
+  sidebar: [
     {
       type: "doc",
       label: "Development Portal",
-      id: "portal/overview",
+      id: "portal",
     },
     {
       type: "category",
-      label: "Blockchain Concepts",
+      label: "Foundational Concepts",
       collapsed: false,
       items: [
         {
           type: "doc",
           label: "Modular Blockchain",
-          id: "portal/modular-blockchain",
+          id: "modular-blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "portal/optimistic-rollups",
+          id: "optimistic-rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "portal/cosmos",
+          id: "cosmos",
         },
       ],
     },
@@ -34,150 +34,47 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Overview",
-          id: "portal/dymension-overview",
-        },
-        {
-          type: "doc",
-          label: "Roadmap",
-          id: "portal/roadmap",
-        },
-        {
-          type: "doc",
-          label: "DYM token",
-          id: "portal/dym-token",
-        },
-        {
-          type: "doc",
-          label: "Tokenomics",
-          id: "portal/tokenomics",
-        },
-        {
-          type: "doc",
           label: "dYmension Hub",
-          id: "portal/dymension-hub",
+          id: "dymension-hub",
         },
         {
           type: "doc",
           label: "RollApps",
-          id: "portal/rollapps",
+          id: "rollapps",
         },
         {
           type: "doc",
-          label: "Glossary",
-          id: "portal/glossary",
+          label: "DYM token",
+          id: "dym-token",
         },
         {
-          type: "doc",
+          type: "link",
           label: "Resources",
-          id: "portal/resources",
-        },
-      ],
-    },
-  ],
-  hub: [
-    {
-      type: "doc",
-      label: "Overview",
-      id: "hub/overview",
-    },
-    {
-      type: "category",
-      label: "Node Runners",
-      collapsed: false,
-      items: [
-        {
-          type: "doc",
-          label: "Validate",
-          id: "hub/validate",
-        },
-        {
-          type: "doc",
-          label: "Full Node",
-          id: "hub/validate",
-        },
-        {
-          type: "doc",
-          label: "Light Client",
-          id: "hub/validate",
+          href: "https://github.com/dymensionxyz/awesome",
         },
       ],
     },
     {
       type: "category",
-      label: "Participate",
+      label: "Development Guide",
       collapsed: false,
       items: [
         {
           type: "doc",
-          label: "Governance",
-          id: "hub/governance",
-        },
-        {
-          type: "doc",
-          label: "Block Explorers",
-          id: "hub/node-runner",
-        },
-        {
-          type: "doc",
-          label: "Wallet",
-          id: "hub/interact",
-        },
-        {
-          type: "doc",
-          label: "Public endpoints",
-          id: "hub/interact",
-        },
-        {
-          type: "doc",
-          label: "Faucet",
-          id: "hub/interact",
+          label: "Local Testnet",
+          id: "local-testnet",
         },
       ],
     },
-  ],
-  rollapps: [
     {
       type: "doc",
-      label: "Overview",
-      id: "rollapps/overview",
+      label: "Litepaper",
+      id: "litepaper",
     },
     {
       type: "doc",
-      label: "RollApp Development Kit",
-      id: "rollapps/rdk",
-    },
-    {
-      type: "doc",
-      label: "Inter-RollApp Communication",
-      id: "rollapps/irc",
-    },
-    {
-      type: "category",
-      label: "Develop on dYmension",
-      collapsed: false,
-      items: [
-        {
-          type: "doc",
-          label: "Demo app",
-          id: "rollapps/app",
-        },
-        {
-          type: "doc",
-          label: "CosmWasm",
-          id: "rollapps/irc",
-        },
-        {
-          type: "doc",
-          label: "Faucet",
-          id: "rollapps/interact",
-        },
-        {
-          type: "doc",
-          label: "Block explorers",
-          id: "rollapps/interact",
-        },
-      ],
+      label: "Glossary",
+      id: "glossary",
     },
   ],
 };
