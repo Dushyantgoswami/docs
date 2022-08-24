@@ -25,11 +25,6 @@ slug: "glossary"
 ### C
 
 <details>
-    <summary>Chain in Chain</summary>
-    dYmension introduces a novel dispute mechanism which implements a simulated chain environment embedded within the settlement chain, referred to as ‘Chain in Chain’ (CIC). CIC emulates the exact context in which a transaction is executed, resulting in a deterministic output. Thus, CIC is capable of resolving disputes in various execution environments, expanding the capabilities and flexibility of the rollup execution spectrum.
-</details>
-
-<details>
     <summary>Cosmos SDK</summary>
     The Cosmos SDK is an open-source framework for building public Proof-of-Stake (PoS) blockchains. Blockchains built with the Cosmos SDK are generally referred to as application-specific blockchains.
 </details>
@@ -124,6 +119,13 @@ slug: "glossary"
 <details>
     <summary>Optimistic Rollups</summary>
      Optimistic rollups assume an optimistic view towards the honesty of the sequencers, hence the term optimistic rollup. Meaning that it’s initially assumed the sequencer who is processing transactions is acting honestly. However, in order to produce an environment where users of a network do not have to simply trust sequencers, a dispute period is installed. This period enables others to verify that the sequencer is reporting correct state updates. If anyone discovers a batch that is not correct, they can publish a “fraud proof” demonstrating the correct state transition. If indeed the sequencer provided incorrect information the state of the blockchain is reverted and the sequencer is “slashed” (they lose tokens they’ve bonded to participate in the network). 
+</details>
+
+### P
+
+<details>
+    <summary>Proof-generating Virtual Machine (PVM)</summary>
+    dYmension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement chain. PVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, PVM is capable of resolving disputes in various execution environments.
 </details>
 
 ### R
