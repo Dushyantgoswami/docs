@@ -61,8 +61,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Local Testnet",
-          id: "local-testnet",
+          label: "Node Runners",
+          id: "node-runners",
         },
       ],
     },

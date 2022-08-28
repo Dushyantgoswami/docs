@@ -32,4 +32,4 @@ dYmension follows a modular blockchain architecture design that decouples differ
 
 ### Development Guide
 
-- [Local Testnet](local-testnet.md) - _ How to run a local testnet _
+- [Local Testnet](node-runners.md) - _ How to run a local testnet _

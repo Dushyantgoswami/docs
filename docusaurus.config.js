@@ -58,7 +58,7 @@ const config = {
             label: "Overview",
           },
           {
-            to: "local-testnet",
+            to: "node-runners",
             position: "left",
             label: "Guide",
           },

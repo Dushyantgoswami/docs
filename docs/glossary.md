@@ -7,7 +7,7 @@ slug: "glossary"
 
 <details>
     <summary>Autonomous rollups</summary>
-    A type of rollup that establishes its own validity rules while delegating responsibilities for determining the canonical state to an underlying settlement layer.  
+    A type of rollup that establishes its own logic while delegating responsibilities for consensus to an underlying settlement layer.  
 </details>
 
 ### B
