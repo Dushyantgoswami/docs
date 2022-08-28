@@ -121,13 +121,6 @@ slug: "glossary"
      Optimistic rollups assume an optimistic view towards the honesty of the sequencers, hence the term optimistic rollup. Meaning that it’s initially assumed the sequencer who is processing transactions is acting honestly. However, in order to produce an environment where users of a network do not have to simply trust sequencers, a dispute period is installed. This period enables others to verify that the sequencer is reporting correct state updates. If anyone discovers a batch that is not correct, they can publish a “fraud proof” demonstrating the correct state transition. If indeed the sequencer provided incorrect information the state of the blockchain is reverted and the sequencer is “slashed” (they lose tokens they’ve bonded to participate in the network). 
 </details>
 
-### P
-
-<details>
-    <summary>Proof-generating Virtual Machine (PVM)</summary>
-    dYmension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement chain. PVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, PVM is capable of resolving disputes in various execution environments.
-</details>
-
 ### R
 
 <details>
@@ -138,6 +131,11 @@ slug: "glossary"
 <details>
     <summary>RollApp Development Kit (RDK)</summary>
     dYmension’s rollup factory takes its inspiration from the Cosmos ecosystem which introduced the successful Cosmos SDK. A RollApp instance on dYmension is an application-specific rollup (which we refer to as RollApp), built by using the dYmension RollApp Development Kit, termed RDK. The development kit is a pre-packaged set of generic modules which enable compatible Cosmos SDK functionality, such as creating accounts and token management. The RDK simplifies the process of deploying rollups on top of dYmension’s settlement layer.
+</details>
+
+<details>
+    <summary>RollApp Virtual Machine (RVM)</summary>
+    dYmension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement chain. RVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
 </details>
 
 ### S
