@@ -40,6 +40,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+      },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: false,
+          hideable: true,
+        },
+      },
       navbar: {
         title: "dYmension Docs",
         logo: {
