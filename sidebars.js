@@ -1,14 +1,33 @@
 const sidebars = {
   sidebar: [
+    "index",
+    "guides/getting-started",
     {
-      type: "doc",
-      label: "Documentation Portal",
-      id: "index",
+      type: "category",
+      label: "Developer Tutorials",
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          label: "Your First Transaction",
+          id: "tutorials/first-transaction",
+        },
+        {
+          type: "doc",
+          label: "Your First Dapp",
+          id: "tutorials/first-dapp",
+        },
+        {
+          type: "doc",
+          label: "Your First RDK Module",
+          id: "tutorials/first-rdk-module",
+        },
+      ],
     },
     {
       type: "category",
       label: "Concepts",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: "doc",
@@ -29,13 +48,23 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Development Guide",
-      collapsed: false,
+      label: "Guides",
       items: [
         {
           type: "doc",
-          label: "Node Runners",
+          label: "Life of a transaction",
           id: "guides/node-runners",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Nodes",
+      items: [
+        {
+          type: "doc",
+          label: "Local Testnet",
+          id: "nodes/local-testnet/index",
         },
       ],
     },
@@ -44,15 +73,15 @@ const sidebars = {
       label: "Litepaper",
       id: "dymension-litepaper/index",
     },
-    // {
-    //   type: "link",
-    //   href: "https://github.com/dymensionxyz/awesome",
-    //   label: "Resources",
-    // },
     {
       type: "doc",
       label: "Glossary",
       id: "reference/glossary",
+    },
+    {
+      type: "link",
+      href: "https://github.com/dymensionxyz/awesome",
+      label: "Resources",
     },
   ],
 };

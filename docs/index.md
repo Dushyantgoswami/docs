@@ -1,9 +1,12 @@
 ---
-title: "Development Portal"
-slug: "index"
+title: "Developer Documentation"
+slug: "/"
+hidden: false
+sidebar_position: 0
+hide_table_of_contents: true
 ---
 
-# Documentation Portal
+# dYmension Documentation Portal
 
 This documentation is designed to help you build and interact with dYmension. It cover dYmension as a concept, explains the dYmension tech stack and documents procedures for deploying an application to dYmension.
 

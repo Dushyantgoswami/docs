@@ -46,7 +46,7 @@ const config = {
       },
       docs: {
         sidebar: {
-          autoCollapseCategories: false,
+          autoCollapseCategories: true,
           hideable: true,
         },
       },
@@ -65,11 +65,6 @@ const config = {
             to: "dymension-litepaper/dymension-litepaper-index",
             position: "left",
             label: "dYmension Litepaper",
-          },
-          {
-            href: "https://github.com/dymensionxyz/awesome",
-            position: "left",
-            label: "Resources",
           },
           {
             href: "https://github.com/dymensionxyz/docs",

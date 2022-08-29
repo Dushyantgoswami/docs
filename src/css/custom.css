@@ -30,7 +30,7 @@
 }
 
 footer.footer {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.175);
   color: white;
   font-size: 18px;
   font-weight: 300;
@@ -41,6 +41,7 @@ footer.footer {
 footer.footer a {
   color: white;
 }
+
 footer.footer .emails {
   text-align: center;
 }
