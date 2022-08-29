@@ -58,34 +58,38 @@ const config = {
         items: [
           {
             type: "dropdown",
-            label: "Applications",
+            label: "Developers",
             position: "left",
             items: [
               {
                 type: "doc",
-                label: "Your First Transaction",
-                docId: "tutorials/first-transaction",
+                label: "Deploy a RollApp",
+                docId: "tutorials/deploy-rollapp",
               },
               {
                 type: "doc",
-                label: "Your First DApp",
-                docId: "tutorials/first-dapp",
+                label: "Deploy a Sequencer",
+                docId: "tutorials/deploy-sequencer",
               },
-
               {
                 type: "doc",
-                label: "Your First RDK Module",
-                docId: "tutorials/first-rdk-module",
+                label: "Deploy a dApp",
+                docId: "tutorials/deploy-dapp",
+              },
+              {
+                type: "doc",
+                label: "Deploy a RDK Module",
+                docId: "tutorials/deploy-rdk-module",
               },
             ],
           },
           {
             type: "dropdown",
-            label: "Nodes",
+            label: "Node Runners",
             position: "left",
             items: [
               {
-                label: "Validators",
+                label: "Validator Nodes",
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },

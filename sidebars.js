@@ -9,18 +9,23 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Your First Transaction",
-          id: "tutorials/first-transaction",
+          label: "Deploy a RollApp",
+          id: "tutorials/deploy-rollapp",
         },
         {
           type: "doc",
-          label: "Your First Dapp",
-          id: "tutorials/first-dapp",
+          label: "Deploy a Sequencer",
+          id: "tutorials/deploy-sequencer",
         },
         {
           type: "doc",
-          label: "Your First RDK Module",
-          id: "tutorials/first-rdk-module",
+          label: "Deploy a dApp",
+          id: "tutorials/deploy-dapp",
+        },
+        {
+          type: "doc",
+          label: "Deploy a RDK Module",
+          id: "tutorials/deploy-rdk-module",
         },
       ],
     },
