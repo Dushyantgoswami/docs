@@ -47,7 +47,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
     </div>
   <div class="col">
     <div class="card card-body h-100 d-flex flex-column" >
-      <a href="guides/aptos-guides" class="card-title card-link stretched-link"> 
+      <a href="tutorials/deploy-rollapp" class="card-title card-link stretched-link"> 
         <h2>Developers</h2>
       </a>
       <p class="card-text">Learn how to develop a RollApp or Smart Contract on dYmension.</p>

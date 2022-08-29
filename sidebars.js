@@ -14,18 +14,8 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Deploy a Sequencer",
-          id: "tutorials/deploy-sequencer",
-        },
-        {
-          type: "doc",
-          label: "Deploy a dApp",
+          label: "Develop a dApp",
           id: "tutorials/deploy-dapp",
-        },
-        {
-          type: "doc",
-          label: "Deploy a RDK Module",
-          id: "tutorials/deploy-rdk-module",
         },
       ],
     },

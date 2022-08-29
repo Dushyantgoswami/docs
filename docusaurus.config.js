@@ -68,18 +68,8 @@ const config = {
               },
               {
                 type: "doc",
-                label: "Deploy a Sequencer",
-                docId: "tutorials/deploy-sequencer",
-              },
-              {
-                type: "doc",
-                label: "Deploy a dApp",
+                label: "Develop a dApp",
                 docId: "tutorials/deploy-dapp",
-              },
-              {
-                type: "doc",
-                label: "Deploy a RDK Module",
-                docId: "tutorials/deploy-rdk-module",
               },
             ],
           },
