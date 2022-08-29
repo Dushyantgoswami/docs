@@ -1,9 +1,9 @@
 ---
 title: "Development Portal"
-slug: "portal"
+slug: "index"
 ---
 
-# Development Portal
+# Documentation Portal
 
 This documentation is designed to help you build and interact with dYmension. It cover dYmension as a concept, explains the dYmension tech stack and documents procedures for deploying an application to dYmension.
 
@@ -17,7 +17,7 @@ dYmension introduces robust infrastructure and tools for building application-sp
 
 dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability. In dYmension each application is its own execution environment and the dYmension hub is the settlement layer. Various data availability providers will co-exist in a modular future; thus, dYmension is designed to be data availability agnostic, enabling RollApps to easily choose their data availability provider.
 
-### Foundational Concepts
+### Concepts
 
 - [Modular Blockchain](modular-blockchain.md) - _ What is modular blockchain? _
 - [Optimistic Rollups](optimistic-rollups.md) - _ What are Optimisitc Rollups? _

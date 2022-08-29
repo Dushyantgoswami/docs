@@ -7,13 +7,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "dYmension Docs",
-  tagline: "Home of the RollApps",
+  tagline: "Developer Documentation",
   url: "https://docs.dymension.xyz/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "dYmensionXYZ",
+  organizationName: "yolo-labs",
   projectName: "docs",
   i18n: {
     defaultLocale: "en",
@@ -26,10 +26,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/dymensionxyz/docs/tree/main",
-          routeBasePath: "/",
         },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -50,31 +51,25 @@ const config = {
         },
       },
       navbar: {
-        title: "dYmension Docs",
         logo: {
           alt: "dYmension Logo",
           src: "img/logo.svg",
         },
         items: [
           {
-            to: "portal",
+            to: "guides/node-runners",
             position: "left",
-            label: "Portal",
+            label: "Development Guide",
           },
           {
-            to: "dymension-hub",
+            to: "dymension-litepaper/dymension-litepaper-index",
             position: "left",
-            label: "Overview",
+            label: "dYmension Litepaper",
           },
           {
-            to: "node-runners",
+            href: "https://github.com/dymensionxyz/awesome",
             position: "left",
-            label: "Guide",
-          },
-          {
-            to: "litepaper",
-            position: "left",
-            label: "Litepaper",
+            label: "Resources",
           },
           {
             href: "https://github.com/dymensionxyz/docs",

@@ -1,6 +1,6 @@
 ---
 title: "dYmension Litepaper"
-slug: "litepaper"
+slug: "dymension-litepaper-index"
 ---
 
 # The dYmension Blockchain

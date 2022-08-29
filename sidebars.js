@@ -2,55 +2,28 @@ const sidebars = {
   sidebar: [
     {
       type: "doc",
-      label: "Development Portal",
-      id: "portal",
+      label: "Documentation Portal",
+      id: "index",
     },
     {
       type: "category",
-      label: "Foundational Concepts",
+      label: "Concepts",
       collapsed: false,
       items: [
         {
           type: "doc",
           label: "Modular Blockchain",
-          id: "modular-blockchain",
+          id: "concepts/modular-blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "optimistic-rollups",
+          id: "concepts/optimistic-rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "cosmos",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "dYmension Protocol",
-      collapsed: false,
-      items: [
-        {
-          type: "doc",
-          label: "dYmension Hub",
-          id: "dymension-hub",
-        },
-        {
-          type: "doc",
-          label: "RollApps",
-          id: "rollapps",
-        },
-        {
-          type: "doc",
-          label: "DYM token",
-          id: "dym-token",
-        },
-        {
-          type: "link",
-          label: "Resources",
-          href: "https://github.com/dymensionxyz/awesome",
+          id: "concepts/cosmos",
         },
       ],
     },
@@ -62,19 +35,24 @@ const sidebars = {
         {
           type: "doc",
           label: "Node Runners",
-          id: "node-runners",
+          id: "guides/node-runners",
         },
       ],
     },
     {
       type: "doc",
       label: "Litepaper",
-      id: "litepaper",
+      id: "dymension-litepaper/index",
     },
+    // {
+    //   type: "link",
+    //   href: "https://github.com/dymensionxyz/awesome",
+    //   label: "Resources",
+    // },
     {
       type: "doc",
       label: "Glossary",
-      id: "glossary",
+      id: "reference/glossary",
     },
   ],
 };
