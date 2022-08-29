@@ -63,6 +63,21 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "Validator Node",
+          id: "nodes/validator-node/index",
+        },
+        {
+          type: "doc",
+          label: "Full Node",
+          id: "nodes/full-node/index",
+        },
+        {
+          type: "doc",
+          label: "Light Client",
+          id: "nodes/light-client/index",
+        },
+        {
+          type: "doc",
           label: "Local Testnet",
           id: "nodes/local-testnet/index",
         },

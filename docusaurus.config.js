@@ -57,9 +57,55 @@ const config = {
         },
         items: [
           {
-            to: "guides/node-runners",
+            type: "dropdown",
+            label: "Applications",
             position: "left",
-            label: "Development Guide",
+            items: [
+              {
+                type: "doc",
+                label: "Your First Transaction",
+                docId: "tutorials/first-transaction",
+              },
+              {
+                type: "doc",
+                label: "Your First DApp",
+                docId: "tutorials/first-dapp",
+              },
+
+              {
+                type: "doc",
+                label: "Your First RDK Module",
+                docId: "tutorials/first-rdk-module",
+              },
+            ],
+          },
+          {
+            type: "dropdown",
+            label: "Nodes",
+            to: "nodes/nodes-index",
+            position: "left",
+            items: [
+              {
+                label: "Validators",
+                type: "doc",
+                docId: "nodes/validator-node/index",
+              },
+              {
+                label: "Full Nodes",
+                type: "doc",
+                docId: "nodes/full-node/index",
+              },
+              {
+                label: "Light Clients",
+                type: "doc",
+                docId: "nodes/light-client/index",
+              },
+              {
+                label: "Local Testnet",
+                type: "doc",
+                docId: "nodes/local-testnet/index",
+              },
+            ],
           },
           {
             to: "dymension-litepaper/dymension-litepaper-index",
