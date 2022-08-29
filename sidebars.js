@@ -1,80 +1,102 @@
 const sidebars = {
   sidebar: [
+    "index",
+    "guides/getting-started",
     {
-      type: "doc",
-      label: "Development Portal",
-      id: "portal",
+      type: "category",
+      label: "Developer Tutorials",
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          label: "Your First Transaction",
+          id: "tutorials/first-transaction",
+        },
+        {
+          type: "doc",
+          label: "Your First Dapp",
+          id: "tutorials/first-dapp",
+        },
+        {
+          type: "doc",
+          label: "Your First RDK Module",
+          id: "tutorials/first-rdk-module",
+        },
+      ],
     },
     {
       type: "category",
-      label: "Foundational Concepts",
-      collapsed: false,
+      label: "Concepts",
+      collapsed: true,
       items: [
         {
           type: "doc",
           label: "Modular Blockchain",
-          id: "modular-blockchain",
+          id: "concepts/modular-blockchain",
         },
         {
           type: "doc",
           label: "Optimistic Rollups",
-          id: "optimistic-rollups",
+          id: "concepts/optimistic-rollups",
         },
         {
           type: "doc",
           label: "Cosmos Network",
-          id: "cosmos",
+          id: "concepts/cosmos",
         },
       ],
     },
     {
       type: "category",
-      label: "dYmension Protocol",
-      collapsed: false,
+      label: "Guides",
       items: [
         {
           type: "doc",
-          label: "dYmension Hub",
-          id: "dymension-hub",
-        },
-        {
-          type: "doc",
-          label: "RollApps",
-          id: "rollapps",
-        },
-        {
-          type: "doc",
-          label: "DYM token",
-          id: "dym-token",
-        },
-        {
-          type: "link",
-          label: "Resources",
-          href: "https://github.com/dymensionxyz/awesome",
+          label: "Life of a transaction",
+          id: "guides/node-runners",
         },
       ],
     },
     {
       type: "category",
-      label: "Development Guide",
-      collapsed: false,
+      label: "Nodes",
       items: [
+        {
+          type: "doc",
+          label: "Validator Node",
+          id: "nodes/validator-node/index",
+        },
+        {
+          type: "doc",
+          label: "Full Node",
+          id: "nodes/full-node/index",
+        },
+        {
+          type: "doc",
+          label: "Light Client",
+          id: "nodes/light-client/index",
+        },
         {
           type: "doc",
           label: "Local Testnet",
-          id: "local-testnet",
+          id: "nodes/local-testnet/index",
         },
       ],
     },
     {
       type: "doc",
       label: "Litepaper",
-      id: "litepaper",
+      id: "dymension-litepaper/index",
     },
     {
       type: "doc",
       label: "Glossary",
-      id: "glossary",
+      id: "reference/glossary",
+    },
+    {
+      type: "link",
+      href: "https://github.com/dymensionxyz/awesome",
+      label: "Resources",
     },
   ],
 };

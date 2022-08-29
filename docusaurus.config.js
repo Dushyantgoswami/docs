@@ -7,13 +7,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "dYmension Docs",
-  tagline: "Home of the RollApps",
+  tagline: "Developer Documentation",
   url: "https://docs.dymension.xyz/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "dYmensionXYZ",
+  organizationName: "yolo-labs",
   projectName: "docs",
   i18n: {
     defaultLocale: "en",
@@ -26,10 +26,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/dymensionxyz/docs/tree/main",
-          routeBasePath: "/",
         },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -40,32 +41,75 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+      },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        },
+      },
       navbar: {
-        title: "dYmension Docs",
         logo: {
           alt: "dYmension Logo",
           src: "img/logo.svg",
         },
         items: [
           {
-            to: "portal",
+            type: "dropdown",
+            label: "Applications",
             position: "left",
-            label: "Portal",
+            items: [
+              {
+                type: "doc",
+                label: "Your First Transaction",
+                docId: "tutorials/first-transaction",
+              },
+              {
+                type: "doc",
+                label: "Your First DApp",
+                docId: "tutorials/first-dapp",
+              },
+
+              {
+                type: "doc",
+                label: "Your First RDK Module",
+                docId: "tutorials/first-rdk-module",
+              },
+            ],
           },
           {
-            to: "dymension-hub",
+            type: "dropdown",
+            label: "Nodes",
             position: "left",
-            label: "Overview",
+            items: [
+              {
+                label: "Validators",
+                type: "doc",
+                docId: "nodes/validator-node/index",
+              },
+              {
+                label: "Full Nodes",
+                type: "doc",
+                docId: "nodes/full-node/index",
+              },
+              {
+                label: "Light Clients",
+                type: "doc",
+                docId: "nodes/light-client/index",
+              },
+              {
+                label: "Local Testnet",
+                type: "doc",
+                docId: "nodes/local-testnet/index",
+              },
+            ],
           },
           {
-            to: "local-testnet",
+            to: "dymension-litepaper/dymension-litepaper-index",
             position: "left",
-            label: "Guide",
-          },
-          {
-            to: "litepaper",
-            position: "left",
-            label: "Litepaper",
+            label: "dYmension Litepaper",
           },
           {
             href: "https://github.com/dymensionxyz/docs",
@@ -82,8 +126,8 @@ const config = {
             items: [
               {
                 html: `
-                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
-                     <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />
+                  <a class="" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                     <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />                     
                   </a>
                 `,
               },

@@ -1,6 +1,6 @@
 ---
 title: "dYmension Litepaper"
-slug: "litepaper"
+slug: "dymension-litepaper-index"
 ---
 
 # The dYmension Blockchain
@@ -31,4 +31,4 @@ dYmension embeds a native Automated Market Maker (AMM) into the settlement hub t
 
 ### Full PDF
 
-Click [here for the full PDF of the dYmension Litepaper](/papers/litepaper.pdf).
+Click [here for the full PDF of the dYmension Litepaper](/).
