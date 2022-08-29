@@ -23,13 +23,6 @@ dYmension follows a modular blockchain architecture design that decouples differ
 - [Optimistic Rollups](optimistic-rollups.md) - _ What are Optimisitc Rollups? _
 - [Cosmos Network](cosmos.md) - _ What is the Cosmos Network? _
 
-### dYmension Protocol
-
-- [dYmension Hub](dymension-hub.md) - _ Overview of The dYmension Hub _
-- [RollApps](rollapps.md) - _ Overview of The dYmension Hub _
-- [DYM Token](dym-token.md) - _ Overview of The dYmension Hub _
-- [Resources](https://github.com/dymensionxyz/awesome) - _ List of resource available about dYmension _
-
 ### Development Guide
 
 - [Local Testnet](node-runners.md) - _ How to run a local testnet _
