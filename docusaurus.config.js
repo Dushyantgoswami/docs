@@ -126,9 +126,11 @@ const config = {
             items: [
               {
                 html: `
-                  <a class="" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                <p class="footer-logo">                  
+                  <a class="logo" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
                      <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />                     
-                  </a>
+                  </a>     
+                </p>             
                 `,
               },
             ],
@@ -138,21 +140,6 @@ const config = {
             items: [
               {
                 html: `
-                <p class="emails">                  
-                  <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
-                    hello@dYmension.xyz
-                  </a>                  
-                </p>
-              `,
-              },
-            ],
-          },
-          {
-            title: null,
-            items: [
-              {
-                html: `
-                  <p class="right">
                     <nav class="social-links">
                         <a class="social-link" href="https://github.com/dymensionxyz" target="_blank" rel="noopener noreferrer" title="Git">
                          <img class="icon" src="/img/github.svg" alt="GitHub Icon" />
@@ -170,7 +157,20 @@ const config = {
                           <img class="icon" src="/img/medium.svg" alt="Medium Icon" />
                         </a>                        
                     </nav>
-                  </p>
+              `,
+              },
+            ],
+          },
+          {
+            title: null,
+            items: [
+              {
+                html: `
+                <p class="emails">                  
+                  <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
+                    hello@dYmension.xyz
+                  </a>                  
+                </p>
               `,
               },
             ],

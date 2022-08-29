@@ -1,7 +1,7 @@
 const sidebars = {
   sidebar: [
     "index",
-    "guides/getting-started",
+    "getting-started",
     {
       type: "category",
       label: "Developer Tutorials",
@@ -43,17 +43,6 @@ const sidebars = {
           type: "doc",
           label: "Cosmos Network",
           id: "concepts/cosmos",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Guides",
-      items: [
-        {
-          type: "doc",
-          label: "Life of a transaction",
-          id: "guides/node-runners",
         },
       ],
     },
