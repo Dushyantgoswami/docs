@@ -39,23 +39,23 @@ This is an open-source community effort, so feel free to suggest new topics by c
   <div class="row row-cols-1 row-cols-md-2a g-4">
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="concepts/aptos-concepts" class="card-title card-link stretched-link"> 
+        <a href="concepts/rollapps" class="card-title card-link stretched-link"> 
           <h2>Concepts</h2>
         </a>
-        <p class="card-text">Learn the key concepts of the dYmension Blockchain.</p>
+        <p class="card-text">Learn the key concepts of the dYmension blockchain.</p>
       </div>
     </div>
   <div class="col">
     <div class="card card-body h-100 d-flex flex-column" >
       <a href="guides/aptos-guides" class="card-title card-link stretched-link"> 
-        <h2>How it works</h2>
+        <h2>Developers</h2>
       </a>
-      <p class="card-text">How does interacting with the dYmension Blockchain work.</p>
+      <p class="card-text">Learn how to develop a RollApp or Smart Contract on dYmension.</p>
     </div>
   </div>
   <div class="col">
     <div class="card card-body h-100 d-flex flex-column">
-      <a href="guides/move-guides/move-on-aptos" class="card-title card-link stretched-link"> 
+      <a href="nodes/local-testnet" class="card-title card-link stretched-link"> 
         <h2>Node Runners</h2>
       </a>
       <p class="card-text">Learn how to run a dYmension node.</p>

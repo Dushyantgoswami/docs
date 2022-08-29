@@ -89,6 +89,11 @@ const config = {
             position: "left",
             items: [
               {
+                label: "Local Testnet",
+                type: "doc",
+                docId: "nodes/local-testnet/index",
+              },
+              {
                 label: "Validator Nodes",
                 type: "doc",
                 docId: "nodes/validator-node/index",
@@ -102,11 +107,6 @@ const config = {
                 label: "Light Clients",
                 type: "doc",
                 docId: "nodes/light-client/index",
-              },
-              {
-                label: "Local Testnet",
-                type: "doc",
-                docId: "nodes/local-testnet/index",
               },
             ],
           },

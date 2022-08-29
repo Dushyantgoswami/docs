@@ -36,6 +36,11 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "RollApps",
+          id: "concepts/rollapps",
+        },
+        {
+          type: "doc",
           label: "Modular Blockchain",
           id: "concepts/modular-blockchain",
         },
@@ -57,6 +62,11 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          label: "Local Testnet",
+          id: "nodes/local-testnet/index",
+        },
+        {
+          type: "doc",
           label: "Validator Node",
           id: "nodes/validator-node/index",
         },
@@ -69,11 +79,6 @@ const sidebars = {
           type: "doc",
           label: "Light Client",
           id: "nodes/light-client/index",
-        },
-        {
-          type: "doc",
-          label: "Local Testnet",
-          id: "nodes/local-testnet/index",
         },
       ],
     },
