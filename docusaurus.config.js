@@ -112,7 +112,7 @@ const config = {
             label: "dYmension Litepaper",
           },
           {
-            href: "https://github.com/dymensionxyz/docs",
+            href: "https://github.com/dymensionxyz",
             label: "GitHub",
             position: "right",
           },
