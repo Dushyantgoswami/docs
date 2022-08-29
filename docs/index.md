@@ -22,10 +22,88 @@ dYmension follows a modular blockchain architecture design that decouples differ
 
 ### Concepts
 
-- [Modular Blockchain](modular-blockchain.md) - _ What is modular blockchain? _
-- [Optimistic Rollups](optimistic-rollups.md) - _ What are Optimisitc Rollups? _
-- [Cosmos Network](cosmos.md) - _ What is the Cosmos Network? _
+<div class="docs-card-container">
+<div class="row row-cols-1 row-cols-md-3a g-4">
+  
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column" >
+    <a href="guides/getting-started" class="card-title card-link stretched-link"> <h2>Getting started</h2></a>
+    <p class="card-text">Begin by setting up your Aptos development environment.</p>
+</div>
+  </div>
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column">
+    <a href="tutorials/aptos-quickstarts/" class="card-title card-link stretched-link"> <h2>Run quickstart tutorials</h2></a>
+    <p class="card-text">Submit your first transaction, write your first Move module, deploy your first coin, and more.</p>
+</div>
+</div>
+</div>
+</div>
 
-### Development Guide
+## Concepts and guides
 
-- [Local Testnet](node-runners.md) - _ How to run a local testnet _
+<div class="docs-card-container">
+<div class="row row-cols-1 row-cols-md-2a g-4">
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column">
+    <a href="concepts/aptos-concepts" class="card-title card-link stretched-link"> <h2>Concepts</h2></a>
+    <p class="card-text">Learn the key concepts of the Aptos Blockchain, including transactions, accounts, gas and transaction fees, nodes, and more. </p>
+</div>
+</div>
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column" >
+    <a href="guides/aptos-guides" class="card-title card-link stretched-link"> <h2>How it works</h2></a>
+    <p class="card-text">How does interacting with the Aptos Blockchain work, how Move works on Aptos, how to create a signed transaction, and more.</p>
+</div>
+  </div>
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column">
+    <a href="guides/move-guides/move-on-aptos" class="card-title card-link stretched-link"> <h2>Move on Aptos</h2></a>
+    <p class="card-text">Learn how Move works on the Aptos Blockchain.</p>
+</div>
+</div>
+</div>
+</div>
+
+## Nodes
+
+<div class="docs-card-container">
+<div class="row row-cols-1 row-cols-md-3a g-4">
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column" >
+    <a href="nodes/nodes-index" class="card-title card-link stretched-link"> <h2>Run a Validator or a FullNode</h2></a>
+    <p class="card-text">Install and run a Validator or a FullNode.</p>
+</div>
+</div>
+  <div class="col">
+    <div class="card card-body h-100 d-flex flex-column"  >
+    <a href="nodes/nodes-index#for-a-local-testnet" class="card-title card-link stretched-link"> <h2>Run a local testnet</h2></a>
+    <p class="card-text">Run a Validator node on your local testnet.</p>
+</div>
+  </div>
+  
+</div>
+</div>
+
+## SDKs and APIs
+
+<div class="docs-card-container">
+<div class="row row-cols-1 row-cols-md-3a g-4">
+  <div class="col">
+    <div class="card h-100" >
+    <div class="card-body d-flex flex-column" >
+    <a href="https://aptos-labs.github.io/ts-sdk-doc/" class="card-title card-link stretched-link"> <h2>Typescript SDK</h2></a>
+    <p class="card-text">API reference for transacting with the Aptos Blockchain.</p>
+</div>
+</div>
+</div>
+  <div class="col">
+  <div class="card h-100" >
+    <div class="card-body d-flex flex-column"  >
+    <a href="https://fullnode.devnet.aptoslabs.com/v1/spec#/" class="card-title card-link stretched-link"> <h2>REST API</h2></a>
+    <p class="card-text">Reference for the REST API to interact with the Aptos Blockchain.</p>
+</div>
+</div>
+</div>
+</div>
+</div>

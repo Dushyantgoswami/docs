@@ -127,7 +127,7 @@ const config = {
             items: [
               {
                 html: `
-                  <a class="social-link" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                  <a class="" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
                      <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />                     
                   </a>
                 `,
