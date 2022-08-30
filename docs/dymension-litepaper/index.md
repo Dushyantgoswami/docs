@@ -31,4 +31,4 @@ dYmension embeds a native Automated Market Maker (AMM) into the settlement hub t
 
 ### Full PDF
 
-Click [here for the full PDF of the dYmension Litepaper](/).
+Click [here for the full PDF of the dYmension Litepaper](/static/papers/LITEPAPER-v1.0.pdf).
