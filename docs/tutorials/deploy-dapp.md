@@ -1,4 +1,4 @@
 ---
-title: "Deploy a CosmWasm Smart Contract"
+title: "Deploy a dApp"
 slug: "deploy-dapp"
 ---

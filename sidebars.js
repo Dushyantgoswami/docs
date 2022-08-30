@@ -26,7 +26,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "RollApps",
+          label: "RollApps Overview",
           id: "concepts/rollapps",
         },
         {
