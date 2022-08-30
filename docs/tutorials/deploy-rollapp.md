@@ -42,7 +42,7 @@ Initialize the "localnet" chain:
 dymd init test --chain-id localnet
 ```
 
-Add an account (keep note of the address and name, you will use it in the following command):
+Add an account (keep note of the address, pub-key and name, you will use it in the following commands):
 
 ```sh
 dymd keys add user1
@@ -70,7 +70,7 @@ This is how it would look without our template:
 dymd tx rollapp create-rollapp [rollapp-id] [code-stamp] [genesis-path] [max-withholding-blocks] [max-sequencers]  [permissioned-addresses] [--from] [--chain-id]
 ```
 
-We input a six flags into the transaction to create a new RollApp:
+We input flags into the transaction to create a new RollApp:
 
 - `rollappId` is the unique identifier of the rollapp chain.
 - `codeStamp` is the description of the genesis file location on the DA
@@ -104,13 +104,55 @@ rollapp:
 
 ## Step 5: Attach a Sequencer
 
-```sh
-dymensiond tx sequencer create-sequencer "dym1fnmapmvvrk8vchdh3ne0v5p6l5n2s093mffte7" '{"@type": "/cosmos.crypto.secp256k1.PubKey","key": "A1PnLi9BGKzUoyJTsyq09MUvxUg+ZgcKgv1l0EE5tJXx"}' "rollapp2" '{"Moniker":"moniker3","Identity":"","Website":"","SecurityContact":"","Details":""}' --from alice
-```
-
-
-
+Initialize and attach a Sequencer:
 
 ```sh
-dymensiond tx rollapp update-state "rollapp2" 0 1 "" 0 '{"BD":[{"Height":0}]}' --from bob
+dymd tx sequencer create-sequencer <creator-address> <creator-pub-key> rollapp1 '{"Moniker":"moniker3","Identity":"","Website":"","SecurityContact":"","Details":""}' --from user1 --chain-id localnet
 ```
+
+This is how it would look without our template:
+
+```sh
+dymd tx sequencer create-sequencer <creator-address> <creator-pub-key> <rollapp-id> <description> <--from> <--chain-id>
+```
+
+We input flags into the transaction to attach a Sequencer:
+
+- `creatorAddress` is the bech32-encoded address of the creator account.
+- `creator-pub-key` is the public key of the creator.
+- `rollappId` defines the rollapp to which the sequencer belongs.
+- `description` defines the descriptive terms for the sequencer:
+```sh
+{   
+    "Moniker": moniker defines a human-readable name for the sequencer.
+    "Identity": identity defines an optional identity signature (ex. UPort or Keybase).
+    "Website": website defines an optional website link.
+    "SecurityContact":securityContact defines an optional email for security contact.
+    "Details": details define other optional details.
+}'
+```
+
+## Step 6: Post the updated state
+
+Now we will update the state of the RollApp from our Sequencer: 
+
+```sh
+dymd tx rollapp update-state "rollapp1" 1 1 "" 0 '{"BD":[{"Height":1}]}' --from user1 --chain-id localnet
+```
+
+```sh
+dymd tx rollapp update-state [rollapp-id] [start-height] [num-blocks] [da-path] [version] [bds] [--from] [--chain-id]
+```
+
+We input flags to update the state of the RollApp:
+
+- `rollappId` defines the rollapp to which the sequencer belongs.
+- `startHeight` is the block height of the first block in the batch
+- `numBlocks` is the number of blocks included in this batch update
+- `DAPath` is the description of the location on the DA layer
+- `version` is the version of the rollapp
+- `BD` is a list of block description objects (one per block). The height is the height of the block
+- `--from` the name of the account that initializes the RollApp (in this example it is "user1")
+- `--chain-id` is the name of the chain (in this example it is "localnet")
+
+We are here with you on this jouney! If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section.
