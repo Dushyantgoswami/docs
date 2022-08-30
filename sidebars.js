@@ -4,23 +4,6 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
-      label: "Developer Tutorials",
-      collapsed: true,
-      items: [
-        {
-          type: "doc",
-          label: "Deploy a RollApp",
-          id: "tutorials/deploy-rollapp",
-        },
-        {
-          type: "doc",
-          label: "Develop a dApp",
-          id: "tutorials/deploy-dapp",
-        },
-      ],
-    },
-    {
-      type: "category",
       label: "Concepts",
       collapsed: true,
       items: [
@@ -48,7 +31,24 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Nodes",
+      label: "Developer Tutorials",
+      collapsed: true,
+      items: [
+        {
+          type: "doc",
+          label: "Deploy a RollApp",
+          id: "tutorials/deploy-rollapp",
+        },
+        {
+          type: "doc",
+          label: "Develop a dApp",
+          id: "tutorials/deploy-dapp",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Node Runners",
       items: [
         {
           type: "doc",
