@@ -58,34 +58,33 @@ const config = {
         items: [
           {
             type: "dropdown",
-            label: "Applications",
+            label: "Developers",
             position: "left",
             items: [
               {
                 type: "doc",
-                label: "Your First Transaction",
-                docId: "tutorials/first-transaction",
+                label: "Deploy a RollApp",
+                docId: "tutorials/deploy-rollapp",
               },
               {
                 type: "doc",
-                label: "Your First DApp",
-                docId: "tutorials/first-dapp",
-              },
-
-              {
-                type: "doc",
-                label: "Your First RDK Module",
-                docId: "tutorials/first-rdk-module",
+                label: "Develop a dApp",
+                docId: "tutorials/deploy-dapp",
               },
             ],
           },
           {
             type: "dropdown",
-            label: "Nodes",
+            label: "Node Runners",
             position: "left",
             items: [
               {
-                label: "Validators",
+                label: "Local Testnet",
+                type: "doc",
+                docId: "nodes/local-testnet/index",
+              },
+              {
+                label: "Validator Nodes",
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
@@ -99,11 +98,6 @@ const config = {
                 type: "doc",
                 docId: "nodes/light-client/index",
               },
-              {
-                label: "Local Testnet",
-                type: "doc",
-                docId: "nodes/local-testnet/index",
-              },
             ],
           },
           {
@@ -112,7 +106,7 @@ const config = {
             label: "dYmension Litepaper",
           },
           {
-            href: "https://github.com/dymensionxyz/docs",
+            href: "https://github.com/dymensionxyz",
             label: "GitHub",
             position: "right",
           },
@@ -126,9 +120,11 @@ const config = {
             items: [
               {
                 html: `
-                  <a class="" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                <p class="footer-logo">                  
+                  <a class="logo" href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
                      <img class="logo" src="/img/logo.svg" alt="dYmension Logo" />                     
-                  </a>
+                  </a>     
+                </p>             
                 `,
               },
             ],
@@ -138,21 +134,6 @@ const config = {
             items: [
               {
                 html: `
-                <p class="emails">                  
-                  <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
-                    hello@dYmension.xyz
-                  </a>                  
-                </p>
-              `,
-              },
-            ],
-          },
-          {
-            title: null,
-            items: [
-              {
-                html: `
-                  <p class="right">
                     <nav class="social-links">
                         <a class="social-link" href="https://github.com/dymensionxyz" target="_blank" rel="noopener noreferrer" title="Git">
                          <img class="icon" src="/img/github.svg" alt="GitHub Icon" />
@@ -170,7 +151,20 @@ const config = {
                           <img class="icon" src="/img/medium.svg" alt="Medium Icon" />
                         </a>                        
                     </nav>
-                  </p>
+              `,
+              },
+            ],
+          },
+          {
+            title: null,
+            items: [
+              {
+                html: `
+                <p class="emails">                  
+                  <a href="mailto:hello@dymension.xyz" target="_blank" rel="noreferrer noopener">
+                    hello@dYmension.xyz
+                  </a>                  
+                </p>
               `,
               },
             ],

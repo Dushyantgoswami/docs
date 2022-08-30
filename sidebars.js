@@ -1,7 +1,7 @@
 const sidebars = {
   sidebar: [
     "index",
-    "guides/getting-started",
+    "getting-started",
     {
       type: "category",
       label: "Developer Tutorials",
@@ -9,18 +9,13 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Your First Transaction",
-          id: "tutorials/first-transaction",
+          label: "Deploy a RollApp",
+          id: "tutorials/deploy-rollapp",
         },
         {
           type: "doc",
-          label: "Your First Dapp",
-          id: "tutorials/first-dapp",
-        },
-        {
-          type: "doc",
-          label: "Your First RDK Module",
-          id: "tutorials/first-rdk-module",
+          label: "Develop a dApp",
+          id: "tutorials/deploy-dapp",
         },
       ],
     },
@@ -29,6 +24,11 @@ const sidebars = {
       label: "Concepts",
       collapsed: true,
       items: [
+        {
+          type: "doc",
+          label: "RollApps Overview",
+          id: "concepts/rollapps",
+        },
         {
           type: "doc",
           label: "Modular Blockchain",
@@ -48,19 +48,13 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Guides",
+      label: "Nodes",
       items: [
         {
           type: "doc",
-          label: "Life of a transaction",
-          id: "guides/node-runners",
+          label: "Local Testnet",
+          id: "nodes/local-testnet/index",
         },
-      ],
-    },
-    {
-      type: "category",
-      label: "Nodes",
-      items: [
         {
           type: "doc",
           label: "Validator Node",
@@ -75,11 +69,6 @@ const sidebars = {
           type: "doc",
           label: "Light Client",
           id: "nodes/light-client/index",
-        },
-        {
-          type: "doc",
-          label: "Local Testnet",
-          id: "nodes/local-testnet/index",
         },
       ],
     },
