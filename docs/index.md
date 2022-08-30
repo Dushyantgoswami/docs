@@ -1,5 +1,5 @@
 ---
-title: "Developer Documentation"
+title: "Documentation Portal"
 slug: "/"
 hidden: false
 sidebar_position: 0
