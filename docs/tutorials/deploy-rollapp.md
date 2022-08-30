@@ -3,7 +3,7 @@ title: "Deploy a RollApp"
 slug: "deploy-rollapp"
 ---
 
-This tutorial introduces the dYmension Hub and how to deploy a RollApp, attach a Sequencer and begin developing in the dYmension ecosystem.
+This tutorial introduces the dYmension Hub and demonstrates how to deploy a RollApp, attach a Sequencer and begin developing in the dYmension ecosystem.
 
 ### Step 1: Install Go
 
@@ -35,13 +35,24 @@ If the dymd command is not found an error message is returned, confirm that your
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
-### Step 3: Using `dymd`
+### Step 3: Initializing `dymd`
+
+Initialize the "localnet" chain:
+```sh
+dymd init test --chain-id localnet
+```
+
+Add an account (keep note of the address, you will use it in the following command):
 
 ```sh
-dymd init test --chain-id test
 dymd keys add user1
-dymd add-genesis-account <address from above command> 10000000stake,1000token
-dymd gentx user1 1000000stake --chain-id test
+```
+
+Using the above address add a genesis transaction and start the chain:
+```sh
+dymd add-genesis-account <address from the above command> 10000000stake,1000token
+dymd gentx user1 1000000stake --chain-id localnet
 dymd collect-gentxs
 dymd start
 ```
+You should have a running local node!
