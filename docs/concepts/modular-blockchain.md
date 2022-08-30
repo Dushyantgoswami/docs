@@ -3,13 +3,11 @@ title: "Modular Blockchain"
 slug: "modular-blockchain"
 ---
 
-We have witnessed significant evolutions of blockchain technology over its short lifespan. Bitcoin was the first pioneer, enabling users to create a pseudo-anonymous account for transferring balances on a distributed ledger. Ethereum further revolutionized the space by allowing turing-complete applications to be deployed on the blockchain. Cosmos was the first to focus on creating a network of networks. Allowing them to interoperate with each other while retaining their own characteristics and security properties.
-
-Despite the technological breakthroughs, these chains suffered from the subpar performance in latency and throughput of executing transactions on-chain, the overhead of bootstrapping a network and the dilutive economic effects of incentivizing security with node participation. All of those amplified the benefits of the Web 2.0 model.
-
 The traditional web model is composed of entities paying for segregated pieces of server. For example, when Twitter servers are under heavy use it does not affect Reddit servers. Similarly, dYmension applications receive a segregated high performant execution environment running the application logic. dYmension’s protocol scales with the segregation of resource consumption similar to traditional web infrastructure. However, it also allows applications to plug themselves into an inter-connected, decentralized and trust-minimized environment. dYmension is infrastructure that glues traditional and reliable web2-like instances with the ownership and connectivity advantages of the decentralized internet.
 
 dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability. ‘Monolithic’ blockchains handle transaction execution, state settlement, data processing and provide a consensus on the canonical history of the chain.
+
+![Modular Blockchain](/img/modular_blockchain.svg)
 
 **The functions that modular blockchains specialize in are:**
 
