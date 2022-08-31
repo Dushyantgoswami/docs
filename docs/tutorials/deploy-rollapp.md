@@ -3,7 +3,7 @@ title: "Deploy a RollApp"
 slug: "deploy-rollapp"
 ---
 
-This tutorial introduces the dYmension Hub and demonstrates how to deploy a RollApp, attach a Sequencer and begin developing in the dYmension ecosystem.
+This tutorial introduces the dYmension Hub and how to deploy your own RollApp, attach a Sequencer and begin developing your own ecosystem on top of the dYmension hub.
 
 ### Step 1: Install Go
 
