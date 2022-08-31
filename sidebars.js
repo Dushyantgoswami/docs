@@ -41,7 +41,7 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Develop a Smart Contract",
+          label: "Deploy a Smart Contract",
           id: "tutorials/deploy-sc",
         },
       ],
