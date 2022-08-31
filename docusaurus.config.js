@@ -68,8 +68,8 @@ const config = {
               },
               {
                 type: "doc",
-                label: "Develop a dApp",
-                docId: "tutorials/deploy-dapp",
+                label: "Deploy a Smart Contract",
+                docId: "tutorials/deploy-sc",
               },
             ],
           },

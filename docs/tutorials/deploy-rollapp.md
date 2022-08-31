@@ -3,7 +3,7 @@ title: "Deploy a RollApp"
 slug: "deploy-rollapp"
 ---
 
-This tutorial introduces the dYmension Hub and demonstrates how to deploy a RollApp, attach a Sequencer and begin developing in the dYmension ecosystem.
+This tutorial introduces the dYmension Hub and how to deploy your own RollApp, attach a Sequencer and begin developing your own ecosystem on top of the dYmension hub.
 
 ### Step 1: Install Go
 
@@ -23,7 +23,7 @@ cd dymension
 make install
 ```
 
-Check that the evmosd binaries have been successfully installed:
+Check that the dymd binaries have been successfully installed:
 
 ```sh
 dymd version
@@ -38,6 +38,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 ### Step 3: Initializing `dymd`
 
 Initialize the "localnet" chain:
+
 ```sh
 dymd init test --chain-id localnet
 ```
@@ -49,12 +50,14 @@ dymd keys add user1
 ```
 
 Using the above address add a genesis transaction and start the chain:
+
 ```sh
 dymd add-genesis-account <address from the above command> 10000000stake,1000token
 dymd gentx user1 1000000stake --chain-id localnet
 dymd collect-gentxs
 dymd start
 ```
+
 You should have a running local node! If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section. We are here for you!
 
 ### Step 4: Deploy a RollApp
@@ -66,6 +69,7 @@ dymd tx rollapp create-rollapp "rollapp1" stamp1 "genesis-path/1" 3 100 '{"Addre
 ```
 
 This is how it would look without our template:
+
 ```sh
 dymd tx rollapp create-rollapp [rollapp-id] [code-stamp] [genesis-path] [max-withholding-blocks] [max-sequencers]  [permissioned-addresses] [--from] [--chain-id]
 ```
@@ -87,7 +91,7 @@ Let's make sure the RollApp initialization worked:
 dymd query rollapp list-rollapp
 ```
 
-Should result in (note that there is a version to track RollApp upgrades): 
+Should result in (note that there is a version to track RollApp upgrades):
 
 ```sh
 rollapp:
@@ -122,8 +126,9 @@ We input flags into the transaction to attach a Sequencer:
 - `creator-pub-key` is the public key of the creator.
 - `rollappId` defines the rollapp to which the sequencer belongs.
 - `description` defines the descriptive terms for the sequencer:
+
 ```sh
-{   
+{
     "Moniker": moniker defines a human-readable name for the sequencer.
     "Identity": identity defines an optional identity signature (ex. UPort or Keybase).
     "Website": website defines an optional website link.
@@ -134,7 +139,7 @@ We input flags into the transaction to attach a Sequencer:
 
 ## Step 6: Post the updated state
 
-Now we will update the state of the RollApp from our Sequencer: 
+Now we will update the state of the RollApp from our Sequencer:
 
 ```sh
 dymd tx rollapp update-state "rollapp1" 1 1 "" 0 '{"BD":[{"Height":1}]}' --from user1 --chain-id localnet
