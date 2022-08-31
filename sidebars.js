@@ -41,8 +41,8 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Develop a dApp",
-          id: "tutorials/deploy-dapp",
+          label: "Develop a Smart Contract",
+          id: "tutorials/deploy-sc",
         },
       ],
     },
