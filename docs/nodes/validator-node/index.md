@@ -3,6 +3,8 @@ title: "Validator Node"
 slug: "index"
 ---
 
+# Validator Node Runners
+
 # Introduction
 
 dYmension's settlement layer is based on [Tendermint Core](https://github.com/tendermint/tendermint/blob/master/docs/introduction/what-is-tendermint.md), which relies on a set of validators that are responsible for committing new blocks in the blockchain. These validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
