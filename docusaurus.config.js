@@ -79,17 +79,17 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Validator Nodes",
+                label: "Hub Validators",
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
               {
-                label: "Sequencer Nodes",
+                label: "RollApp Sequencers",
                 type: "doc",
                 docId: "nodes/sequencer-node/index",
               },
               {
-                label: "Light Clients",
+                label: "RollApp Light Clients",
                 type: "doc",
                 docId: "nodes/light-client/index",
               },

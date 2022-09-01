@@ -1,4 +1,4 @@
 ---
-title: "Light Client"
+title: "RollApp Light Clients"
 slug: "index"
 ---

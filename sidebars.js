@@ -53,17 +53,17 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Validator Node",
+          label: "Hub Validators",
           id: "nodes/validator-node/index",
         },
         {
           type: "doc",
-          label: "Sequencer Node",
+          label: "RollApp Sequencers",
           id: "nodes/sequencer-node/index",
         },
         {
           type: "doc",
-          label: "Light Client",
+          label: "RollApp Light Clients",
           id: "nodes/light-client/index",
         },
       ],

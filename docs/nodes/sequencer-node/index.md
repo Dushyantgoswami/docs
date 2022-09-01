@@ -1,5 +1,5 @@
 ---
-title: "Sequencer"
+title: "RollApp Sequencers"
 slug: "index"
 ---
 
