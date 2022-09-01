@@ -26,7 +26,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
   </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="nodes/local-testnet/index" class="card-title card-link stretched-link"> 
+        <a href="local-testnet" class="card-title card-link stretched-link"> 
           <h2>Local dYmension</h2>
         </a>
         <p class="card-text">Begin developing with a docker compose of the dYmension protocol.</p>
@@ -55,7 +55,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
   </div>
   <div class="col">
     <div class="card card-body h-100 d-flex flex-column">
-      <a href="nodes/local-testnet/index" class="card-title card-link stretched-link"> 
+      <a href="nodes/validator-node/index" class="card-title card-link stretched-link"> 
         <h2>Node Runners</h2>
       </a>
       <p class="card-text">Learn how to run a dYmension node.</p>

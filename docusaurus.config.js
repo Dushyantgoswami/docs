@@ -79,26 +79,26 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Local Testnet",
-                type: "doc",
-                docId: "nodes/local-testnet/index",
-              },
-              {
-                label: "Validator Nodes",
+                label: "Hub Validators",
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
               {
-                label: "Full Nodes",
+                label: "RollApp Sequencers",
                 type: "doc",
-                docId: "nodes/full-node/index",
+                docId: "nodes/sequencer-node/index",
               },
               {
-                label: "Light Clients",
+                label: "RollApp Light Clients",
                 type: "doc",
                 docId: "nodes/light-client/index",
               },
             ],
+          },
+          {
+            to: "local-testnet",
+            position: "left",
+            label: "Local dYmension",
           },
           {
             to: "dymension-litepaper/dymension-litepaper-index",

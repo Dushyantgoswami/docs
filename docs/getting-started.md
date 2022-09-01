@@ -28,9 +28,9 @@ Each [RollApp](/docs/concepts/rollapps.md) is built using the dYmension RollApp 
 
 dYmension implements a shared security model that strengthens as more applications are deployed. Unlike other shared security protocols such as Polkadot, dYmension provides permission-less access to deploy a RollApp.
 
-### What is the DYM token?
+### What is DYM (Native Asset)?
 
-DYM token is required to facilitate the following:
+DYM is required to facilitate the following:
 
 - AMM RollApp token swaps
 - IRC and IBC transactions
@@ -57,6 +57,6 @@ Users deploy a RollApp and attach a Sequencer by staking DYM tokens and update s
 
 The core team is building the dYmension infrastructure and is expanding the capabilities of the protocol. This documentation will continually be updated for the latest releases in dYmension tech.
 
-To build a RollApp in dYmension's ecosystem follow this [tutorial](/docs/tutorials/deploy-rollapp.md). After which you may deploy a smart contract in this [tutorial](/docs/tutorials/deploy-dapp.md).
+To build a RollApp in dYmension's ecosystem follow this [tutorial](/tutorials/deploy-rollapp). After which you may deploy a smart contract in this [tutorial](/tutorials/deploy-sc).
 
 We encourage all members of the community to reach out to us, show the community what they are building and build the future of blockchain!

@@ -2,6 +2,7 @@ const sidebars = {
   sidebar: [
     "index",
     "getting-started",
+    "local-testnet",
     {
       type: "category",
       label: "Concepts",
@@ -52,22 +53,17 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Local Testnet",
-          id: "nodes/local-testnet/index",
-        },
-        {
-          type: "doc",
-          label: "Validator Node",
+          label: "Hub Validators",
           id: "nodes/validator-node/index",
         },
         {
           type: "doc",
-          label: "Full Node",
-          id: "nodes/full-node/index",
+          label: "RollApp Sequencers",
+          id: "nodes/sequencer-node/index",
         },
         {
           type: "doc",
-          label: "Light Client",
+          label: "RollApp Light Clients",
           id: "nodes/light-client/index",
         },
       ],
