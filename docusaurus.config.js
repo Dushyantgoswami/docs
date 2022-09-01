@@ -84,9 +84,9 @@ const config = {
                 docId: "nodes/validator-node/index",
               },
               {
-                label: "Full Nodes",
+                label: "Sequencer Nodes",
                 type: "doc",
-                docId: "nodes/full-node/index",
+                docId: "nodes/sequencer-node/index",
               },
               {
                 label: "Light Clients",

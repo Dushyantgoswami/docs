@@ -58,8 +58,8 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Full Node",
-          id: "nodes/full-node/index",
+          label: "Sequencer Node",
+          id: "nodes/sequencer-node/index",
         },
         {
           type: "doc",
