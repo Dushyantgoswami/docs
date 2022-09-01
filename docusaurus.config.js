@@ -79,11 +79,6 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Local Testnet",
-                type: "doc",
-                docId: "nodes/local-testnet/index",
-              },
-              {
                 label: "Validator Nodes",
                 type: "doc",
                 docId: "nodes/validator-node/index",
@@ -99,6 +94,11 @@ const config = {
                 docId: "nodes/light-client/index",
               },
             ],
+          },
+          {
+            to: "local-testnet",
+            position: "left",
+            label: "Local dYmension",
           },
           {
             to: "dymension-litepaper/dymension-litepaper-index",

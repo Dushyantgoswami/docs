@@ -2,6 +2,7 @@ const sidebars = {
   sidebar: [
     "index",
     "getting-started",
+    "local-testnet",
     {
       type: "category",
       label: "Concepts",
@@ -50,11 +51,6 @@ const sidebars = {
       type: "category",
       label: "Node Runners",
       items: [
-        {
-          type: "doc",
-          label: "Local Testnet",
-          id: "nodes/local-testnet/index",
-        },
         {
           type: "doc",
           label: "Validator Node",
