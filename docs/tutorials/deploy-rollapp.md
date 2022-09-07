@@ -1,5 +1,5 @@
 ---
-title: "Deploy a RollApp"
+title: "Chess RollApp"
 slug: "deploy-rollapp"
 ---
 

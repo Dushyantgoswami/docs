@@ -36,14 +36,16 @@ const sidebars = {
       collapsed: true,
       items: [
         {
-          type: "doc",
+          type: "category",
           label: "Deploy a RollApp",
-          id: "tutorials/deploy-rollapp",
-        },
-        {
-          type: "doc",
-          label: "Deploy a Smart Contract",
-          id: "tutorials/deploy-sc",
+          collapsed: true,
+          items: [
+            {
+              type: "doc",
+              label: "Chess RollApp Overview",
+              id: "tutorials/chess-rollapp-overview",
+            },
+          ],
         },
       ],
     },

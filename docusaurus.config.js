@@ -64,12 +64,7 @@ const config = {
               {
                 type: "doc",
                 label: "Deploy a RollApp",
-                docId: "tutorials/deploy-rollapp",
-              },
-              {
-                type: "doc",
-                label: "Deploy a Smart Contract",
-                docId: "tutorials/deploy-sc",
+                docId: "tutorials/chess-rollapp-overview",
               },
             ],
           },
