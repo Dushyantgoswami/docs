@@ -5,42 +5,36 @@ description: All you need for the hands-on sections
 slug: setup
 ---
 
-# install docker
+# Set Up Your Work Environment
 
-```sh
-https://docs.docker.com/engine/install/
-```
+On this page, you can find helpful links to set up your work environment for all hands-on sections.
 
-# install go
+:::info In this section, you can find all you need to install:
 
-https://go.dev/doc/install
+- [Docker](https://www.docker.com/)
+- [Go](https://go.dev/)
+- [Node.js](https://nodejs.org/en/)
+- [Rust](https://www.rust-lang.org/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-# install ignite
+:::
 
-https://docs.ignite.com/guide/install
+## Install Docker
 
-# install node
+Docker is very helpful to do the exercises. So you may need to install Docker. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).
 
-https://nodejs.org/en/download/
+## Install Go
 
-# install rust
+You need Go to develop with the Cosmos SDK. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
 
-https://www.rust-lang.org/tools/install
+## Install Node.js
 
-````
+To develop with CosmJS, you need Node.js. Just head to the [Node.js download page](https://nodejs.org/en/download/) to install it.
 
-Scaffold chain
+## Install Rust
 
-```sh
-ignite scaffold chain github.com/anonymous/checkers
-cd checkers
-````
+To work with Rust, you may need to install it first. You can find a well-documented install step-by-step in the [Install page from Rust](https://www.rust-lang.org/tools/install).
 
-Setting up rdk and dymint
+## Install Visual Studio Code
 
-```sh
-go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@fc570f8d50205d2833405367b12aedf18c658f51
-git config --global url.git@github.com:.insteadOf https://github.com/
-export GOPRIVATE=github.com/dymensionxyz/*
-go mod tidy && go mod download
-```
+This integrated development environment assists both with developing with the Cosmos SDK and CosmJS. To install it, please go to the [Visual Studio Code install page](https://code.visualstudio.com/Download). Then select depending on your operating system (OS).
