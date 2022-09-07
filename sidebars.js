@@ -22,11 +22,6 @@ const sidebars = {
           label: "Optimistic Rollups",
           id: "concepts/optimistic-rollups",
         },
-        {
-          type: "doc",
-          label: "Cosmos Network",
-          id: "concepts/cosmos",
-        },
       ],
     },
     {

@@ -5,7 +5,7 @@ slug: "modular-blockchain"
 
 The traditional web model is composed of entities paying for segregated pieces of server. For example, when Twitter servers are under heavy use it does not affect Reddit servers. Similarly, dYmension applications receive a segregated high performant execution environment running the application. dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability.
 
-![Modular Blockchain](/img/modular_blockchain.svg)
+![Modular Blockchain](./images/modular_blockchain.svg)
 
 **The functions that modular blockchains specialize in are:**
 
