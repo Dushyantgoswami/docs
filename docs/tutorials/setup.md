@@ -13,6 +13,7 @@ On this page, you can find helpful links to set up your work environment for all
 
 - [Docker](https://www.docker.com/)
 - [Go](https://go.dev/)
+- [Ignite CLI](https://ignite.com/)
 - [Node.js](https://nodejs.org/en/)
 - [Rust](https://www.rust-lang.org/)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -26,6 +27,10 @@ Docker is very helpful to do the exercises. So you may need to install Docker. T
 ## Install Go
 
 You need Go to develop with the Cosmos SDK. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
+
+## Install Ignite
+
+Ignite CLI is an easy-to-use CLI tool for creating and maintaining sovereign application-specific blockchains. Blockchains created with Ignite CLI use Cosmos SDK and Tendermint. We will utilize dYmension's `RDK` and `dymint` as drop-in replacements for the Cosmos SDK and Tendermint. To install, head to the [Install Ignite CLI page](https://docs.ignite.com/guide/install).
 
 ## Install Node.js
 

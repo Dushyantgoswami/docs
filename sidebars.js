@@ -31,7 +31,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Overview",
+          label: "Introduction",
           id: "tutorials/index",
         },
         {
@@ -46,17 +46,27 @@ const sidebars = {
         },
         {
           type: "doc",
+          label: "Run a Node",
+          id: "tutorials/run-a-node",
+        },
+        {
+          type: "doc",
+          label: "Initialize a RollApp",
+          id: "tutorials/init-rollapp",
+        },
+        {
+          type: "doc",
           label: "Build a Module",
           id: "tutorials/build-a-module",
         },
         {
           type: "doc",
-          label: "Init and Run",
+          label: "Run the RollApp",
           id: "tutorials/init-and-run",
         },
         {
           type: "doc",
-          label: "Interact",
+          label: "Interact with the RollApp",
           id: "tutorials/interact",
         },
       ],
