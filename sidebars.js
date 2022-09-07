@@ -37,7 +37,7 @@ const sidebars = {
         {
           type: "doc",
           label: "Overview",
-          id: "tutorials/build-rollapp-overview",
+          id: "tutorials/index",
         },
         {
           type: "doc",

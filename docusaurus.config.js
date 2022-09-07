@@ -66,7 +66,7 @@ const config = {
               {
                 type: "doc",
                 label: "Build Your Own RollApp",
-                docId: "tutorials/build-rollapp-overview",
+                docId: "tutorials/index",
               },
             ],
           },
