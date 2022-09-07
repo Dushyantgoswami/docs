@@ -37,13 +37,18 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "Deploy a RollApp",
+          label: "Run Your Own RollApp",
           collapsed: true,
           items: [
             {
               type: "doc",
               label: "Chess RollApp Overview",
               id: "tutorials/chess-rollapp-overview",
+            },
+            {
+              type: "doc",
+              label: "Set Up Work Environment",
+              id: "tutorials/setup-environment",
             },
           ],
         },

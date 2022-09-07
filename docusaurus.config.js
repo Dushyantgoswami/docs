@@ -63,7 +63,7 @@ const config = {
             items: [
               {
                 type: "doc",
-                label: "Deploy a RollApp",
+                label: "Run Your Own RollApp",
                 docId: "tutorials/chess-rollapp-overview",
               },
             ],
