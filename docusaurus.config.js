@@ -63,8 +63,8 @@ const config = {
             items: [
               {
                 type: "doc",
-                label: "Run Your Own RollApp",
-                docId: "tutorials/chess-rollapp-overview",
+                label: "Build Your Own RollApp",
+                docId: "tutorials/build-rollapp-overview",
               },
             ],
           },
@@ -79,11 +79,6 @@ const config = {
                 docId: "nodes/validator-node/index",
               },
             ],
-          },
-          {
-            to: "tutorials/local-testnet",
-            position: "left",
-            label: "Local dYmension",
           },
           {
             to: "dymension-litepaper/dymension-litepaper-index",

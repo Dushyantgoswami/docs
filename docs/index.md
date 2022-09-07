@@ -26,37 +26,29 @@ This is an open-source community effort, so feel free to suggest new topics by c
   </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="local-testnet" class="card-title card-link stretched-link"> 
-          <h2>Local dYmension</h2>
-        </a>
-        <p class="card-text">Begin developing with a docker compose of the dYmension protocol.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="docs-card-container">
-  <div class="row row-cols-1 row-cols-md-2a g-4">
-    <div class="col">
-      <div class="card card-body h-100 d-flex flex-column">
         <a href="concepts/rollapps" class="card-title card-link stretched-link"> 
           <h2>Concepts</h2>
         </a>
         <p class="card-text">Learn the key concepts of the dYmension blockchain.</p>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="docs-card-container">
+  <div class="row row-cols-1 row-cols-md-3a g-4">
+    <div class="col">
+      <div class="card card-body h-100 d-flex flex-column">
+        <a href="tutorials/build-rollapp-overview" class="card-title card-link stretched-link"> 
+          <h2>Build Your Own RollApp</h2>
+        </a>
+        <p class="card-text">Learn how to build a RollApp in a Local dYmension.</p>
+      </div>
+    </div>
   <div class="col">
     <div class="card card-body h-100 d-flex flex-column" >
-      <a href="tutorials/deploy-rollapp" class="card-title card-link stretched-link"> 
-        <h2>Developers</h2>
-      </a>
-      <p class="card-text">Learn how to develop a RollApp or Smart Contract on dYmension.</p>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card card-body h-100 d-flex flex-column">
       <a href="nodes/validator-node/index" class="card-title card-link stretched-link"> 
-        <h2>Node Runners</h2>
+        <h2>Run a Node</h2>
       </a>
       <p class="card-text">Learn how to run a dYmension node.</p>
     </div>

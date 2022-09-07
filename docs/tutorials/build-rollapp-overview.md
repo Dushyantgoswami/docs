@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-slug: "chess-rollapp-overview"
+slug: "build-rollapp-overview"
 ---
 
 1. Overview
