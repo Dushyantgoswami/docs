@@ -49,6 +49,21 @@ const sidebars = {
           label: "Local dYmension",
           id: "tutorials/local-testnet",
         },
+        {
+          type: "doc",
+          label: "Build a Module",
+          id: "tutorials/build-a-module",
+        },
+        {
+          type: "doc",
+          label: "Init and Run",
+          id: "tutorials/init-and-run",
+        },
+        {
+          type: "doc",
+          label: "Interact",
+          id: "tutorials/interact",
+        },
       ],
     },
     {

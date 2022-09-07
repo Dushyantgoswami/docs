@@ -18,8 +18,6 @@ The documentation is broken down into:
 
 :::
 
-![dYmension](../static/img/dymension-moonlight.svg)
-
 ### What is dYmension?
 
 dYmension is a multi-layered blockchain protocol which provides tooling for building and deploying permission-less application-specific rollups on top of an optimized settlement layer.
