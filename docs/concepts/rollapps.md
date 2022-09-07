@@ -1,5 +1,5 @@
 ---
-title: "RollApps Architecture"
+title: "RollApp Architecture"
 slug: "rollapps"
 ---
 

@@ -12,7 +12,7 @@ dYmension's documentation serves as the central source for all things dYmension.
 
 The documentation is broken down into:
 
-- Concepts: Learn about foundational blockchain topics related to dYmension
+- Concepts: Learn about foundational topics related to dYmension
 - Developer Tutorials: Build applications within the dYmension ecosystem
 - Node Runners: Run a dYmension node
 

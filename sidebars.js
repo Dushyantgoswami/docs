@@ -9,7 +9,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "RollApps Overview",
+          label: "RollApp Architecture",
           id: "concepts/rollapps",
         },
         {

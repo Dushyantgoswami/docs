@@ -15,6 +15,8 @@ This unique integration of data availability guarantees and a dispute period for
 
 Furthermore, dYmension natively services rollups on the settlement layer, which is known as ‘enshrined rollups’<sup>3</sup>. In this design the settlement layer meticulously incorporates the logic for maintaining RollApps within the layer. Contrary to dYmension’s RollApp design, non-enshrined rollups such as Arbitrum and Optimism are connected to the Ethereum base layer via a customized smart contract implementation<sup>4</sup>. These smart contracts are essentially multi-sig bridges which act as the interface surface between the base layer and the rollup. Buggy smart contracts and compromised multi-sig keys are only a few of the trust assumptions required for such a system. Enshrinement offers rollups the same trust and security assumptions as the base layer, yet with a simpler, safer and more efficient design space.
 
+![Trust Assumptions](./images/trust-assumptions.png)
+
 References:
 
 1. (Almost) Everything you need to know about Optimistic Rollup https://research.paradigm.xyz/rollups
