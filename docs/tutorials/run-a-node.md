@@ -6,7 +6,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-This tutorial introduces the dYmension Hub and how to deploy your own RollApp, attach a Sequencer and begin developing your own ecosystem on top of the dYmension hub.
+This section will explain how to run a node of the dYmension hub.
 
 ### Step 1: Install binaries
 
