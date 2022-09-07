@@ -78,20 +78,10 @@ const config = {
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
-              {
-                label: "RollApp Sequencers",
-                type: "doc",
-                docId: "nodes/sequencer-node/index",
-              },
-              {
-                label: "RollApp Light Clients",
-                type: "doc",
-                docId: "nodes/light-client/index",
-              },
             ],
           },
           {
-            to: "local-testnet",
+            to: "tutorials/local-testnet",
             position: "left",
             label: "Local dYmension",
           },

@@ -5,14 +5,6 @@ slug: "deploy-rollapp"
 
 This tutorial introduces the dYmension Hub and how to deploy your own RollApp, attach a Sequencer and begin developing your own ecosystem on top of the dYmension hub.
 
-### Step 1: Install Go
-
-dYmension is built using [Go](https://go.dev/doc/install) version 1.18+
-
-```sh
-go version
-```
-
 ### Step 2: Install binaries
 
 Clone `dymension`:

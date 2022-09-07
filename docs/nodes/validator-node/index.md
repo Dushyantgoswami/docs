@@ -1,5 +1,5 @@
 ---
-title: "Hub Validator Node"
+title: "Hub Validators"
 slug: "index"
 ---
 

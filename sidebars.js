@@ -2,7 +2,6 @@ const sidebars = {
   sidebar: [
     "index",
     "getting-started",
-    "local-testnet",
     {
       type: "category",
       label: "Concepts",
@@ -32,25 +31,23 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Developer Tutorials",
+      label: "Build Your Own RollApp",
       collapsed: true,
       items: [
         {
-          type: "category",
-          label: "Run Your Own RollApp",
-          collapsed: true,
-          items: [
-            {
-              type: "doc",
-              label: "Chess RollApp Overview",
-              id: "tutorials/chess-rollapp-overview",
-            },
-            {
-              type: "doc",
-              label: "Set Up Work Environment",
-              id: "tutorials/setup-environment",
-            },
-          ],
+          type: "doc",
+          label: "Overview",
+          id: "tutorials/chess-rollapp-overview",
+        },
+        {
+          type: "doc",
+          label: "Set Up Work Environment",
+          id: "tutorials/setup-environment",
+        },
+        {
+          type: "doc",
+          label: "Local dYmension",
+          id: "tutorials/local-testnet",
         },
       ],
     },
@@ -62,16 +59,6 @@ const sidebars = {
           type: "doc",
           label: "Hub Validators",
           id: "nodes/validator-node/index",
-        },
-        {
-          type: "doc",
-          label: "RollApp Sequencers",
-          id: "nodes/sequencer-node/index",
-        },
-        {
-          type: "doc",
-          label: "RollApp Light Clients",
-          id: "nodes/light-client/index",
         },
       ],
     },
