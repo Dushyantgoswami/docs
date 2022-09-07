@@ -1,5 +1,5 @@
 ---
-title: "RollApps Overview"
+title: "RollApps Architecture"
 slug: "rollapps"
 ---
 
@@ -14,3 +14,5 @@ A RollApp transaction lifecycle begins by sending a request to a RollApp Sequenc
 By seperating the RollApp's execution environment from the settlement layer and data layer, applications can significantly increase performance capabilities, while maintaining a trust-minimized and inter-connected application. Additionally, dYmension's RDK is provided in mature programming language such as Go and Rust, with the ability to use EVM which is generally written in Solidity and alike languages.
 
 dYmension's RDK natively provides modules derived from the Cosmos SDK and adjusted for the low latency of `dymint`. Along with these module which are written in [Go](https://go.dev/), application developers may utilize the [CosmWasm](https://cosmwasm.com/) module to [deploy smart contracts](/tutorials/deploy-sc) in Rust. The tutorials in this documentation demonstrate how to deploy a RollApp within dYmension's ecosystem and also deploy a smart contract to the CosmWasm module.
+
+![Cosmos Architecture](/img/cosmos-architecture-overview-plain.jpeg)

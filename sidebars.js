@@ -42,7 +42,7 @@ const sidebars = {
         {
           type: "doc",
           label: "Set Up Work Environment",
-          id: "tutorials/setup-environment",
+          id: "tutorials/setup",
         },
         {
           type: "doc",

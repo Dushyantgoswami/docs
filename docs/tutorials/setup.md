@@ -1,33 +1,40 @@
 ---
 title: "Set Up Your Work Environment"
-slug: "setup-environment"
+order: 2
+description: All you need for the hands-on sections
+slug: setup
 ---
 
-1
+# install docker
 
 ```sh
-# install docker
 https://docs.docker.com/engine/install/
+```
 
 # install go
+
 https://go.dev/doc/install
 
 # install ignite
+
 https://docs.ignite.com/guide/install
 
 # install node
+
 https://nodejs.org/en/download/
 
 # install rust
+
 https://www.rust-lang.org/tools/install
-```
+
+````
 
 Scaffold chain
 
 ```sh
 ignite scaffold chain github.com/anonymous/checkers
 cd checkers
-```
+````
 
 Setting up rdk and dymint
 
