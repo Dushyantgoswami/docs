@@ -39,7 +39,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
   <div class="row row-cols-1 row-cols-md-2a g-4">
       <div class="col">
         <div class="card card-body h-100 d-flex flex-column">
-          <a href="tutorials" class="card-title card-link stretched-link"> 
+          <a href="tutorials/rollapp/index" class="card-title card-link stretched-link"> 
             <h2>Build a RollApp</h2>
           </a>
           <p class="card-text">Deploy a RollApp into a Local dYmension.</p>
@@ -47,10 +47,10 @@ This is an open-source community effort, so feel free to suggest new topics by c
       </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column" >
-        <a href="nodes/validator-node/index" class="card-title card-link stretched-link"> 
+        <a href="tutorials/smart-contract/index" class="card-title card-link stretched-link"> 
           <h2>Create Smart Contracts</h2>
         </a>
-        <p class="card-text">Learn what it takes to run a dYmension node.</p>
+        <p class="card-text">Deploy a CosmWasm Smart Contract to a RollApp.</p>
       </div>
     </div>
      <div class="col">
