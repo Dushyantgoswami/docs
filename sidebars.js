@@ -86,6 +86,21 @@ const sidebars = {
               label: "Set Up Work Environment",
               id: "tutorials/smart-contract/setup",
             },
+            {
+              type: "doc",
+              label: "dYmension Wasm Node",
+              id: "tutorials/smart-contract/dymension-wasm-node",
+            },
+            {
+              type: "doc",
+              label: "Prepare Your Smart Contract",
+              id: "tutorials/smart-contract/contract-preparation",
+            },
+            {
+              type: "doc",
+              label: "Run the Smart Contract",
+              id: "tutorials/smart-contract/contract-interaction",
+            },
           ],
         },
       ],
@@ -98,6 +113,11 @@ const sidebars = {
           type: "doc",
           label: "Validator Nodes",
           id: "nodes/validator-node/index",
+        },
+        {
+          type: "doc",
+          label: "Light Clients",
+          id: "nodes/light-client/index",
         },
       ],
     },

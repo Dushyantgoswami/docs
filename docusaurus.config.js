@@ -85,6 +85,11 @@ const config = {
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
+              {
+                label: "Light Clients",
+                type: "doc",
+                docId: "nodes/light-client/index",
+              },
             ],
           },
           {
