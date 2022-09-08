@@ -1,7 +1,7 @@
 const sidebars = {
   sidebar: [
     "index",
-    "getting-started",
+    "get-started",
     {
       type: "category",
       label: "Concepts",
