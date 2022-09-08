@@ -3,7 +3,7 @@ title: "Validator Nodes"
 slug: "index"
 ---
 
-# Validator Node Runners
+# Validator Nodes
 
 # Introduction
 
