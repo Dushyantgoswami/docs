@@ -2,7 +2,6 @@ const sidebars = {
   sidebar: [
     "index",
     "getting-started",
-    "local-testnet",
     {
       type: "category",
       label: "Concepts",
@@ -10,7 +9,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "RollApps Overview",
+          label: "RollApp Architecture",
           id: "concepts/rollapps",
         },
         {
@@ -23,27 +22,47 @@ const sidebars = {
           label: "Optimistic Rollups",
           id: "concepts/optimistic-rollups",
         },
-        {
-          type: "doc",
-          label: "Cosmos Network",
-          id: "concepts/cosmos",
-        },
       ],
     },
     {
       type: "category",
-      label: "Developer Tutorials",
+      label: "Build Your Own RollApp",
       collapsed: true,
       items: [
         {
           type: "doc",
-          label: "Deploy a RollApp",
-          id: "tutorials/deploy-rollapp",
+          label: "Introduction",
+          id: "tutorials/index",
         },
         {
           type: "doc",
-          label: "Deploy a Smart Contract",
-          id: "tutorials/deploy-sc",
+          label: "Set Up Work Environment",
+          id: "tutorials/setup",
+        },
+        {
+          type: "doc",
+          label: "Local dYmension",
+          id: "tutorials/local-testnet",
+        },
+        {
+          type: "doc",
+          label: "Run a Node",
+          id: "tutorials/run-a-node",
+        },
+        {
+          type: "doc",
+          label: "Initialize a RollApp",
+          id: "tutorials/init-rollapp",
+        },
+        {
+          type: "doc",
+          label: "Build a Module",
+          id: "tutorials/build-a-module",
+        },
+        {
+          type: "doc",
+          label: "Interact with the RollApp",
+          id: "tutorials/interact",
         },
       ],
     },
@@ -55,16 +74,6 @@ const sidebars = {
           type: "doc",
           label: "Hub Validators",
           id: "nodes/validator-node/index",
-        },
-        {
-          type: "doc",
-          label: "RollApp Sequencers",
-          id: "nodes/sequencer-node/index",
-        },
-        {
-          type: "doc",
-          label: "RollApp Light Clients",
-          id: "nodes/light-client/index",
         },
       ],
     },

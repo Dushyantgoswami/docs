@@ -43,6 +43,8 @@ const config = {
     ({
       colorMode: {
         defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       docs: {
         sidebar: {
@@ -63,13 +65,8 @@ const config = {
             items: [
               {
                 type: "doc",
-                label: "Deploy a RollApp",
-                docId: "tutorials/deploy-rollapp",
-              },
-              {
-                type: "doc",
-                label: "Deploy a Smart Contract",
-                docId: "tutorials/deploy-sc",
+                label: "Build Your Own RollApp",
+                docId: "tutorials/index",
               },
             ],
           },
@@ -83,22 +80,7 @@ const config = {
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
-              {
-                label: "RollApp Sequencers",
-                type: "doc",
-                docId: "nodes/sequencer-node/index",
-              },
-              {
-                label: "RollApp Light Clients",
-                type: "doc",
-                docId: "nodes/light-client/index",
-              },
             ],
-          },
-          {
-            to: "local-testnet",
-            position: "left",
-            label: "Local dYmension",
           },
           {
             to: "dymension-litepaper/dymension-litepaper-index",
