@@ -48,7 +48,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column" >
         <a href="nodes/validator-node/index" class="card-title card-link stretched-link"> 
-          <h2>Deploy Smart Contracts</h2>
+          <h2>Create Smart Contracts</h2>
         </a>
         <p class="card-text">Learn what it takes to run a dYmension node.</p>
       </div>

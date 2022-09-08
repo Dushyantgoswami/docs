@@ -37,37 +37,37 @@ const sidebars = {
             {
               type: "doc",
               label: "Introduction",
-              id: "tutorials/index",
+              id: "tutorials/rollapp/index",
             },
             {
               type: "doc",
               label: "Set Up Work Environment",
-              id: "tutorials/setup",
+              id: "tutorials/rollapp/setup",
             },
             {
               type: "doc",
               label: "Local dYmension",
-              id: "tutorials/local-testnet",
+              id: "tutorials/rollapp/local-testnet",
             },
             {
               type: "doc",
               label: "Run a Node",
-              id: "tutorials/run-a-node",
+              id: "tutorials/rollapp/run-a-node",
             },
             {
               type: "doc",
               label: "Initialize a RollApp",
-              id: "tutorials/init-rollapp",
+              id: "tutorials/rollapp/init-rollapp",
             },
             {
               type: "doc",
               label: "Build a Module",
-              id: "tutorials/build-a-module",
+              id: "tutorials/rollapp/build-a-module",
             },
             {
               type: "doc",
               label: "Interact with the RollApp",
-              id: "tutorials/interact",
+              id: "tutorials/rollapp/interact",
             },
           ],
         },
@@ -79,7 +79,12 @@ const sidebars = {
             {
               type: "doc",
               label: "Introduction",
-              id: "tutorials/index",
+              id: "tutorials/smart-contract/index",
+            },
+            {
+              type: "doc",
+              label: "Set Up Work Environment",
+              id: "tutorials/smart-contract/setup",
             },
           ],
         },
@@ -91,7 +96,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Hub Validators",
+          label: "Validator Nodes",
           id: "nodes/validator-node/index",
         },
       ],

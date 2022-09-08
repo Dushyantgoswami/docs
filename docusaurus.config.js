@@ -66,12 +66,12 @@ const config = {
               {
                 type: "doc",
                 label: "Build a RollApp",
-                docId: "tutorials/index",
+                docId: "tutorials/rollapp/index",
               },
               {
                 type: "doc",
                 label: "Deploy a Smart Contract",
-                docId: "tutorials/index",
+                docId: "tutorials/rollapp/index",
               },
             ],
           },
@@ -81,7 +81,7 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Hub Validators",
+                label: "Validator Nodes",
                 type: "doc",
                 docId: "nodes/validator-node/index",
               },
