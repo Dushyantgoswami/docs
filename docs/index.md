@@ -18,7 +18,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
   <div class="row row-cols-1 row-cols-md-3a g-4">
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column" >
-        <a href="getting-started" class="card-title card-link stretched-link"> 
+        <a href="get-started" class="card-title card-link stretched-link"> 
           <h2>Get Started</h2>
         </a>
       <p class="card-text">Begin your journey into a new dYmension.</p>
