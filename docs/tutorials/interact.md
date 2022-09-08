@@ -1,5 +1,5 @@
 ---
-title: "Interact"
+title: "Interact with the RollApp"
 order: 8
 description: An easy way to build your application-specific rollup
 tag: deep-dive

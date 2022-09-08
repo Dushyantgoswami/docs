@@ -61,11 +61,6 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Run the RollApp",
-          id: "tutorials/init-and-run",
-        },
-        {
-          type: "doc",
           label: "Interact with the RollApp",
           id: "tutorials/interact",
         },

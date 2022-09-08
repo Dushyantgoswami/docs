@@ -1,5 +1,5 @@
 ---
-title: "Build a Moduke"
+title: "Build a Module"
 order: 6
 description: An easy way to build your application-specific rollup
 tag: deep-dive

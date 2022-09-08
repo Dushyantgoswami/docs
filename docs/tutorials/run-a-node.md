@@ -50,7 +50,18 @@ Using the above address add a genesis transaction and start the chain:
 dymd add-genesis-account <address from the above command> 10000000stake,1000token
 dymd gentx user1 1000000stake --chain-id localnet
 dymd collect-gentxs
-dymd start
+```
+
+Now start the chain!
+
+```sh
+dymd start --dymint.aggregator true \
+    --dymint.da_layer mock \
+    --dymint.settlement_config "{\"root_dir\": \"$HOME/.checkers\", \"db_path\": \"data\"}" \
+    --dymint.settlement_layer mock \
+    --dymint.block_batch_size 1000 \
+    --dymint.namespace_id "$NAMESPACE_ID" \
+    --dymint.block_time 1s
 ```
 
 You should have a running local node! If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section. We are here for you!
