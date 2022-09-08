@@ -1,6 +1,6 @@
 ---
-title: "Getting Started"
-slug: "getting-started"
+title: "Get Started"
+slug: "get-started"
 hidden: false
 sidebar_position: 1
 hide_table_of_contents: true
