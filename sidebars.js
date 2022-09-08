@@ -26,43 +26,62 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Build Your Own RollApp",
+      label: "Developers",
       collapsed: true,
       items: [
         {
-          type: "doc",
-          label: "Introduction",
-          id: "tutorials/index",
+          type: "category",
+          label: "Build a RollApp",
+          collapsed: true,
+          items: [
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "tutorials/index",
+            },
+            {
+              type: "doc",
+              label: "Set Up Work Environment",
+              id: "tutorials/setup",
+            },
+            {
+              type: "doc",
+              label: "Local dYmension",
+              id: "tutorials/local-testnet",
+            },
+            {
+              type: "doc",
+              label: "Run a Node",
+              id: "tutorials/run-a-node",
+            },
+            {
+              type: "doc",
+              label: "Initialize a RollApp",
+              id: "tutorials/init-rollapp",
+            },
+            {
+              type: "doc",
+              label: "Build a Module",
+              id: "tutorials/build-a-module",
+            },
+            {
+              type: "doc",
+              label: "Interact with the RollApp",
+              id: "tutorials/interact",
+            },
+          ],
         },
         {
-          type: "doc",
-          label: "Set Up Work Environment",
-          id: "tutorials/setup",
-        },
-        {
-          type: "doc",
-          label: "Local dYmension",
-          id: "tutorials/local-testnet",
-        },
-        {
-          type: "doc",
-          label: "Run a Node",
-          id: "tutorials/run-a-node",
-        },
-        {
-          type: "doc",
-          label: "Initialize a RollApp",
-          id: "tutorials/init-rollapp",
-        },
-        {
-          type: "doc",
-          label: "Build a Module",
-          id: "tutorials/build-a-module",
-        },
-        {
-          type: "doc",
-          label: "Interact with the RollApp",
-          id: "tutorials/interact",
+          type: "category",
+          label: "Deploy a Smart Contract",
+          collapsed: true,
+          items: [
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "tutorials/index",
+            },
+          ],
         },
       ],
     },

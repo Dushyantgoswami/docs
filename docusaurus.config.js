@@ -65,7 +65,12 @@ const config = {
             items: [
               {
                 type: "doc",
-                label: "Build Your Own RollApp",
+                label: "Build a RollApp",
+                docId: "tutorials/index",
+              },
+              {
+                type: "doc",
+                label: "Deploy a Smart Contract",
                 docId: "tutorials/index",
               },
             ],

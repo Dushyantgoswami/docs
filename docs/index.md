@@ -19,7 +19,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column" >
         <a href="getting-started" class="card-title card-link stretched-link"> 
-          <h2>Getting started</h2>
+          <h2>Get Started</h2>
         </a>
       <p class="card-text">Begin your journey into a new dYmension.</p>
     </div>
@@ -36,16 +36,24 @@ This is an open-source community effort, so feel free to suggest new topics by c
 </div>
 
 <div class="docs-card-container">
-  <div class="row row-cols-1 row-cols-md-3a g-4">
+  <div class="row row-cols-1 row-cols-md-2a g-4">
       <div class="col">
         <div class="card card-body h-100 d-flex flex-column">
           <a href="tutorials" class="card-title card-link stretched-link"> 
-            <h2>Build Your Own RollApp</h2>
+            <h2>Build a RollApp</h2>
           </a>
           <p class="card-text">Deploy a RollApp into a Local dYmension.</p>
         </div>
       </div>
     <div class="col">
+      <div class="card card-body h-100 d-flex flex-column" >
+        <a href="nodes/validator-node/index" class="card-title card-link stretched-link"> 
+          <h2>Deploy Smart Contracts</h2>
+        </a>
+        <p class="card-text">Learn what it takes to run a dYmension node.</p>
+      </div>
+    </div>
+     <div class="col">
       <div class="card card-body h-100 d-flex flex-column" >
         <a href="nodes/validator-node/index" class="card-title card-link stretched-link"> 
           <h2>Run a Node</h2>
