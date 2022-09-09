@@ -21,15 +21,15 @@ This is an open-source community effort, so feel free to suggest new topics by c
         <a href="get-started" class="card-title card-link stretched-link"> 
           <h2>Get Started</h2>
         </a>
-      <p class="card-text">Learn the What, Why and How of dYmension.</p>
+      <p class="card-text">Learn the What and Why of dYmension.</p>
     </div>
   </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="concepts/rollapps" class="card-title card-link stretched-link"> 
-          <h2>Concepts</h2>
+        <a href="learn/dymension" class="card-title card-link stretched-link"> 
+          <h2>Learn</h2>
         </a>
-        <p class="card-text">Learn the key concepts of the dYmension blockchain.</p>
+        <p class="card-text">Learn the How of dYmension.</p>
       </div>
     </div>
   </div>

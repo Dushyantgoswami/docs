@@ -4,23 +4,18 @@ const sidebars = {
     "get-started",
     {
       type: "category",
-      label: "Concepts",
+      label: "Learn",
       collapsed: true,
       items: [
         {
           type: "doc",
-          label: "RollApp Architecture",
-          id: "concepts/rollapps",
+          label: "How dYmension Works",
+          id: "learn/dymension",
         },
         {
           type: "doc",
-          label: "Modular Blockchain",
-          id: "concepts/modular-blockchain",
-        },
-        {
-          type: "doc",
-          label: "Optimistic Rollups",
-          id: "concepts/optimistic-rollups",
+          label: "How RollApps Work",
+          id: "learn/rollapps",
         },
       ],
     },
