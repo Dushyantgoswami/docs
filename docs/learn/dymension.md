@@ -3,25 +3,17 @@ title: "How dYmension Works"
 slug: "dymension"
 ---
 
-The traditional web model is composed of entities paying for segregated pieces of server. For example, when Twitter servers are under heavy use it does not affect Reddit servers. Similarly, dYmension applications receive a segregated high performant execution environment running the application. dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance and scalability.
-
-![Modular Blockchain](./images/modular_blockchain.svg)
-
-**The functions that modular blockchains specialize in are:**
-
-- Execution layer: Processes transactions
-- Settlement layer: Dispute resolution, maintain state roots and bridge between environments
-- Data availability layer: Ensures all data is made available when the block is proposed (no hidden transactions)
+dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance, efficiency and scalability. Monolithic blockchains handle transaction execution, state settlement, data processing and provide a consensus on the canonical history of the chain.
 
 dYmension takes the unique approach of sharding the execution layer into application-specific rollups (RollApps). This design allows each application to have its own execution environment. The settlement layer of dYmension is termed "the Hub." The hub is a central place for security, liquidity and inter-operability. By implementing a settlement layer, dYmension is able to connect the ecosystem of RollApps with one another and the broader IBC-enabled world.
 
-Sharding the execution layer into multiple distinct instances allows applications to be performance independant of the underlying base layers. Applications are able to run with significantly lower latency and higher throughput, while inheriting the security of the underlying base layers (settlement and data). Furthermore, dYmension utilizes various data availability solutions allowing [permissionless actors submit an proofs of fraudulent activity.](/docs/concepts/optimistic-rollups.md)
+![Modular Blockchain](./images/modular_blockchain.svg)
 
 Depending on the design of the modular blockchain, consensus may be provided at various layers. dYmension utilizes the settlement layer to handle consensus of the RollApps, which enables a clean design for trust minimized bridging, handling any fraud disputes and a significant reduction in latency. This facilitates a highly scalable and efficient design that is capable of keeping up with modern day application requirenments.
 
-0000
+Sharding the execution layer into multiple distinct instances allows applications to be performance independant of the underlying base layers. Applications are able to run with significantly lower latency and higher throughput, while inheriting the security of the underlying base layers (settlement and data). Furthermore, dYmension utilizes various data availability solutions allowing permissionless actors submit an proofs of fraudulent activity.
 
-Optimistic rollups reduce computation on the main chain by processing transactions off-chain. Optimistic rollups derive security from the main chain they utilize by posting transaction results on-chain. Rollups operate in an execution environment which is considered “off-chain.” Instead of processing all transactions on the blockchain, a transaction processor, known as a Sequencer, executes transactions, batches them and submit an updated state to the main chain.
+RollApps operate under an optimistic fraud proof design. Optimistic rollups reduce computation on the main chain by processing transactions off-chain. Optimistic rollups derive security from the main chain they utilize by posting transaction results on-chain. Rollups operate in an execution environment which is considered “off-chain.” Instead of processing all transactions on the blockchain, a transaction processor, known as a Sequencer, executes transactions, batches them and submit an updated state to the main chain.
 
 By moving the computational efforts off-chain, nodes of the main chain with less computational power may keep up with high amounts of information re-processing and participate in the consensus of the network. This enables the network as a whole to scale superlineraly to the cost of running the system.<sup>1</sup> In dYmension's architecture, compatible rollups post transaction data to a data availability layer and publish a new state root on dYmension's settlement layer. Optimisitic design requires only O(1) data in state to be stored on the settlement layer for O(N) off-chain transactions. This significantly reduces the efforts of each full and validating node participating in dYmension's network.
 
