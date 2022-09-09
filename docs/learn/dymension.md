@@ -1,9 +1,19 @@
 ---
-title: "Optimistic Rollups"
-slug: "optimistic-rollups"
+title: "How dYmension Works"
+slug: "dymension"
 ---
 
-Optimistic rollups reduce computation on the main chain by processing transactions off-chain. Optimistic rollups derive security from the main chain they utilize by posting transaction results on-chain. Rollups operate in an execution environment which is considered “off-chain.” Instead of processing all transactions on the blockchain, a transaction processor, known as a Sequencer, executes transactions, batches them and submit an updated state to the main chain.
+dYmension follows a modular blockchain architecture design that decouples different functions of a ‘Monolithic’ blockchain for greater performance, efficiency and scalability. Monolithic blockchains handle transaction execution, state settlement, data processing and provide a consensus on the canonical history of the chain.
+
+dYmension takes the unique approach of sharding the execution layer into application-specific rollups (RollApps). This design allows each application to have its own execution environment. The settlement layer of dYmension is termed "the Hub." The hub is a central place for security, liquidity and inter-operability. By implementing a settlement layer, dYmension is able to connect the ecosystem of RollApps with one another and the broader IBC-enabled world.
+
+Depending on the design of the modular blockchain, consensus may be provided at various layers. dYmension utilizes the settlement layer to handle consensus of the RollApps, which enables a clean design for trust minimized bridging, handling any fraud disputes and a significant reduction in latency. This facilitates a highly scalable and efficient design that is capable of keeping up with modern day application requirenments.
+
+![Modular Blockchain](./images/modular_blockchain.svg)
+
+Sharding the execution layer into multiple distinct instances allows applications to be performance independant of the underlying base layers. Applications are able to run with significantly lower latency and higher throughput, while inheriting the security of the underlying base layers (settlement and data). Furthermore, dYmension utilizes various data availability solutions allowing permissionless actors submit an proofs of fraudulent activity.
+
+RollApps operate under an optimistic fraud proof design. Optimistic rollups reduce computation on the main chain by processing transactions off-chain. Optimistic rollups derive security from the main chain they utilize by posting transaction results on-chain. Rollups operate in an execution environment which is considered “off-chain.” Instead of processing all transactions on the blockchain, a transaction processor, known as a Sequencer, executes transactions, batches them and submit an updated state to the main chain.
 
 By moving the computational efforts off-chain, nodes of the main chain with less computational power may keep up with high amounts of information re-processing and participate in the consensus of the network. This enables the network as a whole to scale superlineraly to the cost of running the system.<sup>1</sup> In dYmension's architecture, compatible rollups post transaction data to a data availability layer and publish a new state root on dYmension's settlement layer. Optimisitic design requires only O(1) data in state to be stored on the settlement layer for O(N) off-chain transactions. This significantly reduces the efforts of each full and validating node participating in dYmension's network.
 
@@ -18,6 +28,11 @@ Besides relying on O(1) data to be stored regarding the state of the blockchain,
 ![Trust Assumptions](./images/trust-assumptions.png)
 
 Furthermore, dYmension natively services rollups on the settlement layer, which is known as ‘enshrined rollups’<sup>3</sup>. In this design the settlement layer meticulously incorporates the logic for maintaining RollApps within the layer. Contrary to dYmension’s RollApp design, non-enshrined rollups such as Arbitrum and Optimism are connected to the Ethereum base layer via a customized smart contract implementation<sup>4</sup>. These smart contracts are essentially multi-sig bridges which act as the interface surface between the base layer and the rollup. Buggy smart contracts and compromised multi-sig keys are only a few of the trust assumptions required for such a system. Enshrinement offers rollups the same trust and security assumptions as the base layer, yet with a simpler, safer and more efficient design space.
+
+The only application logic not restricted to handling RollApps is an embedded Automated Market Maker (AMM), creating a core financial center. The embedded functionality is designed to expose RollApps to efficient asset routing, better price discovery and most importantly shared liquidity for the entire ecosystem. The AMM enables embedded price oracles for RollApps, which empower DeFi products based on safely priced liquidity pools. dYmension’s AMM is an indispensable part of the infrastructure stack, as it provides
+RollApps with a critical service which can determine their usage and success.
+
+To learn more about the design of the protocol please review [dYmension's litepaper](/docs/dymension-litepaper/index.md) and feel free to reach out to the dYmension core devs and community in the [discord](http://discord.gg/dymension)!
 
 References:
 
