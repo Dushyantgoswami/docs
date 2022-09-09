@@ -130,7 +130,7 @@ const config = {
                         <a class="social-link" href="https://github.com/dymensionxyz" target="_blank" rel="noopener noreferrer" title="Git">
                          <img class="icon" src="/img/github.svg" alt="GitHub Icon" />
                         </a>
-                        <a class="social-link" href="http://discord.gg/mvnh3YVa2W" target="_blank" rel="noopener noreferrer" title="Discord">
+                        <a class="social-link" href="http://discord.gg/dymension" target="_blank" rel="noopener noreferrer" title="Discord">
                           <img class="icon" src="/img/discord.svg" alt="Discord Icon" />
                         </a>
                         <a class="social-link" href="https://twitter.com/dymensionXYZ/" target="_blank" rel="noopener noreferrer" title="Twitter">
