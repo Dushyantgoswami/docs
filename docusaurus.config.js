@@ -71,7 +71,7 @@ const config = {
               {
                 type: "doc",
                 label: "Deploy a Smart Contract",
-                docId: "tutorials/rollapp/index",
+                docId: "tutorials/smart-contract/index",
               },
             ],
           },
