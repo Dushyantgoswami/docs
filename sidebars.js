@@ -119,11 +119,6 @@ const sidebars = {
           label: "Full Nodes",
           id: "nodes/full-node/index",
         },
-        {
-          type: "doc",
-          label: "Light Clients",
-          id: "nodes/light-client/index",
-        },
       ],
     },
     {

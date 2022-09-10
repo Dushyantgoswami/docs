@@ -85,11 +85,6 @@ const config = {
                 type: "doc",
                 docId: "nodes/full-node/index",
               },
-              {
-                label: "Light Clients",
-                type: "doc",
-                docId: "nodes/light-client/index",
-              },
             ],
           },
           {
