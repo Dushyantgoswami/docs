@@ -47,7 +47,12 @@ const sidebars = {
             {
               type: "doc",
               label: "Initialize a RollApp",
-              id: "tutorials/rollapp/init-rollapp",
+              id: "tutorials/rollapp/initialize-rollapp",
+            },
+            {
+              type: "doc",
+              label: "Scaffold a RollApp",
+              id: "tutorials/rollapp/scaffold-rollapp",
             },
             {
               type: "doc",
@@ -56,8 +61,18 @@ const sidebars = {
             },
             {
               type: "doc",
+              label: "Deploy the RollApp",
+              id: "tutorials/rollapp/deploy-rollapp",
+            },
+            {
+              type: "doc",
               label: "Interact with the RollApp",
               id: "tutorials/rollapp/interact",
+            },
+            {
+              type: "doc",
+              label: "Update base layers",
+              id: "tutorials/rollapp/update-rollapp",
             },
           ],
         },
