@@ -26,8 +26,7 @@ Docker is very helpful to do the exercises. So you may need to install Docker. T
 
 ## Install Go
 
-You need Go to develop with the Cosmos SDK. If you need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
-\
+You need Go to develop with the dYmension `RDK`. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
 
 ## Install Ignite
 
