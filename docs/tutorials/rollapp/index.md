@@ -10,17 +10,26 @@ title: Build Your Own RollApp
 
 # Build a Checkers RollApp
 
-The next sections are all about creating a decentralized game of checkers using Ignite CLI and the dYmension RDK. Each section progressively advances the project. To learn the most efficiently, you should treat each section as _a solution_ to the questions raised at the start of the section.
+This tutorial guide will go over building a dYmension RDK app for dymint, dYmension's drop-in replacement of tendermint for RollApps. The next sections are all about creating a decentralized game of checkers using Ignite CLI and the dYmension RDK. Each section progressively advances the project.
 
-These exercises help you prepare a conceptual framework for the information that follows. You are not tested on them, but it is in your best interest to complete each one before moving on to the associated section.
-
-## In this tutorial, you will:
+### In this tutorial, you will:
 
 - Find instructions on how to setup your work environment.
-- Learn how to run a node and interact with a Cosmos SDK chain.
 - Work with the Ignite CLI.
-- Begin implementing a RollApp for a checkers game using the Ignite CLI.
+- Learn how to run a node and interact with the RollApp and dYmension blockchain.
+- Begin implementing a RollApp for a checkers game.
 
-## Next up
+:::info NOTE:
+This tutorial will explore developing with dymint, which is still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our Discord. Furthermore, while dymint allows you to build RollApps on dYmension, it currently does not support fraud proofs yet and is therefore running in "pessimistic" mode, where nodes would need to re-execute the transactions to check the validity of the chain (i.e. a full node). Furthermore, dymint currently only supports a single sequencer.
+:::
 
-Before you [deploy a RollApp](./deploy-rollapp.md) and explore [Ignite CLI](./ignitecli.md), prep everything for the running exercise - creating a checkers blockchain - by going through the section _[Setup Your Work Environment](./setup.md)_.
+### Pre-requisites
+
+Given this tutorial is targeted for developers who are experienced in Cosmos-SDK, we recommend you go over the following tutorials in Ignite to understand all the different components in Cosmos-SDK before proceeding with this tutorial:
+
+- [Hello World](https://docs.ignite.com/guide/hello)
+- [Blog and Module Basics](https://docs.ignite.com/guide/blog)
+- [Nameservice Tutorial](https://docs.ignite.com/guide/nameservice)
+- [Scavenger Hunt](https://docs.ignite.com/guide/scavenge)
+
+### Let's begin!
