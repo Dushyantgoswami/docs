@@ -6,7 +6,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-This section will explain how to run a node of the dYmension hub.
+This section will explain how to run a full node of the dYmension hub.
 
 ### Step 1: Install binaries
 
@@ -55,13 +55,7 @@ dymd collect-gentxs
 Now start the chain!
 
 ```sh
-dymd start --dymint.aggregator true \
-    --dymint.da_layer mock \
-    --dymint.settlement_config "{\"root_dir\": \"$HOME/.checkers\", \"db_path\": \"data\"}" \
-    --dymint.settlement_layer mock \
-    --dymint.block_batch_size 1000 \
-    --dymint.namespace_id "$NAMESPACE_ID" \
-    --dymint.block_time 1s
+dymd start
 ```
 
 You should have a running local node! If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section. We are here for you!
