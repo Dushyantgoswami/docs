@@ -81,9 +81,9 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Validator Nodes",
+                label: "Full Nodes",
                 type: "doc",
-                docId: "nodes/validator-node/index",
+                docId: "nodes/full-node/index",
               },
               {
                 label: "Light Clients",

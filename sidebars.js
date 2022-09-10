@@ -46,11 +46,6 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Run a Node",
-              id: "tutorials/rollapp/run-a-node",
-            },
-            {
-              type: "doc",
               label: "Initialize a RollApp",
               id: "tutorials/rollapp/init-rollapp",
             },
@@ -106,8 +101,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Validator Nodes",
-          id: "nodes/validator-node/index",
+          label: "Full Nodes",
+          id: "nodes/full-node/index",
         },
         {
           type: "doc",
