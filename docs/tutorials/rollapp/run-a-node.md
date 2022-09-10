@@ -58,4 +58,4 @@ Now start the chain!
 dymd start
 ```
 
-You should have a running local node! If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section. We are here for you!
+You should have a running local node! If you have any issues please contact us on [discord](http://discord.gg/dymension) in the Developer section. We are here for you!
