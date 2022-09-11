@@ -8,7 +8,7 @@ order: 0
 title: Create Smart Contracts
 ---
 
-# CosmWasm on dymint
+# CosmWasm on dYmension's RDK
 
 CosmWasm is a smart contracting platform built for the Cosmos ecosystem by making use of WebAssembly (Wasm) to build smart contracts
 for Cosmos-SDK.
