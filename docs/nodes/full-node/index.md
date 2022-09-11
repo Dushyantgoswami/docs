@@ -47,7 +47,7 @@ Initialize the "localnet" chain:
 dymd init test --chain-id localnet
 ```
 
-Add an account (keep note of the address, pub-key and name, you will use it in the following commands):
+Add an account (make note of the address, pub-key and name, you will need them for future steps):
 
 ```sh
 dymd keys add Alice
