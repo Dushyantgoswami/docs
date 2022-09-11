@@ -94,7 +94,7 @@ const sidebars = {
             {
               type: "doc",
               label: "dYmension Wasm Node",
-              id: "tutorials/smart-contract/dymension-wasm-node",
+              id: "tutorials/smart-contract/dym-wasm-node",
             },
             {
               type: "doc",
