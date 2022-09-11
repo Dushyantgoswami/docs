@@ -93,7 +93,7 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "dYmension Wasm Node",
+              label: "Run a dYmension Wasm Node",
               id: "tutorials/smart-contract/dym-wasm-node",
             },
             {
