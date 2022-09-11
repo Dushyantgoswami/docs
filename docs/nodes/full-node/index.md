@@ -50,14 +50,14 @@ dymd init test --chain-id localnet
 Add an account (keep note of the address, pub-key and name, you will use it in the following commands):
 
 ```sh
-dymd keys add user1
+dymd keys add Alice
 ```
 
 Using the above address add a genesis transaction and start the chain:
 
 ```sh
 dymd add-genesis-account <address from the above command> 10000000stake,1000token
-dymd gentx user1 1000000stake --chain-id localnet
+dymd gentx Alice 1000000stake --chain-id localnet
 dymd collect-gentxs
 ```
 
