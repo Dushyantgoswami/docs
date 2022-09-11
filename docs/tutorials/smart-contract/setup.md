@@ -28,17 +28,19 @@ Docker is very helpful to do the exercises. So you may need to install Docker. T
 
 You need Go to develop with the dYmension `RDK`. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
 
-## Install Ignite
-
-Ignite CLI is an easy-to-use CLI tool for creating and maintaining sovereign application-specific blockchains. Blockchains created with Ignite CLI use Cosmos SDK and Tendermint. We will utilize dYmension's `RDK` and `dymint` as drop-in replacements for the Cosmos SDK and Tendermint. To install, head to the [Install Ignite CLI page](https://docs.ignite.com/guide/install).
-
-## Install Node.js
-
-To develop with CosmJS, you need Node.js. Just head to the [Node.js download page](https://nodejs.org/en/download/) to install it.
-
 ## Install Rust
 
 To work with Rust, you may need to install it first. You can find a well-documented install step-by-step in the [Install page from Rust](https://www.rust-lang.org/tools/install).
+
+## Install Rustup
+
+On Mac/Linux systems, here are the commands for installing it:
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+rustup default stable && rustup target list --installed && rustup target add wasm32-unknown-unknown
+```
 
 ## Install Visual Studio Code
 
