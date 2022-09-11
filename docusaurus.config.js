@@ -71,7 +71,7 @@ const config = {
               {
                 type: "doc",
                 label: "Deploy a Smart Contract",
-                docId: "tutorials/rollapp/index",
+                docId: "tutorials/smart-contract/index",
               },
             ],
           },
@@ -81,14 +81,9 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Validator Nodes",
+                label: "Full Nodes",
                 type: "doc",
-                docId: "nodes/validator-node/index",
-              },
-              {
-                label: "Light Clients",
-                type: "doc",
-                docId: "nodes/light-client/index",
+                docId: "nodes/full-node/index",
               },
             ],
           },

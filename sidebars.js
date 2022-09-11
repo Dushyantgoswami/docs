@@ -46,13 +46,13 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Run a Node",
-              id: "tutorials/rollapp/run-a-node",
+              label: "Initialize a RollApp",
+              id: "tutorials/rollapp/initialize-rollapp",
             },
             {
               type: "doc",
-              label: "Initialize a RollApp",
-              id: "tutorials/rollapp/init-rollapp",
+              label: "Scaffold a RollApp",
+              id: "tutorials/rollapp/scaffold-rollapp",
             },
             {
               type: "doc",
@@ -61,8 +61,18 @@ const sidebars = {
             },
             {
               type: "doc",
+              label: "Deploy the RollApp",
+              id: "tutorials/rollapp/deploy-rollapp",
+            },
+            {
+              type: "doc",
               label: "Interact with the RollApp",
               id: "tutorials/rollapp/interact",
+            },
+            {
+              type: "doc",
+              label: "Update base layers",
+              id: "tutorials/rollapp/update-rollapp",
             },
           ],
         },
@@ -84,7 +94,7 @@ const sidebars = {
             {
               type: "doc",
               label: "dYmension Wasm Node",
-              id: "tutorials/smart-contract/dymension-wasm-node",
+              id: "tutorials/smart-contract/dym-wasm-node",
             },
             {
               type: "doc",
@@ -106,13 +116,8 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Validator Nodes",
-          id: "nodes/validator-node/index",
-        },
-        {
-          type: "doc",
-          label: "Light Clients",
-          id: "nodes/light-client/index",
+          label: "Full Nodes",
+          id: "nodes/full-node/index",
         },
       ],
     },
