@@ -57,7 +57,7 @@ const sidebars = {
             {
               type: "doc",
               label: "Installing RDK & dymint",
-              id: "tutorials/rollapp/installing-rdk-dymint",
+              id: "tutorials/rollapp/install-rdk-dymint",
             },
             {
               type: "doc",
