@@ -33,7 +33,7 @@ Check that the dymd binaries have been successfully installed:
 dymd version
 ```
 
-If the dymd command is not found an error message is returned, confirm that your [GOPATH](https://go.dev/doc/gopath_code#GOPATH) is correctly configured by running the following command:
+Should return "latest". If the dymd command is not found an error message is returned, confirm that your [GOPATH](https://go.dev/doc/gopath_code#GOPATH) is correctly configured by running the following command:
 
 ```sh
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -41,24 +41,33 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 ### Step 2: Initializing `dymd`
 
-Initialize the "localnet" chain:
+Set the following variables:
 
 ```sh
-dymd init test --chain-id localnet
+export CHAIN_ID="local-testnet"
+export KEY_NAME="local-user"
+export MONIKER_NAME="local"
+export SETTLEMENT_RPC="0.0.0.0:36657"
+export P2P_ADDRESS="0.0.0.0:36656"
 ```
 
-Add an account (make note of the address, pub-key and name, you will need them for future steps):
+Occasionally you may need to perform a comlpete reset of your node due to data corruption or misconfiguration. Resetting will remove all data in ~/.dymension/data and the addressbook in ~/.dymension/config/addrbook.json and reset the node to genesis state.
+
+Perform a complete reset of your dymd:
 
 ```sh
-dymd keys add Alice
+  dymd tendermint unsafe-reset-all
 ```
 
-Using the above address add a genesis transaction and start the chain:
+When starting a node you need to initialize a chain with a user:
 
 ```sh
-dymd add-genesis-account <address from the above command> 10000000stake,1000token
-dymd gentx Alice 1000000stake --chain-id localnet
-dymd collect-gentxs
+
+  dymd init "$MONIKER_NAME" --chain-id "$CHAIN_ID"
+  dymd keys add "$KEY_NAME" --keyring-backend test
+  dymd add-genesis-account "$(dymd keys show "$KEY_NAME" -a --keyring-backend test)" 100000000000stake
+  dymd gentx "$KEY_NAME" 100000000stake --chain-id "$CHAIN_ID" --keyring-backend test
+  dymd collect-gentxs
 ```
 
 Now start the chain!
