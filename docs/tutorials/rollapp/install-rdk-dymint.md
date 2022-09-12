@@ -3,20 +3,18 @@ title: "Installing dYmension's RDK and dymint"
 slug: "install-rdk-dymint"
 ---
 
-# Setting Up Optimint
+# Setting Up the RDK
 
-Before we continue with building our Wordle App, we need to set up
-Optimint on our codebase.
+Before we continue we need to replace the Cosmos SDK with dYmension's RDK which includes dymint (dYmension's drop-in replacement for Tendermint)
 
-## Installing Optimint
+## Installing the RDK
 
-Run the following command inside the `wordle` directory.
+Run the following command inside the `checkers` directory.
 
 ```sh
-go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/celestiaorg/cosmos-sdk@v0.45.4-optimint-v0.3.5
+go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@ffe24a21eca363c3b33266aaadda079c5f15d244
 go mod tidy
 go mod download
 ```
 
-With that, we have Optimint changes added to the project directory. Now,
-let's build the Wordle app!
+## Let's build!
