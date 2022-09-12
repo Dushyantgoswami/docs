@@ -5,9 +5,9 @@ description: An easy way to build your application-specific rollup
 tag: deep-dive
 ---
 
-# Interact with the dymension-checkers chain
+# Interact with the RollApp
 
-Fetch the accounts addresses
+Fetch the accounts addresses:
 
 ```sh
 export player1=$(checkersd keys show player1 -a)
@@ -25,13 +25,13 @@ checkersd query checkers show-next-game
 #   idValue: "1"
 ```
 
-Create new game
+Create a new game:
 
 ```sh
 checkersd tx checkers create-game $player1 $player2 1000000 --from $player1 --gas auto
 ```
 
-Confirm wager
+Confirm the wager:
 
 ```sh
 checkersd query bank balances $player2
@@ -41,7 +41,7 @@ checkersd query bank balances $player2
 #   denom: stake
 ```
 
-Show the created game (with the id that received before)
+Show the created game (with the id that was received before):
 
 ```sh
 checkersd query checkers show-stored-game 1
@@ -60,7 +60,7 @@ checkersd query checkers show-stored-game 1
 #   winner: '*'
 ```
 
-For showing just the board in nice square view:
+Showing the board in nice and cleaned up square view:
 
 ```sh
 checkersd query checkers show-stored-game 1 --output json | jq ".storedGame.game" | sed 's/"//g' | sed 's/|/\n/g'
@@ -75,7 +75,7 @@ checkersd query checkers show-stored-game 1 --output json | jq ".storedGame.game
 # r*r*r*r*
 ```
 
-Play the first move
+Play the first move:
 
 ```sh
 checkersd tx checkers play-move 1 1 2 2 3 --from $player2
@@ -91,7 +91,7 @@ checkersd query checkers show-stored-game 1 --output json | jq ".storedGame.game
 # r*r*r*r*
 ```
 
-Reject the game
+Reject the game:
 
 ```sh
 checkersd tx checkers reject-game 1 --from $player1
@@ -103,7 +103,7 @@ checkersd query checkers list-stored-game
 # storedGame: []
 ```
 
-Confirm wager returned
+Confirm wager returned:
 
 ```sh
 checkersd query bank balances $player2
@@ -113,7 +113,7 @@ checkersd query bank balances $player2
 #   denom: stake
 ```
 
-Simulate winning
+Simulate winning:
 
 ```sh
 checkersd tx checkers create-game $player1 $player2 1000000 --from $player1 --gas auto
@@ -121,7 +121,7 @@ checkersd tx checkers play-move 2 1 2 2 3 --from $player2
 checkersd tx checkers play-move 2 0 5 1 4 --from $player1
 ```
 
-Wait 5 minutes for game expiration (you can also actually win the game but it hard without ui-client)
+Wait 5 minutes for game expiration (you can also actually win the game but it difficult without UI-client):
 
 ```sh
 checkersd query checkers show-stored-game 2
@@ -142,7 +142,7 @@ checkersd query checkers show-stored-game 2
 #   winner: r
 ```
 
-Confirm that both player1 and player2 paid their wagers
+Confirm that both player1 and player2 paid their wagers:
 
 ```sh
 checkersd query bank balances $player1

@@ -9,7 +9,7 @@ RollApps evolve from the Cosmos Network. Cosmos is a network of interoperable bl
 
 Cosmos SDK based blockchains are built out of composable modules. Blockchain developers create customized business logic in new modules and integrate with the provided modules from the Cosmos SDK. The Cosmos SDK includes pre-built modules for actions such as minting new tokens, setting a gas fee, staking tokens and much more. The application-specific blockchains are customized to operate a single application. Instead of building a decentralized application on top of an underlying blockchain like Ethereum, developers build their own blockchain.
 
-Similar to Cosmos blockchains. dYmension RollApps are designed to create application-specific blockchains less the consensus overhead. Likewise, dYmension RDK modules are flexible and may be used to work with a variety of Virtual Machines including [CosmWasm](https://cosmwasm.com/), [EVM](https://docs.evmos.org/) and much more in the future!
+Similar to Cosmos blockchains. dYmension RollApps are designed to create application-specific blockchains less the consensus overhead. Likewise, dYmension RDK modules are flexible and may be used to work with a variety of Virtual Machines including [CosmWasm](https://github.com/CosmWasm/cosmwasm), [Ethermint](https://github.com/evmos/ethermint) and much more in the future!
 
 # Cosmos Chain Architecture
 

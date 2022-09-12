@@ -11,13 +11,16 @@ hide_table_of_contents: true
 Open a new tab in the terminal (keep the node running). Initialize a new RollApp:
 
 ```sh
-dymd tx rollapp create-rollapp "rollapp1" stamp1 "genesis-path/1" 3 100 '{"Addresses":[]}' --from user1 --chain-id localnet
+dymd tx rollapp create-rollapp "$ROLLAPP_ID" stamp1 "genesis-path/1" 3 100 '{"Addresses":[]}' \
+  --from "$KEY_NAME" \
+  --chain-id "$CHAIN_ID" \
+  --keyring-backend test
 ```
 
 This is how it would look without our template:
 
 ```sh
-dymd tx rollapp create-rollapp [rollapp-id] [code-stamp] [genesis-path] [max-withholding-blocks] [max-sequencers]  [permissioned-addresses] [--from] [--chain-id]
+dymd tx rollapp create-rollapp [rollapp-id] [code-stamp] [genesis-path] [max-withholding-blocks] [max-sequencers]   [permissioned-addresses] [--from] [--chain-id]
 ```
 
 We input flags into the transaction to create a new RollApp:
@@ -57,13 +60,20 @@ rollapp:
 Initialize and attach a Sequencer:
 
 ```sh
-dymd tx sequencer create-sequencer <creator-address> <creator-pub-key> rollapp1 '{"Moniker":"moniker3","Identity":"","Website":"","SecurityContact":"","Details":""}' --from user1 --chain-id localnet
+export DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
+export CREATOR_ADDRESS="$(dymd keys show "$KEY_NAME" -a --keyring-backend test)"
+export CREATOR_PUB_KEY="$(dymd keys show "$KEY_NAME" -p --keyring-backend test)"
+
+dymd tx sequencer create-sequencer "$CREATOR_ADDRESS" "$CREATOR_PUB_KEY" "$ROLLAPP_ID" "$DESCRIPTION" \
+  --from "$KEY_NAME" \
+  --chain-id "$CHAIN_ID" \
+  --keyring-backend test
 ```
 
 This is how it would look without our template:
 
 ```sh
-dymd tx sequencer create-sequencer <creator-address> <creator-pub-key> <rollapp-id> <description> <--from> <--chain-id>
+dymd tx sequencer create-sequencer [<creator-address] [<creator-pub-key] [<rollapp-id] [<description] [<--from] [<--chain-id]
 ```
 
 We input flags into the transaction to attach a Sequencer:
