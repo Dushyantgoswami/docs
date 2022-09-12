@@ -16,5 +16,3 @@ go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@ff
 go mod tidy
 go mod download
 ```
-
-## Let's build!
