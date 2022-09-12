@@ -17,7 +17,11 @@ As the usage of the blockchain grows, the server requirements may increase as we
 
 This section will explain how to run a full node of the dYmension hub.
 
-### Step 1: Install binaries
+## Step 1: Install Go
+
+Installing Go is a pre-requisite for running a dYmension full node. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
+
+### Step 2: Install binaries
 
 Clone `dymension`:
 
@@ -39,7 +43,7 @@ Should return "latest". If the dymd command is not found an error message is ret
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
-### Step 2: Initializing `dymd`
+### Step 3: Initializing `dymd`
 
 Set the following variables:
 
