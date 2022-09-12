@@ -6,7 +6,7 @@ sidebar_position: 4
 hide_table_of_contents: true
 ---
 
-## Run dymension rollapp
+## Run the dYmension RollApp
 
 Run the checkers-rollapp chain:
 
@@ -22,3 +22,5 @@ checkersd start --dymint.aggregator true \
   --dymint.namespace_id "$NAMESPACE_ID" \
   --dymint.block_time 1s
 ```
+
+## You are now the Sequencer.
