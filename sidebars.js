@@ -41,8 +41,8 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Local dYmension",
-              id: "tutorials/rollapp/local-testnet",
+              label: "Run a dYmension node",
+              id: "tutorials/rollapp/run-a-node",
             },
             {
               type: "doc",

@@ -1,6 +1,6 @@
 ---
-title: "Local dYmension"
-slug: "local-testnet"
+title: "Run a dYmension node"
+slug: "run-a-node"
 hidden: false
 sidebar_position: 2
 hide_table_of_contents: true
@@ -10,7 +10,7 @@ We present you a Docker of the dYmension protocol. This tool comes pre-built wit
 
 TODO - Docker
 
-### Step 1: Install settlement layer binaries 
+### Step 1: Install settlement layer binaries
 
 Clone `dymension`:
 
@@ -32,7 +32,7 @@ If the dymd command is not found an error message is returned, confirm that your
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
-Set the following variables to the following: 
+Set the following variables to the following:
 
 ```sh
 export CHAIN_ID="local-testnet"
@@ -43,6 +43,7 @@ export P2P_ADDRESS="0.0.0.0:36656"
 ```
 
 Start the chain from the root directory of the dymension repo with this handy script:
+
 ```sh
 ./scripts/run_local.sh
 ```
