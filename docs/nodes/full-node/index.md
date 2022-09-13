@@ -80,6 +80,8 @@ You should have a running local node! Let's run a sample transaction.
 
 Keep the node running and open a new tab in the terminal. Let's get your validator consensus address.
 
+### Step 4: Running a transaction
+
 ```sh
 dymd tendermint show-address
 ```
