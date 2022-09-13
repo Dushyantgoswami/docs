@@ -63,7 +63,6 @@ Perform a complete reset of your dymd:
 When starting a node you need to initialize a chain with a user:
 
 ```sh
-
   dymd init "$MONIKER_NAME" --chain-id "$CHAIN_ID"
   dymd keys add "$KEY_NAME" --keyring-backend test
   dymd add-genesis-account "$(dymd keys show "$KEY_NAME" -a --keyring-backend test)" 100000000000stake
