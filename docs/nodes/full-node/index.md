@@ -51,8 +51,6 @@ Set the following variables:
 export CHAIN_ID="local-testnet"
 export KEY_NAME="local-user"
 export MONIKER_NAME="local"
-export SETTLEMENT_RPC="0.0.0.0:36657"
-export P2P_ADDRESS="0.0.0.0:36656"
 ```
 
 Occasionally you may need to perform a comlpete reset of your node due to data corruption or misconfiguration. Resetting will remove all data in ~/.dymension/data and the addressbook in ~/.dymension/config/addrbook.json and reset the node to genesis state.
