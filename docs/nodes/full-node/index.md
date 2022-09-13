@@ -8,14 +8,13 @@ hide_table_of_contents: true
 
 # Full Nodes
 
-dYmension's settlement layer is based on [Tendermint Core](https://github.com/tendermint/tendermint/blob/master/docs/introduction/what-is-tendermint.md), which relies on a set of validators that are responsible for committing new blocks in the blockchain. These validators run full nodes and participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
+dYmension's settlement layer uses the [Tendermint Core](https://github.com/tendermint/tendermint/blob/master/docs/introduction/what-is-tendermint.md), which relies on a set of validators that are responsible for committing new blocks in the blockchain. These validators run full nodes and participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
 
-Validator candidates can bond their own staking tokens and have the tokens "delegated", or staked, to them by token holders. DYM is dYmension's native token. Validators and their delegators will earn DYM as block provisions and tokens as transaction fees through execution of the Tendermint consensus protocol. Similar to other Cosmos SDK chains validators may set commission on the fees their delegators receive as additional incentive.
+Validator candidates can bond their own DYM (dYmension's native token) and have the tokens "delegated" to them by token holders. Validators and their delegators will earn DYM for participating and securing the dYmension settlement layer. Similar to other Cosmos SDK chains, validators may set commission on the rewards their delegators receive.
 
-Besides running a full node as a validator, any one can run the full node of dYmension to broadcast transactions and connect directly to the blockchain. In the following tutorial we will demonstrate how to run a full node of the dYmension settlement layer.
-As the usage of the blockchain grows, the server requirements may increase as well, so you should have a plan for updating your server as well.
+Besides running a full node as a validator, anyone may run the full node of dYmension to broadcast transactions and connect directly to the blockchain. In the following tutorial we will demonstrate how to run a full node of the dYmension settlement layer. As the dYmension protocol grows and gets closer to a public testnet and mainnet dYmension core devs along with the community will continually re-evaluate the hardware requirements for running and staying in-sync with the dYmension settlement layer.
 
-This section will explain how to run a full node of the dYmension hub.
+This section explains how to run a full node of the dYmension hub.
 
 ## Step 1: Install Go
 
@@ -51,8 +50,6 @@ Set the following variables:
 export CHAIN_ID="local-testnet"
 export KEY_NAME="local-user"
 export MONIKER_NAME="local"
-export SETTLEMENT_RPC="0.0.0.0:36657"
-export P2P_ADDRESS="0.0.0.0:36656"
 ```
 
 Occasionally you may need to perform a comlpete reset of your node due to data corruption or misconfiguration. Resetting will remove all data in ~/.dymension/data and the addressbook in ~/.dymension/config/addrbook.json and reset the node to genesis state.
@@ -66,7 +63,6 @@ Perform a complete reset of your dymd:
 When starting a node you need to initialize a chain with a user:
 
 ```sh
-
   dymd init "$MONIKER_NAME" --chain-id "$CHAIN_ID"
   dymd keys add "$KEY_NAME" --keyring-backend test
   dymd add-genesis-account "$(dymd keys show "$KEY_NAME" -a --keyring-backend test)" 100000000000stake
@@ -80,4 +76,16 @@ Now start the chain!
 dymd start
 ```
 
-You should have a running local node! If you have any issues please contact us on [discord](http://discord.gg/dymension) in the Developer section. We are here for you!
+You should have a running local node! Let's run a sample transaction.
+
+Keep the node running and open a new tab in the terminal. Let's get your validator consensus address.
+
+```sh
+dymd tendermint show-address
+```
+
+This returns an address with the prefix "dymvalcons" or the dYmension validator consensus address.
+
+To further learn about the dYmension protocol please visit our brief overview on [how dYmension works](/docs/learn/dymension.md), our more in-depth [litepaper](/docs/dymension-litepaper/index.md) and our tutorial on how to [create a RollApp on top of dYmension's settlement layer.](/docs/tutorials/rollapp/index.md)
+
+If you have any issues please contact us on [discord](http://discord.gg/dymension) in the Developer section. We are here for you!
