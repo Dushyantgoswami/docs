@@ -32,20 +32,24 @@ If the dymd command is not found an error message is returned, confirm that your
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
-Set the following variables to the following:
+From the dymension folder set the following variables to the following:
 
 ```sh
 export CHAIN_ID="local-testnet"
 export KEY_NAME="local-user"
 export MONIKER_NAME="local"
 export SETTLEMENT_RPC="0.0.0.0:36657"
+export GRPC_ADDRESS="0.0.0.0:8090"
+export GRPC_WEB_ADDRESS="0.0.0.0:8091"
 export P2P_ADDRESS="0.0.0.0:36656"
+
+sh scripts/setup_local.sh
 ```
 
 Start the chain from the root directory of the dymension repo with this handy script:
 
 ```sh
-./scripts/run_local.sh
+sh scripts/run_local.sh
 ```
 
 ### BAM! You have a running settlement layer node, keep it running. Let's continue...
