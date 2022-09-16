@@ -60,6 +60,23 @@ const config = {
         items: [
           {
             type: "dropdown",
+            label: "Learn",
+            position: "left",
+            items: [
+              {
+                label: "How dYmension Works",
+                type: "doc",
+                docId: "learn/dymension",
+              },
+              {
+                label: "How RollApps Work",
+                type: "doc",
+                docId: "learn/rollapps",
+              },
+            ],
+          },
+          {
+            type: "dropdown",
             label: "Developers",
             position: "left",
             items: [
