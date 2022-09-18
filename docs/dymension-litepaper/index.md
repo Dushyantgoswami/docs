@@ -3,7 +3,7 @@ title: "dYmension Litepaper"
 slug: "dymension-litepaper-index"
 ---
 
-# The dYmension Blockchain
+# dYmension Litepaper
 
 ## Home of the RollApps
 
