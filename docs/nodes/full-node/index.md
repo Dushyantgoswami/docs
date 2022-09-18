@@ -1,5 +1,5 @@
 ---
-title: "Full Node"
+title: "Full Nodes"
 slug: "index"
 hidden: false
 sidebar_position: 0
