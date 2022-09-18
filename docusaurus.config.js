@@ -98,9 +98,19 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Full Nodes",
                 type: "doc",
+                label: "Overview",
                 docId: "nodes/full-node/index",
+              },
+              {
+                type: "doc",
+                label: "Run a Node",
+                docId: "nodes/full-node/run-a-node",
+              },
+              {
+                type: "doc",
+                label: "Reset and troubleshooting",
+                docId: "nodes/full-node/reset-node",
               },
             ],
           },
