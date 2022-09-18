@@ -11,6 +11,9 @@ hide_table_of_contents: true
 Open a new tab in the terminal (keep the node running). Initialize a new RollApp:
 
 ```sh
+CHAIN_ID="local-testnet"
+KEY_NAME="local-user"
+
 dymd tx rollapp create-rollapp "$ROLLAPP_ID" stamp1 "genesis-path/1" 3 100 '{"Addresses":[]}' \
   --from "$KEY_NAME" \
   --chain-id "$CHAIN_ID" \
@@ -20,7 +23,7 @@ dymd tx rollapp create-rollapp "$ROLLAPP_ID" stamp1 "genesis-path/1" 3 100 '{"Ad
 This is how it would look without our template:
 
 ```sh
-dymd tx rollapp create-rollapp [rollapp-id] [code-stamp] [genesis-path] [max-withholding-blocks] [max-sequencers]   [permissioned-addresses] [--from] [--chain-id]
+dymd tx rollapp create-rollapp [rollapp-id] [code-stamp] [genesis-path] [max-withholding-blocks] [max-sequencers] [permissioned-addresses] [--from] [--chain-id]
 ```
 
 We input flags into the transaction to create a new RollApp:
@@ -51,7 +54,7 @@ rollapp:
   maxWithholdingBlocks: "3"
   permissionedAddresses:
     addresses: []
-  rollappId: rollapp1
+  rollappId: <RollApp ID>
   version: "0"
 ```
 
@@ -60,9 +63,10 @@ rollapp:
 Initialize and attach a Sequencer:
 
 ```sh
-export DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
-export CREATOR_ADDRESS="$(dymd keys show "$KEY_NAME" -a --keyring-backend test)"
-export CREATOR_PUB_KEY="$(dymd keys show "$KEY_NAME" -p --keyring-backend test)"
+MONIKER_NAME="local"
+DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
+CREATOR_ADDRESS="$(dymd keys show "$KEY_NAME" -a --keyring-backend test)"
+CREATOR_PUB_KEY="$(dymd keys show "$KEY_NAME" -p --keyring-backend test)"
 
 dymd tx sequencer create-sequencer "$CREATOR_ADDRESS" "$CREATOR_PUB_KEY" "$ROLLAPP_ID" "$DESCRIPTION" \
   --from "$KEY_NAME" \

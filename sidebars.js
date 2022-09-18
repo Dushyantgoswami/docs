@@ -121,8 +121,18 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Full Nodes",
+          label: "Overview",
           id: "nodes/full-node/index",
+        },
+        {
+          type: "doc",
+          label: "Run a Node",
+          id: "nodes/full-node/run-a-node",
+        },
+        {
+          type: "doc",
+          label: "Reset and troubleshooting",
+          id: "nodes/full-node/reset-node",
         },
       ],
     },
