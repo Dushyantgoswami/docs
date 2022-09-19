@@ -1,6 +1,6 @@
 ---
-title: "Initialize a RollApp"
-slug: "Initialize-rollapp"
+title: "Register the RollApp"
+slug: "register-rollapp"
 hidden: false
 sidebar_position: 3
 hide_table_of_contents: true
@@ -11,6 +11,7 @@ hide_table_of_contents: true
 Open a new tab in the terminal (keep the node running). Initialize a new RollApp:
 
 ```sh
+ROLLAPP_ID="Local dYmension RollApp"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
 
