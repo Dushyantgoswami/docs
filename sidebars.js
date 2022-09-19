@@ -26,24 +26,31 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "Build a RollApp",
+          label: "Getting started",
           collapsed: true,
           items: [
-            {
-              type: "doc",
-              label: "Introduction",
-              id: "tutorials/rollapp/index",
-            },
-            {
-              type: "doc",
-              label: "Set Up Work Environment",
-              id: "tutorials/rollapp/setup",
-            },
-            {
-              type: "doc",
-              label: "Run a dYmension node",
-              id: "tutorials/rollapp/run-a-node",
-            },
+        {
+          type: "doc",
+          label: "Introduction",
+          id: "tutorials/rollapp/index",
+        },
+        {
+          type: "doc",
+          label: "Setup work environment",
+          id: "tutorials/rollapp/setup",
+        },
+        {
+          type: "doc",
+          label: "Run a hub node",
+          id: "tutorials/rollapp/run-a-node",
+        },
+      ],
+    },
+        {
+          type: "category",
+          label: "Checkers RollApp",
+          collapsed: true,
+          items: [
             {
               type: "doc",
               label: "Scaffold a RollApp",
@@ -88,7 +95,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Deploy a Smart Contract",
+          label: "CosmWasm RollApp",
           collapsed: true,
           items: [
             {
@@ -118,11 +125,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "EVM RollApp",
+          collapsed: true,
+          items: [
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "tutorials/smart-contract/index",
+            },
+          ],
+        },
       ],
     },
     {
       type: "category",
-      label: "Node Runners",
+      label: "Validators",
       items: [
         {
           type: "doc",
@@ -131,7 +150,7 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Run a Node",
+          label: "Run a node",
           id: "nodes/full-node/run-a-node",
         },
         {

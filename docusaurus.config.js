@@ -82,19 +82,29 @@ const config = {
             items: [
               {
                 type: "doc",
-                label: "Build a RollApp",
+                label: "Getting Started",
                 docId: "tutorials/rollapp/index",
               },
               {
                 type: "doc",
-                label: "Deploy a Smart Contract",
+                label: "Checkers RollApp",
+                docId: "tutorials/smart-contract/index",
+              },
+              {
+                type: "doc",
+                label: "CosmWasm Rollapp",
+                docId: "tutorials/smart-contract/index",
+              },
+              {
+                type: "doc",
+                label: "EVM Rollapp",
                 docId: "tutorials/smart-contract/index",
               },
             ],
           },
           {
             type: "dropdown",
-            label: "Node Runners",
+            label: "Validators",
             position: "left",
             items: [
               {
@@ -104,7 +114,7 @@ const config = {
               },
               {
                 type: "doc",
-                label: "Run a Node",
+                label: "Run a node",
                 docId: "nodes/full-node/run-a-node",
               },
               {
