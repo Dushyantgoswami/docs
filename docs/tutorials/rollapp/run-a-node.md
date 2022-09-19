@@ -6,7 +6,7 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-We present you a Docker of the dYmension protocol. This tool comes pre-built with the base layers so you can simulate a real-world experience of interacting with a live dYmension.
+We present you a local version of the dYmension protocol. This tool comes pre-built with the base layers so you can simulate a real-world experience of interacting with a live dYmension.
 
 ### Step 1: Install settlement layer binaries
 
