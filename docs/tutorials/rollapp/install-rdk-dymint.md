@@ -12,7 +12,7 @@ Before we continue we need to replace the Cosmos SDK with dYmension's RDK which 
 Run the following command inside the `checkers` directory.
 
 ```sh
-go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@ffe24a21eca363c3b33266aaadda079c5f15d244
+go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@v0.1.0-sdk-v0.45.4-dymint-v0.1.0
 go mod tidy
 go mod download
 ```
