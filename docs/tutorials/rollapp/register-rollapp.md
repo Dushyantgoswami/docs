@@ -6,9 +6,19 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-## Step 1: Create a RollApp instance
+## Step 1: Create the RollApp on the settlement layer
 
-Open a new tab in the terminal (keep the node running). Initialize a new RollApp:
+Open a new terminal window.
+Set the relevant environment variables for first creating a RollApp
+on the dymension settlement layer
+
+```sh
+CHAIN_ID="local-testnet"
+KEY_NAME="local-user"
+ROLLAPP_ID="checkers"
+```
+
+Send a transaction to the settlement layer for creating the RollApp
 
 ```sh
 ROLLAPP_ID="Local dYmension RollApp"
@@ -44,7 +54,7 @@ Let's make sure the RollApp initialization worked:
 dymd query rollapp list-rollapp
 ```
 
-Should result in (note that there is a version to track RollApp upgrades):
+Should result in (note that there is a version to track RollApp upgrades)
 
 ```sh
 rollapp:
@@ -59,15 +69,17 @@ rollapp:
   version: "0"
 ```
 
-## Step 2: Attach a Sequencer
+## Step 2: Attach a Sequencer for the created RollApp
 
 Initialize and attach a Sequencer:
 
 ```sh
+ROLLAPP_ID="checkers"
+CHAIN_ID="local-testnet"
 MONIKER_NAME="local"
-DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
-CREATOR_ADDRESS="$(dymd keys show "$KEY_NAME" -a --keyring-backend test)"
-CREATOR_PUB_KEY="$(dymd keys show "$KEY_NAME" -p --keyring-backend test)"
+export DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
+export CREATOR_ADDRESS="$(dymd keys show "$KEY_NAME" -a --keyring-backend test)"
+export CREATOR_PUB_KEY="$(dymd keys show "$KEY_NAME" -p --keyring-backend test)"
 
 dymd tx sequencer create-sequencer "$CREATOR_ADDRESS" "$CREATOR_PUB_KEY" "$ROLLAPP_ID" "$DESCRIPTION" \
   --from "$KEY_NAME" \

@@ -5,7 +5,7 @@ slug: "scaffold-rollapp"
 
 It's time to build a RollApp! We will use the [Local dYmension](https://github.com/dymensionxyz/local-dymension/) repository to build the Checkers RollApp.
 
-While the dymension node is running open a new tab in the terminal. Change the current directory to a new one where you will set up the RollApp. Run the following commands:
+While the dymension node is running open a new tab in the terminal. Change the current directory to a new one where you will set up the RollApp. Run the following commands
 
 ```sh
 git clone git@github.com:dymensionxyz/local-dymension.git && cd local-dymension
