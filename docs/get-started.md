@@ -1,5 +1,5 @@
 ---
-title: "Get Started"
+title: "Getting Started"
 slug: "get-started"
 hidden: false
 sidebar_position: 1
