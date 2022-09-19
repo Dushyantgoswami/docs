@@ -1,6 +1,6 @@
 ---
-title: "Initialize a RollApp"
-slug: "Initialize-rollapp"
+title: "Register the RollApp"
+slug: "register-rollapp"
 hidden: false
 sidebar_position: 3
 hide_table_of_contents: true

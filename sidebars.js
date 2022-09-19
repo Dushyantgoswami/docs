@@ -46,24 +46,29 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Initialize a RollApp",
-              id: "tutorials/rollapp/initialize-rollapp",
-            },
-            {
-              type: "doc",
               label: "Scaffold a RollApp",
               id: "tutorials/rollapp/scaffold-rollapp",
             },
             {
               type: "doc",
-              label: "Installing RDK & dymint",
+              label: "Install RDK & dymint",
               id: "tutorials/rollapp/install-rdk-dymint",
             },
             {
               type: "doc",
-              label: "Build a Module",
-              id: "tutorials/rollapp/build-a-module",
+              label: "Initialize the RollApp",
+              id: "tutorials/rollapp/init-rollapp",
             },
+            {
+              type: "doc",
+              label: "Register the RollApp",
+              id: "tutorials/rollapp/register-rollapp",
+            },
+            // {
+            //   type: "doc",
+            //   label: "Build a Module",
+            //   id: "tutorials/rollapp/build-a-module",
+            // },
             {
               type: "doc",
               label: "Run the RollApp",
@@ -76,8 +81,8 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Update base layers",
-              id: "tutorials/rollapp/update-rollapp",
+              label: "Query state root",
+              id: "tutorials/rollapp/query-rollapp",
             },
           ],
         },
