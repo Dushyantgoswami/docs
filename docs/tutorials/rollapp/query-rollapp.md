@@ -1,35 +1,34 @@
 ---
-title: "Query state root"
+title: "View RollApp state"
 slug: "query-rollapp"
 hidden: false
 sidebar_position: 4
 hide_table_of_contents: true
 ---
 
-TODO
+## View the RollApp state in the settlement layer
 
-<!--
-## Post the updated state
+While our sequencer is running, it keeps sending updates to the DA and Settlement layers. In the next section we will query the settlement layer 
+in order to view our current RollApp state. 
 
-Now we will update the state of the RollApp from our Sequencer:
-
-```sh
-dymd tx rollapp update-state "rollapp1" 1 1 "" 0 '{"BD":[{"Height":1}]}' --from user1 --chain-id localnet
-```
+First let's look at all of the different RollApps which were registered to the settlement layers. For now, it should be only our RollApp. 
 
 ```sh
-dymd tx rollapp update-state [rollapp-id] [start-height] [num-blocks] [da-path] [version] [bds] [--from] [--chain-id]
+dymd query rollapp list-rollapp
 ```
 
-We input flags to update the state of the RollApp:
+Next lets view our RollApp last update state index. Using this index we can later query the last state update sent to the settlement layer from our RollApp.
 
-- `rollappId` defines the rollapp to which the sequencer belongs.
-- `startHeight` is the block height of the first block in the batch
-- `numBlocks` is the number of blocks included in this batch update
-- `DAPath` is the description of the location on the DA layer
-- `version` is the version of the rollapp
-- `BD` is a list of block description objects (one per block). The height is the height of the block
-- `--from` the name of the account that initializes the RollApp (in this example it is "user1")
-- `--chain-id` is the name of the chain (in this example it is "localnet")
+```sh
+dymd query rollapp show-state-index checkers
+```
 
-We are here with you on this jouney! If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section. Let's build new application logic on top of the RollApp we just initialized. -->
+Now we can take the value of the `index` field and use it for our next query to show the last RollApp state info.
+
+```sh
+dymd query rollapp show-rollapp-state-info checkers <index>
+```
+
+Congrats! You now have a functioning RollApp which uses dymension's settlement layer for security.
+If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section.
+On our next tutorial we will show you how to build your own CosmWasm RollApp which can be used for deployment of smart contracts.
