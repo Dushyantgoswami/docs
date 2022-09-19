@@ -29,7 +29,7 @@ docker run --rm -v "$(pwd)":/code \
   cosmwasm/rust-optimizer:0.12.6
 ```
 
-export the artifacts directory into a env var
+set an env var for the nameservice wasm file
 
 ```sh
 export WASM_FILE=artifacts/cw_nameservice.wasm
