@@ -6,7 +6,7 @@ slug: resources
 
 # CosmWasm Resources
 
-For more resources on getting started building smart contracts with CosmWasm that you can then deploy on dYmension, check out the list of resources in this section.
+For more resources on getting started with building smart contracts using CosmWasm, check out the list of resources in this section.
 
 ## Tokens
 

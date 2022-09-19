@@ -4,13 +4,13 @@ order: 4
 slug: contract-preparation
 ---
 
-# Contract Preparation
+# Deploying a NameService contract
 
-Setting up the dependencies for the CosmWasm smart contracts.
+In the next section we will deploy a NameService contract on top of our CosmWasm RollApp.
+The goal of the NameService contract is to let users buy names and to set a value these names resolve to.
+The owner of a given name will be the current highest bidder.
 
-## Compile the Smart Contract
-
-Compile the smart contract you want to deploy - for example we pull down the Nameservice smart contract:
+Compile the Smart Contract
 
 ```sh
 git clone https://github.com/InterWasm/cw-contracts && cd cw-contracts && git checkout main && cd contracts/nameservice
@@ -18,9 +18,8 @@ git clone https://github.com/InterWasm/cw-contracts && cd cw-contracts && git ch
 rustup default stable && RUSTFLAGS='-C link-arg=-s' cargo wasm
 ```
 
-## Optimized the Smart Contract
-
-Optimize the compiled contract (as we want it to be as small as possible) by the following command:
+Optimize the Smart Contract.
+The result will be saved in the `artifacts` directory.
 
 ```sh
 # In the contract directory folder (in our example - `contracts/nameservice`)
@@ -30,7 +29,7 @@ docker run --rm -v "$(pwd)":/code \
   cosmwasm/rust-optimizer:0.12.6
 ```
 
-This will compile the code inside `artifacts` directory:
+export the artifacts directory into a env var
 
 ```sh
 export WASM_FILE=artifacts/cw_nameservice.wasm
