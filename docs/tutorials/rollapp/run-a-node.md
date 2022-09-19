@@ -8,8 +8,6 @@ hide_table_of_contents: true
 
 We present you a Docker of the dYmension protocol. This tool comes pre-built with the base layers so you can simulate a real-world experience of interacting with a live dYmension.
 
-TODO - Docker
-
 ### Step 1: Install settlement layer binaries
 
 Clone `dymension`:
@@ -42,11 +40,15 @@ export SETTLEMENT_RPC="0.0.0.0:36657"
 export GRPC_ADDRESS="0.0.0.0:8090"
 export GRPC_WEB_ADDRESS="0.0.0.0:8091"
 export P2P_ADDRESS="0.0.0.0:36656"
+```
 
+In the [dymension repo](https://github.com/dymensionxyz/dymension/blob/main/scripts/setup_local.sh) we've included a script for setting up the environment variables, creating an account and preparing the chain for initialization. While still remaining in the dymension folder run this script:
+
+```sh
 sh scripts/setup_local.sh
 ```
 
-Start the chain from the root directory of the dymension repo with this handy script:
+Start the chain from the root directory of the dymension repo with this handy [script](https://github.com/dymensionxyz/dymension/blob/main/scripts/run_local.sh):
 
 ```sh
 sh scripts/run_local.sh

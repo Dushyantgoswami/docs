@@ -5,10 +5,7 @@ slug: "scaffold-rollapp"
 
 ## Ignite
 
-Ignite is an amazing CLI tool to help us get started building
-our own blockchains for cosmos-sdk apps. It provides lots of
-power toolings and scaffoldings for adding messages, types,
-and modules with a host of cosmos-sdk libraries provided.
+Ignite is an amazing CLI tool to help us get started building our own blockchains for cosmos-sdk apps. It provides lots of power toolings and scaffoldings for adding messages, types, and modules with a host of cosmos-sdk libraries provided.
 
 You can read more about Ignite [here](https://docs.ignite.com/).
 
@@ -19,13 +16,9 @@ curl https://get.ignite.com/cli | bash
 sudo mv ignite /usr/local/bin/
 ```
 
-This installs Ignite CLI in your local machine.
-This tutorial uses a MacOS but it should work for Windows.
-For Windows users, check out the Ignite docs on installation
-for Windows machines.
+This installs Ignite CLI in your local machine. This tutorial uses a MacOS but it should work for Windows. For Windows users, check out the Ignite docs on installation for Windows machines.
 
-Now, refresh your terminal using `source` or open a new terminal
-session for the change to take place.
+Now, refresh your terminal using `source` or open a new terminal session for the change to take place.
 
 If you run the following:
 
@@ -33,35 +26,25 @@ If you run the following:
 ignite --help
 ```
 
-You should see an output of help commands meaning Ignite
-was installed successfully!
+You should see an output of help commands meaning Ignite was installed successfully!
 
 ## Scaffolding the Checkers Chain
 
-Now, comes the fun part, creating a new blockchain! With Ignite,
-the process is pretty easy and straightforward.
+Now, comes the fun part, creating a new blockchain! With Ignite, the process is pretty easy and straightforward.
 
-Ignite CLI comes with several scaffolding commands that are
-designed to make development more straightforward by creating
-everything you need to build your blockchain.
+Ignite CLI comes with several scaffolding commands that are designed to make development more straightforward by creating everything you need to build your blockchain.
 
-First, we will use Ignite CLI to build the foundation of a fresh
-Cosmos SDK blockchain. Ignite minimizes how much blockchain code
-you must write yourself. If you are coming from the EVM-world, think of
-Ignite as a Cosmos-SDK version of Foundry or Hardhat but specifically
-designed to build blockchains.
+First, we will use Ignite CLI to build the foundation of a fresh Cosmos SDK blockchain. Ignite minimizes how much blockchain code
+you must write yourself. If you are coming from the EVM-world, think of Ignite as a Cosmos-SDK version of Foundry or Hardhat but specifically designed to build blockchains.
 
-We first run the following command to setup our project for
-our new blockchain, Checkers.
+We first run the following command to setup our project for our new blockchain, Checkers.
 
 ```sh
 ignite scaffold chain github.com/anon/checkers --no-module
 ```
 
-This command scaffolds a new chain directory called `checkers`
-in your local directory from which you ran the command. Notice
-that we passed the `--no-module` flag, this is because we will be
-creating the module after.
+This command scaffolds a new chain directory called `checkers` in your local directory from which you ran the command. Notice
+that we passed the `--no-module` flag, this is because we will be creating the module after.
 
 ## Checkers Directory
 
