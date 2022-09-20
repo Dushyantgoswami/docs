@@ -13,14 +13,14 @@ dYmension's documentation serves as the central source for all things dYmension.
 The documentation is structured as follows:
 
 - [Learn](/docs/learn/dymension.md): Learn about foundational topics related to dYmension
-- [Developers](/docs/tutorials/rollapp/index): Build RollApps within the dYmension ecosystem
+- [Developers](/docs/tutorials/rollapp/index.md): Build RollApps within the dYmension ecosystem
 - [Validators](/docs/nodes/full-node/index.md): Run a dYmension hub node
 
 :::
 
 ## What is dYmension?
 
-dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
+dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/docs/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
 
 dYmension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dYmension’s settlement layer.
 
@@ -28,7 +28,7 @@ The dYmension settlement layer, also referred to as the dYmension Hub, is the pr
 
 RollApps are built with dYmension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
 
-For a deeper dive checkout the [Litepaper](/dymension-litepaper/dymension-litepaper-index) and [glossary](/reference/glossary) concepts.
+For a deeper dive checkout the [Litepaper](/docs/dymension-litepaper/index.md) and [glossary](/docs/reference/glossary.md) concepts.
 
 ## Why dYmension?
 
