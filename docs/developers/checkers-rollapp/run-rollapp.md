@@ -12,7 +12,7 @@ Before running the RollApp sequencer let's dive a bit deepr at some arguments we
 
 - `dymint.da_layer` the da layer for our RollApp. for now we will use a `mock` da layer.
 - `dymint.block_batch_size` the batch size which will be written to the base layers (i.e DA and settlement layer).
-- `dymint.block_time` block creation time. The optimal value for setting this argument will be discussed further in the future. For now we will set it to `0.2s`.
+- `dymint.block_time` block creation interval. The optimal value for setting this argument will be discussed further in the future. For now we will set it to `0.2s`.
 
 Run the checkers RollApp chain:
 
@@ -31,4 +31,6 @@ checkersd start --dymint.aggregator true \
   --dymint.namespace_id "$NAMESPACE_ID" \
   --dymint.block_time 0.2s
 ```
-### Congrats! You are now running a RollApp sequencer
+
+Congrats! You are now running a RollApp sequencer.<br/>
+Next lets see how to interact with our RollApp.

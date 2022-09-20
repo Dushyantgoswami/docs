@@ -1,17 +1,14 @@
 ---
 parent:
-  title: Create Smart Contracts
-  description: Deploy a Smart Contract
+  title: Wasm RollApp
+  description: Wasm RollApp
   number: 0
 tag: deep-dive
 order: 0
-title: CosmWasm on dYmension's RDK
+title: Intro to Wasm RollApp
 ---
 
-# CosmWasm on dYmension's RDK
-
-dYmension's RDK, similar to the Cosmos SDK, is agnostic to virtual machines built on top of it.
-Developers may use CosmWasm, Ethermint or any other supported smart contract platform in the cosmos ecosystem.
+# Wasm RollApp
 
 In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. CosmWasm is a smart contracts platform built for the Cosmos ecosystem by making use of WebAssembly (Wasm).
 

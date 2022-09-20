@@ -32,17 +32,17 @@ const sidebars = {
         {
           type: "doc",
           label: "Introduction",
-          id: "developers/checkers-rollapp/index",
+          id: "developers/getting-started/intro",
         },
         {
           type: "doc",
           label: "Setup work environment",
-          id: "developers/checkers-rollapp/setup",
+          id: "developers/getting-started/setup",
         },
         {
           type: "doc",
           label: "Run a hub node",
-          id: "developers/checkers-rollapp/run-a-node",
+          id: "developers/getting-started/run-a-hub-node",
         },
       ],
     },
@@ -53,13 +53,13 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Scaffold a RollApp",
+              label: "Scaffold the RollApp",
               id: "developers/checkers-rollapp/scaffold-rollapp",
             },
             {
               type: "doc",
-              label: "Install RDK & dymint",
-              id: "developers/checkers-rollapp/install-rdk-dymint",
+              label: "Install the RDK",
+              id: "developers/checkers-rollapp/install-rdk",
             },
             {
               type: "doc",
@@ -71,11 +71,6 @@ const sidebars = {
               label: "Register the RollApp",
               id: "developers/checkers-rollapp/register-rollapp",
             },
-            // {
-            //   type: "doc",
-            //   label: "Build a Module",
-            //   id: "developers/checkers-rollapp/build-a-module",
-            // },
             {
               type: "doc",
               label: "Run the RollApp",
@@ -88,7 +83,7 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Query state root",
+              label: "View RollApp state",
               id: "developers/checkers-rollapp/query-rollapp",
             },
           ],
@@ -105,22 +100,22 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Set Up Work Environment",
+              label: "Setup Work Environment",
               id: "developers/cosmwasm-rollapp/setup",
             },
             {
               type: "doc",
-              label: "Run a dYmension Wasm Node",
-              id: "developers/cosmwasm-rollapp/dym-wasm-node",
+              label: "Run the RollApp",
+              id: "developers/cosmwasm-rollapp/run-the-rollapp",
             },
             {
               type: "doc",
-              label: "Prepare Your Smart Contract",
-              id: "developers/cosmwasm-rollapp/contract-preparation",
+              label: "Deploy a smart contract",
+              id: "developers/cosmwasm-rollapp/deploy-contract",
             },
             {
               type: "doc",
-              label: "Run the Smart Contract",
+              label: "Interact with the Contract",
               id: "developers/cosmwasm-rollapp/contract-interaction",
             },
           ],
@@ -133,7 +128,7 @@ const sidebars = {
             {
               type: "doc",
               label: "Introduction",
-              id: "developers/cosmwasm-rollapp/index",
+              id: "developers/evm-rollapp/intro",
             },
           ],
         },

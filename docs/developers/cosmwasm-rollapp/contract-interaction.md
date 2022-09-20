@@ -6,37 +6,7 @@ slug: contract-interaction
 
 # Contract Interaction
 
-In this section we will deploy and interact with our NameService contract.
-
-## Contract Deployment
-
-Deploy the smart contract and fetch the deployment transaction hash
-
-```sh
-TX_FLAGS="--chain-id $CHAIN_ID --gas-prices 0uwasm --gas auto --gas-adjustment=1.1"
-
-TX_HASH=$(wasmd tx wasm store "$WASM_FILE" --from "$KEY_NAME" $(echo $TX_FLAGS) --output json -y | jq -r '.txhash')
-```
-
-## Contract Instantiation
-
-Let's start by querying our transaction hash for its Code ID
-
-```sh
-CODE_ID=$(wasmd query tx --type=hash "$TX_HASH" --chain-id "$CHAIN_ID" --output json | jq -r '.logs[0].events[-1].attributes[0].value')
-```
-
-Create an `instantiate` message for the contract
-
-```sh
-INIT='{"purchase_price":{"amount":"100","denom":"uwasm"},"transfer_price":{"amount":"999","denom":"uwasm"}}'
-```
-
-Instantiate the contract by sending an `instantiate` transaction
-
-```sh
-wasmd tx wasm instantiate "$CODE_ID" "$INIT" --from $KEY_NAME --label "name service" $(echo $TX_FLAGS) -y --no-admin
-```
+In this section we will interact with our newly deployed NameService contract.
 
 ## Contract Interaction
 
@@ -72,3 +42,6 @@ Query the owner of the name
 ```sh
 wasmd query wasm contract-state smart $CONTRACT "{\"resolve_record\": {\"name\": \"bob\"}}" --chain-id "$CHAIN_ID" --output json
 ```
+
+That's it for this tutorial! we've built a Wasm RollApp, deployed a contract on top of it and interact with it.<br/>
+Next let's see how to build an EVM RollApp!

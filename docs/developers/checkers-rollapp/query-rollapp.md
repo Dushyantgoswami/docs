@@ -6,7 +6,7 @@ sidebar_position: 4
 hide_table_of_contents: true
 ---
 
-## View the RollApp state in the settlement layer
+## View the RollApp state on dymension hub
 
 While our sequencer is running, it keeps sending updates to the DA and Settlement layers. In the next section we will query the settlement layer 
 in order to view our current RollApp state. 
@@ -29,6 +29,6 @@ Now we can take the value of the `index` field and use it for our next query to 
 dymd query rollapp show-rollapp-state-info checkers <index>
 ```
 
-Congrats! You now have a functioning RollApp which uses dymension's settlement layer for security.
-If you have any issues please contact us on [discord](http://discord.gg/mvnh3YVa2W) in the Developer section.
+Congrats! You now have a functioning RollApp which uses the dymension hub as a settlement layer for security.<br/>
+
 On our next tutorial we will show you how to build your own CosmWasm RollApp which can be used for deployment of smart contracts.

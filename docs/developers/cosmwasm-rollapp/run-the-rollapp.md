@@ -1,12 +1,10 @@
 ---
-title: "dYmension Wasm Node"
+title: "Buid and Run the RollApp"
 order: 3
 slug: dym-wasm-node
 ---
 
-# Dymension-Wasm Node
-
-Running dymension-wasm RollApp built using the RDK and dymint.
+# Run the RollApp
 
 ## Install the binary
 
@@ -17,7 +15,7 @@ go mod tidy && go mod download && make install
 
 ## Start the node
 
-Build, init and run the RollApp using the following script.
+Build, init and run the RollApp using the following script:
 
 ```sh
 export KEY_NAME=test-key
@@ -25,3 +23,5 @@ export CHAIN_ID=test-chain
 
 ./scripts/setup_and_run_node.sh
 ```
+
+Next let's deploy a smart contract
