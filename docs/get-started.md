@@ -46,4 +46,4 @@ RollApps are autonomous, meaning RollApps set their own economic and decentraliz
 ### Performance
 As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains. 
 
-In the next secions we'll dive deeper on how dymension works. Though we recommend going over it, this is not requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!
+In the next secions we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!
