@@ -83,22 +83,22 @@ const config = {
               {
                 type: "doc",
                 label: "Getting Started",
-                docId: "tutorials/rollapp/index",
+                docId: "developers/rollapp/index",
               },
               {
                 type: "doc",
                 label: "Checkers RollApp",
-                docId: "tutorials/smart-contract/index",
+                docId: "developers/smart-contract/index",
               },
               {
                 type: "doc",
                 label: "CosmWasm Rollapp",
-                docId: "tutorials/smart-contract/index",
+                docId: "developers/smart-contract/index",
               },
               {
                 type: "doc",
                 label: "EVM Rollapp",
-                docId: "tutorials/smart-contract/index",
+                docId: "developers/smart-contract/index",
               },
             ],
           },

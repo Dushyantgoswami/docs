@@ -31,6 +31,6 @@ A RollApp transaction lifecycle begins by sending a request to a RollApp Sequenc
 
 References:
 
-1. What is Cosmos? https://tutorials.cosmos.network/
+1. What is Cosmos? https://developers.cosmos.network/
 2. What is Tendermint? https://docs.tendermint.com/v0.34/introduction/what-is-tendermint.html
 3. Inter-blockchain Communication https://ibcprotocol.org/
