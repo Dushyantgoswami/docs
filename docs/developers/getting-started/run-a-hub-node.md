@@ -9,8 +9,8 @@ hide_table_of_contents: true
 The following steps will guide you on how to configure and run a dymension settlement layer hub node.
 
 :::info Note
-This node is a prerequisite for the [Checkers RollApp](../checkers-rollapp/scaffold-rollapp.md) tutorial as the other tutorials ([Wasm RollApp](../cosmwasm-rollapp/index.md) and [EVM RollApp](../evm-rollapp/intro.md)) will
-use a mock layer by default.
+Running the hub node is a prerequisite for the [Checkers RollApp](../checkers-rollapp/scaffold-rollapp.md) tutorial as the other tutorials ([Wasm RollApp](../cosmwasm-rollapp/index.md) and [EVM RollApp](../evm-rollapp/intro.md)) will
+use a mock settlement layer by default.
 ::::
 
 ### Step 1: Install settlement layer binaries
