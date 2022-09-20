@@ -13,16 +13,16 @@ dYmension's documentation serves as the central source for all things dYmension.
 The documentation is structured as follows:
 
 - [Learn](/docs/learn/dymension.md): Learn about foundational topics related to dYmension
-- [Developers](/docs/tutorials/): Build RollApps within the dYmension ecosystem
+- [Developers](/docs/tutorials/rollapp/index): Build RollApps within the dYmension ecosystem
 - [Validators](/docs/nodes/full-node/index.md): Run a dYmension hub node
- 
+
 :::
 
 ## What is dYmension?
 
-dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments). 
+dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
 
-dYmension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dYmension’s settlement layer. 
+dYmension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dYmension’s settlement layer.
 
 The dYmension settlement layer, also referred to as the dYmension Hub, is the protocol base layer. The dymension hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
 
@@ -30,20 +30,23 @@ RollApps are built with dYmension's RollApp Development Kit (RDK) which is based
 
 For a deeper dive checkout the [Litepaper](/dymension-litepaper/dymension-litepaper-index) and [glossary](/reference/glossary) concepts.
 
-
 ## Why dYmension?
 
 ### 2-order network effects
-dYmension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dYmension hub. 
+
+dYmension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dYmension hub.
 
 ### Easy deployment
+
 With dYmension, building a blockchain doesn't come with the overhead of bootstraping a network.
 Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
 
 ### Automony
+
 RollApps are autonomous, meaning RollApps set their own economic and decentralization parameters.
 
 ### Performance
-As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains. 
+
+As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
 
 #### Today, using the dymension protocol, you can easily [build your own **RollApp**](/docs/tutorials/rollapp/index.md)!
