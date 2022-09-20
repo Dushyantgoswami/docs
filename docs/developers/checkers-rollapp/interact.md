@@ -156,3 +156,6 @@ checkersd query bank balances $player2
 # - amount: "99999000000" # <- 1,000,000 are gone for good
 #   denom: stake
 ```
+
+While interacting with the RollApp, it kept updating the dymension hub with it's latest state.<br/>
+In the next section we will query the dymenion hub for the RollApp state sent to it.

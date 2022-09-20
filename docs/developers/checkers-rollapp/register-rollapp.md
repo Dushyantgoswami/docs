@@ -6,7 +6,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-## Step 1: Create the RollApp on the settlement layer
+## Step 1: Create the RollApp on the local dymension hub node
 
 Open a new terminal window.
 Set the relevant environment variables for first creating a RollApp
@@ -109,3 +109,5 @@ We input flags into the transaction to attach a Sequencer:
     "Details": details define other optional details.
 }'
 ```
+
+Now that we've registered the RollApp and attached a sequencer we can move on to the next phase - running a RollApp sequencer.

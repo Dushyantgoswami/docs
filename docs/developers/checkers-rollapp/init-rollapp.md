@@ -1,5 +1,5 @@
 ---
-title: "Initializing the RollApp"
+title: "Initialize the RollApp"
 slug: "init-rollapp"
 ---
 
@@ -42,3 +42,5 @@ Now that you have created a local account, go ahead and grant it some `stake` to
 checkersd add-genesis-account "$(checkersd keys show "$KEY_PLAYER_1" -a)" 100000000000stake
 checkersd add-genesis-account "$(checkersd keys show "$KEY_PLAYER_2" -a)" 100000000000stake
 ```
+
+Next let's register the RollApp in the dymension hub.

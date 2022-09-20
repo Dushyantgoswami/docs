@@ -11,6 +11,7 @@ title: Build Your Own RollApp
 # Build a RollApp
 
 In the following tutorials will go over building various flavors of a dYmension RollApp using the RollApp Development Kit (RDK) and dymint, dYmension's drop-in replacement for tendermint.<br/> 
+
 dYmension's RDK, similar to the Cosmos SDK, is agnostic to virtual machines built on top of it. Developers may use CosmWasm, Ethermint or any other supported smart contract platform in the cosmos ecosystem.<br/>
 
 The developers section contains tutorials which demonstrate both the ability to build the RollApp logic using the RDK or incorporating external modules for running various VMs on top of it.

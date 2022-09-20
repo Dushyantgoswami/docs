@@ -1,10 +1,10 @@
 ---
-title: "Contract Interaction"
+title: "Interact with the contract"
 order: 5
 slug: contract-interaction
 ---
 
-# Contract Interaction
+# Interact with the contract
 
 In this section we will interact with our newly deployed NameService contract.
 
