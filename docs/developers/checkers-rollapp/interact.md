@@ -11,7 +11,12 @@ tag: deep-dive
 In order to run some of the commands you will need to have [jq](https://stedolan.github.io/jq/download/) installed
 :::
 
-Fetch the accounts addresses:
+Before submitting a transaction, we will add a `--broadcast-mode block` to each transaction
+so that we'll get the transaction result and not just approval it was received.<br/>
+
+We are able to do so as our RollApp transaction latency is sub-second due to the lack of consensus constrains.
+
+Let's start by fetching the accounts addresses:
 
 ```sh
 export player1=$(checkersd keys show player1 -a)
@@ -32,7 +37,7 @@ checkersd query checkers show-next-game
 Create a new game:
 
 ```sh
-checkersd tx checkers create-game $player1 $player2 1000000 --from $player1 --gas auto
+checkersd tx checkers create-game $player1 $player2 1000000 --from $player1 --gas auto --broadcast-mode block
 ```
 
 Confirm the wager:
@@ -81,7 +86,7 @@ checkersd query checkers show-stored-game 1 --output json | jq ".storedGame.game
 Play the first move:
 
 ```sh
-checkersd tx checkers play-move 1 1 2 2 3 --from $player2
+checkersd tx checkers play-move 1 1 2 2 3 --from $player2 --broadcast-mode block
 checkersd query checkers show-stored-game 1 --output json | jq ".storedGame.game" | sed 's/"//g' | sed 's/|/\n/g'
 
 # *b*b*b*b
@@ -97,7 +102,7 @@ checkersd query checkers show-stored-game 1 --output json | jq ".storedGame.game
 Reject the game:
 
 ```sh
-checkersd tx checkers reject-game 1 --from $player1
+checkersd tx checkers reject-game 1 --from $player1 --broadcast-mode block
 checkersd query checkers list-stored-game
 
 # pagination:
@@ -119,9 +124,9 @@ checkersd query bank balances $player2
 Simulate winning:
 
 ```sh
-checkersd tx checkers create-game $player1 $player2 1000000 --from $player1 --gas auto
-checkersd tx checkers play-move 2 1 2 2 3 --from $player2
-checkersd tx checkers play-move 2 0 5 1 4 --from $player1
+checkersd tx checkers create-game $player1 $player2 1000000 --from $player1 --gas auto --broadcast-mode block
+checkersd tx checkers play-move 2 1 2 2 3 --from $player2 --broadcast-mode block
+checkersd tx checkers play-move 2 0 5 1 4 --from $player1 --broadcast-mode block
 ```
 
 Wait 5 minutes for game expiration (you can also actually win the game but it difficult without UI-client):
