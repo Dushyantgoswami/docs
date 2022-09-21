@@ -41,6 +41,8 @@ Now that you have created a local account, go ahead and grant it some `stake` to
 ```sh
 checkersd add-genesis-account "$(checkersd keys show "$KEY_PLAYER_1" -a)" 100000000000stake
 checkersd add-genesis-account "$(checkersd keys show "$KEY_PLAYER_2" -a)" 100000000000stake
+checkersd gentx "$KEY_PLAYER_1" 100000000stake --chain-id "$ROLLAPP_ID"
+checkersd collect-gentxs
 ```
 
 Next let's register the RollApp in the dymension hub.
