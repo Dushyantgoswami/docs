@@ -42,10 +42,12 @@ export WASM_FILE=artifacts/cw_nameservice.wasm
 Deploy the smart contract and fetch the deployment transaction hash:
 
 ```sh
+KEY_NAME=test-key
+CHAIN_ID=test-chain
 TX_FLAGS="--chain-id $CHAIN_ID --gas-prices 0uwasm --gas auto --gas-adjustment=1.1"
 
 TX_HASH=$(wasmd tx wasm store "$WASM_FILE" --from "$KEY_NAME" $(echo $TX_FLAGS) --output json -y | jq -r '.txhash')
-```
+```c
 
 ## Contract instantiation
 
