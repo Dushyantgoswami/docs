@@ -21,7 +21,7 @@ ROLLAPP_ID="checkers"
 Send a transaction to the settlement layer for creating the RollApp
 
 ```sh
-ROLLAPP_ID="Local dYmension RollApp"
+ROLLAPP_ID="checkers"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
 
