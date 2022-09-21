@@ -6,7 +6,7 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-## Step 1: Create the RollApp on the settlement layer
+## Step 1: Create the RollApp on the local dymension hub node
 
 Open a new terminal window.
 Set the relevant environment variables for first creating a RollApp
@@ -21,7 +21,7 @@ ROLLAPP_ID="checkers"
 Send a transaction to the settlement layer for creating the RollApp
 
 ```sh
-ROLLAPP_ID="Local dYmension RollApp"
+ROLLAPP_ID="checkers"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
 
@@ -109,3 +109,32 @@ We input flags into the transaction to attach a Sequencer:
     "Details": details define other optional details.
 }'
 ```
+
+Let's make sure that adding the sequencer to the RollApp worked:
+
+```sh
+dymd query sequencer list-sequencer
+```
+
+Should result in (note that there is a version to track RollApp upgrades)
+
+```sh
+pagination:
+  next_key: null
+  total: "0"
+sequencer:
+- creator: <creator-address>
+  description:
+    details: ""
+    identity: ""
+    moniker: local
+    securityContact: ""
+    website: ""
+  pubkey:
+    '@type': /cosmos.crypto.secp256k1.PubKey
+    key: <sequencer-pub-key>
+  rollappId: <rollapp-id>
+  sequencerAddress: <sequencer-address>
+```
+
+Now that we've registered the RollApp and attached a sequencer we can move on to the next phase - running a RollApp sequencer.

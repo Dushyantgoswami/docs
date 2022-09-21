@@ -83,22 +83,22 @@ const config = {
               {
                 type: "doc",
                 label: "Getting Started",
-                docId: "tutorials/rollapp/index",
+                docId: "developers/checkers-rollapp/index",
               },
               {
                 type: "doc",
                 label: "Checkers RollApp",
-                docId: "tutorials/smart-contract/index",
+                docId: "developers/cosmwasm-rollapp/index",
               },
               {
                 type: "doc",
                 label: "CosmWasm Rollapp",
-                docId: "tutorials/smart-contract/index",
+                docId: "developers/cosmwasm-rollapp/index",
               },
               {
                 type: "doc",
                 label: "EVM Rollapp",
-                docId: "tutorials/smart-contract/index",
+                docId: "developers/cosmwasm-rollapp/index",
               },
             ],
           },
@@ -110,17 +110,17 @@ const config = {
               {
                 type: "doc",
                 label: "Overview",
-                docId: "nodes/full-node/index",
+                docId: "validators/full-node/index",
               },
               {
                 type: "doc",
                 label: "Run a node",
-                docId: "nodes/full-node/run-a-node",
+                docId: "validators/full-node/run-a-node",
               },
               {
                 type: "doc",
                 label: "Reset and troubleshooting",
-                docId: "nodes/full-node/reset-node",
+                docId: "validators/full-node/reset-node",
               },
             ],
           },

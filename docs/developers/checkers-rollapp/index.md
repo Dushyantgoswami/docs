@@ -26,7 +26,7 @@ This tutorial will explore developing with the RDK and dymint, which are still i
 
 ### Pre-requisites
 
-Given this tutorial is targeted for developers who are experienced with the Cosmos-SDK, we recommend going over the following tutorials in Ignite to understand all of the different components in the Cosmos-SDK before proceeding with this tutorial:
+Given this tutorial is targeted for developers who are experienced with the Cosmos-SDK, we recommend going over the following developers in Ignite to understand all of the different components in the Cosmos-SDK before proceeding with this tutorial:
 
 - [Hello World](https://docs.ignite.com/guide/hello)
 - [Blog and Module Basics](https://docs.ignite.com/guide/blog)

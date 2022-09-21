@@ -15,7 +15,6 @@ The documentation is structured as follows:
 - [Learn](/docs/learn/dymension.md): Learn about foundational topics related to dYmension
 - [Developers](/docs/tutorials/rollapp/index.md): Build RollApps within the dYmension ecosystem
 - [Validators](/docs/nodes/full-node/index.md): Run a dYmension hub node
-
 :::
 
 ## What is dYmension?
@@ -49,4 +48,4 @@ RollApps are autonomous, meaning RollApps set their own economic and decentraliz
 
 As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
 
-#### Today, using the dymension protocol, you can easily [build your own **RollApp**](/docs/tutorials/rollapp/index.md)!
+In the next secions we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!

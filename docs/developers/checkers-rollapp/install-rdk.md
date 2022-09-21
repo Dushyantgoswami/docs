@@ -1,15 +1,15 @@
 ---
-title: "Install dYmension's RDK and dymint"
+title: "Install the RDK"
 slug: "install-rdk-dymint"
 ---
 
-# Setting Up the RDK
+# Install the RDK
 
 In order to convert the cosmos-sdk app chain to a RollApp, we need to replace the Cosmos SDK with dYmension's RDK which includes dymint (dYmension's drop-in replacement for Tendermint)
 
 ## Installing and building the RDK
 
-Run the following command inside the `checkers` directory.
+Run the following command from within the same terminal window you've previously [scaffolded the RollApp](./scaffold-rollapp):
 
 ```sh
 cd "$WORKSPACE_PATH/checkers"
@@ -18,3 +18,5 @@ go mod tidy
 go mod download
 ignite chain build
 ```
+
+At this point you should have a fully functioning checkers RollApp. In the next section we'll go over how to initialize it.
