@@ -100,7 +100,7 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Setup Work Environment",
+              label: "Setup work environment",
               id: "developers/cosmwasm-rollapp/setup",
             },
             {
@@ -129,6 +129,26 @@ const sidebars = {
               type: "doc",
               label: "Introduction",
               id: "developers/evm-rollapp/intro",
+            },
+            {
+              type: "doc",
+              label: "Setup work environment",
+              id: "developers/evm-rollapp/setup",
+            },
+            {
+              type: "doc",
+              label: "Run the RollApp",
+              id: "developers/evm-rollapp/run-the-rollapp",
+            },
+            {
+              type: "doc",
+              label: "Create a smart contract",
+              id: "developers/evm-rollapp/create-contract",
+            },
+            {
+              type: "doc",
+              label: "Deploy and test the contract",
+              id: "developers/evm-rollapp/deploy-and-test-contract",
             },
           ],
         },
