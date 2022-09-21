@@ -1,5 +1,5 @@
 ---
-title: "Buid and Run the RollApp"
+title: "Run the RollApp"
 order: 3
 slug: dym-wasm-node
 ---
@@ -9,8 +9,10 @@ slug: dym-wasm-node
 ## Install the binary
 
 ```sh
-git clone git@github.com:dymensionxyz/wasm.git --branch v0.1.0 && cd wasm
-go mod tidy && go mod download && make install
+git clone git@github.com:dymensionxyz/wasm.git --branch v0.1.0-alpha && cd wasm
+go mod tidy
+go mod download
+make install
 ```
 
 ## Start the node
