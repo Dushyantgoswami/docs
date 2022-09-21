@@ -20,13 +20,14 @@ dymd query rollapp list-rollapp
 Next lets view our RollApp last update state index. Using this index we can later query the last state update sent to the settlement layer from our RollApp.
 
 ```sh
-dymd query rollapp show-state-index checkers
+export ROLLAPP_ID=checkers
+dymd query rollapp show-state-index "$ROLLAPP_ID"
 ```
 
 Now we can take the value of the `index` field and use it for our next query to show the last RollApp state info.
 
 ```sh
-dymd query rollapp show-rollapp-state-info checkers <index>
+dymd query rollapp show-rollapp-state-info "$ROLLAPP_ID" <index>
 ```
 
 Congrats! You now have a functioning RollApp which uses the dymension hub as a settlement layer for security.<br/>

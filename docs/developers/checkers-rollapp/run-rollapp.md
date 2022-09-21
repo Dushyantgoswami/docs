@@ -20,7 +20,7 @@ Run the checkers RollApp chain:
 export KEY_NAME="local-user"
 export ROLLAPP_ID="checkers"
 export SETTLEMENT_RPC="0.0.0.0:36657"
-export SETTLEMENT_CONFIG="{\"node_address\": \"http:\/\/$SETTLEMENT_RPC\", \"rollapp_id\": \"$ROLLAPP_ID\", \"dym_account_name\": \"$KEY_NAME\", \"keyring_home_dir\": \"$HOME/dymension/\", \"keyring_backend\":\"test\"}"
+export SETTLEMENT_CONFIG="{\"node_address\": \"http:\/\/$SETTLEMENT_RPC\", \"rollapp_id\": \"$ROLLAPP_ID\", \"dym_account_name\": \"$KEY_NAME\", \"keyring_home_dir\": \"$HOME/.dymension/\", \"keyring_backend\":\"test\"}"
 export NAMESPACE_ID=000000000000FFFF
 
 checkersd start --dymint.aggregator true \

@@ -110,4 +110,31 @@ We input flags into the transaction to attach a Sequencer:
 }'
 ```
 
+Let's make sure that adding the sequencer to the RollApp worked:
+
+```sh
+dymd query sequencer list-sequencer
+```
+
+Should result in (note that there is a version to track RollApp upgrades)
+
+```sh
+pagination:
+  next_key: null
+  total: "0"
+sequencer:
+- creator: <creator-address>
+  description:
+    details: ""
+    identity: ""
+    moniker: local
+    securityContact: ""
+    website: ""
+  pubkey:
+    '@type': /cosmos.crypto.secp256k1.PubKey
+    key: <sequencer-pub-key>
+  rollappId: <rollapp-id>
+  sequencerAddress: <sequencer-address>
+```
+
 Now that we've registered the RollApp and attached a sequencer we can move on to the next phase - running a RollApp sequencer.

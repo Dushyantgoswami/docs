@@ -7,6 +7,10 @@ tag: deep-dive
 
 # Interact with the RollApp
 
+:::info NOTE
+In order to run some of the commands you will need to have [jq](https://stedolan.github.io/jq/download/) installed
+:::
+
 Fetch the accounts addresses:
 
 ```sh
@@ -59,7 +63,6 @@ checkersd query checkers show-stored-game 1
 #   wager: "1000000"
 #   winner: '*'
 ```
-
 Showing the board in nice and cleaned up square view:
 
 ```sh

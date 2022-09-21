@@ -30,11 +30,9 @@ checkersd keys add "$KEY_PLAYER_1"
 checkersd keys add "$KEY_PLAYER_2"
 ```
 
-The output of the above command will contain a seed phrase. It is recommended to save the seed phrase in a safe place so that in case you forget the password of the operating system's credentials store, you could eventually regenerate the key from the seed phrase with the following command:
-
-```sh
-checkersd keys show <account_name>
-```
+:::info NOTE
+The output of the above command will contain a seed phrase. It is recommended to save the seed phrase in a safe place so that in case you forget the password of the operating system's credentials store, you could eventually regenerate the key from the seed phrase.
+:::
 
 Now that you have created a local account, go ahead and grant it some `stake` tokens in your chain's genesis file. Doing so will also make sure your chain is aware of this account's existence:
 
