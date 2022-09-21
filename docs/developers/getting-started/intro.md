@@ -16,12 +16,12 @@ dYmension's RDK, similar to the Cosmos SDK, is agnostic to virtual machines buil
 
 The developers section contains tutorials which demonstrate both the ability to build the RollApp logic using the RDK or incorporating external modules for running various VMs on top of it.
 
-The next sections of this tutorial will describe how to prepare your work environment and run a dymension hub node which will use us for the next [Checkers RollApp](../checkers-rollapp/scaffold-rollapp) tutorial.
+The next sections of this tutorial will describe how to prepare your work environment and run a dymension hub node which will use us for the next [Checkers RollApp](../checkers-rollapp/scaffold-rollapp.md) tutorial.
 
 :::info NOTE:
 The RollApp needs a settlement layer (dymension hub) for security.
 Local development may use a local running dymenion hub node or alternatively a mock layer.
-In the [Checkers RollApp](../checkers-rollapp/index) tutorial we will use a hub node but for the rest of the tutorials ([Wasm RollApp](../cosmwasm-rollapp/index) and [EVM RollApp](../evm-rollapp/intro))
+In the [Checkers RollApp](../checkers-rollapp/index.md) tutorial we will use a hub node but for the rest of the tutorials ([Wasm RollApp](../cosmwasm-rollapp/index.md) and [EVM RollApp](../evm-rollapp/intro.md))
 we will use a mock.
 :::
 
