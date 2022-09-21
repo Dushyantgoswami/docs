@@ -17,7 +17,7 @@ Installing Go is a pre-requisite for running a dYmension full node. If you still
 Clone `dymension`:
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git
+git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
 cd dymension
 make install
 ```
@@ -64,7 +64,7 @@ You should have a running local node! Let's run a sample transaction.
 
 Keep the node running and open a new tab in the terminal. Let's get your validator consensus address.
 
-### Step 4: Running a transaction
+### Step 4: Interacting with the node
 
 ```sh
 dymd tendermint show-address
