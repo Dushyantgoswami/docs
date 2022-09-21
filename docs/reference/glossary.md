@@ -6,15 +6,16 @@ slug: "glossary"
 ### A
 
 <details>
-    <summary>Autonomous rollups</summary>
-    A type of rollup that establishes its own logic while delegating responsibilities for consensus to an underlying settlement layer.  
+    <summary>Autonomousity</summary>
+    The ability to own your own blockchain execution layer with the exception of having to adhere to the unerlying base layers protocol rules.
+    Part of the advantages of having your own execution blockchain entails having your own choice of native network fee token and a full control over the blockchain logic.
 </details>
 
 ### B
 
 <details>
     <summary>Batching</summary>
-    Sequencers gather executed transaction data and store it on the data layer for public availability and verification. The frequency of data batching is decided by the Sequencer, adjusting for their application needs. 
+    Execution layer sequencers gather executed transaction related data and store it on the base layers for security. The frequency of data batching is decided by the Sequencer but may be enforced by the underlying protocol.
 </details>
 
 <details>
@@ -51,8 +52,8 @@ slug: "glossary"
 ### E
 
 <details>
-    <summary>Execution environment</summary>
-    The virtual environment within a blockchain where transactions are processed and the state transition function is defined. 
+    <summary>Execution layer</summary>
+    The `top` layer of the modular stack. This layer is in charge of transactions processing and gossiping, state transition function and communication with other layers of the modular stack.  
 </details>
 
 <details>
@@ -118,14 +119,14 @@ slug: "glossary"
 
 <details>
     <summary>Optimistic Rollups</summary>
-     Optimistic rollups assume an optimistic view towards the honesty of the sequencers, hence the term optimistic rollup. Meaning that it’s initially assumed the sequencer who is processing transactions is acting honestly. However, in order to produce an environment where users of a network do not have to simply trust sequencers, a dispute period is installed. This period enables others to verify that the sequencer is reporting correct state updates. If anyone discovers a batch that is not correct, they can publish a “fraud proof” demonstrating the correct state transition. If indeed the sequencer provided incorrect information the state of the blockchain is reverted and the sequencer is “slashed” (they lose tokens they’ve bonded to participate in the network). 
+     Optimistic rollups assume an optimistic view towards the honesty of the sequencers, hence the term optimistic rollup. Meaning that it’s initially assumed the sequencer who is processing transactions is acting honestly. However, in order to produce an environment where users of a network do not have to simply trust sequencers, a dispute period is installed. This period enables others to verify that the sequencer is reporting correct state updates. If anyone discovers a batch that is not correct, they can publish a “fraud proof” demonstrating the correct state transition. If indeed the sequencer provided incorrect information the state of the blockchain is reverted and the sequencer is “slashed” (they lose tokens they’ve bonded to participate in the network).
 </details>
 
 ### R
 
 <details>
     <summary>RollApp</summary>
-    An application deployed to dYmension’s ecosystem is called a RollApp. RollApps have their own autonomy, meaning they have minimal interactions with low level blockchain logic namely a significant reduction in handling networking and consensus requirements. Autonomous RollApps still retain the benefits of building their own blockchain such as having their own network fee token, flexible application logic and trust-minimized inter-operability with other RollApps and IBC-enabled blockchains.
+    RollApp is an application specific Rollup. Unlike with generic-purpose rollups, apps built as a RollApp have their own <a href="./glossary#a">autonomy</a>.
 </details>
 
 <details>
@@ -135,7 +136,7 @@ slug: "glossary"
 
 <details>
     <summary>RollApp Virtual Machine (RVM)</summary>
-    dYmension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement chain. RVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
+    dYmension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement layer. RVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
 </details>
 
 ### S
@@ -147,7 +148,7 @@ slug: "glossary"
 
 <details>
     <summary>Sequencers</summary>    
-    Sequencers are responsible for storing and executing transactions off-chain. Periodically sequencers publish data and update state roots to reduce trust assumptions in the correctness of the current state. 
+    Sequencers are the nodes operating the RollApp. sequencers are responsible for storing and executing transactions off-chain.
 </details>
 
 <details>
