@@ -15,7 +15,7 @@ The owner of a given name will be the current highest bidder.
 Compile the Smart Contract:
 
 ```sh
-git clone https://github.com/InterWasm/cw-contracts && cd cw-contracts && git checkout main && cd contracts/nameservice
+git clone https://github.com/InterWasm/cw-contracts && cd cw-contracts/contracts/nameservice
 
 rustup default stable && RUSTFLAGS='-C link-arg=-s' cargo wasm
 ```
@@ -24,7 +24,7 @@ Optimize the Smart Contract.
 The result will be saved in the `artifacts` directory:
 
 ```sh
-# In the contract directory folder (in our example - `contracts/nameservice`)
+# In the contract directory folder (in our example - `../contracts/nameservice`)
 docker run --rm -v "$(pwd)":/code \
   --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
