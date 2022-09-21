@@ -18,7 +18,7 @@ use a mock settlement layer by default.
 Clone the dymension settlement layer repo
 
 ```sh
-git clone https://github.com/dymensionxyz/dymension.git
+git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
 cd dymension
 ```
 
