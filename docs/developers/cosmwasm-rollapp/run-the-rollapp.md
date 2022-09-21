@@ -9,7 +9,7 @@ slug: dym-wasm-node
 ## Install the binary
 
 ```sh
-git clone git@github.com:dymensionxyz/dymension-flagship.git && cd dymension-flagship
+git clone git@github.com:dymensionxyz/wasm.git && cd wasm
 go mod tidy && go mod download && make install
 ```
 
