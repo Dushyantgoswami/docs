@@ -9,7 +9,7 @@ slug: dym-wasm-node
 ## Install the binary
 
 ```sh
-git clone git@github.com:dymensionxyz/wasm.git && cd wasm
+git clone git@github.com:dymensionxyz/wasm.git --branch v0.1.0 && cd wasm
 go mod tidy && go mod download && make install
 ```
 
@@ -21,7 +21,7 @@ Build, init and run the RollApp using the following script:
 export KEY_NAME=test-key
 export CHAIN_ID=test-chain
 
-./scripts/setup_and_run_node.sh
+sh scripts/setup_and_run_node.sh
 ```
 
 Next let's deploy a smart contract
