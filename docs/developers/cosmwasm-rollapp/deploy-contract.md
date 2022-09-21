@@ -68,5 +68,3 @@ Instantiate the contract by sending an `instantiate` transaction
 ```sh
 wasmd tx wasm instantiate "$CODE_ID" "$INIT" --from $KEY_NAME --label "name service" $(echo $TX_FLAGS) -y --no-admin
 ```
-
-Now that we've deployed the contract, let's start interacting with it
