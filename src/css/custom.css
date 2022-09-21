@@ -98,18 +98,21 @@ img.deep-dive-image {
 }
 
 footer.footer {
-  background-color: black;
   color: white;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: normal;
   line-height: 28px;
-  padding-bottom: 10px;
+  padding: 8px
 }
 
 footer.footer a {
   color: white;
   text-decoration: none;
+}
+
+footer.footer p {
+  margin: 0;
 }
 
 footer.footer .emails {
@@ -118,6 +121,20 @@ footer.footer .emails {
 
 footer.footer .footer-logo {
   text-align: center;
+}
+
+footer.footer .footer__title {
+  margin: 0
+}
+
+footer.footer .footer__links {
+  margin: 0;
+}
+
+footer.footer .footer__col {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer.footer .right {
@@ -133,15 +150,21 @@ footer.footer .icon {
 footer.footer .logo {
   width: 50px;
   text-align: center;
+  display: block;
 }
 
 footer.footer a.social-link {
   text-decoration: none;
+  display: inline-flex;
+}
+
+footer.footer a.social-link:not(:last-child) {
   padding-right: 30px;
 }
 
 footer.footer nav.social-links {
   text-align: center;
+  display: flex;
 }
 
 div.navbar__logo {
