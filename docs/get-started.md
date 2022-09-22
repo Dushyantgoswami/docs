@@ -12,7 +12,7 @@ dYmension's documentation serves as the central source for all things dYmension.
 
 The documentation is structured as follows:
 
-- [Learn](/docs/learn/dymension.md): Learn about foundational topics related to dYmension
+- [Learn](/docs/learn/modular-intro.md): Learn about foundational topics related to dYmension
 - [Developers](/docs/developers/getting-started/intro.md): Build RollApps within the dYmension ecosystem
 - [Validators](/docs/validators/full-node/index.md): Run a dYmension hub node
 :::
