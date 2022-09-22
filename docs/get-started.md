@@ -44,6 +44,10 @@ Developers can easily deploy a blockchain as if they are running their own isola
 
 RollApps are autonomous, meaning RollApps set their own economic and decentralization parameters.
 
+### Value accrual
+
+The benefits of deploying a RollApp over a smart contract is one of the most important features of dYmension’s protocol. When you deploy a smart contract to a blockchain like Ethereum the network fees (gas) are paid in the network’s token (i.e. ETH). This is because users pay gas fees to [network proposers and validators](https://ethereum.org/en/developers/docs/gas/) to have their transaction included in the next block. When you deploy a RollApp, it’s like having your own blockchain, so all end-user fees are paid in the application’s token or whichever token you want to accept (e.g. stablecoins, IBC chains, RollApps…).
+
 ### Performance
 
 As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
