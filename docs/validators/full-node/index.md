@@ -1,12 +1,12 @@
 ---
-title: "Full Nodes"
+title: "Validators Overview"
 slug: "index"
 hidden: false
 sidebar_position: 0
 hide_table_of_contents: true
 ---
 
-# Full Nodes
+# Overview
 
 dYmension's settlement layer uses the [Tendermint Core](https://github.com/tendermint/tendermint/blob/master/docs/introduction/what-is-tendermint.md), which relies on a set of validators that are responsible for committing new blocks in the blockchain. These validators run full nodes and participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
 

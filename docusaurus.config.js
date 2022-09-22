@@ -64,12 +64,17 @@ const config = {
             position: "left",
             items: [
               {
-                label: "How dYmension Works",
+                label: "Modular architecture",
                 type: "doc",
-                docId: "learn/dymension",
+                docId: "learn/modular-intro",
               },
               {
-                label: "How RollApps Work",
+                label: "The dYmension hub",
+                type: "doc",
+                docId: "learn/dymension-hub",
+              },
+              {
+                label: "RollApps",
                 type: "doc",
                 docId: "learn/rollapps",
               },
@@ -83,12 +88,12 @@ const config = {
               {
                 type: "doc",
                 label: "Getting Started",
-                docId: "developers/checkers-rollapp/index",
+                docId: "developers/getting-started/intro",
               },
               {
                 type: "doc",
                 label: "Checkers RollApp",
-                docId: "developers/cosmwasm-rollapp/index",
+                docId: "developers/checkers-rollapp/index",
               },
               {
                 type: "doc",
@@ -98,7 +103,7 @@ const config = {
               {
                 type: "doc",
                 label: "EVM Rollapp",
-                docId: "developers/cosmwasm-rollapp/index",
+                docId: "developers/evm-rollapp/intro",
               },
             ],
           },

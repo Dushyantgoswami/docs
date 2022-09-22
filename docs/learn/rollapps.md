@@ -1,36 +1,31 @@
 ---
-title: "How RollApps Work"
+title: "RollApps"
 slug: "rollapps"
 ---
 
-An application deployed on dYmension is an autonomous execution environment which is referred to as a RollApp. RollApps possess their own autonomy, which means they retain the benefits of building their own blockchain such as having their own native network fee token, fully flexible application logic and trust-minimized inter-operability with other RollApps and IBC-enabled blockchains.
+## What is a RollApp?
 
-RollApps evolve from the Cosmos Network. Cosmos is a network of interoperable blockchains, each implemented with different properties suitable for their individual use cases. Cosmos lets developers create blockchains that maintain sovereignty, have fast transaction processing and are interoperable.<sup>1</sup> Cosmos chains utilize the Cosmos SDK, which is an open-source framework for building the application layer of Proof-of-Stake blockchains. Blockchains built with the Cosmos SDK are generally referred to as application-specific blockchains.
+RollApp is an application specific rollup. Unlike dApps built on a generic-purpose rollups, apps built as a RollApp have their own autonomy. Developers can use dYmension’s RollApp Development Kit (RDK) to develop a RollApp.<br/>
 
-Cosmos SDK based blockchains are built out of composable modules. Blockchain developers create customized business logic in new modules and integrate with the provided modules from the Cosmos SDK. The Cosmos SDK includes pre-built modules for actions such as minting new tokens, setting a gas fee, staking tokens and much more. The application-specific blockchains are customized to operate a single application. Instead of building a decentralized application on top of an underlying blockchain like Ethereum, developers build their own blockchain.
+*Autonomy* is the control you gain from owning your blockchain execution layer with the exception of having to adhere to the underlying base layers protocol rules.
+Some of the advantages of having autonomy entails choice of native network fee token and a full control over the blockchain logic.
+As the name implies, RollApps are in-fact [rollups](https://vitalik.ca/general/2021/01/05/rollup.html) which are a scaling solution built to increase transaction throughput and reduce the latency and computational costs of blockchains.<br/>
 
-Similar to Cosmos blockchains. dYmension RollApps are designed to create application-specific blockchains less the consensus overhead. Likewise, dYmension RDK modules are flexible and may be used to work with a variety of Virtual Machines including [CosmWasm](https://github.com/CosmWasm/cosmwasm), [Ethermint](https://github.com/evmos/ethermint) and much more in the future!
+RollApps work by outsourcing the overhead of the consensus to the dYmension Hub, with the help of optimistic fraud proofs.<br/>
+A [Sequencer](../reference/glossary#s), which is the RollApp’s operating machine, sequences (orders) transactions, executes them and batches them into RollApp blocks. It then posts the transaction data to a DA layer of choice and submits an updated state root of the RollApp together with a DA reference (where the data is available) to the hub.<br/>
 
-# Cosmos Chain Architecture
+Data and state root publication guarantees that any actor, whether driven by distrust or by economic incentives, may independently verify that genuine computations and honest state transitions were performed by the RollApp Sequencer.<br/>
 
-![Cosmos Architecture](./images/cosmos-architecture-overview-plain.jpeg)
+## RollApps architecture
 
-Cosmos blockchains utilize the Tendermint Core for networking and consensus.<sup>2</sup> Tendermint Core is an application-agnostic engine that is responsible for propagating and ordering transaction bytes. Tendermint Core relies on the Byzantine-Fault-Tolerant (BFT) algorithim to reach consensus on the order of transactions. Tendermint passes transactions to the application through an interface called ABCI. Transactions must pass validation checks to be included in the mempool of a full node and relayed to peer nodes. When a block of valid transactions is received by the Tendermint Core, each transaction is passed to the application to be processed. At the beginning and end of each block arbitrary application logic may be executed, creating automatic code execution.
-
-Additionally, Cosmos introduced the inter-blockchain communication (IBC) protocol<sup>3</sup> for trust-minimized bridging between blockchains. IBC connects chains that share similar functionalities, in this case, instant finality provided by the Tendermint consensus algorithm. Two chains passing messages between one another require a light client of the opposing chain. Relayers then pass information between the light clients. The trust relies on the two validator sets of the connected blockchains, rather than the typically significant trust assumptions with multi-sig bridges.
-
-dYmension's blockchain utilizes the Cosmos SDK to build application logic, Tendermint for networking and consensus and IBC for inter-operability. dYmension goes further in building on top of these core technologies and is able to create RollApps. Utilizing the core Cosmos technology enables dYmension to significantly increase scalability and the efficiency of blockchain applications.
-
-In parallel to the modularity of the entire protocol, dYmension RollApps are disaggregated themselves. RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit (`RDK`). The client component, referred to as `dymint` and a drop-in replacement for [Tendermint](https://docs.tendermint.com/v0.34/introduction/what-is-tendermint.html), is responsible for block production, peer message propagation and inter-layer communication. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.
-
-# dYmension RollApp Architecture
+RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [RDK](../reference/glossary#r). The client component, referred to as [dymint](../reference/glossary#d) is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer communication. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.<br/>
 
 ![RollApp Architecture](./images/rollapp-overview.svg)
 
-A RollApp transaction lifecycle begins by sending a request to a RollApp Sequencer which processes the transaction. Akin to the Cosmos SDK process, a transaction is validated within `dymint` after which the data is transmitted to the `RDK` layer via an ABCI-compatible implementation for Optimistic Rollups. After the transaction is processed by the Sequencer in the appropriate RDK module the data is transmitted back to `dymint`. At this stage the Sequencer batches transactions into a RollApp block and publishes the batch and state roots to the data and settlement layers, respectively. By seperating the RollApp's execution environment from the settlement layer and data layer, applications can significantly increase performance capabilities, while maintaining a trust-minimized and inter-connected application.
+A RollApp transaction lifecycle begins by sending a request to a RollApp Sequencer which processes the transaction. The transaction, assuming valid, is then included in a block after been processed by the relevant RDK module. After a predetermined number of blocks, a batch is created by the sequencer. At this stage the sequencer publishes the batch and the batch metadata (e.g  state roots) to the DA layer and the dymension hub, respectively.<br/>
 
-References:
+## Cosmos compatiblity
 
-1. What is Cosmos? https://developers.cosmos.network/
-2. What is Tendermint? https://docs.tendermint.com/v0.34/introduction/what-is-tendermint.html
-3. Inter-blockchain Communication https://ibcprotocol.org/
+Similar to Cosmos blockchains, dYmension RollApps are designed to create application-specific blockchains minus the consensus overhead.<br/>
+The RDK builds upon the Cosmos-SDK by adding new modules and modifying existing ones for ensuring RollApp compatibility with the dymension protocol while still staying compatible with popular cosmos ecosystem tooling.<br/>
+RollApps are capable of interacting with any IBC-enabled chain using the dymension hub and as such will be part of the cosmos ecosystem internet of blockchains.<br/>
