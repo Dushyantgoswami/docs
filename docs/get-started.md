@@ -46,7 +46,7 @@ RollApps are autonomous, meaning RollApps set their own economic and decentraliz
 
 ### Value Accrual
 
-The benefits of deploying a RollApp over a smart contract is one of the most important features of dYmension’s protocol. When you deploy a smart contract to a blockchain like Ethereum the network fees (gas) are paid in the network’s token (i.e. ETH). This is because users pay gas fees to [network proposers and validators](https://ethereum.org/en/developers/docs/gas/) to have their transaction included in the next block. With a RollApp, all end-user fees are paid in the application’s token or whichever token you want to accept (e.g. stablecoins, IBC chains, RollApps…).
+Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token, RollApp end-user pay transaction fees with the application’s native token or whichever other token chosen by the RollApp e.g. stablecoins, Other IBC-enabled-tokens or completely new logic for fee collection. This promotes both extensive value accrual for the application and a sustainable token economy.
 
 ### Performance
 
