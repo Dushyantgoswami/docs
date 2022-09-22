@@ -7,8 +7,8 @@ slug: "glossary"
 
 <details>
     <summary>Autonomousity</summary>
-    The ability to own your own blockchain execution layer with the exception of having to adhere to the unerlying base layers protocol rules.
-    Part of the advantages of having your own execution blockchain entails having your own choice of native network fee token and a full control over the blockchain logic.
+    Autonomy is the control you gain from owning your blockchain execution layer with the exception of having to adhere to the underlying base layers protocol rules.
+    Some of the advantages of having autonomy entails choice of native network fee token and a full control over the blockchain logic.
 </details>
 
 ### B
@@ -126,7 +126,7 @@ slug: "glossary"
 
 <details>
     <summary>RollApp</summary>
-    RollApp is an application specific Rollup. Unlike with generic-purpose rollups, apps built as a RollApp have their own <a href="./glossary#a">autonomy</a>.
+    RollApp is an application specific rollup. Unlike dApps built on a generic-purpose rollups, apps built as a RollApp have their own <a href="./glossary#a">autonomy</a>.
 </details>
 
 <details>
