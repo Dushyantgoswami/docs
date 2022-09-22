@@ -26,7 +26,7 @@ This is an open-source community effort, so feel free to suggest new topics by c
   </div>
     <div class="col">
       <div class="card card-body h-100 d-flex flex-column">
-        <a href="learn/dymension" class="card-title card-link stretched-link"> 
+        <a href="learn/modular-intro" class="card-title card-link stretched-link"> 
           <h2>Learn</h2>
         </a>
         <p class="card-text">The how of dYmension</p>
