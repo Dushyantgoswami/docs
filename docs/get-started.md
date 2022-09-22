@@ -17,19 +17,19 @@ The documentation is structured as follows:
 - [Validators](/docs/validators/full-node/index.md): Run a dYmension hub node
 :::
 
-## What Is DYmension?
+## What Is dYmension?
 
 dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/docs/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
 
 dYmension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dYmension’s settlement layer.
 
-The dYmension settlement layer, also referred to as the dYmension Hub, is the protocol base layer. The dymension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
+The dYmension settlement layer, also referred to as the dYmension Hub, is the protocol base layer. The dYmension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
 
 RollApps are built with dYmension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
 
 For a deeper dive checkout the [Litepaper](/docs/dymension-litepaper/index.md) and [glossary](/docs/reference/glossary.md) concepts.
 
-## Why DYmension?
+## Why dYmension?
 
 ### 2-Order Network Effects
 
