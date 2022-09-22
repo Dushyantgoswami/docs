@@ -14,7 +14,7 @@ dYmension follows a “*Modular”* blockchain paradigm. By this design, instead
 The dYmension modular stack is as follow:
 
 1. Execution - [RollApps](./rollapps.md).
-2. Settlement & Consensus - the dYmension settlement layer, termed [‘dYmension Hub’](./dymension-hub.md).
+2. Settlement & Consensus - the dYmension settlement layer, termed [dYmension Hub](./dymension-hub.md).
 3. Data - Data Availability providers supported by the dYmension protocol.
 
 ![Modular Blockchain](./images/modular-architecture-overview.svg)
