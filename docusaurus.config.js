@@ -93,7 +93,7 @@ const config = {
               {
                 type: "doc",
                 label: "Checkers RollApp",
-                docId: "developers/checkers-rollapp/index",
+                docId: "developers/checkers-rollapp/scaffold-rollapp",
               },
               {
                 type: "doc",
