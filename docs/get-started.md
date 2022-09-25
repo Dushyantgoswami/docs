@@ -37,7 +37,8 @@ dYmension is a permissionless network of RollApps. Deploying a RollApp means eas
 
 ### Easy Deployment
 
-dYmension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire IBC-enabled ecosystem via the dYmension Hub.
+With dYmension, building a blockchain doesn't come with the overhead of bootstraping a network.
+Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
 
 ### Autonomy
 
