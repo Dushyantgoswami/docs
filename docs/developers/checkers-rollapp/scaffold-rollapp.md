@@ -9,7 +9,7 @@ While the [dymension hub node](../getting-started/run-a-hub-node.md) is running,
 Once inside the new directory, Run the following commands:
 
 ```sh
-git clone git@github.com:dymensionxyz/local-dymension.git && cd local-dymension
+git clone https://github.com/dymensionxyz/local-dymension.git && cd local-dymension
 
 export WORKSPACE_PATH=$HOME/workspace
 
