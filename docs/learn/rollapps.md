@@ -5,7 +5,7 @@ slug: "rollapps"
 
 ## What is a RollApp?
 
-RollApp is an application-specific rollup. Unlike dApps built on a generic-purpose rollups, apps built as a RollApp have their own autonomy. Developers can use dYmension’s RollApp Development Kit (RDK) to develop a RollApp.<br/>
+A RollApp is an application-specific rollup. Unlike dApps built on generic-purpose rollups, apps built as a RollApp have their own autonomy. Developers can use dYmension’s RollApp Development Kit (RDK) to develop a RollApp.<br/>
 
 *Autonomy* is the control you gain from owning your blockchain execution layer with the exception of having to adhere to the underlying base layers protocol rules.
 Some of the advantages of having autonomy entails choice of native network fee token and a full control over the blockchain logic.
