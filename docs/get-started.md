@@ -37,8 +37,7 @@ dYmension is a permissionless network of RollApps. Deploying a RollApp means eas
 
 ### Easy Deployment
 
-With dYmension, building a blockchain doesn't come with the overhead of bootstraping a network.
-Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
+With dYmension, building a blockchain doesn't come with the overhead of bootstraping a network, such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
 
 ### Autonomy
 
@@ -46,10 +45,10 @@ RollApps are autonomous, meaning RollApps set their own economic and decentraliz
 
 ### Value Accrual
 
-Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-user pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, Other IBC-enabled-tokens or completely new logic for fee collection).
+Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-user pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, other IBC-enabled-tokens or completely new logic for fee collection).
 
 ### Performance
 
 As RollApps outsource the consensus to the dYmension Hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
 
-In the next sections we'll dive deeper on how dYmension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!
+In the next sections we'll dive deeper into how dYmension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/getting-started/intro.md)!
