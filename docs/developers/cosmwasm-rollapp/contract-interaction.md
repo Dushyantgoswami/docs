@@ -43,5 +43,5 @@ Query the owner of the name
 wasmd query wasm contract-state smart $CONTRACT "{\"resolve_record\": {\"name\": \"bob\"}}" --chain-id "$CHAIN_ID" --output json
 ```
 
-That's it for this tutorial! we've built a Wasm RollApp, deployed a contract on top of it and interact with it.<br/>
-Next let's see how to build an EVM RollApp!
+That's it for this tutorial! We've built a Wasm RollApp, deployed a contract on top of it and interacted with it.<br/>
+Next, let's see how to build an EVM RollApp!
