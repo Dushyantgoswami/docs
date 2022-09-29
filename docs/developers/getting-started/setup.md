@@ -24,7 +24,7 @@ You need Go to develop with the dYmension RDK. If you still need to install Go o
 
 ## Install Ignite (v0.22.2)
 
-Ignite CLI is an easy-to-use CLI tool for creating and maintaining sovereign application-specific blockchains. Blockchains created with Ignite CLI use Cosmos SDK and Tendermint by default. We will utilize dYmension's RDK and dymint as drop-in replacements for the Cosmos SDK and Tendermint. To install, head to the [Install Ignite CLI page](https://docs.ignite.com/guide/install).
+Ignite CLI is an easy-to-use CLI tool for creating and maintaining sovereign application-specific blockchains. Blockchains created with Ignite CLI use Cosmos SDK and Tendermint by default. We will utilize dYmension's RDK and dymint as drop-in replacements for the Cosmos SDK and Tendermint. To install, head to the [v0.22.2 release](https://github.com/ignite/cli/releases/tag/v0.22.2).
 
 ## Install Make
 GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
