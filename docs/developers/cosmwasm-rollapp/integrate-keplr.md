@@ -6,7 +6,7 @@ slug: integrate-keplr
 
 # Integrate Keplr
 
-## Connect your Keplr wallet with Wasm.
+## Connect your Keplr wallet with Wasm
 
 Instructions for adding the dymension-wasm network to the keplr and sync an account.
 
