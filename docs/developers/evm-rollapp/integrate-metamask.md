@@ -4,7 +4,9 @@ order: 5
 slug: integrate-metamask
 ---
 
-# Connect your MetaMask wallet with Ethermint.
+# Integrate Metamask
+
+## Connect your MetaMask wallet with Ethermint.
 
 Instructions for adding the dymension-ethermint network to the metamask and sync an account.
 
