@@ -125,7 +125,7 @@ const sidebars = {
             },
             {
               type: "doc",
-              label: "Interact with the Contract",
+              label: "Integrate Keplr",
               id: "developers/cosmwasm-rollapp/integrate-keplr",
             },
           ],
