@@ -16,4 +16,4 @@ export WORKSPACE_PATH=$HOME/workspace
 cd checkers/build_chain_script && sh build.sh
 ```
 
-Alternatively you can build it manually with [these instructions](https://github.com/dymensionxyz/local-dymension/blob/main/checkers/build_chain.md).<br/> The Checkers RollApp is built upon the Cosmos Academy [checkers blockchain tutorial](https://developers.cosmos.network/academy/3-my-own-chain/stored-game.html).
+Alternatively you can build it manually with [these instructions](https://github.com/dymensionxyz/local-dymension/blob/main/checkers/build_chain.md).<br/> The Checkers RollApp is built upon the Cosmos Academy [checkers blockchain tutorial](https://tutorials.cosmos.network/hands-on-exercise/1-ignite-cli/3-stored-game.html).
