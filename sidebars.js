@@ -34,23 +34,23 @@ const sidebars = {
           label: "Getting started",
           collapsed: true,
           items: [
-        {
-          type: "doc",
-          label: "Introduction",
-          id: "developers/getting-started/intro",
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "developers/getting-started/intro",
+            },
+            {
+              type: "doc",
+              label: "Setup work environment",
+              id: "developers/getting-started/setup",
+            },
+            {
+              type: "doc",
+              label: "Run a hub node",
+              id: "developers/getting-started/run-a-hub-node",
+            },
+          ],
         },
-        {
-          type: "doc",
-          label: "Setup work environment",
-          id: "developers/getting-started/setup",
-        },
-        {
-          type: "doc",
-          label: "Run a hub node",
-          id: "developers/getting-started/run-a-hub-node",
-        },
-      ],
-    },
         {
           type: "category",
           label: "Checkers RollApp",
@@ -154,6 +154,11 @@ const sidebars = {
               type: "doc",
               label: "Deploy and test the contract",
               id: "developers/evm-rollapp/deploy-and-test-contract",
+            },
+            {
+              type: "doc",
+              label: "Integrate Metamask",
+              id: "developers/evm-rollapp/integrate-metamask",
             },
           ],
         },
