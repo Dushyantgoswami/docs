@@ -8,10 +8,6 @@ slug: integrate-metamask
 
 Instructions for adding the dymension-ethermint network to the metamask and sync an account.
 
-## Init and start node
-
-Init and start dymension-ethermint node by following [these instructions](./dymension_ethermint_node.md)
-
 ## Adding a New Network
 
 Open the metamask extension on your browser. Then click the top right circle and go to Settings > Networks > Add Network
