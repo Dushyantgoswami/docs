@@ -123,6 +123,11 @@ const sidebars = {
               label: "Interact with the Contract",
               id: "developers/cosmwasm-rollapp/contract-interaction",
             },
+            {
+              type: "doc",
+              label: "Interact with the Contract",
+              id: "developers/cosmwasm-rollapp/integrate-keplr",
+            },
           ],
         },
         {
