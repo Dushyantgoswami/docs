@@ -1,6 +1,6 @@
 ---
 title: "Run the RollApp"
-order: 3
+order: 2
 slug: evm-sequencer
 ---
 
