@@ -1,10 +1,10 @@
 ---
 title: "Create a smart contract"
-order: 4
+order: 3
 slug: contract-creation
 ---
 
-# Create a solidity smart contract 
+# Create a solidity smart contract
 
 In the next section we will go over on how to create a [truffle](https://trufflesuite.com/) project
 which we'll use for development of the solidity smart contract.
@@ -44,22 +44,22 @@ contract Counter {
 Create `test/counter_test.js` containing the following tests:
 
 ```js
-const Counter = artifacts.require("Counter")
+const Counter = artifacts.require("Counter");
 
-contract('Counter', accounts => {
-  const from = accounts[0]
-  let counter
+contract("Counter", (accounts) => {
+  const from = accounts[0];
+  let counter;
 
-  before(async() => {
-    counter = await Counter.new()
-  })
+  before(async () => {
+    counter = await Counter.new();
+  });
 
-  it('should add', async() => {
-    await counter.add()
-    let count = await counter.getCounter()
-    assert(count == 1, `count was ${count}`)
-  })
-})
+  it("should add", async () => {
+    await counter.add();
+    let count = await counter.getCounter();
+    assert(count == 1, `count was ${count}`);
+  });
+});
 ```
 
 ## Edit the truffle config

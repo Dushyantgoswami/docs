@@ -1,6 +1,6 @@
 ---
 title: "Run the RollApp"
-order: 3
+order: 2
 slug: evm-sequencer
 ---
 
@@ -9,7 +9,7 @@ slug: evm-sequencer
 ## Clone the repo
 
 ```sh
-git clone git@github.com:dymensionxyz/ethermint.git --branch v0.1.0-alpha
+git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.1-alpha
 cd ethermint
 go mod tidy
 go mod download
