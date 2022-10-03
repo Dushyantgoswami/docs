@@ -30,7 +30,7 @@ To prepare for the upcoming testnet and network upgrades the dYmension settlemen
 
 - Dual Core
 - At least 500GB of SSD disk storage
-- At least 16GB of memory (RAM)
+- At least 8GB of memory (RAM)
 - At least 100mbps network bandwidth
 
 These requirements will continually be revisted and tested by the core team and community.
