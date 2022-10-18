@@ -32,4 +32,4 @@ dymd query rollapp show-rollapp-state-info "$ROLLAPP_ID" <index>
 
 Congrats! You now have a functioning RollApp which uses the dymension hub as a settlement layer for security.<br/>
 
-On our next tutorial we will show you how to build your own CosmWasm RollApp which can be used for deployment of smart contracts.
+On the next section we'll see how to replace our mock Data Availability layer with an actual Data Availability layer.

@@ -91,6 +91,18 @@ const sidebars = {
               label: "View RollApp state",
               id: "developers/checkers-rollapp/query-rollapp",
             },
+            {
+              type: "category",
+              label: "Connect a DA layer",
+              collapsed: true,
+              items: [
+                {
+                  type: "doc",
+                  label: "Celestia",
+                  id: "developers/checkers-rollapp/connect-da-layer/celestia",
+                },
+              ],
+            },
           ],
         },
         {
