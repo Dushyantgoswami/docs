@@ -55,6 +55,10 @@ If the dymd command is not found an error message is returned, confirm that your
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
+:::warning Note
+In case `dymd` command was not found please make sure you also update GOPATH in your `~/.bashrc`<br/>
+:::
+
 From within the `dymension` directory, start the chain:
 
 ```sh
