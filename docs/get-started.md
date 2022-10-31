@@ -25,7 +25,7 @@ dYmension allows anyone to build and deploy their own blockchain, a RollApp inst
 
 The dYmension settlement layer, also referred to as the dYmension Hub, is the protocol base layer. The dYmension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
 
-RollApps are built with dYmension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
+RollApps are built with dYmension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g. EVM, WASM) in which their RollApp will operate.
 
 For a deeper dive checkout the [Litepaper](/docs/dymension-litepaper/index.md) and [glossary](/docs/reference/glossary.md) concepts.
 
