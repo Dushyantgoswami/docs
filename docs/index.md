@@ -2,66 +2,88 @@
 title: "Documentation Portal"
 slug: "/"
 hidden: false
-sidebar_position: 0
+sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-# dYmension Documentation Portal
-
-This documentation is designed to help you build and interact with dYmension. It covers concepts core to dYmension, explains the dYmension tech stack and documents procedures for deploying an application to dYmension.
-
-This is an open-source community effort, so feel free to suggest new topics by creating an issue in the [GitHub](https://github.com/dymensionxyz/docs/issues), add new content and provide examples wherever you think might be helpful. All documentation can be edited via GitHub.
-
-## A Hitchhiker's Guide to dYmension
-
-<div class="row row-cols-1 row-cols-md-2">
-    <div class="col">
-        <div class="card card-body" >
-            <a href="get-started" class="card-link stretched-link"> 
-                <h2 class="card-title">Get Started</h2>
-            </a>
-            <p class="card-text">The what and why of dYmension</p>
-            <div class="card-actions">
-                <button>Get started</button>
-            </div>
-        </div>
+<div class="card image-card overlay-primary">
+    <img class="background" src={require('@site/static/img/background.png').default} alt="background" />
+    <div class="card-body">
+        <div class="card-body-overlay"></div>
+        <h3 class="card-title">Welcome to the dymension documentation</h3>
+        <p class="card-text">dYmension's documentation serves as the central source for all things dYmension. Learn, build and grow the dYmension ecosystem.</p>
     </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 main-actions">
     <div class="col">
         <div class="card card-body">
             <a href="learn/modular-intro" class="card-link stretched-link"> 
                 <h2 class="card-title">Learn</h2>
             </a>
-            <p class="card-text">The how of dYmension</p>
+            <p class="card-text">Learn about foundational topics related to dYmension</p>
             <div class="card-actions">
-                <button>Learn</button>
+                <button class="action-button">Learn</button>
             </div>
         </div>
     </div>
-</div>
-
-
-<div class="row row-cols-1 row-cols-md-2">
     <div class="col">
         <div class="card card-body">
-            <a href="developers/checkers-rollapp/" class="card-link stretched-link"> 
-                <h2 class="card-title">Build a RollApp</h2>
+            <a href="developers/getting-started/intro" class="card-link stretched-link"> 
+                <h2 class="card-title">Developers</h2>
             </a>
-            <p class="card-text">Build a RollApp using the RDK</p>
+            <p class="card-text">Build RollApps within the dYmension ecosystem</p>
             <div class="card-actions">
-                <button>Build</button>
+                <button class="action-button">Build</button>
             </div>
         </div>
     </div>
     <div class="col">
-        <div class="card card-body" >
+        <div class="card card-body">
             <a href="validators/full-node/index" class="card-link stretched-link"> 
-                <h2 class="card-title">Run a hub node</h2>
+                <h2 class="card-title">Validators</h2>
             </a>
-            <p class="card-text">Learn how to run a dYmension hub full node</p>
+            <p class="card-text">Run a dYmension hub node</p>
             <div class="card-actions">
-                <button>Run a node</button>
+                <button class="action-button">Run a Validator</button>
             </div>
         </div>
     </div>
 </div>
 
+
+## What Is dYmension?
+
+dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/docs/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
+
+dYmension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dYmension’s settlement layer.
+
+The dYmension settlement layer, also referred to as the dYmension Hub, is the protocol base layer. The dYmension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
+
+RollApps are built with dYmension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
+
+For a deeper dive checkout the [Litepaper](/docs/dymension-litepaper/index.md) and [glossary](/docs/reference/glossary.md) concepts.
+
+## Why dYmension?
+
+### 2-Order Network Effects
+
+dYmension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dYmension Hub.
+
+### Easy Deployment
+
+dYmension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire IBC-enabled ecosystem via the dYmension Hub.
+
+### Autonomy
+
+RollApps are autonomous, meaning RollApps set their own economic and decentralization parameters.
+
+### Value Accrual
+
+Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-user pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, Other IBC-enabled-tokens or completely new logic for fee collection).
+
+### Performance
+
+As RollApps outsource the consensus to the dYmension Hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
+
+In the next sections we'll dive deeper on how dYmension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!

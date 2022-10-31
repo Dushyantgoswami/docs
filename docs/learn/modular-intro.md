@@ -14,28 +14,25 @@ dYmension follows a “*Modular”* blockchain paradigm. By this design, instea
 
 ### The dYmension modular stack is as follow:
 
-<div class="card image-card">
+<div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-execution.png').default} alt="background" />
     <div class="card-body">
-        <div class="card-body-overlay"></div>
         <h3 class="card-title">Execution</h3>
         <p class="card-text">RollApps</p>
     </div>
 </div>
 
-<div class="card image-card">
+<div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-settlement.png').default} alt="background" />
     <div class="card-body">
-        <div class="card-body-overlay"></div>
         <h3 class="card-title">Settlement & Consensus</h3>
         <p class="card-text">The dYmension settlement<br />layer, termed dYmension Hub.</p>
     </div>
 </div>
 
-<div class="card image-card">
+<div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-da.png').default} alt="background" />
     <div class="card-body">
-        <div class="card-body-overlay"></div>
         <h3 class="card-title">Data Availability</h3>
         <p class="card-text">Providers supported by the<br />dYmension protocol.</p>
     </div>
