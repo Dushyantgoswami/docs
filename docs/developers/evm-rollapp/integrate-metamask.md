@@ -41,5 +41,5 @@ Paste the exported private key in the form input and click `Import`.
 Your Metamask account balance should now show 99990000 PHOTON (or a bit less if you interacted previously with the truffle contract).<br/>
 
 Congrats! You have created an EVM RollApp, deployed a contract on top of it and interacted with it.<br/>
-If you want to learn more about dYmension and how it works feel free to checkout our [getting-started](../../get-started.md) and [learn](../../learn/modular-intro.md) sections!<br/>
+If you want to learn more about dYmension and how it works feel free to checkout our [getting-started](../../index.md) and [learn](../../learn/modular-intro.md) sections!<br/>
 We're curious to see what you'll build next!<br/>
