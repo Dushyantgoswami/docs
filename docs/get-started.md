@@ -6,16 +6,51 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-:::info Welcome to the dYmension documentation
+<div class="card image-card overlay-primary">
+    <img class="background" src={require('@site/static/img/background.png').default} alt="background" />
+    <div class="card-body">
+        <div class="card-body-overlay"></div>
+        <h3 class="card-title">Welcome to the dymension documentation</h3>
+        <p class="card-text">dYmension's documentation serves as the central source for all things dYmension. Learn, build and grow the dYmension ecosystem.</p>
+    </div>
+</div>
 
-dYmension's documentation serves as the central source for all things dYmension. Learn, build and grow the dYmension ecosystem.
+<div class="row row-cols-1 row-cols-md-3 main-actions">
+    <div class="col">
+        <div class="card card-body">
+            <a href="learn/modular-intro" class="card-link stretched-link"> 
+                <h2 class="card-title">Learn</h2>
+            </a>
+            <p class="card-text">Learn about foundational topics related to dYmension</p>
+            <div class="card-actions">
+                <button>Learn</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card card-body">
+            <a href="developers/checkers-rollapp/" class="card-link stretched-link"> 
+                <h2 class="card-title">Developers</h2>
+            </a>
+            <p class="card-text">Build RollApps within the dYmension ecosystem</p>
+            <div class="card-actions">
+                <button>Build</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card card-body">
+            <a href="validators/full-node/index" class="card-link stretched-link"> 
+                <h2 class="card-title">Validators</h2>
+            </a>
+            <p class="card-text">Run a dYmension hub node</p>
+            <div class="card-actions">
+                <button>Run a Validator</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-The documentation is structured as follows:
-
-- [Learn](/docs/learn/modular-intro.md): Learn about foundational topics related to dYmension
-- [Developers](/docs/developers/getting-started/intro.md): Build RollApps within the dYmension ecosystem
-- [Validators](/docs/validators/full-node/index.md): Run a dYmension hub node
-:::
 
 ## What Is dYmension?
 

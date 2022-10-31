@@ -1,6 +1,7 @@
 ---
 title: "The dYmension Hub"
 slug: "dymension-hub"
+hide_table_of_contents: true
 ---
 
 The settlement layer of dYmension is termed "The dYmension Hub”. The dYmension Hub is a Cosmos SDK Proof-of-Stake chain which utilizes the Tendermint Core state replication model for networking and consensus.<br/>

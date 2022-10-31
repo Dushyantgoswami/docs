@@ -14,44 +14,54 @@ This is an open-source community effort, so feel free to suggest new topics by c
 
 ## A Hitchhiker's Guide to dYmension
 
-<div class="docs-card-container">
-  <div class="row row-cols-1 row-cols-md-3a g-4">
+<div class="row row-cols-1 row-cols-md-2">
     <div class="col">
-      <div class="card card-body h-100 d-flex flex-column" >
-        <a href="get-started" class="card-title card-link stretched-link"> 
-          <h2>Get Started</h2>
-        </a>
-      <p class="card-text">The what and why of dYmension</p>
+        <div class="card card-body" >
+            <a href="get-started" class="card-link stretched-link"> 
+                <h2 class="card-title">Get Started</h2>
+            </a>
+            <p class="card-text">The what and why of dYmension</p>
+            <div class="card-actions">
+                <button>Get started</button>
+            </div>
+        </div>
     </div>
-  </div>
     <div class="col">
-      <div class="card card-body h-100 d-flex flex-column">
-        <a href="learn/modular-intro" class="card-title card-link stretched-link"> 
-          <h2>Learn</h2>
-        </a>
-        <p class="card-text">The how of dYmension</p>
-      </div>
+        <div class="card card-body">
+            <a href="learn/modular-intro" class="card-link stretched-link"> 
+                <h2 class="card-title">Learn</h2>
+            </a>
+            <p class="card-text">The how of dYmension</p>
+            <div class="card-actions">
+                <button>Learn</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
-<div class="docs-card-container">
-  <div class="row row-cols-1 row-cols-md-3a g-4">
-      <div class="col">
-        <div class="card card-body h-100 d-flex flex-column">
-          <a href="developers/checkers-rollapp/" class="card-title card-link stretched-link"> 
-            <h2>Build a RollApp</h2>
-          </a>
-          <p class="card-text">Build a RollApp using the RDK</p>
+
+<div class="row row-cols-1 row-cols-md-2">
+    <div class="col">
+        <div class="card card-body">
+            <a href="developers/checkers-rollapp/" class="card-link stretched-link"> 
+                <h2 class="card-title">Build a RollApp</h2>
+            </a>
+            <p class="card-text">Build a RollApp using the RDK</p>
+            <div class="card-actions">
+                <button>Build</button>
+            </div>
         </div>
-      </div>
-     <div class="col">
-      <div class="card card-body h-100 d-flex flex-column" >
-        <a href="validators/full-node/index" class="card-title card-link stretched-link"> 
-          <h2>Run a hub node</h2>
-        </a>
-        <p class="card-text">Learn how to run a dYmension hub full node</p>
-      </div>
     </div>
-  </div>
+    <div class="col">
+        <div class="card card-body" >
+            <a href="validators/full-node/index" class="card-link stretched-link"> 
+                <h2 class="card-title">Run a hub node</h2>
+            </a>
+            <p class="card-text">Learn how to run a dYmension hub full node</p>
+            <div class="card-actions">
+                <button>Run a node</button>
+            </div>
+        </div>
+    </div>
 </div>
+
