@@ -6,7 +6,7 @@ slug: "glossary"
 ### A
 
 <details>
-    <summary>Autonomousity</summary>
+    <summary>Autonomy</summary>
     Autonomy is the control you gain from owning your blockchain execution layer with the exception of having to adhere to the underlying base layers protocol rules.
     Some of the advantages of having autonomy entails choice of native network fee token and a full control over the blockchain logic.
 </details>
@@ -33,7 +33,7 @@ slug: "glossary"
 ### D
 
 <details>
-    <summary>Data availability problem</summary>
+    <summary>Data Availability Problem</summary>
     The data availability problem states: If the block proposer does not publish all of the data no one would be able to detect hidden transactions. <br /> <br />
     If a block producer just publishes the block header but not the transaction data, then full nodes won’t be able to check if the transactions are valid and generate fraud proofs if they’re not valid. It is a requirement that block producers must publish all the data for their blocks, but we need a way to enforce this.<br /> <br />
     The most obvious way, as discussed, to solve the data availability problem is to simply require everyone (including light clients) to download all the data. Clearly, this doesn’t scale well. This is what most blockchains, such as Bitcoin and Ethereum, currently do. <br /> <br />
@@ -52,7 +52,7 @@ slug: "glossary"
 ### E
 
 <details>
-    <summary>Execution layer</summary>
+    <summary>Execution Layer</summary>
     The `top` layer of the modular stack. This layer is in charge of transactions processing and gossiping, state transition function and communication with other layers of the modular stack.  
 </details>
 
@@ -73,14 +73,14 @@ slug: "glossary"
 ### H
 
 <details>
-    <summary>Honest majority assumption</summary>
+    <summary>Honest Majority Assumption</summary>
     The assumption that a majority of blockchain participants (such as the validator set) are honest and follow the rules of the protocol. If a majority of participants are dishonest, attacks can be made that are within the rules of the protocol but cause negative effects.
     <br /> <br />In Tendermint Core when +1/3 of the voting power drops offline for whatever reason, the chain will stop making progress. In order to start making progress again, the network will need to wait for the +1/3 of voting power to come back online. If validators don’t come back online for whatever reason, they may need to be forked out via manual intervention from the community.
 
 </details>
 
 <details>
-    <summary>Honest minority assumption</summary>
+    <summary>Honest Minority Assumption</summary>
     The assumption that only a minority of blockchain participants are honest and follow the rules of the protocol. Honest minority assumptions can come in multiple forms, such as a 1-of-N assumption where only a single honest participant is required to be honest for the blockchain to hold a guarantee. For example, optimistic rollup users and nodes require a 1-of-N assumption for safety as at least one honest full node is required to monitor the rollup and submit fraud proofs in the event of fraud. 
     <br /> <br /> Reference: https://celestia.org/glossary/
 

@@ -22,6 +22,8 @@ git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
 cd dymension
 ```
 
+### Step 2: Setup the relevant env vars
+
 Setup the relevant env vars which will be used later for building the chain
 
 ```sh
@@ -33,6 +35,7 @@ export GRPC_ADDRESS="0.0.0.0:8090"
 export GRPC_WEB_ADDRESS="0.0.0.0:8091"
 export P2P_ADDRESS="0.0.0.0:36656"
 ```
+### Step 3: Setup and run the hub node
 
 Make sure you are inside the `dymension` dir and run the following to build and init the chain
 
@@ -52,7 +55,11 @@ If the dymd command is not found an error message is returned, confirm that your
 export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
-From within the `dymension` directory, start the chain
+:::warning Note
+In case `dymd` command was not found please make sure you also update GOPATH in your `~/.bashrc`<br/>
+:::
+
+From within the `dymension` directory, start the chain:
 
 ```sh
 sh scripts/run_local.sh

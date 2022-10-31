@@ -39,6 +39,4 @@ Compiling your contracts...
   1 passing (2s)
 ```
 
-Congrats! You have created an EVM RollApp, deployed a contract on top of it and interacted with it.<br/>
-If you want to learn more about dymension and how it works feel free to checkout our [getting-started](../../index.md) and [learn](../../learn/modular-intro.md) sections!<br/>
-We're curious to see what you'll build next!<br/>
+Next, let's see how to connect our EVM RollApp to metamask.

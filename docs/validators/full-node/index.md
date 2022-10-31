@@ -28,9 +28,9 @@ We officially support macOS, Windows and Linux only in the following architectur
 
 To prepare for the upcoming testnet and network upgrades the dYmension settlement layer validators and full nodes should be prepared with the following minimum recommended hardware requirements:
 
-- Quad Core
+- Dual Core
 - At least 500GB of SSD disk storage
-- At least 64GB of memory (RAM)
+- At least 8GB of memory (RAM)
 - At least 100mbps network bandwidth
 
 These requirements will continually be revisted and tested by the core team and community.

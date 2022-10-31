@@ -12,7 +12,7 @@ In order to understand how the dYmension protocol works it is first important to
 
 dYmension follows a “*Modular”* blockchain paradigm. By this design, instead of one monolithic blockchain preforming all above functionalities, the responsibilities are segregated to multiple layers where each is built from the ground-up to service it’s specific role in the stack.
 
-### The dYmension modular stack is as follow:
+### The dYmension modular stack is as follows:
 
 <div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-execution.png').default} alt="background" />
@@ -38,4 +38,4 @@ dYmension follows a “*Modular”* blockchain paradigm. By this design, instea
     </div>
 </div>
 
-RollApps can be deployed on top of the dYmension Hub by any developer making use of dYmension’s Hub’s connectivity, security and liquidity. As for data availability (DA); dYmension is DA agnostic as long as the dYmension’s Hub supports it. RollApp developers can choose their preferred DA provider according to their cost and security preferences.
+RollApps can be deployed on top of the dYmension Hub by any developer making use of dYmension’s Hub connectivity, security and liquidity. As for data availability (DA); dYmension is DA agnostic. RollApp developers can choose DA providers which are supported by the dYmension Hub according to their cost and security preferences. 

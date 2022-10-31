@@ -33,23 +33,23 @@ const sidebars = {
           label: "Getting started",
           collapsed: true,
           items: [
-        {
-          type: "doc",
-          label: "Introduction",
-          id: "developers/getting-started/intro",
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "developers/getting-started/intro",
+            },
+            {
+              type: "doc",
+              label: "Setup work environment",
+              id: "developers/getting-started/setup",
+            },
+            {
+              type: "doc",
+              label: "Run a hub node",
+              id: "developers/getting-started/run-a-hub-node",
+            },
+          ],
         },
-        {
-          type: "doc",
-          label: "Setup work environment",
-          id: "developers/getting-started/setup",
-        },
-        {
-          type: "doc",
-          label: "Run a hub node",
-          id: "developers/getting-started/run-a-hub-node",
-        },
-      ],
-    },
         {
           type: "category",
           label: "Checkers RollApp",
@@ -90,6 +90,18 @@ const sidebars = {
               label: "View RollApp state",
               id: "developers/checkers-rollapp/query-rollapp",
             },
+            {
+              type: "category",
+              label: "Connect a DA layer",
+              collapsed: true,
+              items: [
+                {
+                  type: "doc",
+                  label: "Celestia",
+                  id: "developers/checkers-rollapp/connect-da-layer/celestia",
+                },
+              ],
+            },
           ],
         },
         {
@@ -122,6 +134,11 @@ const sidebars = {
               label: "Interact with the Contract",
               id: "developers/cosmwasm-rollapp/contract-interaction",
             },
+            {
+              type: "doc",
+              label: "Integrate Keplr",
+              id: "developers/cosmwasm-rollapp/integrate-keplr",
+            },
           ],
         },
         {
@@ -153,6 +170,11 @@ const sidebars = {
               type: "doc",
               label: "Deploy and test the contract",
               id: "developers/evm-rollapp/deploy-and-test-contract",
+            },
+            {
+              type: "doc",
+              label: "Integrate Metamask",
+              id: "developers/evm-rollapp/integrate-metamask",
             },
           ],
         },

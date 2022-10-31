@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## What is a RollApp?
 
-RollApp is an application-specific rollup. Unlike dApps built on a generic-purpose rollups, apps built as a RollApp have their own autonomy. Developers can use dYmension’s RollApp Development Kit (RDK) to develop a RollApp.<br/>
+A RollApp is an application-specific rollup. Unlike dApps built on generic-purpose rollups, apps built as a RollApp have their own autonomy. Developers can use dYmension’s RollApp Development Kit (RDK) to develop a RollApp.<br/>
 
 *Autonomy* is the control you gain from owning your blockchain execution layer with the exception of having to adhere to the underlying base layers protocol rules.
 Some of the advantages of having autonomy entails choice of native network fee token and a full control over the blockchain logic.
@@ -19,7 +19,7 @@ Data and state root publication guarantees that any actor, whether driven by dis
 
 ## RollApps architecture
 
-RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [RDK](https://github.com/dymensionxyz/RDK). The client component, referred to as [dymint](https://github.com/dymensionxyz/dymint) is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer communication. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.<br/>
+RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [RDK](https://github.com/dymensionxyz/RDK). The client component, referred to as [dymint](https://github.com/dymensionxyz/dymint), forked from Celestia's [optimint](https://github.com/celestiaorg/optimint), is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer communication. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.<br/>
 
 <div class="image-container-primary">
     <img class="image--primary" src={require('./images/rollapp-architecture-overview.png').default} alt="rollapp-overview" />

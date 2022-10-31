@@ -1,13 +1,13 @@
 ---
 title: "Setup Your Work Environment"
-order: 2
+order: 1
 description: All you need for the hands-on sections
 slug: setup
 ---
 
 # Setup Your Work Environment
 
-Assuming you've gone through the initial [getting started](../getting-started/intro.md ) setup [here](../getting-started/setup.md ), you will only need to install npm and truffle for this tutorial.
+Assuming you've gone through the initial [getting started](../getting-started/intro.md) setup [here](../getting-started/setup.md), you will only need to install npm and truffle for this tutorial.
 
 :::info In this section, you can find all you need to install:
 
