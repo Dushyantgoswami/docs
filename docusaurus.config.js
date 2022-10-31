@@ -155,7 +155,7 @@ const config = {
                      <img class="logo" src="/img/full-logo.svg" alt="dYmension Logo" />    
                      <img class="logo-light" src="/img/full-logo-light.svg" alt="dYmension Logo" />                  
                   </a>
-                  <p class="copyright">By Builders, For Builders</p>
+                  <p class="copyright"><span class="heart-icon">♥</span> By Builders, For Builders</p>
                 </p>             
                 `,
                             },

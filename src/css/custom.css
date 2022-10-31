@@ -201,6 +201,10 @@ button.action-button {
     margin: var(--ifm-spacing-vertical) 0 0;
 }
 
+.footer .logo-container .copyright .heart-icon {
+    color: red;
+}
+
 [data-theme="dark"] .footer .logo-container .logo {
     display: none;
 }
