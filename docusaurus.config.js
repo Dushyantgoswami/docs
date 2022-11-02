@@ -166,7 +166,7 @@ const config = {
                         items: [
                             {
                                 label: "Twitter",
-                                href: "https://twitter.com/dYmensionXYZ",
+                                href: "https://twitter.com/dymensionXYZ",
                             },
                             {
                                 label: "Discord",
@@ -174,11 +174,11 @@ const config = {
                             },
                             {
                                 label: "Telegram",
-                                href: "https://t.me/dYmensionXYZ",
+                                href: "https://t.me/dymensionXYZ",
                             },
                             {
                                 label: "Medium",
-                                href: "https://medium.com/@dYmensionXYZ",
+                                href: "https://medium.com/@dymensionXYZ",
                             },
                         ],
                     },
@@ -186,7 +186,7 @@ const config = {
                         title: "Developers",
                         items: [
                             {
-                                label: "Github",
+                                label: "GitHub",
                                 href: "https://github.com/dymensionxyz",
                             },
                             {

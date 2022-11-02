@@ -68,7 +68,7 @@ Deploying a RollApp means easily plugging into 2-order network effects. RollApps
 
 ### Easy Deployment
 
-With dymension building a blockchain doesn't come with the overhead of bootstraping a network such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
+With dymension building a blockchain doesn't come with the overhead of bootstraping a network such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less, and trust-minimized nature of the blockchain ethos.
 
 ### Autonomy
 
