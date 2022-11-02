@@ -1,10 +1,22 @@
 {
-  "hosting": {
-    "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "hosting": [
+        {
+            "site": "dymension-3f01e",
+            "public": "build",
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ]
+        },
+        {
+            "site": "dymension-docs-dev",
+            "public": "build",
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ]
+        }
     ]
-  }
 }
