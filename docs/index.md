@@ -54,7 +54,7 @@ hide_table_of_contents: true
 
 Dymension allows anyone to build and deploy their own consensus-free blockchain, a RollApp chain.
 
-The dymension hub is the protocol's settlement layer. The dymension hub is a decentralized source of truth for the network. The dymension hub is a Proof of Stake blockchain which provides consensus, security and liquidity for RollApp chains.
+The dymension hub is the protocol's settlement layer and acts as decentralized source of truth for the network. The dymension hub is a Proof of Stake blockchain which provides consensus, security, and liquidity for RollApp chains.
 
 RollApps are built with dymension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp developers are able to choose the network token, application logic and virtual machine (e.g EVM, CosmWasm, and more) in which their RollApp operates. A great way to think about dymension is as an app-chain (Dymension Hub) for app-rollups (RollApps).
 
