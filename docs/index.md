@@ -7,7 +7,7 @@ hide_table_of_contents: true
 ---
 
 <div class="card image-card overlay-primary">
-    <img class="background" src={require('@site/static/img/background.png').default} alt="background" />
+    <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
         <h3 class="card-title">Welcome to the dymension documentation</h3>

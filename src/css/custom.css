@@ -847,12 +847,20 @@ div.navbar__logo {
     object-fit: cover;
 }
 
+.image-card.overlay-primary .background {
+    background-color: var(--ifm-color-primary-inverse);
+}
+
 .image-card .card-title {
     margin-bottom: calc(var(--ifm-spacing-step) * 2)
 }
 
 [data-theme="dark"] .image-card.overlay-primary {
     border-color: transparent;
+}
+
+[data-theme="dark"] .image-card.overlay-primary .background {
+    background-color: var(--ifm-color-primary);
 }
 
 [data-theme="dark"] .image-card .card-body {
