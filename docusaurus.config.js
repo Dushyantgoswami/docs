@@ -6,14 +6,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "dYmension Docs",
+    title: "dymension docs",
     tagline: "Developer Documentation",
     url: "https://docs.dymension.xyz/",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
-    organizationName: "yolo-labs",
+    organizationName: "dymension-labs",
     projectName: "docs",
     i18n: {
         defaultLocale: "en",
@@ -39,7 +39,7 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             colorMode: {
                 defaultMode: "dark",
@@ -54,9 +54,9 @@ const config = {
             },
             navbar: {
                 logo: {
-                    alt: "dYmension Logo",
+                    alt: "dymension logo",
                     src: "img/logo.svg",
-                    srcDark: 'img/logo-light.svg'
+                    srcDark: "img/logo-light.svg",
                 },
                 items: [
                     {
@@ -70,7 +70,7 @@ const config = {
                                 docId: "learn/modular-intro",
                             },
                             {
-                                label: "The dYmension hub",
+                                label: "The dymension hub",
                                 type: "doc",
                                 docId: "learn/dymension-hub",
                             },
@@ -133,7 +133,7 @@ const config = {
                     {
                         to: "dymension-litepaper/dymension-litepaper-index",
                         position: "left",
-                        label: "dYmension Litepaper",
+                        label: "Dymension Litepaper",
                     },
                     {
                         href: "https://github.com/dymensionxyz",
@@ -146,51 +146,52 @@ const config = {
                 style: "light",
                 links: [
                     {
+                        title: null,
                         items: [
                             {
                                 html: `
                 <div class="logo-container">                  
-                  <a href="https://dYmension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                  <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
                      <img class="logo" src="/img/full-logo.svg" alt="dYmension Logo" />    
                      <img class="logo-light" src="/img/full-logo-light.svg" alt="dYmension Logo" />                  
                   </a>
-                  <p class="copyright"><span class="heart-icon">♥</span> By Builders, For Builders</p>
+                  <p class="copyright">By Builders <span class="heart-icon">♥</span> For Builders</p>
                 </p>             
                 `,
                             },
                         ],
                     },
                     {
-                        title: 'Community',
+                        title: "Community",
                         items: [
                             {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/dYmensionXYZ',
+                                label: "Twitter",
+                                href: "https://twitter.com/dYmensionXYZ",
                             },
                             {
-                                label: 'Discord',
-                                href: 'https://discord.gg/dymension',
+                                label: "Discord",
+                                href: "https://discord.gg/dymension",
                             },
                             {
-                                label: 'Telegram',
-                                href: 'https://t.me/dYmensionXYZ',
+                                label: "Telegram",
+                                href: "https://t.me/dYmensionXYZ",
                             },
                             {
-                                label: 'Medium',
-                                href: 'https://medium.com/@dYmensionXYZ',
+                                label: "Medium",
+                                href: "https://medium.com/@dYmensionXYZ",
                             },
                         ],
                     },
                     {
-                        title: 'Developers',
+                        title: "Developers",
                         items: [
                             {
-                                label: 'Github',
-                                href: 'https://github.com/dymensionxyz',
+                                label: "Github",
+                                href: "https://github.com/dymensionxyz",
                             },
                             {
-                                label: 'Docs',
-                                href: 'https://docs.dymension.xyz/',
+                                label: "Docs",
+                                href: "https://docs.dymension.xyz/",
                             },
                         ],
                     },

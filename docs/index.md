@@ -10,8 +10,7 @@ hide_table_of_contents: true
     <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
-        <h3 class="card-title">Welcome to the dymension documentation</h3>
-        <p class="card-text">dYmension's documentation serves as the central source for all things dYmension. Learn, build and grow the dYmension ecosystem.</p>
+        <p class="card-text"><b>Dymension</b> empowers people to build their own RollApp chain. This documentation serves as the central source for all things dymension.</p>
     </div>
 </div>
 
@@ -21,7 +20,7 @@ hide_table_of_contents: true
             <a href="learn/modular-intro" class="card-link stretched-link"> 
                 <h2 class="card-title">Learn</h2>
             </a>
-            <p class="card-text">Learn about foundational topics related to dYmension</p>
+            <p class="card-text">Your educational guide to dymension</p>
             <div class="card-actions">
                 <button class="action-button">Learn</button>
             </div>
@@ -32,7 +31,7 @@ hide_table_of_contents: true
             <a href="developers/getting-started/intro" class="card-link stretched-link"> 
                 <h2 class="card-title">Developers</h2>
             </a>
-            <p class="card-text">Build RollApps within the dYmension ecosystem</p>
+            <p class="card-text">Build your own RollApp chain</p>
             <div class="card-actions">
                 <button class="action-button">Build</button>
             </div>
@@ -43,14 +42,13 @@ hide_table_of_contents: true
             <a href="validators/full-node/index" class="card-link stretched-link"> 
                 <h2 class="card-title">Validators</h2>
             </a>
-            <p class="card-text">Run a dYmension hub node</p>
+            <p class="card-text">Run a dymension hub node</p>
             <div class="card-actions">
-                <button class="action-button">Run a Validator</button>
+                <button class="action-button">Run a Node</button>
             </div>
         </div>
     </div>
 </div>
-
 
 ## What Is dYmension?
 
