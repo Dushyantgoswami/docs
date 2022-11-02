@@ -150,14 +150,14 @@ const config = {
                         items: [
                             {
                                 html: `
-                          <div class="logo-container">                  
-                            <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
-                                <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
-                                <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
-                            </a>
-                            <p class="copyright">By Builders <span class="heart-icon">♥</span> For Builders</p>
-                          </p>             
-                          `,
+                <div class="logo-container">                  
+                  <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                     <img class="logo" src="/img/full-logo.svg" alt="dYmension Logo" />    
+                     <img class="logo-light" src="/img/full-logo-light.svg" alt="dYmension Logo" />                  
+                  </a>
+                  <p class="copyright">By Builders <span class="heart-icon">♥</span> For Builders</p>
+                </p>             
+                `,
                             },
                         ],
                     },
@@ -166,7 +166,7 @@ const config = {
                         items: [
                             {
                                 label: "Twitter",
-                                href: "https://twitter.com/dymensionXYZ",
+                                href: "https://twitter.com/dYmensionXYZ",
                             },
                             {
                                 label: "Discord",
@@ -174,11 +174,11 @@ const config = {
                             },
                             {
                                 label: "Telegram",
-                                href: "https://t.me/dymensionXYZ",
+                                href: "https://t.me/dYmensionXYZ",
                             },
                             {
                                 label: "Medium",
-                                href: "https://medium.com/@dymensionXYZ",
+                                href: "https://medium.com/@dYmensionXYZ",
                             },
                         ],
                     },

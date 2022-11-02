@@ -50,9 +50,7 @@ hide_table_of_contents: true
     </div>
 </div>
 
-## What Is Dymension?
-
-Dymension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/docs/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
+## What Is dYmension?
 
 Dymension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dymension’s settlement layer.
 
