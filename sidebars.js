@@ -13,12 +13,12 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "The dYmension hub",
+          label: "The Dymension Hub",
           id: "learn/dymension-hub",
         },
         {
           type: "doc",
-          label: "RollApps",
+          label: "RollApp Chains",
           id: "learn/rollapps",
         },
       ],

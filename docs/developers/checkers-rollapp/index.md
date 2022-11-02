@@ -1,7 +1,7 @@
 ---
 parent:
   title: Build Your Own RollApp
-  description: Build your first dYmension RollApp
+  description: Build your first dymension RollApp
   number: 0
 tag: deep-dive
 order: 0
@@ -10,7 +10,7 @@ title: Build Your Own RollApp
 
 # Build a Checkers RollApp
 
-This tutorial will go over building a dYmension RollApp using dymint, dYmension's drop-in replacement for tendermint. The next sections describe how to create a game of checkers using Ignite CLI and the the Rollup Development Kit (RDK). Each section progressively advances the project.
+This tutorial will go over building a dymension RollApp using dymint, dymension's drop-in replacement for tendermint. The next sections describe how to create a game of checkers using Ignite CLI and the the Rollup Development Kit (RDK). Each section progressively advances the project.
 
 ### In this tutorial, you will:
 

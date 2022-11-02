@@ -58,7 +58,7 @@ slug: "glossary"
 
 <details>
     <summary>Embedded AMM</summary>
-    dYmension embeds a native automated market maker (AMM) into the settlement hub enabling the creation of a core financial center. The embedded AMM is designated as an infrastructure tool that is designed to help developers and users interact within the dYmension ecosystem. The settlement layer is dedicated to facilitate easy RollApp deployment, providing a stable infrastructure for developers to innovate in and aggregating liquidity to create efficiently priced assets. The settlement hub is designed to solely embed a dedicated AMM and provide the tools for developers to build products within dYmension’s RollApp ecosystem.
+    Dymension embeds a native automated market maker (AMM) into the settlement hub enabling the creation of a core financial center. The embedded AMM is designated as an infrastructure tool that is designed to help developers and users interact within the dymension ecosystem. The settlement layer is dedicated to facilitate easy RollApp deployment, providing a stable infrastructure for developers to innovate in and aggregating liquidity to create efficiently priced assets. The settlement hub is designed to solely embed a dedicated AMM and provide the tools for developers to build products within dymension’s RollApp ecosystem.
 </details>
 
 ### F
@@ -95,7 +95,7 @@ slug: "glossary"
 
 <details>
     <summary>Inter-Rollup Communication (IRC)</summary>
-    IRC is an IBC based protocol which provides safe message transferring between dYmension RollApps. IRC leverages the common communication ground of all dYmension RollApps, the dYmension settlement hub.
+    IRC is an IBC based protocol which provides safe message transferring between dymension RollApps. IRC leverages the common communication ground of all dymension RollApps, the dymension settlement hub.
 </details>
 
 ### L
@@ -131,19 +131,19 @@ slug: "glossary"
 
 <details>
     <summary>RollApp Development Kit (RDK)</summary>
-    dYmension’s rollup factory takes its inspiration from the Cosmos ecosystem which introduced the successful Cosmos SDK. A RollApp instance on dYmension is an application-specific rollup (which we refer to as RollApp), built by using the dYmension RollApp Development Kit, termed RDK. The development kit is a pre-packaged set of generic modules which enable compatible Cosmos SDK functionality, such as creating accounts and token management. The RDK simplifies the process of deploying rollups on top of dYmension’s settlement layer.
+    Dymension’s rollapp factory takes its inspiration from the Cosmos ecosystem which introduced the successful Cosmos SDK. A RollApp instance on dymension is an application-specific rollup (which we refer to as RollApp), built by using the dymension RollApp Development Kit, termed RDK. The development kit is a pre-packaged set of generic modules which enable compatible Cosmos SDK functionality, such as creating accounts and token management. The RDK simplifies the process of deploying rollups on top of dymension’s settlement layer.
 </details>
 
 <details>
     <summary>RollApp Virtual Machine (RVM)</summary>
-    dYmension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement layer. RVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
+    Dymension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement layer. RVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
 </details>
 
 ### S
 
 <details>
     <summary>Settlement Hub</summary>
-    dYmension settlement hub is a Cosmos SDK Proof-of-Stake chain, that utilizes the Tendermint Core state replication model for networking and consensus. Contrary to a monolithic blockchain, dYmension’s settlement layer is specifically designed to provide a specialized service optimized for rollups. As such rollup servicing logic is embedded in the settlement layer, an attribute known as ‘enshrined rollups’, increasing seamless cooperation between RollApps and the settlement hub.
+    Dymension settlement hub is a Cosmos SDK Proof-of-Stake chain, that utilizes the Tendermint Core state replication model for networking and consensus. Contrary to a monolithic blockchain, dymension’s settlement layer is specifically designed to provide a specialized service optimized for rollups. As such rollup servicing logic is embedded in the settlement layer, an attribute known as ‘enshrined rollups’, increasing seamless cooperation between RollApps and the settlement hub.
 </details>
 
 <details>
@@ -158,7 +158,7 @@ slug: "glossary"
 
 <details>
     <summary>Shared Security</summary>
-    Shared security means that all RollApps that are connected to the dYmension settlement hub and benefit from the economic security provided by the dYmension validators. The notion of shared security is different from interchain protocols that build on an architecture of bridges. For bridge protocols, each chain is considered sovereign and must maintain its own validator set and economic security.
+    Shared security means that all RollApps that are connected to the dymension settlement hub and benefit from the economic security provided by the dymension validators. The notion of shared security is different from interchain protocols that build on an architecture of bridges. For bridge protocols, each chain is considered sovereign and must maintain its own validator set and economic security.
     <br /> <br /> Reference: https://wiki.polkadot.network/docs/learn-security
 
 </details>

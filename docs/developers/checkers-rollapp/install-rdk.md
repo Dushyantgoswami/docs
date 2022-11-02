@@ -5,7 +5,7 @@ slug: "install-rdk-dymint"
 
 # Install the RDK
 
-In order to convert the cosmos-sdk app chain to a RollApp, we need to replace the Cosmos SDK with dYmension's RDK which includes dymint (dYmension's drop-in replacement for Tendermint)
+In order to convert the cosmos-sdk app chain to a RollApp, we need to replace the Cosmos SDK with dymension's RDK which includes dymint (dymension's drop-in replacement for Tendermint)
 
 ## Installing and building the RDK
 

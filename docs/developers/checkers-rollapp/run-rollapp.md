@@ -6,7 +6,7 @@ sidebar_position: 4
 hide_table_of_contents: true
 ---
 
-## Run the dYmension RollApp
+## Run the dymension RollApp
 
 Before running the RollApp sequencer let's dive a bit deepr at some arguments we can play with.
 
