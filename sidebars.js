@@ -8,7 +8,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Modular architecture",
+          label: "Modular Architecture",
           id: "learn/modular-intro",
         },
         {
