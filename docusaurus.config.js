@@ -65,12 +65,12 @@ const config = {
                         position: "left",
                         items: [
                             {
-                                label: "Modular architecture",
+                                label: "Modular Architecture",
                                 type: "doc",
                                 docId: "learn/modular-intro",
                             },
                             {
-                                label: "The dymension hub",
+                                label: "The Dymension Hub",
                                 type: "doc",
                                 docId: "learn/dymension-hub",
                             },
@@ -98,12 +98,12 @@ const config = {
                             },
                             {
                                 type: "doc",
-                                label: "CosmWasm Rollapp",
+                                label: "CosmWasm RollApp",
                                 docId: "developers/cosmwasm-rollapp/index",
                             },
                             {
                                 type: "doc",
-                                label: "EVM Rollapp",
+                                label: "EVM RollApp",
                                 docId: "developers/evm-rollapp/intro",
                             },
                         ],
