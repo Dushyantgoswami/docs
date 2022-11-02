@@ -50,7 +50,7 @@ hide_table_of_contents: true
     </div>
 </div>
 
-## What Is dYmension?
+## What Is Dymension?
 
 Dymension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dymension’s settlement layer.
 
