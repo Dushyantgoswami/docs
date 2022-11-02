@@ -62,10 +62,6 @@ For a deeper dive into the dymension protocol checkout the [learn section](/docs
 
 ## Why Dymension?
 
-### 2-Order Network Effects
-
-Deploying a RollApp means easily plugging into 2-order network effects. RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dymension hub.
-
 ### Easy Deployment
 
 With dymension building a blockchain doesn't come with the overhead of bootstraping a network such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less, and trust-minimized nature of the blockchain ethos.
