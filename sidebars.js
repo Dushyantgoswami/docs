@@ -1,7 +1,6 @@
 const sidebars = {
   sidebar: [
     "index",
-    "get-started",
     {
       type: "category",
       label: "Learn",

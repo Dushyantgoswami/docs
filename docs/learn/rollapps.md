@@ -1,6 +1,7 @@
 ---
 title: "RollApps"
 slug: "rollapps"
+hide_table_of_contents: true
 ---
 
 ## What is a RollApp?
@@ -20,7 +21,9 @@ Data and state root publication guarantees that any actor, whether driven by dis
 
 RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [RDK](https://github.com/dymensionxyz/RDK). The client component, referred to as [dymint](https://github.com/dymensionxyz/dymint), forked from Celestia's [optimint](https://github.com/celestiaorg/optimint), is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer communication. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.<br/>
 
-![RollApp Architecture](./images/rollapp-overview.svg)
+<div class="image-container-primary">
+    <img class="image--primary" src={require('./images/rollapp-architecture-overview.png').default} alt="rollapp-overview" />
+</div>
 
 A RollApp transaction lifecycle begins by sending a request to a RollApp Sequencer which processes the transaction. The transaction, assuming valid, is then included in a block after been processed by the relevant RDK module. After a predetermined number of blocks, a batch is created by the sequencer. At this stage the sequencer publishes the batch and the batch metadata (e.g  state roots) to the DA layer and the dYmension Hub, respectively.<br/>
 
