@@ -82,4 +82,4 @@ Contrary to dApps on general purpose blockchains such as Ethereum, which require
 
 As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency than consensus constrained blockchains.
 
-In the next sections we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building](/docs/developers/getting-started/intro.md)!
+In the next sections we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building!](/docs/developers/getting-started/intro.md)
