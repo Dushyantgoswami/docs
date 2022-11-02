@@ -146,7 +146,6 @@ const config = {
                 style: "light",
                 links: [
                     {
-                        title: null,
                         items: [
                             {
                                 html: `

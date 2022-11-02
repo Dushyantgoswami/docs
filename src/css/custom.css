@@ -173,19 +173,19 @@ button.action-button {
 }
 
 .footer .footer__links .footer__title {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--ifm-spacing-step) * 2);
 }
 
 .footer .footer__link-item {
     font-weight: 300;
 }
 
-.footer .footer__item:first-child {
-    margin-top: calc(var(--ifm-spacing-step) * 2);
-}
-
 .footer .footer__link-item svg {
     display: none;
+}
+
+.footer .logo-container {
+    margin-top: calc(var(--ifm-spacing-step) * -2);
 }
 
 .footer .logo-container .logo {
