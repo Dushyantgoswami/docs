@@ -6,11 +6,11 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-The following section explains how to run a full node of the dYmension hub.
+The following section explains how to run a full node of the dymension hub.
 
 ## Step 1: Install Go
 
-Installing Go is a pre-requisite for running a dYmension full node. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
+Installing Go is a pre-requisite for running a dymension full node. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).
 
 ### Step 2: Install binaries
 
@@ -70,8 +70,8 @@ Keep the node running and open a new tab in the terminal. Let's get your validat
 dymd tendermint show-address
 ```
 
-This returns an address with the prefix "dymvalcons" or the dYmension validator consensus address.
+This returns an address with the prefix "dymvalcons" or the dymension validator consensus address.
 
-To further learn about the dYmension protocol please visit our brief overview on [how dYmension works](/docs/learn/modular-intro.md), our more in-depth [litepaper](/docs/dymension-litepaper/index.md) and our tutorial on how to [create a RollApp on top of dYmension's settlement layer.](/docs/developers/checkers-rollapp/index.md)
+To further learn about the dymension protocol please visit our brief overview on [how dymension works](/docs/learn/modular-intro.md), our more in-depth [litepaper](/docs/dymension-litepaper/index.md) and our tutorial on how to [create a RollApp on top of dymension's settlement layer.](/docs/developers/checkers-rollapp/index.md)
 
 If you have any issues please contact us on [discord](http://discord.gg/dymension) in the Developer section. We are here for you!

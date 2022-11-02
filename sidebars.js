@@ -8,17 +8,17 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Modular architecture",
+          label: "Modular Architecture",
           id: "learn/modular-intro",
         },
         {
           type: "doc",
-          label: "The dYmension hub",
+          label: "The Dymension Hub",
           id: "learn/dymension-hub",
         },
         {
           type: "doc",
-          label: "RollApps",
+          label: "RollApp Chains",
           id: "learn/rollapps",
         },
       ],

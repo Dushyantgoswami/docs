@@ -10,8 +10,7 @@ hide_table_of_contents: true
     <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
-        <h3 class="card-title">Welcome to the dymension documentation</h3>
-        <p class="card-text">dYmension's documentation serves as the central source for all things dYmension. Learn, build and grow the dYmension ecosystem.</p>
+        <p class="card-text"><b>Dymension</b> empowers people to build their own RollApp chain. This documentation serves as the central source for all things dymension.</p>
     </div>
 </div>
 
@@ -21,7 +20,7 @@ hide_table_of_contents: true
             <a href="learn/modular-intro" class="card-link stretched-link"> 
                 <h2 class="card-title">Learn</h2>
             </a>
-            <p class="card-text">Learn about foundational topics related to dYmension</p>
+            <p class="card-text">Your educational guide to dymension</p>
             <div class="card-actions">
                 <button class="action-button">Learn</button>
             </div>
@@ -32,7 +31,7 @@ hide_table_of_contents: true
             <a href="developers/getting-started/intro" class="card-link stretched-link"> 
                 <h2 class="card-title">Developers</h2>
             </a>
-            <p class="card-text">Build RollApps within the dYmension ecosystem</p>
+            <p class="card-text">Build your own RollApp chain</p>
             <div class="card-actions">
                 <button class="action-button">Build</button>
             </div>
@@ -43,36 +42,35 @@ hide_table_of_contents: true
             <a href="validators/full-node/index" class="card-link stretched-link"> 
                 <h2 class="card-title">Validators</h2>
             </a>
-            <p class="card-text">Run a dYmension hub node</p>
+            <p class="card-text">Run a dymension hub node</p>
             <div class="card-actions">
-                <button class="action-button">Run a Validator</button>
+                <button class="action-button">Run a Node</button>
             </div>
         </div>
     </div>
 </div>
 
+## What Is Dymension?
 
-## What Is dYmension?
+Dymension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/docs/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
 
-dYmension is a multi-layer protocol built for servicing high performant blockchains called [RollApps](/docs/learn/rollapps.md) (aka app-specfic-rollups/modular execution environments).
+Dymension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dymension’s settlement layer.
 
-dYmension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dYmension’s settlement layer.
+The dymension settlement layer, also referred to as the dymension Hub, is the protocol base layer. The dymension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
 
-The dYmension settlement layer, also referred to as the dYmension Hub, is the protocol base layer. The dYmension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
-
-RollApps are built with dYmension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
+RollApps are built with dymension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
 
 For a deeper dive checkout the [Litepaper](/docs/dymension-litepaper/index.md) and [glossary](/docs/reference/glossary.md) concepts.
 
-## Why dYmension?
+## Why Dymension?
 
 ### 2-Order Network Effects
 
-dYmension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dYmension Hub.
+Dymension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dymension Hub.
 
 ### Easy Deployment
 
-With dYmension, building a blockchain doesn't come with the overhead of bootstraping a network, such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
+With dymension building a blockchain doesn't come with the overhead of bootstraping a network, such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
 
 ### Autonomy
 
@@ -84,6 +82,6 @@ Contrary to dApps on general purpose blockchains such as Ethereum, which require
 
 ### Performance
 
-As RollApps outsource the consensus to the dYmension Hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
+As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
 
-In the next sections we'll dive deeper on how dYmension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!
+In the next sections we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!

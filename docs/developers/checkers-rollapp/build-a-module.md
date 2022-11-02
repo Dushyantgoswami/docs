@@ -7,7 +7,7 @@ tag: deep-dive
 
 # Build the checkers module
 
-The dYmension RDK is built on top of the Cosmos SDK. As such, building a new module is the same process as building a new Cosmos SDK module. To start learning how to build a module using the RDK please go over the following [tutorial](https://developers.cosmos.network/academy/3-my-own-chain/exercise-intro.html) by the Cosmos Academy.
+The dymension RDK is built on top of the Cosmos SDK. As such, building a new module is the same process as building a new Cosmos SDK module. To start learning how to build a module using the RDK please go over the following [tutorial](https://developers.cosmos.network/academy/3-my-own-chain/exercise-intro.html) by the Cosmos Academy.
 
 Cosmos SDK enables developers to build modules that implement the business logic of their application.
 

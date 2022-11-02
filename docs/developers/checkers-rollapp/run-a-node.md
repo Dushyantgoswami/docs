@@ -1,12 +1,12 @@
 ---
-title: "Run a dYmension node"
+title: "Run a dymension node"
 slug: "run-a-node"
 hidden: false
 sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-The following steps will guide you on how to configure and run a dymension settlement layer full node. 
+The following steps will guide you on how to configure and run a dymension settlement layer full node.
 
 ### Step 1: Install settlement layer binaries
 

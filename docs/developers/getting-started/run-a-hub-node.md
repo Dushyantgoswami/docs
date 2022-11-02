@@ -1,5 +1,5 @@
 ---
-title: "Run a dYmension hub node"
+title: "Run a dymension hub node"
 slug: "run-a-node"
 hidden: false
 sidebar_position: 2
@@ -35,6 +35,7 @@ export GRPC_ADDRESS="0.0.0.0:8090"
 export GRPC_WEB_ADDRESS="0.0.0.0:8091"
 export P2P_ADDRESS="0.0.0.0:36656"
 ```
+
 ### Step 3: Setup and run the hub node
 
 Make sure you are inside the `dymension` dir and run the following to build and init the chain
