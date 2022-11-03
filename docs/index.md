@@ -52,34 +52,30 @@ hide_table_of_contents: true
 
 ## What Is Dymension?
 
-Dymension allows anyone to build and deploy their own blockchain, a RollApp instance on top of dymension’s settlement layer.
+Dymension allows anyone to build and deploy their own consensus-free blockchain, a RollApp chain.
 
-The dymension settlement layer, also referred to as the dymension Hub, is the protocol base layer. The dymension Hub is a Proof of Stake neutral blockchain which provides conseunes, security and liquidity for RollApps.
+The dymension hub is the protocol's settlement layer and acts as decentralized source of truth for the network. The dymension hub is a Proof of Stake blockchain which provides consensus, security, and liquidity for RollApp chains.
 
-RollApps are built with dymension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp Developers are able to choose the token, fee-structure, logic and VM (e.g EVM, WASM) in which their RollApp will operate.
+RollApps are built with dymension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp developers are able to choose the network token, application logic and virtual machine (e.g EVM, CosmWasm, and more) in which their RollApp operates. A great way to think about dymension is as an app-chain (Dymension Hub) for app-rollups (RollApps).
 
-For a deeper dive checkout the [Litepaper](/docs/dymension-litepaper/index.md) and [glossary](/docs/reference/glossary.md) concepts.
+For a deeper dive into the dymension protocol checkout the [learn section](/docs/learn/modular-intro.md), [litepaper](/docs/dymension-litepaper/index.md), and [glossary](/docs/reference/glossary.md).
 
 ## Why Dymension?
 
-### 2-Order Network Effects
-
-Dymension is a permissionless network of RollApps. Deploying a RollApp means easily plugging into 2-order network effects, as RollApps enjoy seamless connectivity not only with each other but also with the entire [IBC-enabled ecosystem](https://mapofzones.com/) via the dymension Hub.
-
 ### Easy Deployment
 
-With dymension building a blockchain doesn't come with the overhead of bootstraping a network, such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less and trust-minimized nature of the blockchain ethos.
+With dymension building a blockchain doesn't come with the overhead of bootstraping a network such as assembleing a validatodr set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less, and trust-minimized nature of the blockchain ethos.
 
 ### Autonomy
 
-RollApps are autonomous, meaning RollApps set their own economic and decentralization parameters.
+RollApps chains are autonomous worlds. Meaning RollApps set their own logic, decentralization and governance parameters. They are akin to sovereign worlds (i.e. app-chains) but delegate consensus to the dymension hub for efficient bootstrapping.
 
 ### Value Accrual
 
-Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-user pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, Other IBC-enabled-tokens or completely new logic for fee collection).
+Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-user pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, other IBC-enabled-tokens or completely new logic for fee collection).
 
 ### Performance
 
-As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency compared to consensus constrained blockchains.
+As RollApps outsource the consensus to the dymension hub, they are capable of delivering substantial throughput and lower latency than consensus constrained blockchains.
 
-In the next sections we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those of you who can't wait - skip ahead and start [building](/docs/developers/checkers-rollapp/index.md)!
+In the next sections we'll dive deeper on how dymension works. Though we recommend going over it, this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building!](/docs/developers/getting-started/intro.md)

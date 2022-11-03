@@ -61,6 +61,11 @@ slug: "glossary"
     Dymension embeds a native automated market maker (AMM) into the settlement hub enabling the creation of a core financial center. The embedded AMM is designated as an infrastructure tool that is designed to help developers and users interact within the dymension ecosystem. The settlement layer is dedicated to facilitate easy RollApp deployment, providing a stable infrastructure for developers to innovate in and aggregating liquidity to create efficiently priced assets. The settlement hub is designed to solely embed a dedicated AMM and provide the tools for developers to build products within dymension’s RollApp ecosystem.
 </details>
 
+<details>
+    <summary>Enshrined RollApps</summary>
+    RollApp servicing logic is embedded in the settlement layer, an attribute known as ‘enshrined rollups’, increasing seamless cooperation and safety between RollApps and the dymension hub. Smart contract bridges on Ethereum, as an example, are not embedded into the protocol and thus the protocol is not concerned with smart contract bugs. For example, if a smart contract bridge contract for Arbitrum were to be hacked the Ethereum protocol would need to make a governance decision as to what to do with the user funds (e.g. DAO hack). However, with RollApp servicing embedded in the protocol a hack on the IRC bridging module would halt the chain and a patch would be created.
+</details>
+
 ### F
 
 <details>
@@ -94,8 +99,8 @@ slug: "glossary"
 </details>
 
 <details>
-    <summary>Inter-Rollup Communication (IRC)</summary>
-    IRC is an IBC based protocol which provides safe message transferring between dymension RollApps. IRC leverages the common communication ground of all dymension RollApps, the dymension settlement hub.
+    <summary>Inter-RollApp Communication (IRC)</summary>
+    IRC is an IBC based protocol which provides safe message transferring between dymension RollApps. IRC leverages the common communication ground of all dymension RollApps, the dymension hub.
 </details>
 
 ### L
@@ -136,14 +141,14 @@ slug: "glossary"
 
 <details>
     <summary>RollApp Virtual Machine (RVM)</summary>
-    Dymension introduces a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement layer. RVM emulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
+    The RollApp Virtual Machine is a novel dispute mechanism which generates a RollApp specific virtual machine for resolving transaction disputes within the settlement layer. RVM simulates the exact context and logic in which a transaction is executed resulting in a deterministic output. As such, RVM is capable of resolving disputes in various execution environments.
 </details>
 
 ### S
 
 <details>
-    <summary>Settlement Hub</summary>
-    Dymension settlement hub is a Cosmos SDK Proof-of-Stake chain, that utilizes the Tendermint Core state replication model for networking and consensus. Contrary to a monolithic blockchain, dymension’s settlement layer is specifically designed to provide a specialized service optimized for rollups. As such rollup servicing logic is embedded in the settlement layer, an attribute known as ‘enshrined rollups’, increasing seamless cooperation between RollApps and the settlement hub.
+    <summary>Settlement Layer</summary>
+    The dymension hub is a Cosmos SDK Proof-of-Stake chain, that utilizes the Tendermint Core state replication model for networking and consensus. The dymension hub acts as a settlement layer that is specifically designed to provide a specialized service optimized for RollApps. In dymension's case the settlement layer acts as a hub for bridging, security, and liquidity for the dymension ecosystem. 
 </details>
 
 <details>
