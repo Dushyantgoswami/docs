@@ -41,6 +41,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            themes: ['@docusaurus/theme-search-algolia'],
             colorMode: {
                 defaultMode: "dark",
                 disableSwitch: false,
@@ -200,6 +201,14 @@ const config = {
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
+            },
+            algolia: {
+                appId: 'YEVV1RT5ZH',
+                apiKey: '8bb93b0abe26b5931dc16e4515aa92aa',
+                indexName: 'dymension_docs',
+                contextualSearch: true,
+                searchParameters: {},
+                searchPagePath: 'search',
             },
         }),
 };
