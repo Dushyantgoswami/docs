@@ -203,8 +203,8 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
             algolia: {
-                appId: 'YEVV1RT5ZH',
-                apiKey: '8bb93b0abe26b5931dc16e4515aa92aa',
+                appId: '54MWJQI31O',
+                apiKey: '6792e5baab9ec9c0e612c9edb1d7e735',
                 indexName: 'dymension_docs',
                 contextualSearch: true,
                 searchParameters: {},
