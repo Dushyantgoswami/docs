@@ -8,10 +8,10 @@ hide_table_of_contents: true
 
 ## View the RollApp state on dymension hub
 
-While our sequencer is running, it keeps sending updates to the DA and settlement layers. In the next section we will query the settlement layer 
-in order to view our current RollApp state. 
+While our sequencer is running, it keeps sending updates to the DA and settlement layers. In the next section we will query the settlement layer
+in order to view our current RollApp state.
 
-First let's look at all of the different RollApps which were registered to the settlement layers. For now, it should be only our RollApp. 
+First let's look at all of the different RollApps which were registered to the settlement layers. For now, it should be only our RollApp.
 
 ```sh
 dymd query rollapp list-rollapp
@@ -31,5 +31,3 @@ dymd query rollapp show-rollapp-state-info "$ROLLAPP_ID" <index>
 ```
 
 Congrats! You now have a functioning RollApp which uses the dymension hub as a settlement layer for security.<br/>
-
-On the next section we'll see how to replace our mock Data Availability layer with an actual Data Availability layer.
