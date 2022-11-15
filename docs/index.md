@@ -29,7 +29,7 @@ hide_table_of_contents: true
     <div class="col">
         <div class="card card-body">
             <a href="developers/getting-started/intro" class="card-link stretched-link"> 
-                <h2 class="card-title">Developers</h2>
+                <h2 class="card-title">Develop</h2>
             </a>
             <p class="card-text">Build your own RollApp chain</p>
             <div class="card-actions">
@@ -40,7 +40,7 @@ hide_table_of_contents: true
     <div class="col">
         <div class="card card-body">
             <a href="validators/full-node/index" class="card-link stretched-link"> 
-                <h2 class="card-title">Validators</h2>
+                <h2 class="card-title">Validate</h2>
             </a>
             <p class="card-text">Run a dymension hub node</p>
             <div class="card-actions">
