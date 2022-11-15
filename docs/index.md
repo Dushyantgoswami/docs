@@ -64,7 +64,7 @@ For a deeper dive into the dymension protocol checkout the [learn section](/docs
 
 ### Easy Deployment
 
-With dymension building a blockchain doesn't come with the overhead of bootstraping a network such as assembling a validator set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less, and trust-minimized nature of the blockchain ethos.
+With dymension building a blockchain doesn't come with the overhead of bootstrapping a validator set. Developers can easily deploy a blockchain as if they are running their own isolated EC2 instance while still remaining true to the decentralized, permission-less, and trust-minimized nature of the blockchain ethos.
 
 ### Autonomy
 
