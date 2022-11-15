@@ -12,7 +12,7 @@ In order to run some of the commands you will need to have [jq](https://stedolan
 :::
 
 Before submitting a transaction, we will add a `--broadcast-mode block` to each transaction
-so that we'll get the transaction result and not just approval it was received.<br/>
+so that we'll get the transaction result and not just an approval that it was received.<br/>
 
 We are able to do so as our RollApp transaction latency is sub-second due to the lack of consensus constrains.
 
@@ -68,6 +68,7 @@ checkersd query checkers show-stored-game 1
 #   wager: "1000000"
 #   winner: '*'
 ```
+
 Showing the board in nice and cleaned up square view:
 
 ```sh
