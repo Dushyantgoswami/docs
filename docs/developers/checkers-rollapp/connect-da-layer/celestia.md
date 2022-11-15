@@ -1,8 +1,7 @@
 ---
-title: "Connect a DA Layer"
+title: "Celestia DA"
 slug: "celestia"
 hidden: false
-sidebar_position: 1
 hide_table_of_contents: true
 ---
 
@@ -16,7 +15,7 @@ Celestia is a DA layer that provides a scalable solution to the [data availabili
 
 You can read more about Celestia DA layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer).
 
-In the following sections we'll see how to run a Celestia light client in order to send data from the checkers RollApp to Celestia's DA Layer. 
+In the following sections we'll see how to run a Celestia light client in order to send data from the checkers RollApp to Celestia's DA Layer.
 
 ### Step 1: Run the celestia light client
 
@@ -27,18 +26,18 @@ Make sure that by the end of the tutorial you can view your account balance and 
 ### Step 2: Reset the Hub node
 
 Once you've got the Celestia's light node up and running, we'll start by stopping the current process of the hub node and running it again.<br/>
+
 1. Stop the hub node by killing the relevant process.
 2. Reset and run the hub node by following the instructions starting from [step 2](../../getting-started/run-a-hub-node.md/#step-2-setup-the-relevant-env-vars).
-
 
 ### Step 3: Reset the RollApp State
 
 In order to run the checkers RollApp with celestia as the DA we'll start by:
 
-1. Stopping the current RollApp process. 
+1. Stopping the current RollApp process.
 2. Reseting the RollApp state by deleting it's data:
 
-```sh 
+```sh
 rm -rf ~/.checkers/data
 ```
 
