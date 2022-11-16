@@ -41,7 +41,7 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            themes: ['@docusaurus/theme-search-algolia'],
+            themes: ["@docusaurus/theme-search-algolia"],
             colorMode: {
                 defaultMode: "dark",
                 disableSwitch: false,
@@ -84,7 +84,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Developers",
+                        label: "Develop",
                         position: "left",
                         items: [
                             {
@@ -111,7 +111,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Validators",
+                        label: "Validate",
                         position: "left",
                         items: [
                             {
@@ -203,12 +203,12 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
             algolia: {
-                appId: '54MWJQI31O',
-                apiKey: '6792e5baab9ec9c0e612c9edb1d7e735',
-                indexName: 'dymension_docs',
+                appId: "54MWJQI31O",
+                apiKey: "6792e5baab9ec9c0e612c9edb1d7e735",
+                indexName: "dymension_docs",
                 contextualSearch: true,
                 searchParameters: {},
-                searchPagePath: 'search',
+                searchPagePath: "search",
             },
         }),
 };

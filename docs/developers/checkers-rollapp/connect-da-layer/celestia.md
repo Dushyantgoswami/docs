@@ -1,8 +1,7 @@
 ---
-title: "Connect a DA Layer"
+title: "Celestia DA"
 slug: "celestia"
 hidden: false
-sidebar_position: 1
 hide_table_of_contents: true
 ---
 
@@ -10,13 +9,9 @@ hide_table_of_contents: true
 
 ## Overview
 
-So far we ran the RollApp with a mock data availablity (DA) layer. in the next sections we'll see how to replace the mock with Celestia's DA layer.<br/>
+So far we've run the RollApp with a mock data availablity (DA) layer. In this section we'll see how to replace the mock with Celestia's DA layer.<br/>
 
-Celestia is a DA layer that provides a scalable solution to the [data availability problem](https://coinmarketcap.com/alexandria/article/what-is-data-availability). Due to the permissionless nature of the blockchain networks, a DA layer must provide a mechanism for the execution and settlement layers to check in a trust-minimized way whether transaction data is indeed available.<br/>
-
-You can read more about Celestia DA layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer).
-
-In the following sections we'll see how to run a Celestia light client in order to send data from the checkers RollApp to Celestia's DA Layer. 
+Celestia is a DA layer that provides a scalable solution for block space using light clients and data availability sampling. You can read more about Celestia's DA layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer). In the following sections we'll see how to run a Celestia light client in order to send data from the checkers RollApp to Celestia's DA Layer.
 
 ### Step 1: Run the celestia light client
 
@@ -27,18 +22,18 @@ Make sure that by the end of the tutorial you can view your account balance and 
 ### Step 2: Reset the Hub node
 
 Once you've got the Celestia's light node up and running, we'll start by stopping the current process of the hub node and running it again.<br/>
-1. Stop the hub node by killing the relevant process.
-2. Reset and run the hub node by following the instructions starting from [step 2](../../getting-started/run-a-hub-node.md/#step-2-setup-the-relevant-env-vars).
 
+1. Stop the hub node by killing the relevant process.
+2. Reset and run the hub node by following [steps 2 and 3](../../getting-started/run-a-hub-node.md/#step-2-setup-the-relevant-env-vars) then come back here to continue the tutorial.
 
 ### Step 3: Reset the RollApp State
 
 In order to run the checkers RollApp with celestia as the DA we'll start by:
 
-1. Stopping the current RollApp process. 
+1. Stopping the current RollApp process.
 2. Reseting the RollApp state by deleting it's data:
 
-```sh 
+```sh
 rm -rf ~/.checkers/data
 ```
 
@@ -73,7 +68,7 @@ checkersd start --dymint.aggregator true \
 Walla! At this point you should have a running RollApp which writes it's data to Celestia and it's state to the dymension settlement layer!<br/>
 
 :::warning Note
-For local development purposes we recommend working with a mock da layer to prevent unexpected behaviors.<br/>
+For local development purposes we recommend working with a mock DA layer to prevent unexpected behaviors.<br/>
 :::
 
-On our next tutorial we will show you how to build your own CosmWasm RollApp which can be used for deployment of smart contracts.
+Next let's interact with the RollApp!

@@ -11,10 +11,10 @@ On this page, you can find helpful links to set up your work environment for all
 
 :::info In this section, you can find all you need to install:
 
-- [Go 1.18](https://go.dev/)
-- [Ignite CLI v0.22.2](https://ignite.com/)
-- [cosm.js](https://github.com/cosmos/cosmjs)
-- [Make](https://www.gnu.org/software/make/)
+-   [Go 1.18](https://go.dev/)
+-   [Ignite CLI v0.22.2](https://github.com/ignite/cli/releases/tag/v0.22.2)
+-   [cosm.js](https://github.com/cosmos/cosmjs)
+-   [Make](https://www.gnu.org/software/make/)
 
 :::
 
