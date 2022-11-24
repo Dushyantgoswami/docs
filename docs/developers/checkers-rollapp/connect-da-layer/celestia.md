@@ -39,6 +39,10 @@ rm -rf ~/.checkers/data
 
 ### Step 4: Run the RollApp with Celestia as the DA
 
+:::warning Note
+The tutorial assumes a default Celestia namespace id `000000000000FFFF` and a default Celestia light node port `26659`.
+:::
+
 Setup the relevant env vars:
 
 ```sh
@@ -48,7 +52,7 @@ export SETTLEMENT_RPC="0.0.0.0:36657"
 export SETTLEMENT_CONFIG="{\"node_address\": \"http:\/\/$SETTLEMENT_RPC\", \"rollapp_id\": \"$ROLLAPP_ID\", \"dym_account_name\": \"$KEY_NAME\", \"keyring_home_dir\": \"$HOME/.dymension/\", \"keyring_backend\":\"test\"}"
 export NAMESPACE_ID=000000000000FFFF
 
-export CELESTIA_LIGHT_CLIENT_ENDPOINT="127.0.0.1:26658"
+export CELESTIA_LIGHT_CLIENT_ENDPOINT="127.0.0.1:26659"
 export DA_CONFIG="{\"base_url\": \"http:\/\/$CELESTIA_LIGHT_CLIENT_ENDPOINT\", \"timeout\": 60000000000, \"gas_limit\": 6000000, \"namespace_id\": [0,0,0,0,0,0,255,255]}"
 ```
 
