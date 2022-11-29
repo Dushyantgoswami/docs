@@ -6,40 +6,41 @@
 
 /* You can override the default Infima variables here. */
 :root {
-    --ifm-color-primary: #24201F;
+    --ifm-color-primary: #24201f;
     --ifm-color-primary-light: #919090;
-    --ifm-color-primary-inverse: #F1E1D4;
-    --ifm-color-primary-transparent: #24201Faa;
-    --ifm-color-primary-inverse-transparent: #F1E1D4aa;
-    --ifm-toc-border-color: #E9E9E9;
+    --ifm-color-primary-inverse: #f1e1d4;
+    --ifm-color-primary-transparent: #24201faa;
+    --ifm-color-primary-inverse-transparent: #f1e1d4aa;
+    --ifm-toc-border-color: #e9e9e9;
     --ifm-color-content: var(--ifm-color-primary);
 
-    --ifm-link-color: #2F67C3;
+    --ifm-link-color: #2f67c3;
     --ifm-code-font-size: 95%;
     --ifm-font-size-base: 18px;
     --ifm-h2-font-size: 36px;
     --ifm-h3-font-size: 24px;
-    --ifm-font-family-base: 'Helvetica Neue';
+    --ifm-font-family-base: "Helvetica Neue";
     --ifm-spacing-horizontal: 24px;
     --ifm-spacing-vertical: 24px;
     --ifm-spacing-step: 8px;
     --ifm-breadcrumb-border-radius: 4px;
     --ifm-heading-font-weight: var(--ifm-font-weight-semibold);
-    --ifm-global-spacing: calc(var(--ifm-spacing-horizontal) * 0.5) var(--ifm-spacing-horizontal);
+    --ifm-global-spacing: calc(var(--ifm-spacing-horizontal) * 0.5)
+        var(--ifm-spacing-horizontal);
     --ifm-paragraph-margin-bottom: var(--ifm-spacing-vertical);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 html[data-theme="dark"] {
-    --ifm-color-primary: #F1E1D4;
+    --ifm-color-primary: #f1e1d4;
     --ifm-color-primary-light: #8b8178;
-    --ifm-color-primary-inverse: #24201F;
-    --ifm-color-primary-transparent: #F1E1D4aa;
-    --ifm-color-primary-inverse-transparent: #24201Faa;
-    --ifm-background-color: #24201F;
-    --ifm-background-surface-color: #24201F;
+    --ifm-color-primary-inverse: #24201f;
+    --ifm-color-primary-transparent: #f1e1d4aa;
+    --ifm-color-primary-inverse-transparent: #24201faa;
+    --ifm-background-color: #24201f;
+    --ifm-background-surface-color: #24201f;
     --ifm-toc-border-color: #383331;
-    --ifm-link-color: #DC4D25;
+    --ifm-link-color: #dc4d25;
     --ifm-color-content: var(--ifm-color-primary);
 }
 
@@ -119,9 +120,9 @@ img.deep-dive-image {
     /* Footer */
     --docsearch-footer-background: var(--ifm-background-surface-color);
     --docsearch-key-gradient: linear-gradient(
-            -26.5deg,
-            var(--ifm-color-emphasis-200) 0%,
-            var(--ifm-color-emphasis-100) 100%
+        -26.5deg,
+        var(--ifm-color-emphasis-200) 0%,
+        var(--ifm-color-emphasis-100) 100%
     );
 }
 
@@ -131,7 +132,8 @@ button.action-button {
     border-radius: 8px;
     border: none;
     font-size: var(--ifm-font-size-base);
-    padding: calc(var(--ifm-spacing-step) * 1.5) calc(var(--ifm-spacing-step) * 2);
+    padding: calc(var(--ifm-spacing-step) * 1.5)
+        calc(var(--ifm-spacing-step) * 2);
     color: white;
 }
 
@@ -219,7 +221,7 @@ div.navbar__logo {
 }
 
 .dropdown__menu a {
-    color: var(--ifm-color-primary)
+    color: var(--ifm-color-primary);
 }
 
 .navbar {
@@ -231,7 +233,8 @@ div.navbar__logo {
     flex: 1;
 }
 
-.navbar .navbar__item, .navbar .navbar__item .navbar__link {
+.navbar .navbar__item,
+.navbar .navbar__item .navbar__link {
     font-weight: 400;
 }
 
@@ -331,18 +334,18 @@ div.navbar__logo {
     font-size: 1rem;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 calc(var(--ifm-spacing-horizontal) * 0.5)
+    padding: 0 calc(var(--ifm-spacing-horizontal) * 0.5);
 }
 
 .col {
     flex: 1 0 0;
-    padding: 0 calc(var(--ifm-spacing-horizontal) * 0.5)
+    padding: 0 calc(var(--ifm-spacing-horizontal) * 0.5);
 }
 
 .row-cols-auto > * {
@@ -852,7 +855,7 @@ div.navbar__logo {
 }
 
 .image-card .card-title {
-    margin-bottom: calc(var(--ifm-spacing-step) * 2)
+    margin-bottom: calc(var(--ifm-spacing-step) * 2);
 }
 
 [data-theme="dark"] .image-card.overlay-primary {
@@ -889,7 +892,6 @@ div.navbar__logo {
 [data-theme="dark"] .image-card.light-background .card-title {
     color: var(--ifm-color-primary-inverse);
 }
-
 
 @media (min-width: 576px) {
     .image-card img {

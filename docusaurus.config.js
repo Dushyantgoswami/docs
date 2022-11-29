@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "dymension docs",
+    title: "Dymension Docs",
     tagline: "Developer Documentation",
     url: "https://docs.dymension.xyz/",
     baseUrl: "/",
@@ -130,11 +130,6 @@ const config = {
                                 docId: "validators/full-node/reset-node",
                             },
                         ],
-                    },
-                    {
-                        to: "dymension-litepaper/dymension-litepaper-index",
-                        position: "left",
-                        label: "Dymension Litepaper",
                     },
                     {
                         href: "https://github.com/dymensionxyz",
