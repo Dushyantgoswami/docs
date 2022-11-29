@@ -12,7 +12,7 @@ In order to understand how the Dymension protocol works it is first important to
 
 Dymension follows a *“Modular”* blockchain paradigm. Instead of one monolithic blockchain performing all of the above functionalities, the responsibilities are disaggregated into multiple layers. Each layer is built from the ground-up to service its specific role in the stack.
 
-### The dymension stack:
+### Dymension stack:
 
 <div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-execution.png').default} alt="background" />

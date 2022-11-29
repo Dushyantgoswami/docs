@@ -18,7 +18,7 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "RollApp Chains",
+                    label: "RollApps",
                     id: "learn/rollapps",
                 },
             ],
