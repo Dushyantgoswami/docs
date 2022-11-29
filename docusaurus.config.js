@@ -84,7 +84,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Develop",
+                        label: "Developers",
                         position: "left",
                         items: [
                             {
@@ -111,7 +111,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Validate",
+                        label: "Node Runners",
                         position: "left",
                         items: [
                             {

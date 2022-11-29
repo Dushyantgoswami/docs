@@ -25,7 +25,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Develop",
+            label: "Developers",
             collapsed: true,
             items: [
                 {
@@ -182,7 +182,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Validate",
+            label: "Node Runners",
             items: [
                 {
                     type: "doc",
@@ -200,6 +200,11 @@ const sidebars = {
                     id: "validators/full-node/reset-node",
                 },
             ],
+        },
+        {
+            type: "doc",
+            label: "Roadmap",
+            id: "dymension-litepaper/index",
         },
         {
             type: "doc",
