@@ -4,13 +4,13 @@ slug: "modular-intro"
 hide_table_of_contents: true
 ---
 
-In order to understand how the dymension protocol works it is first important to breakdown the general functionalities a blockchain provides into the following:
+In order to understand how the Dymension protocol works it is first important to breakdown the general functionalities that a blockchain provides:
 
 -   <b>Execution</b> - Transaction processing and state computation
 -   <b>Settlement & Consensus</b> - Ensuring the order, rules, and state of the blockchain is agreed upon by a majority of the participants
--   <b>Data Availability</b> - Making sure all data is published and available to the public
+-   <b>Data Availability</b> - Making sure all data is published and publicly available
 
-Dymension follows a “*Modular”* blockchain paradigm. Instead of one monolithic blockchain performing all of the above functionalities, the responsibilities are disaggregated into multiple layers. Each layer is built from the ground-up to service its specific role in the stack.
+Dymension follows a *“Modular”* blockchain paradigm. Instead of one monolithic blockchain performing all of the above functionalities, the responsibilities are disaggregated into multiple layers. Each layer is built from the ground-up to service its specific role in the stack.
 
 ### The dymension stack:
 
@@ -18,7 +18,7 @@ Dymension follows a “*Modular”* blockchain paradigm. Instead of one monolit
     <img class="background" src={require('./images/modular-architecture-execution.png').default} alt="background" />
     <div class="card-body">
         <h3 class="card-title">Execution</h3>
-        <p class="card-text">RollApp Chains</p>
+        <p class="card-text">RollApps</p>
     </div>
 </div>
 
@@ -34,10 +34,10 @@ Dymension follows a “*Modular”* blockchain paradigm. Instead of one monolit
     <img class="background" src={require('./images/modular-architecture-da.png').default} alt="background" />
     <div class="card-body">
         <h3 class="card-title">Data Availability</h3>
-        <p class="card-text">DA supported by the dymension protocol</p>
+        <p class="card-text">DA supported by Dymension</p>
     </div>
 </div>
 
-RollApps can be deployed on top of the dymension hub by any developer making use of dymension’s hub connectivity, security, and liquidity. Dymension is DA agnostic, RollApp developers can choose DA providers which are supported by the dymension protocol according to their cost and security preferences.
+RollApps can be deployed on top of the Dymension Hub by any developer making use of Dymension’s connectivity, security, and liquidity. Dymension is DA agnostic, RollApp developers can choose DA providers which are supported by the Dymension protocol according to their cost and security preferences.
 
-The technicalities of the dymension infrastructure are abstracted away from RollApp developers. Developers are mainly responsible with the application logic of their RollApp. Dymension is designed for easy RollApp chain bootstrapping and deployment.
+The technicalities of the Dymension infrastructure are abstracted away from RollApp developers. Dymension is designed for easy RollApp bootstrapping and deployment. Developers are mainly responsible with the application logic of their RollApp. Furthermore, Dymension utilizes existing technological components such that developers that are familiar with a paritcular software (i.e. CosmWasm VM) may utilize the technology that they are most comfortable with.
