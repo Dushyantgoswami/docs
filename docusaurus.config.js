@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "dymension docs",
+    title: "Dymension Docs",
     tagline: "Developer Documentation",
     url: "https://docs.dymension.xyz/",
     baseUrl: "/",
@@ -84,7 +84,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Develop",
+                        label: "Developers",
                         position: "left",
                         items: [
                             {
@@ -111,7 +111,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Validate",
+                        label: "Validators",
                         position: "left",
                         items: [
                             {
@@ -132,11 +132,6 @@ const config = {
                         ],
                     },
                     {
-                        to: "dymension-litepaper/dymension-litepaper-index",
-                        position: "left",
-                        label: "Dymension Litepaper",
-                    },
-                    {
                         href: "https://github.com/dymensionxyz",
                         label: "GitHub",
                         position: "right",
@@ -153,8 +148,8 @@ const config = {
                                 html: `
                 <div class="logo-container">                  
                   <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
-                     <img class="logo" src="/img/full-logo.svg" alt="dYmension Logo" />    
-                     <img class="logo-light" src="/img/full-logo-light.svg" alt="dYmension Logo" />                  
+                     <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
+                     <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
                   </a>
                   <p class="copyright">By Builders <span class="heart-icon">♥</span> For Builders</p>
                 </p>             

@@ -18,14 +18,14 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "RollApp Chains",
+                    label: "RollApps",
                     id: "learn/rollapps",
                 },
             ],
         },
         {
             type: "category",
-            label: "Develop",
+            label: "Developers",
             collapsed: true,
             items: [
                 {
@@ -182,7 +182,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Validate",
+            label: "Validators",
             items: [
                 {
                     type: "doc",
