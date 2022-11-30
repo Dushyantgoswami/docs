@@ -182,7 +182,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Node Runners",
+            label: "Validators",
             items: [
                 {
                     type: "doc",
@@ -200,11 +200,6 @@ const sidebars = {
                     id: "validators/full-node/reset-node",
                 },
             ],
-        },
-        {
-            type: "doc",
-            label: "Roadmap",
-            id: "dymension-litepaper/index",
         },
         {
             type: "doc",

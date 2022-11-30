@@ -40,7 +40,7 @@ hide_table_of_contents: true
     <div class="col">
         <div class="card card-body">
             <a href="validators/full-node/index" class="card-link stretched-link"> 
-                <h2 class="card-title">Node Runners</h2>
+                <h2 class="card-title">Validators</h2>
             </a>
             <p class="card-text">Run a Node in the Dymension Network</p>
             <div class="card-actions">

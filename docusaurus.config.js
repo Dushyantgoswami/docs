@@ -111,7 +111,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Node Runners",
+                        label: "Validators",
                         position: "left",
                         items: [
                             {
