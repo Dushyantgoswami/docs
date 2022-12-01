@@ -13,7 +13,7 @@ Run the following command from within the same terminal window you've previously
 
 ```sh
 cd "$WORKSPACE_PATH/checkers"
-go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@v0.1.0-alpha
+go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@v0.1.1-alpha
 go mod tidy
 go mod download
 ignite chain build

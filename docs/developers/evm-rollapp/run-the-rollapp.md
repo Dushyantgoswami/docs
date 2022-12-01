@@ -9,7 +9,7 @@ slug: evm-sequencer
 ## Clone the repo
 
 ```sh
-git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.1-alpha
+git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.1-alpha-ethermint-v0.18.0
 cd ethermint
 go mod tidy
 go mod download

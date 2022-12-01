@@ -9,7 +9,7 @@ slug: dym-wasm-node
 ## Install the binary
 
 ```sh
-git clone https://github.com/dymensionxyz/wasm.git --branch v0.1.1-alpha && cd wasm
+git clone https://github.com/dymensionxyz/wasm.git --branch v0.1.2-alpha && cd wasm
 go mod tidy
 go mod download
 make install
