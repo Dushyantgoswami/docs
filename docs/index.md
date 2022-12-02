@@ -10,7 +10,7 @@ hide_table_of_contents: true
     <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
-        <p class="card-text"><b>Dymension</b> empowers people to easily deploy their own lightning fast blockchains, called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
+        <p class="card-text"><b>Dymension</b> empowers people to easily deploy their own lightning fast blockchains called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
     </div>
 </div>
 

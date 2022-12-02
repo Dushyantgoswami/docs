@@ -1,41 +1,29 @@
 ---
 parent:
-  title: Build Your Own RollApp
-  description: Build your first Dymension RollApp chain
-  number: 0
+    title: Build Your Own RollApp
+    description: Build your first Dymension RollApp chain
+    number: 0
 tag: deep-dive
 order: 0
 title: Build Your Own RollApp
 ---
 
+# Introduction
+
+Turn your smart contract into a blockchain. With Dymension's RollApp Development Kit (RDK), you can deploy a smart contract but with the benefits of having your own blockchain. It is your token of choice for the network fee, it is your choice of block speed (and p.s. you can go very low!), it is your own _autonomy_.
+
+RollApps enable developers to build blockchains as easy as building a smart contract. Dymension's RDK provides default modules (e.g. governance, minting, and distribution) but developers have full control over customizable application logic. If you would like to add or change the provided RDK modules, we welcome and look forward to the ingenuity of RollApp developers!
+
+The RollApp Development Kit (RDK) is built on top of the amazing [Cosmos-SDK](https://docs.cosmos.network/main). We recommend reviewing the implementations and what is possible, it's probably more than you expect!
+
 # Build a RollApp
 
-In the following tutorials will go over building various flavors of a dymension RollApp using the RollApp Development Kit (RDK) and dymint, dymension's drop-in replacement for tendermint.<br/>
-
-Dymension's RDK, similar to the Cosmos SDK, is agnostic to virtual machines built on top of it. Developers may use CosmWasm, Ethermint or any other supported smart contract platform in the cosmos ecosystem.<br/>
-
-The developers section contains tutorials which demonstrate both the ability to build the RollApp logic using the RDK or incorporating external modules for running various VMs on top of it.
-
-The next sections of this tutorial will describe how to prepare your work environment and run a dymension hub node which will use us for the next [Checkers RollApp](../checkers-rollapp/scaffold-rollapp.md) tutorial.
+The following tutorials will go over building various flavors of RollApps using the RollApp Development Kit (RDK) and Dymint. Dymension's RDK, similar to the Cosmos SDK, is agnostic to virtual machines built on top of it. Developers may use CosmWasm, Ethermint or any other supported smart contract platform in the Cosmos ecosystem.
 
 :::info NOTE:
-The RollApp needs a settlement layer (dymension hub) for security.
-Local development may use a local running dymenion hub node or alternatively a mock layer.
-In the [Checkers RollApp](../checkers-rollapp/index.md) tutorial we will use a hub node but for the rest of the tutorials ([Wasm RollApp](../cosmwasm-rollapp/index.md) and [EVM RollApp](../evm-rollapp/intro.md))
-we will use a mock.
+The tutorials will explore developing with the [RDK](https://github.com/dymensionxyz/rdk) and [Dymint](https://github.com/dymensionxyz/dymint), which are still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our [Discord](http://discord.gg/dymension).
 :::
 
-:::info NOTE:
-The tutorials will explore developing with the RDK and dymint, which are still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our [Discord](http://discord.gg/dymension).
-:::
-
-### Prerequisites
-
-Given the following tutorials are targeted for developers who are experienced with the Cosmos-SDK, we recommend going over the following Ignite developers docs to better understand the different components and the basics of how to build with Ignite and the RDK:
-
-- [Hello World](https://docs.ignite.com/guide/hello)
-- [Blog and Module Basics](https://docs.ignite.com/guide/blog)
-- [Nameservice Tutorial](https://docs.ignite.com/guide/nameservice)
-- [Scavenger Hunt](https://docs.ignite.com/guide/scavenge)
+The developers section contains tutorials which demonstrate running various virtual machines (CosmWasm and EVM) on top of a RollApp. The next sections of this tutorial will describe how to prepare your work environment and run a Dymension Hub node.
 
 ### Let's begin!

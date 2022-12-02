@@ -6,7 +6,7 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-The following section explains how to run a full node of the dymension hub.
+#### The following section explains how to run a Full node of the Dymension Hub.
 
 ## Step 1: Install Go
 
