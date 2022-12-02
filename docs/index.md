@@ -18,7 +18,7 @@ hide_table_of_contents: true
     <div class="col">
         <div class="card card-body">
             <a href="learn/modular-intro" class="card-link stretched-link"> 
-                <h2 class="card-title">Learn</h2>
+                <h2 class="card-title">Users</h2>
             </a>
             <p class="card-text">Your educational guide to Dymension</p>
             <div class="card-actions">
