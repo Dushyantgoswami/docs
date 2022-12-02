@@ -92,11 +92,11 @@ const config = {
                                 label: "Getting Started",
                                 docId: "developers/getting-started/intro",
                             },
-                            {
-                                type: "doc",
-                                label: "Checkers RollApp",
-                                docId: "developers/checkers-rollapp/scaffold-rollapp",
-                            },
+                            // {
+                            //     type: "doc",
+                            //     label: "Checkers RollApp",
+                            //     docId: "developers/checkers-rollapp/scaffold-rollapp",
+                            // },
                             {
                                 type: "doc",
                                 label: "CosmWasm RollApp",

@@ -50,60 +50,60 @@ const sidebars = {
                         },
                     ],
                 },
-                {
-                    type: "category",
-                    label: "Checkers RollApp",
-                    collapsed: true,
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Scaffold the RollApp",
-                            id: "developers/checkers-rollapp/scaffold-rollapp",
-                        },
-                        {
-                            type: "doc",
-                            label: "Install the RDK",
-                            id: "developers/checkers-rollapp/install-rdk",
-                        },
-                        {
-                            type: "doc",
-                            label: "Initialize the RollApp",
-                            id: "developers/checkers-rollapp/init-rollapp",
-                        },
-                        {
-                            type: "doc",
-                            label: "Register the RollApp",
-                            id: "developers/checkers-rollapp/register-rollapp",
-                        },
-                        {
-                            type: "category",
-                            label: "Connect a DA layer",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Mock",
-                                    id: "developers/checkers-rollapp/connect-da-layer/mock",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Celestia",
-                                    id: "developers/checkers-rollapp/connect-da-layer/celestia",
-                                },
-                            ],
-                        },
-                        {
-                            type: "doc",
-                            label: "Interact with the RollApp",
-                            id: "developers/checkers-rollapp/interact",
-                        },
-                        {
-                            type: "doc",
-                            label: "View RollApp state",
-                            id: "developers/checkers-rollapp/query-rollapp",
-                        },
-                    ],
-                },
+                // {
+                //     type: "category",
+                //     label: "Checkers RollApp",
+                //     collapsed: true,
+                //     items: [
+                //         {
+                //             type: "doc",
+                //             label: "Scaffold the RollApp",
+                //             id: "developers/checkers-rollapp/scaffold-rollapp",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Install the RDK",
+                //             id: "developers/checkers-rollapp/install-rdk",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Initialize the RollApp",
+                //             id: "developers/checkers-rollapp/init-rollapp",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Register the RollApp",
+                //             id: "developers/checkers-rollapp/register-rollapp",
+                //         },
+                //         {
+                //             type: "category",
+                //             label: "Connect a DA layer",
+                //             collapsed: true,
+                //             items: [
+                //                 {
+                //                     type: "doc",
+                //                     label: "Mock",
+                //                     id: "developers/checkers-rollapp/connect-da-layer/mock",
+                //                 },
+                //                 {
+                //                     type: "doc",
+                //                     label: "Celestia",
+                //                     id: "developers/checkers-rollapp/connect-da-layer/celestia",
+                //                 },
+                //             ],
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Interact with the RollApp",
+                //             id: "developers/checkers-rollapp/interact",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "View RollApp state",
+                //             id: "developers/checkers-rollapp/query-rollapp",
+                //         },
+                //     ],
+                // },
                 {
                     type: "category",
                     label: "CosmWasm RollApp",
