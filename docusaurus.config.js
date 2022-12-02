@@ -84,7 +84,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Developers",
+                        label: "Develop",
                         position: "left",
                         items: [
                             {
@@ -111,7 +111,7 @@ const config = {
                     },
                     {
                         type: "dropdown",
-                        label: "Validators",
+                        label: "Full node",
                         position: "left",
                         items: [
                             {
