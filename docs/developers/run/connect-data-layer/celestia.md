@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 So far we've run the RollApp with a mock data availablity (DA) layer. In this section we'll see how to replace the mock with Celestia's DA layer.<br/>
 
-Celestia is a DA layer that provides a scalable solution for block space using light clients and data availability sampling. You can read more about Celestia's DA layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer). In the following sections we'll see how to run a Celestia light client in order to send data from the checkers RollApp to Celestia's DA Layer.
+Celestia is a DA layer that provides a scalable solution for block space using light clients and data availability sampling. You can read more about Celestia's DA layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer). In the following sections we'll see how to run a Celestia light client in order to send data from the RollApp to Celestia's DA Layer.
 
 ### Step 1: Run the celestia light client
 
@@ -23,18 +23,22 @@ Make sure that by the end of the tutorial you can view your account balance and 
 
 Once you've got the Celestia's light node up and running, we'll start by stopping the current process of the hub node and running it again.<br/>
 
-1. Stop the hub node by killing the relevant process.
-2. Reset and run the hub node by following [steps 2 and 3](../../getting-started/run-a-hub-node.md/#step-2-setup-the-relevant-env-vars) then come back here to continue the tutorial.
+1. Stop the Dymension Hub node by killing the relevant process.
+2. Reset and run the Dymension Hub node by following [steps 2, 3 and 4](/docs/developers/start/run-a-hub-node.md) then come back here to continue the tutorial.
 
 ### Step 3: Reset the RollApp State
 
-In order to run the checkers RollApp with celestia as the DA we'll start by:
+In order to run the RollApp with celestia as the DA we'll start by:
 
 1. Stopping the current RollApp process.
 2. Reseting the RollApp state by deleting it's data:
 
-```sh
-rm -rf ~/.checkers/data
+```bash
+rm -rf ~/.wasm/data
+```
+
+```bash
+rm -rf ~/.ethermint/data
 ```
 
 ### Step 4: Run the RollApp with Celestia as the DA
@@ -43,9 +47,17 @@ rm -rf ~/.checkers/data
 The tutorial assumes a default Celestia namespace id `000000000000FFFF` and a default Celestia light node port `26659`.
 :::
 
+:::info Note
+On the top line of the following script please insert the following line for the respective virtual machine you've selected to use.
+
+export VM_VERSION="wasm" <br/>
+export VM_VERSION="ethermint"
+:::
+
 Setup the relevant env vars:
 
-```sh
+```bash
+-- Insert export VM_VERSION line here --
 export KEY_NAME="local-user"
 export ROLLAPP_ID="checkers"
 export SETTLEMENT_RPC="0.0.0.0:36657"
@@ -58,8 +70,8 @@ export DA_CONFIG="{\"base_url\": \"http:\/\/$CELESTIA_LIGHT_CLIENT_ENDPOINT\", \
 
 Run the RollApp:
 
-```sh
-checkersd start --dymint.aggregator true \
+```bash
+"$VM_VERSION"d start --dymint.aggregator true \
   --dymint.settlement_layer dymension \
   --dymint.settlement_config "$SETTLEMENT_CONFIG" \
   --dymint.block_batch_size 500 \

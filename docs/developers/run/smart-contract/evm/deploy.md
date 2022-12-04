@@ -1,83 +1,42 @@
 ---
-title: "Create a smart contract"
-order: 3
+title: "Deploy the smart contract"
+order: 4
 slug: deploy
 ---
 
-# Create a solidity smart contract
+# Deploy the Solidity contract
 
-In the next section we will go over on how to create a [truffle](https://trufflesuite.com/) project
-which we'll use for development of the solidity smart contract.
+Now that we have our [contract created](create-contract.md) let's see how to deploy it to the EVM RollApp
+and test it.
 
-## Create and init a truffle project
-
-Create a new directory to host the contracts and initialize it:
+## Contract deployment
 
 ```sh
-mkdir ethermint-truffle && cd ethermint-truffle
-
-truffle init
+truffle migrate --network development
 ```
 
-## Create the solidity contract
-
-Create `contracts/Counter.sol` containing the following contract:
-
-```js
-contract Counter {
-  uint256 counter = 0;
-
-  function add() public {
-    counter++;
-  }
-
-  function subtract() public {
-    counter--;
-  }
-
-  function getCounter() public view returns (uint256) {
-    return counter;
-  }
-}
-```
-
-Create `test/counter_test.js` containing the following tests:
-
-```js
-const Counter = artifacts.require("Counter");
-
-contract("Counter", (accounts) => {
-    const from = accounts[0];
-    let counter;
-
-    before(async () => {
-        counter = await Counter.new();
-    });
-
-    it("should add", async () => {
-        await counter.add();
-        let count = await counter.getCounter();
-        assert(count == 1, `count was ${count}`);
-    });
-});
-```
-
-## Edit the truffle config
-
-In the same directory open `truffle-config.js` and uncomment the development section in networks:
-
-```js
-development: {
-    host: "127.0.0.1",     // Localhost (default: none)
-    port: 8545,            // Standard Ethereum port (default: none)
-    network_id: "*",       // Any network (default: none)
-}
-```
-
-## Compile the contract
+## Contract testing
 
 ```sh
-truffle compile
+truffle test --network development
 ```
 
-We now have a complied solidity contract! in the next section we'll go over on how to deploy and test it.
+Assuming everythign went well, you should see the following message after the tests completed successfully:
+
+```sh
+Using network 'development'.
+
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+  Contract: Counter
+    ✔ should add (1026ms)
+
+
+  1 passing (2s)
+```
+
+Next, let's see how to connect our EVM RollApp to metamask.

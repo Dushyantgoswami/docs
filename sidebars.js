@@ -150,13 +150,13 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Deploy",
-                                            id: "developers/run/smart-contract/evm/deploy",
+                                            label: "Create",
+                                            id: "developers/run/smart-contract/evm/create",
                                         },
                                         {
                                             type: "doc",
-                                            label: "Interact",
-                                            id: "developers/run/smart-contract/evm/interact",
+                                            label: "Deploy",
+                                            id: "developers/run/smart-contract/evm/deploy",
                                         },
                                         {
                                             type: "doc",

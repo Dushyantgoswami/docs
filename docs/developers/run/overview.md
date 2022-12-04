@@ -8,7 +8,7 @@ order: 3
 title: Run Your RollApp
 ---
 
-So far we've [prepared](/docs/developers/start/overview.md) our RollApp and [built](/docs/developers/build/overview.md) it. Now it's time to deploy it!
+So far we've [prepared](/docs/developers/start/overview.md) our RollApp and [built](/docs/developers/build/overview.md) it. Now it's time to deploy our RollApp!
 
 In this next section we will power up the engine of RollApps, [Dymint](https://github.com/dymensionxyz/dymint). Introduced earlier in the [learn section](/docs/learn/rollapps.md), Dymint is the client componentof RollApp. Dymint is a drop-in replacement for Tendermint and is responsible for block production, peer message propagation and inter-layer communication.
 
