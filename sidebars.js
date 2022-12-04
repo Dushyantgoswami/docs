@@ -45,7 +45,7 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Run a hub node",
+                            label: "Dymension Hub node",
                             id: "developers/getting-started/run-a-hub-node",
                         },
                     ],

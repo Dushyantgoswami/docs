@@ -7,18 +7,13 @@ slug: setup
 
 # Setup Your Work Environment
 
-Assuming you've gone through the initial [getting started](../getting-started/intro ) setup [here](../getting-started/setup ), you will only need to install Rust related libraries for this tutorial.
+Assuming you've gone through the initial [getting started](../getting-started/intro) setup [here](../getting-started/setup), you will only need to install Rust related libraries for this tutorial.
 
 :::info In this section, you can find all you need to install:
 
-- [Docker](https://www.docker.com/)
-- [Rust](https://www.rust-lang.org/)
+-   [Rust](https://www.rust-lang.org/)
 
 :::
-
-## Install Docker
-
-Containerization technology that enables the creation and use of Linux® containers. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).
 
 ## Install Rust
 
