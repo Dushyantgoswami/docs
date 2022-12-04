@@ -128,11 +128,6 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Setup",
-                                            id: "developers/run/smart-contract/cosmwasm/setup",
-                                        },
-                                        {
-                                            type: "doc",
                                             label: "Deploy",
                                             id: "developers/run/smart-contract/cosmwasm/deploy",
                                         },
@@ -153,11 +148,6 @@ const sidebars = {
                                     label: "EVM",
                                     collapsed: true,
                                     items: [
-                                        {
-                                            type: "doc",
-                                            label: "Setup",
-                                            id: "developers/run/smart-contract/evm/setup",
-                                        },
                                         {
                                             type: "doc",
                                             label: "Deploy",
@@ -181,11 +171,6 @@ const sidebars = {
                             type: "doc",
                             label: "Query Dymension Hub",
                             id: "developers/run/query-dymension-hub",
-                        },
-                        {
-                            type: "doc",
-                            label: "Summary",
-                            id: "developers/run/summary",
                         },
                     ],
                 },
