@@ -12,9 +12,10 @@ Open a new terminal window. Set the relevant environment variables for first cre
 on the Dymension Hub.
 
 ```sh
+ROLLAPP_ID="checkers"
+MONIKER_NAME="local"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
-ROLLAPP_ID="checkers"
 ```
 
 Send a transaction to the Dymension Hub to create a RollApp:
