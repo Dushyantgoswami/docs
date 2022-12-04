@@ -44,4 +44,3 @@ wasmd tx bank send $(wasmd keys show $KEY_NAME -a) $ACCOUNT_ADDRESS 1000000000uw
 Your account balance should now show 1000 WASM (if not, try refresh the wallet or change and return the network).<br/>
 
 That's it for this tutorial! We've built a Wasm RollApp, deployed a contract on top of it, interacted with it, setup a Keplr wallet and sent tokens to the wallet adress.
-Next, let's see how to build an EVM RollApp!
