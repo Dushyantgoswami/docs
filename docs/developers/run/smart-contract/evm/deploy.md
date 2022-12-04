@@ -1,7 +1,7 @@
 ---
 title: "Create a smart contract"
 order: 3
-slug: contract-creation
+slug: deploy
 ---
 
 # Create a solidity smart contract

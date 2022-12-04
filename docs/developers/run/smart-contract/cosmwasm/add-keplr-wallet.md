@@ -1,7 +1,7 @@
 ---
 title: "Integrate Keplr"
 order: 6
-slug: integrate-keplr
+slug: add-keplr-wallet
 ---
 
 # Integrate Keplr

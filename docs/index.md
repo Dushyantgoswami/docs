@@ -28,7 +28,7 @@ hide_table_of_contents: true
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="developers/getting-started/intro" class="card-link stretched-link"> 
+            <a href="developers/start/overview" class="card-link stretched-link"> 
                 <h2 class="card-title">Develop</h2>
             </a>
             <p class="card-text">Build your own RollApp</p>
@@ -78,4 +78,4 @@ Contrary to dApps on general purpose blockchains such as Ethereum, which require
 
 As RollApps outsource consensus to the Dymension Hub, they are capable of delivering substantial throughput and lower latency than consensus constrained blockchains.
 
-In the next sections we'll dive deeper on how Dymension works. We recommend going over it, however this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building!](/docs/developers/getting-started/intro.md)
+In the next sections we'll dive deeper on how Dymension works. We recommend going over it, however this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building!](/docs/developers/start/overview.md)

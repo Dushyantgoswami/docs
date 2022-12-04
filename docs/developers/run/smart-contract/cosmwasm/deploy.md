@@ -1,7 +1,7 @@
 ---
 title: "Deploy a smart contract"
 order: 4
-slug: contract-deployment
+slug: deploy
 ---
 
 # Deploy Wasm contract

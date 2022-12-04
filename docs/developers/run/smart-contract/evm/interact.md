@@ -1,7 +1,7 @@
 ---
 title: "Deploy the smart contract"
 order: 4
-slug: contract-deployment
+slug: interact
 ---
 
 # Deploy the Solidity contract

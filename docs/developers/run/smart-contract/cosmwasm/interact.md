@@ -1,7 +1,7 @@
 ---
 title: "Interact with the contract"
 order: 5
-slug: contract-interaction
+slug: interact
 ---
 
 # Interact with the contract
