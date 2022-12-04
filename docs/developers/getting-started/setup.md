@@ -13,7 +13,6 @@ On this page, you can find helpful links to set up your work environment for all
 
 -   [Go 1.18](https://go.dev/dl/)
 -   [Ignite CLI v0.23.0](https://github.com/ignite/cli/releases/tag/v0.23.0)
--   [Docker](https://www.docker.com/)
 
 :::
 
@@ -34,7 +33,3 @@ cd cli
 git checkout v0.23.0
 make install
 ```
-
-## Install Docker
-
-Containerization technology that enables the creation and use of Linux® containers. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).

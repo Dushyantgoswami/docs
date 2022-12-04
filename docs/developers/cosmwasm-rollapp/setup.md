@@ -12,6 +12,7 @@ Assuming you've gone through the initial [getting started](../getting-started/in
 :::info In this section, you can find all you need to install:
 
 -   [Rust](https://www.rust-lang.org/)
+-   [Docker](https://www.docker.com/)
 
 :::
 
@@ -28,5 +29,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 rustup default stable && rustup target list --installed && rustup target add wasm32-unknown-unknown
 ```
+
+## Install Docker
+
+Containerization technology that enables the creation and use of Linux® containers. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).
 
 Next let's see how to run a Wasm RollApp sequencer!
