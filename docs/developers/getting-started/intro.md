@@ -30,4 +30,4 @@ The tutorials will explore developing with the [RDK](https://github.com/dymensio
 
 The next section of this tutorial will describe how to prepare your work environment and run a Dymension Hub node.
 
-### Let's begin!
+# Let's begin!
