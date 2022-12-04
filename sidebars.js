@@ -61,14 +61,21 @@ const sidebars = {
                             id: "developers/build/overview",
                         },
                         {
-                            type: "doc",
+                            type: "category",
                             label: "Install Virtual Machine",
-                            id: "developers/build/install-vm",
-                        },
-                        {
-                            type: "doc",
-                            label: "Initialize RollApp",
-                            id: "developers/build/init-rollapp",
+                            collapsed: true,
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "CosmWasm",
+                                    id: "developers/build/install-vm/cosmwasm-install",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "EVM",
+                                    id: "developers/build/install-vm/evm-install",
+                                },
+                            ],
                         },
                         {
                             type: "doc",

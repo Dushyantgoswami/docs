@@ -18,28 +18,4 @@ The RollApp Development Kit (RDK) is currently in the developmental stage. While
 This tutorial will explore developing with Dymint, which is still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our Discord.
 :::
 
-# CosmWasm RollApp
-
-In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. CosmWasm is a smart contracts platform built for the Cosmos ecosystem by making use of WebAssembly (Wasm).
-
-With the CosmWasm virtual machine you get the safety and power of Rust based smart contracts in your own blockchain. CosmWasm is a powerful framework with inherit safety features such as prevention of re-entrancy attacks (a common attack surface in the EVM).
-
-We highly recommend reading the fantastic CosmWasm documentation [here](https://docs.cosmwasm.com/docs/1.0/). This will provide a general understanding of some of the core feature of CosmWasm. Coupling the safety and ease-of-use of CosmWasm with the flexibility and speed of a RollApps is a powerful blockchain framework.
-
-The CosmWasm smart contract we will demonstrate in this tutorial is one provided by the CosmWasm team for Nameservice purchasing. You can check out the contract [here](https://github.com/InterWasm/cw-contracts/tree/main/contracts/nameservice).
-
-# EVM RollApp
-
-Did you ever want your own super fast Ethereum blockchain?
-
-With EVM RollApps now you can have your own Ethereum Virtual Machine. Many developers are comfortable with the easy to learn, wildly flexible, and incredibly successful Ethereum Virtual Machine. The incredible work produced by the [EVMOS](https://github.com/evmos/ethermint) team brought the EVM to the Cosmos stack. Now we're taking it one step further into the RollApp ecosystem. What will you re-imagine when you combine the speed and flexibility of RollApps with the ease-of-use and amazing developer community of the Ethereum Virtual Machine.
-
-In the following EVM RollApp tutorial we will demonstrate how to deploy a [Solidity](https://docs.soliditylang.org/) smart contract using [truffle](https://trufflesuite.com/) on top of an EVM RollApp.
-
-The smart contract we will use for this tutorial is a simple contract implementation of a counter functionallity, but this is just a glimpse of the power that combining RollApps with the EVM unlocks. We're looking forward to seeing the ingenuity of EVM developers!
-
-:::info NOTE:
-Before we continue please visit our [Setup Work Environment](/docs/developers/start/setup.md) page to make sure you have the proper software installed.
-:::
-
-### Let's begin!
+# Let's begin!
