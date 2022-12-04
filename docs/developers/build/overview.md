@@ -15,7 +15,7 @@ In a production environment, developers are able to modify Go modules for their 
 The RollApp Development Kit (RDK) is currently in the developmental stage. While developers will be able to add their own custom modules to their RollApp, currently we would like to demonstrate how to turn a smart contract into a blockchain! So we put the power into your hands, do you want a CosmWasm RollApp or an EVM RollApp?
 
 :::info NOTE:
-This tutorial will explore developing with dymint, which is still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our Discord.
+This tutorial will explore developing with Dymint, which is still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our Discord.
 :::
 
 # CosmWasm RollApp
@@ -37,5 +37,9 @@ With EVM RollApps now you can have your own Ethereum Virtual Machine. Many devel
 In the following EVM RollApp tutorial we will demonstrate how to deploy a [Solidity](https://docs.soliditylang.org/) smart contract using [truffle](https://trufflesuite.com/) on top of an EVM RollApp.
 
 The smart contract we will use for this tutorial is a simple contract implementation of a counter functionallity, but this is just a glimpse of the power that combining RollApps with the EVM unlocks. We're looking forward to seeing the ingenuity of EVM developers!
+
+:::info NOTE:
+Before we continue please visit our [Setup Work Environment](/docs/developers/start/setup.md) page to make sure you have the proper software installed.
+:::
 
 ### Let's begin!
