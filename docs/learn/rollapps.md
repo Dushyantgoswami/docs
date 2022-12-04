@@ -20,7 +20,7 @@ Data and state root publication guarantees that any network participant, whether
 
 RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [(RDK)](https://github.com/dymensionxyz/RDK). The client component, referred to as [dymint](https://github.com/dymensionxyz/dymint), forked from Celestia's [rollmint](https://github.com/celestiaorg/optimint), is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer communication.
 
-Dymint is enables the multi-layer networking responsible for treating the Dymension Hub as the source of truth for RollApps. As the Dymension Hub is a stand-alone PoS blockchain, Dymint is configured to point to the Dymension Hub for state updates and any necessary rollbacks. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.<br/>
+Dymint enables the multi-layer networking responsible for treating the Dymension Hub as the source of truth for RollApps. As the Dymension Hub is a stand-alone PoS blockchain, Dymint is configured to point to the Dymension Hub for state updates and any necessary rollbacks. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.<br/>
 
 <div class="image-container-primary">
     <img class="image--primary" src={require('./images/rollapp-architecture-overview.png').default} alt="rollapp-overview" />
