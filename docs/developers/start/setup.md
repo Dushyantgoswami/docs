@@ -5,15 +5,13 @@ description: All you need for the hands-on sections
 slug: setup
 ---
 
-On this page, you can find helpful links for setting up your work environment.
-
 :::info Note
 Installing the appropriate version of Go and Ignite CLI are required for all RollApp tutorials. Please install the following:
 :::
 
 ### Go (1.18)
 
-You need Go to develop with the Dymension RDK. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/dl/).
+The appropriate version of Go is required to develop with Dymension's RDK. If you do not have go installed on your system, head to the [Go download and install page](https://go.dev/dl/).
 
 ### Ignite (v0.23.0)
 

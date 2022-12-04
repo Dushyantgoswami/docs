@@ -1,7 +1,7 @@
 ---
 parent:
     title: Build Your Own RollApp
-    description: Build your first Dymension RollApp chain
+    description: Build your Dymension RollApp
     number: 0
 tag: deep-dive
 order: 0

@@ -13,7 +13,7 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "The Dymension Hub",
+                    label: "Dymension Hub",
                     id: "learn/dymension-hub",
                 },
                 {
@@ -35,58 +35,21 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Introduction",
-                            id: "developers/getting-started/intro",
+                            label: "Overview",
+                            id: "developers/start/overview",
                         },
                         {
                             type: "doc",
                             label: "Setup work environment",
-                            id: "developers/getting-started/setup",
+                            id: "developers/start/setup",
                         },
                         {
                             type: "doc",
                             label: "Dymension Hub node",
-                            id: "developers/getting-started/run-a-hub-node",
+                            id: "developers/start/run-a-hub-node",
                         },
                     ],
                 },
-                // {
-                //     type: "category",
-                //     label: "Checkers RollApp",
-                //     collapsed: true,
-                //     items: [
-                //         {
-                //             type: "doc",
-                //             label: "Scaffold the RollApp",
-                //             id: "developers/checkers-rollapp/scaffold-rollapp",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Install the RDK",
-                //             id: "developers/checkers-rollapp/install-rdk",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Initialize the RollApp",
-                //             id: "developers/checkers-rollapp/init-rollapp",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Register the RollApp",
-                //             id: "developers/checkers-rollapp/register-rollapp",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Interact with the RollApp",
-                //             id: "developers/checkers-rollapp/interact",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "View RollApp state",
-                //             id: "developers/checkers-rollapp/query-rollapp",
-                //         },
-                //     ],
-                // },
                 {
                     type: "category",
                     label: "Build",
@@ -94,50 +57,28 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Introduction",
-                            id: "developers/cosmwasm-rollapp/index",
+                            label: "Overview",
+                            id: "developers/build/overview",
                         },
                         {
                             type: "doc",
-                            label: "Setup work environment",
-                            id: "developers/cosmwasm-rollapp/setup",
+                            label: "Install Virtual Machine",
+                            id: "developers/build/install-vm",
                         },
                         {
                             type: "doc",
-                            label: "Run the RollApp",
-                            id: "developers/cosmwasm-rollapp/run-the-rollapp",
-                        },
-                        {
-                            type: "category",
-                            label: "Connect a DA layer",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Mock",
-                                    id: "developers/connect-da-layer/mock",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Celestia",
-                                    id: "developers/connect-da-layer/celestia",
-                                },
-                            ],
+                            label: "Initialize RollApp",
+                            id: "developers/build/init-rollapp",
                         },
                         {
                             type: "doc",
-                            label: "Deploy a smart contract",
-                            id: "developers/cosmwasm-rollapp/deploy-contract",
+                            label: "Register RollApp",
+                            id: "developers/build/register-rollapp",
                         },
                         {
                             type: "doc",
-                            label: "Interact with the Contract",
-                            id: "developers/cosmwasm-rollapp/contract-interaction",
-                        },
-                        {
-                            type: "doc",
-                            label: "Integrate Keplr",
-                            id: "developers/cosmwasm-rollapp/integrate-keplr",
+                            label: "Add Sequencer",
+                            id: "developers/build/add-sequencer",
                         },
                     ],
                 },
@@ -148,50 +89,96 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Introduction",
-                            id: "developers/evm-rollapp/intro",
-                        },
-                        {
-                            type: "doc",
-                            label: "Setup work environment",
-                            id: "developers/evm-rollapp/setup",
-                        },
-                        {
-                            type: "doc",
-                            label: "Run the RollApp",
-                            id: "developers/evm-rollapp/run-the-rollapp",
+                            label: "Overview",
+                            id: "developers/run/overview",
                         },
                         {
                             type: "category",
-                            label: "Connect a DA layer",
+                            label: "Connect a Data Layer",
                             collapsed: true,
                             items: [
                                 {
                                     type: "doc",
                                     label: "Mock",
-                                    id: "developers/connect-da-layer/mock",
+                                    id: "developers/run/connect-data-layer/mock",
                                 },
                                 {
                                     type: "doc",
                                     label: "Celestia",
-                                    id: "developers/connect-da-layer/celestia",
+                                    id: "developers/run/connect-data-layer/celestia",
+                                },
+                            ],
+                        },
+                        {
+                            type: "category",
+                            label: "Deploy Smart Contracts",
+                            collapsed: true,
+                            items: [
+                                {
+                                    type: "category",
+                                    label: "CosmWasm",
+                                    collapsed: true,
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Setup",
+                                            id: "developers/run/smart-contract/cosmwasm/setup",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Deploy",
+                                            id: "developers/run/smart-contract/cosmwasm/deploy",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Interact",
+                                            id: "developers/run/smart-contract/cosmwasm/interact",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Add Wallet",
+                                            id: "developers/run/smart-contract/cosmwasm/add-keplr-wallet",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "EVM",
+                                    collapsed: true,
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Setup",
+                                            id: "developers/run/smart-contract/evm/setup",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Deploy",
+                                            id: "developers/run/smart-contract/evm/deploy",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Interact",
+                                            id: "developers/run/smart-contract/evm/interact",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Add Wallet",
+                                            id: "developers/run/smart-contract/evm/add-metamask-wallet",
+                                        },
+                                    ],
                                 },
                             ],
                         },
                         {
                             type: "doc",
-                            label: "Create a smart contract",
-                            id: "developers/evm-rollapp/create-contract",
+                            label: "Query Dymension Hub",
+                            id: "developers/run/query-dymension-hub",
                         },
                         {
                             type: "doc",
-                            label: "Deploy and test the contract",
-                            id: "developers/evm-rollapp/deploy-and-test-contract",
-                        },
-                        {
-                            type: "doc",
-                            label: "Integrate Metamask",
-                            id: "developers/evm-rollapp/integrate-metamask",
+                            label: "Summary",
+                            id: "developers/run/summary",
                         },
                     ],
                 },
@@ -204,17 +191,17 @@ const sidebars = {
                 {
                     type: "doc",
                     label: "Overview",
-                    id: "validators/full-node/index",
+                    id: "full-node/index",
                 },
                 {
                     type: "doc",
                     label: "Run a node",
-                    id: "validators/full-node/run-a-node",
+                    id: "full-node/run-a-node",
                 },
                 {
                     type: "doc",
                     label: "Reset and troubleshooting",
-                    id: "validators/full-node/reset-node",
+                    id: "full-node/reset-node",
                 },
             ],
         },

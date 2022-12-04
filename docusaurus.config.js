@@ -63,7 +63,7 @@ const config = {
                     {
                         type: "dropdown",
                         label: "Learn",
-                        position: "left",
+                        position: "right",
                         items: [
                             {
                                 label: "Modular Architecture",
@@ -71,7 +71,7 @@ const config = {
                                 docId: "learn/modular-intro",
                             },
                             {
-                                label: "The Dymension Hub",
+                                label: "Dymension Hub",
                                 type: "doc",
                                 docId: "learn/dymension-hub",
                             },
@@ -85,44 +85,44 @@ const config = {
                     {
                         type: "dropdown",
                         label: "Develop",
-                        position: "left",
+                        position: "right",
                         items: [
                             {
                                 type: "doc",
                                 label: "Start",
-                                docId: "developers/getting-started/intro",
+                                docId: "developers/start/overview",
                             },
                             {
                                 type: "doc",
                                 label: "Build",
-                                docId: "developers/cosmwasm-rollapp/index",
+                                docId: "developers/build/overview",
                             },
                             {
                                 type: "doc",
                                 label: "Run",
-                                docId: "developers/evm-rollapp/intro",
+                                docId: "developers/run/overview",
                             },
                         ],
                     },
                     {
                         type: "dropdown",
                         label: "Full node",
-                        position: "left",
+                        position: "right",
                         items: [
                             {
                                 type: "doc",
                                 label: "Overview",
-                                docId: "validators/full-node/index",
+                                docId: "full-node/index",
                             },
                             {
                                 type: "doc",
                                 label: "Run a node",
-                                docId: "validators/full-node/run-a-node",
+                                docId: "full-node/run-a-node",
                             },
                             {
                                 type: "doc",
                                 label: "Reset and troubleshooting",
-                                docId: "validators/full-node/reset-node",
+                                docId: "full-node/reset-node",
                             },
                         ],
                     },
