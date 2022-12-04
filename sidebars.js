@@ -30,7 +30,7 @@ const sidebars = {
             items: [
                 {
                     type: "category",
-                    label: "Getting started",
+                    label: "Start",
                     collapsed: true,
                     items: [
                         {
@@ -76,23 +76,6 @@ const sidebars = {
                 //             id: "developers/checkers-rollapp/register-rollapp",
                 //         },
                 //         {
-                //             type: "category",
-                //             label: "Connect a DA layer",
-                //             collapsed: true,
-                //             items: [
-                //                 {
-                //                     type: "doc",
-                //                     label: "Mock",
-                //                     id: "developers/checkers-rollapp/connect-da-layer/mock",
-                //                 },
-                //                 {
-                //                     type: "doc",
-                //                     label: "Celestia",
-                //                     id: "developers/checkers-rollapp/connect-da-layer/celestia",
-                //                 },
-                //             ],
-                //         },
-                //         {
                 //             type: "doc",
                 //             label: "Interact with the RollApp",
                 //             id: "developers/checkers-rollapp/interact",
@@ -106,7 +89,7 @@ const sidebars = {
                 // },
                 {
                     type: "category",
-                    label: "CosmWasm RollApp",
+                    label: "Build",
                     collapsed: true,
                     items: [
                         {
@@ -123,6 +106,23 @@ const sidebars = {
                             type: "doc",
                             label: "Run the RollApp",
                             id: "developers/cosmwasm-rollapp/run-the-rollapp",
+                        },
+                        {
+                            type: "category",
+                            label: "Connect a DA layer",
+                            collapsed: true,
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Mock",
+                                    id: "developers/connect-da-layer/mock",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Celestia",
+                                    id: "developers/connect-da-layer/celestia",
+                                },
+                            ],
                         },
                         {
                             type: "doc",
@@ -143,7 +143,7 @@ const sidebars = {
                 },
                 {
                     type: "category",
-                    label: "EVM RollApp",
+                    label: "Run",
                     collapsed: true,
                     items: [
                         {
@@ -160,6 +160,23 @@ const sidebars = {
                             type: "doc",
                             label: "Run the RollApp",
                             id: "developers/evm-rollapp/run-the-rollapp",
+                        },
+                        {
+                            type: "category",
+                            label: "Connect a DA layer",
+                            collapsed: true,
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Mock",
+                                    id: "developers/connect-da-layer/mock",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Celestia",
+                                    id: "developers/connect-da-layer/celestia",
+                                },
+                            ],
                         },
                         {
                             type: "doc",

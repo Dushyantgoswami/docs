@@ -89,22 +89,17 @@ const config = {
                         items: [
                             {
                                 type: "doc",
-                                label: "Getting Started",
+                                label: "Start",
                                 docId: "developers/getting-started/intro",
                             },
-                            // {
-                            //     type: "doc",
-                            //     label: "Checkers RollApp",
-                            //     docId: "developers/checkers-rollapp/scaffold-rollapp",
-                            // },
                             {
                                 type: "doc",
-                                label: "CosmWasm RollApp",
+                                label: "Build",
                                 docId: "developers/cosmwasm-rollapp/index",
                             },
                             {
                                 type: "doc",
-                                label: "EVM RollApp",
+                                label: "Run",
                                 docId: "developers/evm-rollapp/intro",
                             },
                         ],
