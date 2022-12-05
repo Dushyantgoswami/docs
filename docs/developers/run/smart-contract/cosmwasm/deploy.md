@@ -4,35 +4,50 @@ order: 4
 slug: deploy
 ---
 
-# Deploy Wasm contract
+# Deploy CosmWasm contract
 
-In the next section we will deploy a NameService contract on top of our Wasm RollApp.
-The goal of the NameService contract is to let users buy names and to set a value these names resolve to.
-The owner of a given name will be the current highest bidder.
+In the next section we will deploy a NameService contract on top of our Wasm RollApp. The goal of the NameService contract is to let users buy names and to set a value these names resolve to. The owner of a given name will be the current highest bidder.
+
+The following instructions are from the deploying a smart contract section of the [CosmWasm documentation](https://docs.cosmwasm.com/docs/1.0/getting-started/intro). For more information on building and deploying CosmWasm smart contracts please visit the CosmWasm documentation.
 
 ## Contract compilation
 
-Compile the Smart Contract:
+Download and compile the smart contract:
 
 ```bash
-git clone https://github.com/InterWasm/cw-contracts && cd cw-contracts/contracts/nameservice
+# Download the repository
+git clone https://github.com/InterWasm/cw-contracts
+cd cw-contracts
+git checkout main
+cd contracts/nameservice
 
-rustup default stable && RUSTFLAGS='-C link-arg=-s' cargo wasm
+# compile the wasm contract with stable toolchain
+rustup default stable
+cargo wasm
 ```
 
-Optimize the Smart Contract.
-The result will be saved in the `artifacts` directory:
-
-In the contract directory folder (in our example - `../contracts/nameservice`)
+The compilation should output the file target/wasm32-unknown-unknown/release/cw_nameservice.wasm.
 
 ```bash
+ls -lh
+```
+
+Let's try running the unit tests:
+
+```bash
+RUST_BACKTRACE=1 cargo unit-test
+```
+
+Navigate to the project root and run the following command to optimize the size of the file for deployment:
+
+```Dockerfile
 docker run --rm -v "$(pwd)":/code \
   --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
   cosmwasm/rust-optimizer:0.12.6
 ```
 
-set an env var for the nameservice wasm file:
+Set an env var for the nameservice wasm file:
 
 ```sh
 export WASM_FILE=artifacts/cw_nameservice.wasm
