@@ -101,12 +101,12 @@ const sidebars = {
                         },
                         {
                             type: "category",
-                            label: "Connect a Data Layer",
+                            label: "Run the RollApp",
                             collapsed: true,
                             items: [
                                 {
                                     type: "doc",
-                                    label: "Mock",
+                                    label: "Mock data layer",
                                     id: "developers/run/connect-data-layer/mock",
                                 },
                                 {

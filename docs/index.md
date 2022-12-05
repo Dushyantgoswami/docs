@@ -39,13 +39,13 @@ hide_table_of_contents: true
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="validators/full-node/index" class="card-link stretched-link"> 
+            <a href="full-node/index" class="card-link stretched-link"> 
                 <h2 class="card-title">Full node</h2>
             </a>
             <p class="card-text">Run a Node in the Dymension Network</p>
             <div class="card-actions">
                 <button class="action-button">Run a Node</button>
-            </div>
+           </div>
         </div>
     </div>
 </div>
