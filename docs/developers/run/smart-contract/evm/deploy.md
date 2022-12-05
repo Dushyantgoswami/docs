@@ -6,7 +6,7 @@ slug: deploy
 
 # Deploy the Solidity contract
 
-Now that we have our [contract created](create-contract.md) let's see how to deploy it to the EVM RollApp
+Now that we have our [contract created](create.md) let's see how to deploy it to the EVM RollApp
 and test it.
 
 ## Contract deployment
