@@ -19,6 +19,85 @@ In order to write our RollApp batches to Celestia, we will need to run a Celesti
 Head over to Celestia's light node [tutorial](https://docs.celestia.org/nodes/light-node) for a step-by-step instructions.<br/>
 Make sure that by the end of the tutorial you can view your account balance and that it's positive.
 
+We've included a Dockerfile for those who are looking to build quickly:
+
+```Dockerfile
+FROM golang:1.19.2-alpine3.16 as go-builder
+
+WORKDIR /app
+
+# Install required celestia node packages
+ENV PACKAGES curl tar wget clang jq git ncdu make libc-dev bash gcc linux-headers eudev-dev python3
+
+RUN apk add --no-cache $PACKAGES
+
+# Install celestia node and cel-key commands
+RUN git clone https://github.com/celestiaorg/celestia-node.git
+
+WORKDIR /app/celestia-node
+
+RUN git checkout tags/v0.5.0-rc5
+
+RUN make build && make cel-key
+
+FROM alpine:3.16.1
+
+COPY --from=go-builder /app/celestia-node/build/celestia /usr/local/bin/
+COPY --from=go-builder /app/celestia-node/cel-key /usr/local/bin/
+
+ENV CELESTIA_BRIDGE_NODE_ENDPOINT=https://limani.celestia-devops.dev
+ENV CELESTIA_BRIDGE_NODE_PORT=9090
+ENV WALLET_KEY_NAME=dymension-test
+
+# Init the node
+RUN celestia light init
+
+# Fetch the key for celestia light node and sleep for a few seconds
+RUN cel-key add $WALLET_KEY_NAME  --keyring-backend test --node.type light
+
+EXPOSE 26659 9090
+
+# Run the light node with the dymension-test key
+CMD celestia light start --core.ip $CELESTIA_BRIDGE_NODE_ENDPOINT --core.grpc.port $CELESTIA_BRIDGE_NODE_PORT --gateway --gateway.port 26659 --keyring.accname $WALLET_KEY_NAME
+
+```
+
+From within the Docker directory:
+
+```Dockerfile
+docker build -t celestia-light-client .
+```
+
+Once the build(s) are complete, issue the command:
+
+```Dockerfile
+docker images
+```
+
+Run the container:
+
+```Dockerfile
+docker run -d -p 26659:26659 --name celestia-light-client celestia-light-client
+```
+
+Upon build completed run to get the wallet address:
+
+```Dockerfile
+docker exec -i <docker id> sh -c "cel-key show dymension-test --keyring-backend test --node.type light" | grep "address"
+```
+
+Get the address and post it in the celestia arabica-fauct channel on discord:
+
+```bash
+$request celestia12les8l8gzsacjjxwum9wdy7pe8x9kdjqch4gyw
+```
+
+Check the running Celestia light node:
+
+```Dockerfile
+docker ps
+```
+
 ### Step 2: Reset the Hub node
 
 Once you've got the Celestia's light node up and running, we'll start by stopping the current process of the hub node and running it again.<br/>
@@ -34,11 +113,11 @@ In order to run the RollApp with celestia as the DA we'll start by:
 2. Reseting the RollApp state by deleting it's data:
 
 ```bash
-rm -rf ~/.wasm/data
+rm -rf ~/.wasmd/data
 ```
 
 ```bash
-rm -rf ~/.ethermint/data
+rm -rf ~/.ethermintd/data
 ```
 
 ### Step 4: Run the RollApp with Celestia as the DA
