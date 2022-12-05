@@ -12,9 +12,9 @@ In the next sections we'll see how to add the [Keplr wallet](https://www.keplr.a
 
 Make sure you have the [Keplr extension](https://chrome.google.com/webstore/detail/keplr/dmkamcknogkgcdfhhbddcghachkejeap?hl=en) installed in your browser and configured with an account.
 
-Cd the `wasm` repo cloned in the [previous step](./run-the-rollapp.md/#install-the-binary) and run the following command in order to install a keplr helper for adding new local networks to the wallet:
+CD the `wasm` repo cloned in the [VM step](/docs/developers/build/install-vm/cosmwasm-install.md) and run the following command in order to install a keplr helper for adding new local networks to the wallet:
 
-```sh
+```bash
 cd keplr && npm install && npm run dev
 ```
 
