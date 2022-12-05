@@ -25,7 +25,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Develop",
+            label: "Developer",
             collapsed: true,
             items: [
                 {
@@ -178,7 +178,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Full node",
+            label: "Validator",
             items: [
                 {
                     type: "doc",
