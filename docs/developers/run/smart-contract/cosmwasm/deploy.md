@@ -14,7 +14,7 @@ The owner of a given name will be the current highest bidder.
 
 Compile the Smart Contract:
 
-```sh
+```bash
 git clone https://github.com/InterWasm/cw-contracts && cd cw-contracts/contracts/nameservice
 
 rustup default stable && RUSTFLAGS='-C link-arg=-s' cargo wasm
@@ -23,8 +23,9 @@ rustup default stable && RUSTFLAGS='-C link-arg=-s' cargo wasm
 Optimize the Smart Contract.
 The result will be saved in the `artifacts` directory:
 
-```sh
-# In the contract directory folder (in our example - `../contracts/nameservice`)
+In the contract directory folder (in our example - `../contracts/nameservice`)
+
+```bash
 docker run --rm -v "$(pwd)":/code \
   --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
@@ -41,7 +42,7 @@ export WASM_FILE=artifacts/cw_nameservice.wasm
 
 Deploy the smart contract and fetch the deployment transaction hash:
 
-```sh
+```bash
 KEY_NAME=test-key
 CHAIN_ID=test-chain
 TX_FLAGS="--chain-id $CHAIN_ID --gas-prices 0uwasm --gas auto --gas-adjustment=1.1"
@@ -53,18 +54,18 @@ TX_HASH=$(wasmd tx wasm store "$WASM_FILE" --from "$KEY_NAME" $(echo $TX_FLAGS) 
 
 Let's start by querying our transaction hash for its Code ID
 
-```sh
+```bash
 CODE_ID=$(wasmd query tx --type=hash "$TX_HASH" --chain-id "$CHAIN_ID" --output json | jq -r '.logs[0].events[-1].attributes[0].value')
 ```
 
 Create an `instantiate` message for the contract
 
-```sh
+```bash
 INIT='{"purchase_price":{"amount":"100","denom":"uwasm"},"transfer_price":{"amount":"999","denom":"uwasm"}}'
 ```
 
 Instantiate the contract by sending an `instantiate` transaction
 
-```sh
+```bash
 wasmd tx wasm instantiate "$CODE_ID" "$INIT" --from $KEY_NAME --label "name service" $(echo $TX_FLAGS) -y --no-admin
 ```

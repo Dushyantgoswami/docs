@@ -13,19 +13,21 @@ Before running the RollApp sequencer let's dive a bit deepr at some arguments we
 -   `dymint.block_batch_size` the batch size which will be written to the base layers (i.e DA and settlement layer).
 -   `dymint.block_time` block creation interval. The optimal value for setting this argument will be discussed further in the future. For now we will set it to `0.2s`.
 
-:::info Note
-On the top line of the following script please insert the following line for the respective virtual machine you've selected to use.
+Choose the environmental variable based on the virtual machine chosen:
 
-export VM_VERSION="wasm" <br/>
+```bash
+export VM_VERSION="wasm"
+```
+
+```bash
 export VM_VERSION="ethermint"
-:::
+```
 
 Run the RollApp:
 
 ```bash
--- Insert export VM_VERSION line here --
 export KEY_NAME="local-user"
-export ROLLAPP_ID="checkers"
+export ROLLAPP_ID="local-rollapp"
 export SETTLEMENT_RPC="0.0.0.0:36657"
 export SETTLEMENT_CONFIG="{\"node_address\": \"http:\/\/$SETTLEMENT_RPC\", \"rollapp_id\": \"$ROLLAPP_ID\", \"dym_account_name\": \"$KEY_NAME\", \"keyring_home_dir\": \"$HOME/.dymension/\", \"keyring_backend\":\"test\"}"
 export NAMESPACE_ID=000000000000FFFF

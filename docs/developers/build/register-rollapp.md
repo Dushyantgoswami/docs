@@ -12,7 +12,7 @@ Open a new terminal window. Set the relevant environment variables for first cre
 on the Dymension Hub.
 
 ```sh
-ROLLAPP_ID="checkers"
+ROLLAPP_ID="local-rollapp"
 MONIKER_NAME="local"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
