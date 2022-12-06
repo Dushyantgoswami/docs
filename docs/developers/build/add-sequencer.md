@@ -52,6 +52,8 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Now that we've registered our RollApp and attached a Sequencer to the RollApp, we will next instantiate the application logic. Developers have the option of integrating available virtual machines and adjusting the native Go modules of the RollApp Development Kit (RDK).
+Now that we've registered our RollApp and attached a Sequencer to the RollApp, we will next next choose the application environment you would like to work in.
 
-In the next the section developers can choose between integrating the [CosmWasm VM](/docs/developers/build/install-vm/cosmwasm-install.md) and the [EVM](/docs/developers/build/install-vm/evm-install.md). Which one will you choose?
+Dymension puts the power into the developers hands.Developers have the option of working directly with the [RDK](/docs/developers/build/application-env/rdk.md) modules or integrating an available virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
+
+#### Which application environment will you choose?

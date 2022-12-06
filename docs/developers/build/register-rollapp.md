@@ -1,20 +1,15 @@
 ---
-title: Build the RollApp
+title: Build your RollApp
 slug: register-rollapp
 ---
 
-The [RollApp Development Kit (RDK)](https://github.com/dymensionxyz/rdk) is currently in the developmental stage. As such there may be breaking changes as the code base is upgraded and moves closer to a production product.
-
-In the following tutorial we provide instructions on how to build a `Counter RollApp` with your choice of application environment. The following tutorial will guide developers on how to deploy a simple counter application with Go module via the [RDK](/docs/developers/build/application-env/rdk.md) or using a virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
-
-Before we continue, make sure to have installed the proper version for your [work environment](/docs/developers/start/setup.md) and have started a [Dymension Hub node](/docs/developers/start/run-a-hub-node.md). Let's build our `Counter RollApp`, first we must register it with the Dymension Hub.
+Before we build our `Counter RollApp` make sure to have installed the proper version of your [work environment](/docs/developers/start/setup.md) and have a Dymension Hub [node](/docs/developers/start/run-a-hub-node.md) running.
 
 # Register the RollApp
 
-Open a new terminal window. Set the relevant environment variables for first creating a RollApp
-on the Dymension Hub.
+First we must register it with the Dymension Hub. Open a new terminal window. Set the relevant environment variables for first creating a RollApp.
 
-```sh
+```bash
 ROLLAPP_ID="counter-rollapp"
 MONIKER_NAME="local"
 CHAIN_ID="local-testnet"
@@ -47,8 +42,6 @@ Let's make sure the RollApp initialization worked:
 dymd query rollapp list-rollapp
 ```
 
-Contrary to general purpose smart contract blockchains, querying the state of the Dymension Hub blockchain allows users and applications to understand which RollApps exist in the ecosystem. This is what is often regarded as the embedded logic of RollApps in the Dymension Hub.
-
 The previous query should result in:
 
 ```bash
@@ -63,3 +56,7 @@ rollapp:
   rollappId: <RollApp ID>
   version: "0"
 ```
+
+Contrary to general purpose smart contract blockchains, querying the state of the Dymension Hub blockchain allows users and applications to understand which RollApps exist in the ecosystem. This is what is often regarded as the embedded logic of RollApps in the Dymension Hub.
+
+### Let's add a sequencer to the RollApp...

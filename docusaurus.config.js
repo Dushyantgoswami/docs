@@ -90,7 +90,7 @@ const config = {
                             {
                                 type: "doc",
                                 label: "Start",
-                                docId: "developers/start/overview",
+                                docId: "developers/start/setup",
                             },
                             {
                                 type: "doc",

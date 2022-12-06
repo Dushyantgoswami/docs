@@ -35,12 +35,7 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Overview",
-                            id: "developers/start/overview",
-                        },
-                        {
-                            type: "doc",
-                            label: "Work Environment",
+                            label: "Setup Work Environment",
                             id: "developers/start/setup",
                         },
                         {

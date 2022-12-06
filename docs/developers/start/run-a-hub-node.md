@@ -3,7 +3,7 @@ title: Run a Dymension Hub node
 slug: run-a-node
 ---
 
-The following steps will guide you on how to configure and run a Dymension Hub node. This is useful for local developement and understanding the interactions developers may require with the Dymension Hub (e.g. initializing a new RollApp).
+The following steps will guide you in configuring and running a Dymension Hub node. This is useful for local developement and understanding the interactions developers may be required to handle with the Dymension Hub (e.g. initializing a new RollApp).
 
 :::info Note
 Testnet and Mainnet production environments do not require installing and running a Dymension Hub node, that is handled by a public network of full nodes.
@@ -59,9 +59,5 @@ From within the `dymension` directory, start the chain:
 ```bash
 sh scripts/run_local.sh
 ```
-
-The Dymension Hub is center of the Dymension ecosystem. We will soon show how RollApps delegate consensus to the Dymension Hub and get the benefits of an ultra-low latent blockchain environment.
-
-Setting up a Dymension Hub node is abstracted away from developers in a production environment. This is a demonstration of the Dymension stack in a local environment. In a public network such as a Testnet or Mainnet, developers do not need to run a Dymension Hub full node.
 
 Now that you have a running Dymension Hub node, let's build our RollApp...
