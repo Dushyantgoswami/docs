@@ -1,6 +1,6 @@
 ---
 title: Run your RollApp
-slug: celestia
+slug: celestia-light-client
 ---
 
 ## Celestia DA
@@ -123,6 +123,10 @@ The tutorial assumes a default Celestia namespace id `000000000000FFFF` and a de
 :::
 
 Choose the environmental variable based on the virtual machine chosen:
+
+-   `dymint.da_layer` the da layer for our RollApp. For now we will use a `mock` DA layer, in the next section we replace the mock DA layer with Celestia.
+-   `dymint.block_batch_size` the batch size which will be written to the base layers (i.e DA and settlement layer).
+-   `dymint.block_time` block creation interval. The optimal value for setting this argument will be discussed further in the future. For now we will set it to `0.2s`.
 
 ```bash
 export VM_VERSION="wasm"

@@ -1,5 +1,5 @@
 ---
-title: Start your RollApp
+title: Build your RollApp
 slug: setup
 ---
 
@@ -10,7 +10,7 @@ Installing the appropriate version of Go and Ignite CLI are required for all Rol
 The tutorials will explore developing with the [RDK](https://github.com/dymensionxyz/rdk) and [Dymint](https://github.com/dymensionxyz/dymint), which are still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our [Discord](http://discord.gg/dymension).
 :::
 
-## Installation requirements
+# Installation requirements
 
 #### <b>Go (1.18)</b>
 

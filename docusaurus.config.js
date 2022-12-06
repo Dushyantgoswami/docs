@@ -95,12 +95,12 @@ const config = {
                             {
                                 type: "doc",
                                 label: "Build",
-                                docId: "developers/build/register-rollapp",
+                                docId: "developers/build/rdk/rdk",
                             },
                             {
                                 type: "doc",
-                                label: "Run",
-                                docId: "developers/run/data-layer/mock",
+                                label: "Play",
+                                docId: "developers/play/join-testnet",
                             },
                         ],
                     },

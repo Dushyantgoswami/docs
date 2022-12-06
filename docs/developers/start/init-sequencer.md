@@ -1,11 +1,11 @@
 ---
 title: "RollApp sequencer"
-slug: add-sequencer
+slug: init-sequencer
 ---
 
 Like a validator, RollApp sequencers processes transactions, produces RollApp blocks, and submit a batched set of blocks to the base layers for security. Sequencers utilize the [Dymint](https://github.com/dymensionxyz/dymint) processing and networking engine that powers the consensus-free blockchain called RollApps.
 
-# Attach a Sequencer
+# Create a sequencer account
 
 ```bash
 export DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
@@ -18,7 +18,7 @@ dymd tx sequencer create-sequencer "$CREATOR_ADDRESS" "$CREATOR_PUB_KEY" "$ROLLA
   --keyring-backend test
 ```
 
-We've input the following flags into the transaction to attach a Sequencer to a RollApp:
+This entity will post state updates automatically to the Dymension Hub. We've input the following flags into the transaction to attach a Sequencer to a RollApp:
 
 -   `creatorAddress` is the bech32-encoded address of the creator account
 -   `creator-pub-key` is the public key of the creator
@@ -52,8 +52,8 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Now that we've registered our RollApp and attached a Sequencer to the RollApp, we will next next choose the application environment you would like to work in.
+Now that we've registered our RollApp and attached a Sequencer to the RollApp, we will next choose the application environment you would like to work in.
 
-Dymension puts the power into the developers hands.Developers have the option of working directly with the [RDK](/docs/developers/build/application-env/rdk.md) modules or integrating an available virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
+Dymension puts the power into the developer's hands. Developers have the option of working directly with the [RDK](/docs/developers/build/application-env/rdk.md) modules or integrating a virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
 
 #### Which application environment will you choose?
