@@ -1,10 +1,16 @@
 ---
-title: "Register the RollApp"
+title: "Build the RollApp"
 slug: "register-rollapp"
 hidden: false
 sidebar_position: 3
 hide_table_of_contents: true
 ---
+
+In a production environment, developers are able to modify Go modules for their business logic needs. However, to make the developers life a bit easier, we provide instructions on how to implement a virtual machine (e.g. CosmWasm and EVM) within your own RollApp. With a virtual machine, developers are able to deploy smart contracts with all of the benefits of deploying you own blockchain.
+
+The RollApp Development Kit (RDK) is currently in the developmental stage. While developers will be able to add their own custom modules to their RollApp, currently we would like to demonstrate how to turn a smart contract into a blockchain! So we put the power into your hands, do you want a CosmWasm RollApp or an EVM RollApp?
+
+# Register the RollApp
 
 Open a new terminal window. Set the relevant environment variables for first creating a RollApp
 on the Dymension Hub.
