@@ -1,4 +1,7 @@
-# EVM RollApp
+---
+title: EVM environment
+slug: evm
+---
 
 Did you ever want your own super fast Ethereum blockchain?
 

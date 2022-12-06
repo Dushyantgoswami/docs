@@ -72,18 +72,18 @@ const sidebars = {
                             items: [
                                 {
                                     type: "doc",
-                                    label: "Go modules",
-                                    id: "developers/build/install-vm/cosmwasm",
+                                    label: "RDK",
+                                    id: "developers/build/application-env/rdk",
                                 },
                                 {
                                     type: "doc",
                                     label: "CosmWasm",
-                                    id: "developers/build/install-vm/cosmwasm",
+                                    id: "developers/build/application-env/cosmwasm",
                                 },
                                 {
                                     type: "doc",
                                     label: "EVM",
-                                    id: "developers/build/install-vm/evm",
+                                    id: "developers/build/application-env/evm",
                                 },
                             ],
                         },

@@ -1,4 +1,7 @@
-# CosmWasm RollApp
+---
+title: CosmWasm environment
+slug: cosmwasm
+---
 
 In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. CosmWasm is a smart contracts platform built for the Cosmos ecosystem by making use of WebAssembly (Wasm).
 
