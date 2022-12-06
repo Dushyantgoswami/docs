@@ -1,8 +1,6 @@
 ---
-title: "Run the RollApp"
-slug: "celestia"
-hidden: false
-hide_table_of_contents: true
+title: Run the RollApp
+slug: celestia
 ---
 
 ## Celestia DA

@@ -1,9 +1,6 @@
 ---
-title: "Build the RollApp"
-slug: "register-rollapp"
-hidden: false
-sidebar_position: 3
-hide_table_of_contents: true
+title: Build the RollApp
+slug: register-rollapp
 ---
 
 The [RollApp Development Kit (RDK)](https://github.com/dymensionxyz/rdk) is currently in the developmental stage. In a production environment, developers will be able to modify Go modules for their custom business logic needs.

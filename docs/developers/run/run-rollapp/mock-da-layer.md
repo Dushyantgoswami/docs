@@ -1,10 +1,9 @@
 ---
-title: "Run the RollApp"
-slug: "mock"
-hidden: false
-hide_table_of_contents: true
+title: Run the RollApp
+slug: mock-da-layer
 ---
 
+Assuming you've [built](/docs/developers/build/register-rollapp.md) your RollApp
 Before running the RollApp sequencer let's dive a bit deepr at some arguments we can play with.
 
 -   `dymint.da_layer` the da layer for our RollApp. For now we will use a `mock` DA layer, in the next section we replace the mock DA layer with Celestia.

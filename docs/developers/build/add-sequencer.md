@@ -1,12 +1,11 @@
 ---
-title: "Add Sequencer"
-order: 4
+title: "RollApp sequencer"
 slug: add-sequencer
 ---
 
-RollApp's have sequencers that process transactions and post them to the base layers for security. Sequencers utilize the [Dymint](https://github.com/dymensionxyz/dymint) processing and networking engine that powers the consensus-free blockchain called RollApps.
+Like a validator, RollApp sequencers processes transactions, produces RollApp blocks, and submit a batched set of blocks to the base layers for security. Sequencers utilize the [Dymint](https://github.com/dymensionxyz/dymint) processing and networking engine that powers the consensus-free blockchain called RollApps.
 
-Initialize and attach a Sequencer:
+# Attach a Sequencer
 
 ```bash
 export DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\":\"\",\"SecurityContact\":\"\",\"Details\":\"\"}";
@@ -19,7 +18,7 @@ dymd tx sequencer create-sequencer "$CREATOR_ADDRESS" "$CREATOR_PUB_KEY" "$ROLLA
   --keyring-backend test
 ```
 
-We input the following flags into the transaction to attach a Sequencer to a RollApp:
+We've input the following flags into the transaction to attach a Sequencer to a RollApp:
 
 -   `creatorAddress` is the bech32-encoded address of the creator account
 -   `creator-pub-key` is the public key of the creator
@@ -53,6 +52,6 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Developers have the option of integrating available virtual machines and adjusting the native Go modules of the RollApp Development Kit (RDK).
+Now that we've registered our RollApp and attached a Sequencer to the RollApp, we will next instantiate the application logic. Developers have the option of integrating available virtual machines and adjusting the native Go modules of the RollApp Development Kit (RDK).
 
 In the next the section developers can choose between integrating the [CosmWasm VM](/docs/developers/build/install-vm/cosmwasm-install.md) and the [EVM](/docs/developers/build/install-vm/evm-install.md). Which one will you choose?

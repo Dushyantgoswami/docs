@@ -1,9 +1,6 @@
 ---
-title: "Run a Dymension Hub node"
-slug: "run-a-node"
-hidden: false
-sidebar_position: 2
-hide_table_of_contents: true
+title: Run a Dymension Hub node
+slug: run-a-node
 ---
 
 The following steps will guide you on how to configure and run a Dymension Hub node. This is useful for local developement and understanding the interactions developers may require with the Dymension Hub (e.g. initializing a new RollApp).
@@ -12,14 +9,14 @@ The following steps will guide you on how to configure and run a Dymension Hub n
 Testnet and Mainnet production environments do not require installing and running a Dymension Hub node, that is handled by a public network of full nodes.
 ::::
 
-### Step 1: Install Dymension Hub binaries:
+#### Step 1: Install Dymension Hub binaries:
 
 ```bash
 git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
 cd dymension
 ```
 
-### Step 2: Setup the relevant environment variables:
+#### Step 2: Setup the relevant environment variables:
 
 ```sh
 export CHAIN_ID="local-testnet"
@@ -31,7 +28,7 @@ export GRPC_WEB_ADDRESS="0.0.0.0:8091"
 export P2P_ADDRESS="0.0.0.0:36656"
 ```
 
-### Step 3: Setup the Dymension Hub node:
+#### Step 3: Setup the Dymension Hub node:
 
 Make sure you are inside the `dymension` dir and run the following to build and init the chain:
 
@@ -55,7 +52,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 If the the `dymd` command is still not found please make sure you also update GOPATH in your `~/.bashrc`
 :::
 
-### Step 4: Run the Dymension Hub node:
+#### Step 4: Run the Dymension Hub node:
 
 From within the `dymension` directory, start the chain:
 
@@ -67,4 +64,4 @@ The Dymension Hub is center of the Dymension ecosystem. We will soon show how Ro
 
 Setting up a Dymension Hub node is abstracted away from developers in a production environment. This is a demonstration of the Dymension stack in a local environment. In a public network such as a Testnet or Mainnet, developers do not need to run a Dymension Hub full node.
 
-### Now that you have a running Dymension Hub node, let's build our RollApp...
+Now that you have a running Dymension Hub node, let's build our RollApp...

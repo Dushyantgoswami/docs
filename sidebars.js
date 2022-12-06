@@ -67,9 +67,14 @@ const sidebars = {
                         },
                         {
                             type: "category",
-                            label: "Install Virtual Machine",
+                            label: "Application Environment",
                             collapsed: true,
                             items: [
+                                {
+                                    type: "doc",
+                                    label: "Go modules",
+                                    id: "developers/build/install-vm/cosmwasm",
+                                },
                                 {
                                     type: "doc",
                                     label: "CosmWasm",

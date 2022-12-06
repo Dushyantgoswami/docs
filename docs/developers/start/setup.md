@@ -1,19 +1,17 @@
 ---
-title: "Set Up Your Work Environment"
-order: 2
-description: All you need for the hands-on sections
+title: Set Up Your Work Environment
 slug: setup
 ---
 
 :::info Note
-Installing the appropriate version of Go and Ignite CLI are required for all RollApp tutorials. Please install the following:
+Installing the appropriate version of Go and Ignite CLI are required for all RollApp tutorials.
 :::
 
-### Go (1.18)
+#### <b>Go (1.18)</b>
 
 The appropriate version of Go is required to develop with Dymension's RDK. If you do not have go installed on your system, head to the [Go download and install page](https://go.dev/dl/).
 
-### Ignite (v0.23.0)
+#### <b>Ignite (v0.23.0)</b>
 
 Ignite CLI is an easy-to-use CLI tool for creating and maintaining sovereign application-specific blockchains. Blockchains created with Ignite CLI use Cosmos SDK and Tendermint by default. We will utilize Dymension's RDK and Dymint as drop-in replacements for the Cosmos SDK and Tendermint, respectively.
 
