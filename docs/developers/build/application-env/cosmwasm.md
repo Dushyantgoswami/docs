@@ -45,9 +45,9 @@ go mod download
 make install
 ```
 
-# Instantiating the CosmWasm RollApp
+# Instantiate the Genesis Event
 
-In the Wasm directory, we have a helpful bash script that allows you to instantiate a local CosmWasm RollApp.
+In the Wasm directory, we have a helpful bash script that allows you to instantiate the Genesis parameters for your RollApp.
 
 Run the following from within the `wasm` directory:
 
@@ -55,4 +55,4 @@ Run the following from within the `wasm` directory:
 bash init.sh
 ```
 
-This bash script does everything needed to initialize your EVM RollApp. Once you're ready move on [next](/docs/developers/run/overview.md) to running your RollApp!
+This bash script does everything needed to instantiate your RollApp. Once you're ready move on [next](/docs/developers/run/run-rollapp/mock-da-layer.md) to running your RollApp!

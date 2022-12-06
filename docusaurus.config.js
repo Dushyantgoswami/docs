@@ -100,7 +100,7 @@ const config = {
                             {
                                 type: "doc",
                                 label: "Run",
-                                docId: "developers/run/run-rollapp/mock-da-layer",
+                                docId: "developers/run/data-layer/mock",
                             },
                         ],
                     },

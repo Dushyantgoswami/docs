@@ -40,7 +40,7 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Setup work environment",
+                            label: "Work Environment",
                             id: "developers/start/setup",
                         },
                         {
@@ -102,20 +102,42 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Mock data layer",
-                                    id: "developers/run/run-rollapp/mock-da-layer",
+                                    id: "developers/run/data-layer/mock",
                                 },
                                 {
                                     type: "doc",
                                     label: "Celestia",
-                                    id: "developers/run/run-rollapp/celestia",
+                                    id: "developers/run/data-layer/celestia",
                                 },
                             ],
                         },
                         {
                             type: "category",
-                            label: "Deploy Smart Contracts",
+                            label: "Add Application Logic",
                             collapsed: true,
                             items: [
+                                {
+                                    type: "category",
+                                    label: "RDK",
+                                    collapsed: true,
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Deploy",
+                                            id: "developers/run/smart-contract/cosmwasm/deploy",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Interact",
+                                            id: "developers/run/smart-contract/cosmwasm/interact",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Add Wallet",
+                                            id: "developers/run/smart-contract/cosmwasm/add-keplr-wallet",
+                                        },
+                                    ],
+                                },
                                 {
                                     type: "category",
                                     label: "CosmWasm",

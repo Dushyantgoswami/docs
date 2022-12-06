@@ -3,11 +3,11 @@ title: Build the RollApp
 slug: register-rollapp
 ---
 
-The [RollApp Development Kit (RDK)](https://github.com/dymensionxyz/rdk) is currently in the developmental stage. In a production environment, developers will be able to modify Go modules for their custom business logic needs.
+The [RollApp Development Kit (RDK)](https://github.com/dymensionxyz/rdk) is currently in the developmental stage. As such there may be breaking changes as the code base is upgraded and moves closer to a production product.
 
-We provide instructions on how to integrate a virtual machine (e.g. CosmWasm and EVM) into your own RollApp. With a virtual machine developers are able to deploy smart contracts with all of the benefits of owning your own blockchain. Currently, RollApps support [CosmWasm](/docs/developers/build/install-vm/cosmwasm.md) and the [EVM](/docs/developers/build/install-vm/evm.md). But RollApp tech stack is a growing ecosystem and we expect new VMs to be released in the near future.
+In the following tutorial we provide instructions on how to build a `Counter RollApp` with your choice of application environment. The following tutorial will guide developers on how to deploy a simple counter application with Go module via the [RDK](/docs/developers/build/application-env/rdk.md) or using a virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
 
-Let's build our RollApp, first we must register it with our running [Dymension Hub node](/docs/developers/start/run-a-hub-node.md).
+Before we continue, make sure to have installed the proper version for your [work environment](/docs/developers/start/setup.md) and have started a [Dymension Hub node](/docs/developers/start/run-a-hub-node.md). Let's build our `Counter RollApp`, first we must register it with the Dymension Hub.
 
 # Register the RollApp
 
@@ -15,7 +15,7 @@ Open a new terminal window. Set the relevant environment variables for first cre
 on the Dymension Hub.
 
 ```sh
-ROLLAPP_ID="local-rollapp"
+ROLLAPP_ID="counter-rollapp"
 MONIKER_NAME="local"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"

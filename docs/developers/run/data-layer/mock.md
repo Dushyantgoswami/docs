@@ -1,6 +1,6 @@
 ---
 title: Run the RollApp
-slug: mock-da-layer
+slug: mock
 ---
 
 Assuming you've [built](/docs/developers/build/register-rollapp.md) your RollApp
