@@ -8,7 +8,31 @@ We highly recommend reading the fantastic CosmWasm documentation [here](https://
 
 The CosmWasm smart contract we will demonstrate in this tutorial is one provided by the CosmWasm team for Nameservice purchasing. You can check out the contract [here](https://github.com/InterWasm/cw-contracts/tree/main/contracts/nameservice).
 
-# Install the CosmWasm VM for your RollApp
+## CosmWasm installations
+
+:::info Note
+For developers who are looking to build a RollApp with a CosmWasm Virtual Machine, the following installations are required to follow the tutorial:
+:::
+
+### Rust
+
+To work with Rust, you need to install it first. You can find a well-documented install step-by-step in the [Install page from Rust](https://www.rust-lang.org/tools/install).
+
+### Rustup
+
+For Mac/Linux users:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+rustup default stable && rustup target list --installed && rustup target add wasm32-unknown-unknown
+```
+
+### Docker
+
+Containerization technology that enables the creation and use of Linux® containers. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).
+
+# Install the CosmWasm VM
 
 ```bash
 git clone https://github.com/dymensionxyz/wasm.git --branch v0.1.3-alpha
@@ -18,4 +42,14 @@ go mod download
 make install
 ```
 
-Once installed move on [next](../register-rollapp.md) to registering your RollApp!
+# Instantiating the CosmWasm RollApp
+
+In the Wasm directory, we have a helpful bash script that allows you to instantiate a local CosmWasm RollApp.
+
+Run the following from within the `wasm` directory:
+
+```bash
+bash init.sh
+```
+
+This bash script does everything needed to initialize your EVM RollApp. Once you're ready move on [next](/docs/developers/run/overview.md) to running your RollApp!

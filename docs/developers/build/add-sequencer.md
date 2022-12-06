@@ -4,9 +4,7 @@ order: 4
 slug: add-sequencer
 ---
 
-## Attach a Sequencer to the RollApp
-
-RollApp's have sequencer that process transactions and post it to the base layers for security. Sequencers utilize the [Dymint](https://github.com/dymensionxyz/dymint) processing and networking engine that powers the consensus-free blockchain called RollApps.
+RollApp's have sequencers that process transactions and post them to the base layers for security. Sequencers utilize the [Dymint](https://github.com/dymensionxyz/dymint) processing and networking engine that powers the consensus-free blockchain called RollApps.
 
 Initialize and attach a Sequencer:
 
@@ -55,4 +53,6 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Now that we've registered the RollApp and attached a sequencer we can start our engine and run the RollApp!
+Developers have the option of integrating available virtual machines and adjusting the native Go modules of the RollApp Development Kit (RDK).
+
+In the next the section developers can choose between integrating the [CosmWasm VM](/docs/developers/build/install-vm/cosmwasm-install.md) and the [EVM](/docs/developers/build/install-vm/evm-install.md). Which one will you choose?

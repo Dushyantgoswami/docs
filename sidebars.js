@@ -55,10 +55,20 @@ const sidebars = {
                     label: "Build",
                     collapsed: true,
                     items: [
+                        // {
+                        //     type: "doc",
+                        //     label: "Overview",
+                        //     id: "developers/build/overview",
+                        // },
                         {
                             type: "doc",
-                            label: "Overview",
-                            id: "developers/build/overview",
+                            label: "Register RollApp",
+                            id: "developers/build/register-rollapp",
+                        },
+                        {
+                            type: "doc",
+                            label: "Add Sequencer",
+                            id: "developers/build/add-sequencer",
                         },
                         {
                             type: "category",
@@ -77,16 +87,6 @@ const sidebars = {
                                 },
                             ],
                         },
-                        {
-                            type: "doc",
-                            label: "Register RollApp",
-                            id: "developers/build/register-rollapp",
-                        },
-                        {
-                            type: "doc",
-                            label: "Add Sequencer",
-                            id: "developers/build/add-sequencer",
-                        },
                     ],
                 },
                 {
@@ -95,11 +95,6 @@ const sidebars = {
                     collapsed: true,
                     items: [
                         {
-                            type: "doc",
-                            label: "Overview",
-                            id: "developers/run/overview",
-                        },
-                        {
                             type: "category",
                             label: "Run the RollApp",
                             collapsed: true,
@@ -107,12 +102,12 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Mock data layer",
-                                    id: "developers/run/connect-data-layer/mock",
+                                    id: "developers/run/run-rollapp/mock-da-layer",
                                 },
                                 {
                                     type: "doc",
                                     label: "Celestia",
-                                    id: "developers/run/connect-data-layer/celestia",
+                                    id: "developers/run/run-rollapp/celestia",
                                 },
                             ],
                         },

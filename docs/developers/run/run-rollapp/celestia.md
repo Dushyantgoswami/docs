@@ -1,13 +1,11 @@
 ---
-title: "Celestia DA"
+title: "Run the RollApp"
 slug: "celestia"
 hidden: false
 hide_table_of_contents: true
 ---
 
-# Celestia
-
-## Overview
+## Celestia DA
 
 So far we've run the RollApp with a mock data availablity (DA) layer. In this section we'll see how to replace the mock with Celestia's DA layer.<br/>
 
@@ -162,7 +160,7 @@ Run the RollApp:
   --dymint.block_time 0.2s
 ```
 
-Walla! At this point you should have a running RollApp which writes it's data to Celestia and it's state to the dymension settlement layer!<br/>
+Walla! At this point you should have a running RollApp which writes it's data to Celestia and it's state to the Dymension Hub!<br/>
 
 :::warning Note
 For local development purposes we recommend working with a mock DA layer to prevent unexpected behaviors.<br/>

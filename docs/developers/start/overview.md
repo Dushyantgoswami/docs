@@ -5,10 +5,8 @@ parent:
     number: 0
 tag: deep-dive
 order: 0
-title: Build Your Own RollApp
+title: Overview
 ---
-
-# Introduction
 
 Turn your smart contract into a blockchain with Dymension's RollApp Development Kit (RDK). Dymension provides the tools for seamlessly deploying a blockchain.
 

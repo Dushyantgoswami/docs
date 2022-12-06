@@ -1,11 +1,9 @@
 ---
-title: "Mock DA"
+title: "Run the RollApp"
 slug: "mock"
 hidden: false
 hide_table_of_contents: true
 ---
-
-## Run the Dymension RollApp
 
 Before running the RollApp sequencer let's dive a bit deepr at some arguments we can play with.
 

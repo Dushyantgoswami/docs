@@ -6,8 +6,6 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-# Register the RollApp on the Dymension Hub
-
 Open a new terminal window. Set the relevant environment variables for first creating a RollApp
 on the Dymension Hub.
 
@@ -18,7 +16,7 @@ CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
 ```
 
-Send a transaction to the Dymension Hub to create a RollApp:
+Send a transaction to the Dymension Hub to create a namespace for the RollApp:
 
 ```bash
 dymd tx rollapp create-rollapp "$ROLLAPP_ID" stamp1 "genesis-path/1" 3 100 '{"Addresses":[]}' \
