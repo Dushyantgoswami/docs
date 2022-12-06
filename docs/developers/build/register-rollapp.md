@@ -6,9 +6,11 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-In a production environment, developers are able to modify Go modules for their business logic needs. However, to make the developers life a bit easier, we provide instructions on how to implement a virtual machine (e.g. CosmWasm and EVM) within your own RollApp. With a virtual machine, developers are able to deploy smart contracts with all of the benefits of deploying you own blockchain.
+The [RollApp Development Kit (RDK)](https://github.com/dymensionxyz/rdk) is currently in the developmental stage. In a production environment, developers will be able to modify Go modules for their custom business logic needs.
 
-The RollApp Development Kit (RDK) is currently in the developmental stage. While developers will be able to add their own custom modules to their RollApp, currently we would like to demonstrate how to turn a smart contract into a blockchain! So we put the power into your hands, do you want a CosmWasm RollApp or an EVM RollApp?
+We provide instructions on how to integrate a virtual machine (e.g. CosmWasm and EVM) into your own RollApp. With a virtual machine developers are able to deploy smart contracts with all of the benefits of owning your own blockchain. Currently, RollApps support [CosmWasm](/docs/developers/build/install-vm/cosmwasm.md) and the [EVM](/docs/developers/build/install-vm/evm.md). But RollApp tech stack is a growing ecosystem and we expect new VMs to be released in the near future.
+
+Let's build our RollApp, first we must register it with our running [Dymension Hub node](/docs/developers/start/run-a-hub-node.md).
 
 # Register the RollApp
 

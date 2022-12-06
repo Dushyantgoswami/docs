@@ -55,11 +55,6 @@ const sidebars = {
                     label: "Build",
                     collapsed: true,
                     items: [
-                        // {
-                        //     type: "doc",
-                        //     label: "Overview",
-                        //     id: "developers/build/overview",
-                        // },
                         {
                             type: "doc",
                             label: "Register RollApp",
@@ -78,12 +73,12 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "CosmWasm",
-                                    id: "developers/build/install-vm/cosmwasm-install",
+                                    id: "developers/build/install-vm/cosmwasm",
                                 },
                                 {
                                     type: "doc",
                                     label: "EVM",
-                                    id: "developers/build/install-vm/evm-install",
+                                    id: "developers/build/install-vm/evm",
                                 },
                             ],
                         },
