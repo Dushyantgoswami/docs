@@ -4,6 +4,8 @@ slug: "/"
 hidden: false
 sidebar_position: 1
 hide_table_of_contents: true
+image: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.com/o/docs-preview.png?alt=media&token=5a0595df-f6f1-4a2f-8a74-9838c1db35c5
+image_url: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.com/o/docs-preview.png?alt=media&token=5a0595df-f6f1-4a2f-8a74-9838c1db35c5
 ---
 
 <div class="card image-card overlay-primary">
