@@ -1,6 +1,6 @@
 ---
-title: "Validators Overview"
-slug: "index"
+title: Full Node Overview
+slug: overview
 hidden: false
 sidebar_position: 0
 hide_table_of_contents: true

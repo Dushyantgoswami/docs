@@ -1,5 +1,5 @@
 ---
-title: CosmWasm environment
+title: CosmWasm
 slug: setup
 ---
 
@@ -7,7 +7,7 @@ In this tutorial we will demonstrate how to deploy a smart contract in [Rust](ht
 
 Reviewing the CosmWasm documentation [here](https://docs.cosmwasm.com/docs/1.0/) will provide an in-depth overview of CosmWasm.
 
-## CosmWasm installations
+## Required installations
 
 ### Rust
 
@@ -27,7 +27,7 @@ rustup default stable && rustup target list --installed && rustup target add was
 
 Containerization technology that enables the creation and use of Linux® containers. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).
 
-# Install the CosmWasm VM
+## Install the CosmWasm VM
 
 ```bash
 git clone https://github.com/dymensionxyz/wasm.git --branch v0.1.3-alpha
@@ -37,7 +37,7 @@ go mod download
 make install
 ```
 
-# Starting the CosmWasm environment
+## Starting the CosmWasm environment
 
 In the Wasm directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
 

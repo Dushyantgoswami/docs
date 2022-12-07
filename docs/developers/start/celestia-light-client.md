@@ -84,7 +84,7 @@ docker exec -i <docker id> sh -c "cel-key show dymension-test --keyring-backend 
 Take the address and post it in the Celestia arabica-faucet channel on Discord to request faucet tokens:
 
 ```bash
-$request celestia12les8l8gzsacjjxwum9wdy7pe8x9kdjqch4gyw
+$request <CELESTIA_ADDRESS>
 ```
 
 Check the running Celestia light node:

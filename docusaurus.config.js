@@ -71,9 +71,9 @@ const config = {
                         to: "developers/start/setup",
                     },
                     {
-                        label: "Validator",
+                        label: "Full node",
                         position: "right",
-                        to: "full-node/index",
+                        to: "full-node/overview",
                     },
                     {
                         href: "https://github.com/dymensionxyz",

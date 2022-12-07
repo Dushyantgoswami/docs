@@ -1,4 +1,4 @@
 ---
-title: RDK environment
+title: RDK Modules
 slug: rdk
 ---

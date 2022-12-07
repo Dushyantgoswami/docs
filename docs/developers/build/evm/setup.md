@@ -1,5 +1,5 @@
 ---
-title: EVM environment
+title: EVM
 slug: evm
 ---
 
@@ -15,7 +15,7 @@ The smart contract we will use for this tutorial is a simple contract implementa
 Before we continue please visit our [Setup Work Environment](/docs/developers/start/setup.md) page to make sure you have the proper software installed.
 :::
 
-## EVM installations
+## Required installations
 
 ### NPM
 
@@ -52,7 +52,7 @@ go mod download
 make install
 ```
 
-# Starting the EVM environment
+## Starting the EVM environment
 
 In the Ethermint directory, we have a helpful bash script that allows you to instantiate and start a local EVM environment.
 

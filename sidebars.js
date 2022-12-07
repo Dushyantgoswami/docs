@@ -148,33 +148,55 @@ const sidebars = {
                             label: "Query Celestia",
                             id: "developers/play/query-celestia",
                         },
-                        {
-                            type: "doc",
-                            label: "Global fees",
-                            id: "developers/play/global-fees",
-                        },
                     ],
                 },
             ],
         },
         {
             type: "category",
-            label: "Validator",
+            label: "Full node",
             items: [
                 {
                     type: "doc",
-                    label: "Overview",
-                    id: "full-node/index",
+                    label: "Node FAQs",
+                    id: "full-node/overview",
                 },
                 {
-                    type: "doc",
-                    label: "Run a node",
-                    id: "full-node/run-a-node",
+                    type: "category",
+                    label: "Dymension Hub validator",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Testnet",
+                            id: "full-node/dymension-hub/testnet",
+                        },
+                        {
+                            type: "doc",
+                            label: "Localnet",
+                            id: "full-node/dymension-hub/localnet",
+                        },
+                        {
+                            type: "doc",
+                            label: "Upgrades",
+                            id: "full-node/dymension-hub/upgrades",
+                        },
+                        {
+                            type: "doc",
+                            label: "Rest and troubleshooting",
+                            id: "full-node/dymension-hub/reset-node",
+                        },
+                    ],
                 },
                 {
-                    type: "doc",
-                    label: "Reset and troubleshooting",
-                    id: "full-node/reset-node",
+                    type: "category",
+                    label: "RollApp node",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Overview",
+                            id: "full-node/rollapps/index",
+                        },
+                    ],
                 },
             ],
         },
