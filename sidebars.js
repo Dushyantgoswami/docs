@@ -38,11 +38,11 @@ const sidebars = {
                             label: "Setup Environment",
                             id: "developers/start/setup",
                         },
-                        {
-                            type: "doc",
-                            label: "Quick Start RollApp",
-                            id: "developers/start/quick-start",
-                        },
+                        // {
+                        //     type: "doc",
+                        //     label: "Quick Start RollApp",
+                        //     id: "developers/start/quick-start",
+                        // },
                         {
                             type: "doc",
                             label: "Dymension Hub Node",
@@ -78,7 +78,7 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "RDK",
-                                    id: "developers/build/rdk/rdk",
+                                    id: "developers/build/rdk/setup",
                                 },
                                 {
                                     type: "doc",
@@ -95,27 +95,27 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Setup",
-                                    id: "developers/build/wasm/cosmwasm",
+                                    id: "developers/build/cosmwasm/setup",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Setup",
-                                    id: "developers/build/wasm/cosmwasm/deploy",
+                                    label: "Deploy",
+                                    id: "developers/build/cosmwasm/deploy",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Setup",
-                                    id: "developers/build/wasm/cosmwasm/interact",
+                                    label: "Interact",
+                                    id: "developers/build/cosmwasm/interact",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Query Blocks",
+                                    label: "Query",
                                     id: "developers/build/query",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Setup",
-                                    id: "developers/build/wasm/cosmwasm/add-keplr-wallet",
+                                    label: "Add Wallet",
+                                    id: "developers/build/cosmwasm/add-keplr-wallet",
                                 },
                             ],
                         },
@@ -127,17 +127,17 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Setup",
-                                    id: "developers/build/evm/evm",
+                                    id: "developers/build/evm/setup",
                                 },
                                 {
                                     type: "doc",
                                     label: "Setup",
-                                    id: "developers/build/evm/evm/create",
+                                    id: "developers/build/evm/create",
                                 },
                                 {
                                     type: "doc",
                                     label: "Setup",
-                                    id: "developers/build/evm/evm/deploy",
+                                    id: "developers/build/evm/deploy",
                                 },
                                 {
                                     type: "doc",
@@ -147,7 +147,7 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Setup",
-                                    id: "developers/build/evm/evm/add-metamask-wallet",
+                                    id: "developers/build/evm/add-metamask-wallet",
                                 },
                             ],
                         },

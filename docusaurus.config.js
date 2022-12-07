@@ -95,7 +95,7 @@ const config = {
                             {
                                 type: "doc",
                                 label: "Build",
-                                docId: "developers/build/rdk/rdk",
+                                docId: "developers/build/rdk/setup",
                             },
                             // {
                             //     type: "doc",
