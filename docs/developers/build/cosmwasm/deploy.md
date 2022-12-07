@@ -1,6 +1,5 @@
 ---
 title: "Deploy a smart contract"
-order: 4
 slug: deploy
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: CosmWasm environment
-slug: cosmwasm
+slug: setup
 ---
 
 In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. Coupling the safety and ease-of-use of CosmWasm with the flexibility and speed of RollApps is a powerful developmental framework.
@@ -8,10 +8,6 @@ In this tutorial we will demonstrate how to deploy a smart contract in [Rust](ht
 Reviewing the CosmWasm documentation [here](https://docs.cosmwasm.com/docs/1.0/) will provide an in-depth overview of CosmWasm.
 
 ## CosmWasm installations
-
-:::info Note
-For developers who are looking to build a RollApp with a CosmWasm Virtual Machine, the following installations are required to follow the tutorial:
-:::
 
 ### Rust
 
@@ -41,9 +37,9 @@ go mod download
 make install
 ```
 
-# Instantiate the Genesis Event
+# Starting the CosmWasm environment
 
-In the Wasm directory, we have a helpful bash script that allows you to instantiate the Genesis parameters for your RollApp.
+In the Wasm directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
 
 Run the following from within the `wasm` directory:
 
@@ -51,4 +47,4 @@ Run the following from within the `wasm` directory:
 bash init.sh
 ```
 
-This bash script does everything needed to instantiate the Genesis parameters for your RollApp. Once you're ready, move on to [running your RollApp!](/docs/developers/run/data-layer/mock.md)
+This bash script does everything needed to start your CosmWasm environment. Once you're ready move on [next](/docs/developers/build/cosmwasm/deploy.md) to deploying a smart contract for your `Counter RollApp`!

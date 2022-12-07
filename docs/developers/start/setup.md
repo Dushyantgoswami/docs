@@ -1,9 +1,9 @@
 ---
-title: Build your RollApp
+title: Setup your Work Environment
 slug: setup
 ---
 
-The following tutorial will guide developers on how to deploy a simple `Counter RollApp` with the developers choice of application environment. Developers may utilize the tooling they are most comfortable with. Currently available is developing with Go modules via the [RDK](/docs/developers/build/application-env/rdk.md) or using a virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
+The following tutorial will guide developers on how to deploy a `Counter RollApp` with the developers choice of application environment. Currently available is developing with Go modules via the [RDK](/docs/developers/build/application-env/rdk.md) or using a virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
 
 :::info NOTE:
 Installing the appropriate version of Go and Ignite CLI are required for all RollApp tutorials.

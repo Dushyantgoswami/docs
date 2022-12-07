@@ -1,6 +1,5 @@
 ---
 title: "Integrate Metamask"
-order: 5
 slug: add-metamask-wallet
 ---
 

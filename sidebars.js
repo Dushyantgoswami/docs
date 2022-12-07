@@ -131,22 +131,22 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Setup",
+                                    label: "Create",
                                     id: "developers/build/evm/create",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Setup",
+                                    label: "Deploy",
                                     id: "developers/build/evm/deploy",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Query Blocks",
+                                    label: "Query",
                                     id: "developers/build/query",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Setup",
+                                    label: "Add Wallet",
                                     id: "developers/build/evm/add-metamask-wallet",
                                 },
                             ],

@@ -1,6 +1,5 @@
 ---
 title: "Interact with the contract"
-order: 5
 slug: interact
 ---
 

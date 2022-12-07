@@ -1,6 +1,5 @@
 ---
 title: "Create a smart contract"
-order: 3
 slug: create
 ---
 

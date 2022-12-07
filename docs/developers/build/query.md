@@ -1,9 +1,6 @@
 ---
 title: "View RollApp state"
 slug: "query-rollapp"
-hidden: false
-sidebar_position: 4
-hide_table_of_contents: true
 ---
 
 While our sequencer is running, it keeps sending updates to the Dymension Hub. In this section we will query the Dymension Hub

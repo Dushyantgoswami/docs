@@ -17,10 +17,6 @@ Before we continue please visit our [Setup Work Environment](/docs/developers/st
 
 ## EVM installations
 
-:::info Note
-For developers who are looking to build a RollApp with a Ethereum Virtual Machine, the following installations are required to follow the tutorial:
-:::
-
 ### NPM
 
 NPM is a package manager and the world's largest software registry. To install, head to the [Install npm page](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
@@ -56,9 +52,9 @@ go mod download
 make install
 ```
 
-# Instantiating the EVM RollApp
+# Starting the EVM environment
 
-In the Ethermint directory, we have a helpful bash script that allows you to instantiate a local EVM RollApp.
+In the Ethermint directory, we have a helpful bash script that allows you to instantiate and start a local EVM environment.
 
 Run the following from within the `ethermint` directory:
 
@@ -66,4 +62,4 @@ Run the following from within the `ethermint` directory:
 bash init.sh
 ```
 
-This bash script does everything needed to initialize your EVM RollApp. Once you're ready move on [next](/docs/developers/run/overview.md) to running your RollApp!
+This bash script does everything needed to start your EVM environment. Once you're ready move on [next](/docs/developers/build/evm/create.md) to deploying a smart contract for your `Counter RollApp`!
