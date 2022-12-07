@@ -1,5 +1,5 @@
 ---
-title: Setup your Work Environment
+title: Setup Work Environment
 slug: setup
 ---
 

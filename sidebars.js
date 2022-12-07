@@ -75,11 +75,6 @@ const sidebars = {
                                     label: "RDK",
                                     id: "developers/build/rdk/setup",
                                 },
-                                {
-                                    type: "doc",
-                                    label: "Query Blocks",
-                                    id: "developers/build/query",
-                                },
                             ],
                         },
                         {
@@ -101,11 +96,6 @@ const sidebars = {
                                     type: "doc",
                                     label: "Interact",
                                     id: "developers/build/cosmwasm/interact",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Query",
-                                    id: "developers/build/query",
                                 },
                                 {
                                     type: "doc",
@@ -136,11 +126,6 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Query",
-                                    id: "developers/build/query",
-                                },
-                                {
-                                    type: "doc",
                                     label: "Add Wallet",
                                     id: "developers/build/evm/add-metamask-wallet",
                                 },
@@ -148,23 +133,28 @@ const sidebars = {
                         },
                     ],
                 },
-                // {
-                //     type: "category",
-                //     label: "Play",
-                //     collapsed: true,
-                //     items: [
-                //         {
-                //             type: "doc",
-                //             label: "Query Hub",
-                //             id: "developers/play/query-hub",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Global fees",
-                //             id: "developers/play/global-fees",
-                //         },
-                //     ],
-                // },
+                {
+                    type: "category",
+                    label: "Play",
+                    collapsed: true,
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Query Dymension Hub",
+                            id: "developers/play/query-hub",
+                        },
+                        {
+                            type: "doc",
+                            label: "Query Celestia",
+                            id: "developers/play/query-celestia",
+                        },
+                        {
+                            type: "doc",
+                            label: "Global fees",
+                            id: "developers/play/global-fees",
+                        },
+                    ],
+                },
             ],
         },
         {

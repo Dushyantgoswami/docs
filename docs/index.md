@@ -31,7 +31,7 @@ hide_table_of_contents: true
             <a href="developers/start/setup" class="card-link stretched-link"> 
                 <h2 class="card-title">Developer</h2>
             </a>
-            <p class="card-text">Build your own RollApp and play with Testnet</p>
+            <p class="card-text">Build your own RollApp</p>
             <div class="card-actions">
                 <button class="action-button">Build</button>
             </div>
