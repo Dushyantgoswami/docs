@@ -97,11 +97,11 @@ const config = {
                                 label: "Build",
                                 docId: "developers/build/rdk/rdk",
                             },
-                            {
-                                type: "doc",
-                                label: "Play",
-                                docId: "developers/play/join-testnet",
-                            },
+                            // {
+                            //     type: "doc",
+                            //     label: "Play",
+                            //     docId: "developers/play/query-hub",
+                            // },
                         ],
                     },
                     {

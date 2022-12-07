@@ -38,7 +38,11 @@ const sidebars = {
                             label: "Setup Environment",
                             id: "developers/start/setup",
                         },
-
+                        {
+                            type: "doc",
+                            label: "Quick Start RollApp",
+                            id: "developers/start/quick-start",
+                        },
                         {
                             type: "doc",
                             label: "Dymension Hub Node",
@@ -149,28 +153,23 @@ const sidebars = {
                         },
                     ],
                 },
-                {
-                    type: "category",
-                    label: "Play",
-                    collapsed: true,
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Quick Start RollApp",
-                            id: "developers/play/quick-start",
-                        },
-                        {
-                            type: "doc",
-                            label: "Faucet",
-                            id: "developers/play/faucet",
-                        },
-                        {
-                            type: "doc",
-                            label: "Deploy Smart Contract",
-                            id: "developers/play/deploy-sc",
-                        },
-                    ],
-                },
+                // {
+                //     type: "category",
+                //     label: "Play",
+                //     collapsed: true,
+                //     items: [
+                //         {
+                //             type: "doc",
+                //             label: "Query Hub",
+                //             id: "developers/play/query-hub",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Global fees",
+                //             id: "developers/play/global-fees",
+                //         },
+                //     ],
+                // },
             ],
         },
         {
