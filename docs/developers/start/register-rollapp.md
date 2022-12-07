@@ -1,13 +1,9 @@
 ---
-title: Build your RollApp
+title: Register your RollApp
 slug: register-rollapp
 ---
 
-Before we build our `Counter RollApp` make sure to have installed the proper version of your [work environment](/docs/developers/start/setup.md) and have a Dymension Hub [node](/docs/developers/start/run-a-hub-node.md) running.
-
-# Register the RollApp
-
-First we must register it with the Dymension Hub. Open a new terminal window. Set the relevant environment variables for first creating a RollApp.
+To build our `Counter RollApp` we must first register it with the Dymension Hub. Open a new terminal window. Set the relevant environment variables for first creating a RollApp.
 
 ```bash
 ROLLAPP_ID="counter-rollapp"

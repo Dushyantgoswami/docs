@@ -52,8 +52,8 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Now that we've registered our RollApp and attached a Sequencer to the RollApp, we will next choose the application environment you would like to work in.
+Now that we've set up our Dymension Hub node for posting state updates, Celestia light client for publishing data, registered our RollApp and attached a Sequencer, we will next choose the application environment you would like to work in.
 
 Dymension puts the power into the developer's hands. Developers have the option of working directly with the [RDK](/docs/developers/build/rdk/setup.md) modules or integrating a virtual machine such as the [CosmWasm VM](/docs/developers/build/cosmwasm/setup.md) and the [EVM](/docs/developers/build/evm/setup.md).
 
-#### Which application environment will you choose?
+#### Which application environment will you build with?

@@ -38,11 +38,6 @@ const sidebars = {
                             label: "Setup Environment",
                             id: "developers/start/setup",
                         },
-                        // {
-                        //     type: "doc",
-                        //     label: "Quick Start RollApp",
-                        //     id: "developers/start/quick-start",
-                        // },
                         {
                             type: "doc",
                             label: "Dymension Hub Node",

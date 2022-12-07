@@ -50,7 +50,7 @@ const config = {
             docs: {
                 sidebar: {
                     autoCollapseCategories: true,
-                    hideable: true,
+                    hideable: false,
                 },
             },
             navbar: {
@@ -61,70 +61,19 @@ const config = {
                 },
                 items: [
                     {
-                        type: "dropdown",
                         label: "Learn",
                         position: "right",
-                        items: [
-                            {
-                                label: "Modular Architecture",
-                                type: "doc",
-                                docId: "learn/modular-intro",
-                            },
-                            {
-                                label: "Dymension Hub",
-                                type: "doc",
-                                docId: "learn/dymension-hub",
-                            },
-                            {
-                                label: "RollApps",
-                                type: "doc",
-                                docId: "learn/rollapps",
-                            },
-                        ],
+                        to: "learn/modular-intro",
                     },
                     {
-                        type: "dropdown",
                         label: "Developer",
                         position: "right",
-                        items: [
-                            {
-                                type: "doc",
-                                label: "Start",
-                                docId: "developers/start/setup",
-                            },
-                            {
-                                type: "doc",
-                                label: "Build",
-                                docId: "developers/build/rdk/setup",
-                            },
-                            // {
-                            //     type: "doc",
-                            //     label: "Play",
-                            //     docId: "developers/play/query-hub",
-                            // },
-                        ],
+                        to: "developers/start/setup",
                     },
                     {
-                        type: "dropdown",
                         label: "Validator",
                         position: "right",
-                        items: [
-                            {
-                                type: "doc",
-                                label: "Overview",
-                                docId: "full-node/index",
-                            },
-                            {
-                                type: "doc",
-                                label: "Run a node",
-                                docId: "full-node/run-a-node",
-                            },
-                            {
-                                type: "doc",
-                                label: "Reset and troubleshooting",
-                                docId: "full-node/reset-node",
-                            },
-                        ],
+                        to: "full-node/index",
                     },
                     {
                         href: "https://github.com/dymensionxyz",
