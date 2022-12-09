@@ -3,10 +3,7 @@ title: "Deploy the smart contract"
 slug: deploy
 ---
 
-# Deploy the Solidity contract
-
-Now that we have our [contract created](create.md) let's see how to deploy it to the EVM RollApp
-and test it.
+Now that we [created](create.md) the smart contract, let's see how to deploy it to the EVM RollApp and test it.
 
 ## Contract deployment
 
@@ -38,4 +35,4 @@ Compiling your contracts...
   1 passing (2s)
 ```
 
-Next, let's see how to connect our EVM RollApp to metamask.
+Next, let's see how to connect our EVM RollApp to Metamask.

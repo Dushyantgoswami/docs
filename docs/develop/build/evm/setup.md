@@ -3,19 +3,9 @@ title: EVM
 slug: evm
 ---
 
-Did you ever want your own super fast Ethereum blockchain?
-
-With EVM RollApps now you can have your own Ethereum Virtual Machine. Many developers are comfortable with the easy to learn, wildly flexible, and incredibly successful Ethereum Virtual Machine. The incredible work produced by the [EVMOS](https://github.com/evmos/ethermint) team brought the EVM to the Cosmos stack. Now we're taking it one step further into the RollApp ecosystem. What will you re-imagine when you combine the speed and flexibility of RollApps with the ease-of-use and amazing developer community of the Ethereum Virtual Machine.
-
 In the following EVM RollApp tutorial we will demonstrate how to deploy a [Solidity](https://docs.soliditylang.org/) smart contract using [truffle](https://trufflesuite.com/) on top of an EVM RollApp.
 
-The smart contract we will use for this tutorial is a simple contract implementation of a counter functionallity, but this is just a glimpse of the power that combining RollApps with the EVM unlocks. We're looking forward to seeing the ingenuity of EVM developers!
-
-:::info NOTE:
-Before we continue please visit our [Setup Work Environment](/docs/developers/start/setup.md) page to make sure you have the proper software installed.
-:::
-
-## Required installations
+## Step 1: Required installations
 
 ### NPM
 
@@ -23,10 +13,9 @@ NPM is a package manager and the world's largest software registry. To install, 
 
 ### Truffle
 
-Truffle is a a development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier.<br/>
-Assuming you've already installed npm you can simply run `npm install -g truffle` for truffle installation.
+Truffle is a a development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier.
 
-Next let's see how to run an EVM RollApp sequencer!
+Assuming you've already installed npm you can simply run `npm install -g truffle` for truffle installation.
 
 :::info Note
 Please make sure you are using the correct `node` version as `truffle` works with specific versions.<br/>
@@ -42,7 +31,7 @@ Web3.js v1.7.4
 
 ::::
 
-## Install Ethermint for your RollApp
+## Step 2: Install Ethermint for your RollApp
 
 ```bash
 git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.2-alpha-ethermint-v0.18.0
@@ -52,14 +41,20 @@ go mod download
 make install
 ```
 
-## Starting the EVM environment
+## Step 3: Starting the EVM environment
 
 In the Ethermint directory, we have a helpful bash script that allows you to instantiate and start a local EVM environment.
 
-Run the following from within the `ethermint` directory:
+If you followed the [Get Started](/docs/develop/get-started/setup.md) tutorial please run the following script from within the `ethermint` directory:
 
 ```bash
 bash init.sh
 ```
 
-This bash script does everything needed to start your EVM environment. Once you're ready move on [next](/docs/developers/build/evm/create.md) to deploying a smart contract for your `Counter RollApp`!
+If you would like to run the EVM RollApp with a mock base layer please run the following script from within the `ethermint` directory:
+
+```bash
+bash simulation-init.sh
+```
+
+This bash script does everything needed to start your EVM environment. Once you're ready move on [next](/docs/develop/build/evm/create.md) to creating a smart contract for your RollApp!

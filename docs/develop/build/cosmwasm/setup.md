@@ -3,7 +3,7 @@ title: CosmWasm
 slug: setup
 ---
 
-In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. Reviewing the CosmWasm documentation [here](https://docs.cosmwasm.com/docs/1.0/) will provide an in-depth overview of CosmWasm.
+In this tutorial we will demonstrate how to deploy a smart contract using the CosmWasm virtual machine. CosmWasm [documentation](https://docs.cosmwasm.com/docs/1.0/) is a more in-depth source of information for working with the framework.
 
 ## Step 1: Required installations
 

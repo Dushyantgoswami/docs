@@ -3,10 +3,7 @@ title: "Create a smart contract"
 slug: create
 ---
 
-# Create a solidity smart contract
-
-In the next section we will go over on how to create a [truffle](https://trufflesuite.com/) project
-which we'll use for development of the solidity smart contract.
+In this section we will go over how to create a [truffle](https://trufflesuite.com/) project that we'll use for developing the Solidity smart contract.
 
 ## Create and init a truffle project
 
@@ -79,4 +76,4 @@ development: {
 truffle compile
 ```
 
-We now have a complied solidity contract! in the next section we'll go over on how to deploy and test it.
+We now have a complied solidity contract! In the next section we'll go over how to deploy and test it.
