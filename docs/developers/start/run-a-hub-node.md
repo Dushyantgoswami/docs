@@ -3,13 +3,13 @@ title: Run a Dymension Hub node
 slug: run-a-node
 ---
 
-The following steps will guide you in configuring and running a Dymension Hub node. This is useful for local developement and understanding the interactions developers may be required to handle with the Dymension Hub (e.g. initializing a new RollApp).
+The following steps will guide you in configuring and running a Dymension Hub node for local development.
 
 :::info Note
-Testnet and Mainnet production environments do not require installing and running a Dymension Hub node, that is handled by a public network of full nodes.
+Testnet and Mainnet production environments do not require a Dymension Hub node, that is handled by a public network of full nodes.
 ::::
 
-#### Step 1: Install Dymension Hub binaries:
+#### Step 1: Install Dymension Hub:
 
 ```bash
 git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha

@@ -6,7 +6,7 @@ sidebar_position: 0
 hide_table_of_contents: true
 ---
 
-# Overview
+# Node FAQs
 
 The Dymension Hub uses [Tendermint Core](https://github.com/tendermint/tendermint/blob/master/docs/introduction/what-is-tendermint.md) that relies on a set of validators that are responsible for committing and signing new blocks in the blockchain. These validators run full nodes and participate in the consensus protocol by broadcasting votes which contain signatures signed by each validator's private key.
 

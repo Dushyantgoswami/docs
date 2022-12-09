@@ -148,6 +148,16 @@ const sidebars = {
                             label: "Query Celestia",
                             id: "developers/play/query-celestia",
                         },
+                        {
+                            type: "doc",
+                            label: "Genesis file",
+                            id: "developers/play/genesis-file",
+                        },
+                        {
+                            type: "doc",
+                            label: "Public endpoints",
+                            id: "developers/play/endpoints",
+                        },
                     ],
                 },
             ],
