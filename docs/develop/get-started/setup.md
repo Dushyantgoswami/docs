@@ -4,7 +4,12 @@ slug: setup
 ---
 
 :::info NOTE:
-The following RollApp tutorials will explore developing with the [RDK](https://github.com/dymensionxyz/rdk) and [Dymint](https://github.com/dymensionxyz/dymint), which are still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our [Discord](http://discord.gg/dymension).
+The `Get Started` section will demonstrate how set up a Dymension Hub node and Celestia light client for a RollApp to publish state updates and transaction data, respectively. If you would like to build locally with only a RollApp full node, please skip to the relevant RollApp application environment:
+
+-   [RDK modules](/docs/develop/build/rdk/setup.md)
+-   [CosmWasm](/docs/develop/build/cosmwasm/setup.md)
+-   [EVM](/docs/develop/build/evm/setup.md)
+
 :::
 
 # Installation requirements
