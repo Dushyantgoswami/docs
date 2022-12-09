@@ -3,10 +3,10 @@ title: Register your RollApp
 slug: register-rollapp
 ---
 
-To build our `Counter RollApp` we must first register it with the Dymension Hub. Open a new terminal window. Set the relevant environment variables for first creating a RollApp.
+To build our RollApp we must first register it with the Dymension Hub. Open a new terminal window. Set the relevant environment variables for first creating a RollApp:
 
 ```bash
-ROLLAPP_ID="counter-rollapp"
+ROLLAPP_ID="local-rollapp"
 MONIKER_NAME="local"
 CHAIN_ID="local-testnet"
 KEY_NAME="local-user"
@@ -55,4 +55,4 @@ rollapp:
 
 Contrary to general purpose smart contract blockchains, querying the state of the Dymension Hub blockchain allows users and applications to understand which RollApps exist in the ecosystem. This is what is often regarded as the embedded logic of RollApps in the Dymension Hub.
 
-#### Let's add a sequencer to the RollApp...
+#### Let's add a sequencer to our RollApp...

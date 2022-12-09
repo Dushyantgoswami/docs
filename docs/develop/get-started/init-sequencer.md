@@ -3,7 +3,7 @@ title: "RollApp sequencer"
 slug: init-sequencer
 ---
 
-Like a validator, RollApp sequencers processes transactions, produces RollApp blocks, and submit a batched set of blocks to the base layers for security. Sequencers utilize the [Dymint](https://github.com/dymensionxyz/dymint) processing and networking engine that powers the consensus-free blockchain called RollApps.
+Like a validator, RollApp sequencers process transactions, produce RollApp blocks, and submit a batched set of blocks for security.
 
 # Create a sequencer account
 
@@ -52,6 +52,6 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Next we will choose the application environment you would like to work in. Developers have the option of working directly with the [RDK](/docs/developers/build/rdk/setup.md) modules or integrating a virtual machine such as the [CosmWasm VM](/docs/developers/build/cosmwasm/setup.md) and the [EVM](/docs/developers/build/evm/setup.md).
+Next we will choose the application environment you would like to build in. Developers have the option of building a RollApp with Go modules by working directly with the [RDK](/docs/develop/build/rdk/setup.md) or integrating through a virtual machine such as the [CosmWasm VM](/docs/develop/build/cosmwasm/setup.md) and the [EVM](/docs/develop/build/evm/setup.md).
 
 #### Which application environment will you build with?
