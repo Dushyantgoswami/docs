@@ -1,13 +1,10 @@
 ---
-title: Setup Work Environment
+title: Let's build a RollApp!
 slug: setup
 ---
 
-The following tutorial will guide developers on how to build a `Counter RollApp` with the developers choice of application environment. Currently available is developing with Go modules via the [RDK](/docs/developers/build/application-env/rdk.md) or using a virtual machine such as the [CosmWasm VM](/docs/developers/build/application-env/cosmwasm.md) and the [EVM](/docs/developers/build/application-env/evm.md).
-
 :::info NOTE:
-Installing the appropriate version of Go and Ignite CLI are required for all RollApp tutorials.
-The tutorials will explore developing with the [RDK](https://github.com/dymensionxyz/rdk) and [Dymint](https://github.com/dymensionxyz/dymint), which are still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our [Discord](http://discord.gg/dymension).
+The following RollApp tutorials will explore developing with the [RDK](https://github.com/dymensionxyz/rdk) and [Dymint](https://github.com/dymensionxyz/dymint), which are still in Alpha stage. If you run into bugs, please write a Github Issue ticket or let us know in our [Discord](http://discord.gg/dymension).
 :::
 
 # Installation requirements

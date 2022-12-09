@@ -3,7 +3,7 @@ title: Run a Celestia light client
 slug: celestia-light-client
 ---
 
-In this section we'll integrate Celestia's testnet for publishing data. Celestia is a data availability layer that provides a scalable solution for publishing transaction data. You can read more about Celestia's data layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer).
+In this section we'll integrate Celestia's testnet for publishing data. You can read more about Celestia's data layer [here](https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer).
 
 :::info Note
 The following tutorial utilizes [Docker](https://docs.docker.com/engine/install/) to quickly bootstrap a Celestia light client. Developers may head over to Celestia's light client [tutorial](https://docs.celestia.org/nodes/light-node) for step-by-step instructions that do not involve Docker.
@@ -14,7 +14,15 @@ The following tutorial utilizes [Docker](https://docs.docker.com/engine/install/
 
 In order to write our RollApp batches to Celestia, we will need to run a funded Celestia light client.
 
-We've included a `Dockerfile` to expediate the bootstrap process:
+In a new terminal make a directory for our Celestia light client:
+
+```bash
+mkdir dockerbuild
+cd dockerbuild
+touch Dockerfile
+```
+
+Save the following information in the `Dockerfile` we've created:
 
 ```Dockerfile
 FROM golang:1.19.2-alpine3.16 as go-builder
@@ -57,13 +65,13 @@ CMD celestia light start --core.ip $CELESTIA_BRIDGE_NODE_ENDPOINT --core.grpc.po
 
 ```
 
-From within the Docker directory run the following command:
+From within the dockerbuild directory run the following command:
 
 ```Dockerfile
 docker build -t celestia-light-client .
 ```
 
-Once the build is complete, issue the following command:
+Once the build is complete, issue the following command to see the Docker image:
 
 ```Dockerfile
 docker images
@@ -75,7 +83,7 @@ Run the Docker container:
 docker run -d -p 26659:26659 --name celestia-light-client celestia-light-client
 ```
 
-Upon build completion run the following command to get your Celestia wallet address:
+Upon completion of the build run the following command to get your Celestia wallet address:
 
 ```Dockerfile
 docker exec -i <docker id> sh -c "cel-key show dymension-test --keyring-backend test --node.type light" | grep "address"
@@ -93,6 +101,6 @@ Check the running Celestia light node:
 docker ps
 ```
 
-Walla! At this point you should have a running [Dymension Hub node](/docs/developers/start/run-a-hub-node.md) and Celestia light client!
+Walla! At this point you should have a running [Dymension Hub node](/docs/developers/start/run-a-hub-node.md) for posting state updates and Celestia light client for publishing transaction data!
 
-Next let's interact with the Dymension Hub and register our `Counter RollApp`!
+Next let's interact with the Dymension Hub and register our RollApp!

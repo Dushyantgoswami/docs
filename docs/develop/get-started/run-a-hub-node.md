@@ -6,7 +6,7 @@ slug: run-a-node
 The following steps will guide you in configuring and running a Dymension Hub node for local development.
 
 :::info Note
-Testnet and Mainnet production environments do not require a Dymension Hub node, that is handled by a public network of full nodes.
+Testnet and Mainnet production environments does not require running a Dymension Hub node, that is handled by a public network of full nodes.
 ::::
 
 #### Step 1: Install Dymension Hub:
