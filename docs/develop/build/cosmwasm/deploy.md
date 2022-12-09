@@ -5,13 +5,11 @@ slug: deploy
 
 # Deploy CosmWasm contract
 
-In the next section we will deploy a NameService contract on top of our Wasm RollApp. The goal of the NameService contract is to let users buy names and to set a value these names resolve to. The owner of a given name will be the current highest bidder.
-
 The following instructions are from the deploying a smart contract section of the [CosmWasm documentation](https://docs.cosmwasm.com/docs/1.0/getting-started/intro). For more information on building and deploying CosmWasm smart contracts please visit the CosmWasm documentation.
 
 ## Contract compilation
 
-Download and compile the smart contract:
+Open a new terminal window. Download and compile the following smart contract:
 
 ```bash
 # Download the repository
@@ -46,7 +44,7 @@ docker run --rm -v "$(pwd)":/code \
   cosmwasm/rust-optimizer:0.12.6
 ```
 
-Set an env var for the nameservice wasm file:
+Set an environmental variable for the nameservice wasm file:
 
 ```sh
 export WASM_FILE=artifacts/cw_nameservice.wasm

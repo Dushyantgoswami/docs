@@ -3,13 +3,9 @@ title: "Interact with the contract"
 slug: interact
 ---
 
-# Interact with the contract
-
-In this section we will interact with our newly deployed NameService contract.
-
 ## Contract Interaction
 
-Fetch some specific contract instance
+Fetch specific contract instances
 
 ```sh
 ALL_CONTRACTS=$(wasmd query wasm list-contract-by-code $CODE_ID --chain-id "$CHAIN_ID" --output json)
@@ -17,20 +13,20 @@ ALL_CONTRACTS=$(wasmd query wasm list-contract-by-code $CODE_ID --chain-id "$CHA
 CONTRACT=$(echo $ALL_CONTRACTS | jq -r '.contracts[-1]')
 ```
 
-Register two names in the NameService contract
+Register two names (Alice and Bob) in the NameService contract
 
 ```sh
 wasmd tx wasm execute $CONTRACT "{\"register\":{\"name\":\"bob\"}}" --amount 100uwasm --from $KEY_NAME $(echo $TX_FLAGS) -y
 wasmd tx wasm execute $CONTRACT "{\"register\":{\"name\":\"alice\"}}" --amount 100uwasm --from $KEY_NAME $(echo $TX_FLAGS) -y
 ```
 
-Query the contract info
+Query the contract information
 
 ```sh
 wasmd query wasm contract $CONTRACT --chain-id "$CHAIN_ID"
 ```
 
-Query the contract balances
+Query the contract balance
 
 ```sh
 wasmd query bank balances $CONTRACT --chain-id "$CHAIN_ID"

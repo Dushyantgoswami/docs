@@ -1,5 +1,5 @@
 ---
-title: "RollApp sequencer"
+title: "Add RollApp sequencer"
 slug: init-sequencer
 ---
 

@@ -3,11 +3,9 @@ title: CosmWasm
 slug: setup
 ---
 
-In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. Coupling the safety and ease-of-use of CosmWasm with the flexibility and speed of RollApps is a powerful developmental framework.
+In this tutorial we will demonstrate how to deploy a smart contract in [Rust](https://www.rust-lang.org/) using the CosmWasm virtual machine. Reviewing the CosmWasm documentation [here](https://docs.cosmwasm.com/docs/1.0/) will provide an in-depth overview of CosmWasm.
 
-Reviewing the CosmWasm documentation [here](https://docs.cosmwasm.com/docs/1.0/) will provide an in-depth overview of CosmWasm.
-
-## Required installations
+## Step 1: Required installations
 
 ### Rust
 
@@ -27,7 +25,7 @@ rustup default stable && rustup target list --installed && rustup target add was
 
 Containerization technology that enables the creation and use of Linux® containers. To install, head to the [Install Docker Engine page](https://docs.docker.com/engine/install/).
 
-## Install the CosmWasm VM
+## Step 2: Install the CosmWasm VM
 
 ```bash
 git clone https://github.com/dymensionxyz/wasm.git --branch v0.1.3-alpha
@@ -37,14 +35,20 @@ go mod download
 make install
 ```
 
-## Starting the CosmWasm environment
+## Step 3: Starting the CosmWasm environment
 
 In the Wasm directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
 
-Run the following from within the `wasm` directory:
+If you followed the [Get Started](/docs/develop/get-started/setup.md) tutorial please run the following script from within the `wasm` directory:
 
 ```bash
 bash init.sh
 ```
 
-This bash script does everything needed to start your CosmWasm environment. Once you're ready move on [next](/docs/developers/build/cosmwasm/deploy.md) to deploying a smart contract for your `Counter RollApp`!
+If you would like to run the CosmWasm RollApp with a mock base layer please run the following script from within the `wasm` directory:
+
+```bash
+bash simulation-init.sh
+```
+
+Once you're ready move on [next](/docs/develop/build/cosmwasm/deploy.md) to deploying a smart contract to your RollApp!
