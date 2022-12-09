@@ -66,14 +66,14 @@ const config = {
                         to: "learn/modular-intro",
                     },
                     {
-                        label: "Developer",
+                        label: "Develop",
                         position: "right",
-                        to: "developers/start/setup",
+                        to: "develop/get-started/setup",
                     },
                     {
-                        label: "Full node",
+                        label: "Validate",
                         position: "right",
-                        to: "full-node/overview",
+                        to: "validate/overview",
                     },
                     {
                         href: "https://github.com/dymensionxyz",

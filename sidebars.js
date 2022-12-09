@@ -25,138 +25,104 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Developer",
+            label: "Develop",
             collapsed: true,
             items: [
                 {
                     type: "category",
-                    label: "Start",
+                    label: "Get Started",
                     collapsed: true,
                     items: [
                         {
                             type: "doc",
                             label: "Setup Environment",
-                            id: "developers/start/setup",
+                            id: "develop/get-started/setup",
                         },
                         {
                             type: "doc",
                             label: "Dymension Hub Node",
-                            id: "developers/start/run-a-hub-node",
+                            id: "develop/get-started/run-a-hub-node",
                         },
                         {
                             type: "doc",
                             label: "Celestia Light Client",
-                            id: "developers/start/celestia-light-client",
+                            id: "develop/get-started/celestia-light-client",
                         },
                         {
                             type: "doc",
                             label: "Register RollApp",
-                            id: "developers/start/register-rollapp",
+                            id: "develop/get-started/register-rollapp",
                         },
                         {
                             type: "doc",
                             label: "Initialize Sequencer",
-                            id: "developers/start/init-sequencer",
+                            id: "develop/get-started/init-sequencer",
                         },
                     ],
                 },
                 {
                     type: "category",
-                    label: "Build",
+                    label: "RDK RollApp",
                     collapsed: true,
                     items: [
                         {
-                            type: "category",
-                            label: "RDK Modules",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "RDK",
-                                    id: "developers/build/rdk/setup",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
-                            label: "CosmWasm",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Setup",
-                                    id: "developers/build/cosmwasm/setup",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Deploy",
-                                    id: "developers/build/cosmwasm/deploy",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Interact",
-                                    id: "developers/build/cosmwasm/interact",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Add Wallet",
-                                    id: "developers/build/cosmwasm/add-keplr-wallet",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
-                            label: "EVM",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Setup",
-                                    id: "developers/build/evm/setup",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Create",
-                                    id: "developers/build/evm/create",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Deploy",
-                                    id: "developers/build/evm/deploy",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Add Wallet",
-                                    id: "developers/build/evm/add-metamask-wallet",
-                                },
-                            ],
+                            type: "doc",
+                            label: "RDK",
+                            id: "develop/build/rdk/setup",
                         },
                     ],
                 },
                 {
                     type: "category",
-                    label: "Play",
+                    label: "CosmWasm RollApp",
                     collapsed: true,
                     items: [
                         {
                             type: "doc",
-                            label: "Query Dymension Hub",
-                            id: "developers/play/query-hub",
+                            label: "Setup",
+                            id: "develop/build/cosmwasm/setup",
                         },
                         {
                             type: "doc",
-                            label: "Query Celestia",
-                            id: "developers/play/query-celestia",
+                            label: "Deploy",
+                            id: "develop/build/cosmwasm/deploy",
                         },
                         {
                             type: "doc",
-                            label: "Genesis file",
-                            id: "developers/play/genesis-file",
+                            label: "Interact",
+                            id: "develop/build/cosmwasm/interact",
                         },
                         {
                             type: "doc",
-                            label: "Public endpoints",
-                            id: "developers/play/endpoints",
+                            label: "Add Wallet",
+                            id: "develop/build/cosmwasm/add-keplr-wallet",
+                        },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "EVM RollApp",
+                    collapsed: true,
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Setup",
+                            id: "develop/build/evm/setup",
+                        },
+                        {
+                            type: "doc",
+                            label: "Create",
+                            id: "develop/build/evm/create",
+                        },
+                        {
+                            type: "doc",
+                            label: "Deploy",
+                            id: "develop/build/evm/deploy",
+                        },
+                        {
+                            type: "doc",
+                            label: "Add Wallet",
+                            id: "develop/build/evm/add-metamask-wallet",
                         },
                     ],
                 },
@@ -164,12 +130,12 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Full node",
+            label: "Validate",
             items: [
                 {
                     type: "doc",
                     label: "Node FAQs",
-                    id: "full-node/overview",
+                    id: "validate/overview",
                 },
                 {
                     type: "category",
@@ -178,33 +144,33 @@ const sidebars = {
                         {
                             type: "doc",
                             label: "Testnet",
-                            id: "full-node/dymension-hub/testnet",
+                            id: "validate/dymension-hub/testnet",
                         },
                         {
                             type: "doc",
                             label: "Localnet",
-                            id: "full-node/dymension-hub/localnet",
+                            id: "validate/dymension-hub/localnet",
                         },
                         {
                             type: "doc",
                             label: "Upgrades",
-                            id: "full-node/dymension-hub/upgrades",
+                            id: "validate/dymension-hub/upgrades",
                         },
                         {
                             type: "doc",
                             label: "Rest and troubleshooting",
-                            id: "full-node/dymension-hub/reset-node",
+                            id: "validate/dymension-hub/reset-node",
                         },
                     ],
                 },
                 {
                     type: "category",
-                    label: "RollApp node",
+                    label: "RollApp full node",
                     items: [
                         {
                             type: "doc",
                             label: "Overview",
-                            id: "full-node/rollapps/index",
+                            id: "validate/rollapps/index",
                         },
                     ],
                 },

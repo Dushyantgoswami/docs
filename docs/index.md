@@ -10,7 +10,7 @@ hide_table_of_contents: true
     <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
-        <p class="card-text"><b>Dymension</b> empowers people to easily build their own lightning fast blockchains called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
+        <p class="card-text"><b>Dymension</b> empowers people to easily build and deploy their own lightning fast blockchains called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
     </div>
 </div>
 
@@ -28,8 +28,8 @@ hide_table_of_contents: true
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="developers/start/setup" class="card-link stretched-link"> 
-                <h2 class="card-title">Developer</h2>
+            <a href="develop/get-started/setup" class="card-link stretched-link"> 
+                <h2 class="card-title">Develop</h2>
             </a>
             <p class="card-text">Build your own RollApp</p>
             <div class="card-actions">
@@ -39,8 +39,8 @@ hide_table_of_contents: true
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="full-node/index" class="card-link stretched-link"> 
-                <h2 class="card-title">Full node</h2>
+            <a href="validate/overview" class="card-link stretched-link"> 
+                <h2 class="card-title">Validate</h2>
             </a>
             <p class="card-text">Secure the Dymension Network</p>
             <div class="card-actions">
