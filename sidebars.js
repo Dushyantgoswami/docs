@@ -67,8 +67,23 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "RDK",
+                            label: "Setup",
                             id: "develop/build/rdk/setup",
+                        },
+                        {
+                            type: "doc",
+                            label: "Deploy",
+                            id: "develop/build/rdk/deploy",
+                        },
+                        {
+                            type: "doc",
+                            label: "Interact",
+                            id: "develop/build/rdk/interact",
+                        },
+                        {
+                            type: "doc",
+                            label: "Add Wallet",
+                            id: "develop/build/rdk/add-wallet",
                         },
                     ],
                 },
