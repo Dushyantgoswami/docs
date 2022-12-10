@@ -67,8 +67,8 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Setup",
-                            id: "develop/build/rdk/setup",
+                            label: "Start",
+                            id: "develop/build/rdk/start",
                         },
                         {
                             type: "doc",
@@ -94,8 +94,8 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Setup",
-                            id: "develop/build/cosmwasm/setup",
+                            label: "Start",
+                            id: "develop/build/cosmwasm/start",
                         },
                         {
                             type: "doc",
@@ -121,8 +121,8 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Setup",
-                            id: "develop/build/evm/setup",
+                            label: "Start",
+                            id: "develop/build/evm/start",
                         },
                         {
                             type: "doc",
