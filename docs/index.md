@@ -10,7 +10,7 @@ hide_table_of_contents: true
     <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
-        <p class="card-text"><b>Dymension</b> empowers people to easily build and deploy their own lightning fast blockchains called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
+        <p class="card-text"><b>Dymension</b> is a network of easily deployable and lightning fast modular blockchains called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
     </div>
 </div>
 
@@ -52,11 +52,9 @@ hide_table_of_contents: true
 
 ## What Is Dymension?
 
-Dymension is a network of modular blockchains called RollApps and at the center of it all is the Dymension Hub. Dymension allows anyone to build and deploy their own consensus-free blockchain, a RollApp.
+Dymension is a network of easily deployable and lightning fast modular blockchains called RollApps. At the center of the Dymension network exists the Dymension Hub that provides consensus, security, and liquidity for RollApps.
 
-The Dymension Hub is the protocol's settlement layer and acts as decentralized source of truth for the network. The Dymension Hub is a Proof of Stake blockchain which provides consensus, security, and liquidity for RollApps.
-
-RollApps are built with Dymension's RollApp Development Kit (RDK) which is based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp developers are able to choose the network token, application logic and virtual machine (e.g EVM, CosmWasm, and more) in which their RollApp operates. A great way to think about Dymension is as an app-chain (Dymension Hub) for app-rollups (RollApps).
+RollApps are their own blockchains built with Dymension's RollApp Development Kit (RDK), based on the popular [Cosmos SDK](https://docs.cosmos.network/). RollApp developers are able to choose their network token, fully customizable business logic, and application environment (e.g RDK Go modules, EVM, CosmWasm, and more).
 
 For a deeper dive into the Dymension protocol checkout the [learn section](/docs/learn/modular-intro.md), [litepaper](/docs/dymension-litepaper/index.md), and [glossary](/docs/reference/glossary.md).
 
