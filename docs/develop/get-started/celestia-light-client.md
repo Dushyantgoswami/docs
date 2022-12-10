@@ -101,6 +101,6 @@ Check the running Celestia light node:
 docker ps
 ```
 
-Walla! At this point you should have a running [Dymension Hub node](/docs/developers/start/run-a-hub-node.md) for posting state updates and Celestia light client for publishing transaction data!
+Walla! At this point you should have a running [Dymension Hub node](/docs/develop/get-started/run-a-hub-node.md) for posting state updates and Celestia light client for publishing transaction data!
 
 Next let's interact with the Dymension Hub and register our RollApp!

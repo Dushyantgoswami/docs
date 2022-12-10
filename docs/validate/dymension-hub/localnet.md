@@ -72,6 +72,6 @@ dymd tendermint show-address
 
 This returns an address with the prefix "dymvalcons" or the dymension validator consensus address.
 
-To further learn about Dymension please visit our overview on [Dymension](/docs/learn/modular-intro.md), [litepaper](/docs/dymension-litepaper/index.md) and the tutorial explaining how to [create a RollApp.](/developers/start/overview.md)
+To further learn about Dymension please visit our overview on [Dymension](/docs/learn/modular-intro.md), [litepaper](/docs/dymension-litepaper/index.md) and the tutorial explaining how to [create a RollApp.](/docs/develop/get-started/setup.md)
 
 If you have any issues please contact us on [discord](http://discord.gg/dymension) in the Developer section. We are here for you!
