@@ -43,7 +43,7 @@ make install
 
 In the Wasm directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
 
-If you followed the [Get Started](/docs/develop/get-started/setup.md) tutorial please run the following script from within the `wasm` directory:
+If you followed the [Get Started](/docs/develop/get-started/setup.mdx) tutorial please run the following script from within the `wasm` directory:
 
 ```bash
 bash init.sh

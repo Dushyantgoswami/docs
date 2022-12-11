@@ -40,7 +40,7 @@ ignite chain build
 
 In the `Hello` directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
 
-If you followed the [Get Started](/docs/develop/get-started/setup.md) tutorial please run the following script from within the `Hello` directory:
+If you followed the [Get Started](/docs/develop/get-started/setup.mdx) tutorial please run the following script from within the `Hello` directory:
 
 ```bash
 bash init.sh
