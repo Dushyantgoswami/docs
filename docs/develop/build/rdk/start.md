@@ -1,9 +1,9 @@
 ---
-title: RDK Modules
+title: Initialize RDK RollApp
 slug: setup
 ---
 
-In this tutorial we will demonstrate how to deploy a Go module to a RDK RollApp. The RDK RollApp tutorial is built upon Ignite's [tutorial](https://docs.ignite.com/guide/hello). For a more in-depth tutorial on building RDK modules please visit the Cosmos academy's [tutorial](https://tutorials.cosmos.network/hands-on-exercise/1-ignite-cli/3-stored-game.html).
+In this tutorial we will demonstrate how to deploy a Go module to a RDK RollApp. The RDK RollApp tutorial is borrowed from Ignite's [Hello tutorial](https://docs.ignite.com/guide/hello). For a more in-depth tutorial on building RDK modules please visit the Cosmos academy's [tutorial](https://tutorials.cosmos.network/hands-on-exercise/1-ignite-cli/3-stored-game.html).
 
 ## Step 1: Required installations
 
