@@ -33,23 +33,20 @@ cd hello
 go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/dymensionxyz/rdk@v0.1.2-alpha
 go mod tidy
 go mod download
-ignite chain build
 ```
 
-## Step 3: Starting the RDK environment
+We will need to initialize a genesis file for the RollApp. We can run the following command to initialize and start a server:
 
-In the `Hello` directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
-
-If you followed the [Get Started](/docs/develop/get-started/setup.mdx) tutorial please run the following script from within the `Hello` directory:
-
-```bash
-bash init.sh
+```
+ignite chain serve
 ```
 
-If you would like to run the RDK RollApp with a mock base layer please run the following script from within the `Hello` directory:
+We will only use this command to initalize the genesis event. We can stop this server by running `ctrl + c`
 
-```bash
-bash simulation-init.sh
+You should get a notification stating the location of the exported genesis file:
+
+```
+Genesis state saved in ~/.ignite/local-chains/hello/exported_genesis.json
 ```
 
-Once you're ready move on next to building on your RollApp!
+Let's move on to build a Go module with Ignite for our RollApp...
