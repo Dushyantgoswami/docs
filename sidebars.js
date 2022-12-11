@@ -72,18 +72,18 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Deploy",
-                            id: "develop/build/rdk/deploy",
+                            label: "Build",
+                            id: "develop/build/rdk/build",
+                        },
+                        {
+                            type: "doc",
+                            label: "Run",
+                            id: "develop/build/rdk/run",
                         },
                         {
                             type: "doc",
                             label: "Interact",
                             id: "develop/build/rdk/interact",
-                        },
-                        {
-                            type: "doc",
-                            label: "Add Wallet",
-                            id: "develop/build/rdk/add-wallet",
                         },
                     ],
                 },

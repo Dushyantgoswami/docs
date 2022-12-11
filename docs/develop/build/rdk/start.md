@@ -52,4 +52,4 @@ If you would like to run the RDK RollApp with a mock base layer please run the f
 bash simulation-init.sh
 ```
 
-Once you're ready move on [next](/docs/develop/build/rdk/deploy.md) to deploying a Go module to your RollApp!
+Once you're ready move on next to building on your RollApp!
