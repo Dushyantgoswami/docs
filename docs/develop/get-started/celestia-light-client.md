@@ -10,8 +10,6 @@ The following tutorial utilizes [Docker](https://docs.docker.com/engine/install/
 
 :::
 
-### Step 1: Run the celestia light client
-
 In order to write our RollApp batches to Celestia, we will need to run a funded Celestia light client.
 
 In a new terminal make a directory for our Celestia light client:
