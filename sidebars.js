@@ -167,16 +167,16 @@ const sidebars = {
                     label: "Join a network",
                     id: "validate/dymension-hub/join-network",
                 },
-                {
-                    type: "doc",
-                    label: "Sync node",
-                    id: "validate/dymension-hub/sync",
-                },
-                {
-                    type: "doc",
-                    label: "Upgrade",
-                    id: "validate/dymension-hub/upgrades",
-                },
+                // {
+                //     type: "doc",
+                //     label: "Sync node",
+                //     id: "validate/dymension-hub/sync",
+                // },
+                // {
+                //     type: "doc",
+                //     label: "Upgrade",
+                //     id: "validate/dymension-hub/upgrades",
+                // },
                 {
                     type: "doc",
                     label: "Reset and troubleshooting",
