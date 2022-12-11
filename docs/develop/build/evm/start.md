@@ -7,6 +7,10 @@ In the following EVM RollApp tutorial we will demonstrate how to deploy a [Solid
 
 ## Step 1: Required installations
 
+#### <b>Go (1.18)</b>
+
+The appropriate version of Go is required to develop with Dymension's RDK. If you do not have go installed on your system, head to the [Setup page and install Go](/docs/develop/get-started/setup.mdx).
+
 ### NPM
 
 NPM is a package manager and the world's largest software registry. To install, head to the [Install npm page](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).

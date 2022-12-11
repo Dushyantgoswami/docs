@@ -9,7 +9,7 @@ In this tutorial we will demonstrate how to deploy a Go module to a RDK RollApp.
 
 #### <b>Go (1.18)</b>
 
-The appropriate version of Go is required to develop with Dymension's RDK. If you do not have go installed on your system, head to the [Go download and install page](https://go.dev/dl/).
+The appropriate version of Go is required to develop with Dymension's RDK. If you do not have go installed on your system, head to the [Setup page and install Go](/docs/develop/get-started/setup.mdx).
 
 #### <b>Ignite (v0.23.0)</b>
 
