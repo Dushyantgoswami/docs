@@ -41,7 +41,7 @@ make install
 
 ## Step 3: Starting the CosmWasm environment
 
-In the Wasm directory, we have a helpful bash script that allows you to instantiate and start your RollApp.
+In the Wasm directory, we've included a helpful bash script that allows you to instantiate and start your RollApp.
 
 If you followed the [Get Started](/docs/develop/get-started/setup.mdx) tutorial please run the following script from within the `wasm` directory:
 
