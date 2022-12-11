@@ -148,51 +148,39 @@ const sidebars = {
             label: "Validate",
             items: [
                 {
-                    type: "category",
-                    label: "Dymension Hub validator",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Node FAQs",
-                            id: "validate/dymension-hub/overview",
-                        },
-                        {
-                            type: "doc",
-                            label: "Build binaries",
-                            id: "validate/dymension-hub/build-dymd",
-                        },
-                        {
-                            type: "doc",
-                            label: "Join a Network",
-                            id: "validate/dymension-hub/join-network",
-                        },
-                        {
-                            type: "doc",
-                            label: "Sync Node",
-                            id: "validate/dymension-hub/sync",
-                        },
-                        {
-                            type: "doc",
-                            label: "Upgrade",
-                            id: "validate/dymension-hub/upgrades",
-                        },
-                        {
-                            type: "doc",
-                            label: "Reset and troubleshooting",
-                            id: "validate/dymension-hub/reset-node",
-                        },
-                    ],
+                    type: "doc",
+                    label: "Node FAQs",
+                    id: "validate/dymension-hub/overview",
                 },
                 {
-                    type: "category",
-                    label: "RollApp full node",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Overview",
-                            id: "validate/rollapps/index",
-                        },
-                    ],
+                    type: "doc",
+                    label: "Build binaries",
+                    id: "validate/dymension-hub/build-dymd",
+                },
+                {
+                    type: "doc",
+                    label: "Node configuration",
+                    id: "validate/dymension-hub/config",
+                },
+                {
+                    type: "doc",
+                    label: "Join a network",
+                    id: "validate/dymension-hub/join-network",
+                },
+                {
+                    type: "doc",
+                    label: "Sync node",
+                    id: "validate/dymension-hub/sync",
+                },
+                {
+                    type: "doc",
+                    label: "Upgrade",
+                    id: "validate/dymension-hub/upgrades",
+                },
+                {
+                    type: "doc",
+                    label: "Reset and troubleshooting",
+                    id: "validate/dymension-hub/reset-node",
                 },
             ],
         },

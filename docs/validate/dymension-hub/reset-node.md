@@ -1,9 +1,6 @@
 ---
 title: "Reset and troubleshooting"
 slug: "reset-node"
-hidden: false
-sidebar_position: 1
-hide_table_of_contents: true
 ---
 
 Occasionally you may need to perform a comlpete reset of your node due to data corruption or misconfiguration. Resetting will remove all data in ~/.dymension/data and the addressbook in ~/.dymension/config/addrbook.json and reset the node to genesis state.
@@ -44,7 +41,7 @@ To change your personal data to a pristine state, delete both `~/.dymension/conf
 
 A healthy node will have the following files in place and populated:
 
-- Addressbook `~/.dymension/config/addrbook.json`
-- Genesis file `~/.dymension/config/genesis.json`
-- Validator state `~/.dymension/config/priv_validator_state.json`
-- Node key `~/.dymension/config/node_key.json`
+-   Addressbook `~/.dymension/config/addrbook.json`
+-   Genesis file `~/.dymension/config/genesis.json`
+-   Validator state `~/.dymension/config/priv_validator_state.json`
+-   Node key `~/.dymension/config/node_key.json`
