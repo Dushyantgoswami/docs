@@ -39,7 +39,7 @@ hide_table_of_contents: true
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="validate/overview" class="card-link stretched-link"> 
+            <a href="validate/dymension-hub/overview" class="card-link stretched-link"> 
                 <h2 class="card-title">Validate</h2>
             </a>
             <p class="card-text">Secure the Dymension Network</p>

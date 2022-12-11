@@ -148,32 +148,37 @@ const sidebars = {
             label: "Validate",
             items: [
                 {
-                    type: "doc",
-                    label: "Node FAQs",
-                    id: "validate/overview",
-                },
-                {
                     type: "category",
                     label: "Dymension Hub validator",
                     items: [
                         {
                             type: "doc",
-                            label: "Testnet",
-                            id: "validate/dymension-hub/testnet",
+                            label: "Node FAQs",
+                            id: "validate/dymension-hub/overview",
                         },
                         {
                             type: "doc",
-                            label: "Localnet",
-                            id: "validate/dymension-hub/localnet",
+                            label: "Build binaries",
+                            id: "validate/dymension-hub/build-dymd",
                         },
                         {
                             type: "doc",
-                            label: "Upgrades",
+                            label: "Join a Network",
+                            id: "validate/dymension-hub/join-network",
+                        },
+                        {
+                            type: "doc",
+                            label: "Sync Node",
+                            id: "validate/dymension-hub/sync",
+                        },
+                        {
+                            type: "doc",
+                            label: "Upgrade",
                             id: "validate/dymension-hub/upgrades",
                         },
                         {
                             type: "doc",
-                            label: "Rest and troubleshooting",
+                            label: "Reset and troubleshooting",
                             id: "validate/dymension-hub/reset-node",
                         },
                     ],

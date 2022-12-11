@@ -1,12 +1,7 @@
 ---
-title: Full Node Overview
+title: Node FAQs
 slug: overview
-hidden: false
-sidebar_position: 0
-hide_table_of_contents: true
 ---
-
-# Node FAQs
 
 The Dymension Hub uses [Tendermint Core](https://github.com/tendermint/tendermint/blob/master/docs/introduction/what-is-tendermint.md) that relies on a set of validators that are responsible for committing and signing new blocks in the blockchain. These validators run full nodes and participate in the consensus protocol by broadcasting votes which contain signatures signed by each validator's private key.
 
@@ -14,7 +9,7 @@ Validators bond their DYM (Dymension's native token) and have the tokens "delega
 
 Besides a validator running a full node, anyone may run the full node of the Dymension Hub to broadcast transactions and connect directly to the blockchain. In the following tutorial we will demonstrate how to run a full node of the Dymension Hub. As the Dymension protocol grows core devs along with the community will continually re-evaluate the hardware requirements for running and staying in-sync with the Dymension Hub.
 
-### Supported OS
+## Supported OS
 
 We officially support macOS, Windows and Linux only in the following architectures:
 
@@ -24,7 +19,7 @@ We officially support macOS, Windows and Linux only in the following architectur
 -   `linux/x86_64`
 -   `windows/x86_64`
 
-### Minimum Requirements
+## Hardware prerequisites
 
 To prepare for the upcoming testnet and network upgrades the Dymension Hub validators and full nodes should be prepared with the following minimum recommended hardware requirements:
 
@@ -34,3 +29,9 @@ To prepare for the upcoming testnet and network upgrades the Dymension Hub valid
 -   At least 100mbps network bandwidth
 
 These requirements will continually be revisted and tested by the core team and community.
+
+## Software prerequisites
+
+#### Install Go
+
+Installing Go is a pre-requisite for running a dymension full node. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).

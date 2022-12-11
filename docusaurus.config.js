@@ -73,7 +73,7 @@ const config = {
                     {
                         label: "Validate",
                         position: "right",
-                        to: "validate/overview",
+                        to: "validate/dymension-hub/overview",
                     },
                     {
                         href: "https://github.com/dymensionxyz",
