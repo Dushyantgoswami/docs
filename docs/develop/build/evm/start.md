@@ -5,7 +5,7 @@ slug: evm
 
 In the following EVM RollApp tutorial we will demonstrate how to deploy a [Solidity](https://docs.soliditylang.org/) smart contract using [truffle](https://trufflesuite.com/) on top of an EVM RollApp.
 
-## Step 1: Required installations
+## Required installations
 
 #### <b>Go (1.18)</b>
 
@@ -34,35 +34,3 @@ Web3.js v1.7.4
 ```
 
 ::::
-
-## Step 2: Install Ethermint for your RollApp
-
-```bash
-git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.2-alpha-ethermint-v0.18.0
-cd ethermint
-go mod tidy
-go mod download
-make install
-```
-
-## Step 3: Starting the EVM environment
-
-In the Ethermint directory, we've included a helpful bash script that allows you to instantiate and start a local EVM environment.
-
-```bash
-cd scripts
-```
-
-If you followed the [Get Started](/docs/develop/get-started/setup.mdx) tutorial please run the following script from within the `ethermint` directory:
-
-```bash
-bash init.sh
-```
-
-If you would like to run the EVM RollApp with a mock base layer please run the following script from within the `ethermint` directory:
-
-```bash
-bash simulation-init.sh
-```
-
-This bash script does everything needed to start your EVM environment. Once you're ready move on [next](/docs/develop/build/evm/create.md) to creating a smart contract for your RollApp!
