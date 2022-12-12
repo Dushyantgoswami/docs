@@ -169,7 +169,7 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "Build binaries",
+                    label: "Build Dymension Hub",
                     id: "validate/dymension-hub/build-dymd",
                 },
                 {
