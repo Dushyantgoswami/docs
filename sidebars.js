@@ -104,6 +104,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Scaffold",
+                            id: "develop/build/cosmwasm/scaffold",
+                        },
+                        {
+                            type: "doc",
                             label: "Deploy",
                             id: "develop/build/cosmwasm/deploy",
                         },
