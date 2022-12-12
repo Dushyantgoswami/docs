@@ -52,6 +52,4 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-Next we will choose the application environment you would like to build in. Developers have the option of building a RollApp with Go modules by working directly with the [RDK](/docs/develop/build/rdk/start.md) or integrating through a virtual machine such as the [CosmWasm VM](/docs/develop/build/cosmwasm/start.md) and the [EVM](/docs/develop/build/evm/start.md).
-
-#### Which application environment will you build with?
+#### Next let's connect our RollApp instance to a blockchain database...

@@ -39,25 +39,46 @@ const sidebars = {
                             id: "develop/get-started/setup",
                         },
                         {
-                            type: "doc",
-                            label: "Dymension Hub Node",
-                            id: "develop/get-started/run-a-hub-node",
-                        },
-                        {
-                            type: "doc",
-                            label: "Celestia Light Client",
-                            id: "develop/get-started/celestia-light-client",
-                        },
-                        {
-                            type: "doc",
-                            label: "Register RollApp",
-                            id: "develop/get-started/register-rollapp",
-                        },
-                        {
-                            type: "doc",
-                            label: "Initialize Sequencer",
-                            id: "develop/get-started/init-sequencer",
-                        },
+                            type: "category",
+                            label: "Base Layers",
+                            collapsed: true,
+                            items: [
+                                {
+                                    type: "category",
+                                    label: "Dymension Hub",
+                                    collapsed: true,
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Run Full Node",
+                                            id: "develop/get-started/run-a-hub-node",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Register RollApp",
+                                            id: "develop/get-started/register-rollapp",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Initialize Sequencer",
+                                            id: "develop/get-started/init-sequencer",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "DA Layer",
+                                    collapsed: true,
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Celestia",
+                                            id: "develop/get-started/celestia-light-client",
+                                        },
+                                    ],
+                                }
+                            ],
+                        },                        
                     ],
                 },
                 {

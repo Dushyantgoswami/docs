@@ -105,4 +105,6 @@ You can see the logs by replacing `<container-id>` with the Container-ID from th
 docker logs -f <container-id>
 ```
 
-Next let's interact with the Dymension Hub and register our RollApp!
+Next we will choose the application environment you would like to build in. Developers have the option of building a RollApp with Go modules by working directly with the [RDK](/docs/develop/build/rdk/start.md) or integrating through a virtual machine such as the [CosmWasm VM](/docs/develop/build/cosmwasm/start.md) and the [EVM](/docs/develop/build/evm/start.md).
+
+#### Which application environment will you build with?
