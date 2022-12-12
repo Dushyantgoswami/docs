@@ -1,9 +1,9 @@
 ---
-title: Build Dymension Hub binaries
+title: Build Dymension Hub
 slug: build-dymd
 ---
 
-#### The following section explains how to build the binaries of Dymension Hub full node.
+#### The following section explains how to build the Dymension Hub full node.
 
 1. Use `git` to retrieve [Dymension Hub](https://github.com/dymensionxyz/dymension), and check out the `main` branch, which contains the latest stable release.
 
