@@ -26,10 +26,10 @@ Please make sure you are using the correct `node` version as `truffle` works wit
 This tutorial was tested with following versions (which can be checked by running `truffle version`):
 
 ```bash
-Truffle v5.6.5 (core: 5.6.5)
+Truffle v5.6.9 (core: 5.6.9)
 Ganache v7.5.0
-Solidity - 0.8.17 (solc-js)
-Node v16.18.1
+Solidity v0.5.16 (solc-js)
+Node v18.7.0
 Web3.js v1.7.4
 ```
 
