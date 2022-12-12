@@ -49,6 +49,10 @@ make install
 
 In the Ethermint directory, we've included a helpful bash script that allows you to instantiate and start a local EVM environment.
 
+```bash
+cd scripts
+```
+
 If you followed the [Get Started](/docs/develop/get-started/setup.mdx) tutorial please run the following script from within the `ethermint` directory:
 
 ```bash
