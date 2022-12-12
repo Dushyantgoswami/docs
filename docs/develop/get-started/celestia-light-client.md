@@ -81,10 +81,10 @@ Run the Docker container:
 docker run -d -p 26659:26659 --name celestia-light-client celestia-light-client
 ```
 
-Upon completion of the build run the following command to get your Celestia wallet address:
+Upon completion of the build, take the returned container id and replace `<docker-id>` in the following command. Run the following command to get your Celestia wallet address:
 
 ```Dockerfile
-docker exec -i <docker id> sh -c "cel-key show dymension-test --keyring-backend test --node.type light" | grep "address"
+docker exec -i <docker-id> sh -c "cel-key show dymension-test --keyring-backend test --node.type light" | grep "address"
 ```
 
 Take the address and post it in the Celestia arabica-faucet channel on Discord to request faucet tokens:
@@ -99,6 +99,10 @@ Check the running Celestia light node:
 docker ps
 ```
 
-Walla! At this point you should have a running [Dymension Hub node](/docs/develop/get-started/run-a-hub-node.md) for posting state updates and Celestia light client for publishing transaction data!
+You can see the logs by replacing `<container-id>` with the Container-ID from the `docker ps` command and running the following command:
+
+```bash
+docker logs -f <container-id>
+```
 
 Next let's interact with the Dymension Hub and register our RollApp!
