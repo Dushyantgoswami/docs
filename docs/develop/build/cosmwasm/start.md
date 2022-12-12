@@ -7,7 +7,7 @@ In this tutorial we will demonstrate how to deploy a smart contract using the Co
 
 ## Step 1: Required installations
 
-#### <b>Go (1.18)</b>
+### <b>Go (1.18)</b>
 
 The appropriate version of Go is required to develop with Dymension's RDK. If you do not have go installed on your system, head to the [Setup page and install Go](/docs/develop/get-started/setup.mdx).
 
