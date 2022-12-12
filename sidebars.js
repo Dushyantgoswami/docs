@@ -72,6 +72,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Scaffold",
+                            id: "develop/build/rdk/scaffold",
+                        },
+                        {
+                            type: "doc",
                             label: "Build",
                             id: "develop/build/rdk/build",
                         },
