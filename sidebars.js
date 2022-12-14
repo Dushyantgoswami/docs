@@ -8,7 +8,7 @@ const sidebars = {
             items: [
                 {
                     type: "doc",
-                    label: "Modular Architecture",
+                    label: "Modular architecture",
                     id: "learn/modular-intro",
                 },
                 {
@@ -35,50 +35,44 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Setup Environment",
+                            label: "Setup environment",
                             id: "develop/get-started/setup",
                         },
                         {
                             type: "category",
-                            label: "Base Layers",
+                            label: "Run base layers",
                             collapsed: true,
                             items: [
                                 {
-                                    type: "category",
+                                    type: "doc",
                                     label: "Dymension Hub",
-                                    collapsed: true,
-                                    items: [
-                                        {
-                                            type: "doc",
-                                            label: "Run Full Node",
-                                            id: "develop/get-started/run-a-hub-node",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Register RollApp",
-                                            id: "develop/get-started/register-rollapp",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Initialize Sequencer",
-                                            id: "develop/get-started/init-sequencer",
-                                        },
-                                    ],
+                                    id: "develop/get-started/run-a-hub-node",
                                 },
                                 {
-                                    type: "category",
-                                    label: "DA Layer",
-                                    collapsed: true,
-                                    items: [
-                                        {
-                                            type: "doc",
-                                            label: "Celestia",
-                                            id: "develop/get-started/celestia-light-client",
-                                        },
-                                    ],
-                                }
+                                    type: "doc",
+                                    label: "Celestia",
+                                    id: "develop/get-started/celestia-light-client",
+                                },                                
                             ],
-                        },                        
+                        }, 
+                        {
+                            type: "category",
+                            label: "Register RollApp",
+                            collapsed: true,
+                            items: [
+
+                                {
+                                    type: "doc",
+                                    label: "Create RollApp",
+                                    id: "develop/get-started/create-rollapp-id",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Add Sequencer",
+                                    id: "develop/get-started/add-sequencer",
+                                },
+                            ],
+                        }                       
                     ],
                 },
                 {

@@ -1,6 +1,6 @@
 ---
-title: "Add RollApp sequencer"
-slug: init-sequencer
+title: Add Sequencer
+slug: add-sequencer
 ---
 
 Like a validator, RollApp sequencers process transactions, produce RollApp blocks, and submit a batched set of blocks for security.
@@ -52,4 +52,8 @@ sequencer:
   sequencerAddress: <sequencer-address>
 ```
 
-#### Next let's connect our RollApp instance to a blockchain database...
+Now that we have a running Dymension Hub full node, Celestia light client, and registered our RollApp we may build and run the RollApp.
+
+Next we will choose the application environment you would like to build in. Developers have the option of building a RollApp with Go modules by working directly with the [RDK](/docs/develop/build/rdk/start.md) or integrating through a virtual machine such as the [CosmWasm VM](/docs/develop/build/cosmwasm/start.md) and the [EVM](/docs/develop/build/evm/start.md).
+
+#### Which application environment will you build with?

@@ -1,5 +1,5 @@
 ---
-title: "Modular Architecture Introduction"
+title: "Modular architecture"
 slug: "modular-intro"
 hide_table_of_contents: true
 ---

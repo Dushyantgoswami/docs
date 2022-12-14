@@ -1,9 +1,9 @@
 ---
-title: Register your RollApp
-slug: register-rollapp
+title: Create RollApp
+slug: create-rollapp-id
 ---
 
-To build our RollApp we must first register it with the Dymension Hub. Open a new terminal window. Set the relevant environment variables for first creating a RollApp:
+To build our RollApp we must first register it with the Dymension Hub. Open a new terminal window and set the relevant environment variables for first creating a RollApp:
 
 ```bash
 ROLLAPP_ID="local-rollapp"
