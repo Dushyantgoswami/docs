@@ -202,9 +202,9 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
             algolia: {
-                appId: "54MWJQI31O",
-                apiKey: "6792e5baab9ec9c0e612c9edb1d7e735",
-                indexName: "dymension_docs",
+                appId: "D6G0Y2R87E",
+                apiKey: "2883600674f127c6c857beb001770d22",
+                indexName: "dymension",
                 contextualSearch: true,
                 searchParameters: {},
                 searchPagePath: "search",
