@@ -26,8 +26,8 @@ To change the genesis version, delete `~/.dymension/config/genesis.json`.
 You can recreate a genesis version via the following steps:
 
 ```bash
- dymd add-genesis-account $(dymd keys show <account-name> -a) 100000000udym
- dymd gentx <account-name> 10000000udym --chain-id=local-testnet
+ dymd add-genesis-account <ADDRESS_HERE> 100000000udym
+ dymd gentx <KEY_NAME_HERE> 10000000udym --chain-id=<TESTNET_NAME>
  dymd collect-gentxs
 ```
 

@@ -9,35 +9,29 @@ It is highly recommended that you set up a private local network before joining 
 
 Validators can set up a private Dymension Hub network to become familiar with running a full Dymension Hub node before joining a public network.
 
-### Create a single node
-
 The simplest Dymension Hub network you can set up is a local testnet with just a single node. In a single-node environment, you have one account and are the only validator signing blocks for your private network.
 
 1. Initialize your genesis file that will bootstrap the network. Replace the following variables with your own information:
 
-    ```bash
-      dymd init --chain-id=<testnet-name> <node-moniker>
-    ```
+```bash
+dymd init <MONIKER> --chain-id=<TESTNET_NAME>
+```
 
 2. Generate a Dymension account. Replace the variable with your account name:
 
-    ```bash
-    dymdd keys add <account-name>
-    ```
+```bash
+dymd keys add <KEY_NAME_HERE>
+```
 
-### Add your account to the genesis
-
-Run the following commands to add your account and set the initial balance:
+3. Run the following commands to add your account and set the initial balance:
 
 ```bash
-dymd add-genesis-account $(dymd keys show <account-name> -a) 100000000udym
-dymd gentx <my-account> 10000000udym --chain-id=<testnet-name>
+dymd add-genesis-account <ADDRESS_HERE> 100000000udym
+dymd gentx <KEY_NAME> 10000000udym --chain-id=<TESTNET_NAME>
 dymd collect-gentxs
 ```
 
-### Start your private Dymension Hub network
-
-Run the following command to start your private network:
+4. Run the following command to start your private network:
 
 ```bash
 dymd start

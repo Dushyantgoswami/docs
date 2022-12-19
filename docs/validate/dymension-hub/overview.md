@@ -32,6 +32,4 @@ These requirements will continually be revisted and tested by the core team and 
 
 ## Software prerequisites
 
-#### Install Go
-
 Installing Go is a pre-requisite for running a dymension full node. If you still need to install Go on your system, head to the [Go download and install page](https://go.dev/doc/install).

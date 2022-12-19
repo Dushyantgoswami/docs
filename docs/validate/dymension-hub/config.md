@@ -3,32 +3,32 @@ title: Node configuration
 slug: config
 ---
 
-The following information describes the most important node configuration settings found in the `~/.dymension/config/` directory. It is recommended that you update these settings with your own information.
+The following information describes important node configuration settings within the `~/.dymension/config/` directory. It is recommended that you update these settings with your own information.
 
 ```bash
 ~/.dymension/config
-│-- addrbook.json                       # a registry of peers to connect to
+│-- addrbook.json                       # Registry of peers to connect to
 │-- app.toml                            # dymd configuration file
-│-- client.toml                         # configurations for the cli wallet (ex dymcli)
+│-- client.toml                         # Configurations for the cli wallet
 │-- config.toml                         # Tendermint configuration file
-│-- genesis.json                        # gensesis transactions
-│-- node_key.json                       # private key used for node authentication in the p2p protocol (its corresponding public key is the nodeid)
-└-- priv_validator_key.json             # key used by the validator on the node to sign blocks
+│-- genesis.json                        # Gensesis transactions
+│-- node_key.json                       # Private key used for node authentication in the p2p protocol
+└-- priv_validator_key.json             # Key used by the validator to sign blocks
 ```
 
-### Initialize and configure moniker
+### Initialize and configure moniker:
 
 Initialize the node with a human-readable name:
 
 ```bash
-dymd init <your_custom_moniker> # e.g. dymd init validator-name-node
+dymd init <MONIKER> # e.g. dymd init validator-name-node
 ```
 
 Monikers can only contain ASCII characters. Using Unicode characters will render your node unreachable by other peers in the network.
 
 You can update your node's moniker by editing the `moniker` field in `~/.dymension/config/config.toml`.
 
-### Update minimum gas prices
+### Update minimum gas prices:
 
 1. Open `~/.dymension/config/app.toml`.
 
@@ -43,23 +43,24 @@ The recommended setting is:
 # The minimum gas prices a validator is willing to accept for processing a
 # transaction. A transaction's fees must meet the minimum of any denomination
 # specified in this config (e.g. 0.25token1;0.0001token2).
-minimum-gas-prices = "0.01133udym"
+
+minimum-gas-prices = "0.15udym"
 
 ```
 
-### Start the light client daemon (LCD)
+### Start the light client daemon (LCD):
 
 To enable the REST API and Swagger, and to start the LCD, complete the following steps:
 
-1. Open `~/.dymd/config/app.toml`.
+1. Open `~/.dymension/config/app.toml`.
 
 2. Locate the `API Configuration` section (`[api]`).
 
 3. Change `enable = false` to `enable = true`.
 
 ```
-    # Enable defines if the API server should be enabled.
-    enable = true
+# Enable defines if the API server should be enabled.
+enable = true
 ```
 
 4. Optional: Swagger defines if swagger documentation should automatically be registered. To enable Swagger, change `swagger = false` to `swagger = true`.
@@ -68,7 +69,7 @@ To enable the REST API and Swagger, and to start the LCD, complete the following
 swagger = true
 ```
 
-5. Restart the service via `systemctl restart dymd`. Once restarted, the LCD will be available (by default on port `127.0.0.1:1317`).
+5. If the process is currently running, restart the service via `systemctl restart dymd`. Once restarted, the LCD will be available (by default on port `127.0.0.1:1317`).
 
 ### Set up `external_address` in `config.toml`
 
