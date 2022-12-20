@@ -27,7 +27,7 @@ You can recreate a genesis version via the following steps:
 
 ```bash
  dymd add-genesis-account <ADDRESS_HERE> 100000000udym
- dymd gentx <KEY_NAME_HERE> 10000000udym --chain-id=<TESTNET_NAME>
+ dymd gentx <KEY_NAME_HERE> 10000000udym --chain-id=dym-test-1
  dymd collect-gentxs
 ```
 

@@ -18,19 +18,29 @@ The following information describes important node configuration settings within
 
 ### Initialize and configure moniker:
 
+We recommend saving the mainnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
+
 Initialize the node with a human-readable name:
 
 ```bash
-dymd init <MONIKER> # e.g. dymd init validator-name-node
+dymd init <MONIKER> --chain-id dym-test-1
 ```
 
 Monikers can only contain ASCII characters. Using Unicode characters will render your node unreachable by other peers in the network.
 
 You can update your node's moniker by editing the `moniker` field in `~/.dymension/config/config.toml`.
 
+### Update bond denom:
+
+1. Open `~/.dymension/config/genesis.json`
+
+2. Find and replace all instances of `stake` with `udym`
+
+3. Save and close the `Genesis.json`
+
 ### Update minimum gas prices:
 
-1. Open `~/.dymension/config/app.toml`.
+1. Open `~/.dymension/config/app.toml`
 
 2. Modify `minimum-gas-prices` and set the minimum price of gas a validator will accept to validate a transaction and to prevent spam.
 
