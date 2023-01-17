@@ -42,7 +42,7 @@ hide_table_of_contents: true
             <a href="validate/dymension-hub/overview" class="card-link stretched-link"> 
                 <h2 class="card-title">Full node</h2>
             </a>
-            <p class="card-text">Secure the Dymension Network</p>
+            <p class="card-text">Expand the Dymension network</p>
             <div class="card-actions">
                 <button class="action-button">Run a Node</button>
            </div>
@@ -66,14 +66,14 @@ With Dymension building a blockchain doesn't come with the overhead of bootstrap
 
 ### Autonomy
 
-RollApps are autonomous worlds. RollApps set their own logic, decentralization and governance parameters. They are akin to sovereign worlds (i.e. app-chains) but delegate consensus to the Dymension Hub for efficient bootstrapping.
+RollApps are autonomous worlds. RollApps set their own logic, decentralization, and governance parameters. They are akin to sovereign worlds (i.e. app-chains) but delegate consensus to the Dymension Hub for efficient bootstrapping.
 
 ### Value Accrual
 
-Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-users pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, other IBC-enabled-tokens or completely new logic for fee collection).
+Contrary to dApps on general purpose blockchains such as Ethereum, which require users to pay gas fees in the network’s token (i.e. ETH), RollApp end-users pay transaction fees with the application’s native token or whichever other token chosen by the RollApp (e.g. stablecoins, other IBC-enabled tokens or completely new logic for fee collection).
 
 ### Performance
 
 As RollApps outsource consensus to the Dymension Hub, they are capable of delivering substantial throughput and lower latency than consensus constrained blockchains.
 
-In the next sections we'll dive deeper on how Dymension works. We recommend going over it, however this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building!](/docs/develop/get-started/setup.mdx)
+In the next sections we'll dive deeper into how Dymension works. We recommend going over it, however this is not a requirement for building a RollApp, so for those who can't wait - skip ahead and start [building!](/docs/develop/get-started/setup.mdx)
