@@ -5,7 +5,7 @@ slug: deploy
 
 # Deploy CosmWasm contract
 
-The following instructions are from the deploying a smart contract section of the [CosmWasm documentation](https://docs.cosmwasm.com/docs/1.0/getting-started/intro). For more information on building and deploying CosmWasm smart contracts please visit the CosmWasm documentation.
+The following instructions are from the deploying a smart contract section of the [CosmWasm documentation](https://docs.cosmwasm.com/docs/1.0/getting-started/intro). For more information on building and deploying CosmWasm smart contracts please visit the CosmWasm book.
 
 ## Contract compilation
 

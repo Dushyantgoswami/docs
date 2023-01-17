@@ -1,5 +1,5 @@
 ---
-title: "Documentation Portal"
+title: "Documentation portal"
 slug: "/"
 hidden: false
 sidebar_position: 1
@@ -10,7 +10,7 @@ hide_table_of_contents: true
     <img class="background" loading="eager" src={require('@site/static/img/background.jpeg').default} alt="background" />
     <div class="card-body">
         <div class="card-body-overlay"></div>
-        <p class="card-text"><b>Dymension</b> is a network of easily deployable and lightning fast modular blockchains called <b>RollApps</b>. This documentation serves as the central source for all things Dymension.</p>
+        <p class="card-text"><b>Dymension</b> is a network of easily deployable and lightning fast modular blockchains called <b>RollApps</b>. This documentation serves as a source for all things Dymension.</p>
     </div>
 </div>
 
@@ -40,7 +40,7 @@ hide_table_of_contents: true
     <div class="col">
         <div class="card card-body">
             <a href="validate/dymension-hub/overview" class="card-link stretched-link"> 
-                <h2 class="card-title">Validate</h2>
+                <h2 class="card-title">Full node</h2>
             </a>
             <p class="card-text">Secure the Dymension Network</p>
             <div class="card-actions">

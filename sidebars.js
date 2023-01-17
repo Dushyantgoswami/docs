@@ -52,15 +52,14 @@ const sidebars = {
                                     type: "doc",
                                     label: "Celestia",
                                     id: "develop/get-started/celestia-light-client",
-                                },                                
+                                },
                             ],
-                        }, 
+                        },
                         {
                             type: "category",
                             label: "Register RollApp",
                             collapsed: true,
                             items: [
-
                                 {
                                     type: "doc",
                                     label: "Create RollApp",
@@ -72,7 +71,7 @@ const sidebars = {
                                     id: "develop/get-started/add-sequencer",
                                 },
                             ],
-                        }                       
+                        },
                     ],
                 },
                 {
@@ -175,7 +174,7 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Validate",
+            label: "Full node",
             items: [
                 {
                     type: "doc",
@@ -197,16 +196,16 @@ const sidebars = {
                     label: "Join a network",
                     id: "validate/dymension-hub/join-network",
                 },
-                // {
-                //     type: "doc",
-                //     label: "Sync node",
-                //     id: "validate/dymension-hub/sync",
-                // },
-                // {
-                //     type: "doc",
-                //     label: "Upgrade",
-                //     id: "validate/dymension-hub/upgrades",
-                // },
+                {
+                    type: "doc",
+                    label: "Sync node",
+                    id: "validate/dymension-hub/sync",
+                },
+                {
+                    type: "doc",
+                    label: "Upgrade",
+                    id: "validate/dymension-hub/upgrades",
+                },
                 {
                     type: "doc",
                     label: "Reset and troubleshooting",
