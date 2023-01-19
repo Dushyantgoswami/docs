@@ -26,7 +26,7 @@ Dymension follows a *“Modular”* blockchain paradigm. Instead of one monolit
     <img class="background" src={require('./images/modular-architecture-settlement.png').default} alt="background" />
     <div class="card-body">
         <h3 class="card-title">Settlement & Consensus</h3>
-        <p class="card-text">The Dymension Hub</p>
+        <p class="card-text">Dymension Hub</p>
     </div>
 </div>
 
@@ -34,10 +34,10 @@ Dymension follows a *“Modular”* blockchain paradigm. Instead of one monolit
     <img class="background" src={require('./images/modular-architecture-da.png').default} alt="background" />
     <div class="card-body">
         <h3 class="card-title">Data Availability</h3>
-        <p class="card-text">DA supported by Dymension</p>
+        <p class="card-text">DA providers</p>
     </div>
 </div>
 
-RollApps can be deployed on top of the Dymension Hub by any developer making use of Dymension’s connectivity, security, and liquidity. Dymension is DA agnostic, RollApp developers can choose DA providers which are supported by the Dymension protocol according to their cost and security preferences.
+RollApps can be deployed by any developer making use of Dymension’s connectivity, security, and liquidity. RollApp developers can choose DA providers which are supported by the Dymension protocol according to their cost and security preferences. Besides being DA agnostic, Dymension is VM agnostic meaning developers can use the toolkit that they are most comfortable with (i.e. CosmWasm, EVM, and more).
 
-The technicalities of the Dymension infrastructure are abstracted away from RollApp developers. Dymension is designed for easy RollApp bootstrapping and deployment. Developers are mainly responsible with the application logic of their RollApp. Furthermore, Dymension utilizes existing technological components such that developers that are familiar with a paritcular software (i.e. CosmWasm VM) may utilize the technology that they are most comfortable with.
+The technicalities of the Dymension infrastructure are abstracted away from RollApp developers. Dymension is designed for easy RollApp bootstrapping and deployment. Developers are mainly responsible with the application logic of their RollApp.
