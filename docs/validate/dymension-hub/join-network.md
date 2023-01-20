@@ -58,34 +58,4 @@ If the private Dymension Hub network is set up correctly, your Dymd node will be
 
 For default `dymd` configurations, the `genesis` and `addressbook` files should be placed under `~/.dymension/config/genesis.json` and `~/.dymension/config/addrbook.json` respectively.
 
-### Additional Settings
-
-#### `seed_mode`
-
-In seed mode, your node constantly crawls the network and looks for peers. If another node requests addresses, it responds and disconnects. Seed mode will not work if the peer-exchange reactor is disabled.
-
-```toml
-seed_mode = true
-```
-
-#### `seeds`
-
-To manually identify seed nodes, edit the following setting in `config.toml`.
-
-```toml
-# Comma separated list of seed nodes to connect to
-seeds = "id100000000000000000000000000000000@1.2.3.4:26656,id200000000000000000000000000000000@2.3.4.5:4444"
-```
-
-#### `persistent_peers`
-
-The nodes you specify are the trusted persistent peers that can help anchor your node in the p2p network. If the connection fails, they are dialed and automatically redialed for 24 hours. The automatic redial functionality uses exponential backoff and stops after 24 hours of trying to connect.
-
-If the value of `persistent_peers_max_dial_period` is more than zero, the pause between each call to each persistent peer will not exceed `persistent_peers_max_dial_period` during exponential backoff, and the automatic redial process continues.
-
-```toml
-# Comma separated list of nodes to keep persistent connections to.
-persistent_peers = "id100000000000000000000000000000000@1.2.3.4:26656,id200000000000000000000000000000000@2.3.4.5:26656"
-```
-
 Continue to the [Sync](./sync.md) page to find out more about syncing your node.

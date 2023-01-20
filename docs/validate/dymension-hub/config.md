@@ -16,14 +16,14 @@ The following information describes important node configuration settings within
 └-- priv_validator_key.json             # Key used by the validator to sign blocks
 ```
 
-### Initialize and configure moniker:
+### Initialize and configure moniker
 
-We recommend saving the mainnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
+We recommend saving the testnet chain-id into your Dymension client.toml. This will make it so you do not have to manually pass in the chain-id flag for every CLI command.
 
 Initialize the node with a human-readable name:
 
 ```bash
-dymd init <MONIKER> --chain-id dym-test-1
+dymd init <MONIKER> --chain-id 35-C
 ```
 
 Monikers can only contain ASCII characters. Using Unicode characters will render your node unreachable by other peers in the network.
@@ -58,33 +58,38 @@ minimum-gas-prices = "0.15udym"
 
 ```
 
-### Start the light client daemon (LCD):
-
-To enable the REST API and Swagger, and to start the LCD, complete the following steps:
-
-1. Open `~/.dymension/config/app.toml`.
-
-2. Locate the `API Configuration` section (`[api]`).
-
-3. Change `enable = false` to `enable = true`.
-
-```
-# Enable defines if the API server should be enabled.
-enable = true
-```
-
-4. Optional: Swagger defines if swagger documentation should automatically be registered. To enable Swagger, change `swagger = false` to `swagger = true`.
-
-```toml
-swagger = true
-```
-
-5. If the process is currently running, restart the service via `systemctl restart dymd`. Once restarted, the LCD will be available (by default on port `127.0.0.1:1317`).
-
-### Set up `external_address` in `config.toml`
+### Set up `external_address`
 
 In order to be added to the address book in seed nodes, you need to configure `external_address` in `config.toml`. This addition will prevent continuous reconnections. The default P2P_PORT is `26656`.
 
 ```sh
 sed -i -e 's/external_address = \"\"/external_address = \"'$(curl httpbin.org/ip | jq -r .origin)':26656\"/g' ~/.dymension/config/config.toml
+```
+
+### Set up `seed_mode`
+
+In seed mode, your node constantly crawls the network and looks for peers. If another node requests addresses, it responds and disconnects. Seed mode will not work if the peer-exchange reactor is disabled.
+
+```toml
+seed_mode = true
+```
+
+### Add `seeds`
+
+To manually identify seed nodes, edit the following setting in `config.toml`.
+
+```toml
+# Comma separated list of seed nodes to connect to
+seeds = "id100000000000000000000000000000000@1.2.3.4:26656,id200000000000000000000000000000000@2.3.4.5:4444"
+```
+
+### Add `persistent_peers`
+
+The nodes you specify are the trusted persistent peers that can help anchor your node in the p2p network. If the connection fails, they are dialed and automatically redialed for 24 hours. The automatic redial functionality uses exponential backoff and stops after 24 hours of trying to connect.
+
+If the value of `persistent_peers_max_dial_period` is more than zero, the pause between each call to each persistent peer will not exceed `persistent_peers_max_dial_period` during exponential backoff, and the automatic redial process continues.
+
+```toml
+# Comma separated list of nodes to keep persistent connections to.
+persistent_peers = "id100000000000000000000000000000000@1.2.3.4:26656,id200000000000000000000000000000000@2.3.4.5:26656"
 ```
