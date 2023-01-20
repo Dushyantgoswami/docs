@@ -71,7 +71,7 @@ const config = {
                         to: "develop/get-started/setup",
                     },
                     {
-                        label: "Full node",
+                        label: "Validate",
                         position: "right",
                         to: "validate/dymension-hub/overview",
                     },

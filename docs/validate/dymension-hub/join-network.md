@@ -5,7 +5,7 @@ slug: join-network
 
 It is highly recommended that you set up a private local network before joining a public network. This will help you get familiar with the setup process, and provide an environment for testing. The following sections outline this process.
 
-## Set up a local private network
+## Set up a local node
 
 Validators can set up a private Dymension Hub network to become familiar with running a full Dymension Hub node before joining a public network.
 
@@ -42,3 +42,20 @@ dymd start
 ```
 
 If the private Dymension Hub network is set up correctly, your Dymd node will be running on `tcp://localhost:26656`, listening for incoming transactions, and signing blocks.
+
+## Join a public network
+
+#### Download the genesis file and address book
+
+**Genesis file** specifies the account balances and parameters at the start of the network to use when replaying transactions and syncing.
+
+**Addressbook** lists a selection of peers for your node to dial to in order to discover other nodes in the network. The current testnet information is as follows:
+
+-   Network: 35-C
+-   Genesis: TODO
+-   AddressBook: TODO
+-   Seed nodes: TODO
+
+For default `dymd` configurations, the `genesis` and `addressbook` files should be placed under `~/.dymension/config/genesis.json` and `~/.dymension/config/addrbook.json` respectively.
+
+Continue to the [Sync](./sync.md) page to find out more about syncing your node.

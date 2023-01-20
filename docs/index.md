@@ -40,9 +40,9 @@ hide_table_of_contents: true
     <div class="col">
         <div class="card card-body">
             <a href="validate/dymension-hub/overview" class="card-link stretched-link"> 
-                <h2 class="card-title">Full node</h2>
+                <h2 class="card-title">Validate</h2>
             </a>
-            <p class="card-text">Expand the Dymension network</p>
+            <p class="card-text">Secure the Dymension network</p>
             <div class="card-actions">
                 <button class="action-button">Run a Node</button>
            </div>
