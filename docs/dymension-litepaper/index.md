@@ -25,7 +25,7 @@ Dymension introduces a novel dispute- resolution mechanism which simulates a Rol
 
 ### Embedded Hub AMM
 
-Dymension embeds a native Automated Market Maker (AMM) into the Dymensino Hub to achieve shared liquidity on top of shared security. The AMM is designated for RollApp facilitation and is regarded as essential infrastructure for RollApps. The embedded AMM is the sole applicative logic on the Dymension Hub which is not restricted for RollApp usage only.
+Dymension embeds a native Automated Market Maker (AMM) into the Dymension Hub to achieve shared liquidity on top of shared security. The AMM is designated for RollApp facilitation and is regarded as essential infrastructure for RollApps. The embedded AMM is the sole applicative logic on the Dymension Hub which is not restricted for RollApp usage only.
 
 ### Full PDF
 

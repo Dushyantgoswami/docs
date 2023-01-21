@@ -228,8 +228,28 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "RollApp FAQs",
+                            label: "Node FAQs",
                             id: "validate/rollapps/overview",
+                        },
+                        {
+                            type: "doc",
+                            label: "Join network",
+                            id: "validate/rollapps/join-network",
+                        },
+                        {
+                            type: "doc",
+                            label: "Sync node",
+                            id: "validate/rollapps/sync",
+                        },
+                        {
+                            type: "doc",
+                            label: "Upgrade",
+                            id: "validate/rollapps/upgrade",
+                        },
+                        {
+                            type: "doc",
+                            label: "Reset and troubleshooting",
+                            id: "validate/rollapps/reset-node",
                         },
                     ],
                 },
