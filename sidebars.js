@@ -207,6 +207,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Create validator",
+                            id: "validate/dymension-hub/validator",
+                        },
+                        {
+                            type: "doc",
                             label: "Upgrade",
                             id: "validate/dymension-hub/upgrades",
                         },
