@@ -1,8 +1,6 @@
-## Upgrades
-
+---
 title: Upgrades
-slug: upgrades
-
+slug: upgrade
 ---
 
 Networks are periodically upgraded. These instructions are a guide for full nodes that would like to upgrade to the latest testnet.
