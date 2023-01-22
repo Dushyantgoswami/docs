@@ -1,13 +1,16 @@
-Join a public network
-Download the genesis file and address book
-Genesis file specifies the account balances and parameters at the start of the network to use when replaying transactions and syncing.
+---
+title: Join a network
+slug: join-network
+---
 
-Addressbook lists a selection of peers for your node to dial to in order to discover other nodes in the network. The current testnet information is as follows:
+### Download the genesis file and address book
 
-Network: 35-C
-Genesis: TODO
-AddressBook: TODO
-Seed nodes: TODO
-For default dymd configurations, the genesis and addressbook files should be placed under ~/.dymension/config/genesis.json and ~/.dymension/config/addrbook.json respectively.
+In the RollApp testnet [here](https://github.com/dymensionxyz/testnets/rollapps/readme.md) repository we've included Genesis files and Address books to sync your full node.
 
-Continue to the Sync page to find out more about syncing your node.
+**Genesis file** specifies the account balances and parameters at the start of the network to use when replaying transactions and syncing.
+
+**Addressbook** lists a selection of peers for your node to dial to in order to discover other nodes in the network.
+
+The `genesis` and `addressbook` files should be placed under `~/.<rollapp-name>/config/genesis.json` and `~/.<rollapp-name>/config/addrbook.json` respectively.
+
+Continue to the [Sync](./sync.md) page to find out more about syncing your node.

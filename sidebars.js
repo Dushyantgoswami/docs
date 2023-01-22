@@ -233,6 +233,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Build RollApp",
+                            id: "validate/rollapps/build-rollapp",
+                        },
+                        {
+                            type: "doc",
                             label: "Join network",
                             id: "validate/rollapps/join-network",
                         },
