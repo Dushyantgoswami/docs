@@ -63,7 +63,7 @@ slug: "glossary"
 
 <details>
     <summary>Enshrined RollApps</summary>
-    RollApp servicing logic is embedded in the settlement layer, an attribute known as ‘enshrined rollups’, increasing seamless cooperation and safety between RollApps and the dymension hub. Smart contract bridges on Ethereum, as an example, are not embedded into the protocol and thus the protocol is not concerned with smart contract bugs. For example, if a smart contract bridge contract for Arbitrum were to be hacked the Ethereum protocol would need to make a governance decision as to what to do with the user funds (e.g. DAO hack). However, with RollApp servicing embedded in the protocol a hack on the IRC bridging module would halt the chain and a patch would be created.
+    RollApp servicing logic is embedded in the settlement layer, an attribute known as ‘enshrined rollups’, increasing seamless cooperation and safety between RollApps and the dymension hub. Smart contract bridges on Ethereum, as an example, are not embedded into the protocol and thus the protocol is not concerned with smart contract bugs. For example, if a smart contract bridge contract for Arbitrum were to be hacked the Ethereum protocol would need to make a governance decision as to what to do with the user funds (e.g. DAO hack). However, with RollApp servicing embedded in the protocol a hack on the IBC bridging module would halt the chain and a patch would be created.
 </details>
 
 ### F
@@ -96,11 +96,6 @@ slug: "glossary"
 <details>
     <summary>Inter-Blockchain Communication (IBC)</summary>
     The Inter‐Blockchain Communication Protocol (IBC) is an open‐source protocol for relaying messages between independent blockchains. The messages pass across trust-minimized channels that rely on the honest-majority of the corresponding chain.
-</details>
-
-<details>
-    <summary>Inter-RollApp Communication (IRC)</summary>
-    IRC is an IBC based protocol which provides safe message transferring between dymension RollApps. IRC leverages the common communication ground of all dymension RollApps, the dymension hub.
 </details>
 
 ### L

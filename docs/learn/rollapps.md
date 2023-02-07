@@ -1,9 +1,7 @@
 ---
-
 title: "RollApps"
 slug: "rollapps"
 hide_table_of_contents: true
-
 ---
 
 ## What is a RollApp?
@@ -34,6 +32,6 @@ RollApp transaction lifecycles begin by sending a request to a RollApp sequencer
 
 Dymension's RDK builds upon the Cosmos-SDK by adding new modules and modifying existing ones for ensuring RollApp compatibility with the Cosmos ecosystem. New modules are designed specifically for handling validator-less RollApp application logic. RollApps are capable of interacting with any IBC-enabled chain using the Dymension Hub and as such will be part of the growing Cosmos ecosystem.
 
-Dymension as a protocol is designed to facilitate the growth of the Cosmos and inter-chain ecosystem. By being natively IBC-enabled, the Dymension Hub facilitates trust-minimized message passing between RollApps, Cosmos zones, and further IBC-enabled ecosystems. Unlike a traditional communication path between independent sovereign app-chains, communication between RollApps and the Dymension Hub is handled with Inter-RollApp Communication (IRC).
+Dymension as a protocol is designed to facilitate the growth of the Cosmos and inter-chain ecosystem. By being natively IBC-enabled, the Dymension Hub facilitates trust-minimized message passing between RollApps, Cosmos zones, and further IBC-enabled ecosystems.
 
-IRC is built upon the [inter-blockchain communcation](https://ibc.cosmos.network/) (IBC) protocol. Unlike traditional app-chains, RollApps delegate consensus to the Dymension Hub. The Dymension Hub thus acts as the decentralized source of truth and decides when a RollApp is in good standing. As such, the Dymension Hub intermediates transfers in and out of RollApps. By utilizing the existing IBC stack, RollApps are able to be connected to the IBC-enabled ecosystem even without consensus.
+Unlike traditional app-chains, RollApps delegate consensus to the Dymension Hub. The Dymension Hub thus acts as the decentralized source of truth and decides when a RollApp is in good standing. As such, the Dymension Hub intermediates transfers in and out of RollApps. By utilizing the existing IBC stack, RollApps are able to be connected to the IBC-enabled ecosystem even without consensus.

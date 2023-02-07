@@ -15,9 +15,9 @@ A RollApp instance in Dymension is an application-specific rollup, built using t
 
 A Cosmos SDK Proof-of-Stake chain which utilizes the Tendermint Core state replication model for networking and consensus. Contrary to a monolithic blockchain, Dymension’s settlement layer, also referred to as the Dymension Hub, is specifically designed to provide an optimized service for rollups. As such, rollup servicing logic is enshrined within the settlement layer, resulting in a hub for native interoperability between RollApps.
 
-### Inter-RollApp Communication (IRC)
+### Inter-Blockchain Communication (IBC)
 
-IRC is an Inter-Blockchain Communication (IBC) based protocol which provides safe message transferring between Dymension RollApps. IRC leverages the common communication ground of all Dymension RollApps, the Dymension Hub.
+RollApps natively interact with the Inter-Blockchain Communication (IBC) protocol which provides safe message transferring between Dymension RollApps. RollApps leverage the common communication ground of all Dymension RollApps, the Dymension Hub.
 
 ### RollApp Virtual Machine (RVM)
 
