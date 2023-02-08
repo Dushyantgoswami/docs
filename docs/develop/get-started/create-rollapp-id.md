@@ -7,9 +7,6 @@ To build our RollApp we must first register it with the Dymension Hub. Open a ne
 
 ```bash
 ROLLAPP_ID="local-rollapp"
-MONIKER_NAME="local"
-CHAIN_ID="local-testnet"
-KEY_NAME="local-user"
 ```
 
 Send a transaction to the Dymension Hub to create a namespace for the RollApp:

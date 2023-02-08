@@ -39,21 +39,9 @@ const sidebars = {
                             id: "develop/get-started/setup",
                         },
                         {
-                            type: "category",
+                            type: "doc",
                             label: "Run base layers",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Dymension Hub",
-                                    id: "develop/get-started/run-a-hub-node",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Celestia",
-                                    id: "develop/get-started/celestia-light-client",
-                                },
-                            ],
+                            id: "develop/get-started/run-base-layers",
                         },
                         {
                             type: "category",
