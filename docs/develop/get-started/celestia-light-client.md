@@ -23,7 +23,7 @@ touch Dockerfile
 Save the following information in the `Dockerfile` we've created:
 
 ```Dockerfile
-FROM golang:1.19.2-alpine3.16 as go-builder
+FROM golang:1.19.1-alpine3.16 as go-builder
 
 WORKDIR /app
 
@@ -37,7 +37,7 @@ RUN git clone https://github.com/celestiaorg/celestia-node.git
 
 WORKDIR /app/celestia-node
 
-RUN git checkout tags/v0.5.0-rc5
+RUN git checkout tags/v0.6.4
 
 RUN make build && make cel-key
 
@@ -46,7 +46,7 @@ FROM alpine:3.16.1
 COPY --from=go-builder /app/celestia-node/build/celestia /usr/local/bin/
 COPY --from=go-builder /app/celestia-node/cel-key /usr/local/bin/
 
-ENV CELESTIA_BRIDGE_NODE_ENDPOINT=https://limani.celestia-devops.dev
+ENV CELESTIA_BRIDGE_NODE_ENDPOINT=https://rpc-mocha.pops.one
 ENV CELESTIA_BRIDGE_NODE_PORT=9090
 ENV WALLET_KEY_NAME=dymension-test
 
@@ -87,7 +87,7 @@ Upon completion of the build, take the returned container id and replace `<docke
 docker exec -i <docker-id> sh -c "cel-key show dymension-test --keyring-backend test --node.type light" | grep "address"
 ```
 
-Take the address and post it in the Celestia arabica-faucet channel on Discord to request faucet tokens:
+Take the address and post it in the Celestia mocha-faucet channel on Discord to request faucet tokens:
 
 ```bash
 $request <CELESTIA_ADDRESS>
@@ -105,4 +105,4 @@ You can see the logs by replacing `<container-id>` with the Container-ID from th
 docker logs -f <container-id>
 ```
 
-Now that we've set up the base layers for our RollApp we may go ahead and register, deploy and build our RollApp! 
+Now that we've set up the base layers for our RollApp we may go ahead and register, deploy and build our RollApp!

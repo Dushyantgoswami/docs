@@ -12,7 +12,7 @@ Testnet and Mainnet production environments does not require running a Dymension
 #### Step 1: Install Dymension Hub:
 
 ```bash
-git clone https://github.com/dymensionxyz/dymension.git --branch v0.1.0-alpha
+git clone https://github.com/dymensionxyz/dymension.git --branch v0.2.0-beta
 cd dymension
 ```
 
