@@ -20,7 +20,7 @@ This command made the following changes to the source code:
 
 To change the source code so that the query returns the `"Hello, %s!"` string, modify the return statement in `query_say_hello.go` to return `fmt.Sprintf("hello %s", req.Name)`.
 
-```go title="x/hello/keeper/query_say_hello.go"
+```go title="x/hello/keeper/grpc_query_say_hello.go"
 func (k Keeper) SayHello(goCtx context.Context, req *types.QuerySayHelloRequest) (*types.QuerySayHelloResponse, error) {
 	if req == nil {
 		return nil, status.Error(codes.InvalidArgument, "invalid request")
