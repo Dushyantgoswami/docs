@@ -1,38 +1,38 @@
 ---
-title: "Deploy the smart contract"
+title: "Deploy a smart contract"
 slug: deploy
 ---
 
-Now that we [created](create.md) the smart contract, let's see how to deploy it to the EVM RollApp and test it.
+Now that we've connected our running EVM RollApp node to Metamask let's build and deploy a smart contract to the blockchain. In this section we will go over how to create a NFT contract on the EVM RollApp. Borrowed from [Foundry's](https://book.getfoundry.sh/tutorials/solmate-nft) tutorial on creating a NFT.
 
-## Contract deployment
+## Create the solidity contract
 
-```sh
-truffle migrate --network development
+Create `contracts/NFT.sol` containing the following contract:
+
+```js
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity 0.8.10;
+
+import "https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol";
+
+contract NFT is ERC721 {
+    uint256 public currentTokenId;
+
+    constructor(
+        string memory _name,
+        string memory _symbol
+    ) ERC721(_name, _symbol) {}
+
+    function mintTo(address recipient) public payable returns (uint256) {
+        uint256 newItemId = ++currentTokenId;
+        _safeMint(recipient, newItemId);
+        return newItemId;
+    }
+
+    function tokenURI(uint256 id) public view virtual override returns (string memory) {
+        return Strings.toString(id);
+    }
+}
+
 ```
-
-## Contract testing
-
-```sh
-truffle test --network development
-```
-
-Assuming everythign went well, you should see the following message after the tests completed successfully:
-
-```sh
-Using network 'development'.
-
-
-Compiling your contracts...
-===========================
-> Everything is up to date, there is nothing to compile.
-
-
-  Contract: Counter
-    ✔ should add (1026ms)
-
-
-  1 passing (2s)
-```
-
-Next, let's see how to connect our EVM RollApp to Metamask.

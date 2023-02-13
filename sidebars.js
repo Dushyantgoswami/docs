@@ -143,8 +143,8 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Create",
-                            id: "develop/build/evm/create",
+                            label: "Add Wallet",
+                            id: "develop/build/evm/add-metamask-wallet",
                         },
                         {
                             type: "doc",
@@ -153,8 +153,8 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Add Wallet",
-                            id: "develop/build/evm/add-metamask-wallet",
+                            label: "Interact",
+                            id: "develop/build/evm/interact",
                         },
                     ],
                 },
