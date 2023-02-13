@@ -3,59 +3,38 @@ title: "Create a smart contract"
 slug: create
 ---
 
-In this section we will go over how to create a [truffle](https://trufflesuite.com/) project that we'll use for developing the Solidity smart contract.
-
-## Create and init a truffle project
-
-Create a new directory to host the contracts and initialize it:
-
-```sh
-mkdir ethermint-truffle && cd ethermint-truffle
-
-truffle init
-```
+In this section we will go over how to create a NFT for the EVM RollApp. Borrowed from [Foundry's](https://book.getfoundry.sh/tutorials/solmate-nft) tutorial on creating a NFT.
 
 ## Create the solidity contract
 
-Create `contracts/Counter.sol` containing the following contract:
+Create `contracts/NFT.sol` containing the following contract:
 
 ```js
-contract Counter {
-  uint256 counter = 0;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity 0.8.10;
 
-  function add() public {
-    counter++;
-  }
+import "https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol";
 
-  function subtract() public {
-    counter--;
-  }
+contract NFT is ERC721 {
+    uint256 public currentTokenId;
 
-  function getCounter() public view returns (uint256) {
-    return counter;
-  }
+    constructor(
+        string memory _name,
+        string memory _symbol
+    ) ERC721(_name, _symbol) {}
+
+    function mintTo(address recipient) public payable returns (uint256) {
+        uint256 newItemId = ++currentTokenId;
+        _safeMint(recipient, newItemId);
+        return newItemId;
+    }
+
+    function tokenURI(uint256 id) public view virtual override returns (string memory) {
+        return Strings.toString(id);
+    }
 }
-```
 
-Create `test/counter_test.js` containing the following tests:
-
-```js
-const Counter = artifacts.require("Counter");
-
-contract("Counter", (accounts) => {
-    const from = accounts[0];
-    let counter;
-
-    before(async () => {
-        counter = await Counter.new();
-    });
-
-    it("should add", async () => {
-        await counter.add();
-        let count = await counter.getCounter();
-        assert(count == 1, `count was ${count}`);
-    });
-});
 ```
 
 ## Edit the truffle config
