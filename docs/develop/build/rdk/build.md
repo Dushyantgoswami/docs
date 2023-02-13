@@ -36,3 +36,11 @@ func (k Keeper) SayHello(goCtx context.Context, req *types.QuerySayHelloRequest)
 ```
 
 The function now returns a `QuerySayHelloResponse` struct with the `Name` field set to the string `"Hello, %s!"` with `req.Name` as the value for the `%s` placeholder. It also returns a nil error to indicate success.
+
+Now that you have added a query to your RollApp and modified it to return the value you want, you can start your RollApp.
+
+The following build command compiles the source code of the project into a binary and installs the binary in the `$(go env GOPATH)/bin` directory:
+
+```
+ignite chain build
+```
