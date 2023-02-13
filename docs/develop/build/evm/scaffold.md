@@ -3,8 +3,9 @@ title: Scaffold EVM
 slug: scaffold
 ---
 
-
 ## Install Ethermint for your RollApp
+
+First, we'll install the branch of Ethermint that includes Dymension's replacement for Tendermint.
 
 ```bash
 git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.2-alpha-ethermint-v0.18.0
