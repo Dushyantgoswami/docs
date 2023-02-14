@@ -8,7 +8,7 @@ slug: build-dymd
 1. Use `git` to retrieve [Dymension Hub](https://github.com/dymensionxyz/dymension):
 
     ```
-    git clone https://github.com/dymensionxyz/dymension.git --branch TODO
+    git clone https://github.com/dymensionxyz/dymension.git --branch v0.2.0-beta
     cd dymension
     ```
 
@@ -29,8 +29,8 @@ slug: build-dymd
     ```bash
     name: dymension
     server_name: dymd
-    version: TODO
-    commit: TODO
+    version: v0.2.0-beta
+    commit: 987e33407911c0578251f3ace95d2382be7e661d
     ```
 
     If the dymd command is not found an error message is returned, confirm that your [GOPATH](https://go.dev/doc/gopath_code#GOPATH) is correctly configured by running the following command:
