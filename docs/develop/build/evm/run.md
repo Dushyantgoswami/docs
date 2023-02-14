@@ -3,7 +3,7 @@ title: Run EVM RollApp
 slug: run
 ---
 
-Next we'll initialize the EVM RollApp. To set up the appropriate working environment please input the following env variables:
+To set up the appropriate working environment please input the following env variables:
 
 ```
 KEY="mykey"
@@ -56,7 +56,7 @@ Next we'll ensure everything worked and that the genesis file is setup correctly
 ethermintd validate-genesis
 ```
 
-Last but not least we will run the EVM RollApp with `Dymint` replacement for Tendermint.
+Last but not least we will run the EVM RollApp with `Dymint` replacement for Tendermint. Note, in this tutorial we are using a mock data availability layer and settlement layer for quick testing. For a tutorial with a greater scope please visit the [Get Started](/docs/develop/get-started/setup.mdx) section and run a [RDK RollApp](/docs/develop/build/rdk/start.md).
 
 ```
 ethermintd start --dymint.aggregator true \
