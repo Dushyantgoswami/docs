@@ -11,6 +11,12 @@ Validators can set up a private Dymension Hub network to become familiar with ru
 
 The simplest Dymension Hub network you can set up is a local testnet with just a single node. In a single-node environment, you have one account and are the only validator signing blocks for your private network.
 
+1. Initialize a genesis file:
+
+```
+dymd init <Moniker>
+```
+
 1. Generate a Dymension account. Replace the variable with your account name:
 
 ```
@@ -26,7 +32,7 @@ dymd add-genesis-account <ADDRESS_HERE> 100000000udym
 3. Declare your validator and self-delegation via a special transaction included in the genesis file called a gentx:
 
 ```
-dymd gentx <KEY_NAME> 10000000udym --chain-id dym-test-1
+dymd gentx <KEY_NAME> 10000000udym --chain-id local-testnet
 ```
 
 4. Add the gentx to the genesis file:
@@ -49,13 +55,13 @@ If the private Dymension Hub network is set up correctly, your Dymd node will be
 
 **Genesis file** specifies the account balances and parameters at the start of the network to use when replaying transactions and syncing.
 
-**Addressbook** lists a selection of peers for your node to dial to in order to discover other nodes in the network. The current testnet information is as follows:
+-   Chain-id: 35-C
+-   Binaries: https://github.com/dymensionxyz/dymension.git
+-   Version: v0.2.0-beta
+-   Git commit: 987e33407911c0578251f3ace95d2382be7e661d
+-   Genesis: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/35-C/genesis.json)
+-   Seed nodes: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/35-C/seeds.txt)
 
--   Network: 35-C
--   Genesis: TODO
--   AddressBook: TODO
--   Seed nodes: TODO
-
-For default `dymd` configurations, the `genesis` and `addressbook` files should be placed under `~/.dymension/config/genesis.json` and `~/.dymension/config/addrbook.json` respectively.
+For default `dymd` configurations, the `genesis` should be placed under `~/.dymension/config/genesis.json`.
 
 Continue to the [Sync](./sync.md) page to find out more about syncing your node.

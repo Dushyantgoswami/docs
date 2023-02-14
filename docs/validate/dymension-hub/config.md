@@ -68,7 +68,7 @@ sed -i -e 's/external_address = \"\"/external_address = \"'$(curl httpbin.org/ip
 
 ### Set up `seed_mode`
 
-In seed mode, your node constantly crawls the network and looks for peers. If another node requests addresses, it responds and disconnects. Seed mode will not work if the peer-exchange reactor is disabled.
+In seed mode, your node constantly crawls the network and looks for peers. If another node requests addresses, it responds and disconnects. Seed mode will not work if the peer-exchange reactor is disabled. If you would like to run your full node in seed mode change the following config for your client.
 
 ```toml
 seed_mode = true
@@ -87,7 +87,7 @@ seeds = "c6cdcc7f8e1a33f864956a8201c304741411f219@3.214.163.125:26656"
 
 The nodes you specify are the trusted persistent peers that can help anchor your node in the p2p network. If the connection fails, they are dialed and automatically redialed for 24 hours. The automatic redial functionality uses exponential backoff and stops after 24 hours of trying to connect.
 
-If the value of `persistent_peers_max_dial_period` is more than zero, the pause between each call to each persistent peer will not exceed `persistent_peers_max_dial_period` during exponential backoff, and the automatic redial process continues.
+If the value of `persistent_peers_max_dial_period` is more than zero, the pause between each call to each persistent peer will not exceed `persistent_peers_max_dial_period` during exponential backoff, and the automatic redial process continues. The following is an example, for relevant peers see the [testnet](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/35-C) GitHub repository.
 
 ```toml
 # Comma separated list of nodes to keep persistent connections to.

@@ -23,10 +23,10 @@ To create the validator and initialize it with a self-delegation, run the follow
 
 ```bash
 dymd tx staking create-validator \
-    --amount=9000000000udym \
+    --amount=500000000000udym \
     --pubkey=$(<your-consensus-PubKey>) \
     --moniker="<your-moniker>" \
-    --chain-id=<chain_id> \
+    --chain-id=35-C \
     --from=<key-name> \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
