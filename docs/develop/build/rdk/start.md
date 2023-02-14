@@ -3,7 +3,7 @@ title: Setup RDK RollApp
 slug: setup
 ---
 
-In this tutorial we will demonstrate how to build an example `Hello World` RollApp. The RDK RollApp tutorial is borrowed from Ignite's tutorial [here](https://docs.ignite.com/guide/hello). For a more in-depth tutorial on building Cosmos SDK and Dymension RDK modules please visit the Cosmos Academy's [tutorial](https://tutorials.cosmos.network/hands-on-exercise/1-ignite-cli/3-stored-game.html).
+In this tutorial we will demonstrate how to build an example `Hello World` RollApp. The RDK RollApp tutorial is borrowed from Ignite's [tutorial](https://docs.ignite.com/). For a more in-depth tutorial on building Cosmos SDK and Dymension RDK modules please visit the Cosmos Academy's [tutorial](https://tutorials.cosmos.network/hands-on-exercise/1-ignite-cli/3-stored-game.html).
 
 ## Required installations
 

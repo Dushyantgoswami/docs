@@ -143,8 +143,8 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Scaffold",
-                            id: "develop/build/evm/scaffold",
+                            label: "Run",
+                            id: "develop/build/evm/run",
                         },
                         {
                             type: "doc",

@@ -36,3 +36,18 @@ contract NFT is ERC721 {
 }
 
 ```
+
+Change to the `Solidity Compiler` page and match the Compiler version to the one stated at the top of the smart contract (i.e. 0.8.10). Then compile `NFT.sol`. Now you will be able to deploy the smart contract to the EVM RollApp.
+
+Navigate to the `Deploy & Run Transactions` on the sidebar. Make sure the Injected Provider - MetaMask is set to the wallet address with your tokens.
+
+Your smart contract has two parameters in the constructor:
+
+```
+string memory _name
+string memory _symbol
+```
+
+Enter the arguments next to the `Deploy` button. When you select `Deploy` a pop-up MetaMask should appear and will ask you to sign the transaction to deploy the contract to your EVM RollApp.
+
+Now that we've deployed the smart contract to the EVM RollApp let's interact with it...
