@@ -7,7 +7,7 @@ First, we'll install the branch of Ethermint that includes Dymension's replaceme
 
 If you'd like to utilize the running base layers of the [Get Started section](/docs/develop/get-started/setup.mdx) please run a [RDK RollApp](/docs/develop/build/rdk/start.md). Documentation updates in the near future will provide instructions on how to publish data to live testnet environments from the EVM RollApp.
 
-This EVM RollApp tutorial is helpful for building RollApps your local machine to get a feel for developing with EVM in Dymension. To get started we will first need to download Dymension's fork of Ethermint:
+This EVM RollApp tutorial is helpful for building RollApps on your local machine to get a feel for developing with EVM in Dymension. To get started we will first need to download Dymension's fork of Ethermint:
 
 ```bash
 git clone https://github.com/dymensionxyz/ethermint.git --branch v0.1.2-alpha-ethermint-v0.18.0
