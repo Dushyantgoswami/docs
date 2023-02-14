@@ -50,4 +50,4 @@ string memory _symbol
 
 Enter the arguments next to the `Deploy` button. When you select `Deploy` a pop-up MetaMask should appear and will ask you to sign the transaction to deploy the contract to your EVM RollApp.
 
-Now that we've deployed the smart contract to the EVM RollApp let's interact with it...
+Once you've signed the transaction, the smart contract will be live on your EVM RollApp.
