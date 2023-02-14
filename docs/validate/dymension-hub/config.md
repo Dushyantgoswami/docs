@@ -76,11 +76,11 @@ seed_mode = true
 
 ### Add `seeds`
 
-To manually identify seed nodes, edit the following setting in `config.toml`.
+To manually identify seed nodes, edit the following setting in `config.toml`. Listed below is the Dymension Core Team seed node for Dymension's 35-C testnet. For community provided seed nodes please visit the GitHub repository of the [testnet](https://github.com/dymensionxyz/testnets/tree/main/dymension-hub/35-C).
 
 ```toml
 # Comma separated list of seed nodes to connect to
-seeds = "id100000000000000000000000000000000@1.2.3.4:26656,id200000000000000000000000000000000@2.3.4.5:4444"
+seeds = "c6cdcc7f8e1a33f864956a8201c304741411f219@3.214.163.125:26656"
 ```
 
 ### Add `persistent_peers`
