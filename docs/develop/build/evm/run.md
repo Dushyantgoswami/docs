@@ -20,13 +20,7 @@ ethermintd config keyring-backend $KEYRING
 ethermintd config chain-id $CHAINID
 ```
 
-Next we will create a key pair for our EVM RollApp. The `<Key_Name>` is used to identify the key and to perform operations, such as signing transactions, accessing funds, or granting permissions, on behalf of the associated account or address. Please replace `<Key_Name>` with an identifiable name.
-
-```
-ethermintd keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO
-```
-
-Now we'll initalize our Genesis file:
+Let's initalize our Genesis file:
 
 ```
 ethermintd init $MONIKER --chain-id $CHAINID
@@ -34,8 +28,16 @@ ethermintd init $MONIKER --chain-id $CHAINID
 
 Now that we've initialized a Genesis file, please open the file `~/.ethermintd/config/genesis.json` and replace all instances of the `stake` denom with `aphoton`. This will be the name of the currency we use in our EVM RollApp.
 
+We will now create a local key pair for our EVM RollApp. The `Key` is used to identify the key and to perform operations, such as signing transactions, accessing funds, or granting permissions, on behalf of the associated account or address.
+
 ```
-ethermintd add-genesis-account $KEY 100000000000000000000000000aphoton --keyring-backend $KEYRING
+ethermintd keys add $KEY --keyring-backend $KEYRING
+```
+
+We will next add our created account to the generated Genesis file and add tokens for genesis. Replace `<Address>` with the generated address from the created key pair.
+
+```
+ethermintd add-genesis-account <Address> 100000000000000000000000000aphoton --keyring-backend $KEYRING
 ```
 
 Next we will delegate most of these tokens to your validator node and prepare the next for start.
@@ -50,13 +52,13 @@ Now that we've created a validator and self-delegated tokens we can save it to t
 ethermintd collect-gentxs
 ```
 
-Next we'll ensure everything worked and that the genesis file is setup correctly:
+Next we'll ensure that the genesis file is setup correctly:
 
 ```
 ethermintd validate-genesis
 ```
 
-Last but not least we will run the EVM RollApp with `Dymint` replacement for Tendermint. Note, in this tutorial we are using a mock data availability layer and settlement layer for quick testing. For a tutorial with a greater scope please visit the [Get Started](/docs/develop/get-started/setup.mdx) section and run a [RDK RollApp](/docs/develop/build/rdk/start.md).
+Last but not least we will run the EVM RollApp with `Dymint` as a replacement for Tendermint. Note, in this tutorial we are using a mock data availability layer and settlement layer for quick testing. For a tutorial with a greater scope please visit the [Get Started](/docs/develop/get-started/setup.mdx) section and run a [RDK RollApp](/docs/develop/build/rdk/start.md).
 
 ```
 ethermintd start --dymint.aggregator true \

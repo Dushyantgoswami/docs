@@ -1,6 +1,6 @@
 ---
-title: Scaffold CosmWasm VM
-slug: scaffold
+title: Install CosmWasm VM
+slug: Install
 ---
 
 First, we'll install the branch of Wasm that includes Dymension's replacement for Tendermint, [Dymint](https://github.com/dymensionxyz/dymint). The current version uses a mock data availability and settlement layer configuration.
@@ -28,4 +28,4 @@ Now that you've installed the Ethermint binaries and moved them to the appropria
 wasmd --help
 ```
 
-Next we can move on to scaffolding our CosmWasm RollApp...
+Next we can move on to scaffolding and running our CosmWasm RollApp...

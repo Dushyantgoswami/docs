@@ -106,8 +106,13 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Scaffold",
-                            id: "develop/build/cosmwasm/scaffold",
+                            label: "Install",
+                            id: "develop/build/cosmwasm/install",
+                        },
+                        {
+                            type: "doc",
+                            label: "Run",
+                            id: "develop/build/cosmwasm/run",
                         },
                         {
                             type: "doc",
