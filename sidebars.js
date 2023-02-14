@@ -138,6 +138,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Install",
+                            id: "develop/build/evm/install",
+                        },
+                        {
+                            type: "doc",
                             label: "Scaffold",
                             id: "develop/build/evm/scaffold",
                         },

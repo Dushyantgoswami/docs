@@ -25,17 +25,13 @@ Currency Symbol (optional): tEVMOS
 
 Click again on the top right avatar and select `Import Account` (make sure that the `Private Key` option is selected).
 
-Export your private key by running the following command:
+Export your private key by running the following command, replacing `<Key_Name>` with the name of your key generated:
 
 ```sh
-KEY="mykey"
-
-ethermintd keys unsafe-export-eth-key $KEY --keyring-backend test
+ethermintd keys unsafe-export-eth-key <Key_Name>
 ```
 
-Paste the exported private key in the form input and click `Import`.
-
-Your Metamask account balance should now show 1000000000 TEVMOS (or a bit less if you interacted previously with the truffle contract).
+Paste the exported private key in the form input and click `Import`. Your Metamask account balance should now show 1000000000 TEVMOS.
 
 ## Add Metamask wallet to Remix IDE
 
