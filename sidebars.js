@@ -8,12 +8,12 @@ const sidebars = {
             items: [
                 {
                     type: "doc",
-                    label: "Modular Architecture",
+                    label: "Modular architecture",
                     id: "learn/modular-intro",
                 },
                 {
                     type: "doc",
-                    label: "The Dymension Hub",
+                    label: "Dymension Hub",
                     id: "learn/dymension-hub",
                 },
                 {
@@ -25,82 +25,72 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Developers",
+            label: "Develop",
             collapsed: true,
             items: [
                 {
                     type: "category",
-                    label: "Getting started",
+                    label: "Get Started",
                     collapsed: true,
                     items: [
                         {
                             type: "doc",
-                            label: "Introduction",
-                            id: "developers/getting-started/intro",
+                            label: "Setup environment",
+                            id: "develop/get-started/setup",
                         },
                         {
                             type: "doc",
-                            label: "Setup work environment",
-                            id: "developers/getting-started/setup",
+                            label: "Run base layers",
+                            id: "develop/get-started/run-base-layers",
                         },
                         {
-                            type: "doc",
-                            label: "Run a hub node",
-                            id: "developers/getting-started/run-a-hub-node",
+                            type: "category",
+                            label: "Register RollApp",
+                            collapsed: true,
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Create RollApp",
+                                    id: "develop/get-started/create-rollapp-id",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Add Sequencer",
+                                    id: "develop/get-started/add-sequencer",
+                                },
+                            ],
                         },
                     ],
                 },
                 {
                     type: "category",
-                    label: "Checkers RollApp",
+                    label: "RDK RollApp",
                     collapsed: true,
                     items: [
                         {
                             type: "doc",
-                            label: "Scaffold the RollApp",
-                            id: "developers/checkers-rollapp/scaffold-rollapp",
+                            label: "Start",
+                            id: "develop/build/rdk/start",
                         },
                         {
                             type: "doc",
-                            label: "Install the RDK",
-                            id: "developers/checkers-rollapp/install-rdk",
+                            label: "Scaffold",
+                            id: "develop/build/rdk/scaffold",
                         },
                         {
                             type: "doc",
-                            label: "Initialize the RollApp",
-                            id: "developers/checkers-rollapp/init-rollapp",
+                            label: "Build",
+                            id: "develop/build/rdk/build",
                         },
                         {
                             type: "doc",
-                            label: "Register the RollApp",
-                            id: "developers/checkers-rollapp/register-rollapp",
-                        },
-                        {
-                            type: "category",
-                            label: "Connect a DA layer",
-                            collapsed: true,
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Mock",
-                                    id: "developers/checkers-rollapp/connect-da-layer/mock",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Celestia",
-                                    id: "developers/checkers-rollapp/connect-da-layer/celestia",
-                                },
-                            ],
+                            label: "Run",
+                            id: "develop/build/rdk/run",
                         },
                         {
                             type: "doc",
-                            label: "Interact with the RollApp",
-                            id: "developers/checkers-rollapp/interact",
-                        },
-                        {
-                            type: "doc",
-                            label: "View RollApp state",
-                            id: "developers/checkers-rollapp/query-rollapp",
+                            label: "Interact",
+                            id: "develop/build/rdk/interact",
                         },
                     ],
                 },
@@ -111,33 +101,33 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Introduction",
-                            id: "developers/cosmwasm-rollapp/index",
+                            label: "Start",
+                            id: "develop/build/cosmwasm/start",
                         },
                         {
                             type: "doc",
-                            label: "Setup work environment",
-                            id: "developers/cosmwasm-rollapp/setup",
+                            label: "Install",
+                            id: "develop/build/cosmwasm/install",
                         },
                         {
                             type: "doc",
-                            label: "Run the RollApp",
-                            id: "developers/cosmwasm-rollapp/run-the-rollapp",
+                            label: "Run",
+                            id: "develop/build/cosmwasm/run",
                         },
                         {
                             type: "doc",
-                            label: "Deploy a smart contract",
-                            id: "developers/cosmwasm-rollapp/deploy-contract",
+                            label: "Deploy",
+                            id: "develop/build/cosmwasm/deploy",
                         },
                         {
                             type: "doc",
-                            label: "Interact with the Contract",
-                            id: "developers/cosmwasm-rollapp/contract-interaction",
+                            label: "Interact",
+                            id: "develop/build/cosmwasm/interact",
                         },
                         {
                             type: "doc",
-                            label: "Integrate Keplr",
-                            id: "developers/cosmwasm-rollapp/integrate-keplr",
+                            label: "Add Wallet",
+                            id: "develop/build/cosmwasm/add-keplr-wallet",
                         },
                     ],
                 },
@@ -148,33 +138,28 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Introduction",
-                            id: "developers/evm-rollapp/intro",
+                            label: "Start",
+                            id: "develop/build/evm/start",
                         },
                         {
                             type: "doc",
-                            label: "Setup work environment",
-                            id: "developers/evm-rollapp/setup",
+                            label: "Install",
+                            id: "develop/build/evm/install",
                         },
                         {
                             type: "doc",
-                            label: "Run the RollApp",
-                            id: "developers/evm-rollapp/run-the-rollapp",
+                            label: "Run",
+                            id: "develop/build/evm/run",
                         },
                         {
                             type: "doc",
-                            label: "Create a smart contract",
-                            id: "developers/evm-rollapp/create-contract",
+                            label: "Add Wallet",
+                            id: "develop/build/evm/add-metamask-wallet",
                         },
                         {
                             type: "doc",
-                            label: "Deploy and test the contract",
-                            id: "developers/evm-rollapp/deploy-and-test-contract",
-                        },
-                        {
-                            type: "doc",
-                            label: "Integrate Metamask",
-                            id: "developers/evm-rollapp/integrate-metamask",
+                            label: "Deploy",
+                            id: "develop/build/evm/deploy",
                         },
                     ],
                 },
@@ -182,23 +167,85 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Validators",
+            label: "Validate",
             items: [
                 {
                     type: "doc",
-                    label: "Overview",
-                    id: "validators/full-node/index",
+                    label: "Node FAQs",
+                    id: "validate/dymension-hub/overview",
                 },
                 {
                     type: "doc",
-                    label: "Run a node",
-                    id: "validators/full-node/run-a-node",
+                    label: "Build Dymension Hub",
+                    id: "validate/dymension-hub/build-dymd",
+                },
+                {
+                    type: "doc",
+                    label: "Node configuration",
+                    id: "validate/dymension-hub/config",
+                },
+                {
+                    type: "doc",
+                    label: "Join a network",
+                    id: "validate/dymension-hub/join-network",
+                },
+                {
+                    type: "doc",
+                    label: "Sync node",
+                    id: "validate/dymension-hub/sync",
+                },
+                {
+                    type: "doc",
+                    label: "Create validator",
+                    id: "validate/dymension-hub/validator",
+                },
+                {
+                    type: "doc",
+                    label: "Upgrade",
+                    id: "validate/dymension-hub/upgrades",
                 },
                 {
                     type: "doc",
                     label: "Reset and troubleshooting",
-                    id: "validators/full-node/reset-node",
+                    id: "validate/dymension-hub/reset-node",
                 },
+
+                // {
+                //     type: "category",
+                //     label: "RollApps",
+                //     items: [
+                //         {
+                //             type: "doc",
+                //             label: "Node FAQs",
+                //             id: "validate/rollapps/overview",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Build RollApp",
+                //             id: "validate/rollapps/build-rollapp",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Join network",
+                //             id: "validate/rollapps/join-network",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Sync node",
+                //             id: "validate/rollapps/sync",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Upgrade",
+                //             id: "validate/rollapps/upgrade",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Reset and troubleshooting",
+                //             id: "validate/rollapps/reset-node",
+                //         },
+                //     ],
+                // },
             ],
         },
         {

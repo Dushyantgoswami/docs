@@ -54,7 +54,7 @@ const config = {
             docs: {
                 sidebar: {
                     autoCollapseCategories: true,
-                    hideable: true,
+                    hideable: false,
                 },
             },
             navbar: {
@@ -65,75 +65,19 @@ const config = {
                 },
                 items: [
                     {
-                        type: "dropdown",
                         label: "Learn",
-                        position: "left",
-                        items: [
-                            {
-                                label: "Modular Architecture",
-                                type: "doc",
-                                docId: "learn/modular-intro",
-                            },
-                            {
-                                label: "The Dymension Hub",
-                                type: "doc",
-                                docId: "learn/dymension-hub",
-                            },
-                            {
-                                label: "RollApps",
-                                type: "doc",
-                                docId: "learn/rollapps",
-                            },
-                        ],
+                        position: "right",
+                        to: "learn/modular-intro",
                     },
                     {
-                        type: "dropdown",
-                        label: "Developers",
-                        position: "left",
-                        items: [
-                            {
-                                type: "doc",
-                                label: "Getting Started",
-                                docId: "developers/getting-started/intro",
-                            },
-                            {
-                                type: "doc",
-                                label: "Checkers RollApp",
-                                docId: "developers/checkers-rollapp/scaffold-rollapp",
-                            },
-                            {
-                                type: "doc",
-                                label: "CosmWasm RollApp",
-                                docId: "developers/cosmwasm-rollapp/index",
-                            },
-                            {
-                                type: "doc",
-                                label: "EVM RollApp",
-                                docId: "developers/evm-rollapp/intro",
-                            },
-                        ],
+                        label: "Develop",
+                        position: "right",
+                        to: "develop/get-started/setup",
                     },
                     {
-                        type: "dropdown",
-                        label: "Validators",
-                        position: "left",
-                        items: [
-                            {
-                                type: "doc",
-                                label: "Overview",
-                                docId: "validators/full-node/index",
-                            },
-                            {
-                                type: "doc",
-                                label: "Run a node",
-                                docId: "validators/full-node/run-a-node",
-                            },
-                            {
-                                type: "doc",
-                                label: "Reset and troubleshooting",
-                                docId: "validators/full-node/reset-node",
-                            },
-                        ],
+                        label: "Validate",
+                        position: "right",
+                        to: "validate/dymension-hub/overview",
                     },
                     {
                         href: "https://github.com/dymensionxyz",
