@@ -12,7 +12,7 @@ export DESCRIPTION="{\"Moniker\":\"$MONIKER_NAME\",\"Identity\":\"\",\"Website\"
 export CREATOR_ADDRESS="$(dymd keys show "$KEY_NAME" -a --keyring-backend test)"
 export CREATOR_PUB_KEY="$(dymd keys show "$KEY_NAME" -p --keyring-backend test)"
 
-dymd tx sequencer create-sequencer "$CREATOR_ADDRESS" "$CREATOR_PUB_KEY" "$ROLLAPP_ID" "$DESCRIPTION" \
+dymd tx sequencer create-sequencer "$CREATOR_PUB_KEY" "$ROLLAPP_ID" "$DESCRIPTION" \
   --from "$KEY_NAME" \
   --chain-id "$CHAIN_ID" \
   --keyring-backend test

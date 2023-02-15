@@ -170,87 +170,82 @@ const sidebars = {
             label: "Validate",
             items: [
                 {
-                    type: "category",
-                    label: "Dymension Hub",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Node FAQs",
-                            id: "validate/dymension-hub/overview",
-                        },
-                        {
-                            type: "doc",
-                            label: "Build Dymension Hub",
-                            id: "validate/dymension-hub/build-dymd",
-                        },
-                        {
-                            type: "doc",
-                            label: "Node configuration",
-                            id: "validate/dymension-hub/config",
-                        },
-                        {
-                            type: "doc",
-                            label: "Join a network",
-                            id: "validate/dymension-hub/join-network",
-                        },
-                        {
-                            type: "doc",
-                            label: "Sync node",
-                            id: "validate/dymension-hub/sync",
-                        },
-                        {
-                            type: "doc",
-                            label: "Create validator",
-                            id: "validate/dymension-hub/validator",
-                        },
-                        {
-                            type: "doc",
-                            label: "Upgrade",
-                            id: "validate/dymension-hub/upgrades",
-                        },
-                        {
-                            type: "doc",
-                            label: "Reset and troubleshooting",
-                            id: "validate/dymension-hub/reset-node",
-                        },
-                    ],
+                    type: "doc",
+                    label: "Node FAQs",
+                    id: "validate/dymension-hub/overview",
                 },
                 {
-                    type: "category",
-                    label: "RollApps",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Node FAQs",
-                            id: "validate/rollapps/overview",
-                        },
-                        {
-                            type: "doc",
-                            label: "Build RollApp",
-                            id: "validate/rollapps/build-rollapp",
-                        },
-                        {
-                            type: "doc",
-                            label: "Join network",
-                            id: "validate/rollapps/join-network",
-                        },
-                        {
-                            type: "doc",
-                            label: "Sync node",
-                            id: "validate/rollapps/sync",
-                        },
-                        // {
-                        //     type: "doc",
-                        //     label: "Upgrade",
-                        //     id: "validate/rollapps/upgrade",
-                        // },
-                        // {
-                        //     type: "doc",
-                        //     label: "Reset and troubleshooting",
-                        //     id: "validate/rollapps/reset-node",
-                        // },
-                    ],
+                    type: "doc",
+                    label: "Build Dymension Hub",
+                    id: "validate/dymension-hub/build-dymd",
                 },
+                {
+                    type: "doc",
+                    label: "Node configuration",
+                    id: "validate/dymension-hub/config",
+                },
+                {
+                    type: "doc",
+                    label: "Join a network",
+                    id: "validate/dymension-hub/join-network",
+                },
+                {
+                    type: "doc",
+                    label: "Sync node",
+                    id: "validate/dymension-hub/sync",
+                },
+                {
+                    type: "doc",
+                    label: "Create validator",
+                    id: "validate/dymension-hub/validator",
+                },
+                {
+                    type: "doc",
+                    label: "Upgrade",
+                    id: "validate/dymension-hub/upgrades",
+                },
+                {
+                    type: "doc",
+                    label: "Reset and troubleshooting",
+                    id: "validate/dymension-hub/reset-node",
+                },
+
+                // {
+                //     type: "category",
+                //     label: "RollApps",
+                //     items: [
+                //         {
+                //             type: "doc",
+                //             label: "Node FAQs",
+                //             id: "validate/rollapps/overview",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Build RollApp",
+                //             id: "validate/rollapps/build-rollapp",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Join network",
+                //             id: "validate/rollapps/join-network",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Sync node",
+                //             id: "validate/rollapps/sync",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Upgrade",
+                //             id: "validate/rollapps/upgrade",
+                //         },
+                //         {
+                //             type: "doc",
+                //             label: "Reset and troubleshooting",
+                //             id: "validate/rollapps/reset-node",
+                //         },
+                //     ],
+                // },
             ],
         },
         {
