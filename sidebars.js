@@ -239,16 +239,16 @@ const sidebars = {
                             label: "Sync node",
                             id: "validate/rollapps/sync",
                         },
-                        {
-                            type: "doc",
-                            label: "Upgrade",
-                            id: "validate/rollapps/upgrade",
-                        },
-                        {
-                            type: "doc",
-                            label: "Reset and troubleshooting",
-                            id: "validate/rollapps/reset-node",
-                        },
+                        // {
+                        //     type: "doc",
+                        //     label: "Upgrade",
+                        //     id: "validate/rollapps/upgrade",
+                        // },
+                        // {
+                        //     type: "doc",
+                        //     label: "Reset and troubleshooting",
+                        //     id: "validate/rollapps/reset-node",
+                        // },
                     ],
                 },
             ],

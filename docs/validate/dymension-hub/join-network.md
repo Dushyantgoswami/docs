@@ -51,7 +51,7 @@ If the private Dymension Hub network is set up correctly, your Dymd node will be
 
 ## Join a public network
 
-#### Download the genesis file and address book
+#### Download the genesis file
 
 **Genesis file** specifies the account balances and parameters at the start of the network to use when replaying transactions and syncing.
 

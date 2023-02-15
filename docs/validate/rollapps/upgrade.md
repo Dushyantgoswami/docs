@@ -27,7 +27,7 @@ Make sure that every node has a unique `priv_validator.json`. Do not copy the `p
 
 ### 3. Software upgrade
 
-Now it is time to upgrade the software. Go to the GitHub repository that maintains the versions [here] and run:
+Now it is time to upgrade the software. Go to the GitHub repository that maintains the versions [here](https://github.com/dymensionxyz/testnets) and run (replacing `<version>`):
 
 ```bash
 git checkout <version> && git pull
