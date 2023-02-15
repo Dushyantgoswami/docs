@@ -14,7 +14,7 @@ The simplest Dymension Hub network you can set up is a local testnet with just a
 1. Initialize a genesis file:
 
 ```
-dymd init <Moniker>
+dymd init <Moniker> --chain-id=35-C
 ```
 
 1. Generate a Dymension account. Replace the variable with your account name:
@@ -26,13 +26,13 @@ dymd keys add <KEY_NAME_HERE>
 2. Run the following commands to add your account and set the initial balance:
 
 ```
-dymd add-genesis-account <ADDRESS_HERE> 100000000udym
+dymd add-genesis-account <ADDRESS_HERE> 600000000000udym
 ```
 
 3. Declare your validator and self-delegation via a special transaction included in the genesis file called a gentx:
 
 ```
-dymd gentx <KEY_NAME> 10000000udym --chain-id local-testnet
+dymd gentx <KEY_NAME> 500000000000udym --chain-id 35-C
 ```
 
 4. Add the gentx to the genesis file:

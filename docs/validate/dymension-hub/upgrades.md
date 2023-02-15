@@ -27,13 +27,4 @@ Make sure that every node has a unique `priv_validator.json`. Do not copy the `p
 
 ### 3. Software upgrade
 
-Now it is time to upgrade the software. Go to the project directory and run:
-
-```bash
-git checkout TODO && git pull
-make
-```
-
-If you have issues at this step, please check that you have a compatible version of Go installed (v1.18+).
-
-Your full node is now cleanly upgraded!
+Now it is time to upgrade the software. Go to the project directory and pull the correct version. If you have issues at this step, please check that you have a compatible version of Go installed (v1.18+).

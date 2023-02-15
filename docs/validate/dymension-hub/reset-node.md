@@ -21,15 +21,7 @@ Running this command successfully will produce the following log:
 
 ### Change Genesis
 
-To change the genesis version, delete `~/.dymension/config/genesis.json`.
-
-You can recreate a genesis version via the following steps:
-
-```bash
- dymd add-genesis-account <ADDRESS_HERE> 100000000udym
- dymd gentx <KEY_NAME_HERE> 10000000udym --chain-id=35-C
- dymd collect-gentxs
-```
+To change the genesis version, delete `~/.dymension/config/genesis.json`. Genesis files are provided in the [GitHub](https://github.com/dymensionxyz/testnets) for the appropriate networks.
 
 ### Reset personal data
 
