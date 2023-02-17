@@ -24,7 +24,7 @@ To create the validator and initialize it with a self-delegation, run the follow
 ```bash
 dymd tx staking create-validator \
     --amount=500000000000udym \
-    --pubkey=$(<your-consensus-PubKey>) \
+    --pubkey=$(dymd tendermint show-validator) \
     --moniker="<your-moniker>" \
     --chain-id=35-C \
     --from=<key-name> \
