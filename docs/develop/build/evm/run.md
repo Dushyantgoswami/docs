@@ -26,7 +26,13 @@ Let's initalize our Genesis file:
 ethermintd init $MONIKER --chain-id $CHAINID
 ```
 
-Now that we've initialized a Genesis file, please open the file `~/.ethermintd/config/genesis.json` and replace all instances of the `stake` denom with `aphoton`. This will be the name of the currency we use in our EVM RollApp.
+Now that we've initialized a Genesis file, please replace all instances of the `stake` denom with `aphoton` by running the following commands. This will be the name of the currency we use in our EVM RollApp:
+
+```
+sed -i'' -e 's/bond_denom": ".*"/bond_denom": "aphoton"/' "$HOME"/.ethermintd/config/genesis.json
+sed -i'' -e 's/mint_denom": ".*"/mint_denom": "aphoton"/' "$HOME"/.ethermintd/config/genesis.json
+sed -i'' -e 's/denom": ".*"/denom": "aphoton"/' "$HOME"/.ethermintd/config/genesis.json
+```
 
 We will now create a local key pair for our EVM RollApp. The `Key` is used to identify the key and to perform operations, such as signing transactions, accessing funds, or granting permissions, on behalf of the associated account or address.
 
