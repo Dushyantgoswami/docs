@@ -41,7 +41,7 @@ Navigate to the project root and run the following command to optimize the size 
 docker run --rm -v "$(pwd)":/code \
   --mount type=volume,source="$(basename "$(pwd)")_cache",target=/code/target \
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
-  cosmwasm/rust-optimizer:0.12.6
+  cosmwasm/rust-optimizer:0.12.11
 ```
 
 Set an environmental variable for the nameservice wasm file:
