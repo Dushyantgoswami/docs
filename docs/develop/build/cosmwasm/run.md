@@ -25,7 +25,13 @@ Let's initalize our Genesis file:
 wasmd init $MONIKER --chain-id $CHAINID
 ```
 
-Now that we've initialized a Genesis file, please open the file `~/.wasmd/config/genesis.json` and replace all instances of the `stake` denom with `uwasm`. This will be the name of the currency we use in our CosmWasm RollApp.
+Now that we've initialized a Genesis file, please replace all instances of the `stake` denom with `uwasm` by running the following commands. This will be the name of the currency we use in our CosmWasm RollApp:
+
+```
+sed -i'' -e 's/bond_denom": ".*"/bond_denom": "uwasm"/' "$HOME"/.ethermintd/config/genesis.json
+sed -i'' -e 's/mint_denom": ".*"/mint_denom": "uwasm"/' "$HOME"/.ethermintd/config/genesis.json
+sed -i'' -e 's/denom": ".*"/denom": "uwasm"/' "$HOME"/.ethermintd/config/genesis.json
+```
 
 We will now create a local key pair for our CosmWasm RollApp. The `Key` is used to identify the key and to perform operations, such as signing transactions, accessing funds, or granting permissions, on behalf of the associated account or address.
 
