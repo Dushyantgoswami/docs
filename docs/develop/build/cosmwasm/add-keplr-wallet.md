@@ -31,8 +31,6 @@ ACCOUNT_ADDRESS=<keplr-account-address>
 Send a transaction from the RollApp account to the account address shown in the Keplr wallet:
 
 ```sh
-KEY_NAME=test-key
-
 wasmd tx bank send $(wasmd keys show $KEY_NAME -a) $ACCOUNT_ADDRESS 1000000000uwasm
 ```
 

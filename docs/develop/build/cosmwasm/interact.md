@@ -5,37 +5,38 @@ slug: interact
 
 ## Contract Interaction
 
-Fetch specific contract instances
+Let's first query the contract that we deployed. The following command queries for the list of members in our contract:
 
-```sh
-ALL_CONTRACTS=$(wasmd query wasm list-contract-by-code $CODE_ID --chain-id "$CHAIN_ID" --output json)
-
-CONTRACT=$(echo $ALL_CONTRACTS | jq -r '.contracts[-1]')
+```bash
+wasmd query wasm contract-state smart \
+  $CONTRACT_ADDRESS \
+  '{ "list_members": {} }'
 ```
 
-Register two names (Alice and Bob) in the NameService contract
+Next we will add a member to the contract's state. We will add our deployer address by replacing `ADDRESS_HERE`. We will add this member by executing the contract address with the provided arguments.
 
-```sh
-wasmd tx wasm execute $CONTRACT "{\"register\":{\"name\":\"bob\"}}" --amount 100uwasm --from $KEY_NAME $(echo $TX_FLAGS) -y
-wasmd tx wasm execute $CONTRACT "{\"register\":{\"name\":\"alice\"}}" --amount 100uwasm --from $KEY_NAME $(echo $TX_FLAGS) -y
+```
+wasmd tx wasm execute \
+  $CONTRACT_ADDRESS \
+  '{ "update_members": { "add": [{ "addr": "ADDRESS_HERE", "weight": 1 }], "remove": [] } }' \
+  --from $KEY_NAME $(echo $TX_FLAGS)
 ```
 
-Query the contract information
+Finally, we will query that same contract to see the updated members list.
 
-```sh
-wasmd query wasm contract $CONTRACT --chain-id "$CHAIN_ID"
+```bash
+wasmd query wasm contract-state smart \
+  $CONTRACT_ADDRESS \
+  '{ "list_members": {} }'
 ```
 
-Query the contract balance
+The contract should return the list of members including our inputted address:
 
-```sh
-wasmd query bank balances $CONTRACT --chain-id "$CHAIN_ID"
+```
+data:
+  members:
+  - addr: "ADDRESS"
+    weight: 1
 ```
 
-Query the owner of the name
-
-```sh
-wasmd query wasm contract-state smart $CONTRACT "{\"resolve_record\": {\"name\": \"bob\"}}" --chain-id "$CHAIN_ID" --output json
-```
-
-Next let's see how to transfer tokens between RollApp accounts and view it in the [Keplr](https://www.keplr.app/) wallet.
+That's all for our tutorial for deploying a CosmWasm RollApp and a smart contract to the RollApp.

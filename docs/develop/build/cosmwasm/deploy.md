@@ -9,33 +9,14 @@ The following instructions are from the deploying a smart contract section of th
 
 ## Contract compilation
 
-Open a new terminal window. Download and compile the following smart contract:
+Open a new terminal window. Download the following smart contracts:
 
 ```bash
-# Download the repository
-git clone https://github.com/InterWasm/cw-contracts
-cd cw-contracts
-git checkout main
-cd contracts/nameservice
-
-# compile the wasm contract with stable toolchain
-rustup default stable
-cargo wasm
+git clone git@github.com:CosmWasm/cw-plus.git
+cd cw-plus
 ```
 
-The compilation should output the file target/wasm32-unknown-unknown/release/cw_nameservice.wasm.
-
-```bash
-ls -lh
-```
-
-Let's try running the unit tests:
-
-```bash
-RUST_BACKTRACE=1 cargo unit-test
-```
-
-Navigate to the project root and run the following command to optimize the size of the file for deployment:
+Navigate to the project root and run the following command using Docker to optimize the size of the file for deployment:
 
 ```Dockerfile
 docker run --rm -v "$(pwd)":/code \
@@ -44,40 +25,45 @@ docker run --rm -v "$(pwd)":/code \
   cosmwasm/rust-optimizer:0.12.11
 ```
 
-Set an environmental variable for the nameservice wasm file:
-
-```sh
-export WASM_FILE=artifacts/cw_nameservice.wasm
-```
+After a couple of minutes you should have an artifact directory in your repo and there should be a cw4-group.wasm file being the contract we want to upload.
 
 ## Contract deployment
 
-Deploy the smart contract and fetch the deployment transaction hash:
+Let's save common transaction variables so we don't take up space:
 
 ```bash
-KEY_NAME=test-key
-CHAIN_ID=test-chain
 TX_FLAGS="--chain-id $CHAIN_ID --gas-prices 0uwasm --gas auto --gas-adjustment=1.1"
+```
 
-TX_HASH=$(wasmd tx wasm store "$WASM_FILE" --from "$KEY_NAME" $(echo $TX_FLAGS) --output json -y | jq -r '.txhash')
+Upload the smart contract:
+
+```bash
+wasmd tx wasm store ./artifacts/cw4_group.wasm --from $KEY_NAME $(echo $TX_FLAGS) -y -b block
+```
+
+You should get an output with information about what happened. Let's store our transaction hash for future use.
+
+Additionally, there should be an event called store_code, with a single attribute code_id - its value field is the code id of our uploaded contract. We can save the code_id with the following command. Please replace `"TX_HASH_HERE"` with the previously returned tx hash.
+
+```bash
+CODE_ID=$(wasmd query tx --type=hash "TX_HASH_HERE" --chain-id "$CHAIN_ID" --output json | jq -r '.logs[0].events[-1].attributes[0].value')
 ```
 
 ## Contract instantiation
 
-Let's start by querying our transaction hash for its Code ID
+Now that we've uploaded the smart contract, we can go ahead and instantiate the contract by submitting the `instantiate` transaction.
+
+Please replace `"ADDRESS_HERE"` with the address of the admin of the contract. `admin` is an address that would be eligible to execute messages on this contract. It is crucial to set it to your address, as we will want to learn how to execute contracts.
 
 ```bash
-CODE_ID=$(wasmd query tx --type=hash "$TX_HASH" --chain-id "$CHAIN_ID" --output json | jq -r '.logs[0].events[-1].attributes[0].value')
+wasmd tx wasm instantiate $CODE_ID \
+  '{ "admin": "wasm1kh3slet7xsh6fma2nxfent792gqwppkmddpvvd", "members": [] }' \
+  --from $KEY_NAME --label "Group" --no-admin $(echo $TX_FLAGS) -y
 ```
 
-Create an `instantiate` message for the contract
+We can now get the contract address by querying the tx hash previously received. Please replace `"TX_HASH_HERE"` with the previously returned tx hash.
 
 ```bash
-INIT='{"purchase_price":{"amount":"100","denom":"uwasm"},"transfer_price":{"amount":"999","denom":"uwasm"}}'
-```
-
-Instantiate the contract by sending an `instantiate` transaction
-
-```bash
-wasmd tx wasm instantiate "$CODE_ID" "$INIT" --from $KEY_NAME --label "name service" $(echo $TX_FLAGS) -y --no-admin
+CONTRACT_ADDRESS=$(wasmd query tx --type=hash "TX_HASH_HERE" --chain-id "$CHAIN_ID" --output json | jq -r '.logs[0].events[0].attributes[-2].value')
+echo $CONTRACT_ADDRESS
 ```

@@ -124,11 +124,11 @@ const sidebars = {
                             label: "Interact",
                             id: "develop/build/cosmwasm/interact",
                         },
-                        {
-                            type: "doc",
-                            label: "Add Wallet",
-                            id: "develop/build/cosmwasm/add-keplr-wallet",
-                        },
+                        // {
+                        //     type: "doc",
+                        //     label: "Add Wallet",
+                        //     id: "develop/build/cosmwasm/add-keplr-wallet",
+                        // },
                     ],
                 },
                 {
