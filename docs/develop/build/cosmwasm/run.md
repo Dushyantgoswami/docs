@@ -6,8 +6,8 @@ slug: run
 To set up the appropriate working environment please input the following env variables:
 
 ```
-KEY="mykey"
-CHAINID="wasm-rollapp"
+KEY_NAME="mykey"
+CHAIN_ID="wasm-rollapp"
 MONIKER="localtestnet"
 KEYRING="test"
 ```
@@ -16,13 +16,13 @@ Next we will configure our client to save the chain-id and keyring-backend type:
 
 ```
 wasmd config keyring-backend $KEYRING
-wasmd config chain-id $CHAINID
+wasmd config chain-id $CHAIN_ID
 ```
 
 Let's initalize our Genesis file:
 
 ```
-wasmd init $MONIKER --chain-id $CHAINID
+wasmd init $MONIKER --chain-id $CHAIN_ID
 ```
 
 Now that we've initialized a Genesis file, please replace all instances of the `stake` denom with `uwasm` by running the following commands. This will be the name of the currency we use in our CosmWasm RollApp:
@@ -36,7 +36,7 @@ sed -i'' -e 's/denom": ".*"/denom": "uwasm"/' "$HOME"/.wasmd/config/genesis.json
 We will now create a local key pair for our CosmWasm RollApp. The `Key` is used to identify the key and to perform operations, such as signing transactions, accessing funds, or granting permissions, on behalf of the associated account or address.
 
 ```
-wasmd keys add $KEY --keyring-backend $KEYRING
+wasmd keys add $KEY_NAME --keyring-backend $KEYRING
 ```
 
 We will next add our created account to the generated Genesis file and add tokens for genesis. Replace `<Address>` with the generated address from the created key pair.
@@ -48,7 +48,7 @@ wasmd add-genesis-account <Address> 100000000000000000000000000uwasm --keyring-b
 Next we will delegate most of these tokens to your validator node and prepare the next for start.
 
 ```
-wasmd gentx $KEY 1000000000000000000000uwasm --keyring-backend $KEYRING --chain-id $CHAINID
+wasmd gentx $KEY_NAME 1000000000000000000000uwasm --keyring-backend $KEYRING --chain-id $CHAIN_ID
 ```
 
 Now that we've created a validator and self-delegated tokens we can save it to the genesis file.

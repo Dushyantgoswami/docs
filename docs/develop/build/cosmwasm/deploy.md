@@ -32,6 +32,11 @@ After a couple of minutes you should have an artifact directory in your repo and
 Let's save common transaction variables so we don't take up space:
 
 ```bash
+KEY_NAME="mykey"
+CHAIN_ID="wasm-rollapp"
+MONIKER="localtestnet"
+KEYRING="test"
+
 TX_FLAGS="--chain-id $CHAIN_ID --gas-prices 0uwasm --gas auto --gas-adjustment=1.1"
 ```
 
@@ -47,17 +52,18 @@ Additionally, there should be an event called store_code, with a single attribut
 
 ```bash
 CODE_ID=$(wasmd query tx --type=hash "TX_HASH_HERE" --chain-id "$CHAIN_ID" --output json | jq -r '.logs[0].events[-1].attributes[0].value')
+echo $CODE_ID
 ```
 
 ## Contract instantiation
 
 Now that we've uploaded the smart contract, we can go ahead and instantiate the contract by submitting the `instantiate` transaction.
 
-Please replace `"ADDRESS_HERE"` with the address of the admin of the contract. `admin` is an address that would be eligible to execute messages on this contract. It is crucial to set it to your address, as we will want to learn how to execute contracts.
+Please replace `ADDRESS_HERE`(keeping the string format) with the address of the admin of the contract. `admin` is an address that would be eligible to execute messages on this contract. It is crucial to set it to your address, as we will want to learn how to execute contracts.
 
 ```bash
 wasmd tx wasm instantiate $CODE_ID \
-  '{ "admin": "wasm1kh3slet7xsh6fma2nxfent792gqwppkmddpvvd", "members": [] }' \
+  '{ "admin": "ADDRESS_HERE", "members": [] }' \
   --from $KEY_NAME --label "Group" --no-admin $(echo $TX_FLAGS) -y
 ```
 

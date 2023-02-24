@@ -5,8 +5,6 @@ slug: Install
 
 First, we'll install the branch of Wasm that includes Dymension's replacement for Tendermint, [Dymint](https://github.com/dymensionxyz/dymint). The current version uses a mock data availability and settlement layer configuration.
 
-If you'd like to utilize the running base layers of the [Get Started section](/docs/develop/get-started/setup.mdx) please run a [RDK RollApp](/docs/develop/build/rdk/start.md). Documentation updates in the near future will provide instructions on how to publish data to live testnet environments from the CosmWasm RollApp.
-
 This CosmWasm RollApp tutorial is helpful for building RollApps on your local machine to get a feel for developing with Wasm in Dymension. To get started we will first need to download Dymension's fork of Wasm:
 
 ```bash
