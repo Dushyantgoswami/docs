@@ -18,4 +18,4 @@ After a transaction is submitted and processed, the Sequencer responds with an i
 
 Upon base layer unavailability Dymint does not process transactions in the mempool but continually tries to send a transaction to the appropriate base layer. Upon a positive liveness response from the base layer Dymint will continue processing existing transactions in the mempool.
 
-As noted in the [Dymension RDK](./dymension-rdk.md) explanation Dymint implements elastic block production (EBP) for significantly greater operating efficiancies. Blocks are produced on-demand as transactions arrive into the mempool of a Sequencer. Sequencers produce blocks with no transactions only at certain defined checkpoints (i.e. every minute) to suffice a liveness check with the Dymension Hub.
+As noted in the [Dymension RDK](./dymension-rdk) explanation Dymint implements elastic block production (EBP) for significantly greater operating efficiancies. Blocks are produced on-demand as transactions arrive into the mempool of a Sequencer. Sequencers produce blocks with no transactions only at certain defined checkpoints (i.e. every minute) to suffice a liveness check with the Dymension Hub.
