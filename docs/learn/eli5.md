@@ -4,43 +4,44 @@ slug: "eli5"
 hide_table_of_contents: true
 ---
 
-Dymension can be seen as a busy city filled with interconnected highways. Just like how a city's traffic system manages cars, Dymension is a system that manages different blockchains.
+Dymension is like a full-stack web application where users interact with RollApps (front-end), the Dymension Hub (back-end) acts as the brain of the ecosystem, and the data availability networks (database) provide a place to publicize data.
 
-In the [Cosmos ecosystem](https://cosmos.network/) each blockchain is like a car that needs its own fuel to run. That fuel is economic security, which helps prevent operators (called validators) from publishing transactions that shouldn't be accepted.
-
-Dymension does things a bit differently. It's like a network of electric cars that all get their energy from the charging hub - the Dymension Hub. That means each blockchain doesn't need its own supply of fuel (economic security). It's a simpler, more efficient way to get around.
-
-### Dymension stack:
-
-<b>The Execution Lane</b> - This is where transactions are processed off-chain (out of the main traffic) and only the important updates are published on-chain (brought into the main flow). It's a bit like taking a shortcut to avoid traffic jams and only getting on the highway when necessary.
-<br /><br />
+<b>RollApps</b> are the interactive face of the Dymension network. Like any web application, each RollApp is fully customizable. You can build games, DeFi, NFT projects and much more!
+<br />
+<br />
 
 <div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-execution.png').default} alt="background" />
     <div class="card-body">
-        <h3 class="card-title">Execution</h3>
+        <h3 class="card-title">Front-end</h3>
         <p class="card-text">RollApps</p>
     </div>
 </div>
 
-<b>The Settlement and Consensus Roundabout</b> - This part of Dymension makes sure all the updates published on-chain follow the correct rules. If they don't, they are rejected - kind of like a traffic cop that checks if cars are following the rules of the road.
-<br /><br />
+<b>The Dymension Hub</b> plays a similar role to a server in a traditional web application. It orchestrates the network by handling requests from RollApps and facilitating communication among them.
+
+<br />
+<br />
 
 <div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-settlement.png').default} alt="background" />
     <div class="card-body">
-        <h3 class="card-title">Settlement & Consensus</h3>
+        <h3 class="card-title">Back-end</h3>
         <p class="card-text">Dymension Hub</p>
     </div>
 </div>
 
-<b>The Data Availability Superhighway</b> - This is where all the data is published for everyone to see and check. It's like a giant billboard displaying all the necessary information, ensuring everything is transparent.
-<br /><br />
+<b> Data Availability Networks </b> hold a role similar to a database in a web application, providing data as needed. These networks store transaction data which are confirmed by the Dymension Hub, analogous to a traditional database storing and serving data upon request.
+
+<br />
+<br />
 
 <div class="card image-card light-background">
     <img class="background" src={require('./images/modular-architecture-da.png').default} alt="background" />
     <div class="card-body">
-        <h3 class="card-title">Data Availability</h3>
-        <p class="card-text">DA providers</p>
+        <h3 class="card-title">Database</h3>
+        <p class="card-text">Data availability networks</p>
     </div>
 </div>
+
+Next let's dive a bit deeper and learn about the inner-working of the Dymension network!
