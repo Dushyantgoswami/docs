@@ -8,18 +8,52 @@ const sidebars = {
             items: [
                 {
                     type: "doc",
-                    label: "Modular architecture",
-                    id: "learn/modular-intro",
+                    label: "ELI5",
+                    id: "learn/eli5",
                 },
                 {
-                    type: "doc",
-                    label: "Dymension Hub",
-                    id: "learn/dymension-hub",
-                },
-                {
-                    type: "doc",
+                    type: "category",
                     label: "RollApps",
-                    id: "learn/rollapps",
+                    collapsed: true,
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Dymension RDK",
+                            id: "learn/rollapps/dymension-rdk",
+                        },
+                        {
+                            type: "doc",
+                            label: "Dymint",
+                            id: "learn/rollapps/dymint",
+                        },
+                        {
+                            type: "doc",
+                            label: "Bridging",
+                            id: "learn/rollapps/bridging",
+                        },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Dymension Hub",
+                    collapsed: true,
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Tech stack",
+                            id: "learn/dymension-hub/tech-stack",
+                        },
+                        {
+                            type: "doc",
+                            label: "Application",
+                            id: "learn/dymension-hub/application",
+                        },
+                    ],
+                },
+                {
+                    type: "doc",
+                    label: "Next steps",
+                    id: "learn/next-steps",
                 },
             ],
         },

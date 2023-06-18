@@ -911,8 +911,22 @@ div.navbar__logo {
     background-color: var(--ifm-color-primary-inverse);
 }
 
+.image-container-secondary {
+    padding: calc(var(--ifm-spacing-step) * 2);
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: var(--ifm-spacing-vertical);
+    background-color: var(--ifm-color-primary-inverse);
+    width: 75%;
+}
+
 [data-theme="dark"] .image-container-primary {
     background-color: var(--ifm-color-primary);
+}
+
+.barber {
+    margin-left: 4px;
+    font-size: 20px;
 }
 
 @media (min-width: 1440px) {

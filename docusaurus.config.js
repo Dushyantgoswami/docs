@@ -28,14 +28,14 @@ const config = {
                 docs: {
                     routeBasePath: "/",
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: "https://github.com/dymensionxyz/docs/tree/main",
+                    // editUrl: "https://github.com/dymensionxyz/docs/tree/main",
                 },
                 blog: false,
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
                 },
                 gtag: {
-                    trackingID: 'G-QQDTDE3E8X',
+                    trackingID: "G-QQDTDE3E8X",
                     anonymizeIP: true,
                 },
             }),
@@ -67,7 +67,7 @@ const config = {
                     {
                         label: "Learn",
                         position: "right",
-                        to: "learn/modular-intro",
+                        to: "learn/eli5",
                     },
                     {
                         label: "Develop",
@@ -99,7 +99,7 @@ const config = {
                      <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
                      <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
                   </a>
-                  <p class="copyright">By Builders <span class="heart-icon">♥</span> For Builders</p>
+                  <p class="copyright"><span class='barber'>💈</span>Home of the RollApps<span class='barber'>💈</span></p>
                 </p>             
                 `,
                             },
