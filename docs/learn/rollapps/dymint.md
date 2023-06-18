@@ -6,14 +6,16 @@ hide_table_of_contents: true
 
 RollApps are similar to [Cosmos App-Chains](https://docs.cosmos.network/v0.46/intro/why-app-specific.html) but outsource the overhead of reaching consensus to the Dymension Hub. The Dymension Hub accepts state updates from RollApp sequencers optimistically and may revert any state transition if proven invalid with [fraud proofs](https://research.paradigm.xyz/rollups).
 
-A [Sequencer](../reference/glossary#s) is the RollApp’s operator that validates, orders, and processes transactions. Sequencers then batches blocks into a larger RollApp block and post the transaction data to a DA layer of choice and an updated state root of the RollApp together with a DA reference (where the data is available) to the Dymension Hub.<br/>
+Sequencers are the RollApp operators that validate, order, and process transactions. Sequencers then batch blocks into a larger RollApp block and post the transaction data to a DA layer of choice and an updated state root of the RollApp together with a DA reference (where the data is available) to the Dymension Hub in case of verifying a fraud proof.<br/>
 
 <div class="image-container-secondary">
     <img class="image--primary" src={require('../images/dymint-block-production.png').default} alt="dymint-overview" />
 </div>
 
-Data and state root publication guarantees that any network participant, whether driven by distrust or economic incentives, may independently verify that genuine computations and honest state transitions were performed by the RollApp sequencer.<br/>
+As blocks are produced optimisitcally and don't require active network validation Sequencers are able to produce blocks at configurably low block times. RollApps deployed to the [35-C network](https://github.com/dymensionxyz/testnets/tree/main/dymension-hub/35-C) are able to achieve stable performance with 0.2 second blocktimes.
 
-RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [(RDK)](https://github.com/dymensionxyz/RDK). The client component, referred to as [dymint](https://github.com/dymensionxyz/dymint), forked from Celestia's [rollmint](https://github.com/celestiaorg/optimint), is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer communication.
+After a transaction is submitted and processed, the Sequencer responds with an immediate state update. At a configurable time the Sequencer batches the locally existing processed transactions and publishes the data on-chain to a data availability network of the RollApp's choice. At this point a full node of the RollApp may request data from the data availability network and verify the RollApp's state root. After receiving a response from the data availability network that the published data was accepted the Sequencer publishes the state root to the Dymension Hub.
 
-Dymint enables the multi-layer networking responsible for treating the Dymension Hub as the source of truth for RollApps. As the Dymension Hub is a stand-alone PoS blockchain, Dymint is configured to point to the Dymension Hub for state updates and any necessary rollbacks. As there are no consensus tasks in the RollApp itself, dymint can provide the low latency requirements necessary for modern-day applications.
+Upon base layer unavailability Dymint does not process transactions in the mempool but continually tries to send a transaction to the appropriate base layer. Upon a positive liveness response from the base layer Dymint will continue processing existing transactions in the mempool.
+
+As noted in the [Dymension RDK](./dymension-rdk.md) explanation Dymint implements elastic block production (EBP) for significantly greater operating efficiancies. Blocks are produced on-demand as transactions arrive into the mempool of a Sequencer. Sequencers produce blocks with no transactions only at certain defined checkpoints (i.e. every minute) to suffice a liveness check with the Dymension Hub.
