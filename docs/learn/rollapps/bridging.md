@@ -16,6 +16,8 @@ Unlike traditional app-chains, RollApps delegate consensus to the Dymension Hub.
 
 The Dymension Hub then provides a dispute period for any network participant to submit a fraud proof againist the published state root. If no one submits a fraud proof, the state root is assumed to be valid for light clients.
 
+// TODO
+
 -   IBC
 -   ICA
 -   Censorship-resistance
