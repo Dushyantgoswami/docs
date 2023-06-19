@@ -9,8 +9,9 @@ Roller is an easy-to-use CLI tool for bootstrapping, building, and deploying an 
 
 -   `Init`
 -   `Register`
--   `Run`
--   `Connect`
+-   `da-light-client`
+-   `Sequencer`
+-   `Relayer`
 
 ## Supported OS
 

@@ -118,6 +118,31 @@ const sidebars = {
                             label: "Init",
                             id: "build/launch/init",
                         },
+                        {
+                            type: "doc",
+                            label: "Register",
+                            id: "build/launch/register",
+                        },
+                        {
+                            type: "doc",
+                            label: "DA light client",
+                            id: "build/launch/da-light-client",
+                        },
+                        {
+                            type: "doc",
+                            label: "Sequencer",
+                            id: "build/launch/sequencer",
+                        },
+                        {
+                            type: "doc",
+                            label: "Relayer",
+                            id: "build/launch/relayer",
+                        },
+                        {
+                            type: "doc",
+                            label: "Interact",
+                            id: "build/launch/interact",
+                        },
                     ],
                 },
             ],
