@@ -59,13 +59,13 @@ const sidebars = {
         },
         {
             type: "category",
-            label: "Develop",
+            label: "Build",
             collapsed: true,
             items: [
                 {
                     type: "doc",
                     label: "Get Started",
-                    id: "develop/get-started",
+                    id: "build/get-started",
                 },
             ],
         },

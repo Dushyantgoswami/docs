@@ -70,9 +70,9 @@ const config = {
                         to: "learn/eli5",
                     },
                     {
-                        label: "Develop",
+                        label: "Build",
                         position: "right",
-                        to: "develop/get-started/setup",
+                        to: "build/get-started",
                     },
                     {
                         label: "Validate",
