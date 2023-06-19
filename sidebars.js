@@ -84,13 +84,13 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Deploy",
-                                    id: "build/develop/evm/deploy",
+                                    label: "Create",
+                                    id: "build/develop/evm/create",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Interact",
-                                    id: "build/develop/evm/interact",
+                                    label: "Deploy",
+                                    id: "build/develop/evm/deploy",
                                 },
                             ],
                         },

@@ -1,38 +1,25 @@
 ---
-title: "Deploy a smart contract"
+title: "Deploy"
 slug: deploy
 ---
 
-In this section we will go over how to deploy a NFT contract locally.
+## Compile the smart contract
 
-## Create the solidity contract
+Change to the `Solidity Compiler` page and match the Compiler version to the one stated at the top of the smart contract (i.e. 0.8.19). Then compile `NFT.sol`. Now you will be able to deploy the smart contract to the Remix VM.
 
-Create `contracts/NFT.sol` containing the following contract:
+Navigate to the `Deploy & Run Transactions` on the sidebar. Make sure the Remix VM is set as the destination.
 
-```js
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.19;
-
-import "https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC721.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol";
-
-contract NFT is ERC721 {
-    uint256 public currentTokenId;
-
-    constructor(
-        string memory _name,
-        string memory _symbol
-    ) ERC721(_name, _symbol) {}
-
-    function mintTo(address recipient) public payable returns (uint256) {
-        uint256 newItemId = ++currentTokenId;
-        _safeMint(recipient, newItemId);
-        return newItemId;
-    }
-
-    function tokenURI(uint256 id) public view virtual override returns (string memory) {
-        return Strings.toString(id);
-    }
-}
+Your smart contract has two parameters in the constructor:
 
 ```
+string memory _name
+string memory _symbol
+```
+
+## Deploy the smart contract
+
+Enter the arguments next to the `Deploy` button. Once you've submitted the transaction the smart contract will be live on the local instance.
+
+## Interact with the smart contract
+
+Copy your Remix VM address and paste it below in the `mintTo` section. After submitting the address the address will be minted an NFT!
