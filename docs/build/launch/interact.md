@@ -3,4 +3,5 @@ title: "Interact"
 slug: interact
 ---
 
-// TODO: Deploy smart contract
+-   Deploy a smart contract
+-   Send an IBC transaction

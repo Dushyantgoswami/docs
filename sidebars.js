@@ -115,8 +115,8 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Init",
-                            id: "build/launch/init",
+                            label: "Initialize",
+                            id: "build/launch/initialize",
                         },
                         {
                             type: "doc",
