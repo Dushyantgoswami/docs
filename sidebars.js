@@ -74,25 +74,45 @@ const sidebars = {
                     items: [
                         {
                             type: "category",
-                            label: "Go",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Build module",
-                                    id: "build/develop/go/module",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
                             label: "EVM",
                             collapsed: "true",
                             items: [
                                 {
                                     type: "doc",
-                                    label: "EVM setup",
-                                    id: "build/develop/evm/evm-setup",
+                                    label: "Overview",
+                                    id: "build/develop/evm/overview",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Create",
+                                    id: "build/develop/evm/create",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Test",
+                                    id: "build/develop/evm/test",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Deploy",
+                                    id: "build/develop/evm/deploy",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Interact",
+                                    id: "build/develop/evm/interact",
+                                },
+                            ],
+                        },
+                        {
+                            type: "category",
+                            label: "Go",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Build a module",
+                                    id: "build/develop/go/module",
                                 },
                             ],
                         },
