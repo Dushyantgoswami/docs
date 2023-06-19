@@ -1,0 +1,4 @@
+-   config options
+    -   **rollapp binary if running vanilla**
+    -   DA light node endpoint
+    -   denom

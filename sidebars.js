@@ -67,6 +67,49 @@ const sidebars = {
                     label: "Get Started",
                     id: "build/get-started",
                 },
+                {
+                    type: "category",
+                    label: "Develop",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "category",
+                            label: "Go",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Build module",
+                                    id: "build/develop/go/module",
+                                },
+                            ],
+                        },
+                        {
+                            type: "category",
+                            label: "EVM",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "EVM setup",
+                                    id: "build/develop/evm/evm-setup",
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Launch",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Init",
+                            id: "build/launch/init",
+                        },
+                    ],
+                },
             ],
         },
         {
