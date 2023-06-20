@@ -3,7 +3,7 @@ title: "Initialize"
 slug: initialize
 ---
 
-### Initialize config files
+Let's intialize the RollApp instance!
 
 `````mdx-code-block
 import Tabs from '@theme/Tabs';
@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 ````mdx-code-block
 <Tabs groupId="network">
 <TabItem value="Roller" label="Initialize">
+
+We'll need a RollApp name that ends with `_9000_1` (i.e. rollapptest_9000_1) and a denomination that is a one word string (i.e. udym):
 
 <Tabs groupId="shell">
 <TabItem value="bash" label="EVM">

@@ -16,5 +16,6 @@ Bridging from a RollApp to the Dymension Hub (and furthermore the IBC ecosystem)
 Run the following command to check the balance of the destination Dymension Hub address:
 
 ```
-dymd q bank balances <dst-dym-address>
+// TODO
+RPC request
 ```
