@@ -13,33 +13,23 @@ curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.
 
 ### Initialization
 
-`````mdx-code-block
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+We will begin by initializing the configuration files of the RollApp. This will provide Roller the necessary information to start a new RollApp.
 
-````mdx-code-block
+An interactive guide will ask the following questions:
 
-We will begin by initializing the configuration files of the RollApp. This will include important components such as the RollApp ID, the name of the currency, and location where the RollApp data will be published to.
+1. What is the RollApp name? (i.e. ROLLAPP_9000_1 please note the suffix of `_9000_1` is required for EVM RollApps)
+2. What is the name of the RollApp currency? (i.e. aphoton, udym)
+3. What is the amount of tokens to be minted on Genesis? (i.e. 1000000)
+4. What is the location data will be published to? (i.e. Celestia, Avail)
+5. What is the application environment? (i.e. EVM, Go modules)
 
-<Tabs groupId="shell">
-<TabItem value="bash" label="EVM">
-
-```bash
-roller config init <NAME>_9000_1 <denom>
-```
-
-</TabItem>
-<TabItem value="zsh" label="Go">
+Initialize the RollApp with the following command:
 
 ```zsh
-roller config init <NAME>_9000_1 <denom>
+roller config init
 ```
 
-</TabItem>
-</Tabs>
-`````
-
-Should return:
+After completing the interactive questions, the Roller will have intialized the appropriate config files and should return addresses to fund:
 
 ```
 💈 RollApp 'name' configuration files have been
@@ -48,9 +38,7 @@ Should return:
 🔑 Addresses:
 
   Celestia         | celestia<ADDRESS>
-  Sequencer        | dym<ADDRESS>
-  Relayer, Hub     | dym<ADDRESS>
-  Relayer, RollApp | ethm<ADDRESS>
+  Dymension        | dym<ADDRESS>
 
 🔔 Please fund these addresses to register and run the rollapp.
 ```
@@ -58,12 +46,6 @@ Should return:
 The following addresses must be funded prior to the following steps in this tutorial. Please fund the addresses at the following locations:
 
 -   Celestia: Celestia discord channel for the Mocha network
--   Sequencer: Dymension discord channel for the Froopyland network
--   Relayer, Hub: Dymension discord channel for the Froopyland network
--   Relayer, RollApp: Requires the following command to transfer tokens from the initialized Sequencer address to the Relayer:
-
-```
-rollapp_evm tx bank send rollapp_sequencer <relayer-rollapp-address> 3500000<denom> --keyring-backend test --keyring-dir ~/.roller/rollapp --chain-id <rollapp-id> --broadcast-mode block
-```
+-   Dymension: Dymension discord channel for the Froopyland network
 
 Now that we've funded the wallets we can go ahead and register the RollApp!
