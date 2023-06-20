@@ -72,7 +72,7 @@ const config = {
                     {
                         label: "Build",
                         position: "right",
-                        to: "build/get-started",
+                        to: "build/get-started/system-reqs",
                     },
                     {
                         label: "Validate",

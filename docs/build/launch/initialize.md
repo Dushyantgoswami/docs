@@ -3,22 +3,6 @@ title: "Initialize"
 slug: initialize
 ---
 
-### Verify Roller version
-
-After installing the `Roller CLI` tool in the [Get started](../get-started.md) section, we will verify that the version we've installed is the latest stable version:
-
-```
-roller version
-```
-
-Should return:
-
-```
-💈 Roller version <version>
-💈 Build time: <build-time>
-💈 Git commit: <build-commit>
-```
-
 ### Initialize config files
 
 `````mdx-code-block
