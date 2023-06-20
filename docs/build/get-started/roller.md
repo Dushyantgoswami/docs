@@ -20,7 +20,7 @@ curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.
 
 ### Verify Roller version
 
-After installing the `Roller CLI` tool in the [Get started](../get-started.md) section, we will verify that the version we've installed is the latest stable version:
+After installing the `Roller CLI` tool in the [Get started](../get-started/roller) section, we will verify that the version we've installed is the latest stable version:
 
 ```
 roller version
