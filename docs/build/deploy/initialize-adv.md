@@ -13,7 +13,7 @@ curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.
 
 ### Initialization
 
-We will begin by initializing the configuration files of the RollApp. This will provide Roller the necessary information to start a new RollApp.
+This is an advanced guide which will deploy a DA light client, Sequencer full node, and relayer node in seperate processes. We will begin by initializing the configuration files of the RollApp. This will provide Roller the necessary information to start a new RollApp.
 
 An interactive guide will ask the following questions:
 
