@@ -14,7 +14,7 @@ roller register
 Should return:
 
 ```
-💈 Rollapp '<chain-id>' has been successfully registered on the hub.
+💈 Rollapp '<rollapp-id>' has been successfully registered on the hub.
 ```
 
 Now that we've successfully registered the RollApp to the Dymension Hub let's proceed and run the necessary processes.
