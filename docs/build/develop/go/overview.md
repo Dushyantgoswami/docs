@@ -1,6 +1,7 @@
 ---
 title: Build a module
-slug: module
+slug: overview
 ---
 
 // TODO
+Module flow
