@@ -1,19 +1,25 @@
 ---
 title: "Initialize"
-slug: initialize
+slug: initialize-adv
 ---
 
-Let's intialize the RollApp instance!
+### Installation
+
+Firstly, if you have not installed `Roller` please do so now:
+
+```
+curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.sh | bash
+```
+
+### Initialization
 
 `````mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 ````mdx-code-block
-<Tabs groupId="network">
-<TabItem value="Roller" label="Initialize">
 
-We'll need a RollApp name that ends with `_9000_1` (i.e. rollapptest_9000_1) and a denomination that is a one word string (i.e. udym):
+We will begin by initializing the configuration files of the RollApp. This will include important components such as the RollApp ID, the name of the currency, and location where the RollApp data will be published to.
 
 <Tabs groupId="shell">
 <TabItem value="bash" label="EVM">
@@ -28,9 +34,6 @@ roller config init <NAME>_9000_1 <denom>
 ```zsh
 roller config init <NAME>_9000_1 <denom>
 ```
-
-</TabItem>
-</Tabs>
 
 </TabItem>
 </Tabs>

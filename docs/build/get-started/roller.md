@@ -3,13 +3,14 @@ title: "Roller"
 slug: "roller"
 ---
 
-Roller is an easy-to-use CLI tool for bootstrapping, building, and deploying an IBC-enabled RollApp. With Roller developers are able to deploy a RollApp within minutes. Roller abstracts away many of the complexties of running an inter-chain application specific blockchain into a few simple commands:
+Roller is an easy-to-use CLI tool for bootstrapping, building, and deploying an IBC-enabled RollApp. Roller abstracts away many of the complexties of running an inter-chain application-specific blockchain into a few simple commands:
 
--   `Init`
--   `Register`
--   `da-light-client`
--   `Sequencer`
--   `Relayer`
+-   [Install](#roller-installation)
+-   [Init](../deploy/initialize)
+-   [Register](../deploy/register)
+-   [Run](../deploy/run)
+
+With Roller developers are able to deploy a RollApp within minutes.
 
 ### Roller installation
 
