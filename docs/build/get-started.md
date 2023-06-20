@@ -35,7 +35,7 @@ These requirements will continually be revisted and tested by the core team and 
 
 ## Go download
 
-It is required to run a Go version of `1.19` please download the appropriate Go version [here](https://go.dev/dl/) or using a [Go version manager](https://github.com/moovweb/gvm). The following command should return the approriate Go version:
+It is required to run a Go version of `1.19` whilst building modules please download the appropriate Go version [here](https://go.dev/dl/) or use a [Go version manager](https://github.com/moovweb/gvm). The following command should return the approriate Go version:
 
 ```Go
 go version
