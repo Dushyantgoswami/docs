@@ -16,6 +16,6 @@ With Roller developers are able to deploy a RollApp within minutes.
 `Roller Run` abstracts components of deploying a RollApp (i.e. DA light clients, Sequencer full nodes, and relayer nodes) for an in-depth guide including the stand-alone deployment of each process please visit the [advanced guide](../deploy/initialize-adv.md).
 :::
 
-// TODO describe RDK
+`Roller` is the engine that brings the Dymension RDK to life. Prior to using `Roller` we would like to demonstrate how to build a [RDK module](../develop/rdk/overview) or an [EVM smart contract](../develop/evm/overview.md). Afterwards, we will utilize `Roller` to start the engine and interact with the RollApp.
 
 Let's continue by setting up the required system tools!
