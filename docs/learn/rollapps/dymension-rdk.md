@@ -26,9 +26,3 @@ Unlike the Cosmos SDK default modules, a few adjustments have been made that def
 -   [Dist](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/dist) - Allocates tokens between the Sequencer (block proposer), members, and community pool.
 -   [Sequencers](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/sequencers) - TODO
 -   [Staking](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/staking) - Wrapper on the existing Cosmos SDK Staking module that prevents validator updates on the Proof-of-stake layer.
-
-// Transaction flow
-
-<div class="image-container-secondary">
-    <img class="image--primary" src={require('../images/rdk-transaction.png').default} alt="dymint-overview" />
-</div>

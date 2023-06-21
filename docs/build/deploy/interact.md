@@ -23,7 +23,7 @@ rollapp_evm tx ibc-transfer transfer transfer <src-channel> <dst-dym-address> 80
 ```
 
 </TabItem>
-<TabItem value="zsh" label="Go">
+<TabItem value="zsh" label="RDK">
 
 ```
 rollapp tx ibc-transfer transfer transfer <src-channel> <dst-dym-address> 800<denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block

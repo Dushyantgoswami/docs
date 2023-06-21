@@ -86,6 +86,63 @@ const sidebars = {
                     items: [
                         {
                             type: "category",
+                            label: "RDK",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Build a module",
+                                    id: "build/develop/rdk/overview",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Module manager",
+                                    id: "build/develop/rdk/module-manager",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Messages & Queries",
+                                    id: "build/develop/rdk/msg-qry",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Module genesis",
+                                    id: "build/develop/rdk/module-genesis",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Keepers",
+                                    id: "build/develop/rdk/keepers",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Expected keepers",
+                                    id: "build/develop/rdk/expected-keepers",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Begin & End Block",
+                                    id: "build/develop/rdk/begin-end-block",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Protobuf generation",
+                                    id: "build/develop/rdk/protoc",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Testing",
+                                    id: "build/develop/rdk/testing",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Build the binary",
+                                    id: "build/develop/rdk/binary",
+                                },
+                            ],
+                        },
+                        {
+                            type: "category",
                             label: "EVM",
                             collapsed: "true",
                             items: [
@@ -103,18 +160,6 @@ const sidebars = {
                                     type: "doc",
                                     label: "Deploy",
                                     id: "build/develop/evm/deploy",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
-                            label: "Go",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Build a module",
-                                    id: "build/develop/go/module",
                                 },
                             ],
                         },
