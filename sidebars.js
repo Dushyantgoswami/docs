@@ -112,6 +112,11 @@ const sidebars = {
                             items: [
                                 {
                                     type: "doc",
+                                    label: "Install",
+                                    id: "build/deploy/install-adv",
+                                },
+                                {
+                                    type: "doc",
                                     label: "Init",
                                     id: "build/deploy/initialize-adv",
                                 },
