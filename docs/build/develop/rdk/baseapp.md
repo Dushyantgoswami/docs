@@ -1,4 +1,0 @@
----
-title: BaseApp
-slug: baseapp
----

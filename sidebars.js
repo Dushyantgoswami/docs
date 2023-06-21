@@ -91,8 +91,8 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "BaseApp",
-                                    id: "build/develop/rdk/baseapp",
+                                    label: "Get RDK",
+                                    id: "build/develop/rdk/rdk-repo",
                                 },
                                 {
                                     type: "doc",
@@ -123,6 +123,11 @@ const sidebars = {
                                     type: "doc",
                                     label: "Begin & End Block",
                                     id: "build/develop/rdk/begin-end-block",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Events",
+                                    id: "build/develop/rdk/events",
                                 },
                                 {
                                     type: "doc",
