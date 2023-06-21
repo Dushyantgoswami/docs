@@ -96,6 +96,11 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
+                                    label: "BaseApp",
+                                    id: "build/develop/rdk/baseapp",
+                                },
+                                {
+                                    type: "doc",
                                     label: "Module manager",
                                     id: "build/develop/rdk/module-manager",
                                 },
