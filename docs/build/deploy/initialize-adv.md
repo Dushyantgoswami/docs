@@ -3,9 +3,9 @@ title: "Initialize"
 slug: initialize-adv
 ---
 
-This is an advanced guide which will deploy a DA light client, Sequencer full node, and relayer node in seperate processes.
+Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. This is an advanced guide which will deploy a DA light client, Sequencer full node, and relayer node in seperate processes.
 
-We will begin by initializing the configuration files of the RollApp. This will create the necessary information to start a new RollApp. Initialize the RollApp with the following command:
+Initialize the RollApp with the following command:
 
 ```zsh
 roller config init

@@ -3,7 +3,7 @@ title: "Initialize"
 slug: initialize
 ---
 
-We will begin by initializing the configuration files of the RollApp. This will create the necessary information to start a new RollApp.
+Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp.
 
 Initialize the RollApp with the following command:
 

@@ -171,8 +171,8 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Module manager",
-                                    id: "build/develop/rdk/module-manager",
+                                    label: "Module setup",
+                                    id: "build/develop/rdk/setup",
                                 },
                                 {
                                     type: "doc",
