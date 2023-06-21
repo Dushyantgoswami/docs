@@ -3,14 +3,6 @@ title: "Initialize"
 slug: initialize
 ---
 
-### Installation
-
-Firstly, if you have not installed `Roller` please do so now:
-
-```
-curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.sh | bash
-```
-
 ### Initialization
 
 We will begin by initializing the configuration files of the RollApp. This will provide Roller the necessary information to start a new RollApp.
