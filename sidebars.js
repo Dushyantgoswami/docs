@@ -50,11 +50,6 @@ const sidebars = {
                         },
                     ],
                 },
-                {
-                    type: "doc",
-                    label: "Next steps",
-                    id: "learn/next-steps",
-                },
             ],
         },
         {
@@ -69,13 +64,13 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Setup environment",
-                            id: "build/get-started/system-reqs",
+                            label: "Roller intro",
+                            id: "build/get-started/roller",
                         },
                         {
                             type: "doc",
-                            label: "Roller intro",
-                            id: "build/get-started/roller",
+                            label: "Setup environment",
+                            id: "build/get-started/system-reqs",
                         },
                     ],
                 },
@@ -175,6 +170,11 @@ const sidebars = {
                     label: "Deploy",
                     collapsed: "true",
                     items: [
+                        {
+                            type: "doc",
+                            label: "Install",
+                            id: "build/deploy/install",
+                        },
                         {
                             type: "doc",
                             label: "Init",
