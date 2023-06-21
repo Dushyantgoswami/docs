@@ -76,6 +76,76 @@ const sidebars = {
                 },
                 {
                     type: "category",
+                    label: "Deploy",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Install",
+                            id: "build/deploy/install",
+                        },
+                        {
+                            type: "doc",
+                            label: "Init",
+                            id: "build/deploy/initialize",
+                        },
+                        {
+                            type: "doc",
+                            label: "Register",
+                            id: "build/deploy/register",
+                        },
+                        {
+                            type: "doc",
+                            label: "Run",
+                            id: "build/deploy/run",
+                        },
+
+                        {
+                            type: "doc",
+                            label: "Interact",
+                            id: "build/deploy/interact",
+                        },
+                        {
+                            type: "category",
+                            label: "Advanced guide",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Init",
+                                    id: "build/deploy/initialize-adv",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Register",
+                                    id: "build/deploy/register-adv",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "DA light client",
+                                    id: "build/deploy/da-light-client",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Sequencer",
+                                    id: "build/deploy/sequencer",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Relayer",
+                                    id: "build/deploy/relayer",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Reset",
+                                    id: "build/deploy/reset",
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    type: "category",
                     label: "Develop",
                     collapsed: "true",
                     items: [
@@ -165,76 +235,6 @@ const sidebars = {
                                     type: "doc",
                                     label: "Deploy",
                                     id: "build/develop/evm/deploy",
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    type: "category",
-                    label: "Deploy",
-                    collapsed: "true",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Install",
-                            id: "build/deploy/install",
-                        },
-                        {
-                            type: "doc",
-                            label: "Init",
-                            id: "build/deploy/initialize",
-                        },
-                        {
-                            type: "doc",
-                            label: "Register",
-                            id: "build/deploy/register",
-                        },
-                        {
-                            type: "doc",
-                            label: "Run",
-                            id: "build/deploy/run",
-                        },
-
-                        {
-                            type: "doc",
-                            label: "Interact",
-                            id: "build/deploy/interact",
-                        },
-                        {
-                            type: "category",
-                            label: "Advanced guide",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Init",
-                                    id: "build/deploy/initialize-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Register",
-                                    id: "build/deploy/register-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "DA light client",
-                                    id: "build/deploy/da-light-client",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Sequencer",
-                                    id: "build/deploy/sequencer",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Relayer",
-                                    id: "build/deploy/relayer",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Reset",
-                                    id: "build/deploy/reset",
                                 },
                             ],
                         },
