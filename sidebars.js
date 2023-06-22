@@ -176,6 +176,11 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
+                                    label: "Module manager",
+                                    id: "build/develop/rdk/module-manager",
+                                },
+                                {
+                                    type: "doc",
                                     label: "Messages & Queries",
                                     id: "build/develop/rdk/msg-qry",
                                 },
@@ -203,6 +208,11 @@ const sidebars = {
                                     type: "doc",
                                     label: "Events",
                                     id: "build/develop/rdk/events",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Client",
+                                    id: "build/develop/rdk/client",
                                 },
                                 {
                                     type: "doc",
