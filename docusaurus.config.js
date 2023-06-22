@@ -72,7 +72,7 @@ const config = {
                     {
                         label: "Develop",
                         position: "right",
-                        to: "develop/get-started/setup",
+                        to: "develop/get-started/roller",
                     },
                     {
                         label: "Validate",
