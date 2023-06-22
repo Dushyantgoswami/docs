@@ -110,7 +110,7 @@ const config = {
                         items: [
                             {
                                 label: "Twitter",
-                                href: "https://twitter.com/dymensionXYZ",
+                                href: "https://twitter.com/dymension",
                             },
                             {
                                 label: "Discord",
@@ -122,7 +122,7 @@ const config = {
                             },
                             {
                                 label: "Medium",
-                                href: "https://medium.com/@dymensionXYZ",
+                                href: "https://medium.com/@dymension",
                             },
                         ],
                     },
