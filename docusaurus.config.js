@@ -35,7 +35,7 @@ const config = {
                     customCss: require.resolve("./src/css/custom.css"),
                 },
                 gtag: {
-                    trackingID: 'G-QQDTDE3E8X',
+                    trackingID: "G-QQDTDE3E8X",
                     anonymizeIP: true,
                 },
             }),
@@ -72,7 +72,7 @@ const config = {
                     {
                         label: "Develop",
                         position: "right",
-                        to: "develop/get-started/setup",
+                        to: "develop/get-started/roller",
                     },
                     {
                         label: "Validate",

@@ -30,7 +30,7 @@ image_url: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.c
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="develop/get-started/setup" class="card-link stretched-link"> 
+            <a href="develop/get-started/roller" class="card-link stretched-link"> 
                 <h2 class="card-title">Develop</h2>
             </a>
             <p class="card-text">Build your own RollApp</p>
