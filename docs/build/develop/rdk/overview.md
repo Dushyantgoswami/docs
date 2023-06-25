@@ -1,5 +1,5 @@
 ---
-title: Build a module
+title: Overview
 slug: overview
 ---
 

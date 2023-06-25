@@ -161,7 +161,7 @@ const sidebars = {
                             items: [
                                 {
                                     type: "doc",
-                                    label: "Build a module",
+                                    label: "Overview",
                                     id: "build/develop/rdk/overview",
                                 },
                                 {
@@ -171,33 +171,28 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Module setup",
+                                    label: "Folder setup",
                                     id: "build/develop/rdk/setup",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Module manager",
-                                    id: "build/develop/rdk/module-manager",
+                                    label: "Messages",
+                                    id: "build/develop/rdk/msg",
                                 },
                                 {
                                     type: "doc",
-                                    label: "Messages & Queries",
-                                    id: "build/develop/rdk/msg-qry",
+                                    label: "Protobuf generation",
+                                    id: "build/develop/rdk/protoc",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Keys",
+                                    id: "build/develop/rdk/keys",
                                 },
                                 {
                                     type: "doc",
                                     label: "Module genesis",
                                     id: "build/develop/rdk/module-genesis",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Keepers",
-                                    id: "build/develop/rdk/keepers",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Expected keepers",
-                                    id: "build/develop/rdk/expected-keepers",
                                 },
                                 {
                                     type: "doc",
@@ -211,18 +206,28 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
+                                    label: "Expected keepers",
+                                    id: "build/develop/rdk/expected-keepers",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Keepers",
+                                    id: "build/develop/rdk/keepers",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Payment",
+                                    id: "build/develop/rdk/payment",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Module manager",
+                                    id: "build/develop/rdk/module-manager",
+                                },
+                                {
+                                    type: "doc",
                                     label: "Client",
                                     id: "build/develop/rdk/client",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Protobuf generation",
-                                    id: "build/develop/rdk/protoc",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Testing",
-                                    id: "build/develop/rdk/testing",
                                 },
                                 {
                                     type: "doc",

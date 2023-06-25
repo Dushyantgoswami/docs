@@ -3,19 +3,29 @@ title: Module setup
 slug: setup
 ---
 
-We will begin by creating the `payment` folder within the `x` folder. The `x` folder contains the core custom logic for each module. This command creates a `payment` folder within the `x` folder and two sub-folders along with a Go file.
+We will begin by creating the `payment` folders.
 
-After running the following command you will have a folder to put:
+The `x` folder contains the core custom logic for each module. The following command creates a `payment` folder within the `x` folder and two sub-folders (i.e. `Keeper` and `Types`).
 
--   `Keeper` related components TODO
--   `Types` related components TODO
--   `module.go` giving the required information for the main application to control the module.
+-   `Keeper` is the folder housing the implementation for the state transition.
+-   `Types` is the folder that houses code that help organize and validate the state-transitions.
 
 ```
 cd x
 mkdir -p payment/keeper
 mkdir -p payment/types
-touch payment/module.go
 ```
 
-Now that we have a basic folder structure, we can continue and build the `module.go` file.
+The following commands move us to the root directory and creates a `payment` folder in the `proto` directory.
+
+-   [Protobufs](https://protobuf.dev/) are the recommended way for defining messages. We will define the message for the state-transition in the next page in the `tx.proto` file.
+
+```
+cd ..
+cd proto
+mkdir -p rollapp/payment
+cd rollapp/payment
+touch tx.proto
+```
+
+Now that we have a basic folder structure, we can continue and build the structure of the module.

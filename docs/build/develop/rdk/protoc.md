@@ -1,10 +1,18 @@
 ---
-title: Build a module
+title: Protobuf generation
 slug: protoc
 ---
 
-// TODO
-Proto gen
+Now that we've created the `Message` object we will generate the interface using [Buf build](https://buf.build/) which provides an efficient way to generate Protobuf files.
 
--   RDK should come with scripts to run the protoc
--   This should explain how to use it and what to do
+The `scripts` folder includes file to generate the protobuf files and place them in the appropriate path (i.e. `types` folder in our case).
+
+```sh
+sh scripts/protocgen.sh
+```
+
+After successfully generating the protobuf files we should see the following file which provides us the interface for us to work with:
+
+```
+x/payment/types/tx.pb.go
+```
