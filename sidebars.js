@@ -191,6 +191,11 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
+                                    label: "Encoding",
+                                    id: "build/develop/rdk/codec",
+                                },
+                                {
+                                    type: "doc",
                                     label: "Module genesis",
                                     id: "build/develop/rdk/module-genesis",
                                 },
@@ -228,6 +233,11 @@ const sidebars = {
                                     type: "doc",
                                     label: "Client",
                                     id: "build/develop/rdk/client",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Build the app",
+                                    id: "build/develop/rdk/app",
                                 },
                                 {
                                     type: "doc",
