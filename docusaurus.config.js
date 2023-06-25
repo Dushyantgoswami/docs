@@ -28,14 +28,14 @@ const config = {
                 docs: {
                     routeBasePath: "/",
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: "https://github.com/dymensionxyz/docs/tree/main",
+                    // editUrl: "https://github.com/dymensionxyz/docs/tree/main",
                 },
                 blog: false,
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
                 },
                 gtag: {
-                    trackingID: 'G-QQDTDE3E8X',
+                    trackingID: "G-QQDTDE3E8X",
                     anonymizeIP: true,
                 },
             }),
@@ -48,7 +48,7 @@ const config = {
             themes: ["@docusaurus/theme-search-algolia"],
             colorMode: {
                 defaultMode: "dark",
-                disableSwitch: false,
+                disableSwitch: true,
                 respectPrefersColorScheme: false,
             },
             docs: {
@@ -70,9 +70,9 @@ const config = {
                         to: "learn/modular-intro",
                     },
                     {
-                        label: "Develop",
+                        label: "Build",
                         position: "right",
-                        to: "develop/get-started/setup",
+                        to: "develop/roller",
                     },
                     {
                         label: "Validate",
@@ -94,13 +94,13 @@ const config = {
                         items: [
                             {
                                 html: `
-                <div class="logo-container">                  
-                  <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
-                     <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
-                     <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
-                  </a>
-                  <p class="copyright">By Builders <span class="heart-icon">♥</span> For Builders</p>
-                </p>             
+                                <div class="logo-container">                  
+                                <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                                   <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
+                                   <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
+                                </a>
+                                <p class="copyright"><span class='barber'>💈</span>Home of the RollApps<span class='barber'>💈</span></p>
+                              </p>                    
                 `,
                             },
                         ],
@@ -110,7 +110,7 @@ const config = {
                         items: [
                             {
                                 label: "Twitter",
-                                href: "https://twitter.com/dymensionXYZ",
+                                href: "https://twitter.com/dymension",
                             },
                             {
                                 label: "Discord",
@@ -122,7 +122,7 @@ const config = {
                             },
                             {
                                 label: "Medium",
-                                href: "https://medium.com/@dymensionXYZ",
+                                href: "https://medium.com/@dymension",
                             },
                         ],
                     },
