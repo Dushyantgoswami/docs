@@ -20,23 +20,21 @@ image_url: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.c
 <div class="row row-cols-1 row-cols-md-3 main-actions">
     <div class="col">
         <div class="card card-body">
-            <a href="learn/eli5" class="card-link stretched-link"> 
+            <a href="learn/modular-intro" class="card-link stretched-link"> 
                 <h2 class="card-title">Learn</h2>
             </a>
             <p class="card-text">Your educational guide to Dymension</p>
             <div class="card-actions">
-                <button class="action-button">Get Started</button>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="develop/get-started/roller" class="card-link stretched-link"> 
-                <h2 class="card-title">Develop</h2>
+            <a href="develop/roller" class="card-link stretched-link"> 
+                <h2 class="card-title">Build</h2>
             </a>
             <p class="card-text">Build your own RollApp</p>
             <div class="card-actions">
-                <button class="action-button">Build</button>
             </div>
         </div>
     </div>
@@ -47,7 +45,6 @@ image_url: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.c
             </a>
             <p class="card-text">Secure the Dymension network</p>
             <div class="card-actions">
-                <button class="action-button">Run a Node</button>
            </div>
         </div>
     </div>

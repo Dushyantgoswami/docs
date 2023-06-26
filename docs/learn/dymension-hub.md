@@ -1,6 +1,6 @@
 ---
-title: "Application"
-slug: "application"
+title: "The Dymension Hub"
+slug: "dymension-hub"
 hide_table_of_contents: true
 ---
 
@@ -11,7 +11,3 @@ The Dymension Hub embeds logic for servicing RollApps into the protocol. Meaning
 -   <b>Security</b> - Inherited from the Dymension Hub and data availability layer. Security for RollApp users is enforced by validators of the Dymension Hub and the protocol's fraud proof design. By relying on an honest-majority of the Dymension Hub validator set, RollApps may operate with an honest-minority (i.e. 1/N trust assumption) and have significantly reduced bootstrapping overhead.
 -   <b>Interoperability</b> - RollApps communicate and transact with one another via dedicated modules which exist both on the RollApp and the Dymension Hub. Inter-Blockchain Communication (IBC) leverages the common ground of all RollApps - the Dymension Hub. The Dymension Hub facilitates trust-minimized bridging for RollApp users within the ecosystem. Additionally, RollApps are capable of natively communicating with other IBC-enabled blockchains via the Dymension Hub.
 -   <b>Liquidity</b> - The only application logic in the Dymension Hub not strictly restricted for handling RollApps is an embedded Automated Market Maker (AMM). The AMM is designed to expose RollApps to efficient asset routing, price discovery and most importantly shared liquidity for the entire ecosystem.
-
-By breaking up these three parts into separate lanes, Dymension lets developers easily deploy their own app-chain without needing to bootstrap economic security, low on-chain costs, and instantly connected to the wider interchain ecosystem.
-
-Dymension is a smart, efficient city of blockchains. It's designed to make things easier for developers and to keep everything running smoothly and quickly.
