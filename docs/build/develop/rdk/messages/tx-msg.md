@@ -1,6 +1,6 @@
 ---
-title: Messages
-slug: msg
+title: Transaction message
+slug: tx-msg
 ---
 
 `Msgs` are objects whose end-goal is to trigger state-transitions. They are wrapped in transactions, which may contain one or more of them.

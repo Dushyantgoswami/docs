@@ -16,7 +16,7 @@ The following tutorial assumes a general understanding of the [Cosmos SDK](https
 [Dymint](/docs/learn/rollapps/dymint.md) is a processing engine that receives requests (i.e. messages) from end-users via an exposed RPC end-point. The message then is validated for basic checks. The transaction is then stored in the local mempool of the Sequencer until processed and the state is updated.
 
 <div class="image-container-third">
-    <img class="image--primary" src={require('./images/rdk-transaction.png').default} alt="dymint-overview" />
+    <img class="image--primary" src={require('../images/rdk-transaction.png').default} alt="dymint-overview" />
 </div>
 
 BaseApp is fundamental to the Dymension RDK as it is the router of messages to the appropriate module (i.e. Staking module) for processing. Any state changes are made within the specified module.

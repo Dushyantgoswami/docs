@@ -1,6 +1,6 @@
 ---
-title: Module setup
-slug: setup
+title: Folder setup
+slug: folder
 ---
 
 We will begin by creating the `payment` folders.
@@ -18,14 +18,13 @@ mkdir -p payment/types
 
 The following commands move us to the root directory and creates a `payment` folder in the `proto` directory.
 
--   [Protobufs](https://protobuf.dev/) are the recommended way for defining messages. We will define the message for the state-transition in the next page in the `tx.proto` file.
+-   [Protobufs](https://protobuf.dev/) are the recommended way for defining messages.
 
 ```
 cd ..
 cd proto
 mkdir -p rollapp/payment
 cd rollapp/payment
-touch tx.proto
 ```
 
 Now that we have a basic folder structure, we can continue and build the structure of the module.

@@ -160,89 +160,146 @@ const sidebars = {
                             collapsed: "true",
                             items: [
                                 {
-                                    type: "doc",
-                                    label: "Overview",
-                                    id: "build/develop/rdk/overview",
+                                    type: "category",
+                                    label: "Setup",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Overview",
+                                            id: "build/develop/rdk/setup/overview",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Get RDK",
+                                            id: "build/develop/rdk/setup/rdk-repo",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Folder setup",
+                                            id: "build/develop/rdk/setup/folder",
+                                        },
+                                    ],
                                 },
                                 {
-                                    type: "doc",
-                                    label: "Get RDK",
-                                    id: "build/develop/rdk/rdk-repo",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Folder setup",
-                                    id: "build/develop/rdk/setup",
-                                },
-                                {
-                                    type: "doc",
+                                    type: "category",
                                     label: "Messages",
-                                    id: "build/develop/rdk/msg",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Genesis",
+                                            id: "build/develop/rdk/messages/tx-msg",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Transaction",
+                                            id: "build/develop/rdk/messages/genesis-msg",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Query",
+                                            id: "build/develop/rdk/messages/query-msg",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Protogen",
+                                            id: "build/develop/rdk/messages/protoc",
+                                        },
+                                    ],
                                 },
                                 {
-                                    type: "doc",
-                                    label: "Protobuf generation",
-                                    id: "build/develop/rdk/protoc",
+                                    type: "category",
+                                    label: "Types",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Keys",
+                                            id: "build/develop/rdk/types/keys",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Encoding",
+                                            id: "build/develop/rdk/types/codec",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Module genesis",
+                                            id: "build/develop/rdk/types/module-genesis",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Errors",
+                                            id: "build/develop/rdk/types/errors",
+                                        },
+                                    ],
                                 },
                                 {
-                                    type: "doc",
-                                    label: "Keys",
-                                    id: "build/develop/rdk/keys",
+                                    type: "category",
+                                    label: "Keeper",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Overview",
+                                            id: "build/develop/rdk/keeper/events",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Overview",
+                                            id: "build/develop/rdk/keeper/genesis",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Overview",
+                                            id: "build/develop/rdk/keeper/keepers",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Overview",
+                                            id: "build/develop/rdk/keeper/payment",
+                                        },
+                                    ],
                                 },
                                 {
-                                    type: "doc",
-                                    label: "Encoding",
-                                    id: "build/develop/rdk/codec",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Module genesis",
-                                    id: "build/develop/rdk/module-genesis",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Begin & End Block",
-                                    id: "build/develop/rdk/begin-end-block",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Events",
-                                    id: "build/develop/rdk/events",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Expected keepers",
-                                    id: "build/develop/rdk/expected-keepers",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Keepers",
-                                    id: "build/develop/rdk/keepers",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Payment",
-                                    id: "build/develop/rdk/payment",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Module manager",
-                                    id: "build/develop/rdk/module-manager",
-                                },
-                                {
-                                    type: "doc",
+                                    type: "category",
                                     label: "Client",
-                                    id: "build/develop/rdk/client",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "CLI",
+                                            id: "build/develop/rdk/client/cli",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "Root",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "App wiring",
+                                            id: "build/develop/rdk/root/app",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Module manager",
+                                            id: "build/develop/rdk/root/module-manager",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Begin & End block",
+                                            id: "build/develop/rdk/root/begin-end-block",
+                                        },
+                                    ],
                                 },
                                 {
                                     type: "doc",
-                                    label: "Build the app",
-                                    id: "build/develop/rdk/app",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Build the binary",
-                                    id: "build/develop/rdk/binary",
+                                    label: "Build",
+                                    id: "build/develop/rdk/setup/binary",
                                 },
                             ],
                         },
