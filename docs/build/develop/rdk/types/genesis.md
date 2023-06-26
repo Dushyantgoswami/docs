@@ -3,9 +3,28 @@ title: Genesis
 slug: genesis
 ---
 
-The module manager of the application is responsible for calling the InitGenesis method of each of the application's modules in order. This order is set by the application developer via the manager's SetOrderGenesisMethod, which is called in the application's constructor function.
+For the sake of brevity in the tutorial, we've opted to include an empty `GenesisState` in the [protobuf defintion](../proto/genesis.md). As such we will create a file with defaults and no validity checks. Firstly, we will create the appropriate file in the `types` folder:
 
-The subset of the genesis state defined from a given module is generally defined in a genesis.proto file (more info on how to define protobuf messages). The struct defining the module's subset of the genesis state is usually called GenesisState and contains all the module-related values that need to be initialized during the genesis process.
+```
+touch genesis.go
+```
 
--   DefaultGenesisState
--   ValidateGenesis
+`DefaultGenesisState()` method is a simple method that calls the constructor function for GenesisState with the default value for each parameter.
+
+`Validate()` method is called to verify that the provided genesisState is correct. It should perform validity checks on each of the parameters listed in GenesisState.
+
+```Go
+package types
+
+// DefaultGenesisState returns the module's default genesis state.
+func DefaultGenesisState() *GenesisState {
+	return &GenesisState{}
+}
+
+// Validate validates the given instance of the module's genesis state.
+func (gs GenesisState) Validate() error {
+	return nil
+}
+```
+
+We will call these methods further along in this tutorial from the [module manager](../root/module-manager.md). For now, let's continue and define errors that may be shown in case of a transaction going awry.
