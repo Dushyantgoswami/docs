@@ -281,8 +281,8 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "App wiring",
-                                            id: "build/develop/rdk/root/app",
+                                            label: "Begin & End block",
+                                            id: "build/develop/rdk/root/begin-end-block",
                                         },
                                         {
                                             type: "doc",
@@ -291,8 +291,8 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Begin & End block",
-                                            id: "build/develop/rdk/root/begin-end-block",
+                                            label: "App wiring",
+                                            id: "build/develop/rdk/root/app",
                                         },
                                     ],
                                 },
