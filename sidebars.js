@@ -242,22 +242,22 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Overview",
+                                            label: "Events",
                                             id: "build/develop/rdk/keeper/events",
                                         },
                                         {
                                             type: "doc",
-                                            label: "Overview",
+                                            label: "Genesis",
                                             id: "build/develop/rdk/keeper/genesis",
                                         },
                                         {
                                             type: "doc",
-                                            label: "Overview",
+                                            label: "Keeper",
                                             id: "build/develop/rdk/keeper/keepers",
                                         },
                                         {
                                             type: "doc",
-                                            label: "Overview",
+                                            label: "Payment",
                                             id: "build/develop/rdk/keeper/payment",
                                         },
                                     ],
