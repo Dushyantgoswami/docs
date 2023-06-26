@@ -235,8 +235,8 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Events",
-                                            id: "build/develop/rdk/types/events",
+                                            label: "Expected keepers",
+                                            id: "build/develop/rdk/types/expected-keepers",
                                         },
                                     ],
                                 },
