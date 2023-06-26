@@ -183,7 +183,7 @@ const sidebars = {
                                 },
                                 {
                                     type: "category",
-                                    label: "Protobufs",
+                                    label: "Proto",
                                     collapsed: "true",
                                     items: [
                                         {
@@ -225,13 +225,18 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Module genesis",
-                                            id: "build/develop/rdk/types/module-genesis",
+                                            label: "Genesis",
+                                            id: "build/develop/rdk/types/genesis",
                                         },
                                         {
                                             type: "doc",
                                             label: "Errors",
                                             id: "build/develop/rdk/types/errors",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Events",
+                                            id: "build/develop/rdk/types/events",
                                         },
                                     ],
                                 },
@@ -240,11 +245,6 @@ const sidebars = {
                                     label: "Keeper",
                                     collapsed: "true",
                                     items: [
-                                        {
-                                            type: "doc",
-                                            label: "Events",
-                                            id: "build/develop/rdk/keeper/events",
-                                        },
                                         {
                                             type: "doc",
                                             label: "Genesis",
