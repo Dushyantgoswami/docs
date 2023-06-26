@@ -48,4 +48,4 @@ RPC request
 ```
 
 That's it! We've successfully built and ran an IBC-enabled RollApp.
-Want to develop a custom application with the RollApp? Build a [RDK module](../develop/rdk/overview.md) with us or deploy [EVM smart contracts](/docs/build/develop/evm/overview.md) to your RollApp!
+Want to develop a custom application with the RollApp? Build a [RDK module](../develop/rdk/setup/overview.md) with us or deploy [EVM smart contracts](/docs/build/develop/evm/overview.md) to your RollApp!
