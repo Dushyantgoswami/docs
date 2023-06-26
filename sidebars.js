@@ -183,28 +183,28 @@ const sidebars = {
                                 },
                                 {
                                     type: "category",
-                                    label: "Messages",
+                                    label: "Protobufs",
                                     collapsed: "true",
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Transaction",
-                                            id: "build/develop/rdk/messages/tx-msg",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Genesis",
-                                            id: "build/develop/rdk/messages/genesis-msg",
+                                            label: "Message",
+                                            id: "build/develop/rdk/proto/message",
                                         },
                                         {
                                             type: "doc",
                                             label: "Query",
-                                            id: "build/develop/rdk/messages/query-msg",
+                                            id: "build/develop/rdk/proto/query",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Genesis",
+                                            id: "build/develop/rdk/proto/genesis",
                                         },
                                         {
                                             type: "doc",
                                             label: "Protogen",
-                                            id: "build/develop/rdk/messages/protoc",
+                                            id: "build/develop/rdk/proto/protoc",
                                         },
                                     ],
                                 },
