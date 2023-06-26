@@ -49,8 +49,8 @@ const sidebars = {
         },
         {
             type: "doc",
-            label: "Develop",
-            id: "develop/get-started/roller",
+            label: "Build",
+            id: "develop/roller",
         },
         {
             type: "category",
@@ -96,43 +96,6 @@ const sidebars = {
                     label: "Reset and troubleshooting",
                     id: "validate/dymension-hub/reset-node",
                 },
-
-                // {
-                //     type: "category",
-                //     label: "RollApps",
-                //     items: [
-                //         {
-                //             type: "doc",
-                //             label: "Node FAQs",
-                //             id: "validate/rollapps/overview",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Build RollApp",
-                //             id: "validate/rollapps/build-rollapp",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Join network",
-                //             id: "validate/rollapps/join-network",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Sync node",
-                //             id: "validate/rollapps/sync",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Upgrade",
-                //             id: "validate/rollapps/upgrade",
-                //         },
-                //         {
-                //             type: "doc",
-                //             label: "Reset and troubleshooting",
-                //             id: "validate/rollapps/reset-node",
-                //         },
-                //     ],
-                // },
             ],
         },
         {
