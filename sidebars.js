@@ -188,12 +188,12 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Genesis",
+                                            label: "Transaction",
                                             id: "build/develop/rdk/messages/tx-msg",
                                         },
                                         {
                                             type: "doc",
-                                            label: "Transaction",
+                                            label: "Genesis",
                                             id: "build/develop/rdk/messages/genesis-msg",
                                         },
                                         {
