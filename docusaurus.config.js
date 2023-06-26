@@ -67,7 +67,7 @@ const config = {
                     {
                         label: "Learn",
                         position: "right",
-                        to: "learn/eli5",
+                        to: "learn/modular-intro",
                     },
                     {
                         label: "Build",
@@ -94,13 +94,13 @@ const config = {
                         items: [
                             {
                                 html: `
-                <div class="logo-container">                  
-                  <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
-                     <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
-                     <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
-                  </a>
-                  <p class="copyright"><span class='barber'>💈</span>Home of the RollApps<span class='barber'>💈</span></p>
-                </p>             
+                                <div class="logo-container">                  
+                                <a href="https://www.dymension.xyz" target="_blank" rel="noopener noreferrer" title="logo">
+                                   <img class="logo" src="/img/full-logo.svg" alt="Dymension Logo" />    
+                                   <img class="logo-light" src="/img/full-logo-light.svg" alt="Dymension Logo" />                  
+                                </a>
+                                <p class="copyright"><span class='barber'>💈</span>Home of the RollApps<span class='barber'>💈</span></p>
+                              </p>                    
                 `,
                             },
                         ],

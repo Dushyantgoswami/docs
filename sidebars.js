@@ -8,42 +8,18 @@ const sidebars = {
             items: [
                 {
                     type: "doc",
-                    label: "ELI5",
-                    id: "learn/eli5",
+                    label: "Modular architecture",
+                    id: "learn/modular-intro",
                 },
                 {
-                    type: "category",
-                    label: "RollApps",
-                    collapsed: true,
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Dymension RDK",
-                            id: "learn/rollapps/dymension-rdk",
-                        },
-                        {
-                            type: "doc",
-                            label: "Dymint",
-                            id: "learn/rollapps/dymint",
-                        },
-                        {
-                            type: "doc",
-                            label: "Bridging",
-                            id: "learn/rollapps/bridging",
-                        },
-                    ],
-                },
-                {
-                    type: "category",
+                    type: "doc",
                     label: "Dymension Hub",
-                    collapsed: true,
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Application",
-                            id: "learn/dymension-hub/application",
-                        },
-                    ],
+                    id: "learn/dymension-hub",
+                },
+                {
+                    type: "doc",
+                    label: "RollApps",
+                    id: "learn/rollapps",
                 },
             ],
         },
