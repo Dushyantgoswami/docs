@@ -16,7 +16,22 @@ import (
 	"github.com/rollapp/x/payment/types"
 )
 
-func getRegisterAccountCmd() *cobra.Command {
+// GetTxCmd returns the parent command for all payment module tx commands.
+func GetTxCmd() *cobra.Command {
+	cmd := &cobra.Command{
+		Use:   types.ModuleName,
+		Short: "Payment transaction subcommands",
+		RunE:  client.ValidateCmd,
+	}
+
+	cmd.AddCommand(
+		getCreatePaymentCmd(),
+	)
+
+	return cmd
+}
+
+func getCreatePaymentCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "create-payment TODO",
 		Short: "Setup continuous payment to a different user",
