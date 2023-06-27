@@ -3,6 +3,8 @@ title: Msg server
 slug: msg_server
 ---
 
+This is a handler and referenced to the interface MsgCreatePayment in the `module.go` RegisterServices method.
+
 The message server must perform all validation required (both stateful and stateless) to make sure the message is valid. The signer is charged for the gas cost of this validation. For example, a msgServer method for a transfer message should check that the sending account has enough funds to actually perform the transfer.
 
 After the validation is successful, the msgServer method uses the keeper functions to access the state and perform a state transition.
