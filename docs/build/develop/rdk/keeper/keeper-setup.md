@@ -57,7 +57,7 @@ func NewKeeper(
 
 ### Logger
 
-Logger helps developers understand the flow of code execution and will be utilized in the near future [Msg Server](./msg_server.md).
+Logger helps developers understand the flow of code execution and will be utilized in the near future [msg server](./msg_server).
 
 ```Go
 func (k Keeper) Logger(ctx sdk.Context) log.Logger {

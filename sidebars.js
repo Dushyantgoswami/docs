@@ -238,6 +238,11 @@ const sidebars = {
                                             label: "Expected keepers",
                                             id: "build/develop/rdk/types/expected-keepers",
                                         },
+                                        {
+                                            type: "doc",
+                                            label: "Messages",
+                                            id: "build/develop/rdk/types/msgs",
+                                        },
                                     ],
                                 },
                                 {
