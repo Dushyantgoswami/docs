@@ -75,4 +75,4 @@ func (k Keeper) GetModuleAddress() sdk.AccAddress {
 }
 ```
 
-At it's core this is the base structure of the `Keeper.go` file. We'll next add custom functionality that change the state of the store.
+At its core this is the base structure of the `Keeper.go` file. We'll next add custom functionality that change the state of the store.
