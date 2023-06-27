@@ -5,12 +5,9 @@ slug: "system-reqs"
 
 ### Supported OS
 
-We have tested and officially support the following architectures:
+We officially support macOS only in the following architectures:
 
--   `darwin/arm64`
--   `darwin/x86_64`
--   `linux/arm64`
--   `linux/x86_64`
+-   TODO
 
 ### Hardware prerequisites
 
