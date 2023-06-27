@@ -191,11 +191,11 @@ const sidebars = {
                                             label: "Message",
                                             id: "build/develop/rdk/proto/message",
                                         },
-                                        {
-                                            type: "doc",
-                                            label: "Query",
-                                            id: "build/develop/rdk/proto/query",
-                                        },
+                                        // {
+                                        //     type: "doc",
+                                        //     label: "Query",
+                                        //     id: "build/develop/rdk/proto/query",
+                                        // },
                                         {
                                             type: "doc",
                                             label: "Genesis",
@@ -265,11 +265,11 @@ const sidebars = {
                                             label: "Msg Server",
                                             id: "build/develop/rdk/keeper/msg_server",
                                         },
-                                        {
-                                            type: "doc",
-                                            label: "Query Server",
-                                            id: "build/develop/rdk/keeper/query_server",
-                                        },
+                                        // {
+                                        //     type: "doc",
+                                        //     label: "Query Server",
+                                        //     id: "build/develop/rdk/keeper/query_server",
+                                        // },
                                     ],
                                 },
                                 {
@@ -282,11 +282,11 @@ const sidebars = {
                                             label: "Transaction",
                                             id: "build/develop/rdk/cli/tx",
                                         },
-                                        {
-                                            type: "doc",
-                                            label: "Query",
-                                            id: "build/develop/rdk/cli/query",
-                                        },
+                                        // {
+                                        //     type: "doc",
+                                        //     label: "Query",
+                                        //     id: "build/develop/rdk/cli/query",
+                                        // },
                                     ],
                                 },
                                 {
@@ -294,11 +294,11 @@ const sidebars = {
                                     label: "Root",
                                     collapsed: "true",
                                     items: [
-                                        {
-                                            type: "doc",
-                                            label: "Begin & End block",
-                                            id: "build/develop/rdk/root/begin-end-block",
-                                        },
+                                        // {
+                                        //     type: "doc",
+                                        //     label: "Begin & End block",
+                                        //     id: "build/develop/rdk/root/begin-end-block",
+                                        // },
                                         {
                                             type: "doc",
                                             label: "Module manager",
