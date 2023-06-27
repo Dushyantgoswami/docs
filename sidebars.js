@@ -294,11 +294,6 @@ const sidebars = {
                                     label: "Root",
                                     collapsed: "true",
                                     items: [
-                                        // {
-                                        //     type: "doc",
-                                        //     label: "Begin & End block",
-                                        //     id: "build/develop/rdk/root/begin-end-block",
-                                        // },
                                         {
                                             type: "doc",
                                             label: "Module manager",
