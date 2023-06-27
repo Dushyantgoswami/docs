@@ -3,7 +3,10 @@ title: Module manager
 slug: modular-manager
 ---
 
-The module manager of the application is responsible for calling the InitGenesis method of each of the application's modules in order. This order is set by the application developer via the manager's SetOrderGenesisMethod, which is called in the application's constructor function.
+The module manager of the application is responsible for calling the InitGenesis method of each of the application's modules in order. This order is set by the application developer via the manager's SetOrderGenesisMethod, which is called in the application's constructor function. Application module interfaces exist to facilitate the composition of modules together to form a functional Cosmos SDK application.
+
+-   AppModuleBasic for independent module functionalities.
+-   AppModule for inter-dependent module functionalities (except genesis-related functionalities).
 
 ```Go
 var (
@@ -52,7 +55,7 @@ func (AppModuleBasic) GetTxCmd() *cobra.Command {
 }
 
 func (AppModuleBasic) GetQueryCmd() *cobra.Command {
-	return cli.GetQueryCmd()
+	return nil
 }
 ```
 
