@@ -264,13 +264,18 @@ const sidebars = {
                                 },
                                 {
                                     type: "category",
-                                    label: "Client",
+                                    label: "CLI",
                                     collapsed: "true",
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "CLI",
-                                            id: "build/develop/rdk/client/cli",
+                                            label: "Transaction",
+                                            id: "build/develop/rdk/cli/tx",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Query",
+                                            id: "build/develop/rdk/cli/query",
                                         },
                                     ],
                                 },
