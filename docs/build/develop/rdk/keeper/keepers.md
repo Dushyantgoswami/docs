@@ -3,11 +3,7 @@ title: Keepers
 slug: keepers
 ---
 
-Each keeper has its own constructor function, which is called from the application's constructor function. This is where keepers are instantiated and where developers make sure to pass correct instances of the module's keepers to other modules that require them.
-
-A keeper can be considered quite literally to be the gatekeeper of a module's store(s). Each store (typically an IAVL Store) defined within a module comes with a storeKey, which grants unlimited access to it. The module's keeper holds this storeKey (which should otherwise remain unexposed), and defines methods for reading and writing to the store(s).
-
-Keepers primarily expose getter and setter methods for the store(s) managed by their module. These methods should remain as simple as possible and strictly be limited to getting or setting the requested value, as validity checks should have already been performed by the Msg server when keepers' methods are called.
+A keeper can be considered quite literally to be the gatekeeper of a module's store(s). Each store defined within a module comes with a [storeKey](../types/keys.md), which grants unlimited access to it. Keepers primarily expose getter and setter methods for the store(s) managed by their module.
 
 ```Go
 type Keeper struct {

@@ -257,8 +257,13 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Payment",
-                                            id: "build/develop/rdk/keeper/payment",
+                                            label: "Msg Server",
+                                            id: "build/develop/rdk/keeper/msg_server",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Query Server",
+                                            id: "build/develop/rdk/keeper/query_server",
                                         },
                                     ],
                                 },
