@@ -48,3 +48,5 @@ func (ms msgServer) CreatePayment(goCtx context.Context, req *types.MsgCreatePay
 }
 
 ```
+
+Now that we've created an implementation of the `msg_server` for the `payment` module, we will create a module interface via command-line interface (CLI) for easily sending transactions to the blockchain.
