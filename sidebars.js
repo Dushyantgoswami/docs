@@ -252,8 +252,13 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Keeper",
-                                            id: "build/develop/rdk/keeper/keepers",
+                                            label: "Keeper setup",
+                                            id: "build/develop/rdk/keeper/keeper-setup",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Keeper functionality",
+                                            id: "build/develop/rdk/keeper/keeper-func",
                                         },
                                         {
                                             type: "doc",
