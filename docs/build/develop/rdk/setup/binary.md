@@ -4,4 +4,8 @@ slug: binary
 ---
 
 // TODO
-Building binary for Roller
+
+-   Specify path
+-   Make install
+-   Check binary
+-   Link back to Roller

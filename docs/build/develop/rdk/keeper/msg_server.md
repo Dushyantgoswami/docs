@@ -1,5 +1,5 @@
 ---
-title: Msg Server
+title: Msg server
 slug: msg_server
 ---
 
