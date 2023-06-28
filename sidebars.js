@@ -88,14 +88,21 @@ const sidebars = {
                             id: "build/deploy/run",
                         },
                         {
-                            type: "doc",
+                            type: "category",
                             label: "Interact",
-                            id: "build/deploy/interact",
-                        },
-                        {
-                            type: "doc",
-                            label: "Export keys",
-                            id: "build/deploy/export-keys",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Transfer",
+                                    id: "build/deploy/interact",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Export keys",
+                                    id: "build/deploy/export-keys",
+                                },
+                            ],
                         },
                         {
                             type: "category",
@@ -301,34 +308,41 @@ const sidebars = {
                             ],
                         },
                         {
-                            type: "doc",
-                            label: "Install",
-                            id: "build/deploy/install-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Init",
-                            id: "build/deploy/initialize-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Register",
-                            id: "build/deploy/register-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "DA light client",
-                            id: "build/deploy/da-light-client",
-                        },
-                        {
-                            type: "doc",
-                            label: "Sequencer",
-                            id: "build/deploy/sequencer",
-                        },
-                        {
-                            type: "doc",
-                            label: "Relayer",
-                            id: "build/deploy/relayer",
+                            type: "category",
+                            label: "Deploy",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Install",
+                                    id: "build/deploy/install-adv",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Init",
+                                    id: "build/deploy/initialize-adv",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Register",
+                                    id: "build/deploy/register-adv",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "DA light client",
+                                    id: "build/deploy/da-light-client",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Sequencer",
+                                    id: "build/deploy/sequencer",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Relayer",
+                                    id: "build/deploy/relayer",
+                                },
+                            ],
                         },
                     ],
                 },
