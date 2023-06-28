@@ -3,6 +3,8 @@ title: "Install Roller"
 slug: install
 ---
 
+In this `Quick start` tutorial we will be deploying an EVM RollApp with `Roller`. Please visit the [advanced guide](/docs/build/adv-guide/roller-adv/overview-adv.md) for instructions on how to build a RDK RollApp.
+
 ### Roller installation
 
 Open a terminal and input the following command to install `Roller`:

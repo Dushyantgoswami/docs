@@ -1,5 +1,5 @@
 ---
-title: "Initialize"
+title: "Initialize EVM RollApp"
 slug: initialize
 ---
 
