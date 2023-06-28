@@ -43,3 +43,9 @@ Currency Symbol (optional): <YOUR-ROLLAPP-DENOM>
 Click again on the top right avatar and select `Import Account` (make sure that the `Private Key` option is selected).
 
 Paste the [exported private key](#export-keys) in the form input and click `Import`. Your Metamask account balance should show.
+
+### Next steps
+
+That's it! We've successfully built and ran an IBC-enabled RollApp.
+
+Want to develop a custom application with the RollApp? Deploy [EVM smart contracts](/docs/build/develop/evm/overview.md) to your RollApp!
