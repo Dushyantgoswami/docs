@@ -100,6 +100,11 @@ const sidebars = {
                             id: "build/deploy/run",
                         },
                         {
+                            type: "doc",
+                            label: "Interact",
+                            id: "build/deploy/interact",
+                        },
+                        {
                             type: "category",
                             label: "Advanced guide",
                             collapsed: "true",
