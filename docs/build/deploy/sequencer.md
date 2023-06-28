@@ -3,7 +3,7 @@ title: "Sequencer"
 slug: sequencer
 ---
 
-We will now run a Sequencer node. Sequencers operate like block proposer in a Proof-of-stake blockchain. Sequencers process data off-chain and publish transaction data and state updates on-chain so any peer can reconstruct the state.
+We will now run a Sequencer node. Sequencers operate like block proposer in a Proof-of-Stake blockchain. Sequencers process data off-chain and publish transaction data and state updates on-chain so any peer can reconstruct the state.
 
 ```
 roller sequencer start
@@ -21,3 +21,5 @@ Should return:
 -   **EVM RPC** provides a RPC gateway for publishing EVM smart contracts
 -   **Node RPC** provides a RPC gateway for requests to the node
 -   **Rest API** provides a REST gateway for requests to the node
+
+With state updates being published to the Dymension Hub users are able to utilize [IBC](https://tutorials.cosmos.network/academy/3-ibc/1-what-is-ibc.html) for safely bridging. Let's continue and run a IBC relayer.
