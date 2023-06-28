@@ -165,6 +165,11 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
+                                    label: "Connect",
+                                    id: "build/develop/evm/connect",
+                                },
+                                {
+                                    type: "doc",
                                     label: "Create",
                                     id: "build/develop/evm/create",
                                 },
@@ -172,6 +177,11 @@ const sidebars = {
                                     type: "doc",
                                     label: "Deploy",
                                     id: "build/develop/evm/deploy",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Interact",
+                                    id: "build/develop/evm/interact",
                                 },
                             ],
                         },

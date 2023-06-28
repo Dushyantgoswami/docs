@@ -3,6 +3,8 @@ title: "Create a smart contract"
 slug: create
 ---
 
+// TODO - expand on the NFT contract
+
 In this section we will go over how to deploy a NFT contract locally.
 
 Create `contracts/NFT.sol` containing the following contract:

@@ -19,7 +19,3 @@ string memory _symbol
 ## Deploy the smart contract
 
 Enter the arguments next to the `Deploy` button. Once you've submitted the transaction the smart contract will be live on the local instance.
-
-## Interact with the smart contract
-
-Copy your Remix VM address and paste it below in the `mintTo` section. After submitting the address the address will be minted an NFT!
