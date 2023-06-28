@@ -19,4 +19,4 @@ Should return:
 💈 Rollapp '<rollapp-id>' has been successfully registered on the hub.
 ```
 
-Let's proceed and run the RollApp...
+Let's proceed and run the DA light client which will enable data publication to the DA network of choice.
