@@ -8,7 +8,7 @@ Initializing the configuration files of the RollApp will create the necessary in
 Initialize the RollApp with the following command:
 
 ```zsh
-roller config init
+roller config init <chain-id> <denom>
 ```
 
 An interactive guide will ask the following questions:
@@ -37,15 +37,21 @@ After completing the interactive questions, the Roller will have intialized the 
 
 🔑 Addresses:
 
-  Celestia         | celestia<ADDRESS>
-  Dymension        | dym<ADDRESS>
+  Celestia           | ADDRESS
+  Sequencer, Hub     | ADDRESS
+  Sequencer, Rollapp | ADDRESS
+  Relayer, Hub       | ADDRESS
+  Relayer, RollApp   | ADDRESS
 
 🔔 Please fund these addresses to register and run the rollapp.
 ```
 
 The following addresses must be funded prior to the following steps in this tutorial. Please fund the addresses at the following locations:
 
--   Celestia: Celestia discord channel for the Mocha network
--   Dymension: Dymension discord channel for the Froopyland network
+-   Celestia
+-   Sequencer, Hub
+-   Sequencer, Rollapp
+-   Relayer, Hub
+-   Relayer, RollApp
 
 Now that we've funded the wallets we can go ahead and register the RollApp!

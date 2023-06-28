@@ -99,12 +99,6 @@ const sidebars = {
                             label: "Run",
                             id: "build/deploy/run",
                         },
-
-                        {
-                            type: "doc",
-                            label: "Interact",
-                            id: "build/deploy/interact",
-                        },
                         {
                             type: "category",
                             label: "Advanced guide",
