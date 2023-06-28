@@ -3,13 +3,21 @@ title: "Initialize"
 slug: initialize
 ---
 
-Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp.
+### Initialization
 
-Initialize the RollApp with the following command:
+Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. Initialize the RollApp with the following command:
 
 ```zsh
-roller config init <chain-id> <denom>
+roller config init <rollapp-id> <denom>
 ```
+
+-   RollApp-id: Should follow the format 'name_EIP155-version': e.g. froopy_9721-1
+    -   Name: is made up of lowercase English letters
+    -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
+    -   Version: is a 1 to 5 digit number representing the version.
+-   Denom: Name of the native token of the RollApp
+
+### Interactive guide
 
 An interactive guide will ask the following questions:
 
@@ -31,27 +39,28 @@ An interactive guide will ask the following questions:
 
 After completing the interactive questions, the Roller will have intialized the appropriate config files and should return addresses to fund:
 
-```
-💈 RollApp 'name' configuration files have been
-   successfully generated on your local machine. Congratulations!
+### Address funding
 
+```
 🔑 Addresses:
 
-  Celestia           | ADDRESS
-  Sequencer, Hub     | ADDRESS
-  Sequencer, Rollapp | ADDRESS
-  Relayer, Hub       | ADDRESS
-  Relayer, RollApp   | ADDRESS
-
-🔔 Please fund these addresses to register and run the rollapp.
+  Sequencer | Address used to publish state updates to the Dymension Hub
+  Relayer   | Address that handles the relaying of IBC packets
+  Celestia  | Address used to publish data on-chain to the DA network
 ```
 
-The following addresses must be funded prior to the following steps in this tutorial. Please fund the addresses at the following locations:
+In Dymension's [discord](discord.gg/dymension) please fund the addresses in the `froopyland-faucet` channel with the following command as an example:
 
--   Celestia
--   Sequencer, Hub
--   Sequencer, Rollapp
--   Relayer, Hub
--   Relayer, RollApp
+```
+$REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+$REQUEST dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy
+$REQUEST celestia1wnqasu0vze3qn8jldv9hx4yhf5w59l080u5mg0
+```
+
+You can then check the balance of the address with:
+
+```
+$BALANCE dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+```
 
 Now that we've funded the wallets we can go ahead and register the RollApp!

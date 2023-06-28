@@ -13,13 +13,13 @@ curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.
 
 ### Verify Roller version
 
-After installing the `Roller CLI` tool in the [Get started](../get-started/roller) section, we will verify that the version we've installed is the latest stable version:
+After installing the `Roller` CLI tool we will verify that the version we've installed is the latest stable version:
 
 ```
 roller version
 ```
 
-Should return:
+Should output:
 
 ```
 💈 Roller version <version>
@@ -27,4 +27,4 @@ Should return:
 💈 Git commit: <build-commit>
 ```
 
-With `Roller` now installed we'll proceed in initializing the RollApp...
+With `Roller` now installed we'll proceed to initializing the RollApp.
