@@ -30,6 +30,7 @@ func (ms msgServer) CreatePayment(goCtx context.Context, req *types.MsgCreatePay
 	ctx := sdk.UnwrapSDKContext(goCtx)
 
 	// Check user balance
+	// Add error
 	// Send tokens
 	// Log
 
