@@ -106,7 +106,7 @@ const sidebars = {
                         },
                         {
                             type: "category",
-                            label: "Contract development",
+                            label: "Develop",
                             collapsed: "true",
                             items: [
                                 {
@@ -150,7 +150,7 @@ const sidebars = {
                         },
                         {
                             type: "category",
-                            label: "Module development",
+                            label: "Develop",
                             collapsed: "true",
                             items: [
                                 {
