@@ -58,21 +58,9 @@ const sidebars = {
             collapsed: true,
             items: [
                 {
-                    type: "category",
-                    label: "Get started",
-                    collapsed: "true",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Roller intro",
-                            id: "build/get-started/roller",
-                        },
-                        {
-                            type: "doc",
-                            label: "Setup environment",
-                            id: "build/get-started/system-reqs",
-                        },
-                    ],
+                    type: "doc",
+                    label: "Roller",
+                    id: "build/get-started/roller",
                 },
                 {
                     type: "category",
@@ -147,6 +135,11 @@ const sidebars = {
                             type: "doc",
                             label: "Overview",
                             id: "build/deploy/overview-adv",
+                        },
+                        {
+                            type: "doc",
+                            label: "Setup environment",
+                            id: "build/get-started/system-reqs",
                         },
                         {
                             type: "category",
