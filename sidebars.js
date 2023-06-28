@@ -76,7 +76,7 @@ const sidebars = {
                 },
                 {
                     type: "category",
-                    label: "Deploy",
+                    label: "Quick start",
                     collapsed: "true",
                     items: [
                         {
@@ -111,58 +111,9 @@ const sidebars = {
                         },
                         {
                             type: "category",
-                            label: "Advanced guide",
+                            label: "Contract development",
                             collapsed: "true",
                             items: [
-                                {
-                                    type: "doc",
-                                    label: "Install",
-                                    id: "build/deploy/install-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Init",
-                                    id: "build/deploy/initialize-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Register",
-                                    id: "build/deploy/register-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "DA light client",
-                                    id: "build/deploy/da-light-client",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Sequencer",
-                                    id: "build/deploy/sequencer",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Relayer",
-                                    id: "build/deploy/relayer",
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    type: "category",
-                    label: "Develop",
-                    collapsed: "true",
-                    items: [
-                        {
-                            type: "category",
-                            label: "EVM",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Overview",
-                                    id: "build/develop/evm/overview",
-                                },
                                 {
                                     type: "doc",
                                     label: "Connect",
@@ -185,165 +136,207 @@ const sidebars = {
                                 },
                             ],
                         },
-                        // {
-                        //     type: "category",
-                        //     label: "RDK",
-                        //     collapsed: "true",
-                        //     items: [
-                        //         {
-                        //             type: "category",
-                        //             label: "Setup",
-                        //             collapsed: "true",
-                        //             items: [
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Overview",
-                        //                     id: "build/develop/rdk/setup/overview",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Get RDK",
-                        //                     id: "build/develop/rdk/setup/rdk-repo",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Folder setup",
-                        //                     id: "build/develop/rdk/setup/folder",
-                        //                 },
-                        //             ],
-                        //         },
-                        //         {
-                        //             type: "category",
-                        //             label: "Proto",
-                        //             collapsed: "true",
-                        //             items: [
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Message",
-                        //                     id: "build/develop/rdk/proto/message",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Query",
-                        //                     id: "build/develop/rdk/proto/query",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Genesis",
-                        //                     id: "build/develop/rdk/proto/genesis",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Protogen",
-                        //                     id: "build/develop/rdk/proto/protoc",
-                        //                 },
-                        //             ],
-                        //         },
-                        //         {
-                        //             type: "category",
-                        //             label: "Types",
-                        //             collapsed: "true",
-                        //             items: [
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Keys",
-                        //                     id: "build/develop/rdk/types/keys",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Encoding",
-                        //                     id: "build/develop/rdk/types/codec",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Genesis",
-                        //                     id: "build/develop/rdk/types/genesis",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Errors",
-                        //                     id: "build/develop/rdk/types/errors",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Expected keepers",
-                        //                     id: "build/develop/rdk/types/expected-keepers",
-                        //                 },
-                        //             ],
-                        //         },
-                        //         {
-                        //             type: "category",
-                        //             label: "Keeper",
-                        //             collapsed: "true",
-                        //             items: [
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Genesis",
-                        //                     id: "build/develop/rdk/keeper/genesis",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Keeper setup",
-                        //                     id: "build/develop/rdk/keeper/keeper-setup",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Keeper functionality",
-                        //                     id: "build/develop/rdk/keeper/keeper-func",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Msg Server",
-                        //                     id: "build/develop/rdk/keeper/msg_server",
-                        //                 },
-                        //                 {
-                        //                      type: "doc",
-                        //                      label: "Query Server",
-                        //                      id: "build/develop/rdk/keeper/query_server",
-                        //                 },
-                        //             ],
-                        //         },
-                        //         {
-                        //             type: "category",
-                        //             label: "CLI",
-                        //             collapsed: "true",
-                        //             items: [
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Transaction",
-                        //                     id: "build/develop/rdk/cli/tx",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Query",
-                        //                     id: "build/develop/rdk/cli/query",
-                        //                 },
-                        //             ],
-                        //         },
-                        //         {
-                        //             type: "category",
-                        //             label: "Root",
-                        //             collapsed: "true",
-                        //             items: [
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "Module manager",
-                        //                     id: "build/develop/rdk/root/module-manager",
-                        //                 },
-                        //                 {
-                        //                     type: "doc",
-                        //                     label: "App wiring",
-                        //                     id: "build/develop/rdk/root/app",
-                        //                 },
-                        //             ],
-                        //         },
-                        //         {
-                        //             type: "doc",
-                        //             label: "Build",
-                        //             id: "build/develop/rdk/setup/binary",
-                        //         },
-                        //     ],
-                        // },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Advanced guide",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Overview",
+                            id: "build/deploy/overview-adv",
+                        },
+                        {
+                            type: "category",
+                            label: "Module development",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "category",
+                                    label: "Setup",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Overview",
+                                            id: "build/develop/rdk/setup/overview",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Get RDK",
+                                            id: "build/develop/rdk/setup/rdk-repo",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Folder setup",
+                                            id: "build/develop/rdk/setup/folder",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "Proto",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Message",
+                                            id: "build/develop/rdk/proto/message",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Query",
+                                            id: "build/develop/rdk/proto/query",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Genesis",
+                                            id: "build/develop/rdk/proto/genesis",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Protogen",
+                                            id: "build/develop/rdk/proto/protoc",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "Types",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Keys",
+                                            id: "build/develop/rdk/types/keys",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Encoding",
+                                            id: "build/develop/rdk/types/codec",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Genesis",
+                                            id: "build/develop/rdk/types/genesis",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Errors",
+                                            id: "build/develop/rdk/types/errors",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Expected keepers",
+                                            id: "build/develop/rdk/types/expected-keepers",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "Keeper",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Genesis",
+                                            id: "build/develop/rdk/keeper/genesis",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Keeper setup",
+                                            id: "build/develop/rdk/keeper/keeper-setup",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Keeper functionality",
+                                            id: "build/develop/rdk/keeper/keeper-func",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Msg Server",
+                                            id: "build/develop/rdk/keeper/msg_server",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Query Server",
+                                            id: "build/develop/rdk/keeper/query_server",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "CLI",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Transaction",
+                                            id: "build/develop/rdk/cli/tx",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Query",
+                                            id: "build/develop/rdk/cli/query",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "Root",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Module manager",
+                                            id: "build/develop/rdk/root/module-manager",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "App wiring",
+                                            id: "build/develop/rdk/root/app",
+                                        },
+                                    ],
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Build",
+                                    id: "build/develop/rdk/setup/binary",
+                                },
+                            ],
+                        },
+                        {
+                            type: "doc",
+                            label: "Install",
+                            id: "build/deploy/install-adv",
+                        },
+                        {
+                            type: "doc",
+                            label: "Init",
+                            id: "build/deploy/initialize-adv",
+                        },
+                        {
+                            type: "doc",
+                            label: "Register",
+                            id: "build/deploy/register-adv",
+                        },
+                        {
+                            type: "doc",
+                            label: "DA light client",
+                            id: "build/deploy/da-light-client",
+                        },
+                        {
+                            type: "doc",
+                            label: "Sequencer",
+                            id: "build/deploy/sequencer",
+                        },
+                        {
+                            type: "doc",
+                            label: "Relayer",
+                            id: "build/deploy/relayer",
+                        },
                     ],
                 },
             ],
