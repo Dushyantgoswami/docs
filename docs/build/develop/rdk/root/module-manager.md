@@ -3,10 +3,20 @@ title: Module manager
 slug: modular-manager
 ---
 
-The module manager of the application is responsible for calling the InitGenesis method of each of the application's modules in order. This order is set by the application developer via the manager's SetOrderGenesisMethod, which is called in the application's constructor function. Application module interfaces exist to facilitate the composition of modules together to form a functional Cosmos SDK application.
+The module manager is responsible for registering module functionality with the application. Application module interfaces exist to facilitate the composition of modules together to form a functional Cosmos SDK application.
+
+In the root of the `payment` module folder create the following file:
+
+```
+touch module.go
+```
+
+The module manager will implement two core structs:
 
 -   AppModuleBasic for independent module functionalities.
 -   AppModule for inter-dependent module functionalities (except genesis-related functionalities).
+
+The following define the interface that `AppModule` and `AppModuleBasic` must implement.
 
 ```Go
 var (
@@ -15,12 +25,13 @@ var (
 )
 ```
 
+AppModuleBasic defines the basic application module used by the module. This is called from the top [application](app.md).
+
 ```Go
 //------------------------------------------------------------------------------
 // AppModuleBasic
 //------------------------------------------------------------------------------
 
-// AppModuleBasic defines the basic application module used by the module
 type AppModuleBasic struct{}
 
 func (AppModuleBasic) Name() string {
@@ -58,6 +69,8 @@ func (AppModuleBasic) GetQueryCmd() *cobra.Command {
 	return nil
 }
 ```
+
+AppModule includes functionality such as registering the `msg_server` handler, establishing the current version of the module and registering invariants.
 
 ```Go
 //------------------------------------------------------------------------------
@@ -110,6 +123,8 @@ func (am AppModule) ExportGenesis(ctx sdk.Context, cdc codec.JSONCodec) json.Raw
 }
 ```
 
+For the sake of backwards compatibility we will include deprecated functionality at the bottom of the file.
+
 ```Go
 //------------------------------------------------------------------------------
 // Deprecated stuff
@@ -138,3 +153,5 @@ func (AppModule) LegacyQuerierHandler(*codec.LegacyAmino) sdk.Querier {
 	return nil
 }
 ```
+
+Now that we've setup the `module_manger` we will next wire the module into the top application constructor function and finalize the `payment` module build.

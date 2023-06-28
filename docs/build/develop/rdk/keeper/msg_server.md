@@ -3,11 +3,9 @@ title: Msg server
 slug: msg_server
 ---
 
-This is a handler and referenced to the interface MsgCreatePayment in the `module.go` RegisterServices method.
+`msg_server` is the implemented handler of transactions submitted by users.
 
-The message server must perform all validation required (both stateful and stateless) to make sure the message is valid. The signer is charged for the gas cost of this validation. For example, a msgServer method for a transfer message should check that the sending account has enough funds to actually perform the transfer.
-
-After the validation is successful, the msgServer method uses the keeper functions to access the state and perform a state transition.
+The message server must perform all validation required to make sure the message is valid. For example, a msgServer method for a transfer message should check that the sending account has enough funds to actually perform the transfer.
 
 ```Go
 package keeper
@@ -31,6 +29,11 @@ func NewMsgServerImpl(k Keeper) types.MsgServer {
 func (ms msgServer) CreatePayment(goCtx context.Context, req *types.MsgCreatePayment) (*types.MsgCreatePaymentResponse, error) {
 	ctx := sdk.UnwrapSDKContext(goCtx)
 
+	// Check user balance
+	// Send tokens
+	// Log
+
+
 	recipientAddr, err := sdk.AccAddressFromBech32(req.Recipient)
 	if err != nil {
 		return nil, err
@@ -48,7 +51,6 @@ func (ms msgServer) CreatePayment(goCtx context.Context, req *types.MsgCreatePay
 
 	return &types.MsgCreatePaymentResponse{}, nil
 }
-
 ```
 
-Now that we've created an implementation of the `msg_server` for the `payment` module, we will create a module interface via command-line interface (CLI) for easily sending transactions to the blockchain.
+The `msg_server` implementation is registered in the [module manager](../root/module-manager.md) which we'll do soon. Now that we've created an implementation of the `msg_server` for the `payment` module, we will create a module interface via command-line interface (CLI) for easily sending transactions to the blockchain.
