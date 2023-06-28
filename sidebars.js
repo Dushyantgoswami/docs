@@ -150,6 +150,28 @@ const sidebars = {
                     items: [
                         {
                             type: "category",
+                            label: "EVM",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Overview",
+                                    id: "build/develop/evm/overview",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Create",
+                                    id: "build/develop/evm/create",
+                                },
+                                {
+                                    type: "doc",
+                                    label: "Deploy",
+                                    id: "build/develop/evm/deploy",
+                                },
+                            ],
+                        },
+                        {
+                            type: "category",
                             label: "RDK",
                             collapsed: "true",
                             items: [
@@ -304,28 +326,6 @@ const sidebars = {
                                     type: "doc",
                                     label: "Build",
                                     id: "build/develop/rdk/setup/binary",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
-                            label: "EVM",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "Overview",
-                                    id: "build/develop/evm/overview",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Create",
-                                    id: "build/develop/evm/create",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Deploy",
-                                    id: "build/develop/evm/deploy",
                                 },
                             ],
                         },
