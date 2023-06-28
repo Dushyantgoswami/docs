@@ -94,8 +94,8 @@ const sidebars = {
                             items: [
                                 {
                                     type: "doc",
-                                    label: "Transfer",
-                                    id: "build/quick-start/roller-quick/interact",
+                                    label: "IBC transfer",
+                                    id: "build/quick-start/roller-quick/ibc-transfer",
                                 },
                                 {
                                     type: "doc",
@@ -126,8 +126,8 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Interact",
-                                    id: "build/quick-start/evm/interact",
+                                    label: "Play",
+                                    id: "build/quick-start/evm/play",
                                 },
                             ],
                         },

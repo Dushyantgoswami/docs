@@ -1,6 +1,6 @@
 ---
-title: "Interact"
-slug: interact
+title: "IBC transfer"
+slug: ibc-transfer
 ---
 
 Now that we've set up a running IBC-connected RollApp, let's send an IBC transaction from the RollApp to the Dymension Hub faucet. From their users will be able to request tokens to play around with your RollApp.
