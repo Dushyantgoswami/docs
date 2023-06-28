@@ -60,7 +60,7 @@ const sidebars = {
                 {
                     type: "doc",
                     label: "Roller",
-                    id: "build/get-started/roller",
+                    id: "build/roller",
                 },
                 {
                     type: "category",
@@ -70,22 +70,22 @@ const sidebars = {
                         {
                             type: "doc",
                             label: "Install",
-                            id: "build/deploy/install",
+                            id: "build/quick-start/roller-quick/install",
                         },
                         {
                             type: "doc",
                             label: "Init",
-                            id: "build/deploy/initialize",
+                            id: "build/quick-start/roller-quick/initialize",
                         },
                         {
                             type: "doc",
                             label: "Register",
-                            id: "build/deploy/register",
+                            id: "build/quick-start/roller-quick/register",
                         },
                         {
                             type: "doc",
                             label: "Run",
-                            id: "build/deploy/run",
+                            id: "build/quick-start/roller-quick/run",
                         },
                         {
                             type: "category",
@@ -95,12 +95,12 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Transfer",
-                                    id: "build/deploy/interact",
+                                    id: "build/quick-start/roller-quick/interact",
                                 },
                                 {
                                     type: "doc",
                                     label: "Export keys",
-                                    id: "build/deploy/export-keys",
+                                    id: "build/quick-start/roller-quick/export-keys",
                                 },
                             ],
                         },
@@ -112,22 +112,22 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Connect",
-                                    id: "build/develop/evm/connect",
+                                    id: "build/quick-start/evm/connect",
                                 },
                                 {
                                     type: "doc",
                                     label: "Create",
-                                    id: "build/develop/evm/create",
+                                    id: "build/quick-start/evm/create",
                                 },
                                 {
                                     type: "doc",
                                     label: "Deploy",
-                                    id: "build/develop/evm/deploy",
+                                    id: "build/quick-start/evm/deploy",
                                 },
                                 {
                                     type: "doc",
                                     label: "Interact",
-                                    id: "build/develop/evm/interact",
+                                    id: "build/quick-start/evm/interact",
                                 },
                             ],
                         },
@@ -141,12 +141,12 @@ const sidebars = {
                         {
                             type: "doc",
                             label: "Overview",
-                            id: "build/deploy/overview-adv",
+                            id: "build/adv-guide/roller-adv/overview-adv",
                         },
                         {
                             type: "doc",
                             label: "Setup environment",
-                            id: "build/get-started/system-reqs",
+                            id: "build/adv-guide/roller-adv/system-reqs",
                         },
                         {
                             type: "category",
@@ -161,17 +161,17 @@ const sidebars = {
                                         {
                                             type: "doc",
                                             label: "Overview",
-                                            id: "build/develop/rdk/setup/overview",
+                                            id: "build/adv-guide/rdk/setup/overview",
                                         },
                                         {
                                             type: "doc",
                                             label: "Get RDK",
-                                            id: "build/develop/rdk/setup/rdk-repo",
+                                            id: "build/adv-guide/rdk/setup/rdk-repo",
                                         },
                                         {
                                             type: "doc",
                                             label: "Folder setup",
-                                            id: "build/develop/rdk/setup/folder",
+                                            id: "build/adv-guide/rdk/setup/folder",
                                         },
                                     ],
                                 },
@@ -183,22 +183,22 @@ const sidebars = {
                                         {
                                             type: "doc",
                                             label: "Message",
-                                            id: "build/develop/rdk/proto/message",
+                                            id: "build/adv-guide/rdk/proto/message",
                                         },
                                         {
                                             type: "doc",
                                             label: "Query",
-                                            id: "build/develop/rdk/proto/query",
+                                            id: "build/adv-guide/rdk/proto/query",
                                         },
                                         {
                                             type: "doc",
                                             label: "Genesis",
-                                            id: "build/develop/rdk/proto/genesis",
+                                            id: "build/adv-guide/rdk/proto/genesis",
                                         },
                                         {
                                             type: "doc",
                                             label: "Protogen",
-                                            id: "build/develop/rdk/proto/protoc",
+                                            id: "build/adv-guide/rdk/proto/protoc",
                                         },
                                     ],
                                 },
@@ -210,27 +210,27 @@ const sidebars = {
                                         {
                                             type: "doc",
                                             label: "Keys",
-                                            id: "build/develop/rdk/types/keys",
+                                            id: "build/adv-guide/rdk/types/keys",
                                         },
                                         {
                                             type: "doc",
                                             label: "Encoding",
-                                            id: "build/develop/rdk/types/codec",
+                                            id: "build/adv-guide/rdk/types/codec",
                                         },
                                         {
                                             type: "doc",
                                             label: "Genesis",
-                                            id: "build/develop/rdk/types/genesis",
+                                            id: "build/adv-guide/rdk/types/genesis",
                                         },
                                         {
                                             type: "doc",
                                             label: "Errors",
-                                            id: "build/develop/rdk/types/errors",
+                                            id: "build/adv-guide/rdk/types/errors",
                                         },
                                         {
                                             type: "doc",
                                             label: "Expected keepers",
-                                            id: "build/develop/rdk/types/expected-keepers",
+                                            id: "build/adv-guide/rdk/types/expected-keepers",
                                         },
                                     ],
                                 },
@@ -242,27 +242,27 @@ const sidebars = {
                                         {
                                             type: "doc",
                                             label: "Genesis",
-                                            id: "build/develop/rdk/keeper/genesis",
+                                            id: "build/adv-guide/rdk/keeper/genesis",
                                         },
                                         {
                                             type: "doc",
                                             label: "Keeper setup",
-                                            id: "build/develop/rdk/keeper/keeper-setup",
+                                            id: "build/adv-guide/rdk/keeper/keeper-setup",
                                         },
                                         {
                                             type: "doc",
                                             label: "Keeper functionality",
-                                            id: "build/develop/rdk/keeper/keeper-func",
+                                            id: "build/adv-guide/rdk/keeper/keeper-func",
                                         },
                                         {
                                             type: "doc",
                                             label: "Msg Server",
-                                            id: "build/develop/rdk/keeper/msg_server",
+                                            id: "build/adv-guide/rdk/keeper/msg_server",
                                         },
                                         {
                                             type: "doc",
                                             label: "Query Server",
-                                            id: "build/develop/rdk/keeper/query_server",
+                                            id: "build/adv-guide/rdk/keeper/query_server",
                                         },
                                     ],
                                 },
@@ -274,12 +274,12 @@ const sidebars = {
                                         {
                                             type: "doc",
                                             label: "Transaction",
-                                            id: "build/develop/rdk/cli/tx",
+                                            id: "build/adv-guide/rdk/cli/tx",
                                         },
                                         {
                                             type: "doc",
                                             label: "Query",
-                                            id: "build/develop/rdk/cli/query",
+                                            id: "build/adv-guide/rdk/cli/query",
                                         },
                                     ],
                                 },
@@ -291,19 +291,19 @@ const sidebars = {
                                         {
                                             type: "doc",
                                             label: "Module manager",
-                                            id: "build/develop/rdk/root/module-manager",
+                                            id: "build/adv-guide/rdk/root/module-manager",
                                         },
                                         {
                                             type: "doc",
                                             label: "App wiring",
-                                            id: "build/develop/rdk/root/app",
+                                            id: "build/adv-guide/rdk/root/app",
                                         },
                                     ],
                                 },
                                 {
                                     type: "doc",
                                     label: "Build",
-                                    id: "build/develop/rdk/setup/binary",
+                                    id: "build/adv-guide/rdk/setup/binary",
                                 },
                             ],
                         },
@@ -315,32 +315,32 @@ const sidebars = {
                                 {
                                     type: "doc",
                                     label: "Install",
-                                    id: "build/deploy/install-adv",
+                                    id: "build/adv-guide/roller-adv/install-adv",
                                 },
                                 {
                                     type: "doc",
                                     label: "Init",
-                                    id: "build/deploy/initialize-adv",
+                                    id: "build/adv-guide/roller-adv/initialize-adv",
                                 },
                                 {
                                     type: "doc",
                                     label: "Register",
-                                    id: "build/deploy/register-adv",
+                                    id: "build/adv-guide/roller-adv/register-adv",
                                 },
                                 {
                                     type: "doc",
                                     label: "DA light client",
-                                    id: "build/deploy/da-light-client",
+                                    id: "build/adv-guide/roller-adv/da-light-client",
                                 },
                                 {
                                     type: "doc",
                                     label: "Sequencer",
-                                    id: "build/deploy/sequencer",
+                                    id: "build/adv-guide/roller-adv/sequencer",
                                 },
                                 {
                                     type: "doc",
                                     label: "Relayer",
-                                    id: "build/deploy/relayer",
+                                    id: "build/adv-guide/roller-adv/relayer",
                                 },
                             ],
                         },

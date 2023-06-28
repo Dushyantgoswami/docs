@@ -13,6 +13,8 @@ touch keeper.go
 
 ### Keeper struct
 
+// TODO add imports
+
 In which we will create the `Keeper` struct:
 
 ```Go

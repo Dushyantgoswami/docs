@@ -72,7 +72,7 @@ const config = {
                     {
                         label: "Build",
                         position: "right",
-                        to: "build/get-started/roller",
+                        to: "build/roller",
                     },
                     {
                         label: "Validate",
