@@ -11,7 +11,7 @@ Initializing the configuration files of the RollApp will create the necessary in
 roller config init <rollapp-id> <denom>
 ```
 
--   RollApp-id: Should follow the format 'name_EIP155-version': e.g. froopy_9721-1
+-   RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
     -   Name: is made up of lowercase English letters
     -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
     -   Version: is a 1 to 5 digit number representing the version.
