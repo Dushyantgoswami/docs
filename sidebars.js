@@ -105,6 +105,11 @@ const sidebars = {
                             id: "build/deploy/interact",
                         },
                         {
+                            type: "doc",
+                            label: "Export keys",
+                            id: "build/deploy/export-keys",
+                        },
+                        {
                             type: "category",
                             label: "Advanced guide",
                             collapsed: "true",
@@ -138,11 +143,6 @@ const sidebars = {
                                     type: "doc",
                                     label: "Relayer",
                                     id: "build/deploy/relayer",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Reset",
-                                    id: "build/deploy/reset",
                                 },
                             ],
                         },
