@@ -18,3 +18,5 @@ roller run
 ```
 
 // TODO - What is the user expected to see?
+
+Now that we have the entire RollApp setup running let's [build](../develop/evm/overview.md) custom application logic.

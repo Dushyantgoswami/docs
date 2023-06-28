@@ -3,7 +3,9 @@ title: "Relayer"
 slug: relayer
 ---
 
-RollApps are IBC-enabled enabling immediate access to the global liquidity layer. Now that we've funded the appropriate addresses, are running the DA light client, and Sequencer node we can initialize the IBC bridge.
+RollApps are IBC-enabled giving immediate access to the global liquidity layer.
+
+Now that we've funded the appropriate addresses, are running the DA light client, and Sequencer node we can initialize the IBC bridge. In a new termninal run the following command:
 
 ```
 roller relayer start
@@ -24,3 +26,5 @@ Should return:
 ```
 💈 The relayer is running successfully on you local machine on channel channel-0!
 ```
+
+Now that we have the entire RollApp setup running let's [build](../develop/evm/overview.md) custom application logic.
