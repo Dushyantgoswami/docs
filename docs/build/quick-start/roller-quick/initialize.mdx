@@ -5,7 +5,7 @@ slug: initialize
 
 ### Initialization
 
-Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp.
+Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. This will create a folder `~/.roller` in the root directory of your computer with important files such as the `Genesis` file.
 
 `````mdx-code-block
 import Tabs from '@theme/Tabs';
@@ -14,8 +14,9 @@ import TabItem from '@theme/TabItem';
 ````mdx-code-block
 
 <Tabs groupId="operating-systems">
-<TabItem value="interactive guide" label="Interactive guide">
+<TabItem value="Guide" label="Guide">
 
+// TODO how does it start?
 
 An interactive guide will ask the following questions:
 
@@ -58,14 +59,14 @@ roller config init <rollapp-id> <denom>
 
 ### Address funding
 
-After completing the interactive questions, the Roller will have intialized the appropriate config files and should return addresses to fund:
+After initializing the RollApp, addresses to fund should be returned to you:
 
 ```
 🔑 Addresses:
 
 Sequencer | Address used to publish state updates to the Dymension Hub
-Relayer | Address that handles the relaying of IBC packets
-Celestia | Address used to publish data on-chain to the DA network
+Relayer   | Address that handles the relaying of IBC packets
+Celestia  | Address used to publish data on-chain to the DA network
 ```
 
 In Dymension's [discord](discord.gg/dymension) please fund the addresses in the `froopyland-faucet` channel with the following command as an example:
