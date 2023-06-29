@@ -3,9 +3,9 @@ title: "Export keys"
 slug: export-keys
 ---
 
-In the [init](./initialize.md) section we allocated the token supply to the RollApp deployer. However, you may want to distribute these tokens to users or friends!
+In the [init](./initialize.md) section we allocated the token supply to the RollApp deployer. However, you may want to distribute these tokens to users or friends! We will do so by exporting the Sequencer's private keys so we can easily transfer with metamask.
 
-We will do so by exporting the Sequencer's private keys so we can easily transfer with metamask. Private keys are a long string of unqiue characters used to sign transactions.
+Private keys are the password to your blockchain account. Private keys are a long string of unqiue characters used to sign transactions.
 
 ### Export keys
 
@@ -24,4 +24,4 @@ Should return:
 
 ### Next steps
 
-Let's connect to Metamask and deploy a NFT smart contract to the RollApp!
+Let's connect and import them into a Metamask wallet...
