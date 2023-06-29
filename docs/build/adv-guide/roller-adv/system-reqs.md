@@ -3,6 +3,8 @@ title: "Setup environment"
 slug: "system-reqs"
 ---
 
+// TODO add info on adding binary and skipping the RDK module tutorial
+
 ### Supported OS
 
 We officially support macOS only in the following architectures:
