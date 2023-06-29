@@ -929,6 +929,11 @@ div.navbar__logo {
     width: 85%;
 }
 
+.image-container-evm {
+    width: 50%;
+    height: 100px;
+}
+
 [data-theme="dark"] .image-container-primary {
     background-color: var(--ifm-color-primary);
 }

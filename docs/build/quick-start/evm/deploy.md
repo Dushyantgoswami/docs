@@ -21,3 +21,7 @@ string memory _symbol
 ## Deploy the smart contract
 
 Enter the arguments next to the `Deploy` button. Once you've submitted the transaction a Metamask pop-up will appear to sign and deploy the transaction.
+
+<div class="image-container-secondary">
+    <img class="image--primary" src={require('@site/static/img/remix-deploy.png').default} alt="dymint-overview" />
+</div>

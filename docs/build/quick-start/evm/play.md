@@ -13,7 +13,9 @@ After submitting the address the address will be minted an NFT!
 
 Next select `balanceOf` with the Metamask address you minted to. Now the `balanceOf` the address should display `1`.
 
-<img class="background" loading="eager" src={require('@site/static/img/remix.png').default} alt="background" />
+<div class="image-container-secondary">
+    <img class="image--primary" src={require('@site/static/img/remix.png').default} alt="dymint-overview" />
+</div>
 
 ### Conclusion
 

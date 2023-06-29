@@ -26,7 +26,7 @@ Network Name: <YOUR-ROLLAPP-NAME>
 
 New RPC URL: <YOUR-ROLLAPP-EVM-RPC>
 
-Chain ID: <YOUR-ROLLAPP-ID>
+Chain ID: <YOUR-CHAIN-ID> // EIP155 number (middle number of RollApp ID)
 
 Currency Symbol (optional): <YOUR-ROLLAPP-DENOM>
 ```
