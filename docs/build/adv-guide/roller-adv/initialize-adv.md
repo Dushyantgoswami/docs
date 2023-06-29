@@ -49,7 +49,7 @@ After completing the interactive questions, the Roller will have intialized the 
   Celestia  | Address used to publish data on-chain to the DA network
 ```
 
-In Dymension's [discord](discord.gg/dymension) please fund the addresses in the `froopyland-faucet` channel with the following command as an example:
+In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `froopyland-faucet` channel with the following command as an example:
 
 ```
 $REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn

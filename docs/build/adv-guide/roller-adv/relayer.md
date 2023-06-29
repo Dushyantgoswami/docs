@@ -26,5 +26,3 @@ Should return:
 ```
 💈 The relayer is running successfully on you local machine on channel channel-0!
 ```
-
-Now that we have the entire RollApp setup running let's [build](../develop/evm/overview.md) custom application logic.

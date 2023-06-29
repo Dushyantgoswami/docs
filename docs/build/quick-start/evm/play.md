@@ -21,4 +21,4 @@ We've done a lot in this tutorial!
 
 We've used the `Roller` CLI tool to deploy an EVM RollApp connected to IBC and then deployed a custom NFT smart contract to it. But this is just a small taste of what is possible.
 
-Have ideas? Join the Dymension community on [Discord](discord.gg/dymension) and share what you're working on!
+Have ideas? Join the Dymension community on [Discord](https://discord.gg/dymension) and share what you're working on!

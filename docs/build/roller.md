@@ -6,7 +6,7 @@ slug: "roller"
 Roller is an easy-to-use CLI tool for bootstrapping, building, and deploying an IBC-enabled RollApp. Roller abstracts away many of the complexties of running an inter-chain application-specific blockchain into a few simple commands:
 
 -   [Install](/docs/build/quick-start/roller-quick/install.md)
--   [Init](/docs/build/quick-start/roller-quick/initialize.md)
+-   [Init](/docs/build/quick-start/roller-quick/initialize.mdx)
 -   [Register](/docs/build/quick-start/roller-quick/register.md)
 -   [Run](/docs/build/quick-start/roller-quick/run.md)
 
