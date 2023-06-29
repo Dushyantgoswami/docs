@@ -3,7 +3,9 @@ title: "Overview"
 slug: "system-reqs"
 ---
 
-This advanced tutorial of building and deploy a RollApp includes the deployment of seperate processes for [DA light clients](./da-light-client.md), [Sequencer full nodes](./sequencer.md), and [relayers](./relayer.md). For a quick start tutorial that abstract some of the components of deploying a RollApp please visit the [Quick start](../../quick-start/roller-quick/install.md) tutorial.
+This advanced tutorial of building and deploy a IBC-connected RollApp includes the deployment of seperate processes for [DA light client](./da-light-client.md), [Sequencer full node](./sequencer.md), and a [IBC relayer](./relayer.md). Please visit the [quick start](../../quick-start/roller-quick/install.md) for a simplified tutorial on how to deploy an EVM RollApp.
+
+This tutorial includes a demonstration for building a custom module, developers may [skip](../roller-adv/install-adv.md) this section by specifying the PATH to a binary which can be instantiated with `Roller`.
 
 ### Supported OS
 
