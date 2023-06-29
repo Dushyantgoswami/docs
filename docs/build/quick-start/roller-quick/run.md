@@ -17,4 +17,6 @@ To start the EVM RollApp run the following command:
 roller run
 ```
 
+Note the source channel (i.e. src-channel) for [IBC transferring](ibc-transfer.md) in the interactive guide.
+
 // TODO - What is the user expected to see?
