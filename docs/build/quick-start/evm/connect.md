@@ -30,3 +30,5 @@ Chain ID: <YOUR-ROLLAPP-ID>
 
 Currency Symbol (optional): <YOUR-ROLLAPP-DENOM>
 ```
+
+Now that we've imported the existing private keys and connected to the runnning EVM RollApp network we can deploy a smart contract to it!
