@@ -9,16 +9,11 @@ This tutorial includes a demonstration for building a custom module, developers 
 
 ### Supported OS
 
-We officially support macOS only in the following architectures:
-
 -   TODO
 
 ### Hardware prerequisites
 
--   Dual Core
--   At least 500GB of SSD disk storage
--   At least 16GB of memory (RAM)
--   At least 100mbps network bandwidth
+-   TODO
 
 These requirements will continually be revisted and tested by the core team and community.
 
