@@ -11,7 +11,7 @@ Install the [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihf
 
 ### Import keys
 
-If this is your first time setting up the Metamask wallet you can import the [exported private keys](../roller-quick/export-keys.md). Else, click on the top right avatar and select `Import Account` (make sure that the `Private Key` option is selected).
+If this is your first time setting up the Metamask wallet you can import the RollApp Sequencer's [exported private keys](../roller-quick/export-keys.md). Else, click on the top right avatar and select `Import Account` (make sure that the `Private Key` option is selected).
 
 Paste the exported private key in the form input and click `Import`. Your Metamask account balance should show.
 
