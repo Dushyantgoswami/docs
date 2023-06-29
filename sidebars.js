@@ -349,13 +349,13 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Export keys",
-                                            id: "build/adv-guide/roller-adv/export-keys-adv",
+                                            label: "IBC transfer",
+                                            id: "build/adv-guide/roller-adv/ibc-transfer-adv",
                                         },
                                         {
                                             type: "doc",
-                                            label: "IBC transfer",
-                                            id: "build/adv-guide/roller-adv/ibc-transfer-adv",
+                                            label: "Export keys",
+                                            id: "build/adv-guide/roller-adv/export-keys-adv",
                                         },
                                     ],
                                 },

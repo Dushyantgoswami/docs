@@ -21,7 +21,3 @@ Should return:
 ```
 // TODO
 ```
-
-### Next steps
-
-Let's connect and import them into a Metamask wallet...
