@@ -16,8 +16,4 @@ Unlike traditional app-chains, RollApps delegate consensus to the Dymension Hub.
 
 The Dymension Hub then provides a dispute period for any network participant to submit a fraud proof againist the published state root. If no one submits a fraud proof, the state root is assumed to be valid for light clients.
 
-// TODO
-
--   IBC
--   ICA
--   Censorship-resistance
+For immediate IBC transfers, Dymension protocol will implement a version of the [Escrow IBC](https://eibc.dymension.xyz/). This will facilitate market making opportunities for new participants and enable fast withdrawals for RollApp users.

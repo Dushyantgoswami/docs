@@ -4,9 +4,11 @@ slug: "dymension-rdk"
 hide_table_of_contents: true
 ---
 
+Dymension RDK is the Cosmos SDK for rollups. The [Cosmos SDK](https://docs.cosmos.network/main/modules) comes pre-built with various modules that expediate the building process.
+
 RollApps are composed out of two core services, client and server. The server is the application side designated for the RollApp deployer to implement custom business logic alongside the pre-packaged modules that construct the RollApp Development Kit [(RDK)](https://github.com/dymensionxyz/dymension-rdk). The client component, referred to as [dymint](./dymint), is a drop-in replacement for Tendermint and responsible for block production, peer message propagation and inter-layer networking.
 
-Dymension RDK is the Cosmos SDK for rollups. The [Cosmos SDK](https://docs.cosmos.network/main/modules) comes pre-built with various modules that expediate the building process. Some of the core modules are:
+Some of the core modules are:
 
 -   [Bank](https://docs.cosmos.network/main/modules/bank) - Facilitating token transfers
 -   [Staking](https://docs.cosmos.network/main/modules/staking) - Proof-of-stake layer for public blockchains
