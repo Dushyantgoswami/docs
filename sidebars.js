@@ -342,6 +342,23 @@ const sidebars = {
                                     label: "Relayer",
                                     id: "build/adv-guide/roller-adv/relayer",
                                 },
+                                {
+                                    type: "category",
+                                    label: "Interact",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "Export keys",
+                                            id: "build/adv-guide/roller-adv/export-keys-adv",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "IBC transfer",
+                                            id: "build/adv-guide/roller-adv/ibc-transfer-adv",
+                                        },
+                                    ],
+                                },
                             ],
                         },
                     ],
