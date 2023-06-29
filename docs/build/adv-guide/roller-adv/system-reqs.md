@@ -1,9 +1,9 @@
 ---
-title: "Setup environment"
+title: "Overview"
 slug: "system-reqs"
 ---
 
-// TODO add info on adding binary and skipping the RDK module tutorial
+This advanced tutorial of building and deploy a RollApp includes the deployment of seperate processes for [DA light clients](./da-light-client.md), [Sequencer full nodes](./sequencer.md), and [relayers](./relayer.md). For a quick start tutorial that abstract some of the components of deploying a RollApp please visit the [Quick start](../../quick-start/roller-quick/install.md) tutorial.
 
 ### Supported OS
 

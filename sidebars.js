@@ -141,11 +141,6 @@ const sidebars = {
                         {
                             type: "doc",
                             label: "Overview",
-                            id: "build/adv-guide/roller-adv/overview-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Setup environment",
                             id: "build/adv-guide/roller-adv/system-reqs",
                         },
                         {
