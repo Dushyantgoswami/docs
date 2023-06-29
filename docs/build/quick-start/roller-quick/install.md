@@ -3,7 +3,7 @@ title: "Install Roller"
 slug: install
 ---
 
-In this `Quick start` tutorial we will be deploying an EVM RollApp with `Roller`. Please visit the [advanced guide](/docs/build/adv-guide/roller-adv/overview-adv.md) for instructions on how to build a RDK RollApp with a breakdown of each component of `Roller`.
+In this `Quick start` tutorial we will be deploying an EVM RollApp with `Roller`. Please visit the [advanced guide](/docs/build/adv-guide/roller-adv/system-reqs.md) for instructions on how to build a RDK RollApp with a breakdown of each component of `Roller`.
 
 ### Roller installation
 
