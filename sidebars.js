@@ -40,11 +40,6 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
-                            label: "Tech stack",
-                            id: "learn/dymension-hub/tech-stack",
-                        },
-                        {
-                            type: "doc",
                             label: "Application",
                             id: "learn/dymension-hub/application",
                         },
