@@ -8,7 +8,7 @@ slug: install-adv
 Open a terminal and input the following command to install `Roller`:
 
 ```
-curl -L https://github.com/dymensionxyz/roller/releases/download/v0.0.0/install.sh | bash
+curl -L https://roller.dymension.xyz/install | bash
 ```
 
 ### Verify Roller version
