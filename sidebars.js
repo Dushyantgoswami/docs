@@ -133,11 +133,6 @@ const sidebars = {
                     label: "Advanced guide",
                     collapsed: "true",
                     items: [
-                        {
-                            type: "doc",
-                            label: "Overview",
-                            id: "build/adv-guide/roller-adv/system-reqs",
-                        },
                         // {
                         //     type: "category",
                         //     label: "Develop",

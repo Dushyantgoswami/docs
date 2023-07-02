@@ -3,21 +3,6 @@ title: "Overview"
 slug: "system-reqs"
 ---
 
-This advanced tutorial of building and deploy a IBC-connected RollApp includes the deployment of seperate processes for [DA light client](./da-light-client.md), [Sequencer full node](./sequencer.md), and a [IBC relayer](./relayer.md). Please visit the [quick start](../../quick-start/roller-quick/install.md) for a simplified tutorial on how to deploy an EVM RollApp.
-
-### Supported OS
-
--   Roller has only been officially tested with MacOS. More officially supported OS will be provided soon.
-
-### Hardware prerequisites
-
--   Dual Core
--   At least 500GB of SSD disk storage
--   At least 16GB of memory (RAM)
--   At least 100mbps network bandwidth
-
-These requirements will continually be revisted and tested by the core team and community.
-
 ### Go download
 
 `````mdx-code-block
@@ -102,46 +87,6 @@ source $HOME/.zshrc
 
 </TabItem>
 </Tabs>
-
-To check if Go was installed correctly run:
-
-```sh
-go version
-```
-
-The output should be the version installed:
-
-<Tabs groupId="operating-systems">
-<TabItem value="amd" label="Ubuntu (AMD)">
-
-```sh
-go version go1.19.9 linux/amd64
-```
-
-</TabItem>
-<TabItem value="arm" label="Ubuntu (ARM)">
-
-```sh
-go version go1.19.9 linux/arm64
-```
-
-</TabItem>
-<TabItem value="apple" label="Mac (Apple)">
-
-```sh
-go version go1.19.9 darwin/arm64
-```
-
-</TabItem>
-<TabItem value="mac" label="Mac (Intel)">
-
-```sh
-go version go1.19.9 darwin/amd64
-```
-
-</TabItem>
-</Tabs>
-
 
 </TabItem>
 </Tabs>
