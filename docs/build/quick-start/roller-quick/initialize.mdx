@@ -30,7 +30,7 @@ Interactive guide breakdown:
     - Devnet (default): non-incentivized devnet for building and testing
     - Froopyland: Very Soon
     - Mainnet: Soon TM
-    - Local: Work and build local [Dymension Hub node](/validate/dymension-hub/build-dymd) use Chain-ID Dymension_100-1
+    - Local: Uses localhost. To build the [devnet hub node](/validate/dymension-hub/build-dymd) and use Chain-ID Dymension_100-1
 - Enter your RollApp ID:
     - Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
 - Specify your RollApp denom:
