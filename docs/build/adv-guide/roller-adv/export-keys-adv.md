@@ -7,17 +7,30 @@ In the [init](./initialize-adv.md) section we allocated the token supply to the 
 
 Private keys are the password to your blockchain account. Private keys are a long string of unqiue characters used to sign transactions.
 
-### Export keys
+### List keys
 
 Run the following command to export the Sequencer's private keys:
 
 ```
-// TODO
-roller export-keys
+roller keys list
 ```
 
-Should return:
+Should return as an example:
 
 ```
-// TODO
+🔑 Addresses:
+
+  my_celes_key        | RollApp Sequencer account on Celestia
+  hub_sequencer       | RollApp Sequencer account on the Dymension Hub
+  rollapp_sequencer   | RollApp Sequencer account on the RollApp
+  relayer-hub-key     | IBC relayer account on Dymension Hub
+  relayer-rollapp-key | IBC relayer account on RollApp
+```
+
+### Export keys
+
+Run the following command to export the Sequencer's private keys (currently only supporting `hub_sequencer` and `rollapp_sequencer`):
+
+```
+roller keys export rollapp_sequencer
 ```
