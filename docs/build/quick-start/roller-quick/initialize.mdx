@@ -39,8 +39,9 @@ Interactive guide breakdown:
     - This is the initial token supply in the RollApp
 - Choose your data layer:
     - Defaults to Celestia Mocha network, with more DA added soon.
-- Set your runtime binary:
-    - Press `Enter` to use default EVM RollApp (e.g. /usr/local/bin/rollapp_evm)
+- Select your execution environment:
+    - EVM (Default): Press `Enter` to continue
+    - RDK: Requires specifying runtime binary path (e.g. /usr/local/bin/rollappd)
 
 </TabItem>
 <TabItem value="Flags" label="Flags">
