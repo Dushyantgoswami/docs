@@ -19,7 +19,7 @@ This process takes a few minutes as there are TCP/IP-like handshakes. The proces
 
 -   **Channel** facilitates application to application communication
 
--   **Relayers** are off-chain process that read one blockchain and write to a different one. Relayers are the trust-less bridge operators between two different chains
+-   **Relayers** are off-chain processes that read one blockchain and write to a different one. Relayers are the trust-less bridge operators between two different chains
 
 Should return:
 

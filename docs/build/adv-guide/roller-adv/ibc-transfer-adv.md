@@ -5,7 +5,7 @@ slug: ibc-transfer-adv
 
 Now that we have a running IBC-connected RollApp, let's send an IBC transaction from the RollApp to the Dymension Hub faucet. From their users will be able to request tokens to play around with your RollApp.
 
-Note the source channel (i.e. src-channel) during the [Run](relayer.md) stage (i.e. channel-0).
+Note the source channel (i.e. src-channel) during the [Relayer](relayer.md) stage (i.e. channel-0).
 
 ```
 <RollApp APP-NAME> tx ibc-transfer transfer transfer <src-channel> <faucet-address> 800<denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
