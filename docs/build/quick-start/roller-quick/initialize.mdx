@@ -74,18 +74,24 @@ Relayer   | Address that handles the relaying of IBC packets
 Celestia  | Address used to publish data on-chain to the DA network
 ```
 
-In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `froopyland-faucet` channel with the following command as an example:
+In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `faucet` channel with the following command as an example:
 
 ```
-$REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn // TODO add chain-id
-$REQUEST dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy
-$REQUEST celestia1wnqasu0vze3qn8jldv9hx4yhf5w59l080u5mg0
+$REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn devnet_304-1
+$REQUEST dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy devnet_304-1
 ```
 
 You can then check the balance of the address with:
 
 ```
-$BALANCE dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+$BALANCES dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+```
+
+Now that we've funded the Dymension wallets, let's fund the Celestia Mocha wallet for data publication. In Celestia's [discord](https://discord.com/invite/YsnTPcSfWQ)
+please go to the `mocha-faucet` and request tokens with the following command as an example:
+
+```
+$request celestia1wnqasu0vze3qn8jldv9hx4yhf5w59l080u5mg0
 ```
 
 Now that we've funded the wallets we can go ahead and register the RollApp!
