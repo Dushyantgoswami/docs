@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ````mdx-code-block
 
-<Tabs groupId="operating-systems">
+<Tabs groupId="guide">
 <TabItem value="Interactive guide" label="Interactive guide">
 
 Input the following command to begin the interactive guide:
