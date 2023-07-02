@@ -24,26 +24,20 @@ Input the following command to begin the interactive guide:
 roller config init
 ```
 
-An interactive guide will ask the following questions:
+Interactive guide breakdown:
 
-1. Select your network:
-    <br />
-    Defaults to non-incentivized devnet, Froopyland will be released soon
-2. Enter your RollApp ID:
-    <br />
-    Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
-2. Specify your RollApp denom:
-    <br />
-    e.g BTC, PEPE, DYM
-3. How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
-    <br />
-    These are the amount of tokens in denom (i.e. ETH, BTC)
-4. Choose your data layer:
-    <br />
-    Defaults to Celestia Mocha network, with more DA added soon.
-5. Set your runtime binary. for EVM RollApp hit ‘Enter’. For a custom app-specific RollApp, input it’s binary path:
-    <br />
-    If you're using this quick start guide it is recommended to press `Enter` else we recommend continuing with the advanced guide
+- Select your network:
+    - Defaults to non-incentivized devnet, Froopyland will be released soon
+- Enter your RollApp ID:
+    - Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
+- Specify your RollApp denom:
+    - e.g BTC, PEPE, DYM
+- How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
+    - These are the amount of tokens in denom (i.e. ETH, BTC)
+- Choose your data layer:
+    - Defaults to Celestia Mocha network, with more DA added soon.
+- Set your runtime binary. for EVM RollApp hit ‘Enter’.
+    - If you're using this quick start guide it is recommended to press `Enter` else we recommend continuing with the [advanced guide](/build/adv-guide/roller-adv/install-adv)
 
 </TabItem>
 <TabItem value="Flags" label="Flags">
@@ -52,7 +46,7 @@ An interactive guide will ask the following questions:
 roller config init <ROLLAPP-ID> <DENOM> --hub=<HUB-VERSION> --token-suppply=<TOKEN-SUPPLY>
 ```
 
-Flag breakdown:
+Flags breakdown:
 - RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
     -   Name: is made up of lowercase English letters
     -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
