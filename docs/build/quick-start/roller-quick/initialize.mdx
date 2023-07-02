@@ -27,16 +27,16 @@ roller config init
 Interactive guide breakdown:
 
 - Select your network:
-    - Local: Defined as a Dymension Hub node running on localhost. Please see the [validate Devnet chain](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
-    When building the local Dymension Hub node please use Chain-ID Dymension_100-1
     - Devnet (default): non-incentivized devnet for building and testing
-    - Froopyland: Soon
+    - Froopyland: Very Soon
+    - Mainnet: Soon TM
+    - Local: Work and build local [Dymension Hub node](/validate/dymension-hub/build-dymd) use Chain-ID Dymension_100-1
 - Enter your RollApp ID:
     - Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
 - Specify your RollApp denom:
     - e.g BTC, PEPE, DYM
 - How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
-    - These are the amount of tokens in denom (e.g. ETH, BTC)
+    - This is the initial token supply in the RollApp
 - Choose your data layer:
     - Defaults to Celestia Mocha network, with more DA added soon.
 - Set your runtime binary:
