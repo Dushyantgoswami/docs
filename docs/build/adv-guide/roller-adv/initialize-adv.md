@@ -53,7 +53,7 @@ Flags breakdown:
 - Denom: Name of the native token of the RollApp
 - Hub-version: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")
     - Devnet utilizes a public non-incentivized devnet run by Silk Nodes
-    - Local requires running a localhost node of the Dymension Hub. Please see the [validate](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
+    - Local requires running a localhost node of the Dymension Hub. Please see the [validate Devnet chain](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
 - Token-supply: The total token supply of the RollApp (default "1000000000")
 
 </TabItem>
