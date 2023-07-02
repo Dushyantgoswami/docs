@@ -9,11 +9,14 @@ This tutorial includes a demonstration for building a custom module, developers 
 
 ### Supported OS
 
--   TODO
+-   Roller has only been officially tested with MacOS. More officially supported OS will be provided soon.
 
 ### Hardware prerequisites
 
--   TODO
+-   Dual Core
+-   At least 500GB of SSD disk storage
+-   At least 16GB of memory (RAM)
+-   At least 100mbps network bandwidth
 
 These requirements will continually be revisted and tested by the core team and community.
 

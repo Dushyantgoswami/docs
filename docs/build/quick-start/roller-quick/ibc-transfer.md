@@ -15,13 +15,6 @@ Bridging from a RollApp to the Dymension Hub (and furthermore the IBC ecosystem)
 
 Users should expect an approximately ~15 minute delay between IBC transaction submission and receipt at the destination address.
 
-Run the following command to check the status of the IBC transfer:
-
-```
-// TODO status
-RPC request
-```
-
 Run the following command to check the balance of your RollApp token on the Dymension Hub's faucet:
 
 ```
