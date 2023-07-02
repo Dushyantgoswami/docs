@@ -1,66 +1,98 @@
 ---
-title: "Initialize"
+title: "Initialize RDK RollApp"
 slug: initialize-adv
 ---
 
 ### Initialization
 
-Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. Initialize the RollApp with the following command:
+Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. This will create a folder `~/.roller` in the root directory of your computer with important files such as the `Genesis` file.
 
-```zsh
-roller config init <rollapp-id> <denom>
+Developers have two options for initializing the configuration files, an interactive guide or by using CLI flags:
+
+`````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+````mdx-code-block
+
+<Tabs groupId="operating-systems">
+<TabItem value="Interactive guide" label="Interactive guide">
+
+Input the following command to begin the interactive guide:
+
+```
+roller config init
 ```
 
--   RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
+Interactive guide breakdown:
+
+- Select your network:
+    - Defaults to non-incentivized devnet, Froopyland will be released soon
+- Enter your RollApp ID:
+    - Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
+- Specify your RollApp denom:
+    - e.g BTC, PEPE, DYM
+- How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
+    - These are the amount of tokens in denom (i.e. ETH, BTC)
+- Choose your data layer:
+    - Defaults to Celestia Mocha network, with more DA added soon.
+- Set your runtime binary. for EVM RollApp hit ‘Enter’. For a custom app-specific RollApp, input it’s binary path:
+    - Binary path of the build i.e. `~/go/bin/<BINARY>`
+
+</TabItem>
+<TabItem value="Flags" label="Flags">
+
+```zsh
+roller config init <ROLLAPP-ID> <DENOM> --hub=<HUB-VERSION> --token-suppply=<TOKEN-SUPPLY> --rollapp-binary=<BINARY-PATH>
+```
+
+Flags breakdown:
+- RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
     -   Name: is made up of lowercase English letters
     -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
-    -   Version: is a 1 to 5 digit number representing the version.
--   Denom: Name of the native token of the RollApp
+    -   Version: is a 1 to 5 digit number representing the version
+- Denom: Name of the native token of the RollApp
+- Hub-version: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")
+    - Devnet utilizes a public non-incentivized devnet run by Silk Nodes
+    - Local requires running a localhost node of the Dymension Hub. Please see the [validate](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
+- Token-supply: The total token supply of the RollApp (default "1000000000")
+- Rollapp-binary: The rollapp binary. Should be passed only if you built a custom RollApp.
 
-### Interactive guide
+</TabItem>
 
-An interactive guide will ask the following questions:
-
-1. What is the RollApp name?
-   <br />
-   (i.e. ROLLAPP_9000_1 please note the suffix of `_9000_1` is required for EVM RollApps)
-2. What is the name of the RollApp currency?
-   <br />
-   (i.e. aphoton, udym)
-3. What is the amount of tokens to be minted on Genesis?
-   <br />
-   (i.e. 1000000)
-4. What is the location data will be published to?
-   <br />
-   (i.e. Celestia, Avail)
-5. What is the application environment?
-   <br />
-   (i.e. EVM, Go modules)
-
-After completing the interactive questions, the Roller will have intialized the appropriate config files and should return addresses to fund:
+</Tabs>
+`````
 
 ### Address funding
+
+After initializing the RollApp, addresses to fund should be returned to you:
 
 ```
 🔑 Addresses:
 
-  Sequencer | Address used to publish state updates to the Dymension Hub
-  Relayer   | Address that handles the relaying of IBC packets
-  Celestia  | Address used to publish data on-chain to the DA network
+Sequencer | Address used to publish state updates to the Dymension Hub
+Relayer   | Address that handles the relaying of IBC packets
+Celestia  | Address used to publish data on-chain to the DA network
 ```
 
-In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `froopyland-faucet` channel with the following command as an example:
+In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `faucet` channel with the following command as an example:
 
 ```
-$REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
-$REQUEST dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy
-$REQUEST celestia1wnqasu0vze3qn8jldv9hx4yhf5w59l080u5mg0
+$REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn devnet_304-1
+$REQUEST dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy devnet_304-1
 ```
 
 You can then check the balance of the address with:
 
 ```
-$BALANCE dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+$BALANCES dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+```
+
+Now that we've funded the Dymension wallets, let's fund the Celestia Mocha wallet for data publication. In Celestia's [discord](https://discord.com/invite/YsnTPcSfWQ)
+please go to the `mocha-faucet` and request tokens with the following command as an example:
+
+```
+$request celestia1wnqasu0vze3qn8jldv9hx4yhf5w59l080u5mg0
 ```
 
 Now that we've funded the wallets we can go ahead and register the RollApp!
