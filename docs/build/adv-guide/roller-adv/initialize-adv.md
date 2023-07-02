@@ -36,14 +36,13 @@ Interactive guide breakdown:
     - These are the amount of tokens in denom (i.e. ETH, BTC)
 - Choose your data layer:
     - Defaults to Celestia Mocha network, with more DA added soon.
-- Set your runtime binary. for EVM RollApp hit ‘Enter’. For a custom app-specific RollApp, input it’s binary path:
-    - Binary path of the build i.e. `~/go/bin/<BINARY>`
+
 
 </TabItem>
 <TabItem value="Flags" label="Flags">
 
 ```zsh
-roller config init <ROLLAPP-ID> <DENOM> --hub=<HUB-VERSION> --token-suppply=<TOKEN-SUPPLY> --rollapp-binary=<BINARY-PATH>
+roller config init <ROLLAPP-ID> <DENOM> --hub=<HUB-VERSION> --token-suppply=<TOKEN-SUPPLY>
 ```
 
 Flags breakdown:
@@ -56,7 +55,6 @@ Flags breakdown:
     - Devnet utilizes a public non-incentivized devnet run by Silk Nodes
     - Local requires running a localhost node of the Dymension Hub. Please see the [validate](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
 - Token-supply: The total token supply of the RollApp (default "1000000000")
-- Rollapp-binary: The rollapp binary. Should be passed only if you built a custom RollApp.
 
 </TabItem>
 
