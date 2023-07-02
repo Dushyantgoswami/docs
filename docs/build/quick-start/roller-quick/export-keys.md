@@ -32,8 +32,10 @@ Should return as an example:
 Run the following command to export the Sequencer's private keys (currently only supporting `hub_sequencer` and `rollapp_sequencer`):
 
 ```
-roller keys export rollapp_sequencer
+roller keys export hub_sequencer
 ```
+
+The security of the Hub_Sequencer private keys is important for participating in other Dymension networks with the same account. We recommend storing this information in a secure place.
 
 ### Next steps
 
