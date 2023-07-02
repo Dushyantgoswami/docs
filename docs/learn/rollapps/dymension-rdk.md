@@ -26,5 +26,5 @@ Unlike the Cosmos SDK default modules, a few adjustments have been made that def
 -   [Epochs](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/epochs) - RollApps utilize elastic block production which may cause inconsistencies in block production thus RollApps utilize time-based rather than height-based approach for state triggers.
 -   [Mint](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/mint) - RollApps utilize time-based mint module built for consistent token creation. The mint module built by the Osmosis and Stride teams has been generalized by removing references to pools/incentive structures tied to the aformentioned protocols.
 -   [Dist](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/dist) - Allocates tokens between the Sequencer (block proposer), members, and community pool.
--   [Sequencers](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/sequencers) - TODO
+-   [Sequencers](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/sequencers) - Creates an account to receive rewards for operating the RollApp
 -   [Staking](https://github.com/dymensionxyz/dymension-rdk/tree/main/x/staking) - Wrapper on the existing Cosmos SDK Staking module that prevents validator updates on the Proof-of-stake layer.
