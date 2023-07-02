@@ -33,7 +33,7 @@ Interactive guide breakdown:
 - Specify your RollApp denom:
     - e.g BTC, PEPE, DYM
 - How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
-    - These are the amount of tokens in denom (i.e. ETH, BTC)
+    - These are the amount of tokens in denom (e.g. ETH, BTC)
 - Choose your data layer:
     - Defaults to Celestia Mocha network, with more DA added soon.
 
