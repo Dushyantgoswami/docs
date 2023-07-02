@@ -9,7 +9,7 @@ Private keys are the password to your blockchain account. Private keys are a lon
 
 ### List keys
 
-Run the following command to export the Sequencer's private keys:
+Run the following command to list the private keys associated with the RollApp:
 
 ```
 roller keys list
