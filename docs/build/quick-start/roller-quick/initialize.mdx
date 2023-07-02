@@ -7,6 +7,8 @@ slug: initialize
 
 Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. This will create a folder `~/.roller` in the root directory of your computer with important files such as the `Genesis` file.
 
+Developers have two options for initializing the configuration files, an interactive guide or by using CLI flags:
+
 `````mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,43 +16,52 @@ import TabItem from '@theme/TabItem';
 ````mdx-code-block
 
 <Tabs groupId="operating-systems">
-<TabItem value="Guide" label="Guide">
+<TabItem value="Interactive guide" label="Interactive guide">
 
-// TODO how does it start?
+Input the following command to begin the interactive guide:
+
+```
+roller config init
+```
 
 An interactive guide will ask the following questions:
 
-1. What is the RollApp name?
+1. Select your network:
     <br />
-    (i.e. ROLLAPP_9000_1 please note the suffix of `_9000_1` is required for EVM
-    RollApps)
-2. What is the name of the RollApp currency?
+    Defaults to non-incentivized devnet, Froopyland will be released soon
+2. Enter your RollApp ID:
     <br />
-    (i.e. aphoton, udym)
-3. What is the amount of tokens to be minted on Genesis?
+    Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
+2. Specify your RollApp denom:
     <br />
-    (i.e. 1000000)
-4. What is the location data will be published to?
+    e.g BTC, PEPE, DYM
+3. How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
     <br />
-    (i.e. Celestia, Avail)
-5. What is the application environment?
+    These are the amount of tokens in denom (i.e. ETH, BTC)
+4. Choose your data layer:
     <br />
-    (i.e. EVM, Go modules)
-
+    Defaults to Celestia Mocha network, with more DA added soon.
+5. Set your runtime binary. for EVM RollApp hit ‘Enter’. For a custom app-specific RollApp, input it’s binary path:
+    <br />
+    If you're using this quick start guide it is recommended to press `Enter` else we recommend continuing with the advanced guide
 
 </TabItem>
 <TabItem value="Flags" label="Flags">
 
 ```zsh
-roller config init <rollapp-id> <denom>
+roller config init <ROLLAPP-ID> <DENOM> --hub=<HUB-VERSION> --token-suppply=<TOKEN-SUPPLY>
 ```
 
--   RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
+Flag breakdown:
+- RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
     -   Name: is made up of lowercase English letters
     -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
     -   Version: is a 1 to 5 digit number representing the version
--   Denom: Name of the native token of the RollApp
-
+- Denom: Name of the native token of the RollApp
+- Hub-version: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")
+    - Devnet utilizes a public non-incentivized devnet run by Silk Nodes
+    - Local requires running a localhost node of the Dymension Hub. Please see the [validate](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
+- Token-supply: The total token supply of the RollApp (default "1000000000")
 
 </TabItem>
 
