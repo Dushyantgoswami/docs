@@ -16,6 +16,8 @@ With `Roller` developers are able to deploy a RollApp within minutes.
 `Roller Run` abstracts components of deploying a RollApp (i.e. DA light clients, Sequencer full nodes, and relayer nodes) for an in-depth guide including the stand-alone deployment of each process please visit the [advanced guide](/docs/build/adv-guide/roller-adv/install-adv.md).
 :::
 
+`Roller` is the engine that brings the Dymension RDK to life. With `Roller` we will deploy an IBC RollApp connected to the entire inter-chain!
+
 ### Supported OS
 
 -   Roller has only been officially tested with MacOS. More officially supported OS will be provided soon.
@@ -117,5 +119,3 @@ source $HOME/.zshrc
 </TabItem>
 </Tabs>
 `````
-
-`Roller` is the engine that brings the Dymension RDK to life. With `Roller` we will deploy an IBC RollApp connected to the entire inter-chain!
