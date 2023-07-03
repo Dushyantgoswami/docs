@@ -67,10 +67,9 @@ const config = {
                     {
                         label: "Learn",
                         position: "right",
-                        to: "learn/modular-intro",
+                        to: "learn/eli5",
                     },
                     {
-                        label: "Build",
                         label: "Build",
                         position: "right",
                         to: "build/roller",
@@ -112,7 +111,6 @@ const config = {
                             {
                                 label: "Twitter",
                                 href: "https://twitter.com/dymension",
-                                href: "https://twitter.com/dymension",
                             },
                             {
                                 label: "Discord",
@@ -124,7 +122,6 @@ const config = {
                             },
                             {
                                 label: "Medium",
-                                href: "https://medium.com/@dymension",
                                 href: "https://medium.com/@dymension",
                             },
                         ],
