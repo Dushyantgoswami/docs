@@ -938,11 +938,6 @@ div.navbar__logo {
     background-color: var(--ifm-color-primary);
 }
 
-.barber {
-    margin-left: 4px;
-    font-size: 20px;
-}
-
 @media (min-width: 1440px) {
     .image-card .card-body {
         background-color: transparent;
