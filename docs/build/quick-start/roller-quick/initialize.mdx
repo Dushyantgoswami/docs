@@ -18,50 +18,151 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId="guide">
 <TabItem value="Interactive guide" label="Interactive guide">
 
-Input the following command to begin the interactive guide:
-
 ```
-roller config init
+roller config init --interactive
 ```
 
-Interactive guide breakdown:
+<details>
+<summary>Interactive guide breakdown</summary>
 
-- Select your network:
-    - Devnet (default): non-incentivized devnet for building and testing
-    - Froopyland: Very Soon
-    - Mainnet: Soon TM
-    - Local: Uses localhost Dymension Hub node. To build the [devnet hub node](/validate/dymension-hub/build-dymd) and use Chain-ID Dymension_100-1
-- Enter your RollApp ID:
-    - Format: rollapp-name_EIP155-revision. e.g wagmi_420-1
-- Specify your RollApp denom:
-    - e.g BTC, PEPE, DYM
-- How many tokens do you wish to mint for Genesis? (default: 1,000,000,000):
-    - This is the initial token supply in the RollApp
-- Choose your data layer:
-    - Defaults to Celestia Mocha network, with more DA added soon.
-- Select your execution environment:
-    - EVM (Default): Press `Enter` to continue
-    - RDK: Requires specifying runtime binary path (e.g. /usr/local/bin/rollappd)
+<div>
+
+<div>
+    <details>
+    <summary>Select your network</summary>
+    <div>
+            <details>
+                <summary>Devnet (default)</summary>
+                <div>Non-incentivized public Devnet for building and testing</div>
+            </details>
+            <details>
+                <summary>Local</summary>
+                <div>Uses localhost Dymension Hub node and mock DA network</div>
+            </details>
+            <details>
+                <summary>Froopyland</summary>
+                <div>Very Soon</div>
+            </details>
+            <details>
+                <summary>Mainnet</summary>
+                <div>Soon</div>
+            </details>
+    </div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Enter your RollApp ID</summary>
+        <div><b>Format</b>: name_ID-version (e.g wagmi_420-1)</div><br/>
+            <details>
+                <summary>Name</summary>
+                <div>Lowercase English letters</div>
+            </details>
+            <details>
+                <summary>ID</summary>
+                <div>1 to 5 digit number representing the EIP155 Chain-ID of the RollApp</div>
+            </details>
+            <details>
+                <summary>Version</summary>
+                <div>1 to 5 digit number representing the version</div>
+            </details>
+        <div><i>  Please note the "_" after the name and the "-" after the ID, these are required for EVM RollApps</i></div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Specify your RollApp denom</summary>
+        <div>e.g BTC, PEPE, DYM</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Set the genesis token supply</summary>
+        <div>How many tokens do you wish to mint for Genesis? This is the initial token supply in the RollApp (default: 1,000,000,000). </div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Choose your data layer</summary>
+        <div>Defaults to Celestia Mocha network, with more DA added soon.</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Select your execution environment</summary>
+        <div>
+            <details>
+                <summary>EVM (Default)</summary>
+                <div>Standard EVM environment utilizing Ethermint built by EVMOS</div>
+            </details>
+            <details>
+                <summary>RDK</summary>
+                <div>Custom application binary. Requires specifying runtime binary path (e.g. /usr/local/bin/rollappd)</div>
+            </details>
+        </div>
+    </details>
+</div>
+
+
+</div>
+</details>
+
 
 </TabItem>
 <TabItem value="Flags" label="Flags">
 
-```zsh
-roller config init <ROLLAPP-ID> <DENOM> --hub=<HUB-VERSION> --token-suppply=<TOKEN-SUPPLY>
+```
+roller config init <ROLLAPP-ID> <DENOM>
 ```
 
-Flags breakdown:
-- RollApp-id: Should follow the format 'name_EIP155-version': e.g. brooklyn_69-420
+<details>
+<summary>Flags breakdown</summary>
+
+<div>
+
+<div>
+    <details>
+    <summary>RollApp ID</summary>
+    <div>
     -   Name: is made up of lowercase English letters
     -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
     -   Version: is a 1 to 5 digit number representing the version
-- Denom: Name of the native token of the RollApp
-- Hub-version: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")
-    - Devnet utilizes a public non-incentivized devnet run by Silk Nodes
-    - Local requires running a localhost node of the Dymension Hub.
+    </div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Denom</summary>
+        <div>Name of the native token of the RollApp</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Hub-version</summary>
+        <div>: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")</div>
+        <div>Devnet utilizes a public non-incentivized devnet run by Silk Nodes</div>
+        <div>Local requires running a localhost node of the Dymension Hub.
     Please see the [validate Devnet chain](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
-    When building the local Dymension Hub node please use Chain-ID Dymension_100-1
-- Token-supply: The total token supply of the RollApp (default "1000000000")
+    When building the local Dymension Hub node please use Chain-ID Dymension_100-1</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Token-supply</summary>
+        <div>The total token supply of the RollApp (default "1000000000")</div>
+    </details>
+</div>
+
+</div>
+</details>
 
 </TabItem>
 
