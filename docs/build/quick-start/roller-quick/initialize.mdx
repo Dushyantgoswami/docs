@@ -127,37 +127,49 @@ roller config init <ROLLAPP-ID> <DENOM>
 
 <div>
     <details>
-    <summary>RollApp ID</summary>
-    <div>
-    -   Name: is made up of lowercase English letters
-    -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
-    -   Version: is a 1 to 5 digit number representing the version
-    </div>
+    <summary>rollapp-id</summary>
+        <div><b>Format</b>: name_ID-version (e.g wagmi_420-1)</div><br/>
+            <details>
+                <summary>Name</summary>
+                <div>Lowercase English letters</div>
+            </details>
+            <details>
+                <summary>ID</summary>
+                <div>1 to 5 digit number representing the EIP155 Chain-ID of the RollApp</div>
+            </details>
+            <details>
+                <summary>Version</summary>
+                <div>1 to 5 digit number representing the version</div>
+            </details>
+        <div><i>  Please note the "_" after the name and the "-" after the ID, these are required for EVM RollApps</i></div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>Denom</summary>
-        <div>Name of the native token of the RollApp</div>
+    <summary>denom</summary>
+        <div>e.g BTC, PEPE, DYM</div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>Hub-version</summary>
-        <div>: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")</div>
-        <div>Devnet utilizes a public non-incentivized devnet run by Silk Nodes</div>
-        <div>Local requires running a localhost node of the Dymension Hub.
-    Please see the [validate Devnet chain](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
-    When building the local Dymension Hub node please use Chain-ID Dymension_100-1</div>
+    <summary>hub-version</summary>
+            <details>
+                <summary>Devnet (default)</summary>
+                <div>Non-incentivized public Devnet for building and testing</div>
+            </details>
+            <details>
+                <summary>Local</summary>
+                <div>Uses localhost Dymension Hub node and mock DA network</div>
+            </details>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>Token-supply</summary>
-        <div>The total token supply of the RollApp (default "1000000000")</div>
+    <summary>token-supply</summary>
+        <div>How many tokens do you wish to mint for Genesis? This is the initial token supply in the RollApp (default: 1,000,000,000). </div>
     </details>
 </div>
 
