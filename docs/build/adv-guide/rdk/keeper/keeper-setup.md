@@ -19,15 +19,18 @@ In which we will create the `Keeper` struct:
 
 ```Go
 type Keeper struct {
-    // External keepers
-	accountKeeper types.AccountKeeper
-	bankKeeper    types.BankKeeper
+    // codec
+    cdc           codec.BinaryCodec
 
     // Store key(s)
 	storeKey      storetypes.StoreKey
 
-    // codec
-    cdc           codec.BinaryCodec
+	// External keepers
+	accountKeeper types.AccountKeeper
+	bankKeeper    types.BankKeeper
+
+	// The baseapp's message service router
+	router *baseapp.MsgServiceRouter
 }
 ```
 
@@ -41,7 +44,8 @@ func NewKeeper(
 	cdc codec.BinaryCodec,
     storeKey storetypes.StoreKey,
     accountKeeper types.AccountKeeper,
-	bankKeeper types.BankKeeper
+	bankKeeper types.BankKeeper,
+	router *baseapp.MsgServiceRouter
 ) Keeper {
 	// ensure payment module account is set
 	if addr := accountKeeper.GetModuleAddress(types.ModuleName); addr == nil {
