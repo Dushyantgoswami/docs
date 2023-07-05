@@ -19,6 +19,8 @@ The module manager will implement two core structs:
 The following define the interface that `AppModule` and `AppModuleBasic` must implement.
 
 ```Go
+const ConsensusVersion = 1
+
 var (
 	_ module.AppModule      = AppModule{}
 	_ module.AppModuleBasic = AppModuleBasic{}
@@ -98,7 +100,7 @@ func (am AppModule) RegisterServices(cfg module.Configurator) {
 }
 
 func (AppModule) ConsensusVersion() uint64 {
-	return 1
+	return ConsensusVersion
 }
 
 func (am AppModule) BeginBlock(_ sdk.Context, _ abci.RequestBeginBlock) {
@@ -120,37 +122,6 @@ func (am AppModule) InitGenesis(ctx sdk.Context, cdc codec.JSONCodec, data json.
 func (am AppModule) ExportGenesis(ctx sdk.Context, cdc codec.JSONCodec) json.RawMessage {
 	gs := am.keeper.ExportGenesis(ctx)
 	return cdc.MustMarshalJSON(gs)
-}
-```
-
-For the sake of backwards compatibility we will include deprecated functionality at the bottom of the file.
-
-```Go
-//------------------------------------------------------------------------------
-// Deprecated stuff
-//------------------------------------------------------------------------------
-
-// deprecated
-func (AppModuleBasic) RegisterLegacyAminoCodec(_ *codec.LegacyAmino) {
-}
-
-// deprecated
-func (AppModuleBasic) RegisterRESTRoutes(_ client.Context, _ *mux.Router) {
-}
-
-// deprecated
-func (AppModule) Route() sdk.Route {
-	return sdk.Route{}
-}
-
-// deprecated
-func (AppModule) QuerierRoute() string {
-	return types.QuerierRoute
-}
-
-// deprecated
-func (AppModule) LegacyQuerierHandler(*codec.LegacyAmino) sdk.Querier {
-	return nil
 }
 ```
 

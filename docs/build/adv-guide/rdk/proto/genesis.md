@@ -22,4 +22,4 @@ option go_package = "github.com/rollapp/x/payment/types";
 message GenesisState {}
 ```
 
-Now that we've setup the `payment` module for an empty Genesis state, we can continue and define the module's configuration requirements.
+Now we've setup the `payment` module for an empty Genesis state.
