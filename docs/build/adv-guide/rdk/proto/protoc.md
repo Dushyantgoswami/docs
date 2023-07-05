@@ -18,3 +18,5 @@ x/payment/types/tx.pb.go
 x/payment/types/query.pb.go
 x/payment/types/genesis.pb.go
 ```
+
+These file will provide us the interface to implement their respective handlers.
