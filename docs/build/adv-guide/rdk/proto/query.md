@@ -5,25 +5,17 @@ slug: query
 
 A `query` is a request for information made by end-users of applications through an interface and processed by a full-node. Queries do not require consensus to be processed (as they do not trigger state-transitions); they can be fully handled by one full-node.
 
-A Protobuf Query service processes `queries`. Query services are specific to the module in which they are defined, and only process queries defined within said module.
-
-We will first need to create a `query.proto` file in the `proto` folder:
-
-```
-touch query.proto
-```
-
-Now we will define the `query` request and response in the `query.proto` file:
+We will first need to create a `query.proto` file in the `proto` folder. Now we will define the `query` request and response in the `query.proto` file:
 
 ```Protobuf
 syntax = "proto3";
-package rollapp.payment;
+package payment;
 
 import "cosmos/base/v1beta1/coin.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 
-option go_package = "github.com/rollapp/x/payment/types";
+option go_package = "github.com/dymensionxyz/rollapp/x/payment/types";
 
 // Query defines the gRPC querier service for the payment module
 service Query {
@@ -36,7 +28,7 @@ service Query {
 // QueScheulesRequest is the request type of the QueryScheulesRPC method
 message QueryScheulesRequest {
     // ID is the payment id
-    uint id = 1;
+    uint64 id = 1;
 }
 
 // QueScheulesResponse is the response type of the QuerScheulesRPC method

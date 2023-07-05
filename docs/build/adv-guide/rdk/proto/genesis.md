@@ -9,7 +9,7 @@ The subset of the genesis state defined from a given module is generally defined
 touch genesis.proto
 ```
 
-The struct defining the module's subset of the genesis state is usually called GenesisState and contains all the module-related values that need to be initialized during the genesis process.
+The struct defining the module's subset of the genesis state is usually called `GenesisState` and contains all the module-related values that need to be initialized during the genesis process.
 
 ```protobuf
 syntax = "proto3";

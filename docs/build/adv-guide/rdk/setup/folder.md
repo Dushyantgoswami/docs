@@ -23,8 +23,8 @@ The following commands move us to the root directory and creates a `payment` fol
 ```
 cd ..
 cd proto
-mkdir -p rollapp/payment
-cd rollapp/payment
+mkdir payment
+cd payment
 ```
 
 Now that we have a basic folder structure, we can continue and build the structure of the module.

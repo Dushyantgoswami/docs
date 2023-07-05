@@ -5,17 +5,17 @@ slug: message
 
 `Msgs` are objects whose end-goal is to trigger state-transitions. They are wrapped in transactions, which may contain one or more of them.
 
-Module developers define the messages for their module by adding methods to the Protobuf Msg service, and also implement the corresponding MsgServer. Protobuf generates a MsgServer interface for each module Msg service, and the module developer needs to implement this interface.
+Protobuf generates a MsgServer interface for each module Msg service upon which we will implement the [handler](/docs/build/adv-guide/rdk/keeper/msg_server.md).
 
-In the `tx.proto` file we will define:
+But firstly, we will create a `tx.proto` file in the `proto/payment` folder and define it as such:
 
 ```protobuf
 syntax = "proto3"; // Defines the version of Protocol buffers
-package rollapp.payment; // Package is the path of the current directory
+package payment; // Package is the path of the current directory
 
 // go_package requires the path of the types directory for the payment module
 // this is used for protobuf generation
-option go_package = "github.com/rollapp/x/payment/types";
+option go_package = "github.com/dymensionxyz/rollapp/x/payment/types";
 
 // Service Msg defines the RPC end-point for the method
 service Msg {

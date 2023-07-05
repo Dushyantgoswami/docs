@@ -15,4 +15,6 @@ After successfully generating the protobuf files we should see the following fil
 
 ```
 x/payment/types/tx.pb.go
+x/payment/types/query.pb.go
+x/payment/types/genesis.pb.go
 ```
