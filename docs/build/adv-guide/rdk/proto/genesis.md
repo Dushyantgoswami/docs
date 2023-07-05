@@ -22,4 +22,4 @@ option go_package = "github.com/rollapp/x/payment/types";
 message GenesisState {}
 ```
 
-Now we've setup the `payment` module for an empty Genesis state.
+We've setup the `payment` module for an empty Genesis state. Now that we've defined the `genesis.proto` file we can move ahead and use the Protobuf generating files already in the `scripts` folder.

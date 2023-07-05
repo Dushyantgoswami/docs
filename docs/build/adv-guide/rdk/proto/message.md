@@ -33,6 +33,7 @@ message MsgCreatePayment {
     string to_address = 2;
     uint64 amount = 3;
     uint64 payment_distribution_start_epoch = 4;
+    uint64 id = 5;
 }
 
 // MsgCreatePaymentResponse defines the repsonse object expected for MsgCreatePayment
@@ -40,4 +41,4 @@ message MsgCreatePayment {
 message MsgCreatePaymentResponse {}
 ```
 
-Now that we've defined the `tx.proto` file we can move ahead and use the Protobuf generating files already in the `scripts` folder to be able to implement the `CreatePayment` method.
+Now that we've defined the `tx.proto` file we can move ahead and build the `query` protobuf file.
