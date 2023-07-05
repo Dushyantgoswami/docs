@@ -3,12 +3,12 @@ title: Errors
 slug: errors
 ---
 
-Modules are encouraged to define and register their own errors to provide better context on failed message or handler execution. Typically, these errors should be common or general errors which can be further wrapped to provide additional specific execution context.
+Modules are encouraged to define and register their own errors to provide better context on failed message or handler execution. Typically, the code is monotonically increasing but does not necessarily have to be. The only restrictions on error codes are the following:
 
-Typically, the code is monotonically increasing but does not necessarily have to be. The only restrictions on error codes are the following:
+-   Must be greater than one, as a code value of one is reserved for internal errors
+-   Must be unique within the module
 
--   Must be greater than one, as a code value of one is reserved for internal errors.
--   Must be unique within the module.
+We will creaate an `error.go` file in the `types` folder with the following information:
 
 ```Go
 package types
