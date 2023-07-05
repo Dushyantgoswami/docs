@@ -27,12 +27,12 @@ func NewQueryServerImpl(k Keeper) types.QueryServer {
 	return &queryServer{k}
 }
 
-func (qs queryServer) Account(goCtx context.Context, req *types.QueryAccountRequest) (*types.QueryAccountResponse, error) {
+func (qs queryServer) Schedule(goCtx context.Context, req *types.QueryScheduleRequest) (*types.QueryScheduleResponse, error) {
 	ctx := sdk.UnwrapSDKContext(goCtx)
 
     // TODO some logic
 
-	return &types.QueryAccountResponse{Schedule: schedule}, nil
+	return &types.QueryScheduleResponse{Schedule: schedule}, nil
 }
 ```
 
