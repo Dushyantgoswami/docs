@@ -334,8 +334,8 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Build",
-                                    id: "build/adv-guide/rdk/setup/binary",
+                                    label: "Instantiate",
+                                    id: "build/adv-guide/rdk/setup/instantiate",
                                 },
                             ],
                         },
