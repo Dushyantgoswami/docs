@@ -227,11 +227,6 @@ const sidebars = {
                                             label: "Genesis",
                                             id: "build/adv-guide/rdk/proto/genesis",
                                         },
-                                        // {
-                                        //     type: "doc",
-                                        //     label: "Config",
-                                        //     id: "build/adv-guide/rdk/proto/config",
-                                        // },
                                         {
                                             type: "doc",
                                             label: "Protogen",

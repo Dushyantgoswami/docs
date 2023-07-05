@@ -3,6 +3,8 @@ title: Module manager
 slug: modular-manager
 ---
 
+### Overview
+
 The module manager is responsible for registering module functionality with the application. Application module interfaces exist to facilitate the composition of modules together to form a functional Cosmos SDK application.
 
 In the root of the `payment` module folder create the following file:
@@ -10,6 +12,12 @@ In the root of the `payment` module folder create the following file:
 ```
 touch module.go
 ```
+
+### Imports
+
+// TODO
+
+### Variables
 
 The module manager will implement two core structs:
 
@@ -26,6 +34,8 @@ var (
 	_ module.AppModuleBasic = AppModuleBasic{}
 )
 ```
+
+### AppModuleBasic
 
 AppModuleBasic defines the basic application module used by the module. This is called from the top [application](app.md).
 
@@ -71,6 +81,8 @@ func (AppModuleBasic) GetQueryCmd() *cobra.Command {
 	return nil
 }
 ```
+
+### AppModule
 
 AppModule includes functionality such as registering the `msg_server` handler, establishing the current version of the module and registering invariants.
 
