@@ -229,6 +229,11 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
+                                            label: "Config",
+                                            id: "build/adv-guide/rdk/proto/config",
+                                        },
+                                        {
+                                            type: "doc",
                                             label: "Protogen",
                                             id: "build/adv-guide/rdk/proto/protoc",
                                         },
