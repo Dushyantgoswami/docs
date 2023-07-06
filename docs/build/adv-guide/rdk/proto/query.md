@@ -9,33 +9,30 @@ We will first need to create a `query.proto` file in the `proto` folder. Now we 
 
 ```Protobuf
 syntax = "proto3";
-package payment;
+package blog;
 
 import "cosmos/base/v1beta1/coin.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 
-option go_package = "github.com/dymensionxyz/rollapp/x/payment/types";
+option go_package = "github.com/dymensionxyz/rollapp/x/blog/types";
 
-// Query defines the gRPC querier service for the payment module
+// Query defines the gRPC querier service for the blog module
 service Query {
-  // Schedules queries payment schedules active in the payment module
-  rpc Schedule(QueryScheuleRequest) returns (QueryScheuleResponse) {
-    option (google.api.http).get = "/rollapp/payment/schedule";
+  // SayHello queries hello with QuerySayHelloRequest
+  rpc SayHello(QuerySayHelloRequest) returns (QuerySayHelloResponse) {
+      option (google.api.http).get = "/hello/hello/say_hello/{name}";
   }
 }
 
 // QueScheulesRequest is the request type of the QueryScheulesRPC method
-message QueryScheulesRequest {
-    // ID is the payment id
-    uint64 id = 1;
+message QuerySayHelloRequest {
+  string name = 1;
 }
+
 
 // QueScheulesResponse is the response type of the QuerScheulesRPC method
-message QueryScheulesResponse {
-  // Active returns bool for active or non-active
-  bool active = 1;
+message QuerySayHelloResponse {
+  string name = 1;
 }
 ```
-
-Now we can build the `Genesis` object...

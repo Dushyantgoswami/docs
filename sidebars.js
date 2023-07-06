@@ -214,18 +214,8 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Message",
-                                            id: "build/adv-guide/rdk/proto/message",
-                                        },
-                                        {
-                                            type: "doc",
                                             label: "Query",
                                             id: "build/adv-guide/rdk/proto/query",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Genesis",
-                                            id: "build/adv-guide/rdk/proto/genesis",
                                         },
                                         {
                                             type: "doc",
@@ -249,21 +239,6 @@ const sidebars = {
                                             label: "Encoding",
                                             id: "build/adv-guide/rdk/types/codec",
                                         },
-                                        {
-                                            type: "doc",
-                                            label: "Genesis",
-                                            id: "build/adv-guide/rdk/types/genesis",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Errors",
-                                            id: "build/adv-guide/rdk/types/errors",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Expected keepers",
-                                            id: "build/adv-guide/rdk/types/expected-keepers",
-                                        },
                                     ],
                                 },
                                 {
@@ -273,23 +248,8 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Genesis",
-                                            id: "build/adv-guide/rdk/keeper/genesis",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Keeper setup",
+                                            label: "Keeper",
                                             id: "build/adv-guide/rdk/keeper/keeper-setup",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Keeper functionality",
-                                            id: "build/adv-guide/rdk/keeper/keeper-func",
-                                        },
-                                        {
-                                            type: "doc",
-                                            label: "Msg Server",
-                                            id: "build/adv-guide/rdk/keeper/msg_server",
                                         },
                                         {
                                             type: "doc",
@@ -303,11 +263,6 @@ const sidebars = {
                                     label: "CLI",
                                     collapsed: "true",
                                     items: [
-                                        {
-                                            type: "doc",
-                                            label: "Transaction",
-                                            id: "build/adv-guide/rdk/cli/tx",
-                                        },
                                         {
                                             type: "doc",
                                             label: "Query",

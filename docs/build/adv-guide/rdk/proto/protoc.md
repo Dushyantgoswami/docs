@@ -14,9 +14,7 @@ sh scripts/protocgen.sh
 After successfully generating the protobuf files we should see the following file which provides us the interface for us to work with:
 
 ```
-x/payment/types/tx.pb.go
 x/payment/types/query.pb.go
-x/payment/types/genesis.pb.go
 ```
 
 These file will provide us the interface to implement their respective handlers.

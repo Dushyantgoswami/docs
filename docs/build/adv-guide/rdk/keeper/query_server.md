@@ -27,12 +27,14 @@ func NewQueryServerImpl(k Keeper) types.QueryServer {
 	return &queryServer{k}
 }
 
-func (qs queryServer) Schedule(goCtx context.Context, req *types.QueryScheduleRequest) (*types.QueryScheduleResponse, error) {
-	ctx := sdk.UnwrapSDKContext(goCtx)
-
-    // TODO some logic
-
-	return &types.QueryScheduleResponse{Schedule: schedule}, nil
+func (qs queryServer) SayHello(goCtx context.Context, req *types.QuerySayHelloRequest) (*types.QuerySayHelloResponse, error) {
+    if req == nil {
+        return nil, status.Error(codes.InvalidArgument, "invalid request")
+    }
+    ctx := sdk.UnwrapSDKContext(goCtx)
+    // TODO: Process the query
+    _ = ctx
+    return &types.QuerySayHelloResponse{Name: fmt.Sprintf("hello %s", req.Name)}, nil
 }
 ```
 
