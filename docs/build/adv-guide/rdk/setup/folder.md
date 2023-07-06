@@ -11,9 +11,8 @@ The `x` folder contains the core custom logic for each module. The following com
 -   `Types` is the folder that houses code that help organize and validate the state-transitions.
 
 ```
-cd x
-mkdir -p payment/keeper
-mkdir -p payment/types
+mkdir -p x/payment/keeper
+mkdir -p x/payment/types
 ```
 
 The following commands move us to the root directory and creates a `payment` folder in the `proto` directory.
@@ -21,10 +20,8 @@ The following commands move us to the root directory and creates a `payment` fol
 -   [Protobufs](https://protobuf.dev/) are the recommended way for defining messages.
 
 ```
-cd ..
-cd proto
-mkdir payment
-cd payment
+mkdir -p proto/payment
+cd proto/payment
 ```
 
 Now that we have a basic folder structure, we can continue and build the structure of the module.

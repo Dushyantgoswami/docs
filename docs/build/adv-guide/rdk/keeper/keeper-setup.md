@@ -5,11 +5,7 @@ slug: keeper-setup
 
 A keeper can be considered quite literally to be the gatekeeper of a module's store(s). Each store defined within a module comes with a [storeKey](../types/keys.md), which grants unlimited access to it. Keepers primarily expose getter and setter methods for the store(s) managed by their module.
 
-In the `keeper` folder we will create the following file:
-
-```
-touch keeper.go
-```
+In the `keeper` folder we will create a file called `keeper.go`
 
 ### Keeper struct
 

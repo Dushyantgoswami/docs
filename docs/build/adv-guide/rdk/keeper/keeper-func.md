@@ -3,7 +3,7 @@ title: Keeper functionality
 slug: keeper-func
 ---
 
-Now that we've created the core structure of the `payment` module's Keeper we will add the Getter and Setter functions. Typically, a getter method will have the following signature:
+Now that we've created the core structure of the `payment` module's Keeper we will add the Getter and Setter functions in the same `keeper.go` file. Typically, a getter method will have the following signature:
 
 ```Go
 func (k Keeper) Get(ctx sdk.Context, key string) returnType

@@ -3,7 +3,7 @@ title: Genesis
 slug: genesis
 ---
 
-We will now implemenet two core methods on the `GenesisState` of the `payment` module.
+We will now implemenet two core methods on the `GenesisState` of the `payment` module in a new file called `genesis.go`.
 
 `InitGenesis` method is executed during `InitChain` when the application is first started. Given a GenesisState, it initializes the subset of the state managed by the module by using the module's keeper setter function on each parameter within the GenesisState.
 
