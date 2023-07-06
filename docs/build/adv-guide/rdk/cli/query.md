@@ -3,6 +3,8 @@ title: Query
 slug: query
 ---
 
+After implementing the query logic, you will need to make the query available to clients so that they can call it and receive the response.
+
 ```Go
 package cli
 
@@ -31,7 +33,11 @@ func GetQueryCmd() *cobra.Command {
 
 	return cmd
 }
+```
 
+To make the `CmdSayHello` command available to users, you will need to add it to the chain's binary. This is typically done by modifying the `query.go` file and adding the `CmdSayHello()` statement.
+
+```Go
 func CmdSayHello() *cobra.Command {
     cmd := &cobra.Command{
         Use:   "say-hello [name]",
@@ -58,3 +64,5 @@ func CmdSayHello() *cobra.Command {
     return cmd
 }
 ```
+
+Once you have provided a CLI command, users will be able to call the say-hello query and receive the appropriate response.

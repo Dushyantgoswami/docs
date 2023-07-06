@@ -9,24 +9,32 @@ In the `keeper` folder we will create a file called `keeper.go`
 
 ### Keeper struct
 
-// TODO add imports
+First we will import the necessary files to get started:
+
+```Go
+package keeper
+
+import (
+	"fmt"
+
+	"github.com/cometbft/cometbft/libs/log"
+	"github.com/cosmos/cosmos-sdk/codec"
+	storetypes "github.com/cosmos/cosmos-sdk/store/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+
+	"hello/x/hello/types"
+)
+```
 
 In which we will create the `Keeper` struct:
 
 ```Go
 type Keeper struct {
-    // codec
-    cdc           codec.BinaryCodec
-
-    // Store key(s)
-	storeKey      storetypes.StoreKey
-
-	// External keepers
-	accountKeeper types.AccountKeeper
-	bankKeeper    types.BankKeeper
-
-	// The baseapp's message service router
-	router *baseapp.MsgServiceRouter
+	cdc        codec.BinaryCodec
+	storeKey   storetypes.StoreKey
+	memKey     storetypes.StoreKey
+	paramstore paramtypes.Subspace
 }
 ```
 
@@ -35,45 +43,34 @@ type Keeper struct {
 Next we'll build the `NewKeeper` function that will be called by application constructor function for the new Keeper:
 
 ```Go
-// NewKeeper creates a new payment module keeper
 func NewKeeper(
 	cdc codec.BinaryCodec,
-    storeKey storetypes.StoreKey,
-    accountKeeper types.AccountKeeper,
-	bankKeeper types.BankKeeper,
-	router *baseapp.MsgServiceRouter
-) Keeper {
-	// ensure payment module account is set
-	if addr := accountKeeper.GetModuleAddress(types.ModuleName); addr == nil {
-		panic(fmt.Sprintf("%s module account has not been set", types.ModuleName))
+	storeKey,
+	memKey storetypes.StoreKey,
+	ps paramtypes.Subspace,
+
+) *Keeper {
+	// set KeyTable if it has not already been set
+	if !ps.HasKeyTable() {
+		ps = ps.WithKeyTable(types.ParamKeyTable())
 	}
 
-	return Keeper{
-		cdc:           cdc,
-		storeKey:      storeKey,
-		accountKeeper: accountKeeper,
-		bankKeeper:    bankKeeper,
+	return &Keeper{
+		cdc:        cdc,
+		storeKey:   storeKey,
+		memKey:     memKey,
+		paramstore: ps,
 	}
 }
 ```
 
 ### Logger
 
-Logger helps developers understand the flow of code execution and will be utilized in the near future [msg server](./msg_server).
+Logger helps developers understand the flow of code execution.
 
 ```Go
 func (k Keeper) Logger(ctx sdk.Context) log.Logger {
 	return ctx.Logger().With("module", fmt.Sprintf("x/%s", types.ModuleName))
-}
-```
-
-GetModuleAddress returns the payment module account's address.
-
-### GetModuleAddress
-
-```Go
-func (k Keeper) GetModuleAddress() sdk.AccAddress {
-	return k.accountKeeper.GetModuleAddress(types.ModuleName)
 }
 ```
 

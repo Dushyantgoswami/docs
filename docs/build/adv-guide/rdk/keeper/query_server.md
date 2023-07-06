@@ -3,9 +3,7 @@ title: Query Server
 slug: query_server
 ---
 
-`query_server` is the implemented handler of queries submitted by users to the `payment` module.
-
-The following query server handler checks whether or not a payment schedule is active:
+`query_server` is the implemented handler of queries submitted by users to the `hello` module.
 
 ```Go
 package keeper
@@ -16,7 +14,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/rollapp/x/payment/types"
+	"github.com/rollapp/x/hello/types"
 )
 
 type queryServer struct{ k Keeper }
@@ -32,10 +30,10 @@ func (qs queryServer) SayHello(goCtx context.Context, req *types.QuerySayHelloRe
         return nil, status.Error(codes.InvalidArgument, "invalid request")
     }
     ctx := sdk.UnwrapSDKContext(goCtx)
-    // TODO: Process the query
+
     _ = ctx
     return &types.QuerySayHelloResponse{Name: fmt.Sprintf("hello %s", req.Name)}, nil
 }
 ```
 
-Now that we've set up the handler queries to the `payment` module, let's build the CLI to make it easy to interact with the `payment` module.
+Now that we've set up the handler queries to the `hello` module, let's build the CLI to make it easy to interact with the `hello` module.

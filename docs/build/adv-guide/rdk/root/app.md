@@ -19,10 +19,10 @@ To begin import the module into `app.go`:
 import (
 // existing imports should remain
 
-// custom payment module import
-"github.com/rollapp/x/payment"
-paymentkeeper "github.com/rollapp/payment/keeper"
-paymenttypes "github.com/rollapp/payment/types"
+// custom hello module import
+"github.com/rollapp/x/hello"
+hellokeeper "github.com/rollapp/hello/keeper"
+hellotypes "github.com/rollapp/hello/types"
 )
 ```
 
@@ -33,18 +33,18 @@ Let's add the KVstore key name to `kvstorekeys`:
 ```Go
 kvstorekeys = []string{
     // ...
-    paymentkeeper.StoreKey,
+    hellokeeper.StoreKey,
 }
 ```
 
 ### App wiring
 
-Previously we've defined the `AppModuleBasic` for setting up non-dependant module elements and genesis verification. Now we'll add it to the existing app-level manager in `ModuleBasics` add at the end the `payment` AppModuleBasic:
+Previously we've defined the `AppModuleBasic` for setting up non-dependant module elements and genesis verification. Now we'll add it to the existing app-level manager in `ModuleBasics` add at the end the `hello` AppModuleBasic:
 
 ```Go
 ModuleBasics = module.NewBasicManager(
         // ...
-        payment.AppModuleBasic{},
+        hello.AppModuleBasic{},
 ```
 
 Module accounts are special types of accounts used by modules to hold and control tokens. They are identified by their name and have additional permissions over normal accounts. There are three kinds of permissions that can be granted to module accounts:
@@ -53,30 +53,30 @@ Module accounts are special types of accounts used by modules to hold and contro
 2. **Burner**: Allows the module account to burn tokens.
 3. **Staking**: Allows the module account to delegate tokens.
 
-In our tutorial the `payment` module does not utilize this functionality so we'll add `nil` to `maccPerms` (module account permissions):
+In our tutorial the `hello` module does not utilize this functionality so we'll add `nil` to `maccPerms` (module account permissions):
 
 ```Go
 maccPerms = map[string][]string{
     // ...
-    paymenttypes.ModuleName:     nil,
+    hellotypes.ModuleName:     nil,
 }
 ```
 
-Next we'll adjust the `App` struct which defines the RollApp by adding the `payment` keeper:
+Next we'll adjust the `App` struct which defines the RollApp by adding the `hello` keeper:
 
 ```Go
 type App struct {
     // ...
-    PaymentKeeper   paymentkeeper.Keeper
+    HelloKeeper   hellokeeper.Keeper
 }
 ```
 
 `NewRollapp` creates and initializes a new `RollApp` instance. We'll need to pass a few pieces of information, firstly the `NewKeeper` arguments:
 
 ```Go
-app.PaymentKeeper = paymentkeeper.NewKeeper(
+app.HelloKeeper = hellokeeper.NewKeeper(
     appCodec,
-    keys[paymenttypes.StoreKey],
+    keys[hellotypes.StoreKey],
     app.AccountKeeper,
     app.BankKeeper,
     app.MsgServiceRouter(),
@@ -88,31 +88,31 @@ The following instantiates an `AppModule`:
 
 ```Go
 app.mm = module.NewManager(
-    payment.NewAppModule(app.PaymentKeeper)
+    hello.NewAppModule(app.HelloKeeper)
 )
 ```
 
-The following adds the `payment` module to Begin blocker in case of Begin block logic (in this tutorial we did not add Begin block logic but may do so soon):
+The following adds the `hello` module to Begin blocker in case of Begin block logic (in this tutorial we did not add Begin block logic but may do so soon):
 
 ```Go
 app.mm.SetOrderBeginBlockers(
-		paymenttypes.ModuleName,
+		hellotypes.ModuleName,
 	)
 ```
 
-The following adds the `payment` module to End blocker in case of End block logic (in this tutorial we did not add End block logic but may do so soon):
+The following adds the `hello` module to End blocker in case of End block logic (in this tutorial we did not add End block logic but may do so soon):
 
 ```Go
 app.mm.SetOrderEndBlockers(
-		paymenttypes.ModuleName,
+		hellotypes.ModuleName,
 	)
 ```
 
-The following adds the `payment` module to order of the `InitGenesis` called at the initialization of the application:
+The following adds the `hello` module to order of the `InitGenesis` called at the initialization of the application:
 
 ```Go
 app.mm.SetOrderInitGenesis(
-		paymenttypes.ModuleName,
+		hellotypes.ModuleName,
 	)
 ```
 
