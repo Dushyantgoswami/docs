@@ -19,6 +19,6 @@ Enabling IBC takes a few minutes in which the develoepr is expected to see `star
 
 During the `Run` process a RollApp with an IBC connection to the Dymension Hub is started. A status table will appear with information about the RollApp and IBC relayer. Developers should see an output with useful information such as this:
 
-// TODO - show pic
+<img class="image--primary" loading="eager" src={require('@site/static/img/roller-status.png').default} alt="background" />
 
 Let's continue and interact with the running IBC-enabled RollApp...
