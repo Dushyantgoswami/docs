@@ -16,13 +16,13 @@ With `Roller` developers are able to deploy a RollApp within minutes.
 `Roller Run` abstracts components of deploying a RollApp (i.e. DA light clients, Sequencer full nodes, and relayer nodes) for an in-depth guide including the stand-alone deployment of each process please visit the [advanced guide](/docs/build/adv-guide/roller-adv/install-adv.md).
 :::
 
-`Roller` is the engine that brings the Dymension RDK to life. With `Roller` we will deploy an IBC RollApp connected to the entire inter-chain!
+`Roller` is the engine that brings the Dymension RDK to life. With `Roller` we will deploy a RollApp connected to the entire inter-chain!
 
 ### Supported OS
 
--   Roller has only been officially tested with MacOS. More officially supported OS will be provided soon.
+-   Roller has only been officially tested with MacOS. More officially supported operating systems will be provided soon.
 
-### Hardware prerequisites
+### Recommended hardware
 
 -   Dual Core
 -   At least 500GB of SSD disk storage
@@ -38,7 +38,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 Go is required for developing with Dymension's RollApp Development Kit (RDK). We provide helpful commands below for downloading the relevant version of Go.
-Developers may also choose to head over to the [Go download and install Go Version 1.19](https://go.dev/doc/install).
+Developers may also choose to head over to the official Go installation page and [install Go Version 1.19](https://go.dev/doc/install).
 
 ````mdx-code-block
 <Tabs groupId="network">

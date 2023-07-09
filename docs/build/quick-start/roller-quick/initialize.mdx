@@ -31,10 +31,10 @@ roller config init --interactive
     <details>
     <summary>Select your network</summary>
     <div>
-        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
-        <div><b>- Local</b>: Uses localhost Dymension Hub node and mock DA network</div>
+        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing. Uses live testnets for DA and bridging.</div>
+        <div><b>- Local</b>: Includes the option for a Mock DA network (no faucet tokens needed). Requires running a localhost Dymension Hub node please visit <a href="/validate/dymension-hub/build-dymd">here </a>
+        to run a Devnet Dymension Hub full node first.</div>
         <div><b>- Froopyland</b>: Very Soon</div>
-        <div><b>- Mainnet</b>: Soon</div>
     </div>
     </details>
 </div>
@@ -42,13 +42,19 @@ roller config init --interactive
 <div>
     <details>
     <summary>Enter your RollApp ID</summary>
-        <div>Format: rollapp-name_EIP155-revision. e.g wagmi_420-1</div>
+        <div><b>- Name</b>: Lowercase English letters</div>
+        <div><b>- EIP155</b>: 1 to 5 digit number representing the EIP155 rollapp ID</div>
+        <div><b>- Version</b>: 1 to 5 digit number representing the version</div>
+        <br />
+        <div><b>Example</b>: berlin_9191-2</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Specify your RollApp denom</summary>
+        <div>Name of the native token of the RollApp in English letters.</div>
+        <br />
         <div>e.g BTC, PEPE, DYM</div>
     </details>
 </div>
@@ -56,22 +62,26 @@ roller config init --interactive
 <div>
     <details>
     <summary>Set the genesis token supply</summary>
-        <div>How many tokens do you wish to mint for Genesis? (default: 1,000,000,000). This is the initial token supply in the RollApp</div>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Choose your data layer</summary>
-        <div>Defaults to Celestia Mocha network, with more DA added soon.</div>
+        <div><b>- Celestia</b>: Arabica testnet</div>
+        <div><b>- Avail</b>: Kate testnet</div>
+        <div><b>- Mock</b>: Simulates publishing to a DA network, useful for local developmen (only available in `Local Network`)</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Select your execution environment</summary>
-        <div>    - EVM (Default): Press `Enter` to continue</div>
-        <div>RDK: Requires specifying runtime binary path (e.g. /usr/local/bin/rollappd)</div>
+        <div><b>- EVM (default)</b>: Stores runtime binary in default PATH (e.g. /usr/local/bin/rollapp_evm)</div>
+        <div><b>- RDK</b>: Requires specifying runtime binary path (e.g. /usr/local/bin/rollapp)</div>
     </details>
 </div>
 
@@ -95,36 +105,39 @@ roller config init <ROLLAPP-ID> <DENOM>
 <div>
     <details>
     <summary>RollApp ID</summary>
-    <div>
-    -   Name: is made up of lowercase English letters
-    -   EIP155: is a 1 to 5 digit number representing the EIP155 rollapp ID
-    -   Version: is a 1 to 5 digit number representing the version
-    </div>
+    <div><b>- Name</b>: Lowercase English letters</div>
+    <div><b>- EIP155</b>: 1 to 5 digit number representing the EIP155 rollapp ID</div>
+    <div><b>- Version</b>: 1 to 5 digit number representing the version</div>
+    <br />
+    <div><b>Example</b>: berlin_9191-2</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Denom</summary>
-        <div>Name of the native token of the RollApp</div>
+        <div>Name of the native token of the RollApp in English letters.</div>
+        <br />
+        <div>e.g BTC, PEPE, DYM</div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>Hub-version</summary>
-        <div>: The ID of the Dymension hub. Acceptable values are 'devnet' or 'local' (default "devnet")</div>
-        <div>Devnet utilizes a public non-incentivized devnet run by Silk Nodes</div>
-        <div>Local requires running a localhost node of the Dymension Hub.
-    Please see the [validate Devnet chain](/validate/dymension-hub/build-dymd) section on how to run a local Hub node.
-    When building the local Dymension Hub node please use Chain-ID Dymension_100-1</div>
+    <summary>Hub-version (optional)</summary>
+        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
+        <div><b>- Local</b>: Uses localhost Dymension Hub node and mock DA network</div>
+        <div><b>- Froopyland</b>: Very Soon</div>
+        <div><b>- Mainnet</b>: Soon</div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>Token-supply</summary>
-        <div>The total token supply of the RollApp (default "1000000000")</div>
+    <summary>Token-supply (optional)</summary>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
     </details>
 </div>
 
