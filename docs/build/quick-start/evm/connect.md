@@ -24,7 +24,7 @@ Paste the exported private key in the form input and click `Import`. Your Metama
 ```markdown
 Network Name: <YOUR-ROLLAPP-NAME>
 
-New RPC URL: <YOUR-ROLLAPP-EVM-RPC>
+New RPC URL: http://0.0.0.0:8545
 
 Chain ID: <YOUR-CHAIN-ID> // EIP155 number (middle number of RollApp ID)
 
