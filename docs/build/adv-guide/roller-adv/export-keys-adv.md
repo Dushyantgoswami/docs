@@ -20,7 +20,6 @@ Should return as an example:
 ```
 🔑 Addresses:
 
-  my_celes_key        | RollApp Sequencer account on Celestia
   hub_sequencer       | RollApp Sequencer account on the Dymension Hub
   rollapp_sequencer   | RollApp Sequencer account on the RollApp
   relayer-hub-key     | IBC relayer account on Dymension Hub
