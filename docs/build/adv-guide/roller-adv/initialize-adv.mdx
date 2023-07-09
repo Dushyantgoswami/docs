@@ -147,9 +147,11 @@ roller config init <ROLLAPP-ID> <DENOM>
 </TabItem>
 
 </Tabs>
-`````
 
 ### Address funding
+
+<Tabs>
+<TabItem value="Devnet funding" label="Devnet funding">
 
 After initializing the RollApp, addresses to fund should be returned to you:
 
@@ -158,7 +160,7 @@ After initializing the RollApp, addresses to fund should be returned to you:
 
 Sequencer | Address used to publish state updates to the Dymension Hub
 Relayer   | Address that handles the relaying of IBC packets
-DA        | Address used to publish data on-chain to the DA network (not necessary on Mock DA version)
+DA        | Address used to publish data on-chain to the DA network
 ```
 
 In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `faucet` channel with the following command as an example:
@@ -173,5 +175,34 @@ You can then check the balance of the address with:
 ```
 $balance dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
 ```
+
+</TabItem>
+
+<TabItem value="Local funding" label="Local funding">
+
+After initializing the RollApp, addresses to fund should be returned to you:
+
+```
+🔑 Addresses:
+
+Sequencer | Address used to publish state updates to the Dymension Hub
+Relayer   | Address that handles the relaying of IBC packets
+```
+
+While the Dymension Hub full node is running, publish the following transaction via CLI:
+
+```
+dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test
+```
+
+You can then check the balance of the address with:
+
+```
+dymd q bank balances <ADDRESS>
+```
+
+</TabItem>
+</Tabs>
+`````
 
 Now that we've funded the wallets we can go ahead and register the RollApp!
