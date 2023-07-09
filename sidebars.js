@@ -178,6 +178,11 @@ const sidebars = {
                                     label: "Export keys",
                                     id: "build/adv-guide/roller-adv/export-keys-adv",
                                 },
+                                {
+                                    type: "doc",
+                                    label: "Trouble shooting",
+                                    id: "build/adv-guide/roller-adv/troubleshooting",
+                                },
                             ],
                         },
                         {
