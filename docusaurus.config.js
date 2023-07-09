@@ -48,7 +48,7 @@ const config = {
             themes: ["@docusaurus/theme-search-algolia"],
             colorMode: {
                 defaultMode: "dark",
-                disableSwitch: true,
+                disableSwitch: false,
                 respectPrefersColorScheme: true,
             },
             docs: {
