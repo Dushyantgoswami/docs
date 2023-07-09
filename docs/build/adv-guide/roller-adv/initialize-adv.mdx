@@ -31,22 +31,10 @@ roller config init --interactive
     <details>
     <summary>Select your network</summary>
     <div>
-            <details>
-                <summary>Devnet (default)</summary>
-                <div>Non-incentivized public Devnet for building and testing</div>
-            </details>
-            <details>
-                <summary>Local</summary>
-                <div>Uses localhost Dymension Hub node and mock DA network</div>
-            </details>
-            <details>
-                <summary>Froopyland</summary>
-                <div>Very Soon</div>
-            </details>
-            <details>
-                <summary>Mainnet</summary>
-                <div>Soon</div>
-            </details>
+        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing. Uses live testnets for DA and bridging.</div>
+        <div><b>- Local</b>: Includes the option for a Mock DA network (no faucet tokens needed). Requires running a localhost Dymension Hub node please visit <a href="/validate/dymension-hub/build-dymd">here </a>
+        to run a Devnet Dymension Hub full node first.</div>
+        <div><b>- Froopyland</b>: Very Soon</div>
     </div>
     </details>
 </div>
@@ -54,26 +42,19 @@ roller config init --interactive
 <div>
     <details>
     <summary>Enter your RollApp ID</summary>
-        <div><b>Format</b>: name_ID-version (e.g wagmi_420-1)</div><br/>
-            <details>
-                <summary>Name</summary>
-                <div>Lowercase English letters</div>
-            </details>
-            <details>
-                <summary>ID</summary>
-                <div>1 to 5 digit number representing the EIP155 Chain-ID of the RollApp</div>
-            </details>
-            <details>
-                <summary>Version</summary>
-                <div>1 to 5 digit number representing the version</div>
-            </details>
-        <div><i>  Please note the "_" after the name and the "-" after the ID, these are required for EVM RollApps</i></div>
+        <div><b>- Name</b>: Lowercase English letters</div>
+        <div><b>- EIP155</b>: 1 to 5 digit number representing the EIP155 rollapp ID</div>
+        <div><b>- Version</b>: 1 to 5 digit number representing the version</div>
+        <br />
+        <div><b>Example</b>: berlin_9191-2</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Specify your RollApp denom</summary>
+        <div>Name of the native token of the RollApp in English letters.</div>
+        <br />
         <div>e.g BTC, PEPE, DYM</div>
     </details>
 </div>
@@ -81,30 +62,26 @@ roller config init --interactive
 <div>
     <details>
     <summary>Set the genesis token supply</summary>
-        <div>How many tokens do you wish to mint for Genesis? This is the initial token supply in the RollApp (default: 1,000,000,000). </div>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Choose your data layer</summary>
-        <div>Defaults to Celestia Mocha network, with more DA added soon.</div>
+        <div><b>- Celestia</b>: Arabica testnet</div>
+        <div><b>- Avail</b>: Kate testnet</div>
+        <div><b>- Mock</b>: Simulates publishing to a DA network, useful for local developmen (only available in `Local Network`)</div>
     </details>
 </div>
 
 <div>
     <details>
     <summary>Select your execution environment</summary>
-        <div>
-            <details>
-                <summary>EVM (Default)</summary>
-                <div>Standard EVM environment utilizing Ethermint built by EVMOS</div>
-            </details>
-            <details>
-                <summary>RDK</summary>
-                <div>Custom application binary. Requires specifying runtime binary path (e.g. /usr/local/bin/rollappd)</div>
-            </details>
-        </div>
+        <div><b>- EVM (default)</b>: Stores runtime binary in default PATH (e.g. /usr/local/bin/rollapp_evm)</div>
+        <div><b>- RDK</b>: Requires specifying runtime binary path (e.g. /usr/local/bin/rollapp)</div>
     </details>
 </div>
 
@@ -127,49 +104,40 @@ roller config init <ROLLAPP-ID> <DENOM>
 
 <div>
     <details>
-    <summary>rollapp-id</summary>
-        <div><b>Format</b>: name_ID-version (e.g wagmi_420-1)</div><br/>
-            <details>
-                <summary>Name</summary>
-                <div>Lowercase English letters</div>
-            </details>
-            <details>
-                <summary>ID</summary>
-                <div>1 to 5 digit number representing the EIP155 Chain-ID of the RollApp</div>
-            </details>
-            <details>
-                <summary>Version</summary>
-                <div>1 to 5 digit number representing the version</div>
-            </details>
-        <div><i>  Please note the "_" after the name and the "-" after the ID, these are required for EVM RollApps</i></div>
+    <summary>RollApp ID</summary>
+    <div><b>- Name</b>: Lowercase English letters</div>
+    <div><b>- EIP155</b>: 1 to 5 digit number representing the EIP155 rollapp ID</div>
+    <div><b>- Version</b>: 1 to 5 digit number representing the version</div>
+    <br />
+    <div><b>Example</b>: berlin_9191-2</div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>denom</summary>
+    <summary>Denom</summary>
+        <div>Name of the native token of the RollApp in English letters.</div>
+        <br />
         <div>e.g BTC, PEPE, DYM</div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>hub-version (optional)</summary>
-            <details>
-                <summary>Devnet (default)</summary>
-                <div>Non-incentivized public Devnet for building and testing</div>
-            </details>
-            <details>
-                <summary>Local</summary>
-                <div>Uses localhost Dymension Hub node and mock DA network</div>
-            </details>
+    <summary>Hub-version (optional)</summary>
+        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
+        <div><b>- Local</b>: Uses localhost Dymension Hub node and mock DA network</div>
+        <div><b>- Froopyland</b>: Very Soon</div>
+        <div><b>- Mainnet</b>: Soon</div>
     </details>
 </div>
 
 <div>
     <details>
-    <summary>token-supply (optional)</summary>
-        <div>How many tokens do you wish to mint for Genesis? This is the initial token supply in the RollApp (default: 1,000,000,000). </div>
+    <summary>Token-supply (optional)</summary>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
     </details>
 </div>
 
@@ -190,27 +158,20 @@ After initializing the RollApp, addresses to fund should be returned to you:
 
 Sequencer | Address used to publish state updates to the Dymension Hub
 Relayer   | Address that handles the relaying of IBC packets
-Celestia  | Address used to publish data on-chain to the DA network
+DA        | Address used to publish data on-chain to the DA network (not necessary on Mock DA version)
 ```
 
 In Dymension's [discord](https://discord.gg/dymension) please fund the addresses in the `faucet` channel with the following command as an example:
 
 ```
-$REQUEST dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn devnet_304-1
-$REQUEST dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy devnet_304-1
+$request dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+$request dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy
 ```
 
 You can then check the balance of the address with:
 
 ```
-$BALANCES dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
-```
-
-Now that we've funded the Dymension wallets, let's fund the Celestia Mocha wallet for data publication. In Celestia's [discord](https://discord.com/invite/YsnTPcSfWQ)
-please go to the `mocha-faucet` and request tokens with the following command as an example:
-
-```
-$request celestia1wnqasu0vze3qn8jldv9hx4yhf5w59l080u5mg0
+$balance dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
 ```
 
 Now that we've funded the wallets we can go ahead and register the RollApp!
