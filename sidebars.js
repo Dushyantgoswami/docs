@@ -180,7 +180,7 @@ const sidebars = {
                                 },
                                 {
                                     type: "doc",
-                                    label: "Trouble shooting",
+                                    label: "Troubleshooting",
                                     id: "build/adv-guide/roller-adv/troubleshooting",
                                 },
                             ],
