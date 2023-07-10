@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 Dymension is similar to a full-stack web application where users interact with RollApps (front-end), the Dymension Hub (back-end) acts as the coordinator for the ecosystem, and the data availability networks (database) provide a place to publicize data.
 
-<b>RollApps</b> are the interactive face of the Dymension network. Like any web application, each RollApp is fully customizable. You can build games, DeFi, NFT projects and much more!
+<b>RollApps</b> are the interactive applications for the Dymension network. Like any web application, each RollApp is fully customizable. You can build games, DeFi, NFT projects and much more!
 <br />
 <br />
 
