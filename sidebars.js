@@ -197,11 +197,6 @@ const sidebars = {
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Overview",
-                                            id: "build/adv-guide/rdk/setup/overview",
-                                        },
-                                        {
-                                            type: "doc",
                                             label: "Get RDK",
                                             id: "build/adv-guide/rdk/setup/rdk-repo",
                                         },
