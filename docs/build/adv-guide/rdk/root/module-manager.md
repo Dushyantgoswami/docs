@@ -26,16 +26,17 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	abci "github.com/cometbft/cometbft/abci/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+
+	"github.com/dymensionxyz/rollapp/x/hello/client/cli"
+	"github.com/dymensionxyz/rollapp/x/hello/keeper"
+	"github.com/dymensionxyz/rollapp/x/hello/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"hello/x/hello/client/cli"
-	"hello/x/hello/keeper"
-	"hello/x/hello/types"
 )
 ```
 
@@ -180,6 +181,38 @@ func (am AppModule) BeginBlock(_ sdk.Context, _ abci.RequestBeginBlock) {}
 // EndBlock contains the logic that is automatically triggered at the end of each block
 func (am AppModule) EndBlock(_ sdk.Context, _ abci.RequestEndBlock) []abci.ValidatorUpdate {
 	return []abci.ValidatorUpdate{}
+}
+```
+
+Add deprecated methods for backwards compatibility:
+
+```Go
+
+//------------------------------------------------------------------------------
+// Deprecated stuff
+//------------------------------------------------------------------------------
+
+// deprecated
+func (AppModuleBasic) RegisterLegacyAminoCodec(_ *codec.LegacyAmino) {
+}
+
+// deprecated
+func (AppModuleBasic) RegisterRESTRoutes(_ client.Context, _ *mux.Router) {
+}
+
+// deprecated
+func (AppModule) Route() sdk.Route {
+	return sdk.Route{}
+}
+
+// deprecated
+func (AppModule) QuerierRoute() string {
+	return types.QuerierRoute
+}
+
+// deprecated
+func (AppModule) LegacyQuerierHandler(*codec.LegacyAmino) sdk.Querier {
+	return nil
 }
 ```
 

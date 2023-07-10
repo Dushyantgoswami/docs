@@ -20,9 +20,9 @@ import (
 // existing imports should remain
 
 // custom hello module import
-"github.com/rollapp/x/hello"
-hellokeeper "github.com/rollapp/hello/keeper"
-hellotypes "github.com/rollapp/hello/types"
+"github.com/dymensionxyz/rollapp/x/hello"
+hellokeeper "github.com/dymensionxyz/rollapp/hello/keeper"
+hellotypes "github.com/dymensionxyz/rollapp/hello/types"
 )
 ```
 
@@ -88,7 +88,7 @@ The following instantiates an `AppModule`:
 
 ```Go
 app.mm = module.NewManager(
-    hello.NewAppModule(app.HelloKeeper)
+    hello.NewAppModule(appCodec, app.HelloKeeper)
 )
 ```
 

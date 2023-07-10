@@ -5,6 +5,8 @@ slug: query
 
 After implementing the query logic, you will need to make the query available to clients so that they can call it and receive the response.
 
+We will implement this in a new `query.go` file in the `x/hello/cli/client` folder:
+
 ```Go
 package cli
 
@@ -14,7 +16,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 
-	"github.com/rollapp/x/blog/types"
+	"github.com/dymensionxyz/rollapp/x/hello/types"
 )
 
 // GetQueryCmd returns the parent command for all blog query commands.

@@ -14,7 +14,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/rollapp/x/hello/types"
+	"github.com/dymensionxyz/rollapp/x/hello/types"
 )
 
 type queryServer struct{ k Keeper }
