@@ -21,4 +21,4 @@ Should return:
     <img class="image--primary" src={require('@site/static/img/rollappd.png').default} alt="dymint-overview" />
 </div>
 
-We can move to deploying the application with [Roller](/docs/build/adv-guide/roller-adv/install-adv.md).
+Please note the path in which the RollApp binary exists. We can then move to deploying the application with [Roller](/docs/build/adv-guide/roller-adv/install-adv.md).
