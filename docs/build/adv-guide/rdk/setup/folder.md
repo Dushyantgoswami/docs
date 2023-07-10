@@ -5,15 +5,16 @@ slug: folder
 
 We will begin by creating the `hello` folders.
 
-The `x` folder contains the core custom logic for each module. The following command creates a `hello` folder within the `x` folder and two sub-folders (i.e. `Keeper` and `Types`).
+The `x` folder contains the core custom logic for each module. The following command creates a `hello` folder within the `x` folder and three sub-folders (i.e. `Keeper`, `Types`, `Client/cli`).
 
 -   `Keeper` is the folder housing the implementation for the state transition.
 -   `Types` is the folder that houses code that help organize and validate the state-transitions.
+-   `Client/cli` is the folder that houses code for generating CLI transactions.
 
 ```
 mkdir -p x/hello/keeper
 mkdir -p x/hello/types
-mkdir -p x/cli/client
+mkdir -p x/client/cli
 ```
 
 The following commands move us to the root directory and creates a `hello` folder in the `proto` directory.
