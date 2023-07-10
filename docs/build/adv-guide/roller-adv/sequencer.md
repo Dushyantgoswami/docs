@@ -17,8 +17,8 @@ Should return:
 💈 EVM RPC: http://0.0.0.0:8545
 💈 Node RPC: http://0.0.0.0:26657
 💈 Rest API: http://0.0.0.0:1317
-💈 Log file path:  /Users/barrykuts/.roller/rollapp/rollapp.log
-💈 Rollapp root dir:  /Users/barrykuts/.roller/rollapp
+💈 Log file path:  /Users/USERNAME/.roller/rollapp/rollapp.log
+💈 Rollapp root dir:  /Users/USERNAME/.roller/rollapp
 ```
 
 -   **EVM RPC** provides a RPC gateway for publishing EVM smart contracts
