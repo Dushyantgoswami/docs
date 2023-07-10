@@ -9,7 +9,7 @@ Change the current working directory to the `proto` directory. Then create a `bu
 
 ```yaml
 version: v1
-name: buf.build/rollapp
+name: buf.build/dymensionxyz/rollapp
 deps:
     - buf.build/cosmos/cosmos-proto
     - buf.build/cosmos/cosmos-sdk
