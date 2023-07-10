@@ -88,6 +88,7 @@ The following instantiates an `AppModule`:
 
 ```Go
 app.mm = module.NewManager(
+    // ...
     hello.NewAppModule(appCodec, app.HelloKeeper)
 )
 ```
@@ -96,6 +97,7 @@ The following adds the `hello` module to Begin blocker in case of Begin block lo
 
 ```Go
 app.mm.SetOrderBeginBlockers(
+        // ...
 		hellotypes.ModuleName,
 	)
 ```
@@ -104,6 +106,7 @@ The following adds the `hello` module to End blocker in case of End block logic 
 
 ```Go
 app.mm.SetOrderEndBlockers(
+        // ...
 		hellotypes.ModuleName,
 	)
 ```
@@ -112,6 +115,7 @@ The following adds the `hello` module to order of the `InitGenesis` called at th
 
 ```Go
 app.mm.SetOrderInitGenesis(
+        // ...
 		hellotypes.ModuleName,
 	)
 ```
