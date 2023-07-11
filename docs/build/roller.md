@@ -20,7 +20,9 @@ With `Roller` developers are able to deploy a RollApp within minutes.
 
 ### Supported OS
 
--   Roller has only been officially tested with MacOS. More officially supported operating systems will be provided soon.
+-   Linux AMD64
+-   Mac AMD64
+-   Mac ARM64
 
 ### Recommended hardware
 
