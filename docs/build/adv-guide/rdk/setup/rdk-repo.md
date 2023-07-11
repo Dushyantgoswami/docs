@@ -102,7 +102,7 @@ source $HOME/.zshrc
 
 Let's begin our journey in building a custom `hello` module!
 
-We will begin by getting the RollApp template from GitHub. This `app` template, inspiried by Julien Robert's [mini Cosmos SDK app template](https://github.com/julienrbrt/chain-minimal), is a clean template for working with the imported Dymension RDK.
+We will begin by getting the RollApp template from GitHub. This `app` template, inspiried by the [mini Cosmos SDK app template](https://github.com/julienrbrt/chain-minimal), is a clean template for working with the imported Dymension RDK.
 
 ```
 git clone https://github.com/dymensionxyz/rollapp.git
