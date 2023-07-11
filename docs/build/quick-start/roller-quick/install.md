@@ -10,7 +10,7 @@ In this `Quick start` tutorial we will be deploying an EVM RollApp with `Roller`
 Open a terminal and input the following command to install `Roller`:
 
 ```
-curl -L https://github.com/dymensionxyz/roller/releases/download/v0.1.0/install.sh | bash
+curl -L https://github.com/dymensionxyz/roller/releases/download/v0.1.1/install.sh | bash
 ```
 
 ### Verify Roller version
@@ -24,9 +24,9 @@ roller version
 Should output:
 
 ```
-💈 Roller version v0.1.0
-💈 Build time: 2023-07-10T19:23:43+0300"
-💈 Git commit: b0145537a94a9df9265dda6be94599504c6f5cac
+💈 Roller version v0.1.1
+💈 Build time: 2023-07-11T14:57:29+0200"
+💈 Git commit: 9de2afb80749536a75c802e78366681ee4a6660a
 ```
 
 With `Roller` now installed we'll proceed to initializing the RollApp.
