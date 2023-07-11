@@ -22,10 +22,10 @@ During the `Run` process a RollApp with an IBC connection to the Dymension Hub i
 <img class="image--primary" loading="eager" src={require('@site/static/img/roller-status.png').default} alt="background" />
 
 -   **Height:** latest RollApp block height
--   **Hub:** latest RollApp block height that state was published to the Dymension Hub
+-   **Hub:** latest RollApp block height that was published to the Dymension Hub
 -   **Port 8545:** EVM RPC provides a RPC gateway for publishing EVM smart contracts
 -   **Port 26657:** Node RPC provides a RPC gateway for requests to the node
 -   **Port 1317:** Rest end-point provides a REST gateway for requests to the node
--   **Log file path:** is the PATH to the RollApp logs see [trouble-shooting](/docs/build/adv-guide/roller-adv/troubleshooting.md) for more information
+-   **Log file path:** is the PATH to the RollApp logs
 
 Let's continue and interact with the running IBC-enabled RollApp...
