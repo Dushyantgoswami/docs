@@ -17,7 +17,7 @@ Next select `balanceOf` with the Metamask address you minted to. Now the `balanc
     <img class="image--primary" src={require('@site/static/img/remix.png').default} alt="dymint-overview" />
 </div>
 
-### Conclusion
+### Summary
 
 We've done a lot in this tutorial!
 
