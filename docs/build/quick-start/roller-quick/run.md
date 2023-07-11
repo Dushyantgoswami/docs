@@ -28,4 +28,4 @@ During the `Run` process a RollApp with an IBC connection to the Dymension Hub i
 -   **Port 1317:** Rest end-point provides a REST gateway for requests to the node
 -   **Log file path:** is the PATH to the RollApp logs
 
-Let's continue and interact with the running IBC-enabled RollApp...
+Let's continue and interact with the running IBC-enabled RollApp.
