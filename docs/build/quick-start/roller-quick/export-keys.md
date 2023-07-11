@@ -34,8 +34,8 @@ Run the following command to export the Sequencer's private keys (currently only
 roller keys export hub_sequencer
 ```
 
-The security of the Hub_Sequencer private keys is important for participating in other Dymension networks with the same account. We recommend storing this information in a secure place.
+The security of the `hub_Sequencer` private keys is important for participating in other Dymension networks with the same account. We recommend storing this information in a secure place.
 
 ### Next steps
 
-Let's connect and import them into a Metamask wallet...
+Let's connect and import them into a Metamask wallet.
