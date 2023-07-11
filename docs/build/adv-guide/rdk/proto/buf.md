@@ -44,7 +44,7 @@ plugins:
       opt: logtostderr=true,allow_colon_final_segments=true
 ```
 
-Next we'll run the following command to update the module's dependency list:
+Next we'll run the following command with the `proto` folder to update the module's dependency list:
 
 ```
 buf mod update

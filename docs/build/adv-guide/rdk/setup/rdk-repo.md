@@ -25,6 +25,7 @@ Now that we're in the newly created directory we can get the `app` template from
 
 ```
 git clone https://github.com/dymensionxyz/rollapp.git
+cd rollapp
 ```
 
 Now that we've installed the app in the appropriate location we can open it with your favorite code editor. Next let's start coding!

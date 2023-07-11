@@ -89,7 +89,7 @@ The following instantiates an `AppModule`:
 ```Go
 app.mm = module.NewManager(
     // ...
-    hello.NewAppModule(appCodec, app.HelloKeeper)
+    hello.NewAppModule(appCodec, app.HelloKeeper),
 )
 ```
 

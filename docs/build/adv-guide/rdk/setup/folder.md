@@ -14,7 +14,7 @@ The `x` folder contains the core custom logic for each module. The following com
 ```
 mkdir -p x/hello/keeper
 mkdir -p x/hello/types
-mkdir -p x/client/cli
+mkdir -p x/hello/client/cli
 ```
 
 The following commands move us to the root directory and creates a `hello` folder in the `proto` directory.
