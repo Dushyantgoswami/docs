@@ -20,7 +20,7 @@ image_url: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.c
 <div class="row row-cols-1 row-cols-md-3 main-actions">
     <div class="col">
         <div class="card card-body">
-            <a href="learn/modular-intro" class="card-link stretched-link"> 
+            <a href="learn/eli5" class="card-link stretched-link"> 
                 <h2 class="card-title">Learn</h2>
             </a>
             <p class="card-text">Your educational guide to Dymension</p>
@@ -30,7 +30,7 @@ image_url: https://firebasestorage.googleapis.com/v0/b/dymension-3f01e.appspot.c
     </div>
     <div class="col">
         <div class="card card-body">
-            <a href="develop/roller" class="card-link stretched-link"> 
+            <a href="build/roller" class="card-link stretched-link"> 
                 <h2 class="card-title">Build</h2>
             </a>
             <p class="card-text">Build your own RollApp</p>

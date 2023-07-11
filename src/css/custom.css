@@ -911,6 +911,38 @@ div.navbar__logo {
     background-color: var(--ifm-color-primary-inverse);
 }
 
+.image-container-secondary {
+    padding: calc(var(--ifm-spacing-step) * 2);
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: var(--ifm-spacing-vertical);
+    background-color: var(--ifm-color-primary-inverse);
+    width: 60%;
+}
+
+.image-container-third {
+    padding: calc(var(--ifm-spacing-step) * 2);
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: var(--ifm-spacing-vertical);
+    background-color: var(--ifm-color-primary-inverse);
+    width: 85%;
+}
+
+.image-container-fourth {
+    padding: calc(var(--ifm-spacing-step) * 2);
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: var(--ifm-spacing-vertical);
+    background-color: var(--ifm-color-primary-inverse);
+    width: 50%;
+}
+
+.image-container-evm {
+    width: 50%;
+    height: 100px;
+}
+
 [data-theme="dark"] .image-container-primary {
     background-color: var(--ifm-color-primary);
 }

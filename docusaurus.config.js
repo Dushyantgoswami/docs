@@ -48,8 +48,8 @@ const config = {
             themes: ["@docusaurus/theme-search-algolia"],
             colorMode: {
                 defaultMode: "dark",
-                disableSwitch: true,
-                respectPrefersColorScheme: false,
+                disableSwitch: false,
+                respectPrefersColorScheme: true,
             },
             docs: {
                 sidebar: {
@@ -67,12 +67,12 @@ const config = {
                     {
                         label: "Learn",
                         position: "right",
-                        to: "learn/modular-intro",
+                        to: "learn/eli5",
                     },
                     {
                         label: "Build",
                         position: "right",
-                        to: "develop/roller",
+                        to: "build/roller",
                     },
                     {
                         label: "Validate",

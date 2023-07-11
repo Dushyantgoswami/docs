@@ -1,0 +1,214 @@
+---
+title: "Initialize RollApp"
+slug: initialize
+---
+
+### Initialization
+
+Initializing the configuration files of the RollApp will create the necessary information to start a new RollApp. This will create a folder `~/.roller` in the root directory of your computer with important files such as the `Genesis` file.
+
+Developers have two options for initializing the configuration files, an interactive guide or by using CLI flags:
+
+`````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+````mdx-code-block
+
+<Tabs groupId="guide">
+<TabItem value="Interactive guide" label="Interactive guide">
+
+```
+roller config init --interactive
+```
+
+<details>
+<summary>Interactive guide breakdown</summary>
+
+<div>
+
+<div>
+    <details>
+    <summary>Select your network</summary>
+    <div>
+        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing. Requires faucet tokens for selected DA network and Dymension Hub.</div>
+        <div><b>- Local</b>: Optional Mock DA network (no faucet tokens needed) included. Requires running a localhost Dymension Hub full node please visit <a href="/validate/dymension-hub/build-dymd">here </a>
+        to run a node.</div>
+        <div><b>- Froopyland</b>: Very Soon</div>
+    </div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Enter your RollApp ID</summary>
+        <div><b>- Name</b>: Lowercase English letters</div>
+        <div><b>- EIP155</b>: 1 to 5 digit number representing the EIP155 rollapp ID</div>
+        <div><b>- Version</b>: 1 to 5 digit number representing the version</div>
+        <br />
+        <div><b>Example</b>: berlin_9191-2</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Specify your RollApp denom</summary>
+        <div>Name of the native token of the RollApp in English letters.</div>
+        <br />
+        <div>e.g BTC, PEPE, DYM</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Set the genesis token supply</summary>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Choose your data layer</summary>
+        <div><b>- Celestia</b>: Arabica testnet</div>
+        <div><b>- Avail</b>: Kate testnet</div>
+        <div><b>- Mock</b>: Simulates publishing to a DA network, useful for local development (only available in `Local` mode)</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Select your execution environment</summary>
+        <div><b>- EVM (default)</b>: Stores runtime binary in default PATH (e.g. /usr/local/bin/rollapp_evm)</div>
+        <div><b>- RDK</b>: Requires specifying runtime binary path (e.g. /usr/local/bin/rollapp)</div>
+    </details>
+</div>
+
+
+</div>
+</details>
+
+
+</TabItem>
+<TabItem value="Flags" label="Flags">
+
+```
+roller config init <rollapp-id> <denom>
+```
+
+<details>
+<summary>Flags breakdown</summary>
+
+<div>
+
+<div>
+    <details>
+    <summary>rollapp-id</summary>
+    <div><b>- Name</b>: Lowercase English letters</div>
+    <div><b>- EIP155</b>: 1 to 5 digit number representing the EIP155 rollapp ID</div>
+    <div><b>- Version</b>: 1 to 5 digit number representing the version</div>
+    <br />
+    <div><b>Example</b>: berlin_9191-2</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>denom</summary>
+        <div>Name of the native token of the RollApp in English letters.</div>
+        <br />
+        <div>e.g BTC, PEPE, DYM</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>hub (optional)</summary>
+        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
+        <div><b>- Local</b>: Uses localhost Dymension Hub node (please visit <a href="/validate/dymension-hub/build-dymd">here </a> to run a node) and mock DA network</div>
+        <div><b>- Froopyland</b>: Very Soon</div>
+        <div><b>- Mainnet</b>: Soon</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>token-supply (optional)</summary>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
+    </details>
+</div>
+
+</div>
+</details>
+
+</TabItem>
+
+</Tabs>
+
+### Address funding
+
+<Tabs>
+<TabItem value="Devnet funding" label="Devnet funding">
+
+After initializing the RollApp, addresses to fund should be returned to you:
+
+```
+🔑 Addresses:
+
+Sequencer <network> | Address used to publish state updates to the Dymension Hub
+Relayer   <network> | Address that handles the relaying of IBC packets
+DA        <network> | Address used to publish data on-chain to the DA network
+```
+
+In Dymension's [discord](https://discord.gg/dymension) please fund the Dymension Hub addresses in the `faucet` channel with the following command as an example:
+
+```
+$request dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+$request dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy
+```
+
+Additionally, for Celestia network tokens users may use the `celestia-faucet` on the Dymension discord with the following command as an example:
+
+```
+$request celestia1emd05tmxqy5z9mlccvudrmj8hnmds49t2le2r2
+```
+
+You can then check the balance of the address with:
+
+```
+$balance dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
+```
+
+</TabItem>
+
+<TabItem value="Local funding" label="Local funding">
+
+After initializing the RollApp, addresses to fund should be returned to you:
+
+```
+🔑 Addresses:
+
+Sequencer | Address used to publish state updates to the Dymension Hub
+Relayer   | Address that handles the relaying of IBC packets
+```
+
+While the Dymension Hub full node is running, publish the following transaction via CLI:
+
+```
+dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test
+```
+
+You can then check the balance of the address with:
+
+```
+dymd q bank balances <ADDRESS>
+```
+
+</TabItem>
+</Tabs>
+`````
+
+Now that we've funded the wallets we can go ahead and register the RollApp!

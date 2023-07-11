@@ -1,0 +1,103 @@
+---
+title: Build Dymension Hub
+slug: build-dymd
+---
+
+#### The following section explains how to build the Dymension Hub full node:
+
+`````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+````mdx-code-block
+
+<Tabs groupId="build">
+<TabItem value="35-C" label="35-C">
+
+1. Use `git` to retrieve [Dymension Hub](https://github.com/dymensionxyz/dymension):
+
+    ```
+    git clone https://github.com/dymensionxyz/dymension.git --branch v0.2.0-beta
+    cd dymension
+    ```
+
+2. Build the Dymension Hub. This will install the `dymd` executable to your [ `GOPATH` ](https://go.dev/doc/gopath_code) environment variable.
+
+    ```bash
+    make install
+    ```
+
+3. Verify that the Dymension Hub full node is installed correctly.
+
+    ```bash
+    dymd version --long
+    ```
+
+    **Example**:
+
+    ```bash
+    name: dymension
+    server_name: dymd
+    version: v0.2.0-beta
+    commit: 987e33407911c0578251f3ace95d2382be7e661d
+    ```
+
+    If the dymd command is not found an error message is returned, confirm that your [GOPATH](https://go.dev/doc/gopath_code#GOPATH) is correctly configured by running the following command:
+
+    ```
+    export PATH=$PATH:$(go env GOPATH)/bin
+    ```
+
+</TabItem>
+<TabItem value="Devnet" label="Devnet">
+
+1. Use `git` to retrieve [Dymension Hub](https://github.com/dymensionxyz/dymension):
+
+    ```
+    git clone https://github.com/dymensionxyz/dymension.git --branch  v1.0.0-rc2
+    cd dymension
+    ```
+
+2. Build the Dymension Hub. This will install the `dymd` executable to your [ `GOPATH` ](https://go.dev/doc/gopath_code) environment variable.
+
+    ```bash
+    make install
+    ```
+
+3. Verify that the Dymension Hub full node is installed correctly.
+
+    ```bash
+    dymd version --long
+    ```
+
+    **Example**:
+
+    ```bash
+    name: dymension
+    server_name: dymd
+    version:  v1.0.0-rc2
+    ```
+
+    If the dymd command is not found an error message is returned, confirm that your [GOPATH](https://go.dev/doc/gopath_code#GOPATH) is correctly configured by running the following command:
+
+    ```
+    export PATH=$PATH:$(go env GOPATH)/bin
+    ```
+
+4. Run a script that initializes the Dymension Hub full node:
+
+    ```sh
+    bash scripts/setup_local.sh
+    ```
+
+5. Run the Dymension Hub full node:
+
+    ```
+    dymd start
+    ```
+
+Now that we have a Dymension Hub full node running we can return to the Roller initialization.
+</TabItem>
+
+</Tabs>
+`````
