@@ -20,6 +20,7 @@ Should return as an example:
 ```
 🔑 Addresses:
 
+  my_celes_key        | RollApp Sequencer account on the Celestia network
   hub_sequencer       | RollApp Sequencer account on the Dymension Hub
   rollapp_sequencer   | RollApp Sequencer account on the RollApp
   relayer-hub-key     | IBC relayer account on Dymension Hub
@@ -28,7 +29,7 @@ Should return as an example:
 
 ### Export keys
 
-Run the following command to export the Sequencer's private keys (currently only supporting `hub_sequencer` and `rollapp_sequencer`):
+Run the following command to export the Sequencer's private keys (currently supporting `hub_sequencer`, `rollapp_sequencer` and `my_celes_key`):
 
 ```
 roller keys export hub_sequencer
