@@ -4,7 +4,6 @@ slug: app
 ---
 
 ### Overview
-
 Now that we've built the module we will need to integrate it into `app.go`. This is usually referred to as the application's main file or main entry point.
 
 `app.go` is the file that defines what your application does, what transactions it can process, and other related information. In short, it describes your blockchain's application logic.
@@ -21,8 +20,8 @@ import (
 
 // custom hello module import
 "github.com/dymensionxyz/rollapp/x/hello"
-hellokeeper "github.com/dymensionxyz/rollapp/hello/keeper"
-hellotypes "github.com/dymensionxyz/rollapp/hello/types"
+hellokeeper "github.com/dymensionxyz/rollapp/x/hello/keeper"
+hellotypes "github.com/dymensionxyz/rollapp/x/hello/types"
 )
 ```
 
@@ -33,7 +32,7 @@ Let's add the KVstore key name to `kvstorekeys`:
 ```Go
 kvstorekeys = []string{
     // ...
-    hellokeeper.StoreKey,
+    hellotypes.StoreKey,
 }
 ```
 
@@ -47,20 +46,6 @@ ModuleBasics = module.NewBasicManager(
         hello.AppModuleBasic{},
 ```
 
-Module accounts are special types of accounts used by modules to hold and control tokens. They are identified by their name and have additional permissions over normal accounts. There are three kinds of permissions that can be granted to module accounts:
-
-1. **Minter**: Allows the module account to mint tokens.
-2. **Burner**: Allows the module account to burn tokens.
-3. **Staking**: Allows the module account to delegate tokens.
-
-In our tutorial the `hello` module does not utilize this functionality so we'll add `nil` to `maccPerms` (module account permissions):
-
-```Go
-maccPerms = map[string][]string{
-    // ...
-    hellotypes.ModuleName:     nil,
-}
-```
 
 Next we'll adjust the `App` struct which defines the RollApp by adding the `hello` keeper:
 
@@ -77,9 +62,6 @@ type App struct {
 app.HelloKeeper = hellokeeper.NewKeeper(
     appCodec,
     keys[hellotypes.StoreKey],
-    app.AccountKeeper,
-    app.BankKeeper,
-    app.MsgServiceRouter(),
 )
 
 ```

@@ -219,8 +219,8 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Buf",
-                                            id: "build/adv-guide/rdk/proto/buf",
+                                            label: "Genesis",
+                                            id: "build/adv-guide/rdk/proto/genesis",
                                         },
                                         {
                                             type: "doc",
@@ -241,8 +241,8 @@ const sidebars = {
                                         },
                                         {
                                             type: "doc",
-                                            label: "Encoding",
-                                            id: "build/adv-guide/rdk/types/codec",
+                                            label: "Genesis",
+                                            id: "build/adv-guide/rdk/types/genesis",
                                         },
                                     ],
                                 },
@@ -277,12 +277,12 @@ const sidebars = {
                                 },
                                 {
                                     type: "category",
-                                    label: "Root",
+                                    label: "Module",
                                     collapsed: "true",
                                     items: [
                                         {
                                             type: "doc",
-                                            label: "Module manager",
+                                            label: "AppModule",
                                             id: "build/adv-guide/rdk/root/module-manager",
                                         },
                                         {
