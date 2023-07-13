@@ -12,13 +12,37 @@ make install
 Now that we've installed the application on the local machine we can test by running the following command:
 
 ```
-rollappd
+rollappd query hello
 ```
 
 Should return:
 
-<div class="image-container-secondary">
-    <img class="image--primary" src={require('@site/static/img/rollappd.png').default} alt="dymint-overview" />
-</div>
+```sh
+Querying commands for the hello module
 
-Please note the path in which the RollApp binary exists. We can then move to deploying the application with [Roller](/docs/build/adv-guide/roller-adv/install-adv.md).
+Usage:
+  rollappd query hello [flags]
+  rollappd query hello [command]
+
+Available Commands:
+  say-hello   Query say-hello
+
+Flags:
+  -h, --help   help for hello
+
+Global Flags:
+      --chain-id string     The network chain ID
+      --home string         directory for config and data (default "/Users/mtsitrin/.rollapp")
+      --log_format string   The logging format (json|plain) (default "plain")
+      --log_level string    The logging level (trace|debug|info|warn|error|fatal|panic) (default "info")
+      --trace               print out full stack trace on errors
+
+Use "rollappd query hello [command] --help" for more information about a command.
+```
+
+
+Let's check where the file installed so we could pass it to roller:
+
+`which rollappd`
+
+We can then move to deploying the application with [Roller](/docs/build/adv-guide/roller-adv/install-adv.md), by providing our custom binary path

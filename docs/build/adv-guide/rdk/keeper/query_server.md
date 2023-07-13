@@ -3,7 +3,9 @@ title: Query Server
 slug: query_server
 ---
 
-`query_server` is the implemented handler of queries submitted by users to the `hello` module.
+`queryServer` is the implemented handler of queries submitted by users to the `hello` module.
+In the `keeper` folder we will create a file called `query.go`
+
 
 ```Go
 package keeper
