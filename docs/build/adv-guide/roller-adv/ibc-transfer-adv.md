@@ -7,8 +7,13 @@ Now that we have an active IBC-enabled RollApp, let's send an IBC transaction fr
 
 `dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5` is the faucet address on the Dymension Hub devnet that will allow users to request RollApp tokens. Note the source channel (i.e. src-channel) during the [Relayer](./relayer.md) stage (i.e. channel-0).
 
+:::info NOTE:
+When making a faucet request, you will receive 500 * 10^{decimal-points} base tokens.
+To ensure a smooth token distribution process for your network, it is crucial to provide the faucet with an adequate amount of tokens (in multiples of 500).
+:::
+
 ```
-rollapp_evm tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 1000000000000000000<denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
+rollapp_evm tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 5000000000000000000000000<denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
 ```
 
 Note the large amount of `0`s for the RollApp denom. As noted in the [initialization](/docs/build/adv-guide/roller-adv/initialize-adv.mdx) section the `denom` is 10^18 of the `token symbol` or 18 `0`s. Please note any custom denom metadata implemented in the RDK RollApp.
