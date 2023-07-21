@@ -3,7 +3,7 @@ title: "IBC transfer"
 slug: ibc-transfer
 ---
 
-Now that we have an active IBC-enabled RollApp, let's transfer tokens using an IBC transaction from your RollApp to the Dymension Hub faucet address at `dym12ad4lux36lta7d75v2w6je2y386y9s5xp658pz`.
+Now that we have an active IBC-enabled RollApp, let's transfer tokens using an IBC transaction from your RollApp to the Dymension Hub faucet address at `dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5`.
 
 Using this faucet, users will be able to request tokens to play around with your RollApp.
 
@@ -15,7 +15,7 @@ Using this faucet, users will be able to request tokens to play around with your
 Now lets transfer some tokens to the faucet address:
 
 ```
-rollapp_evm tx ibc-transfer transfer transfer <src-channel> dym12ad4lux36lta7d75v2w6je2y386y9s5xp658pz 1000000000000000000<base-denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
+rollapp_evm tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 1000000000000000000<base-denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
 ```
 :::warning NOTE:
 if you've set your denom to be e.g `XYZ`, the value of the `<base-denom>` should be `uXYZ` where the value after the `u` is case sensitive.
@@ -32,7 +32,7 @@ This is in order to simulate the fraud proof period where only after it's passed
 Run the following command to check the balance of your RollApp token on the Dymension Hub's devnet faucet channel on [Discord](https://discord.com/invite/dymension):
 
 ```
-$balances dym12ad4lux36lta7d75v2w6je2y386y9s5xp658pz <rollapp-id>
+$balances dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 <rollapp-id>
 ```
 
 Once there are RollApp tokens in the Dymension Hub devnet faucet, users will be able to request tokens with the following command:
