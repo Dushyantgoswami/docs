@@ -136,15 +136,15 @@ After setting up Prometheus and Grafana, the next step is to add Prometheus as a
 2. Log in using the default credentials (`admin` for both username and password). You'll be prompted to change the password on first login.
 
 3. Click on the big "Add your first data source" button in the middle of the screen.
-4. 
-5. In the "Filter by name or type" field, type "Prometheus" and select it from the dropdown menu.
 
-6. In the "URL" field, enter `http://prometheus:9090` as the Prometheus is running within the same Docker network as Grafana and is accessible via the service name as defined in the `docker-compose.yml` file.
+4. In the "Filter by name or type" field, type "Prometheus" and select it from the dropdown menu.
 
-7. Click on the "Save & Test" button.
+5. In the "URL" field, enter `http://prometheus:9090` as the Prometheus is running within the same Docker network as Grafana and is accessible via the service name as defined in the `docker-compose.yml` file.
+
+6. Click on the "Save & Test" button.
 
 ## Congratulations! 🎉
 
-You've successfully set up Prometheus and Grafana with your rollapp for production-level monitoring! You're now well-equipped to keep an eye on the critical metrics of your application, ensuring optimal performance and quick detection of any potential issues.
+You've successfully set up Prometheus and Grafana with your rollapp for production-level monitoring! You're now well-equipped to keep an eye on the critical metrics of your RollApp.
 
-Remember, monitoring is a continuous process, and these tools are here to assist you in maintaining the best possible performance for your rollapp. Happy monitoring! 
+Remember, monitoring is a continuous process, and these tools are here to assist you in maintaining the best possible performance for your RollApp. Happy monitoring! 
