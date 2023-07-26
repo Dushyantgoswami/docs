@@ -57,6 +57,7 @@ const sidebars = {
                     label: "Roller",
                     id: "build/roller",
                 },
+
                 {
                     type: "category",
                     label: "Quick start",
@@ -300,6 +301,11 @@ const sidebars = {
                             ],
                         },
                     ],
+                },
+                {
+                    type: "doc",
+                    label: "Production",
+                    id: "build/production",
                 },
             ],
         },
