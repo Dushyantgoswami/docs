@@ -3,7 +3,7 @@ title: "DA light client"
 slug: da-light-client
 ---
 
-The first process that we will start is the running of a DA light client. Make sure to have the account funded as per the [previous instructions](/docs/build/adv-guide/roller-adv/initialize-adv.mdx). In this tutorial we will be using the DA network selected in the [initialization section](./initialize-adv.mdx) of the Roller or the default [Celestia](https://celestia.org/) arabica testnet.
+The first process that we will start is the running of a DA light client. Make sure to have the account funded as per the [previous instructions](/docs/build/quick-start/roller-quick/initialize.mdx). In this tutorial we will be using the DA network selected in the [initialization section](/docs/build/quick-start/roller-quick/initialize.mdx) of the Roller or the default [Celestia](https://celestia.org/) arabica testnet.
 
 Running a DA light client enables a RollApp to publish data on-chain and provide users of the RollApp with blockchain security. Once data is accepted by the DA network RollApp full nodes will be able to download the data from the namespace and confirm the resulting state root.
 

@@ -3,14 +3,14 @@ title: "Troubleshooting"
 slug: troubleshooting
 ---
 
-This guide explain how to show the logs for both the deployed [Relayer](relayer.md) and [Sequencer](sequencer.md). This is helpful to understand the exact actions being taken behind the scenes of your running processes.
+This guide explain how to show the logs for both the deployed [Sequencer](sequencer.md) and [Relayer](relayer.md). This is helpful to understand the exact actions being taken behind the scenes of your running processes.
 
 The log paths are located in the `~/.roller` folder with the respective folders for the RollApp Sequencer and the relayer.
 
 To review the logs of the RollApp Sequencer, type the following command:
 
 ```
-tail -f /Users/<USERNAME>/.roller/rollapp/rollapp.log
+tail -f ~/.roller/rollapp/rollapp.log
 ```
 
 The Sequencer logs will show items such as block height and number of transactions in the previous block.
@@ -18,7 +18,7 @@ The Sequencer logs will show items such as block height and number of transactio
 To review the logs of the IBC Relayer, type the following command:
 
 ```
-tail -f /Users/<USERNAME>/.roller/relayer/relayer.log
+tail -f ~/.roller/relayer/relayer.log
 ```
 
 The relayer logs will show the latest state of the relayer and accompanying packet information.

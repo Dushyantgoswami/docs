@@ -3,13 +3,13 @@ title: "Run"
 slug: run
 ---
 
-Now that we've registered the EVM RollApp on the Dymension Hub we can proceed to begin running the RollApp.
+Now that we've registered the RollApp on the Dymension Hub we can proceed to begin running the RollApp.
 
 :::info NOTE:
 The following command abstracts some of the components required for running an IBC-enabled RollApp. For advanced users or for those interested in learning about the different components of an active RollApp please proceed to the [advanced guide](/docs/build/adv-guide/roller-adv/da-light-client.md) .
 :::
 
-To start the EVM RollApp run the following command:
+To start the RollApp run the following command:
 
 ```
 roller run
@@ -23,7 +23,7 @@ During the `Run` process a RollApp with an IBC connection to the Dymension Hub i
 
 -   **Height:** latest RollApp block height
 -   **Hub:** latest RollApp block height that was published to the Dymension Hub
--   **Port 8545:** EVM RPC provides a RPC gateway for publishing EVM smart contracts
+-   **Port 8545:** EVM RPC provides a RPC gateway for publishing EVM smart contracts (if applicable)
 -   **Port 26657:** Node RPC provides a RPC gateway for requests to the node
 -   **Port 1317:** Rest end-point provides a REST gateway for requests to the node
 -   **Log file path:** is the PATH to the RollApp logs

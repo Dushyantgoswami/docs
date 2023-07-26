@@ -79,9 +79,38 @@ const sidebars = {
                             id: "build/quick-start/roller-quick/register",
                         },
                         {
-                            type: "doc",
+                            type: "category",
                             label: "Run",
-                            id: "build/quick-start/roller-quick/run",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Simple",
+                                    id: "build/quick-start/roller-quick/run",
+                                },
+                                {
+                                    type: "category",
+                                    label: "Advanced",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "DA light client",
+                                            id: "build/adv-guide/roller-adv/da-light-client",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Sequencer",
+                                            id: "build/adv-guide/roller-adv/sequencer",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Relayer",
+                                            id: "build/adv-guide/roller-adv/relayer",
+                                        },
+                                    ],
+                                },
+                            ],
                         },
                         {
                             type: "category",
@@ -98,11 +127,23 @@ const sidebars = {
                                     label: "Export keys",
                                     id: "build/quick-start/roller-quick/export-keys",
                                 },
+                                {
+                                    type: "doc",
+                                    label: "Troubleshooting",
+                                    id: "build/adv-guide/roller-adv/troubleshooting",
+                                },
                             ],
                         },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Develop",
+                    collapsed: "true",
+                    items: [
                         {
                             type: "category",
-                            label: "Develop",
+                            label: "EVM RollApp",
                             collapsed: "true",
                             items: [
                                 {
@@ -127,68 +168,9 @@ const sidebars = {
                                 },
                             ],
                         },
-                    ],
-                },
-                {
-                    type: "category",
-                    label: "Advanced guide",
-                    collapsed: "true",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Install",
-                            id: "build/adv-guide/roller-adv/install-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Init",
-                            id: "build/adv-guide/roller-adv/initialize-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Register",
-                            id: "build/adv-guide/roller-adv/register-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "DA light client",
-                            id: "build/adv-guide/roller-adv/da-light-client",
-                        },
-                        {
-                            type: "doc",
-                            label: "Sequencer",
-                            id: "build/adv-guide/roller-adv/sequencer",
-                        },
-                        {
-                            type: "doc",
-                            label: "Relayer",
-                            id: "build/adv-guide/roller-adv/relayer",
-                        },
                         {
                             type: "category",
-                            label: "Interact",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "IBC transfer",
-                                    id: "build/adv-guide/roller-adv/ibc-transfer-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Export keys",
-                                    id: "build/adv-guide/roller-adv/export-keys-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Troubleshooting",
-                                    id: "build/adv-guide/roller-adv/troubleshooting",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
-                            label: "Develop",
+                            label: "Custom RollApp",
                             collapsed: "true",
                             items: [
                                 {
@@ -304,7 +286,7 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "Production",
+                    label: "Run in Production",
                     id: "build/production",
                 },
             ],

@@ -13,7 +13,7 @@ Roller is an easy-to-use CLI tool for bootstrapping, building, and deploying an 
 With `Roller` developers are able to deploy a RollApp within minutes.
 
 :::info NOTE:
-`Roller Run` abstracts components of deploying a RollApp (i.e. DA light clients, Sequencer full nodes, and relayer nodes) for an in-depth guide including the stand-alone deployment of each process please visit the [advanced guide](/docs/build/adv-guide/roller-adv/install-adv.md).
+`Roller Run` abstracts components of deploying a RollApp (i.e. DA light clients, Sequencer full nodes, and relayer nodes) for an in-depth guide including the stand-alone deployment of each process please visit the [advanced guide](/docs/build/adv-guide/roller-adv/da-light-client.md).
 :::
 
 `Roller` is the engine that brings the Dymension RDK to life. With `Roller` we will deploy a RollApp connected to the entire inter-chain!
