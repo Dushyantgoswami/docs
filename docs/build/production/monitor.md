@@ -1,37 +1,7 @@
 ---
-title: "Run In Production"
-slug: "production"
+title: "Monitoring"
+slug: "monitor"
 ---
-
-# Running in Production
-This guide is designed to assist you in setting up the RollApp for production use. The focus will be on loading and starting the RollApp services individually. This approach enables independent logging and monitoring, giving you enhanced control and visibility over each component.
-
-In addition, we'll be setting up a monitoring system using the well-known tools, Prometheus and Grafana. This will allow us to capture key metrics from our RollApp, set up alerts and understand the performance of our application over time.
-
-By the end of this guide, you will have a production-grade local RollApp setup. Let's dive in!
-## Starting the Rollapp Services
-
-To load the rollapp services, use the following command:
-
-```bash
-$ roller services load
-```
-
-This command should return:
-
-```
-💈 Services 'sequencer', 'da-light-client' and 'relayer' been loaded successfully. To start them, use 'sudo systemctl start <service>'.
-```
-
-Next, start the services:
-
-```bash
-$ sudo systemctl start da-light-client
-$ sudo systemctl start sequencer
-$ sudo systemctl start relayer
-```
-
-## Monitoring
 
 The rollapp exposes an HTTP metric server on port 2112, with the rollapp_height and rollapp_hub_height metrics. To monitor these metrics, we will use Prometheus and Grafana.
 
@@ -72,6 +42,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 ### Setting up Prometheus and Grafana
+
 ow let's prepare for the monitoring setup. Firstly, create a new directory named 'monitoring':
 
 ```bash
@@ -83,13 +54,14 @@ Next, create a `prometheus.yml` file with the following content:
 
 ```yml
 global:
-  scrape_interval:     15s 
-  evaluation_interval: 15s
+    scrape_interval: 15s
+    evaluation_interval: 15s
 scrape_configs:
-  - job_name: 'prometheus'
-    static_configs:
-    - targets: ['172.17.0.1:2112']
+    - job_name: "prometheus"
+      static_configs:
+          - targets: ["172.17.0.1:2112"]
 ```
+
 :::info NOTE:
 We set the target to 172.17.0.1:2112 because Prometheus is running inside a Docker container, and 172.17.0.1 is the default gateway for Docker containers to access the host machine's network.
 :::
@@ -99,27 +71,27 @@ Also create a `docker-compose.yml` file with the following content:
 ```yml
 version: "3"
 services:
-  grafana:
-    image: grafana/grafana
-    ports:
-      - "3000:3000"
-    networks:
-      - monitor-net
-  prometheus:
-    image: prom/prometheus
-    ports:
-      - "9092:9090"
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    networks:
-      - monitor-net
+    grafana:
+        image: grafana/grafana
+        ports:
+            - "3000:3000"
+        networks:
+            - monitor-net
+    prometheus:
+        image: prom/prometheus
+        ports:
+            - "9092:9090"
+        volumes:
+            - ./prometheus.yml:/etc/prometheus/prometheus.yml
+        networks:
+            - monitor-net
 networks:
-  monitor-net:
+    monitor-net:
 ```
+
 :::info NOTE:
 We map Prometheus's port to 9092 on the host machine (9092:9090). This is because port 9090 will be taken by default by the Rollapp gRPC endpoint. So to avoid a port clash and still be able to access Prometheus, we use port 9092 instead.
 :::
-
 
 You're all set. To start the monitoring services, run:
 
@@ -147,4 +119,4 @@ After setting up Prometheus and Grafana, the next step is to add Prometheus as a
 
 You've successfully set up Prometheus and Grafana with your rollapp for production-level monitoring! You're now well-equipped to keep an eye on the critical metrics of your RollApp.
 
-Remember, monitoring is a continuous process, and these tools are here to assist you in maintaining the best possible performance for your RollApp. Happy monitoring! 
+Remember, monitoring is a continuous process, and these tools are here to assist you in maintaining the best possible performance for your RollApp. Happy monitoring!

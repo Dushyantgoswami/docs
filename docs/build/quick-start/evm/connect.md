@@ -3,7 +3,7 @@ title: "Connect Metamask"
 slug: connect
 ---
 
-If you've selected EVM as the application environment the `Run` command will expose RPC end-points. With an EVM RollApp running, we will now connect Metamask.
+To follow this guide please make sure to deploy an EVM RollApp with [Roller](/docs/build/quick-start/roller-quick/install.md). `Run` command exposes an EVM RPC end-point which we'll use to connect Metamask.
 
 ### Install metamask
 

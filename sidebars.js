@@ -285,9 +285,21 @@ const sidebars = {
                     ],
                 },
                 {
-                    type: "doc",
+                    type: "category",
                     label: "Run in Production",
-                    id: "build/production",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Run",
+                            id: "build/production/run",
+                        },
+                        {
+                            type: "doc",
+                            label: "Monitor",
+                            id: "build/production/monitor",
+                        },
+                    ],
                 },
             ],
         },
