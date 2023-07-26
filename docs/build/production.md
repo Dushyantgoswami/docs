@@ -86,6 +86,9 @@ scrape_configs:
     static_configs:
     - targets: ['172.17.0.1:2112']
 ```
+:::info NOTE:
+We set the target to 172.17.0.1:2112 because Prometheus is running inside a Docker container, and 172.17.0.1 is the default gateway for Docker containers to access the host machine's network.
+:::
 
 Also create a `docker-compose.yml` file with the following content:
 
@@ -115,3 +118,21 @@ You're all set. To start the monitoring services, run:
 ```bash
 $ docker-compose up -d
 ```
+
+## Adding Prometheus as a Data Source in Grafana
+
+After setting up Prometheus and Grafana, the next step is to add Prometheus as a data source in Grafana. Follow the steps below:
+
+1. Access Grafana's web interface by navigating to `http://<Your_IP>:3000` in your web browser.
+
+2. Log in using the default credentials (`admin` for both username and password). You'll be prompted to change the password on first login.
+
+3. Click on the Grafana icon in the top left corner of the screen, and then click on "Data Sources".
+
+4. Click on the "Add data source" button.
+
+5. In the "Filter by name or type" field, type "Prometheus" and select it from the dropdown menu.
+
+6. In the "URL" field, enter `http://prometheus:9090` as the Prometheus is running within the same Docker network as Grafana and is accessible via the service name as defined in the `docker-compose.yml` file.
+
+7. Click on the "Save & Test" button. If the data source is set up correctly, Grafana will display a message saying "Data source is working".
