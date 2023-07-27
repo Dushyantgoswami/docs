@@ -3,11 +3,23 @@ title: "Monitoring"
 slug: "monitor"
 ---
 
-The rollapp exposes an HTTP metric server on port 2112, with the rollapp_height and rollapp_hub_height metrics. To monitor these metrics, we will use Prometheus and Grafana.
+The rollapp exposes an HTTP metric server on port 2112, with the `rollapp_height` and `rollapp_hub_height` metrics.
+By default the metric server is disabled, to enable it:
+
+1. Edit the `~/.roller/rollapp/config/dymint.toml` file. Under the `instrumentation` section set `prometheus = true`.
+2. Restart the sequencer by running
+
+```bash
+sudo systemctl restart sequencer
+```
+
+Now that the monitor is enabled, we can setup Prometheus and Grafana to scrape the metrics and display them in a dashboard.
+
+## Setup Prometheus and Grafana
 
 Before setting them up, we need to ensure that Docker and Docker Compose are installed on your system.
 
-### Docker and Docker Compose Installation
+## Docker and Docker Compose Installation
 
 #### Docker
 
