@@ -17,13 +17,28 @@ When making a faucet request, you will receive 500 \* 10^{decimal-points} base t
 To ensure a smooth token distribution process for your network, it is crucial to provide the faucet with an adequate amount of tokens (in multiples of 500).
 :::
 
-`rollapp_evm` is the default application name of the EVM RollApp. The Custom RollApp defaults to `rollapp` but may be customized for the developers preference.
-
 Now lets transfer some tokens to the faucet address:
+
+````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="guide">
+<TabItem value="EVM RollApp" label="EVM RollApp">
 
 ```
 rollapp_evm tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 5000000000000000000000000<base-denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
 ```
+</TabItem>
+
+<TabItem value="Custom RollApp" label="Custom RollApp">
+
+```
+rollapp tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 5000000000000000000000000<base-denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
+```
+</TabItem>
+</Tabs>
+````
 
 :::warning NOTE:
 if you've set your denom to be e.g `XYZ`, the value of the `<base-denom>` should be `uXYZ` where the value after the `u` is case sensitive.
