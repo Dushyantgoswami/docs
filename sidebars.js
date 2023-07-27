@@ -303,6 +303,11 @@ const sidebars = {
                     items: [
                         {
                             type: "doc",
+                            label: "Overview",
+                            id: "build/troubleshooting/overview",
+                        },
+                        {
+                            type: "doc",
                             label: "Balances",
                             id: "build/troubleshooting/balances",
                         },
@@ -313,13 +318,13 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Ports",
-                            id: "build/troubleshooting/ports",
+                            label: "External Access",
+                            id: "build/troubleshooting/external-access",
                         },
                         {
                             type: "doc",
-                            label: "Curl",
-                            id: "build/troubleshooting/curl",
+                            label: "Status",
+                            id: "build/troubleshooting/status",
                         },
                         {
                             type: "doc",
