@@ -23,4 +23,4 @@ tail -f ~/.roller/relayer/relayer.log
 
 The relayer logs will show the latest state of the relayer and accompanying packet information.
 
-If you are having any difficulty please visit the Dymension [Discord](https://discord.gg/dymension) and share with us what you're working on in the `dev-discussion` channel!
+If you are having any difficulty please visit the Dymension [Discord](https://discord.gg/dymension) and share with us the log files and what you're working on in the `dev-discussion` channel!
