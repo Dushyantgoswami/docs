@@ -308,6 +308,16 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Hardware",
+                            id: "build/troubleshooting/hardware",
+                        },
+                        {
+                            type: "doc",
+                            label: "Ports",
+                            id: "build/troubleshooting/ports",
+                        },
+                        {
+                            type: "doc",
                             label: "Log files",
                             id: "build/troubleshooting/log-files",
                         },
