@@ -24,7 +24,7 @@ Should return:
 -   **EVM RPC** provides a RPC gateway for publishing EVM smart contracts
 -   **Node RPC** provides a RPC gateway for requests to the node
 -   **Rest API** provides a REST gateway for requests to the node
--   **Log file path** is the PATH to the RollApp logs see [trouble-shooting](./troubleshooting) for more information
+-   **Log file path** is the PATH to the RollApp logs see [trouble-shooting](/docs/build/troubleshooting/log-files.md) for more information
 -   **Rollapp root dir** is the root directory of the deployed RollApp
 
 With state updates being published to the Dymension Hub users are able to utilize [IBC](https://tutorials.cosmos.network/academy/3-ibc/1-what-is-ibc.html) for safely bridging. Let's continue and run a IBC relayer.

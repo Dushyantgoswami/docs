@@ -57,6 +57,7 @@ const sidebars = {
                     label: "Roller",
                     id: "build/roller",
                 },
+
                 {
                     type: "category",
                     label: "Quick start",
@@ -78,9 +79,38 @@ const sidebars = {
                             id: "build/quick-start/roller-quick/register",
                         },
                         {
-                            type: "doc",
+                            type: "category",
                             label: "Run",
-                            id: "build/quick-start/roller-quick/run",
+                            collapsed: "true",
+                            items: [
+                                {
+                                    type: "doc",
+                                    label: "Simple",
+                                    id: "build/quick-start/roller-quick/run",
+                                },
+                                {
+                                    type: "category",
+                                    label: "Advanced",
+                                    collapsed: "true",
+                                    items: [
+                                        {
+                                            type: "doc",
+                                            label: "DA light client",
+                                            id: "build/adv-guide/roller-adv/da-light-client",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Sequencer",
+                                            id: "build/adv-guide/roller-adv/sequencer",
+                                        },
+                                        {
+                                            type: "doc",
+                                            label: "Relayer",
+                                            id: "build/adv-guide/roller-adv/relayer",
+                                        },
+                                    ],
+                                },
+                            ],
                         },
                         {
                             type: "category",
@@ -99,9 +129,16 @@ const sidebars = {
                                 },
                             ],
                         },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Develop",
+                    collapsed: "true",
+                    items: [
                         {
                             type: "category",
-                            label: "Develop",
+                            label: "EVM RollApp",
                             collapsed: "true",
                             items: [
                                 {
@@ -126,68 +163,9 @@ const sidebars = {
                                 },
                             ],
                         },
-                    ],
-                },
-                {
-                    type: "category",
-                    label: "Advanced guide",
-                    collapsed: "true",
-                    items: [
-                        {
-                            type: "doc",
-                            label: "Install",
-                            id: "build/adv-guide/roller-adv/install-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Init",
-                            id: "build/adv-guide/roller-adv/initialize-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "Register",
-                            id: "build/adv-guide/roller-adv/register-adv",
-                        },
-                        {
-                            type: "doc",
-                            label: "DA light client",
-                            id: "build/adv-guide/roller-adv/da-light-client",
-                        },
-                        {
-                            type: "doc",
-                            label: "Sequencer",
-                            id: "build/adv-guide/roller-adv/sequencer",
-                        },
-                        {
-                            type: "doc",
-                            label: "Relayer",
-                            id: "build/adv-guide/roller-adv/relayer",
-                        },
                         {
                             type: "category",
-                            label: "Interact",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "IBC transfer",
-                                    id: "build/adv-guide/roller-adv/ibc-transfer-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Export keys",
-                                    id: "build/adv-guide/roller-adv/export-keys-adv",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Troubleshooting",
-                                    id: "build/adv-guide/roller-adv/troubleshooting",
-                                },
-                            ],
-                        },
-                        {
-                            type: "category",
-                            label: "Develop",
+                            label: "Custom RollApp",
                             collapsed: "true",
                             items: [
                                 {
@@ -298,6 +276,60 @@ const sidebars = {
                                     id: "build/adv-guide/rdk/setup/instantiate",
                                 },
                             ],
+                        },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Run in Production",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Run",
+                            id: "build/production/run",
+                        },
+                        {
+                            type: "doc",
+                            label: "Monitor",
+                            id: "build/production/monitor",
+                        },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Troubleshooting",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Overview",
+                            id: "build/troubleshooting/overview",
+                        },
+                        {
+                            type: "doc",
+                            label: "Balances",
+                            id: "build/troubleshooting/balances",
+                        },
+                        {
+                            type: "doc",
+                            label: "Hardware",
+                            id: "build/troubleshooting/hardware",
+                        },
+                        {
+                            type: "doc",
+                            label: "External Access",
+                            id: "build/troubleshooting/external-access",
+                        },
+                        {
+                            type: "doc",
+                            label: "Status",
+                            id: "build/troubleshooting/status",
+                        },
+                        {
+                            type: "doc",
+                            label: "Log files",
+                            id: "build/troubleshooting/log-files",
                         },
                     ],
                 },

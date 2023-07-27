@@ -3,7 +3,7 @@ title: "Connect Metamask"
 slug: connect
 ---
 
-We will connect Metamask, a popular EVM web browswer wallet, to the EVM RollApp deployed in the [run](../roller-quick/run.md) section.
+To follow this guide please make sure to deploy an EVM RollApp with [Roller](/docs/build/quick-start/roller-quick/install.md). `Run` command exposes an EVM RPC end-point which we'll use to connect Metamask.
 
 ### Install metamask
 

@@ -8,20 +8,38 @@ Now that we have an active IBC-enabled RollApp, let's transfer tokens using an I
 Using this faucet, users will be able to request tokens to play around with your RollApp.
 
 :::info NOTE:
- Make sure you use the right source channel. The source channel can be found in the roller [Run](run) terminal output.
- Usually if all works smoothly the default source channel is channel-0.
+Make sure you use the right source channel. The source channel can be found in the roller [Run](run) terminal output.
+Usually if all works smoothly the default source channel is channel-0.
+:::
+
+:::info NOTE:
+When making a faucet request, you will receive 500 \* 10^{decimal-points} base tokens.
+To ensure a smooth token distribution process for your network, it is crucial to provide the faucet with an adequate amount of tokens (in multiples of 500).
 :::
 
 Now lets transfer some tokens to the faucet address:
 
-:::info NOTE:
-When making a faucet request, you will receive 500 * 10^{decimal-points} base tokens.
-To ensure a smooth token distribution process for your network, it is crucial to provide the faucet with an adequate amount of tokens (in multiples of 500).
-:::
+````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="guide">
+<TabItem value="EVM RollApp" label="EVM RollApp">
 
 ```
 rollapp_evm tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 5000000000000000000000000<base-denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
 ```
+</TabItem>
+
+<TabItem value="Custom RollApp" label="Custom RollApp">
+
+```
+rollapp tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h3q6a4gjv37pgefnpt5 5000000000000000000000000<base-denom> --from rollapp_sequencer --keyring-backend test --home ~/.roller/rollapp --broadcast-mode block
+```
+</TabItem>
+</Tabs>
+````
+
 :::warning NOTE:
 if you've set your denom to be e.g `XYZ`, the value of the `<base-denom>` should be `uXYZ` where the value after the `u` is case sensitive.
 :::

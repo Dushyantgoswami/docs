@@ -40,9 +40,8 @@ Global Flags:
 Use "rollappd query hello [command] --help" for more information about a command.
 ```
 
-
 Let's check where the file installed so we could pass it to roller:
 
 `which rollappd`
 
-We can then move to deploying the application with [Roller](/docs/build/adv-guide/roller-adv/install-adv.md), by providing our custom binary path
+We can then move to deploying the application with [Roller](/docs/build/quick-start/roller-quick/install.md), by providing our custom binary path
