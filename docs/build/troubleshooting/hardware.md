@@ -14,8 +14,4 @@ Running a RollApp requires a few processes that may consume hardware resources o
 
 These requirements will continually be revisted and tested by the core team and community.
 
-To check the currently used hardware resources on the local machine input the following command:
-
-```
-TODO COMMAND
-```
+Developers should make sure their resources are according to the stated requirements and enough disk space is dedicated to running the related processes.
