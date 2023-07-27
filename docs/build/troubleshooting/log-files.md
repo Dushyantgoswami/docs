@@ -3,7 +3,7 @@ title: "Log files"
 slug: log-files
 ---
 
-This guide explain how to show the logs for both the deployed [Sequencer](/docs/build/adv-guide/roller-adv/sequencer.md) and [Relayer](/docs/build/adv-guide/roller-adv/relayer.md). This is helpful to understand the exact actions being taken behind the scenes of your running processes.
+This sections explain how to show the logs for both the deployed [Sequencer](/docs/build/adv-guide/roller-adv/sequencer.md) and [Relayer](/docs/build/adv-guide/roller-adv/relayer.md). This is helpful to understand the exact actions being taken behind the scenes of your running processes.
 
 The log paths are located in the `~/.roller` folder with the respective folders for the RollApp Sequencer and the relayer.
 
