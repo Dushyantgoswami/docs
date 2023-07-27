@@ -1,6 +1,7 @@
 ---
 title: "Run"
 slug: run
+pagination_next: build/quick-start/roller-quick/ibc-transfer
 ---
 
 Now that we've registered the RollApp on the Dymension Hub we can proceed to begin running the RollApp.
