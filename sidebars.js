@@ -318,6 +318,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Curl",
+                            id: "build/troubleshooting/curl",
+                        },
+                        {
+                            type: "doc",
                             label: "Log files",
                             id: "build/troubleshooting/log-files",
                         },
