@@ -127,11 +127,6 @@ const sidebars = {
                                     label: "Export keys",
                                     id: "build/quick-start/roller-quick/export-keys",
                                 },
-                                {
-                                    type: "doc",
-                                    label: "Troubleshooting",
-                                    id: "build/adv-guide/roller-adv/troubleshooting",
-                                },
                             ],
                         },
                     ],
@@ -298,6 +293,23 @@ const sidebars = {
                             type: "doc",
                             label: "Monitor",
                             id: "build/production/monitor",
+                        },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Troubleshooting",
+                    collapsed: "true",
+                    items: [
+                        {
+                            type: "doc",
+                            label: "Balances",
+                            id: "build/troubleshooting/balances",
+                        },
+                        {
+                            type: "doc",
+                            label: "Log files",
+                            id: "build/troubleshooting/log-files",
                         },
                     ],
                 },

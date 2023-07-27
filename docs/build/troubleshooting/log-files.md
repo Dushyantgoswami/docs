@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting"
-slug: troubleshooting
+title: "Log files"
+slug: log-files
 ---
 
 This guide explain how to show the logs for both the deployed [Sequencer](sequencer.md) and [Relayer](relayer.md). This is helpful to understand the exact actions being taken behind the scenes of your running processes.
