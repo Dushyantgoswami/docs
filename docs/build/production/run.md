@@ -25,6 +25,14 @@ This command should return:
 💈 Services 'sequencer', 'da-light-client' and 'relayer' been loaded successfully. To start them, use 'sudo systemctl start <service>'.
 ```
 
+First lets start by enabling the services:
+
+```bash
+$ sudo systemctl enable da-light-client
+$ sudo systemctl enable sequencer
+$ sudo systemctl enable relayer
+```
+
 Next, start the services:
 
 ```bash
@@ -32,5 +40,15 @@ $ sudo systemctl start da-light-client
 $ sudo systemctl start sequencer
 $ sudo systemctl start relayer
 ```
+
+Let's check the status of the services and ensure they are running:
+
+```bash
+$ sudo systemctl status da-light-client
+$ sudo systemctl status sequencer
+$ sudo systemctl status relayer
+```
+
+The status should be `active (running)` for all services.
 
 Let's continue and set up the monitoring services...
