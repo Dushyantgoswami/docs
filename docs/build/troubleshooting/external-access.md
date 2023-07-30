@@ -51,6 +51,12 @@ Check that the network is properly configured to allow incoming connections to t
 
 - Cloud Providers: If you're using a cloud provider like AWS or Google Cloud, you need to ensure that the appropriate security groups or firewall rules are in place to allow traffic to the required ports.
 
+Some common resources for configuring security groups and firewall rules in popular cloud providers:
+
+1. AWS Security Groups: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
+2. Google Cloud Firewall Rules: https://cloud.google.com/vpc/docs/firewalls
+3. Azure Network Security Groups: https://docs.microsoft.com/en-us/azure/virtual-network/security-overview
+
 ### Application Configuration
 
 Ensure the service application itself is configured to listen on the correct ports and interfaces, and isn't limited to local interfaces. Check the service's configuration files or documentation for instructions.
