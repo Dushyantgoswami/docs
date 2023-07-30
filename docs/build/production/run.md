@@ -11,7 +11,18 @@ In addition, we'll be setting up a monitoring system using the well-known tools,
 
 By the end of this guide, you will have a production-grade local RollApp setup. Let's dive in!
 
-## Starting the Rollapp Services
+## Configuring the RollApp 
+
+### Cross-Origin Resource Sharing (CORS)
+
+
+To permit different platforms such as the [Dymension portal](portal.dymension.xyz) or various wallets to access the RollApp, we must implement CORS for the necessary domains or, as another option, enable CORS for all origins.
+
+1. Open the `~/.roller/rollapp/config/config.toml` file in your favorite text editor.
+2. Under the `[rpc]` section you can see the `cors_allowed_origins` parameter. 
+3. To allow CORS from all origins, set the value to `["*"]`, otherwise, set it to the desired origins.
+
+## Starting the Rollapp
 
 To load the rollapp services, use the following command:
 
