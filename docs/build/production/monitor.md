@@ -132,3 +132,5 @@ After setting up Prometheus and Grafana, the next step is to add Prometheus as a
 You've successfully set up Prometheus and Grafana with your rollapp for production-level monitoring! You're now well-equipped to keep an eye on the critical metrics of your RollApp.
 
 Remember, monitoring is a continuous process, and these tools are here to assist you in maintaining the best possible performance for your RollApp. Happy monitoring!
+
+In the next section, we'll learn how to list your RollApp on the [Dymension Portal](https://portal.dymension.xyz).
