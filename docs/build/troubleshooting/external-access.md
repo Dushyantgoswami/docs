@@ -53,9 +53,9 @@ Check that the network is properly configured to allow incoming connections to t
 
 Some common resources for configuring security groups and firewall rules in popular cloud providers:
 
-1. AWS Security Groups: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
-2. Google Cloud Firewall Rules: https://cloud.google.com/vpc/docs/firewalls
-3. Azure Network Security Groups: https://docs.microsoft.com/en-us/azure/virtual-network/security-overview
+1. [AWS Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
+2. [Google Cloud Firewall Rules](https://cloud.google.com/vpc/docs/firewalls)
+3. [Azure Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)
 
 ### Application Configuration
 
