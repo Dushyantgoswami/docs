@@ -381,8 +381,8 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "Reset and troubleshooting",
-                    id: "validate/dymension-hub/reset-node",
+                    label: "Troubleshooting",
+                    id: "validate/dymension-hub/troubleshooting",
                 },
             ],
         },
