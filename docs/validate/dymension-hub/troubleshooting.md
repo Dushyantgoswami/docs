@@ -1,23 +1,29 @@
 ---
-title: "Reset and troubleshooting"
-slug: "reset-node"
+title: "Troubleshooting"
+slug: "troubleshooting"
 ---
 
-Occasionally you may need to perform a comlpete reset of your node due to data corruption or misconfiguration. Resetting will remove all data in ~/.dymension/data and the addressbook in ~/.dymension/config/addrbook.json and reset the node to genesis state.
+Multiple issues can arise when running a node. This page provides possible solutions to some of the most common issues.
 
-Perform a complete reset of your dymd:
+### Reset node
+
+From time to time, you might encounter the need to fully reset your node due to issues like data corruption or configuration errors. This reset operation will eliminate all the data stored in ~/.dymension/data as well as the address book located in ~/.dymension/config/addrbook.json, reverting the node to its genesis state.
+
+To execute a comprehensive reset of your dymd, use the following command:
 
 ```sh
   dymd tendermint unsafe-reset-all
 ```
 
-Running this command successfully will produce the following log:
+Once this command is run successfully, it will generate the following log:
 
 ```
 [ INF ] Removed existing address book file=/home/user/.dymension/config/addrbook.json
 [ INF ] Removed all blockchain history dir=/home/user/.dymension/data
 [ INF ] Reset private validator file to genesis state keyFile=/home/user/.dymension/config/priv_validator_key.json stateFile=/home/user/.dymension/data/priv_validator_state.json
 ```
+
+This log indicates that the address book and all blockchain history have been removed, and the private validator file has been reset to the genesis state.
 
 ### Change Genesis
 
