@@ -124,6 +124,15 @@ roller config init <rollapp-id> <denom>
 
 <div>
     <details>
+    <summary>token-supply (optional)</summary>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
+    </details>
+</div>
+
+<div>
+    <details>
     <summary>hub (optional)</summary>
         <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
         <div><b>- Local</b>: Uses localhost Dymension Hub node (please visit <a href="/validate/dymension-hub/build-dymd">here </a> to run a node) and mock DA network</div>
@@ -134,10 +143,22 @@ roller config init <rollapp-id> <denom>
 
 <div>
     <details>
-    <summary>token-supply (optional)</summary>
-        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
-        <br />
-        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
+    <summary>da (optional)</summary>
+        <div>The DA layer for the RollApp. Can be one of 'Celestia, Avail, Mock' (default "Celestia")</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>rollapp-binary (optional)</summary>
+        <div>RollApp binary should be passed only if you built a custom RollApp (default "/usr/local/bin/rollapp_evm")</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>vm-type (optional)</summary>
+        <div>RollApp type [evm, sdk]. Defaults to EVM (default "evm")</div>
     </details>
 </div>
 
