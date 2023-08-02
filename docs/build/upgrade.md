@@ -43,6 +43,9 @@ sudo systemctl stop da-light-client
 
 3. Execute the `migrate` command:
 
+:::info NOTE:
+In case you are using a custom home directory, you will need to specify it using the `--home` flag.
+:::
 ```sh
 roller migrate
 ```
