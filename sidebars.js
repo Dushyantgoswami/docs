@@ -296,7 +296,7 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "List Rollapp",
+                            label: "List RollApp",
                             id: "build/production/list-your-rollapp",
                         },
                     ],

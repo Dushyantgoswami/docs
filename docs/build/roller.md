@@ -21,6 +21,7 @@ With `Roller` developers are able to deploy a RollApp within minutes.
 ### Supported OS
 
 -   Linux AMD64
+-   Linux ARM64
 -   Mac AMD64
 -   Mac ARM64
 

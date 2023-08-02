@@ -124,6 +124,15 @@ roller config init <rollapp-id> <denom>
 
 <div>
     <details>
+    <summary>token-supply (optional)</summary>
+        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
+        <br />
+        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
+    </details>
+</div>
+
+<div>
+    <details>
     <summary>hub (optional)</summary>
         <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
         <div><b>- Local</b>: Uses localhost Dymension Hub node (please visit <a href="/validate/dymension-hub/build-dymd">here </a> to run a node) and mock DA network</div>
@@ -134,10 +143,22 @@ roller config init <rollapp-id> <denom>
 
 <div>
     <details>
-    <summary>token-supply (optional)</summary>
-        <div>This is the initial token supply in the RollApp (default: 1,000,000,000)</div>
-        <br />
-        <div>Note: Tokens amounts are multiplied by 10^18 (18 additional decimal places). As such when specifying CLI transactions be attentive to the amount of decimals each transaction should have.</div>
+    <summary>da (optional)</summary>
+        <div>The DA layer for the RollApp. Can be one of 'Celestia, Avail, Mock' (default "Celestia")</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>rollapp-binary (optional)</summary>
+        <div>RollApp binary should be passed only if you built a custom RollApp (default "/usr/local/bin/rollapp_evm")</div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>vm-type (optional)</summary>
+        <div>RollApp type [evm, sdk]. Defaults to EVM (default "evm")</div>
     </details>
 </div>
 
@@ -170,17 +191,28 @@ $request dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
 $request dym1j968h4avztqmgeh3bn4p2tfh4ptxp055e056sy
 ```
 
-Additionally, for Celestia network tokens users may use the `celestia-faucet` [channel](https://discord.com/channels/956961633165529098/1128048548999610451) on the Dymension discord with the following command as an example:
-
-```
-$request celestia1emd05tmxqy5z9mlccvudrmj8hnmds49t2le2r2
-```
-
 You can then check the balance of the address with:
 
 ```
 $balance dym15ad5y52e3zx784hl0b4uyw5huctktwty2dq2vn
 ```
+
+<Tabs>
+<TabItem value="Celestia funding" label="Celestia funding">
+For Celestia network tokens users may use the <a href="https://discord.com/channels/956961633165529098/1128048548999610451">celestia-faucet</a> on the Dymension discord with the following command as an example:
+
+```
+$request celestia1emd05tmxqy5z9mlccvudrmj8hnmds49t2le2r2
+```
+</TabItem>
+<TabItem value="Avail funding" label="Avail funding">
+For Avail network tokens users may use the <b>dymension-faucet</b> channel on <a href="https://discord.gg/fzbbcKDuUb">Avail's discord</a> with the following command as an example:
+
+```
+/deposit 5CX88GGvxDia5v6fkzwdvTCpqvvEHFo1oKujayxqjzejhP9e
+```
+</TabItem>
+</Tabs>
 
 </TabItem>
 
