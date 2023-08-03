@@ -46,11 +46,23 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ### Setting up Prometheus and Grafana
 
-ow let's prepare for the monitoring setup. Firstly, create a new directory named 'monitoring':
+Now let's prepare for the monitoring setup. Firstly, create a new directory named 'monitoring':
 
 ```bash
 mkdir monitoring
 cd monitoring
+```
+
+Now, let's create two directories to persist data for Prometheus and Grafana:
+
+```bash
+mkdir prometheus_data grafana_data
+```
+
+Now update the ownership of these directories to the user we will use in the docker-compose file:
+
+```bash
+sudo chown nobody:nogroup prometheus_data grafana_data
 ```
 
 Next, create a `prometheus.yml` file with the following content:
@@ -74,22 +86,27 @@ Also create a `docker-compose.yml` file with the following content:
 ```yml
 version: "3"
 services:
-    grafana:
-        image: grafana/grafana
-        ports:
-            - "3000:3000"
-        networks:
-            - monitor-net
-    prometheus:
-        image: prom/prometheus
-        ports:
-            - "9092:9090"
-        volumes:
-            - ./prometheus.yml:/etc/prometheus/prometheus.yml
-        networks:
-            - monitor-net
+  grafana:
+    image: grafana/grafana
+    user: "65534:65534"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana_data:/var/lib/grafana
+    networks:
+      - monitor-net
+  prometheus:
+    image: prom/prometheus
+    user: "65534:65534"
+    ports:
+      - "9092:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus_data:/prometheus
+    networks:
+      - monitor-net
 networks:
-    monitor-net:
+  monitor-net:
 ```
 
 :::info NOTE:
