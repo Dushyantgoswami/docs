@@ -118,6 +118,21 @@ After setting up Prometheus and Grafana, the next step is to add Prometheus as a
 
 6. Click on the "Save & Test" button.
 
+## Incorporating a Dashboard to Monitor RollApp
+1. Initiate by clicking the prominent 'Create your first dashboard' button positioned at the center of the Grafana home screen.
+
+2. Proceed by clicking the 'Add Visualization' button.
+
+3. From the assortment of data sources, choose 'Prometheus'.
+
+4. In the 'Query' segment located at the screen's lower section, pick the rollapp_height metric from the dropdown menu.
+
+5. To introduce an additional query, click the '+ Query' button and select the rollapp_hub_height metric from the dropdown menu.
+
+6. Execute the queries by clicking the 'Run Queries' button and view the results.
+
+7. To retain the dashboard configuration, click the 'Save' button located at the screen's top right corner.
+
 ## Congratulations! 🎉
 
 You've successfully set up Prometheus and Grafana with your rollapp for production-level monitoring! You're now well-equipped to keep an eye on the critical metrics of your RollApp.
