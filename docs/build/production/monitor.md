@@ -46,11 +46,23 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ### Setting up Prometheus and Grafana
 
-ow let's prepare for the monitoring setup. Firstly, create a new directory named 'monitoring':
+Now let's prepare for the monitoring setup. Firstly, create a new directory named 'monitoring':
 
 ```bash
 mkdir monitoring
 cd monitoring
+```
+
+Now, let's create two directories to persist data for Prometheus and Grafana:
+
+```bash
+mkdir prometheus_data grafana_data
+```
+
+Now update the ownership of these directories to the user we will use in the docker-compose file:
+
+```bash
+sudo chown nobody:nogroup prometheus_data grafana_data
 ```
 
 Next, create a `prometheus.yml` file with the following content:
@@ -74,22 +86,27 @@ Also create a `docker-compose.yml` file with the following content:
 ```yml
 version: "3"
 services:
-    grafana:
-        image: grafana/grafana
-        ports:
-            - "3000:3000"
-        networks:
-            - monitor-net
-    prometheus:
-        image: prom/prometheus
-        ports:
-            - "9092:9090"
-        volumes:
-            - ./prometheus.yml:/etc/prometheus/prometheus.yml
-        networks:
-            - monitor-net
+  grafana:
+    image: grafana/grafana
+    user: "65534:65534"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana_data:/var/lib/grafana
+    networks:
+      - monitor-net
+  prometheus:
+    image: prom/prometheus
+    user: "65534:65534"
+    ports:
+      - "9092:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus_data:/prometheus
+    networks:
+      - monitor-net
 networks:
-    monitor-net:
+  monitor-net:
 ```
 
 :::info NOTE:
@@ -117,6 +134,21 @@ After setting up Prometheus and Grafana, the next step is to add Prometheus as a
 5. In the "URL" field, enter `http://prometheus:9090` as the Prometheus is running within the same Docker network as Grafana and is accessible via the service name as defined in the `docker-compose.yml` file.
 
 6. Click on the "Save & Test" button.
+
+## Incorporating a Dashboard to Monitor RollApp
+1. Initiate by clicking the prominent 'Create your first dashboard' button positioned at the center of the Grafana home screen.
+
+2. Proceed by clicking the 'Add Visualization' button.
+
+3. From the assortment of data sources, choose 'Prometheus'.
+
+4. In the 'Query' segment located at the screen's lower section, pick the rollapp_height metric from the dropdown menu.
+
+5. To introduce an additional query, click the '+ Query' button and select the rollapp_hub_height metric from the dropdown menu.
+
+6. Execute the queries by clicking the 'Run Queries' button and view the results.
+
+7. To retain the dashboard configuration, click the 'Save' button located at the screen's top right corner.
 
 ## Congratulations! 🎉
 

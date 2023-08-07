@@ -343,6 +343,11 @@ const sidebars = {
                         },
                     ],
                 },
+                {
+                    type: "doc",
+                    label: "Upgrade",
+                    id: "build/upgrade",
+                },
             ],
         },
         {
