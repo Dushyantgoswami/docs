@@ -17,18 +17,6 @@ Developers will are expected to provide the following end-points under [https](h
 If you are using a self-signed certificate for [https](https://en.wikipedia.org/wiki/HTTPS), please add it to your browser's trusted certificates.
 :::
 
-### IBC Testing
-
-Developers are able to permission-lessly add their RollApp to the IBC section of the Portal which will appear only on their local machine. This is designed for easy testing of the IBC functionality.
-
-On the `IBC` section of the `Portal`, select the drop-down networks under `Send From`. There you will see an option called `Add a RollApp manually`.
-
-<div class="image-container-secondary">
-    <img class="image--primary" src={require('@site/static/img/add-a-rollapp-manually.png').default} alt="add-a-rollapp" />
-</div>
-
-Enter the information requested as specified [above](#interacting-with-the-rollapp).
-
 ## List RollApp
 
 For developers with the `RollApp-fam` discord role, they're are eligible for listing the RollApp so everyone can see. Make sure to have completed the following requirements:

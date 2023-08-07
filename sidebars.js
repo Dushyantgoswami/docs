@@ -127,6 +127,11 @@ const sidebars = {
                                     label: "Export keys",
                                     id: "build/quick-start/roller-quick/export-keys",
                                 },
+                                {
+                                    type: "doc",
+                                    label: "Test with Portal",
+                                    id: "build/quick-start/roller-quick/test-with-portal",
+                                },
                             ],
                         },
                     ],
