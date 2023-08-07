@@ -299,6 +299,11 @@ const sidebars = {
                             label: "List RollApp",
                             id: "build/production/list-your-rollapp",
                         },
+                        {
+                            type: "doc",
+                            label: "RollApp data",
+                            id: "build/production/rollapp-data",
+                        },
                     ],
                 },
                 {
