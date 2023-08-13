@@ -28,7 +28,7 @@ With `Roller` developers are able to deploy a RollApp within minutes.
 ### Recommended hardware
 
 -   Dual Core
--   At least 500GB of SSD disk storage
+-   At least 100GB of SSD disk storage
 -   At least 16GB of memory (RAM)
 -   At least 100mbps network bandwidth
 
