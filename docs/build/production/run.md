@@ -21,7 +21,7 @@ set `cors_allowed_origins` to the desired origins if you wish to restrict CORS.
 To load the rollapp services, use the following command:
 
 ```bash
-$ roller services load
+roller services load
 ```
 
 This command should return:
@@ -30,30 +30,67 @@ This command should return:
 💈 Services 'sequencer', 'da-light-client' and 'relayer' been loaded successfully. To start them, use 'sudo systemctl start <service>'.
 ```
 
-First lets start by enabling the services:
+Now lets continue with starting the enabled the services.
+
+Due to the present discrepancy where only the Celestia rollapp operates a light client, compared to Avail, we will divide the guidelines into two sections:
+
+````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="guide">
+
+<TabItem value="Celestia" label="Celestia">
 
 ```bash
-$ sudo systemctl enable da-light-client
-$ sudo systemctl enable sequencer
-$ sudo systemctl enable relayer
+sudo systemctl enable da-light-client
+sudo systemctl enable sequencer
+sudo systemctl enable relayer
 ```
 
 Next, start the services:
 
 ```bash
-$ sudo systemctl start da-light-client
-$ sudo systemctl start sequencer
-$ sudo systemctl start relayer
+sudo systemctl start da-light-client
+sudo systemctl start sequencer
+sudo systemctl start relayer
 ```
 
 Let's check the status of the services and ensure they are running:
 
 ```bash
-$ sudo systemctl status da-light-client
-$ sudo systemctl status sequencer
-$ sudo systemctl status relayer
+sudo systemctl status da-light-client
+sudo systemctl status sequencer
+sudo systemctl status relayer
 ```
+</TabItem>
+
+<TabItem value="Avail" label="Avail">
+
+```bash
+sudo systemctl enable sequencer
+sudo systemctl enable relayer
+```
+
+Next, start the services:
+
+```bash
+sudo systemctl start sequencer
+sudo systemctl start relayer
+```
+
+Let's check the status of the services and ensure they are running:
+
+```bash
+sudo systemctl status sequencer
+sudo systemctl status relayer
+```
+</TabItem>
+
+</Tabs>
+````
+
 
 The status should be `active (running)` for all services.
 
-Let's continue and set up the monitoring services...
+Let's continue with setting up the monitoring services.
