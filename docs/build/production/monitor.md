@@ -127,7 +127,7 @@ sudo docker-compose ps
 
 After setting up Prometheus and Grafana, the next step is to add Prometheus as a data source in Grafana. Follow the steps below:
 
-1. Access Grafana's web interface by navigating to `http://<Your_IP>:3000` in your web browser.
+1. Access Grafana's web interface by navigating to `http://<Your_IP>:3000` in your web browser. Make sure the port is exposed in your firewall.
 
 2. Log in using the default credentials (`admin` for both username and password). You'll be prompted to change the password on first login.
 
