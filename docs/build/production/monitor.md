@@ -165,4 +165,8 @@ Remember, monitoring is a continuous process, and these tools are here to assist
 Setting up alerts is out of the scope of this guide, but you can find more information on how to do so [here](https://prometheus.io/docs/alerting/latest/overview/).
 :::
 
+:::info NOTE:
+A key metric to monitor is the `rollapp_height` metric. If the height of your RollApp is not increasing, it means that your RollApp is not producing blocks. This could be due to a number of reasons, such as a lack of balance for base layers, error, misconfiguration etc.
+:::
+
 In the next section, we'll learn how to list your RollApp on the [Dymension Portal](https://portal.dymension.xyz).
