@@ -301,6 +301,11 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "RollApp info",
+                            id: "build/production/info",
+                        },
+                        {
+                            type: "doc",
                             label: "List RollApp",
                             id: "build/production/list-your-rollapp",
                         },
