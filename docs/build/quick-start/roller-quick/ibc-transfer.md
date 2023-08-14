@@ -30,6 +30,10 @@ The source channel, in this case `channel-0`, will be used in the following comm
 
 Next, let's make the actual transfer:
 
+:::warning NOTE:
+if the following command, if you've set your denom to be e.g `XYZ`, the value of the `<base-denom>` should be `uXYZ` where the value after the `u` is case sensitive.
+:::
+
 ````mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -50,10 +54,6 @@ rollapp tx ibc-transfer transfer transfer <src-channel> dym1g8sf7w4cz5gtupa6y62h
 </TabItem>
 </Tabs>
 ````
-
-:::warning NOTE:
-if you've set your denom to be e.g `XYZ`, the value of the `<base-denom>` should be `uXYZ` where the value after the `u` is case sensitive.
-:::
 
 :::info Note:
 The large amount of `0`s for the RollApp denom are due to the fact that the `base denom` is defined as 10^18 for the `denom` as noted in the [initialization](/docs/build/quick-start/roller-quick/initialize.mdx) section.
