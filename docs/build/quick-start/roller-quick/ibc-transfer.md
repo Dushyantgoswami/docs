@@ -61,7 +61,7 @@ This is similar to how Ethereum uses `wei` as the base unit and `ether` as the m
 :::
 
 Users should expect an approximately 15 minute delay between IBC transaction submission and receipt at the destination address.
-This is in order to simulate the fraud proof period where only after it's passed the funds are available on the Dymension Hub.
+This is in order to simulate the fraud proof period where only after it has passed will the funds be available on the Dymension Hub.
 
 Run the following command to check the balance of your RollApp token on the Dymension Hub's devnet faucet channel on [Discord](https://discord.com/invite/dymension):
 
