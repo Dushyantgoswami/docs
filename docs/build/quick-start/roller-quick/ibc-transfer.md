@@ -79,6 +79,6 @@ Once there are RollApp tokens in the Dymension Hub devnet faucet, users will be 
 $request <user-address> <rollapp-id>
 ```
 
-From there it is recommended to utilize the [Portal](https://portal.dymension.xyz/) to IBC transfer to the respective RollApp.
+From there it is recommended to utilize the [Portal](https://portal.dymension.xyz/) for IBC transfers to the respective RollApp.
 
 Next lets go over on how to export your keys.
