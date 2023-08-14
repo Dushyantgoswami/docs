@@ -3,9 +3,9 @@ title: "Test with Portal"
 slug: test-with-portal
 ---
 
-Developers are able to permission-lessly add their RollApp to the IBC section of the Portal which will appear only on their local machine. This is designed for easy testing of the IBC functionality.
+Developers are able to permission-lessly add their RollApp to the IBC section of the [Portal](https://portal.dymension.xyz/) which will appear only on their local machine. This is designed for easy testing of the IBC functionality.
 
-On the `IBC` section of the `Portal`, select the drop-down networks under `Send From`. There you will see an option called `Add a RollApp manually`.
+On the `IBC` section of the [Portal](https://portal.dymension.xyz/), select the drop-down networks under `Send From`. There you will see an option called `Add a RollApp manually`.
 
 <div class="image-container-secondary">
     <img class="image--primary" src={require('@site/static/img/add-a-rollapp-manually.png').default} alt="add-a-rollapp" />
