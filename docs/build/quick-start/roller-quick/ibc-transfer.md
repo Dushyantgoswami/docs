@@ -8,16 +8,27 @@ Now that we have an active IBC-enabled RollApp, let's transfer tokens using an I
 Using this faucet, users will be able to request tokens to play around with your RollApp.
 
 :::info NOTE:
-Make sure you use the right source channel. The source channel can be found in the roller [Run](run) terminal output.
-Usually if all works smoothly the default source channel is channel-0.
-:::
-
-:::info NOTE:
 When making a faucet request, you will receive 500 \* 10^{decimal-points} base tokens.
 To ensure a smooth token distribution process for your network, it is crucial to provide the faucet with an adequate amount of tokens (in multiples of 500).
 :::
 
-Now lets transfer some tokens to the faucet address:
+### Transfer IBC Tokens
+
+First, let's find the source channel for our RollApp:
+
+```bash
+roller relayer channel show
+```
+
+The output should look similar to the following:
+
+```bash
+💈 Relayer Channels: src, channel-0 <-> channel-1, dst
+```
+
+The source channel, in this case `channel-0`, will be used in the following command and will be referred to as `<src-channel>`.
+
+Next, let's make the actual transfer:
 
 ````mdx-code-block
 import Tabs from '@theme/Tabs';
