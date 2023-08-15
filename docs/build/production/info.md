@@ -43,6 +43,10 @@ roller relayer channel show
 
 Will return the relevant channel the relayer is operating. Please see below for an example output:
 
+:::info NOTE:
+It can take up to 15 mins for the relayer to establish a channel.
+:::
+
 ```
 💈 Relayer Channels: src, channel-0 <-> channel-1, dst
 ```
