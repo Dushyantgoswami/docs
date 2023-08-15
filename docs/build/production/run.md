@@ -95,7 +95,10 @@ sudo systemctl status relayer
 </Tabs>
 ````
 
-
 The status should be `active (running)` for all services.
+
+:::warning NOTE
+In case of any failed services, please try to run the relevant [services separately](../adv-guide/roller-adv/da-light-client.md) in order to get more information about the error.
+:::
 
 Let's continue with setting up the monitoring services.
