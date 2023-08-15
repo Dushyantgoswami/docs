@@ -6,7 +6,7 @@ slug: "list-rollapp"
 Now that we have a RollApp deployed, we can list it on the [Dymension Portal](https://portal.dymension.xyz). This will allow other users to discover and interact with the RollApp.
 
 :::info NOTE:
-Only developers with the `RollApp-fam` discord role are eligible for listing their RollApp on their portal.
+Only developers with the `RollApp-fam` discord role are eligible for listing their RollApp on the portal.
 :::
 
 ### Interacting with the RollApp
