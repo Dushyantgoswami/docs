@@ -24,9 +24,9 @@ roller version
 Should output:
 
 ```
-💈 Roller version v0.1.4
-💈 Build time: 2023-07-31T13:46:48+0000"
-💈 Git commit: 478fa2d63a311b9d9956f1b81d64cfbbb09e9d25
+💈 Roller version <latest-version>
+💈 Build time: <build-time>
+💈 Git commit: <git-commit>
 ```
 
 With `Roller` now installed we'll proceed to initializing the RollApp.

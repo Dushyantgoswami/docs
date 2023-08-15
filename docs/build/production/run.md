@@ -7,6 +7,11 @@ slug: "run"
 
 This guide is designed to assist you in setting up the RollApp for production use. The focus will be on loading and starting the RollApp services individually. This approach enables independent logging and monitoring, giving you enhanced control and visibility over each component.
 
+:::info NOTE
+The guide assumes you've already registered your rollapp using [roller](../roller.md) by following the steps in the [quick start](../quick-start/roller-quick/install). 
+If you haven't, please do so now.
+:::
+
 In addition, we'll be setting up a monitoring system using the well-known tools, Prometheus and Grafana. This will allow us to capture key metrics from our RollApp, set up alerts and understand the performance of our application over time.
 
 By the end of this guide, you will have a production-grade local RollApp setup. Let's dive in!
