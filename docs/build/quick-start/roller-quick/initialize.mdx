@@ -172,7 +172,7 @@ roller config init <rollapp-id> <denom>
 ### Address funding
 
 <Tabs>
-<TabItem value="Devnet funding" label="Devnet funding">
+<TabItem value="Devnet Hub" label="Devnet Hub">
 
 After initializing the RollApp, addresses to fund should be returned to you:
 
@@ -216,7 +216,7 @@ For Avail network tokens users may use the <b>dymension-faucet</b> channel on <a
 
 </TabItem>
 
-<TabItem value="Local funding" label="Local funding">
+<TabItem value="Local Hub" label="Local Hub">
 
 After initializing the RollApp, addresses to fund should be returned to you:
 
@@ -227,10 +227,16 @@ Sequencer | Address used to publish state updates to the Dymension Hub
 Relayer   | Address that handles the relaying of IBC packets
 ```
 
+To start the local Dymension hub, run:
+
+```
+dymd start --home ~/.roller/local-hub
+```
+
 While the Dymension Hub full node is running, publish the following transaction via CLI:
 
 ```
-dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test
+dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test --home ~/.roller/local-hub
 ```
 
 You can then check the balance of the address with:
