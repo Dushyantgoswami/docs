@@ -112,27 +112,27 @@ const sidebars = {
                                 },
                             ],
                         },
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Interact",
+                    collapsed: "true",
+                    items: [
                         {
-                            type: "category",
-                            label: "Interact",
-                            collapsed: "true",
-                            items: [
-                                {
-                                    type: "doc",
-                                    label: "IBC transfer",
-                                    id: "build/quick-start/roller-quick/ibc-transfer",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Export keys",
-                                    id: "build/quick-start/roller-quick/export-keys",
-                                },
-                                {
-                                    type: "doc",
-                                    label: "Test with Portal",
-                                    id: "build/quick-start/roller-quick/test-with-portal",
-                                },
-                            ],
+                            type: "doc",
+                            label: "IBC transfer",
+                            id: "build/quick-start/roller-quick/ibc-transfer",
+                        },
+                        {
+                            type: "doc",
+                            label: "Export keys",
+                            id: "build/quick-start/roller-quick/export-keys",
+                        },
+                        {
+                            type: "doc",
+                            label: "Test with Portal",
+                            id: "build/quick-start/roller-quick/test-with-portal",
                         },
                     ],
                 },
