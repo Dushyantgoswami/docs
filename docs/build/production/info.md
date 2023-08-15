@@ -44,7 +44,7 @@ roller relayer channel show
 Will return the relevant channel the relayer is operating. Please see below for an example output:
 
 :::info NOTE:
-It can take up to 15 mins for the relayer to establish a channel.
+It can take around 15-30 minutes for the relayer to establish a channel.
 :::
 
 ```
