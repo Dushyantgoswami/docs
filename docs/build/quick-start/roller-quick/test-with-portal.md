@@ -13,7 +13,7 @@ On the `IBC` section of the [Portal](https://portal.dymension.xyz/), select the 
     <img class="image--primary" src={require('@site/static/img/add-a-rollapp-manually.png').default} alt="add-a-rollapp" />
 </div>
 
-Developers can provide the following end-points either under [https](https://en.wikipedia.org/wiki/HTTPS) or [http](https://en.wikipedia.org/wiki/HTTP):
+Developers can provide the following end-points either under [http](https://en.wikipedia.org/wiki/HTTP) or [https](https://en.wikipedia.org/wiki/HTTPS):
 
 :::warning Note:
 HTTP will only function when you run rollapp on the local machine, specifically using the loopback interface
