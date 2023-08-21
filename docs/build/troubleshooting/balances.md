@@ -11,17 +11,38 @@ To check the balance of the RollApp Sequencer and IBC relayer on the Dymension H
 $balance <ADDRESS>
 ```
 
-To check the balance of the RollApp Sequencer on the DA network please visit Dymension's [discord](https://discord.gg/dymension) and input the following command in the [celestia-faucet channel](https://discord.com/channels/956961633165529098/1128048548999610451):
+To check the balance of the RollApp Sequencer on the DA network:
+
+````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="guide">
+<TabItem value="Celestia" label="Celestia">
+
+ Please visit Dymension's [discord](https://discord.gg/dymension) and input the following command in the [celestia-faucet channel](https://discord.com/channels/956961633165529098/1128048548999610451):
 
 ```
 $balance <ADDRESS>
 ```
 
+</TabItem>
+
+<TabItem value="Avail" label="Avail">
+
+Please visit the <b>dymension-faucet</b> channel on <a href="https://discord.gg/fzbbcKDuUb">Avail's discord</a> with the following command:
+
+```
+/balance <ADDRESS>
+```
+
+</TabItem>
+</Tabs>
+````
+
 To check the balance of the IBC relayer on the RollApp, input the following command while the RollApp Sequencer node is running:
 
 ````mdx-code-block
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs groupId="guide">
 <TabItem value="EVM RollApp" label="EVM RollApp">
