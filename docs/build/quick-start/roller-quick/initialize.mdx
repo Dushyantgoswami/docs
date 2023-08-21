@@ -172,7 +172,51 @@ roller config init <rollapp-id> <denom>
 ### Address funding
 
 <Tabs>
-<TabItem value="Devnet Hub" label="Devnet Hub">
+
+<TabItem value="Froopyland" label="Froopyland">
+
+After initializing the RollApp, addresses to fund should be returned to you:
+
+```
+🔑 Addresses:
+
+Sequencer <network> | Address used to publish state updates to the Dymension Hub
+Relayer   <network> | Address that handles the relaying of IBC packets
+DA        <network> | Address used to publish data on-chain to the DA network
+```
+
+In Dymension's [discord](https://discord.gg/dymension) please fund the Dymension Hub addresses in the `froopyland-faucet` [channel](https://discord.com/channels/956961633165529098/1143231362468434022) with the following command as an example:
+
+```
+$request <dym-address>
+$request <dym-address>
+```
+
+You can then check the balance of the address with:
+
+```
+$balance <dym-address>
+```
+
+<Tabs>
+<TabItem value="Celestia funding" label="Celestia funding">
+For Celestia network tokens users may use the <a href="https://discord.com/channels/956961633165529098/1128048548999610451">celestia-faucet</a> on the Dymension discord with the following command as an example:
+
+```
+$request <celestia-address>
+```
+</TabItem>
+<TabItem value="Avail funding" label="Avail funding">
+For Avail network tokens users may use the <b>dymension-faucet</b> channel on <a href="https://discord.gg/fzbbcKDuUb">Avail's discord</a> with the following command as an example:
+
+```
+/deposit <avail-address>
+```
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem value="Devnet" label="Devnet">
 
 After initializing the RollApp, addresses to fund should be returned to you:
 
