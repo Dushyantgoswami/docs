@@ -55,12 +55,12 @@ If the private Dymension Hub network is set up correctly, your Dymd node will be
 
 **Genesis file** specifies the account balances and parameters at the start of the network to use when replaying transactions and syncing.
 
--   Chain-id: 35-C
+-   Chain-id: Froopyland
 -   Binaries: https://github.com/dymensionxyz/dymension.git
--   Version: v0.2.0-beta
--   Git commit: 987e33407911c0578251f3ace95d2382be7e661d
--   Genesis: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/35-C/genesis.json)
--   Seed nodes: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/35-C/seeds.txt)
+-   Version: v1.0.2-beta
+-   Git commit: 74457e007dc802bd9c0be979baa5d83ab4d3226e
+-   Genesis: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/genesis.json)
+-   Seed nodes: [Link here](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/seeds.txt)
 
 For default `dymd` configurations, the `genesis` should be placed under `~/.dymension/config/genesis.json`.
 

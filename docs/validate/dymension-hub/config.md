@@ -23,7 +23,7 @@ We recommend saving the testnet chain-id into your Dymension client.toml. This w
 Initialize the node with a human-readable name:
 
 ```bash
-dymd init <MONIKER> --chain-id 35-C
+dymd init <MONIKER> --chain-id froopyland_100-1
 ```
 
 Monikers can only contain ASCII characters. Using Unicode characters will render your node unreachable by other peers in the network.
@@ -45,7 +45,7 @@ You can update your node's moniker by editing the `moniker` field in `~/.dymensi
 2. Modify `minimum-gas-prices` and set the minimum price of gas a validator will accept to validate a transaction and to prevent spam.
 
 The recommended setting is:
-`minimum-gas-prices = "0.15udym"`
+`minimum-gas-prices = "0.25udym"`
 
 **Example**:
 
@@ -54,7 +54,7 @@ The recommended setting is:
 # transaction. A transaction's fees must meet the minimum of any denomination
 # specified in this config (e.g. 0.25token1;0.0001token2).
 
-minimum-gas-prices = "0.15udym"
+minimum-gas-prices = "0.25udym"
 
 ```
 
@@ -76,18 +76,18 @@ seed_mode = true
 
 ### Add `seeds`
 
-To manually identify seed nodes, edit the following setting in `config.toml`. Listed below is the Dymension Core Team seed node for Dymension's 35-C testnet. For community provided seed nodes please visit the GitHub repository of the [testnet](https://github.com/dymensionxyz/testnets/tree/main/dymension-hub/35-C).
+To manually identify seed nodes, edit the following setting in `config.toml`. Listed below is one of the community operated seed nodes for Dymension's Froopyland incentivized testnet. For more community provided seed nodes please visit the GitHub repository of the [testnet](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/seeds.txt).
 
 ```toml
 # Comma separated list of seed nodes to connect to
-seeds = "c6cdcc7f8e1a33f864956a8201c304741411f219@3.214.163.125:26656"
+seeds = "284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:26157"
 ```
 
 ### Add `persistent_peers`
 
 The nodes you specify are the trusted persistent peers that can help anchor your node in the p2p network. If the connection fails, they are dialed and automatically redialed for 24 hours. The automatic redial functionality uses exponential backoff and stops after 24 hours of trying to connect.
 
-If the value of `persistent_peers_max_dial_period` is more than zero, the pause between each call to each persistent peer will not exceed `persistent_peers_max_dial_period` during exponential backoff, and the automatic redial process continues. The following is an example, for relevant peers see the [testnet](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/35-C) GitHub repository.
+If the value of `persistent_peers_max_dial_period` is more than zero, the pause between each call to each persistent peer will not exceed `persistent_peers_max_dial_period` during exponential backoff, and the automatic redial process continues. The following is an example, for relevant peers see the [testnet](https://github.com/dymensionxyz/testnets/blob/main/dymension-hub/froopyland/peers.txt) GitHub repository.
 
 ```toml
 # Comma separated list of nodes to keep persistent connections to.

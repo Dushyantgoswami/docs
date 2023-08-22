@@ -4,7 +4,7 @@ title: "Upgrade"
 slug: "upgrade"
 ---
 
-Roller presents the `migrate` command as a simple solution for upgrading your Roller and its associated services. This function does the intricate work on your behalf. To get a clear understanding of what changes will be implemented in your Roller and to identify any new configuration possibilities you might want to use, it is advised to check out the version's changelog before upgrading.
+Roller presents a `migrate` command as a simple solution for upgrading your Roller and its associated services. This function does the intricate work on your behalf. To get a clear understanding of what changes will be implemented in your Roller and to identify any new configuration possibilities you might want to use, it is advised to check out the version's changelog before upgrading.
 
 ### Upgrade Steps
 
@@ -30,7 +30,7 @@ Use ctrl+c in the terminal where you started roller run
 ```
 </TabItem>
 
-<TabItem value="systemctl" label="systemctl">
+<TabItem value="systemd" label="systemd">
 
 ```
 sudo systemctl stop relayer
@@ -62,7 +62,7 @@ roller run
 ```
 </TabItem>
 
-<TabItem value="systemctl" label="systemctl">
+<TabItem value="systemd" label="systemd">
 
 ```
 sudo systemctl start da-light-client

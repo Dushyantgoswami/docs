@@ -20,7 +20,7 @@ After receiving a response from the data availability network that the published
     <img class="image--primary" src={require('../images/dymint-block-production.png').default} alt="dymint-overview" />
 </div>
 
-As blocks are produced optimisitcally and don't require active network validation Sequencers are able to produce blocks at configurably low block times. RollApps deployed to the [35-C network](https://github.com/dymensionxyz/testnets/tree/main/dymension-hub/35-C) are able to maintain an average latency period of 0.2 second with max TPS of ~20,000 transactions.
+As blocks are produced optimisitcally and don't require active network validation Sequencers are able to produce blocks at configurably low block times. RollApps deployed to the [35-C network](https://github.com/dymensionxyz/testnets/tree/main/dymension-hub/35-C) were able to maintain an average latency period of 0.2 second with max TPS of ~20,000 transactions.
 
 ### Base layer unavailability
 

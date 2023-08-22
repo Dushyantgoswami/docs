@@ -5,10 +5,22 @@ slug: "run"
 
 # Running in Production
 
-This guide is designed to assist you in setting up the RollApp for production use. The focus will be on loading and starting the RollApp services individually. This approach enables independent logging and monitoring, giving you enhanced control and visibility over each component.
+This guide is designed to assist you in setting up the RollApp for production use. The focus will be on loading and starting the RollApp services individually using [systemd](https://en.wikipedia.org/wiki/Systemd#:~:text=Systemd%20is%20a%20software%20suite,space%20and%20manage%20user%20processes.).
+
+:::warning NOTE
+[systemd](https://en.wikipedia.org/wiki/Systemd#:~:text=Systemd%20is%20a%20software%20suite,space%20an`0manage%20user%20processes.) is only available on Linux systems.
+You can verify that you have `systemd` installed by running:
+
+```bash
+systemctl --version
+ ```
+
+:::
+
+This approach enables running the process in the background, independent logging and monitoring and giving you enhanced control and visibility over each component.
 
 :::info NOTE
-The guide assumes you've already registered your rollapp using [roller](../roller.md) by following the steps in the [quick start](../quick-start/roller-quick/install). 
+The guide assumes you've already registered your rollapp using [roller](../roller.md) by following the steps in the [quick start](../quick-start/roller-quick/install).
 If you haven't, please do so now.
 :::
 

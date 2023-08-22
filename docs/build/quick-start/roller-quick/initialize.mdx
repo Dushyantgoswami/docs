@@ -42,7 +42,8 @@ roller config init --interactive
     <details>
     <summary>Select your execution environment</summary>
         <div><b>- <a href="/build/quick-start/evm/connect">EVM (default)</a></b>: Stores runtime binary in default PATH (e.g. /usr/local/bin/rollapp_evm)</div>
-        <div><b>- <a href="/build/adv-guide/rdk/setup/rdk-repo">RDK</a></b>: Requires specifying runtime binary path (e.g. /usr/local/bin/rollapp)</div>
+        <div><b>- <a href="/build/quick-start/evm/connect">custom EVM</a></b>: Requires specifying runtime binary path (e.g. /usr/local/bin/rollapp_custom_evm)</div>
+        <div><b>- <a href="/build/adv-guide/rdk/setup/rdk-repo">custom non-EVM rollapp (e.g RDK)</a></b>: Requires specifying runtime binary path (e.g. /usr/local/bin/rollapp)</div>
     </details>
 </div>
 
@@ -80,7 +81,7 @@ roller config init --interactive
     <details>
     <summary>Choose your data layer</summary>
         <div><b>- Celestia</b>: Arabica testnet</div>
-        <div><b>- Avail</b>: Kate testnet</div>
+        <div><b>- Avail</b>: Dymension dedicated devnet</div>
         <div><b>- Mock</b>: Simulates publishing to a DA network, useful for local development (only available in `Local` mode)</div>
     </details>
 </div>
@@ -134,8 +135,8 @@ roller config init <rollapp-id> <denom>
 <div>
     <details>
     <summary>hub (optional)</summary>
-        <div><b>- Froopyland</b>: Incentivized public Testnet for building and testing</div>
-        <div><b>- Devnet (default)</b>: Non-incentivized public Devnet for building and testing</div>
+        <div><b>- Froopyland (default)</b>: Incentivized public Testnet for building and testing</div>
+        <div><b>- Devnet</b>: Non-incentivized public Devnet for building and testing</div>
         <div><b>- Local</b>: Local development environment requires running a localhost Dymension Hub full node, please visit <a href="/validate/dymension-hub/build-dymd?network=localhost">here </a>to run a localhost node.</div>
         <div><b>- Mainnet</b>: Soon</div>
     </details>
@@ -158,7 +159,7 @@ roller config init <rollapp-id> <denom>
 <div>
     <details>
     <summary>vm-type (optional)</summary>
-        <div>RollApp type [evm, sdk]. Defaults to EVM (default "evm")</div>
+        <div>RollApp type [evm, rdk]. Defaults to EVM (default "evm")</div>
     </details>
 </div>
 
