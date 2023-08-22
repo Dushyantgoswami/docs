@@ -29,7 +29,7 @@ In addition, we'll be setting up a monitoring system using the well-known tools,
 By the end of this guide, you will have a production-grade local RollApp setup. Let's dive in!
 
 :::warning NOTE
-For ease of use CORS is enabled by default for all origins. Please edit `~/.roller/rollapp/config/config.toml` and 
+For ease of use CORS is enabled by default for all origins. Please edit `~/.roller/rollapp/config/config.toml` and
 set `cors_allowed_origins` to the desired origins if you wish to restrict CORS.
 :::
 
@@ -74,6 +74,10 @@ sudo systemctl start relayer
 ```
 
 Let's check the status of the services and ensure they are running:
+
+:::info NOTE
+It may take the relayer a few seconds to stabilize so please wait a few seconds before checking the status.
+:::
 
 ```bash
 sudo systemctl status da-light-client
