@@ -9,7 +9,18 @@ In this tutorial we will create a `Hello World` RollApp. We will create a `hello
 
 The core developer experience of developing and integrating a module is equivalent and developers may use the Cosmos SDK [documentation](https://docs.cosmos.network/) for further details that exceed the extent of this tutorial.
 
-### Go download
+### Prerequisites
+
+In order to follow this tutorial, you will need to have the following installed:
+
+1. [Go](https://golang.org/doc/install)
+2. [Docker](https://docs.docker.com/get-docker/)
+3. [Make](https://www.gnu.org/software/make/)
+
+
+In the next section will only touch on the Go installation. For the rest of the prerequisites, please follow the official installation instructions.
+
+### Go Installation
 
 `````mdx-code-block
 import Tabs from '@theme/Tabs';
@@ -83,6 +94,12 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
+Validate the installation by checking the Go version:
+
+```bash
+go version
+```
+
 </TabItem>
 <TabItem value="zsh" label="zsh">
 
@@ -105,7 +122,7 @@ Let's begin our journey in building a custom `hello` module!
 We will begin by getting the RollApp template from GitHub. This `app` template, inspiried by the [mini Cosmos SDK app template](https://github.com/julienrbrt/chain-minimal), is a clean template for working with the imported Dymension RDK.
 
 ```
-git clone https://github.com/dymensionxyz/rollapp.git
+git clone https://github.com/dymensionxyz/rollapp.git --branch v0.1.0-rc1
 cd rollapp
 ```
 

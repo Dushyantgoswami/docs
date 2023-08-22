@@ -4,7 +4,13 @@ slug: query_server
 ---
 
 `queryServer` is the implemented handler of queries submitted by users to the `hello` module.
-In the `keeper` folder we will create a file called `query.go`
+In the `keeper` folder we will create a file called `query.go`:
+
+```bash
+touch x/hello/keeper/query.go
+```
+
+Now let's add the following code to the `query.go` file:
 
 
 ```Go

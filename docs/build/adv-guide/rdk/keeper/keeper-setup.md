@@ -5,7 +5,13 @@ slug: keeper-setup
 
 A keeper can be considered quite literally to be the gatekeeper of a module's store(s). Each store defined within a module comes with a [storeKey](../types/keys.md), which grants unlimited access to it. Keepers primarily expose getter and setter methods for the store(s) managed by their module.
 
-In the `keeper` folder we will create a file called `keeper.go`
+Let's begin by creating the `keeper.go` file in the `keeper` folder:
+
+```bash
+touch x/hello/keeper/keeper.go
+```
+
+Now let's add the following code to the `keeper.go` file:
 
 ```Go
 package keeper

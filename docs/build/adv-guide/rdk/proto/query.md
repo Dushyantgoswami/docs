@@ -5,7 +5,13 @@ slug: query
 
 A `query` is a request for information made by end-users of applications through an interface and processed by a full-node. Queries do not require consensus to be processed (as they do not trigger state-transitions); they can be fully handled by one full-node.
 
-We will first need to create a `query.proto` file in the `proto` folder. Now we will define the `query` request and response in the `query.proto` file:
+We will first need to create a `query.proto` file in the `proto` folder:
+
+```bash
+touch proto/query.proto
+```
+
+Now we will define the `query` request and response in the `query.proto` file:
 
 ```Protobuf
 syntax = "proto3";

@@ -5,7 +5,15 @@ slug: keys
 
 Now that we've setup the `proto` folder for the `hello` module, let's create a file called `keys.go` in the `hello/types` folder. The following information will be used to access the `hello` module's KVstore.
 
+Create the `keys.go` file:
+
+```bash
+touch x/hello/types/keys.go
+```
+
 Each module is a KVstore within the main application multi-store. `StoreKeys` grant access to the store(s) of the multistore managed by the module.
+
+Now let's add the following code to the `keys.go` file:
 
 ```Go
 package types

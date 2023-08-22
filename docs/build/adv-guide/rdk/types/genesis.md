@@ -3,7 +3,13 @@ title: Genesis
 slug: genesis
 ---
 
-For the sake of brevity in the tutorial, we've opted to include an empty `GenesisState` in the [protobuf defintion](../proto/genesis.md). As such we will create a file with defaults and no validity checks. Firstly, we will create the `genesis.go` file in the `types` folder with the following code:
+For the sake of brevity in the tutorial, we've opted to include an empty `GenesisState` in the [protobuf defintion](../proto/genesis.md). As such we will create a file with defaults and no validity checks. Firstly, we will create the `genesis.go` file in the `types` folder:
+
+```bash
+touch x/hello/types/genesis.go
+```
+
+Now let's add the following code to the `genesis.go` file:
 
 ```Go
 package types

@@ -40,8 +40,14 @@ Global Flags:
 Use "rollappd query hello [command] --help" for more information about a command.
 ```
 
-Let's check where the file installed so we could pass it to roller:
+### Using the custom binary
 
-`which rollappd`
+In order to actually use this custom binary we will need to pass it to [Roller](/docs/build/quick-start/roller-quick/install.md) on init.
 
-We can then move to deploying the application with [Roller](/docs/build/quick-start/roller-quick/install.md), by providing our custom binary path
+First,  Let's check where the file installed:
+
+```bash
+which rollappd
+```
+
+Now we can then move to deploying the application with [Roller](/docs/build/quick-start/roller-quick/install.md), by providing our custom binary path.
