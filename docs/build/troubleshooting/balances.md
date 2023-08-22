@@ -5,17 +5,36 @@ slug: balances
 
 Users that may be experiencing IBC issues should initially check the balances located at certain locations.
 
-To check the balance of the RollApp Sequencer and IBC relayer on the Dymension Hub please visit Dymension's [discord](https://discord.gg/dymension) and input the following command in the [devnet-faucet channel](https://discord.com/channels/956961633165529098/1125047988247593010):
+````mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs groupId="guide">
+<TabItem value="Froopyland" label="Froopyland">
+
+Run the following command to check the balance of your RollApp token on the Dymension Hub's froopyland faucet [discord channel](https://discord.com/channels/956961633165529098/1143231362468434022):
 
 ```
 $balance <ADDRESS>
 ```
 
+</TabItem>
+
+<TabItem value="Devnet" label="Devnet">
+
+Run the following command to check the balance of your RollApp token on the Dymension Hub's devnet faucet [discord channel](https://discord.com/channels/956961633165529098/1125047988247593010):
+
+```
+$balance <ADDRESS>
+```
+
+</TabItem>
+</Tabs>
+````
+
 To check the balance of the RollApp Sequencer on the DA network:
 
 ````mdx-code-block
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs groupId="guide">
 <TabItem value="Celestia" label="Celestia">
