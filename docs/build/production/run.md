@@ -75,6 +75,10 @@ sudo systemctl start relayer
 
 Let's check the status of the services and ensure they are running:
 
+:::warning NOTE
+It may take the relayer a few seconds to stabilize so please wait a few seconds before checking the status.
+:::
+
 ```bash
 sudo systemctl status da-light-client
 sudo systemctl status sequencer
