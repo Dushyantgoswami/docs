@@ -17,7 +17,7 @@ mkdir -p x/hello/types
 mkdir -p x/hello/client/cli
 ```
 
-The following commands move us to the root directory and creates a `hello` folder in the `proto` directory.
+The following commands creates a `hello` folder in the `proto` directory.
 
 -   [Protobufs](https://protobuf.dev/) are the recommended way for defining messages.
 

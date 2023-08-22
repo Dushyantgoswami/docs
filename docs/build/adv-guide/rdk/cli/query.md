@@ -5,7 +5,13 @@ slug: query
 
 After implementing the query logic, you will need to make the query available to clients so that they can call it and receive the response.
 
-We will implement this in a new `query.go` file in the `x/hello/client/cli/` folder
+We will implement this in a new `query.go` file in the `x/hello/client/cli/` folder:
+
+```bash
+touch x/hello/client/cli/query.go
+```
+
+The `query.go` file will contain the following code:
 
 ```Go
 package cli

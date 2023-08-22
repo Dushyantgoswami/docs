@@ -9,6 +9,12 @@ The struct defining the module's subset of the genesis state is usually called `
 
 Create a `genesis.proto` file in the `proto` folder:
 
+```bash
+touch proto/genesis.proto
+```
+
+And define the `GenesisState` message in the `genesis.proto` file:
+
 ```Protobuf
 syntax = "proto3";
 package hello;

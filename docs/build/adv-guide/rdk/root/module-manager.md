@@ -5,9 +5,14 @@ slug: modular-manager
 
 ### Overview
 
-Now that we have all the basic functionality set up for our `Hello` module, let's bring it all together and get our module ready to be used & tested, create a new file `x/hello/module.go`.
+Now that we have all the basic functionality set up for our `Hello` module, let's bring it all together and get our module ready to be used & tested, create a new file `x/hello/module.go`:
+
+```bash
+touch x/hello/module.go
+```
 
 Here we will start by implementing our AppModuleBasic && AppModule interfaces.
+We'll start by explaining each of the relevant parts and adding them to the file one after the other.
 
 ### Imports
 
