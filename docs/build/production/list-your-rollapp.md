@@ -11,7 +11,7 @@ Only developers with the `RollApp-fam` discord role are eligible for listing the
 
 ### Interacting with the RollApp
 
-Developers are expected to provide the following end-points either under [http](https://en.wikipedia.org/wiki/HTTP) or [https](https://en.wikipedia.org/wiki/HTTPS). This will allow for users to be able to interact with your RollApp:
+Developers are expected to provide the following end-points under either [http](https://en.wikipedia.org/wiki/HTTP) or [https](https://en.wikipedia.org/wiki/HTTPS). This will allow for users to be able to interact with your RollApp:
 
 1. RollApp RPC Endpoint (by default `26657`)
 2. Rest Endpoint (by default `1317`)

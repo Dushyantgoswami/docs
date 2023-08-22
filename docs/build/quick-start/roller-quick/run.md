@@ -6,6 +6,10 @@ pagination_next: build/quick-start/roller-quick/ibc-transfer
 
 Now that we've registered the RollApp on the Dymension Hub we can proceed to begin running the RollApp.
 
+:::warning NOTE:
+If you would like to run your rollapp in a production settings, please skip this section and head over to the [run in production](../../production/run.md) section.
+:::
+
 :::info NOTE:
 The following command abstracts some of the components required for running an IBC-enabled RollApp. For advanced users or for those interested in learning about the different components of an active RollApp please proceed to the [advanced guide](/docs/build/adv-guide/roller-adv/da-light-client.md) .
 :::

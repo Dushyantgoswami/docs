@@ -26,7 +26,7 @@ dymd tx staking create-validator \
     --amount=500000000000udym \
     --pubkey=$(dymd tendermint show-validator) \
     --moniker="<your-moniker>" \
-    --chain-id=35-C \
+    --chain-id=froopyland_100-1 \
     --from=<key-name> \
     --commission-rate="0.10" \
     --commission-max-rate="0.20" \
