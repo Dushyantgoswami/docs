@@ -16,6 +16,11 @@ The following command abstracts some of the components required for running an I
 
 To start the RollApp run the following command:
 
+:::warning NOTE:
+roller run is for development process and once the terminal output is closed the RollApp will stop running.
+For a production-grade RollApp please refer to the [production guide](../../production/run.md).
+:::
+
 ```
 roller run
 ```
