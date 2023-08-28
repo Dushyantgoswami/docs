@@ -275,13 +275,13 @@ Relayer   | Address that handles the relaying of IBC packets
 To start the local Dymension hub, run:
 
 ```
-dymd start --home ~/.roller/local-hub
+dymd start
 ```
 
 While the Dymension Hub full node is running, publish the following transaction via CLI:
 
 ```
-dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test --home ~/.roller/local-hub
+dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test
 ```
 
 You can then check the balance of the address with:
