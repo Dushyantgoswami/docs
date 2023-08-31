@@ -10,7 +10,7 @@ Instead of managing a multi-sig smart contract, a developer only needs to regist
 The following command utilizes the addresses generated in the [previous step](initialize) :
 
 ```
-roller register
+roller tx register
 ```
 
 Should return:
