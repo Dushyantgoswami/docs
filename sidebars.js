@@ -309,11 +309,6 @@ const sidebars = {
                             label: "Export",
                             id: "build/production/export",
                         },
-                        {
-                            type: "doc",
-                            label: "List RollApp",
-                            id: "build/production/list-your-rollapp",
-                        },
                     ],
                 },
                 {
@@ -357,6 +352,11 @@ const sidebars = {
                     type: "doc",
                     label: "Upgrade",
                     id: "build/upgrade",
+                },
+                {
+                    type: "doc",
+                    label: "List RollApp",
+                    id: "build/production/list-your-rollapp",
                 },
             ],
         },
