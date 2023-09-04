@@ -38,7 +38,7 @@ VMType = "evm"
 Additionally, users may request the IBC channel there relayer is operating on:
 
 ```
-roller relayer channel show
+roller relayer status
 ```
 
 Will return the relevant channel the relayer is operating. Please see below for an example output:

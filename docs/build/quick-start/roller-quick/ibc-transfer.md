@@ -43,7 +43,7 @@ It is then recommended to utilize the [Portal](https://portal.dymension.xyz/) fo
 To initiate an IBC transfer let's first find the source channel for our RollApp:
 
 ```bash
-roller relayer channel show
+roller relayer status
 ```
 
 The output should look similar to the following:
