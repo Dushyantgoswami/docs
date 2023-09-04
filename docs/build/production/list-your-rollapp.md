@@ -13,9 +13,9 @@ Only developers with the `RollApp-fam` discord role are eligible for listing the
 
 Developers are expected to provide the following end-points under either [http](https://en.wikipedia.org/wiki/HTTP) or [https](https://en.wikipedia.org/wiki/HTTPS). This will allow for users to be able to interact with your RollApp:
 
-1. RollApp RPC Endpoint (by default `26657`)
-2. Rest Endpoint (by default `1317`)
-3. JSON RPC Endpoint (by default `8545`. Only relevant for EVM RollApps)
+1. RollApp RPC Endpoint (default port `26657`)
+2. Rest Endpoint (default port `1317`)
+3. JSON RPC Endpoint (default port `8545`. Only relevant for EVM RollApps)
 
 :::info NOTE:
 If you are using a self-signed certificate for [https](https://en.wikipedia.org/wiki/HTTPS), please add it to your browser's trusted certificates.
@@ -47,7 +47,7 @@ Please follow the instructions for listing a RollApp:
     git clone https://github.com/<your-github-username>/rollapp-registry
     ```
 
-4. Create a new folder with the following structure:
+4. Create a new folder in your cloned version of the RollApp-registry repo with the following structure:
 
     ```tree
     ├── <RollApp-ID>
