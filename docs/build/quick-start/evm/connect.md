@@ -26,7 +26,7 @@ Network Name: <YOUR-ROLLAPP-NAME>
 
 New RPC URL: <RPC-END-POINT> // Default localhost: http://127.0.0.1:8545
 
-Chain ID: <YOUR-CHAIN-ID> // EIP155 number (middle number of RollApp ID)
+Chain ID: <YOUR-CHAIN-ID> // EIP155 number (middle number of the generated RollApp ID)
 
 Currency Symbol (optional): <YOUR-ROLLAPP-DENOM>
 ```
