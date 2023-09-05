@@ -14,7 +14,7 @@ To ensure a smooth token distribution process for your network, it is crucial to
 
 ### Fund faucet
 
-Input the following command to fund the Dymensino Hub faucet with your RollApp token on `froopyland` testnet:
+Input the following command to fund the Dymension Hub faucet with your RollApp token on `froopyland` testnet:
 
 ```
 roller tx fund-faucet
