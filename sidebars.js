@@ -355,8 +355,8 @@ const sidebars = {
                 },
                 {
                     type: "doc",
-                    label: "List RollApp",
-                    id: "build/production/list-your-rollapp",
+                    label: "Portal Listing",
+                    id: "build/production/portal-listing",
                 },
             ],
         },
