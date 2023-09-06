@@ -90,7 +90,7 @@ Please make sure the file doesn't exceed 50KB.
 
     c. EVM RPC \*(ONLY FOR EVM ROLLAPPS): `"http://<your-ip-or-domain>:<port>" (default port 8545)`
 
-    d. Logo path: `"/logos/<RollApp-ID>.svg"`
+    d. Logo path: `"/logos/<RollApp-ID>.<format>"`
 
     e. chainName: from `<RollApp-ID>`to your RollApp's name as it will appear on the Portal 
 
