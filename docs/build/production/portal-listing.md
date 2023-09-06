@@ -70,7 +70,7 @@ The following steps are required for listing a RollApp on the Portal:
 
     This should create a folder for your RollApp logo and config information.
 
-8. Add your RollApp logo to the `logos` folder. Logo file name: `<RollApp-ID>-logo.<format>`. This can be SVG, PNG, or JPG format.
+8. Add your RollApp logo to the `logos` folder. Logo file name: `<RollApp-ID>.<format>`. This can be SVG, PNG, or JPG format.
 
 :::warning NOTE:
 Please make sure the file doesn't exceed 50KB.
