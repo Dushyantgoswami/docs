@@ -100,7 +100,7 @@ Please make sure the file doesn't exceed 50KB.
 
     g. website: add `"<your-RollApp's-url>",` to be displayed on the portal
 
-12. Add and commit your changes:
+11. Add and commit your changes:
 
 ```
 git add .
