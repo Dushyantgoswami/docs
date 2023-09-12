@@ -92,9 +92,15 @@ Please make sure the file doesn't exceed 50KB.
 
     d. Logo path: `"/logos/<RollApp-ID>.<format>"`
 
-    e. chainName: from `<RollApp-ID>`to your RollApp's name as it will appear on the Portal 
+    Optinal fields:
 
-11. Add and commit your changes:
+    e. chainName: switch `<RollApp-ID>` to your RollApp's name as it will appear on the Portal
+
+    f. description: add `"<Your RollApp description>",` to be displayed on the portal
+
+    g. website: add `"<your-RollApp's-url>",` to be displayed on the portal
+
+12. Add and commit your changes:
 
 ```
 git add .
