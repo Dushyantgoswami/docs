@@ -25,7 +25,7 @@ For a production-grade RollApp please refer to the [production guide](../../prod
 roller run
 ```
 
-Enabling IBC in all channels takes can take up to an hour in which the develoepr is expected to see `starting...`. After which an `active` status will appear with the respective source IBC channels. IBC channels are created to facilitate applications such as token transfers from the RollApp to other ecosystems.
+Enabling IBC in all channels can take up to an hour in which the develoepr is expected to see `starting...`. After which an `active` status will appear with the respective source IBC channels. IBC channels are created to facilitate applications such as token transfers from the RollApp to other ecosystems.
 
 During the `Run` process a RollApp with an IBC connection to the Dymension Hub is started. A status table will appear with information about the RollApp and IBC relayer. Developers should see an output with useful information such as this:
 
