@@ -1,0 +1,39 @@
+---
+
+title: "Custom Configuration"
+slug: "custom_configuration"
+---
+
+Roller allows you to quickly change common configuration options, using the `roller config set <key> <value>` command.
+It is recommended to use it instead of manually editing the configuration files, since some configurations appear in
+multiple files, and editing only some of them may cause unexpected behavior. If you want to change a configuration
+that is not yet supported by the `roller config set` command, please open an issue on the
+[Roller GitHub repository](https://github.com/dymensionxyz/roller) and we will add it as soon as possible.
+
+## Keys Breakdown
+<div>
+    <details>
+    <summary>DA</summary>
+    <div>The rollapp data availability layer. Available options are celestia, avail and local.</div>
+    <br />
+    <div><b>Example</b>: <code>roller config set da avail</code></div>
+    </details>
+</div>
+
+<div>
+    <details>
+    <summary>Hub RPC</summary>
+        <div>The hub RPC the rollapp sequencer is using.</div>
+        <br />
+        <div><b>Example</b>: <code>roller config set hub-rpc "https://froopyland.rpc.silknodes.io:443"</code></div>
+    </details>
+</div>
+<div>
+    <details>
+    <summary>Ports</summary>
+        <div>All the ports the rollapp is using are configurable. The available keys are:
+        rollapp-rpc-port, lc-gateway-port, lc-rpc-port, rollapp-jsonrpc-port, rollapp-ws-port and rollapp-grpc-port</div>
+        <br />
+        <div><b>Example</b>: <code>roller config set rollapp-rpc-port 6969</code></div>
+    </details>
+</div>
