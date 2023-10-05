@@ -357,6 +357,10 @@ const sidebars = {
                     type: "doc",
                     label: "Portal Listing",
                     id: "build/production/portal-listing",
+                }, {
+                    type: "doc",
+                    label: "Edit RollApp Configuration",
+                    id: "build/custom-configuration",
                 },
             ],
         },
