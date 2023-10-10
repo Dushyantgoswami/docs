@@ -28,7 +28,7 @@ const config = {
                 docs: {
                     routeBasePath: "/",
                     sidebarPath: require.resolve("./sidebars.js"),
-                    // editUrl: "https://github.com/dymensionxyz/docs/tree/main",
+                    editUrl: "https://github.com/dymensionxyz/docs/tree/main",
                 },
                 blog: false,
                 theme: {
