@@ -28,6 +28,21 @@ sudo apt install lz4
     cd <ROLLER_CONFIG_DIR>/rollapp
     tar -cvf - data | lz4 > snapshot.tar.lz4
 ```
+Replace `<ROLLER_CONFIG_DIR>` with the actual path to the roller config directory (default to `~/.roller`).
 
 ## Load a snapshot
+4. Clear the rollapp state with
+```bash
+    rollapp_evm dymint unsafe-reset-all --home <ROLLER_CONFIG_DIR>/rollapp
+```
 
+5. Load the snapshot into the rollapp data directory:
+```bash
+    cd <ROLLER_CONFIG_DIR>/rollapp
+    lz4 -c -d <SNAPSHOT_FILE_PATH> | tar -x -C .
+```
+
+6. Start the rollapp
+First, make sure the rollapp is not producing blocks until it is synced by setting `aggregator=false` in the rollapp
+`<ROLLER_CONFIG_DIR>/rollapp/config/dymint.toml` config file. Then start the rollapp with `roller run`. Once the
+rollapp is synced, if you run a sequencer return `aggregator=true` and restart the rollapp.
