@@ -18,4 +18,16 @@ load it into the rollapp data to perform the state sync.
 ## Create a snapshot
 1. Stop the rollapp.
 
-2.
+2. Install lz4 compression tool if not already installed:
+```bash
+sudo apt install lz4
+```
+
+3. Create a compressed archive of the rollapp data directory:
+```bash
+    cd <ROLLER_CONFIG_DIR>/rollapp
+    tar -cvf - data | lz4 > snapshot.tar.lz4
+```
+
+## Load a snapshot
+
