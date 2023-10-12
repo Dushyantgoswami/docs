@@ -42,7 +42,12 @@ Replace `<ROLLER_CONFIG_DIR>` with the actual path to the roller config director
     lz4 -c -d <SNAPSHOT_FILE_PATH> | tar -x -C .
 ```
 
-6. Start the rollapp
+6. Start The Rollapp <br/>
 First, make sure the rollapp is not producing blocks until it is synced by setting `aggregator=false` in the rollapp
-`<ROLLER_CONFIG_DIR>/rollapp/config/dymint.toml` config file. Then start the rollapp with `roller run`. Once the
-rollapp is synced, if you run a sequencer return `aggregator=true` and restart the rollapp.
+`<ROLLER_CONFIG_DIR>/rollapp/config/dymint.toml` config file. Then start the rollapp with `roller run`. If you are
+the sequencer, once the rollapp is synced return `aggregator=true` and restart the rollapp.
+You can verify the rollapp is fully synced by checking the rollapp logs at `<ROLLER_CONFIG_DIR>/rollapp/rollapp.log`
+and making sure the current height equals the sync target in lines like this:
+```bash
+level=info msg="Syncing until target[current height 1334 syncTarget 1436]" module=BlockManager
+```
