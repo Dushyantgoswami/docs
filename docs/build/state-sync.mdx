@@ -12,10 +12,8 @@ Dymension rollapps can perform a state sync from a snapshot as long as:
 
 3. The rollapp hasn't switched DA layer since the snapshot was taken.
 
-The procedure is straightforward: Create a compressed archive of the rollapp data directory to create a snapshot, and
-load it into the same directory to perform the state sync.
-
 ## Create a snapshot
+Create a compressed archive of the rollapp data directory:
 1. Stop the rollapp.
 
 2. Install lz4 compression tool if not already installed:
@@ -31,6 +29,7 @@ sudo apt install lz4
 Replace `<ROLLER_CONFIG_DIR>` with the actual path to the roller config directory (defaults to `~/.roller`).
 
 ## Load a snapshot
+Load the snapshot from the previous step into the rollapp data directory to perform the sync:
 1. Clear the rollapp state with:
 ```bash
     rollapp_evm dymint unsafe-reset-all --home <ROLLER_CONFIG_DIR>/rollapp
