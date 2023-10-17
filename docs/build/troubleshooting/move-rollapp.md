@@ -13,4 +13,7 @@ To move a running rollapp to a different virtual machine you will need to:
 
 4. Update the `HOME` entry in the `~/.roller/config.toml` file to point to the new roller config dir absolute path.
 
-5. Run the rollapp on the new machine.
+5. Update the `keyring_home_dir` entry in the `~/.roller/rollapp/config/dymint.toml` file to point to the new keyring
+home directory absolute path - it should be the same relative path within the new roller config dir.
+
+6. Run the rollapp on the new machine.
