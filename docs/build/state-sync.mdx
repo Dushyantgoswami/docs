@@ -1,0 +1,54 @@
+---
+
+title: "State Sync"
+slug: "state_sync"
+---
+
+# State Sync
+Dymension rollapps can perform a state sync from a snapshot as long as:
+1. The rollapp is using a genuine DA layer (Celestia/Avail) and not a local one.
+
+2. The rollapp hasn't switched DA layer since the snapshot was taken.
+
+## Create a snapshot
+Create a compressed archive of the rollapp data directory:
+1. Stop the rollapp.
+
+2. Install lz4 compression tool if not already installed:
+```bash
+sudo apt install lz4
+```
+
+3. Create a compressed archive of the rollapp data directory:
+```bash
+    cd <ROLLER_CONFIG_DIR>/rollapp
+    tar -cvf - data | lz4 > snapshot.tar.lz4
+```
+Replace `<ROLLER_CONFIG_DIR>` with the actual path to the roller config directory (defaults to `~/.roller`).
+
+## Load a snapshot
+Load the snapshot from the previous step into the rollapp data directory to perform the sync:
+1. Clear the rollapp state with:
+```bash
+    rollapp_evm dymint unsafe-reset-all --home <ROLLER_CONFIG_DIR>/rollapp
+```
+
+2. Load the snapshot into the rollapp data directory:
+```bash
+    cd <ROLLER_CONFIG_DIR>/rollapp
+    lz4 -c -d <SNAPSHOT_FILE_PATH> | tar -x -C .
+```
+
+3. Start the Rollapp <br/>
+* Ensure the rollapp isn't producing blocks until it's synced. Set `aggregator=false` in the rollapp's config file located
+at `<ROLLER_CONFIG_DIR>/rollapp/config/dymint.toml`.
+* Start the rollapp using roller run. If you're the sequencer, once the rollapp is synced, set `aggregator=true` and
+restart the rollapp.
+* Verify the rollapp is fully synced by checking its logs at `<ROLLER_CONFIG_DIR>/rollapp/rollapp.log`. Ensure the current
+height matches the sync target in lines resembling:
+```bash
+level=info msg="Syncing until target[current height 1334 syncTarget 1436]" module=BlockManager
+```
+:::info NOTE:
+Sync may take a few hours when using a Celestia DA layer.
+:::

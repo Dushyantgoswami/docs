@@ -365,7 +365,11 @@ const sidebars = {
                     type: "doc",
                     label: "Edit RollApp Configuration",
                     id: "build/custom-configuration",
-                },
+                },{
+                    type: "doc",
+                    label: "Rollapp State Sync",
+                    id: "build/state-sync",
+                }
             ],
         },
         {
