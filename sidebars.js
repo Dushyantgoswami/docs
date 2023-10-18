@@ -333,6 +333,10 @@ const sidebars = {
                         },
                         {
                             type: "doc",
+                            label: "Move Rollapp",
+                            id: "build/troubleshooting/move-rollapp",
+                        },                        {
+                            type: "doc",
                             label: "External Access",
                             id: "build/troubleshooting/external-access",
                         },
