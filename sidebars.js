@@ -333,7 +333,7 @@ const sidebars = {
                         },
                         {
                             type: "doc",
-                            label: "Move Rollapp",
+                            label: "Import/Export Rollapp",
                             id: "build/troubleshooting/move-rollapp",
                         },                        {
                             type: "doc",
