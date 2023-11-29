@@ -62,6 +62,7 @@ Please follow the instructions for listing a RollApp:
     Create the appropraite folders and files:
 
     ```
+    cd devnet
     mkdir -p $ROLLAPP_ID/logos
     cd $ROLLAPP_ID && touch $ROLLAPP_ID.json
     ```
