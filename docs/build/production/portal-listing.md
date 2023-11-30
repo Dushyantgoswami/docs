@@ -64,6 +64,7 @@ The following steps are required for listing a RollApp on the Portal:
 7. Create the appropraite folders and files:
 
     ```
+    cd devnet
     mkdir -p $ROLLAPP_ID/logos
     cd $ROLLAPP_ID && touch $ROLLAPP_ID.json
     ```
