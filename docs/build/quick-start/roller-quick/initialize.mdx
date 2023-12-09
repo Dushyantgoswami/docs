@@ -281,7 +281,7 @@ dymd start
 While the Dymension Hub full node is running, publish the following transaction via CLI:
 
 ```
-dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym --yes -b block --keyring-backend test
+dymd tx bank send local-user <ADDRESS-TO-FUND> 1udym —gas-prices 100000000udym --yes -b block --keyring-backend test
 ```
 
 You can then check the balance of the address with:
