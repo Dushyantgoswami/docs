@@ -20,7 +20,7 @@ systemctl --version
 This approach enables running the process in the background, independent logging and monitoring and giving you enhanced control and visibility over each component.
 
 :::info NOTE
-The guide assumes you've already registered your rollapp using [roller](../roller.md) by following the steps in the [quick start](../quick-start/roller-quick/install).
+The guide assumes you've already registered your rollapp using [roller](../roller.md) by following the steps in the [quick start](../quick-start/roller-quick/install.md).
 If you haven't, please do so now.
 :::
 
