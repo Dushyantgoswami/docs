@@ -7,7 +7,7 @@ Registering the RollApp adds a namespace in the Dymension Hub to account for the
 
 Instead of managing a multi-sig smart contract, a developer only needs to register the RollApp with a simple command. Registering the RollApp to the Dymension Hub allows a Sequencer to publish state updates on-chain and furthermore facilitates bridging between ecosystems.
 
-The following command utilizes the addresses generated in the [previous step](initialize) :
+The following command utilizes the addresses generated in the [previous step](initialize.mdx) :
 
 ```
 roller tx register
